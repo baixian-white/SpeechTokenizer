@@ -7,7 +7,7 @@ import numpy as np
 
 from huggingface_hub import snapshot_download
 
-snapshot_download(repo_id="fnlp/SpeechTokenizer", local_dir="model_hub")
+# snapshot_download(repo_id="fnlp/SpeechTokenizer", local_dir="model_hub")
 
 
 # Set up argument parser
@@ -18,13 +18,13 @@ parser.add_argument(
     "--config_path",
     type=str,
     help="Path to the model configuration file.",
-    default="model_hub/speechtokenizer_hubert_avg/config.json",
+    default="Log/spt_base/config.json",
 )
 parser.add_argument(
     "--ckpt_path",
     type=str,
     help="Path to the model checkpoint file.",
-    default="model_hub/speechtokenizer_hubert_avg/SpeechTokenizer.pt",
+    default=" Log/spt_base/SpeechTokenizer_best_dev.pt",
 )
 parser.add_argument(
     "--speech_file",

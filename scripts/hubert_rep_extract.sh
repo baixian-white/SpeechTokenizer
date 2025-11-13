@@ -1,6 +1,10 @@
 CONFIG="config/spt_base_cfg.json"
-AUDIO_DIR="/remote-home/share/data/SpeechPretrain/LibriSpeech/LibriSpeech"
-REP_DIR="/remote-home/share/data/SpeechPretrain/hubert_rep/LibriSpeech"
+# 音频目录（LibriSpeech 的 train-clean-100 到这里）
+AUDIO_DIR="$PWD/data/SpeechPretrain/LibriSpeech/train-clean-100"
+
+# 语义表征输出目录（脚本会自动创建子目录并写入 .hubert.npy）
+REP_DIR="$PWD/data/SpeechPretrain/hubert_rep/LibriSpeech"
+
 EXTS="flac"
 SPLIT_SEED=0
 VALID_SET_SIZE=1500
