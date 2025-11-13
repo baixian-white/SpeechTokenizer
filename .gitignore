@@ -1,0 +1,121 @@
+# ===========================
+# Python 基础忽略
+# ===========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Virtual env
+.env/
+.venv/
+env/
+venv/
+
+# Build
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ===========================
+# VSCode
+# ===========================
+.vscode/
+!.vscode/launch.json   # 保留 launch 配置（你项目里确实有）
+
+# ===========================
+# Jupyter
+# ===========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# 临时 Notebook 文件
+Untitled*.ipynb
+
+# ===========================
+# 数据 & 输出文件
+# ===========================
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.parquet
+
+example_output.wav
+images/
+demo/output/
+samples/
+
+# ===========================
+# 模型文件（模型体积大，不要入库）
+# ===========================
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.model
+*.onnx
+
+# huggingface 缓存
+huggingface/
+model_hub/
+
+# ===========================
+# 日志 & 缓存
+# ===========================
+*.log
+logs/
+wandb/
+tensorboard/
+tb_logs/
+
+# Python cache
+.cache/
+*.cache
+__pycache__/
+
+# ===========================
+# 压缩包（你目录有很多 ZIP / RAR）
+# ===========================
+*.zip
+*.rar
+*.tar
+*.tar.gz
+*.7z
+
+# ===========================
+# Notebook 中产生的临时文件
+# ===========================
+*.checkpoint
+*.ckpt
+*.tmp
+
+# ===========================
+# Shell 脚本输出
+# ===========================
+*.sh~
+*.swp
+*.swo
+
+# ===========================
+# 项目特定忽略
+# ===========================
+# SpeechTokenizer 训练输出
+trainer/
+trainer.zip
+quantization/
+quantization.zip
+
+# wav_from_parquet 中的缓存
+wav_from_parquet/.cache/
+
+images/
+
+
+Log_*/
+log*/
+data/
+*.md
