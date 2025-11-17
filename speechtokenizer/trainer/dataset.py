@@ -63,7 +63,7 @@ def collate_fn(data):
 
     # 典型路径：音频与特征各自打包
     # datum[0] 是一批 audio；datum[1] 是一批 feature
-    for datum in zip(*data):
+    for datum in zip(*data): # 把data拆成两堆，一堆是audio，一堆是feature
         if isinstance(datum[0], torch.Tensor):
             # 将 batch 里的每个样本先规范形状，再 pad
             items = []
@@ -157,6 +157,8 @@ class audioDataset(Dataset):
 
         # 计算本次需要的特征帧数（与音频 segment 对齐）
         seg_T = self.segment_size
+        # zhuyan：特征帧数是根据预训练模型来的，feature来源于HuBERT Base,他的stride是20ms,在16Khz下，那么20ms一共320个采样点，本模型一个样本audio是3s,48000采样点，所以48000/320 = 150
+        # 换而言之就是48000个采样点
         seg_F = seg_T // self.downsample_rate  # 例如 48000/320=150帧
 
         # 训练 vs 验证 的取段策略

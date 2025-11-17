@@ -49,6 +49,7 @@ model.eval()
 model_sample_rate = model.sample_rate
 
 # Load and preprocess speech waveform with the model's sample rate
+#这一步就会将以文件形式存储的音频文件flac格式和特征npy格式，转化为Tensor张量
 wav, sr = torchaudio.load(args.speech_file)
 
 if sr != model_sample_rate:

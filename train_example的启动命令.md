@@ -45,5 +45,9 @@ watch -n 1 nvidia-smi
 git rm -r --cached <file_dir>
 
 # 列出所有已添加到git管理的文件
-git lst-files 
+git lst-files x
 git status
+
+
+# Tensorboard
+tensorboard --logdir=logs --port=6006

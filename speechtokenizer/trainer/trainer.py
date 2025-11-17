@@ -121,7 +121,7 @@ class SpeechTokenizerTrainer(nn.Module):
 
         self.mel_loss_kwargs_list = []
         mult = 1
-        for _ in range(len(self.mel_loss_lambdas)):
+        for i in range(len(self.mel_loss_lambdas)):
             self.mel_loss_kwargs_list.append(
                 {
                     "n_fft": cfg.get("n_fft") // mult,
@@ -159,14 +159,14 @@ class SpeechTokenizerTrainer(nn.Module):
             file_list=train_file_list,
             segment_size=segment_size,
             downsample_rate=generator.downsample_rate,
-            sample_rate=self.sample_rate,
+            sample_rate=self.sample_rate
         )
         self.valid_ds = audioDataset(
             file_list=valid_file_list,
             segment_size=self.sample_rate * 30,
             downsample_rate=generator.downsample_rate,
             sample_rate=self.sample_rate,
-            valid=True,
+            valid=True
         )
         if self.is_main:
             self.print(
@@ -216,7 +216,7 @@ class SpeechTokenizerTrainer(nn.Module):
             self.scheduler_g,
             self.scheduler_d,
             self.dl,
-            self.valid_dl,
+            self.valid_dl
         ) = self.accelerator.prepare(
             self.generator,
             self.optim_g,
@@ -224,7 +224,7 @@ class SpeechTokenizerTrainer(nn.Module):
             self.scheduler_g,
             self.scheduler_d,
             self.dl,
-            self.valid_dl,
+            self.valid_dl
         )
         self.discriminators = {k: self.accelerator.prepare(v) for k, v in self.discriminators.items()}
 
@@ -346,13 +346,21 @@ class SpeechTokenizerTrainer(nn.Module):
             for batch in self.dl:
                 tic = time.time()
 
-                x, semantic_feature = batch
-                x = x.unsqueeze(1)
+                x, semantic_feature = batch #x是audio一般为[B,T]，semantic_feature就是特征
+                x = x.unsqueeze(1) #将x变成[B,1,T]
+
+                # 通过生成器：
+                    # x_hat：生成器重建/生成的语音  [B, 1, T]
+                    # loss_q：量化损失（比如 codebook commitment loss）
+                    # feature：生成器中间特征，用于蒸馏或特征匹配
                 x_hat, loss_q, feature = self.generator(x)
 
                 # ------------------ Discriminators ------------------
+                # 将所有判别器的梯度清零（set_to_none=True 有助于节省显存和加速）
                 self.optim_d.zero_grad(set_to_none=True)
+                # 让每个判别器分别对真实样本 x 和 生成样本 x_hat 做判别
                 discriminator_outputs = [disc(x, x_hat.detach()) for disc in self.discriminators.values()]
+                # 将所有判别器的 loss 求和，得到总的判别器损失
                 loss_disc_all = sum(discriminator_loss(*o[:2]) for o in discriminator_outputs)
 
                 self.accelerator.backward(loss_disc_all) #判别器反向传播
@@ -379,7 +387,6 @@ class SpeechTokenizerTrainer(nn.Module):
                     + loss_recon * self.recon_loss_lambda
                     + self.distill_loss_lambda * loss_distill
                 )
-
                 self.accelerator.backward(loss_generator_all)
                 if self.accelerator.sync_gradients:
                     self.optim_g.step()
