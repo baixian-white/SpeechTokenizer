@@ -15,6 +15,7 @@ class SLSTM(nn.Module):
     Expects input as convolutional layout.
     """
     def __init__(self, dimension: int, num_layers: int = 2, skip: bool = True, bidirectional: bool=False):
+        #dimension = 1024,num_layers = 2,bidirectional  = true skip  = true
         super().__init__()
         self.bidirectional = bidirectional
         self.skip = skip
