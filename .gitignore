@@ -48,6 +48,10 @@ example_output.wav
 images/
 demo/output/
 samples/
+<<<<<<< HEAD
+=======
+demo/
+>>>>>>> 81d3ce3 (uopdate)
 
 # ===========================
 # 模型文件（模型体积大，不要入库）
@@ -111,6 +115,7 @@ quantization.zip
 
 # wav_from_parquet 中的缓存
 wav_from_parquet/.cache/
+<<<<<<< HEAD
 
 images/
 
@@ -118,3 +123,5 @@ images/
 Log_*/
 log*/
 data/
+=======
+>>>>>>> 81d3ce3 (uopdate)
