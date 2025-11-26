@@ -96,25 +96,24 @@ class EuclideanCodebook(nn.Module):
         super().__init__()
         self.decay = decay
         init_fn: tp.Union[tp.Callable[..., torch.Tensor], tp.Any] = uniform_init if not kmeans_init else torch.zeros 
-        #这个实际就是个条件函数，如果kmeans_init == False，采用 uniform_init（随机初始化码本向量），如果用kmeans_init == True
-        #那么暂时用 torch.zeros 创建一个占位张量，稍后会用 K-Means 结果替换
-        embed = init_fn(codebook_size, dim)              # 初始码本 K×D
+        #这个实际就是个条件函数，如果kmeans_init == False，采用 uniform_init（随机初始化码本向量），如果用kmeans_init == True，那么就用k-means初始化码本向量,此时会用0初始化码本向量，充当占位，后续会用j 会用kmeans算法来初始化
+        embed = init_fn(codebook_size, dim)              # 初始码本 K×D codebook_size = 1024 dim = 256
 
-        self.codebook_size = codebook_size
-        self.kmeans_iters = kmeans_iters
-        self.epsilon = epsilon
-        self.threshold_ema_dead_code = threshold_ema_dead_code
+        self.codebook_size = codebook_size #1024
+        self.kmeans_iters = kmeans_iters #10
+        self.epsilon = epsilon #1e-5
+        self.threshold_ema_dead_code = threshold_ema_dead_code #2
 
         # 维护若干缓冲区（buffer）：是否已初始化、簇大小（用于 EMA 统计）、码本、EMA 版码本
-        self.register_buffer("inited", torch.Tensor([not kmeans_init]))
+        self.register_buffer("inited", torch.Tensor([not kmeans_init])) #keans_init == False ，所以not kmeans_init = true 
         self.register_buffer("cluster_size", torch.zeros(codebook_size))
         self.register_buffer("embed", embed)             # 实际使用的码本向量
         self.register_buffer("embed_avg", embed.clone()) # EMA 平均的码本向量
 
     @torch.jit.ignore
     def init_embed_(self, data):
-        """在第一批数据到来时做 k-means 初始化（仅 when 未初始化且 kmeans_init=True）。"""
-        if self.inited:
+        """在第一批数据到来时做 k-means 初始化（仅未初始化且 kmeans_init=True）。"""
+        if self.inited: #实际上inited = true
             return
         embed, cluster_size = kmeans(data, self.codebook_size, self.kmeans_iters)
         self.embed.data.copy_(embed)
@@ -146,18 +145,21 @@ class EuclideanCodebook(nn.Module):
 
     def preprocess(self, x):
         """把输入 x 的最后一维视为 D，把其余维度展平为 N： (..., D) → (N, D)。"""
-        x = rearrange(x, "... d -> (...) d")
+        #x的形状是6，1024，150，变为6*1024，150
+        x = rearrange(x, "... d -> (...) d") 
         return x
 
     def quantize(self, x):
         """基于欧氏距离的最近邻查找（x ∈ R[N, D]，返回最近码本索引 ∈ R[N]）。"""
-        embed = self.embed.t()  # D × K
+        #初始化的时候，embed = 0(1024*256)
+        embed = self.embed.t()  # 将embed转置 ,原本是1024*256，变为256*1024
         # dist = -||x - e||^2；用展开公式避免显式构造 N×K×D 的大张量
         dist = -(
             x.pow(2).sum(1, keepdim=True)
             - 2 * x @ embed
             + embed.pow(2).sum(0, keepdim=True)
-        )  # 形状 N × K
+        )  
+        #计算每个样本向量到所有码本向量的距离# 形状 N × K
         embed_ind = dist.max(dim=-1).indices  # N
         return embed_ind
 
@@ -188,7 +190,7 @@ class EuclideanCodebook(nn.Module):
         shape, dtype = x.shape, x.dtype
         x = self.preprocess(x)                # (N, D)
 
-        self.init_embed_(x)                   # 若需要，做 k-means 初始化
+        self.init_embed_(x)                   # 若需要，做 k-means 初始化,但实际并没有进行k-means初始化,而是直接生成的1024*256的一个随机数矩阵
 
         embed_ind = self.quantize(x)          # 最近邻索引 (N,)
         embed_onehot = F.one_hot(embed_ind, self.codebook_size).type(dtype)  # (N, K)
@@ -315,7 +317,7 @@ class ResidualVectorQuantization(nn.Module):
         )
 
     def forward(self, x, n_q: tp.Optional[int] = None, layers: tp.Optional[list] = None):
-        """对输入 x 执行前 n_q 层 RVQ 量化。
+        """对输入 x 执行前 n_q 层 RVQ 量化。,本质上
         参数：
           x: (B, D, N)
           n_q: 使用的层数（默认用完）
