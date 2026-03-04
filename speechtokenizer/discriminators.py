@@ -132,7 +132,7 @@ class DiscriminatorS(torch.nn.Module):
     """
     def __init__(self, use_spectral_norm=False):
         super(DiscriminatorS, self).__init__()
-        norm_f = weight_norm if not use_spectral_norm else spectral_norm
+        norm_f = weight_norm if not use_spectral_norm else spectral_norm #谱归一化
         self.convs = nn.ModuleList([
             norm_f(Conv1d(1, 128, 15, 1, padding=7)),  # 初始感受野较小
             norm_f(Conv1d(128, 128, 41, 2, groups=4, padding=20)),
@@ -157,7 +157,7 @@ class DiscriminatorS(torch.nn.Module):
 
 
 # =====================================================
-# 四、多尺度判别器 MultiScaleDiscriminator
+# 四、多尺度判别器 z
 # =====================================================
 class MultiScaleDiscriminator(torch.nn.Module):
     """
@@ -174,8 +174,8 @@ class MultiScaleDiscriminator(torch.nn.Module):
             DiscriminatorS(),
         ])
         self.meanpools = nn.ModuleList([
-            AvgPool1d(4, 2, padding=2),
-            AvgPool1d(4, 2, padding=2)
+            AvgPool1d(4, 2, padding=2), #kernel = 4(每4个点取平均), stride=2,padding=2
+            AvgPool1d(4, 2, padding=2)  
         ])
 
     def forward(self, y, y_hat):
@@ -197,6 +197,7 @@ class MultiScaleDiscriminator(torch.nn.Module):
 # =====================================================
 # 五、STFT 频谱判别器 DiscriminatorSTFT
 # =====================================================
+#给 2D 卷积算“对称 padding”，让输出尺寸在对应维度上尽量和输入相同（或受 stride 控制，而不是因为 kernel 大小乱掉）
 def get_2d_padding(kernel_size: tp.Tuple[int, int], dilation: tp.Tuple[int, int] = (1, 1)):
     """计算 2D 卷积的 padding，使输出尺寸匹配输入"""
     return (((kernel_size[0] - 1) * dilation[0]) // 2, ((kernel_size[1] - 1) * dilation[1]) // 2)
@@ -228,15 +229,16 @@ class DiscriminatorSTFT(nn.Module):
         self.normalized = normalized
         self.activation = getattr(torch.nn, activation)(**activation_params)
 
-        # 生成 STFT 变换器
+        # 生成 STFT 变换器 短时傅里叶变化
         self.spec_transform = torchaudio.transforms.Spectrogram(
             n_fft=self.n_fft, hop_length=self.hop_length, win_length=self.win_length,
             window_fn=torch.hann_window, normalized=self.normalized,
             center=False, pad_mode=None, power=None  # 返回复数谱
         )
+        #n_fft: 短时傅里叶变换的窗口大小(), hop_length: 每次移动的步长, win_length: 实际用于计算傅里叶变换的窗口大小   window_fn: 窗口函数     center: 是否将信号中心移到窗口中心   pad_mode: 填充模式   power: 返回复数谱的幂次
 
         # 通道数为实部 + 虚部
-        spec_channels = 2 * in_channels
+        spec_channels = 2 * in_channels  #in_channels默认是1，是单通道音频，经过傅里叶变换之后，会变成复数频谱，所以spec_channels=2
         self.convs = nn.ModuleList()
 
         # 第一层卷积
@@ -276,7 +278,7 @@ class DiscriminatorSTFT(nn.Module):
         # 计算复数 STFT 频谱
         z = self.spec_transform(x)           # [B, 1, Freq, Time] (复数)
         z = torch.cat([z.real, z.imag], 1)   # 拼接实部和虚部 → [B, 2, Freq, Time]
-        z = rearrange(z, 'b c w t -> b c t w')  # 交换维度，方便时序卷积
+        z = rearrange(z, 'b c w t -> b c t w')  # 交换维度，方便时序卷积->[]B, 2, Time, Freq]
 
         # 卷积提取特征
         for layer in self.convs:

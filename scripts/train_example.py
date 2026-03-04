@@ -26,7 +26,7 @@ if __name__ == '__main__':
         'mpd': MultiPeriodDiscriminator(),
         'msd': MultiScaleDiscriminator(),
         'mstftd': MultiScaleSTFTDiscriminator(32),
-
+    }
 
 
     # ========= ⭐ 关键新增：透传 Accelerate 的关键参数 =========

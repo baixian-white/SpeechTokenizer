@@ -48,28 +48,31 @@ def sample_vectors(samples, num: int):
 def kmeans(samples, num_clusters: int, num_iters: int = 10):
     """简单的 k-means 聚类，用于码本向量初始化（kmeans_init=True 时）。"""
     dim, dtype = samples.shape[-1], samples.dtype
+    #从 samples（N × D）中随机采样 num 个向量，作为初始化用。
     means = sample_vectors(samples, num_clusters)
-
     for _ in range(num_iters):
         # 计算每个样本到每个中心的负平方距离（越大越近）
         diffs = rearrange(samples, "n d -> n () d") - rearrange(means, "c d -> () c d")
-        dists = -(diffs ** 2).sum(dim=-1)
+        # samples: [B*150, 1024]->变成：[B*150,1， 1024]
+        #means由于means: [1024, 1024] ->变成：[1,1024,1024],两者都会广播到[B*150,1024,1024]相减
+        #所以diffs: [B*150,1024,1024]
+        dists = -(diffs ** 2).sum(dim=-1) # 对diff每一个元素先进行平方，然后对最后一维特征维求和，得到每个样本到每个中心的负平方距离
+        #dists: [B*150, 1024]，每个样本到每个中心的负平方距离
 
         # 分配簇
-        buckets = dists.max(dim=-1).indices          # 最近中心的索引
-        bins = torch.bincount(buckets, minlength=num_clusters)
-        zero_mask = bins == 0                        # 处理空簇
-        bins_min_clamped = bins.masked_fill(zero_mask, 1)
+        buckets = dists.max(dim=-1).indices          # buskets: [B*150,]，每个样本对应的最近中心的索引
+        bins = torch.bincount(buckets, minlength=num_clusters) #统计每个簇里有多少样本 bins: [1024,]
+        zero_mask = bins == 0                        # 处理空簇，如果 bins[c] == 0，说明这个簇目前没人，zero_mask[c] = True,zero_mask: [1024,]
+        bins_min_clamped = bins.masked_fill(zero_mask, 1) #把那些“空簇”的计数强行改成 1,注意bins_min_clamped是由bins生成的一个新的张量，bins_min_clamped[c] 1024
 
         # 计算新中心（均值）
-        new_means = buckets.new_zeros(num_clusters, dim, dtype=dtype)
-        new_means.scatter_add_(0, repeat(buckets, "n -> n d", d=dim), samples)
-        new_means = new_means / bins_min_clamped[..., None]
+        new_means = buckets.new_zeros(num_clusters, dim, dtype=dtype) #创建一个全 0 张量 new_means，形状 [num_cluster, dim] = 1024×1024,虽然用的是buckets
+        #但是并没有用到
+        new_means.scatter_add_(0, repeat(buckets, "n -> n d", d=dim), samples)  #实际上可以理解为将旧簇的样本累加，添加到新的簇的对应位置
+        new_means = new_means / bins_min_clamped[..., None] #之所以前面要将空簇改为1，就是为了避免这里除0，每个簇对应的样本在上一行已经累加了，然后这里除以簇中的样本数，就是每个簇的均值向量，这个均值向量就是新簇
+        means = torch.where(zero_mask[..., None], means, new_means)# 空簇保持原中心不变
 
-        # 空簇保持原中心不变
-        means = torch.where(zero_mask[..., None], means, new_means)
-
-    return means, bins
+    return means, bins #means: 聚类中心  bins: 每个簇的样本数，means的shape = [1024, 1024]  bins的shape = [1024,] 
 
 
 class EuclideanCodebook(nn.Module):
@@ -85,10 +88,10 @@ class EuclideanCodebook(nn.Module):
     """
     def __init__(
         self,
-        dim: int, #码本向量的维度
-        codebook_size: int, #码本向量的数量
-        kmeans_init: int = False,     # 可为 bool；此处保留原签名，是否用kmeans来初始化码本
-        kmeans_iters: int = 10,# K-Means 初始化迭代次数
+        dim: int, #特征维度 1024
+        codebook_size: int, #码本向量的数量 1024
+        kmeans_init: int = False,     # 可为 bool；此处保留原签名，是否用kmeans来初始化码本,注意，这里的false实际会被覆盖掉
+        kmeans_iters: int = 10,# K-Means 初始化迭代次数,传参过来是50次
         decay: float = 0.99,#EMA 衰减系数；越接近 1，更新越平滑（训练中用于码本向量的滑动更新）
         epsilon: float = 1e-5, #数值稳定项（例如拉普拉斯平滑时防止除零）
         threshold_ema_dead_code: int = 2, #“死码”阈值。某个码本向量长期未被选择（EMA 统计小于该阈值），会被当前 batch 的样本替换掉。
@@ -96,24 +99,24 @@ class EuclideanCodebook(nn.Module):
         super().__init__()
         self.decay = decay
         init_fn: tp.Union[tp.Callable[..., torch.Tensor], tp.Any] = uniform_init if not kmeans_init else torch.zeros 
-        #这个实际就是个条件函数，如果kmeans_init == False，采用 uniform_init（随机初始化码本向量），如果用kmeans_init == True，那么就用k-means初始化码本向量,此时会用0初始化码本向量，充当占位，后续会用j 会用kmeans算法来初始化
-        embed = init_fn(codebook_size, dim)              # 初始码本 K×D codebook_size = 1024 dim = 256
+        #这个实际就是个条件函数，如果kmeans_init == False，采用 uniform_init（随机初始化码本向量），如果用kmeans_init == True，那么就用k-means初始化码本向量,此时会用0初始化码本向量，充当占位，后续会用kmeans算法来初始化
+        embed = init_fn(codebook_size, dim)              # 初始码本 K×D codebook_size = 1024 dim = 1024
 
         self.codebook_size = codebook_size #1024
-        self.kmeans_iters = kmeans_iters #10
+        self.kmeans_iters = kmeans_iters #50
         self.epsilon = epsilon #1e-5
         self.threshold_ema_dead_code = threshold_ema_dead_code #2
 
         # 维护若干缓冲区（buffer）：是否已初始化、簇大小（用于 EMA 统计）、码本、EMA 版码本
-        self.register_buffer("inited", torch.Tensor([not kmeans_init])) #keans_init == False ，所以not kmeans_init = true 
-        self.register_buffer("cluster_size", torch.zeros(codebook_size))
+        self.register_buffer("inited", torch.Tensor([not kmeans_init])) #keans_init == ture ，所以not kmeans_init = flase，所以init = false
         self.register_buffer("embed", embed)             # 实际使用的码本向量
         self.register_buffer("embed_avg", embed.clone()) # EMA 平均的码本向量
+        self.register_buffer("cluster_size", torch.zeros(codebook_size)) # 1024
 
     @torch.jit.ignore
     def init_embed_(self, data):
-        """在第一批数据到来时做 k-means 初始化（仅未初始化且 kmeans_init=True）。"""
-        if self.inited: #实际上inited = true
+        """在第一批数据到来时做 k-means 初始化（仅未初始化且 kmeans_init=false）。"""
+        if self.inited: #实际上inited = false
             return
         embed, cluster_size = kmeans(data, self.codebook_size, self.kmeans_iters)
         self.embed.data.copy_(embed)
@@ -134,7 +137,7 @@ class EuclideanCodebook(nn.Module):
         """剔除/替换“死码”，阈值由 threshold_ema_dead_code 控制。"""
         if self.threshold_ema_dead_code == 0:
             return
-
+        #threshold_ema_dead_code == 2
         expired_codes = self.cluster_size < self.threshold_ema_dead_code
         if not torch.any(expired_codes):
             return
@@ -152,7 +155,7 @@ class EuclideanCodebook(nn.Module):
     def quantize(self, x):
         """基于欧氏距离的最近邻查找（x ∈ R[N, D]，返回最近码本索引 ∈ R[N]）。"""
         #初始化的时候，embed = 0(1024*256)
-        embed = self.embed.t()  # 将embed转置 ,原本是1024*256，变为256*1024
+        embed = self.embed.t()  # 将embed转置 
         # dist = -||x - e||^2；用展开公式避免显式构造 N×K×D 的大张量
         dist = -(
             x.pow(2).sum(1, keepdim=True)
@@ -188,28 +191,36 @@ class EuclideanCodebook(nn.Module):
     def forward(self, x):
         """量化前向：返回量化向量和索引；训练时做 EMA 更新与死码处理。"""
         shape, dtype = x.shape, x.dtype
-        x = self.preprocess(x)                # (N, D)
+        x = self.preprocess(x)                # 展平（B,T,C）-> (B*T, C)
+        self.init_embed_(x)                   # 初始化码本向量
 
-        self.init_embed_(x)                   # 若需要，做 k-means 初始化,但实际并没有进行k-means初始化,而是直接生成的1024*256的一个随机数矩阵
-
-        embed_ind = self.quantize(x)          # 最近邻索引 (N,)
-        embed_onehot = F.one_hot(embed_ind, self.codebook_size).type(dtype)  # (N, K)
-        embed_ind = self.postprocess_emb(embed_ind, shape)                   # 还原回输入 shape 的前几维
+        embed_ind = self.quantize(x)          # 最近邻索引 (N,),而N = B*T
+        embed_onehot = F.one_hot(embed_ind, self.codebook_size).type(dtype)  # F.one_hot.shape = (N, K),    N = B*T, K = 1024
+        embed_ind = self.postprocess_emb(embed_ind, shape)# shape = (B,C,T),所以但是原本的embed_ind是(N,),重新reshape为（B,C）
         quantize = self.dequantize(embed_ind) # 量化向量 (..., D)
 
         if self.training:
+            #每个batch才会
             # 训练时：先做死码替换，再做 EMA 更新
-            self.expire_codes_(x)                                     # 处理死码
+            self.expire_codes_(x)# 处理死码
+
+            #cluster_size 记录的是每个码本向量在所有前批次中的选择频率。这个值通常是一个逐渐增加或保持不变的值，表示 历史的选择频率
+            #embed_onehot.sum(0) 计算的是 当前批次 中每个码本向量的选择频率。它是一个新的统计值，表示当前批次中每个码本向量的选择次数。
+            #这两个部分相加，表示的是 历史频率 和 当前频率 的加权平均，目的是 平滑地更新码本向量的选择频率。历史频率提供了全局视角，确保长期未被选择的码本向量不会突然被遗忘；当前频率提供了最新的选择信息，让码本向量能够快速适应当前的数据分布
             ema_inplace(self.cluster_size, embed_onehot.sum(0), self.decay)
 
-            embed_sum = x.t() @ embed_onehot                          # D×K
-            ema_inplace(self.embed_avg, embed_sum.t(), self.decay)    # K×D
- 
+            embed_sum = x.t() @ embed_onehot #x (B*T,C),转置 x(c,B*t);embed_onehot(b*t,K) ;相乘得到 c×K，每一列 k 表示 所有样本中，第 k 个码本向量在当前批次中的选择频率的加权和
+        
+            #self.embed_avg=decay×self.embed_avg+(1−decay)×embed_sum.t()
+            ema_inplace(self.embed_avg, embed_sum.t(), self.decay)    # K×D，
+            cluster_size = (
+                laplace_smoothing(self.cluster_size, self.codebook_size, self.epsilon) #拉普拉斯平滑
+                * self.cluster_size.sum()
+            )
             embed_normalized = self.embed_avg / cluster_size.unsqueeze(1)  # K×D
             self.embed.data.copy_(embed_normalized)
 
         return quantize, embed_ind
-
 
 class VectorQuantization(nn.Module):
     """单层向量量化器（VQ）。
@@ -233,16 +244,18 @@ class VectorQuantization(nn.Module):
         commitment_weight: float = 1.,
     ):
         super().__init__()
-        _codebook_dim: int = default(codebook_dim, dim)
+        _codebook_dim: int = default(codebook_dim, dim) #如果码本的维度为none，那么就会将码本的维度(_codebook_dim)设置为dim
 
         # 若 codebook_dim != dim，则在进入/离开码本前后各做一次线性映射
-        requires_projection = _codebook_dim != dim
+        # 在本项目中codebook_dim  = 1024, dim = 1024
+        requires_projection = _codebook_dim != dim # requires_projection = False
         self.project_in  = (nn.Linear(dim, _codebook_dim) if requires_projection else nn.Identity())
         self.project_out = (nn.Linear(_codebook_dim, dim) if requires_projection else nn.Identity())
 
         self.epsilon = epsilon
         self.commitment_weight = commitment_weight
 
+#初始化_codebook,dim = 1024，codebook_size = 1024,kmeans_init = True,kmeans_iters = 50,decay = 0.99,epsilon = 1e-5,threshold_ema_dead_code = 2
         self._codebook = EuclideanCodebook(
             dim=_codebook_dim, codebook_size=codebook_size,
             kmeans_init=kmeans_init, kmeans_iters=kmeans_iters,
@@ -273,8 +286,8 @@ class VectorQuantization(nn.Module):
     def forward(self, x):
         """量化前向：返回 (quantize, embed_ind, loss)。"""
         device = x.device
-        x = rearrange(x, "b d n -> b n d")   # (B,D,N)->(B,N,D)
-        x = self.project_in(x) #  (B, N, D) → (B, N, D')相当于把d在线性映射为D',这个D'是码本的维度
+        x = rearrange(x, "b d n -> b n d")   # (B,C,T)->(B,T,C)
+        x = self.project_in(x) #  (B, T, C) → (B, T, C')相当于把C在线性映射为C',这个C'是码本的维度
 
         quantize, embed_ind = self._codebook(x)  # quantize: (B,N,D'), embed_ind: (B,N)
 
@@ -282,9 +295,9 @@ class VectorQuantization(nn.Module):
             # Straight-Through Estimator: 前向用 quantize，反向对 x 传梯度
             quantize = x + (quantize - x).detach()
 
-        loss = torch.tensor([0.0], device=device, requires_grad=self.training)
+        loss = torch.tensor([0.0], device=device, requires_grad=self.training) #初始化一个loss张量
 
-        if self.training and self.commitment_weight > 0:
+        if self.training and self.commitment_weight > 0:#commitment_weight = 1
             # 承诺损失：鼓励 x 接近选中的码本向量（避免编码器输出频繁跳码）
             commit_loss = F.mse_loss(quantize.detach(), x)
             loss = loss + commit_loss * self.commitment_weight
@@ -334,6 +347,8 @@ class ResidualVectorQuantization(nn.Module):
         all_losses = []
         all_indices = []
         out_quantized = []
+        #out_quantized 表示根据用户定义的layers参数，来存储对应层的量化向量结果
+        #quantized_out 表示所有层量化向量的和
 
         n_q = n_q or len(self.layers)
 
@@ -344,6 +359,7 @@ class ResidualVectorQuantization(nn.Module):
 
             all_indices.append(indices)
             all_losses.append(loss)
+            #它的作用是“如果用户要求返回某几层的量化结果，那么把当前层的量化向量收集起来”
             if layers and i in layers:
                 out_quantized.append(quantized)
 

@@ -52,16 +52,16 @@ class SpeechTokenizer(nn.Module):
         if config.get('dimension') != config.get('semantic_dimension'):
             self.transform = nn.Linear(
                 config.get('dimension'), 
-                config.get('semantic_dimension')
+                config.get('semantic_dimension') #768维
             )
         else:
             self.transform = nn.Identity()                   # 若相同，则不变换
 
         # 4️⃣ 残差向量量化器（核心 Tokenizer）
         self.quantizer = ResidualVectorQuantizer(
-            dimension=config.get('dimension'),               # 输入特征维度
+            dimension=config.get('dimension'),               # 输入特征维度1024
             n_q=config.get('n_q'),                           # RVQ 层数
-            bins=config.get('codebook_size')                 # 每层码本大小
+            bins=config.get('codebook_size')                 # 每层码本大小1024
         )
 
         # 5️⃣ 定义语音解码器（SEANetDecoder）
@@ -126,7 +126,7 @@ class SpeechTokenizer(nn.Module):
         quantized, codes, commit_loss, quantized_list = self.quantizer(
             e, n_q=n_q, layers=layers
         )                                                   # ② RVQ 量化
-        feature = rearrange(quantized_list[0], 'b d t -> b t d') # ③ 取首层特征并转为 (B, T', D)
+        feature = rearrange(quantized_list[0], 'b d t -> b t d') # ③ 取首层特征并转为 (B, T', D) 所以在前向传播的时候，
         feature = self.transform(feature)                   # ④ 若有 Linear，映射到语义维度
         o = self.decoder(quantized)                         # ⑤ 解码器重建波形
         return o, commit_loss, feature

@@ -159,6 +159,7 @@ class audioDataset(Dataset):
         seg_T = self.segment_size
         # zhuyan：特征帧数是根据预训练模型来的，feature来源于HuBERT Base,他的stride是20ms,在16Khz下，那么20ms一共320个采样点，本模型一个样本audio是3s,48000采样点，所以48000/320 = 150
         # 换而言之就是48000个采样点
+        # downsample_rate 指明了是320
         seg_F = seg_T // self.downsample_rate  # 例如 48000/320=150帧
 
         # 训练 vs 验证 的取段策略
@@ -177,18 +178,18 @@ class audioDataset(Dataset):
                 # 将 audio_start 映射到特征起点（向下取整）
                 feat_start = int(audio_start // self.downsample_rate)
                 # 特征索引上限兜底（避免越界）
-                max_feat_start = max(0, feature.size(0) - seg_F)
+                max_feat_start = max(0, feature.size(0) - seg_F) 
                 feat_start = min(feat_start, max_feat_start)
                 feat_end = feat_start + seg_F
                 feat_seg = feature[feat_start:feat_end]
         else:
-            # 音频不够长：训练时右侧 pad 到 seg_T；验证集不 pad 音频（但为了与特征对齐通常也建议 pad）
+            # 训练时，右侧填充音频到 seg_T 长度
             if not self.valid:
                 audio_seg = torch.nn.functional.pad(
                     audio, (0, seg_T - audio.size(-1)), 'constant'
                 )
             else:
-                # 验证也统一右侧 pad，保持长度一致，便于 val 时的 batch 处理
+                # 验证时统一右侧填充，确保与训练集长度一致，便于 batch 处理
                 audio_seg = torch.nn.functional.pad(
                     audio, (0, max(0, seg_T - audio.size(-1))), 'constant'
                 )

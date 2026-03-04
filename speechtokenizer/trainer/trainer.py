@@ -63,7 +63,7 @@ class SpeechTokenizerTrainer(nn.Module):
     def __init__(
         self,
         generator: SpeechTokenizer,
-        discriminators: dict,
+        discriminators: dict, #这里的discriminators是一个字典，包含多个判别器实例
         cfg,
         accelerate_kwargs: dict = dict(),
     ):
@@ -98,10 +98,10 @@ class SpeechTokenizerTrainer(nn.Module):
         )
 
         if self.is_main:
-            self.writer = tensorboard.SummaryWriter(os.path.join(results_folder, "logs"))
+            self.writer = tensorboard.SummaryWriter(os.path.join(results_folder, "logs")) #tensorboard保存在results_folder/logs，results_folder在config里面的配置是"Log/spt_base",
 
         self.generator = generator
-        self.discriminators = discriminators
+        self.discriminators = discriminators #实例化self.discriminators
 
         self.register_buffer("steps", torch.Tensor([0]))
 
@@ -192,11 +192,13 @@ class SpeechTokenizerTrainer(nn.Module):
         self.optim_g = get_optimizer(
             generator.parameters(), lr=cfg.get("learning_rate"), wd=cfg.get("wd"), betas=cfg.get("betas")
         )
+        #所有判别器共享一个优化器
         self.optim_d = get_optimizer(
-            itertools.chain(*[i.parameters() for i in self.discriminators.values()]),
+            itertools.chain(*[i.parameters() for i in self.discriminators.values()]), #将判别器所有参数取出，构成chain
             lr=cfg.get("learning_rate"),
-            wd=cfg.get("wd"),
-            betas=cfg.get("betas"),
+            wd=cfg.get("wd"),#weight decay（权重衰减） = wd = 0
+
+            betas=cfg.get("betas"),#betas： Adam 优化器的两个动量参数（0.9, 0.999）
         )
 
         # scheduler —— 用“参数更新次数”而不是 iteration 数
@@ -226,7 +228,7 @@ class SpeechTokenizerTrainer(nn.Module):
             self.dl,
             self.valid_dl
         )
-        self.discriminators = {k: self.accelerator.prepare(v) for k, v in self.discriminators.items()}
+        self.discriminators = {k: self.accelerator.prepare(v) for k, v in self.discriminators.items()} #把每个判别器（D）模型通过 Accelerator 包装，让它支持分布式/多卡/混合精度训练。
 
         hps = {
             "num_updates_total": num_updates_total,
@@ -271,7 +273,9 @@ class SpeechTokenizerTrainer(nn.Module):
         pkg = torch.load(path, map_location="cpu")
         generator.load_state_dict(pkg["generator"])
         discriminators = {k: self.accelerator.unwrap_model(v) for k, v in self.discriminators.items()}
-        map(lambda kv: kv[1].load_state_dict(pkg["discriminators"][kv[0]]), discriminators.items())
+        # map(lambda kv: kv[1].load_state_dict(pkg["discriminators"][kv[0]]), discriminators.items()) #在 Python 3，map 是 惰性的，如果你不遍历它，它不会执行！
+        for k, disc in self.discriminators.items():
+            self.accelerator.unwrap_model(disc).load_state_dict(pkg["discriminators"][k])
 
         if restore_optimizer:
             self.optim_d.load_state_dict(pkg["optim_d"])
@@ -309,7 +313,7 @@ class SpeechTokenizerTrainer(nn.Module):
         if step < self.num_warmup_steps:
             return self.initial_lr + (self.lr - self.initial_lr) * step / self.num_warmup_steps
         else:
-            return self.lr
+            return self.lrz
 
     def log(self, values: dict, step, type=None, **kwargs):
         if type == "figure":
@@ -353,7 +357,8 @@ class SpeechTokenizerTrainer(nn.Module):
                     # x_hat：生成器重建/生成的语音  [B, 1, T]
                     # loss_q：量化损失（比如 codebook commitment loss）
                     # feature：生成器中间特征，用于蒸馏或特征匹配
-                x_hat, loss_q, feature = self.generator(x)
+                x_hat, loss_q, feature = self.generator(x) #默认pytorch会自动调用self.generator.forward(x)，而generator实际是speechtokenizer,
+                # 所以这里调的是forward(),返回重建波形x_hat，承诺损失loss_q，和中间特征feature
 
                 # ------------------ Discriminators ------------------
                 # 将所有判别器的梯度清零（set_to_none=True 有助于节省显存和加速）
@@ -367,18 +372,20 @@ class SpeechTokenizerTrainer(nn.Module):
                 if self.accelerator.sync_gradients:  #判断是不是到达了累积边界
                     self.optim_d.step()#到达就更新参数
                     self.scheduler_d.step()#到达就更新学习率
-                self.optim_d.zero_grad(set_to_none=True)#更新完之后清除梯度
+                    self.optim_d.zero_grad(set_to_none=True)#更新完之后清除梯度
 
                 # ------------------ Generator ------------------
-                self.optim_g.zero_grad(set_to_none=True)
-                discriminator_outputs = [disc(x, x_hat) for disc in self.discriminators.values()]
-                loss_recon = recon_loss(x, x_hat)
-                loss_mel = sum(
+                discriminator_outputs = [disc(x, x_hat) for disc in self.discriminators.values()] #让判别器对生成样本进行判别
+                loss_recon = recon_loss(x, x_hat)  #波形损失
+                loss_mel = sum( #梅尔损失
                     w * mel_loss(x, x_hat, **kw) for (w, kw) in zip(self.mel_loss_lambdas, self.mel_loss_kwargs_list)
                 )
-                loss_feature = sum(feature_loss(*o[2:]) for o in discriminator_outputs)
-                loss_adversarial = sum(adversarial_loss(o[1]) for o in discriminator_outputs)
-                loss_distill = self.distill_loss(feature, semantic_feature)
+                #判别器的特征损失
+                loss_feature = sum(feature_loss(*o[2:]) for o in discriminator_outputs)#将判别器的特征传入feature_loss,比较fmap_rs 和fmap_gs
+                #对抗损失
+                loss_adversarial = sum(adversarial_loss(o[1]) for o in discriminator_outputs)#将y_d_gs传入adversarial_loss
+                #蒸馏损失
+                loss_distill = self.distill_loss(feature, semantic_feature) #求feature和semantic_feature的余弦相似度
                 loss_generator_all = (
                     loss_feature
                     + loss_adversarial
@@ -387,8 +394,11 @@ class SpeechTokenizerTrainer(nn.Module):
                     + loss_recon * self.recon_loss_lambda
                     + self.distill_loss_lambda * loss_distill
                 )
+                    #"recon_loss_lambda": 500,
+                    # "commitment_loss_lambda": 10,
+                    # "distill_loss_lambda": 120,
                 self.accelerator.backward(loss_generator_all)
-                if self.accelerator.sync_gradients:
+                if self.accelerator.sync_gradients: #达到了累积边界
                     self.optim_g.step()
                     self.scheduler_g.step()
                     lr = self.scheduler_g.get_last_lr()[0]  # 刷新 lr 供日志/追踪
@@ -398,27 +408,27 @@ class SpeechTokenizerTrainer(nn.Module):
                 # ------------------ logging ------------------
                 if self.is_main and not (steps % self.stdout_steps):
                     with torch.inference_mode():
-                        mel_error = mel_loss(x, x_hat, **self.mel_loss_kwargs_list[0]).item()
+                        mel_error = mel_loss(x, x_hat, **self.mel_loss_kwargs_list[0]).item() #这个日志/评估用的 mel error，只用第一个尺度的 Mel 配置，没有用多尺度，不做 sum，没有乘 mel_loss_lambdas 的权重
                     self.print(
                         f"Epoch {epoch} -- Step {steps}: Gen Loss: {loss_generator_all.item():0.3f}; "
-                        f"Mel Error:{mel_error:0.3f}; Q Loss: {loss_q.item():0.3f}; "
-                        f"Distill Loss: {loss_distill.item():0.3f}; "
-                        f"Time/step: {step_time_log['time_cost'] / self.stdout_steps:0.3f}s"
+                        f"Train Mel Error:{mel_error:0.3f}; Train/Q Loss: {loss_q.item():0.3f}; "
+                        f"Train Distill Loss: {loss_distill.item():0.3f}; "
+                        f"Time step: {step_time_log['time_cost'] / self.stdout_steps:0.3f}s"
                     )
                     step_time_log = {}
 
-                if self.is_main and not (steps % self.log_steps):
+                if self.is_main and not (steps % self.log_steps): #log_steps = 100,
                     self.log(
                         {
-                            "train/discriminators loss": loss_disc_all.item(),
-                            "train/generator loss": loss_generator_all.item(),
-                            "train/feature loss": loss_feature.item(),
-                            "train/adversarial loss": loss_adversarial.item(),
-                            "train/quantizer loss": loss_q.item(),
-                            "train/mel loss": loss_mel.item(),
+                            "train/discriminators loss": loss_disc_all.item(), #判别损失
+                            "train/generator loss": loss_generator_all.item(), #生成损失
+                            "train/feature loss": loss_feature.item(),#特征损失
+                            "train/adversarial loss": loss_adversarial.item(),#对抗损失
+                            "train/quantizer loss": loss_q.item(),#承诺损失
+                            "train/mel loss": loss_mel.item(),#梅尔损失
                             "train/mel error": mel_error,
-                            "train/distillation loss": loss_distill.item(),
-                            "train/learning_rate": lr,
+                            "train/distillation loss": loss_distill.item(),#蒸馏损失
+                            "train/learning_rate": lr,#学习率
                         },
                         step=steps,
                     )
@@ -426,7 +436,7 @@ class SpeechTokenizerTrainer(nn.Module):
                 self.accelerator.wait_for_everyone()
 
                 # ------------------ validate + save ------------------
-                if self.is_main and not (steps % self.save_model_steps) and steps != 0:
+                if self.is_main and not (steps % self.save_model_steps) and steps != 0:  #"save_model_steps": 2500,
                     self.print("Validation start ...")
                     total_mel_error = 0.0
                     total_distill_loss = 0.0
@@ -434,18 +444,18 @@ class SpeechTokenizerTrainer(nn.Module):
                     self.generator.eval()
                     with torch.inference_mode():
                         for i, batch in tqdm(enumerate(self.valid_dl)):
-                            x, semantic_feature = batch
-                            x = x.unsqueeze(1)
+                            x, semantic_feature = batch # x = [B,T]
+                            x = x.unsqueeze(1) # [B,1,T]
                             x_hat, loss_q, feature = self.generator(x)
                             mel_error = mel_loss(x, x_hat, **self.mel_loss_kwargs_list[0]).item()
                             total_mel_error += mel_error
                             loss_distill = self.distill_loss(feature, semantic_feature).item()
                             total_distill_loss += loss_distill
-                            num += x.size(0)
-                            if i < self.showpiece_num:
-                                if not self.plot_gt_once:
+                            num += x.size(0) #该batch的样本数
+                            if i < self.showpiece_num: #showpiece_num = 8, 注意这里控制的是前8个batch的第一个样本
+                                if not self.plot_gt_once:  #第一次进入这个函数是plot_gt_once = False,
                                     self.log(
-                                        {f"groundtruth/x_{i}": x[0].cpu().detach()},
+                                        {f"groundtruth/x_{i}": x[0].cpu().detach()},#x[0]就是每个batch里的第一个样本
                                         type="audio",
                                         sample_rate=self.sample_rate,
                                         step=steps,
@@ -487,7 +497,7 @@ class SpeechTokenizerTrainer(nn.Module):
                 # ------------------ step + warmup ------------------
                 self.steps += 1
                 steps = int(self.steps.item())
-                if steps < self.num_warmup_steps:
+                if steps < self.num_warmup_steps: #num_warmup_steps = 0
                     lr = self.warmup(steps)
                     for param_group in self.optim_g.param_groups:
                         param_group["lr"] = lr

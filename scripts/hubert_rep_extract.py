@@ -37,7 +37,7 @@ if __name__ == '__main__':
     feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(cfg.get('semantic_model_path'))
     model = HubertModel.from_pretrained(cfg.get('semantic_model_path')).eval().to(device)
     # 目标层（可为具体整数层索引，也可为字符串 'avg' 表示对所有隐藏层取均值）
-    target_layer = cfg.get('semantic_model_layer')
+    target_layer = cfg.get('semantic_model_layer') #semantic_model_layer = avg
 
     # ========= 4) 构建音频文件列表 =========
     path = Path(args.audio_dir)

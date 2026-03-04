@@ -44,7 +44,7 @@ def mel_spectrogram(
 
     # --- 关键兜底，修复 float(None) 报错 ---
     if fmax is None:
-        fmax = float(sample_rate) / 2.0
+        fmax = float(sample_rate) / 2.0 #默认8000
     if fmin is None:
         fmin = 0.0
     # -------------------------------------
@@ -53,22 +53,22 @@ def mel_spectrogram(
         int(n_fft), int(num_mels), int(hop_size), int(win_size),
         float(fmin), float(fmax), bool(center), str(y.device)
     )
-    if key not in _mel_tfms:
+    if key not in _mel_tfms: #这行代码的作用是检查变量 key 是否存在于字典 _mel_tfms 中
         _mel_tfms[key] = torchaudio.transforms.MelSpectrogram(
             sample_rate=sample_rate,
-            n_fft=n_fft,
-            win_length=win_size,
-            hop_length=hop_size,
-            f_min=fmin,
-            f_max=fmax,
-            n_mels=num_mels,
-            center=center,
-            power=2.0,
-            normalized=False,
-            pad_mode="reflect",
-            norm="slaney",
-            mel_scale="htk",
-        ).to(y.device)
+            n_fft=n_fft, #频谱分辨率  1024
+            win_length=win_size, #窗口大小 10224
+            hop_length=hop_size, #帧移 240
+            f_min=fmin, # mel 谱的频率最小值 0
+            f_max=fmax, # mel 谱的频率最大值 8000
+            n_mels=num_mels, # mel 谱的频率总数  80
+            center=center, # 是否在每一帧的中心点对齐窗口
+            power=2.0, # 计算功率谱（幅度的平方）
+            normalized=False, # 是否归一化
+            pad_mode="reflect", #填充模式
+            norm="slaney", # 归一化方法
+            mel_scale="htk", # mel刻度的计算方法
+        ).to(y.device) #将这个 Mel-spectrogram 变换移动到与输入音频 y 相同的设备上（可能是 CPU 或 GPU），以确保在同一个设备上进行计算。
 
     mel = _mel_tfms[key](y)           # [B, num_mels, T_frames]
     mel = mel.clamp_(min=1e-9).log_() # 动态范围压缩
@@ -92,15 +92,15 @@ def recon_loss(x, x_hat):
     L1 波形重建损失
     x, x_hat: [B, 1, T]
     """
-    length = min(x.size(-1), x_hat.size(-1))
-    return torch.nn.functional.l1_loss(x[:, :, :length], x_hat[:, :, :length])
+    length = min(x.size(-1), x_hat.size(-1)) #找到x和x_hat中较短的一个
+    return torch.nn.functional.l1_loss(x[:, :, :length], x_hat[:, :, :length]) #只在两个波形都存在的部分计算L1损失
 
 def mel_loss(x, x_hat, **kwargs):
     """
     Mel 频谱 L1 损失（融入多尺度时，用外面传入不同 n_fft/hop/win 的 kwargs）
     x, x_hat: [B, 1, T]
     """
-    x_mel = mel_spectrogram(x.squeeze(1), **kwargs)       # [B, M, Tm]
+    x_mel = mel_spectrogram(x.squeeze(1), **kwargs)      #x.squeeze(1)等价于将[B,1,T]变为[B,T] 计算MEL频谱
     x_hat_mel = mel_spectrogram(x_hat.squeeze(1), **kwargs)
     length = min(x_mel.size(2), x_hat_mel.size(2))
     return torch.nn.functional.l1_loss(x_mel[:, :, :length], x_hat_mel[:, :, :length])
@@ -130,7 +130,7 @@ def adversarial_loss(disc_outputs):
     """LSGAN 生成器对抗损失"""
     loss = 0
     for dg in disc_outputs:
-        loss += torch.mean((1 - dg) ** 2)
+        loss += torch.mean((1 - dg) ** 2)  #(1-d(x_hat))*2
     return loss
 
 # =========================
@@ -172,9 +172,9 @@ def d_axis_distill_loss(feature, target_feature):
     t = t[:, :T, :]
 
     # 在特征维 D 上做余弦相似度 -> [B, T]
-    cos = torch.nn.functional.cosine_similarity(f, t, dim=-1)
+    cos = torch.nn.functional.cosine_similarity(f, t, dim=-1) #feature和sematic_feature在D维度上的余弦相似度,所以cos = [B,T]
     # 二值 Logistic 形式的相似度拉近（稳定且对齐论文习惯）
-    distill_loss = -torch.log(torch.sigmoid(cos)).mean()
+    distill_loss = -torch.log(torch.sigmoid(cos)).mean() #cos 越大（越相似）→ sigmoid(cos) 越接近 1 → loss 越小
     return distill_loss
 
 def t_axis_distill_loss(feature, target_feature, lambda_sim=1.0):
