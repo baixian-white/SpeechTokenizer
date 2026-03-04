@@ -1,41 +1,45 @@
 # ===========================
-# Python 基础忽略
+# Python
 # ===========================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.so
+.cache/
+*.cache
 
+# ===========================
 # Virtual env
+# ===========================
 .env/
 .venv/
 env/
 venv/
 
+# ===========================
 # Build
+# ===========================
 build/
 dist/
 *.egg-info/
 *.egg
 
 # ===========================
-# VSCode
+# IDE
 # ===========================
 .vscode/
-!.vscode/launch.json   # 保留 launch 配置（你项目里确实有）
+!.vscode/launch.json
 
 # ===========================
 # Jupyter
 # ===========================
 .ipynb_checkpoints/
 *.ipynb_checkpoints
-
-# 临时 Notebook 文件
 Untitled*.ipynb
 
 # ===========================
-# 数据 & 输出文件
+# Audio / temp outputs
 # ===========================
 *.wav
 *.mp3
@@ -43,18 +47,14 @@ Untitled*.ipynb
 *.m4a
 *.ogg
 *.parquet
-
 example_output.wav
-images/
 demo/output/
-samples/
-<<<<<<< HEAD
-=======
 demo/
->>>>>>> 81d3ce3 (uopdate)
+images/
+samples/
 
 # ===========================
-# 模型文件（模型体积大，不要入库）
+# Model artifacts
 # ===========================
 *.pt
 *.pth
@@ -63,12 +63,12 @@ demo/
 *.model
 *.onnx
 
-# huggingface 缓存
+# Huggingface cache
 huggingface/
 model_hub/
 
 # ===========================
-# 日志 & 缓存
+# Logs
 # ===========================
 *.log
 logs/
@@ -76,52 +76,41 @@ wandb/
 tensorboard/
 tb_logs/
 
-# Python cache
-.cache/
-*.cache
-__pycache__/
-
 # ===========================
-# 压缩包（你目录有很多 ZIP / RAR）
+# Archives / datasets
 # ===========================
 *.zip
 *.rar
 *.tar
 *.tar.gz
 *.7z
+train-clean-100.tar.gz
+data/
 
 # ===========================
-# Notebook 中产生的临时文件
+# Training outputs / history
+# ===========================
+Log/
+runs/
+旧结果/
+废弃代码/
+架构搜索结果/
+Log_*/
+log*/
+
+# ===========================
+# NAS outputs
+# ===========================
+seanet_nas_micro_v1.db
+nas_records.csv
+train_subset_nas.txt
+nas/artifacts/
+
+# ===========================
+# Editor temp files
 # ===========================
 *.checkpoint
-*.ckpt
 *.tmp
-
-# ===========================
-# Shell 脚本输出
-# ===========================
 *.sh~
 *.swp
 *.swo
-
-# ===========================
-# 项目特定忽略
-# ===========================
-# SpeechTokenizer 训练输出
-trainer/
-trainer.zip
-quantization/
-quantization.zip
-
-# wav_from_parquet 中的缓存
-wav_from_parquet/.cache/
-<<<<<<< HEAD
-
-images/
-
-
-Log_*/
-log*/
-data/
-=======
->>>>>>> 81d3ce3 (uopdate)
