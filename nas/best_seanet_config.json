@@ -1,0 +1,28 @@
+{
+    "channels": 1,
+    "dimension": 1024,
+    "n_filters": 32,
+    "lstm": 1,
+    "activation": "Snake",
+    "compress": 4,
+    "ratios": [
+        8,
+        5,
+        4,
+        2
+    ],
+    "norm": "weight_norm",
+    "causal": false,
+    "layer_ops_list": [
+        "sep_k7",
+        "dil_k9",
+        "skip",
+        "skip"
+    ],
+    "layer_se_list": [
+        false,
+        true,
+        false,
+        true
+    ]
+}
