@@ -107,6 +107,11 @@ train_subset_nas.txt
 nas/artifacts/
 
 # ===========================
+# Large external tool builds (not source; redownload per REPRODUCIBILITY.md)
+# ===========================
+tools/
+
+# ===========================
 # Editor temp files
 # ===========================
 *.checkpoint
