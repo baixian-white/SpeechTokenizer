@@ -1,0 +1,12 @@
+numpy
+torch
+torchaudio
+sounddevice
+soundfile
+scipy
+einops
+beartype
+tensorboard
+accelerate
+lion-pytorch
+huggingface-hub
