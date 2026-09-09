@@ -1,0 +1,15 @@
+{
+  "source_manifest": "data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+  "normalized_manifest": "output\\experiments\\exp1_nas_distill_run1_seed42\\artifacts\\stages\\stage2_proxy_subset.txt",
+  "sample_count": 8,
+  "samples": [
+    "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\8975\\270782\\8975-270782-0006.flac\tE:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\8975\\270782\\8975-270782-0006.hubert.npy",
+    "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\6836\\61804\\6836-61804-0015.flac\tE:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\6836\\61804\\6836-61804-0015.hubert.npy",
+    "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\27\\124992\\27-124992-0046.flac\tE:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\27\\124992\\27-124992-0046.hubert.npy",
+    "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\2092\\145706\\2092-145706-0080.flac\tE:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\2092\\145706\\2092-145706-0080.hubert.npy",
+    "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\6925\\80680\\6925-80680-0049.flac\tE:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\6925\\80680\\6925-80680-0049.hubert.npy",
+    "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\8088\\284756\\8088-284756-0007.flac\tE:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\8088\\284756\\8088-284756-0007.hubert.npy",
+    "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\3879\\173592\\3879-173592-0042.flac\tE:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\3879\\173592\\3879-173592-0042.hubert.npy",
+    "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\8108\\280359\\8108-280359-0003.flac\tE:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\8108\\280359\\8108-280359-0003.hubert.npy"
+  ]
+}

@@ -1,0 +1,9 @@
+# method=scit_base setting=L=3 sample_id=8098-278278-0035
+# GT (LibriSpeech):
+IN THE FIRST PLACE IT WOULD BE WORTH A HAIRBREADTH ESCAPE TO SEE ONE WILD I'VE ONLY SEEN BEARS IN CIRCUSES OR TRAVELING CHAINED TO ITALIANS IN THE SECOND PLACE I CAN RUN I'VE PLENTY OF MEDALS FOR SPRINTING
+
+# Whisper(original):
+In the first place it would be worth a hair's breath escape to see one wild. I've only seen bears and circuses, or traveling, chained to Italians. In the second place I can run. I have plenty of metals for sprinting.
+
+# Whisper(decoded):
+In the first place it would be worth a hairless breath escape to see one wild. I've only seen bears and circuses, or traveling, chained to Italians. In the second place I can run. There's plenty of metals for sprinting.

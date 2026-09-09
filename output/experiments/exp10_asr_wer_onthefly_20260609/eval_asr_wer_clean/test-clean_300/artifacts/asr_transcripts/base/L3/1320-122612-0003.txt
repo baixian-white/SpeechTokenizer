@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0003
+# model=base
+# L=3
+
+GT:
+HE OFTEN STOPPED TO EXAMINE THE TREES NOR DID HE CROSS A RIVULET WITHOUT ATTENTIVELY CONSIDERING THE QUANTITY THE VELOCITY AND THE COLOR OF ITS WATERS
+
+Whisper(original):
+He often stopped to examine the trees, nor did he cross a rivulet without attentively considering the quantity, the velocity, and the color of its waters.
+
+Whisper(decoded):
+He often stopped to examine the trees, nor did he cross a revivate without attentively considering the quantity, the velocity, and the color of its waters.

@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0010
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+HIS FATHER SPECULATED WILDLY FAILED AND THEN KILLED HIMSELF BECAUSE HE COULD NOT BEAR THE DISGRACE
+
+Whisper(original):
+His father speculated wildly, failed, and then killed himself because he could not bear the disgrace.
+
+Whisper(decoded):
+His father's situation wildly failed, and then told himself that as he could not be the disgrace.

@@ -1,0 +1,12 @@
+# sample_id=121-127105-0030
+# model=base
+# L=1
+
+GT:
+I DON'T ANTICIPATE
+
+Whisper(original):
+I don't anticipate.
+
+Whisper(decoded):
+I don't anticipate.

@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0013
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+IT MUST REMEMBER BE ONE OR THE OTHER
+
+Whisper(original):
+It must remember be one or the other.
+
+Whisper(decoded):
+The mask will end up being one or the other.

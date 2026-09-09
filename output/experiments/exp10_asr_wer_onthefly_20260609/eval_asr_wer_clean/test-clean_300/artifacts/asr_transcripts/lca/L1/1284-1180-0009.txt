@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0009
+# model=lca
+# L=1
+
+GT:
+THEN THEY STARTED ON AGAIN AND TWO HOURS LATER CAME IN SIGHT OF THE HOUSE OF DOCTOR PIPT
+
+Whisper(original):
+Then they started on again and two hours later came in sight of the House of Dr. Pipped.
+
+Whisper(decoded):
+Then they started on again, and two hours later came in sight of the house that Dr. Pipped.

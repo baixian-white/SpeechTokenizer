@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0079
+# model=base
+# L=1
+
+GT:
+NO MAMMA THAT ANNE BUCKLEY WOULD NEVER HAVE DONE
+
+Whisper(original):
+No mama, that Ann Buckley would never have done.
+
+Whisper(decoded):
+necessary advice or service, no, no, no. That's it. We're going to go have a great evening and tonight, we are going to have some information

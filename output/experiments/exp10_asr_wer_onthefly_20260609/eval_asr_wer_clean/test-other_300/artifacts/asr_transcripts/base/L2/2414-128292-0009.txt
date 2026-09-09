@@ -1,0 +1,12 @@
+# sample_id=2414-128292-0009
+# model=base
+# L=2
+
+GT:
+FOR WHEN ZARATHUSTRA SCRUTINISED HIM WITH HIS GLANCE HE WAS FRIGHTENED AS BY A SUDDEN APPARITION SO SLENDER SWARTHY HOLLOW AND WORN OUT DID THIS FOLLOWER APPEAR
+
+Whisper(original):
+who when their twist was scrutinized him, with his glance he was frightened as by a certain apparition. So, Slender, Swathi, Haulab and worn out did his follower appear.
+
+Whisper(decoded):
+Or when the wish-fast could deny him, it is as if he was fighting and by a certain definition. So, snender, salty, hollow, and worn out, it is for her to appear.

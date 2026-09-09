@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0021
+# model=base
+# L=1
+
+GT:
+SAID ZARATHUSTRA THOU SHOULDST ALSO SEE MINE ANIMALS MINE EAGLE AND MY SERPENT THEIR LIKE DO NOT AT PRESENT EXIST ON EARTH
+
+Whisper(original):
+Sesenatustra. Now, shouldst also see my animals, my eagle and my serpent. Their like do not at present exist on earth.
+
+Whisper(decoded):
+She is the firstva For most achievements wasistine by Madivaanging An president And you know by cervical and of course glitter on both sides

@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0015
+# model=base
+# L=3
+
+GT:
+THE LAW OF THAT SCHOOL IS THAT EVERYTHING SHALL BE SEEN CLEARLY OR AT LEAST ONLY IN SUCH MIST OR FAINTNESS AS SHALL BE DELIGHTFUL AND I HAVE NO DOUBT THAT THE BEST INTRODUCTION TO IT WOULD BE THE ELEMENTARY PRACTICE OF PAINTING EVERY STUDY ON A GOLDEN GROUND
+
+Whisper(original):
+The law of that school is that everything shall be seen clearly, or at least, only in such mist or faintness as shall be delightful. And I have no doubt that the best introduction to it would be the elementary practice of painting every study on a golden ground.
+
+Whisper(decoded):
+The law of that school is that everything shall be seen clearly, or at least, only in such mist or faintness as shall be delightful. And I have no doubt that the best introduction to it would be the elementary practice of painting every study on a golden round.

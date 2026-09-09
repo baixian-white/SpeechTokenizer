@@ -1,4 +1,11 @@
 # scripts/train_example.py
+from pathlib import Path
+import sys
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 from speechtokenizer import SpeechTokenizer, SpeechTokenizerTrainer
 from speechtokenizer.discriminators import (
     MultiPeriodDiscriminator,
@@ -17,11 +24,16 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # 读取配置文件
-    with open(args.config) as f:
+    with open(args.config, encoding='utf-8-sig') as f:
         cfg = json.load(f)
 
     # 构造生成器与判别器
-    generator = SpeechTokenizer(cfg)
+    if cfg.get("nas_encoder_config"):
+        from nas.encoder_only_model_variant import NASEncoderOnlySpeechTokenizer
+
+        generator = NASEncoderOnlySpeechTokenizer(cfg, cfg["nas_encoder_config"])
+    else:
+        generator = SpeechTokenizer(cfg)
     discriminators = {
         'mpd': MultiPeriodDiscriminator(),
         'msd': MultiScaleDiscriminator(),
@@ -35,6 +47,7 @@ if __name__ == '__main__':
     accelerate_kwargs = {
         'gradient_accumulation_steps': cfg.get('gradient_accumulation_steps', 1),
         'mixed_precision': cfg.get('mixed_precision', 'no'),
+        'cpu': cfg.get('device', 'cuda') == 'cpu',
         # 你也可以按需加更多 Accelerate 参数，例如：
         # 'project_dir': cfg.get('results_folder', 'Log/spt_base'),
     }

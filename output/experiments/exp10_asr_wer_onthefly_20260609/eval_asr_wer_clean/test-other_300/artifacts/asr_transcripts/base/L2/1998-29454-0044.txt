@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0044
+# model=base
+# L=2
+
+GT:
+BLESS ME SAID MISTER BEALE UNCOMFORTABLY WELL THERE
+
+Whisper(original):
+Bless me, said Mr. Beale, uncomfortably. Well there.
+
+Whisper(decoded):
+Blessings had us to appear uncomfortably. Well there.

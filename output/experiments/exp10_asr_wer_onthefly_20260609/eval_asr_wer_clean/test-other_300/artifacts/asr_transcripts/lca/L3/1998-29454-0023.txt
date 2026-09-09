@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0023
+# model=lca
+# L=3
+
+GT:
+THE MAN'S MANNER WAS SO KIND AND HEARTY THE WHOLE ADVENTURE WAS SO WONDERFUL AND NEW IS IT COUNTRY WHERE YOU GOING
+
+Whisper(original):
+The men's men are so kind and howty, the whole adventure was so wonderful and new. Is it country where you're going?
+
+Whisper(decoded):
+The night's manner was so kind to talk to you, the whole adventure was so wonderful and new. Is it country where you're going?

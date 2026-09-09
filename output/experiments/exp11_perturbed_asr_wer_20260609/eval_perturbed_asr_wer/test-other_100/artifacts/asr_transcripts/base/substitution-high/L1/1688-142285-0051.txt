@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0051
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+THE SHARPNESS IN HER EYE TURNED TO A WISTFUL LONGING AS SHE MET MARGARET'S SOFT AND FRIENDLY GAZE
+
+Whisper(original):
+The sharpness in her eye turned to a wistful longing, as she met Margaret soft and friendly gaze.
+
+Whisper(decoded):
+He shot the singular right and it was so wistful that she got an awkward, soft, friendly face.

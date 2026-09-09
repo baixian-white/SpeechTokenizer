@@ -80,6 +80,7 @@ if __name__ == "__main__":
     accelerate_kwargs = {
         "gradient_accumulation_steps": cfg.get("gradient_accumulation_steps", 1),
         "mixed_precision": cfg.get("mixed_precision", "no"),
+        "cpu": cfg.get("device", "cuda") == "cpu",
     }
 
     print("⚙️ Initializing Trainer...")

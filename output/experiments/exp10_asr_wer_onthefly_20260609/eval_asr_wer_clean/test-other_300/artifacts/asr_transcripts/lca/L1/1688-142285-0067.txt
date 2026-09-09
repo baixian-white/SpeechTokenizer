@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0067
+# model=lca
+# L=1
+
+GT:
+DON'T THINK HARDLY ON HIM HE'S A GOOD MAN HE IS
+
+Whisper(original):
+Don't think hardly on him. He's a good man. He is
+
+Whisper(decoded):
+Yeah, he, I can, I could, I'm, he was a bad one.

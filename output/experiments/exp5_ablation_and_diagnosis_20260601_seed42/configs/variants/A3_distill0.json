@@ -1,0 +1,111 @@
+{
+  "n_filters": 64,
+  "strides": [
+    8,
+    5,
+    4,
+    2
+  ],
+  "dimension": 1024,
+  "semantic_dimension": 768,
+  "bidirectional": true,
+  "dilation_base": 2,
+  "residual_kernel_size": 3,
+  "n_residual_layers": 1,
+  "lstm_layers": 2,
+  "activation": "ELU",
+  "codebook_size": 1024,
+  "n_q": 3,
+  "num_mels": 80,
+  "num_freq": 1025,
+  "n_fft": 1024,
+  "hop_size": 240,
+  "win_size": 1024,
+  "fmin": 0,
+  "fmax": 8000,
+  "fmax_for_loss": null,
+  "mel_loss_lambdas": [
+    45,
+    1,
+    1,
+    1
+  ],
+  "recon_loss_lambda": 500,
+  "commitment_loss_lambda": 10,
+  "distill_loss_lambda": 0.0,
+  "distill_type": "d_axis",
+  "semantic_model_path": "facebook/hubert-base-ls960",
+  "semantic_model_layer": "avg",
+  "train_files": "output\\experiments\\exp5_ablation_and_diagnosis_20260601_seed42\\artifacts\\train_files.txt",
+  "valid_files": "output\\experiments\\exp5_ablation_and_diagnosis_20260601_seed42\\artifacts\\valid_files.txt",
+  "results_folder": "output\\experiments\\exp5_ablation_and_diagnosis_20260601_seed42\\checkpoints\\A3_distill0",
+  "sample_rate": 16000,
+  "batch_size": 8,
+  "epochs": 60,
+  "learning_rate": 0.0001,
+  "intial_learning_rate": 0.0001,
+  "num_warmup_steps": 0,
+  "betas": [
+    0.9,
+    0.99
+  ],
+  "adam_b2": 0.9,
+  "lr_decay": 0.98,
+  "seed": 42,
+  "segment_size": 16000,
+  "wd": 0,
+  "num_workers": 8,
+  "log_steps": 100,
+  "stdout_steps": 10,
+  "save_model_steps": 2500,
+  "num_ckpt_keep": 6,
+  "showpiece_num": 8,
+  "gradient_accumulation_steps": 4,
+  "device": "cuda",
+  "mixed_precision": "bf16",
+  "nas_encoder_config": "output\\experiments\\exp5_ablation_and_diagnosis_20260601_seed42\\configs\\variants\\A3_distill0_best_seanet_config.json",
+  "encoder_downsample_rate": 320,
+  "latent_rate": 50,
+  "exp5_scope": "Ablation A3: train SCIT-Speech-Base from scratch with distill_loss_lambda=0 (no semantic distillation from HuBERT teacher). All other hyperparameters identical to Exp2 distill30 production run.",
+  "exp5_ablation_id": "A3_distill0",
+  "exp5_ablation_group": "semantic_distillation",
+  "exp5_control_for": "A3_distill30 (= exp2_scit_speech_distill30_retrain_20260529_seed42)",
+  "exp5_only_changed_factor": "distill_loss_lambda: 30.0 -> 0.0",
+  "exp1_handoff": {
+    "config_path": "output\\experiments\\exp5_ablation_and_diagnosis_20260601_seed42\\configs\\variants\\A3_distill0_best_seanet_config.json",
+    "source_path": "output\\experiments\\exp1_nas_distill_run1_seed42\\artifacts\\best_architecture\\best_seanet_config.json",
+    "candidate_id": "nas_seed42_000896",
+    "encoder_strides": [
+      5,
+      4,
+      4,
+      4
+    ],
+    "handoff_schema": "encoder_only_nas_v1",
+    "decoder_condition_note": "Exp1 decoder_condition=frozen_teacher_decoder is handoff provenance only; Exp5 A3_distill0 trains the decoder normally as in Exp2."
+  },
+  "exp5_distill_loss_lambda_source": "override (set to 0 explicitly for ablation)",
+  "exp5_experiment_tag": "A3_distill0_no_semantic_distillation",
+  "exp5_experiment_note": "Ablation A3 control variant: identical to Exp2 distill30 but with distill_loss_lambda=0. Single-factor ablation testing whether semantic distillation from HuBERT teacher is necessary for low-layer semantic content preservation. Expected to show degraded WER at L=1 compared to distill30 production run.",
+  "exp5_run_mode": "formal_ablation",
+  "random_l_sampling": {
+    "values": [
+      1,
+      2,
+      3
+    ],
+    "strategy": "uniform_random",
+    "seed": 42
+  },
+  "channel_sim": {
+    "sample_strategy": "uniform_random",
+    "conditions": [
+      {
+        "name": "clean",
+        "p_drop": 0.0,
+        "p_sub": 0.0
+      }
+    ],
+    "note": "Added for evaluate_lca_vs_base.py compatibility; A3 was NOT trained with ChannelSim - this is only used at evaluation time for clean reconstruction"
+  }
+}

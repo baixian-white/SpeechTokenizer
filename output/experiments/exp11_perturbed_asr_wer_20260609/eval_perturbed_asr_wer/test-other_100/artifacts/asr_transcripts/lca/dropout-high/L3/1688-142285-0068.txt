@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0068
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+I SOMETIMES THINK I SHALL BE MOPED WI SORROW EVEN IN THE CITY OF GOD IF FATHER IS NOT THERE
+
+Whisper(original):
+I sometimes think I shall be murk with sorrow even in the city of God if other is not there.
+
+Whisper(decoded):
+I sometimes think I shall be milked with sorrow even in the city of Claude if father is not there.

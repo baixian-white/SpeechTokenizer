@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0004
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+NUMBER TEN FRESH NELLY IS WAITING ON YOU GOOD NIGHT HUSBAND
+
+Whisper(original):
+Number 10, fresh Nelly is waiting on you. Good night, husband.
+
+Whisper(decoded):
+Mount Macdone, fresh Nelly is waiting on you. Pritnage has been... . . . . . . . . .

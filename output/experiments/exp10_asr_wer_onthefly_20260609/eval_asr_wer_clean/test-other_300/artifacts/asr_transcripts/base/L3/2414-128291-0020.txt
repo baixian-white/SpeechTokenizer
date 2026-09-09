@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0020
+# model=base
+# L=3
+
+GT:
+WELL
+
+Whisper(original):
+Well...
+
+Whisper(decoded):
+Well...

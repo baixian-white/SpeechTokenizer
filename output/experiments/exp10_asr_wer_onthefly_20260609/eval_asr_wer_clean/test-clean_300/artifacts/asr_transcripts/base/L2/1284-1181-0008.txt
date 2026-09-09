@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0008
+# model=base
+# L=2
+
+GT:
+I THINK THAT WILL DO SHE CONTINUED FOR THE OTHER QUALITIES ARE NOT NEEDED IN A SERVANT
+
+Whisper(original):
+I think that will do," she continued, for the other qualities are not needed in a servant.
+
+Whisper(decoded):
+I think that will do," she continued, for the other qualities are not needed in the servant.

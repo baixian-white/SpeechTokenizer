@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0019
+# model=lca
+# L=3
+
+GT:
+TWO COOL THE MIXTURE AND FILTER WASH THE RESIDUE WITH STRONG ALCOHOL AND MIX THE FILTRATES
+
+Whisper(original):
+2. Cool the mixed-end filter. Watch the residue with strong alcohol and mix the filtrates.
+
+Whisper(decoded):
+2. Cool the next-hand filter. Watch the video with strong alcohol and mix the filtrids.

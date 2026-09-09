@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0017
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+STEPHEN LEANING BACK AND DRAWING IDLY ON HIS SCRIBBLER LISTENED TO THE TALK ABOUT HIM WHICH HERON CHECKED FROM TIME TO TIME BY SAYING
+
+Whisper(original):
+Stephen, leaning back and drawing idly on his scribbler, listened to the talk about him which Herron checked from time to time by saying . . . . . . . . .
+
+Whisper(decoded):
+Stephen, leaning back and drawing idly on his scribbler, listened to the talk about him which Herron checked from time to time by saying . . . . . . . . .

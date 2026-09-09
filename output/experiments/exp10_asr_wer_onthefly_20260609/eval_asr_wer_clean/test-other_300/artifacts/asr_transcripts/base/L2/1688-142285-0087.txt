@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0087
+# model=base
+# L=2
+
+GT:
+MISSUS THORNTON THE ONLY MOTHER HE HAS I BELIEVE SAID MISTER HALE QUIETLY
+
+Whisper(original):
+Mr. Thornton, the only mother he has, I believe, said Mr. Hale quietly.
+
+Whisper(decoded):
+Mr. Toulton, they're in their motherry house, I believe. They said Mr. Handle quietly.

@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0052
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+AS THEY TURNED UP INTO A SMALL COURT OPENING OUT OF A SQUALID STREET BESSY SAID
+
+Whisper(original):
+As they turned up into a small court opening out into a squalid street, Bessie said.
+
+Whisper(decoded):
+I say turn it on into a small court. Where can we after to swallow it straight? This is Sid.

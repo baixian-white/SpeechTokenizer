@@ -5,6 +5,7 @@ import os
 import itertools
 import json
 import time
+import math
 
 from beartype import beartype
 
@@ -58,6 +59,83 @@ def checkpoint_num_steps(checkpoint_path):
     return int(results[-1])
 
 
+def compute_lr_scheduler_plan(
+    dataset_size,
+    batch_size,
+    epochs,
+    gradient_accumulation_steps=1,
+    drop_last=True,
+    max_train_steps=None,
+):
+    """Return the scheduler horizon used by the current training loop."""
+    if batch_size <= 0:
+        raise ValueError("batch_size must be positive")
+    if epochs <= 0:
+        raise ValueError("epochs must be positive")
+
+    grad_accum_steps = max(1, int(gradient_accumulation_steps or 1))
+    if drop_last:
+        batches_per_epoch = dataset_size // batch_size
+    else:
+        batches_per_epoch = math.ceil(dataset_size / batch_size)
+    batches_per_epoch = max(1, batches_per_epoch)
+
+    planned_batch_steps_total = int(epochs) * batches_per_epoch
+    batch_steps_total = planned_batch_steps_total
+    if max_train_steps is not None:
+        batch_steps_total = min(batch_steps_total, int(max_train_steps))
+    scheduler_total_steps = max(1, batch_steps_total)
+
+    legacy_updates_per_epoch = max(1, batches_per_epoch // grad_accum_steps)
+    legacy_update_steps_total = int(epochs) * legacy_updates_per_epoch
+    return {
+        "scheduler_step_unit": "batch_step",
+        "batches_per_epoch": batches_per_epoch,
+        "planned_batch_steps_total": planned_batch_steps_total,
+        "batch_steps_total": batch_steps_total,
+        "scheduler_total_steps": scheduler_total_steps,
+        "legacy_updates_per_epoch": legacy_updates_per_epoch,
+        "legacy_update_steps_total": legacy_update_steps_total,
+        "gradient_accumulation_steps": grad_accum_steps,
+    }
+
+
+def align_cosine_scheduler_to_training_plan(scheduler, total_steps, current_step):
+    """Rebase a loaded CosineAnnealingLR to the current training horizon."""
+    total_steps = max(1, int(total_steps))
+    current_step = max(0, int(current_step))
+    inner_scheduler = getattr(scheduler, "scheduler", scheduler)
+    inner_scheduler.T_max = total_steps
+    rebased_lrs = []
+    for base_lr, group in zip(inner_scheduler.base_lrs, inner_scheduler.optimizer.param_groups):
+        eta_min = getattr(inner_scheduler, "eta_min", 0)
+        progress = min(current_step, total_steps) / total_steps
+        lr = eta_min + (base_lr - eta_min) * (1.0 + math.cos(math.pi * progress)) / 2.0
+        group["lr"] = lr
+        rebased_lrs.append(lr)
+    inner_scheduler.last_epoch = current_step
+    inner_scheduler._last_lr = rebased_lrs
+    return rebased_lrs
+
+
+def resolve_distill_loss_lambda(cfg, current_step):
+    """Resolve a static or scheduled semantic distillation weight."""
+    base_value = float(cfg.get("distill_loss_lambda", 0.0) or 0.0)
+    schedule = cfg.get("distill_loss_schedule")
+    if not schedule:
+        return base_value
+
+    schedule_type = schedule.get("type")
+    if schedule_type != "linear_decay":
+        raise ValueError(f"Unsupported distill_loss_schedule type: {schedule_type!r}")
+
+    decay_steps = max(1, int(schedule.get("decay_steps", 1)))
+    progress = min(max(float(current_step), 0.0) / float(decay_steps), 1.0)
+    start_value = float(schedule.get("start_value", base_value))
+    end_value = float(schedule.get("end_value", base_value))
+    return start_value + (end_value - start_value) * progress
+
+
 class SpeechTokenizerTrainer(nn.Module):
     @beartype
     def __init__(
@@ -68,6 +146,7 @@ class SpeechTokenizerTrainer(nn.Module):
         accelerate_kwargs: dict = dict(),
     ):
         super().__init__()
+        self.cfg = cfg
         ddp_kwargs = DistributedDataParallelKwargs()
         torch.manual_seed(cfg.get("seed"))
         split_batches = cfg.get("split_batches", False)
@@ -82,6 +161,7 @@ class SpeechTokenizerTrainer(nn.Module):
         self.batch_size = cfg.get("batch_size")
         self.sample_rate = cfg.get("sample_rate")
         self.showpiece_num = cfg.get("showpiece_num", 8)
+        self.max_train_steps = cfg.get("max_train_steps")
         project_name = "SpeechTokenizer"
 
         self.results_folder.mkdir(parents=True, exist_ok=True)
@@ -149,10 +229,10 @@ class SpeechTokenizerTrainer(nn.Module):
         train_files = cfg.get("train_files")
         batch_size = cfg.get("batch_size")
         self.batch_size = batch_size
-        with open(train_files, "r") as f:
+        with open(train_files, "r", encoding="utf-8-sig") as f:
             train_file_list = f.readlines()
         valid_files = cfg.get("valid_files")
-        with open(valid_files, "r") as f:
+        with open(valid_files, "r", encoding="utf-8-sig") as f:
             valid_file_list = f.readlines()
 
         self.ds = audioDataset(
@@ -183,7 +263,8 @@ class SpeechTokenizerTrainer(nn.Module):
         self.dl = get_dataloader(
             self.ds, batch_size=self.batch_size, shuffle=True, drop_last=drop_last, num_workers=num_workers
         )
-        self.valid_dl = get_dataloader(self.valid_ds, batch_size=1, shuffle=False, drop_last=False, num_workers=1)
+        valid_num_workers = cfg.get("valid_num_workers", 0)
+        self.valid_dl = get_dataloader(self.valid_ds, batch_size=1, shuffle=False, drop_last=False, num_workers=valid_num_workers)
 
         # lr / optim
         self.lr = cfg.get("learning_rate")
@@ -201,14 +282,20 @@ class SpeechTokenizerTrainer(nn.Module):
             betas=cfg.get("betas"),#betas： Adam 优化器的两个动量参数（0.9, 0.999）
         )
 
-        # scheduler —— 用“参数更新次数”而不是 iteration 数
         self.grad_accum_steps = cfg.get("gradient_accumulation_steps", 1)
-        iters_per_epoch = len(self.ds) // batch_size   #假设数据集是10000个数据，batch_size是2，那么iters_per_epoch就是5000
-        updates_per_epoch = max(1, iters_per_epoch // self.grad_accum_steps) #gradd_accum_steps假设是4，那么updates_per_epoch就是1250
-        num_updates_total = self.epochs * updates_per_epoch#假设epochs是20，那么num_updates_total就是25000
+        self.lr_scheduler_plan = compute_lr_scheduler_plan(
+            dataset_size=len(self.ds),
+            batch_size=batch_size,
+            epochs=self.epochs,
+            gradient_accumulation_steps=self.grad_accum_steps,
+            drop_last=drop_last,
+            max_train_steps=self.max_train_steps,
+        )
+        self.lr_scheduler_total_steps = self.lr_scheduler_plan["scheduler_total_steps"]
+        self.total_train_steps = self.lr_scheduler_plan["batch_steps_total"]
 
-        self.scheduler_g = CosineAnnealingLR(self.optim_g, T_max=num_updates_total)#生成器和判别器使用的是余弦退火学习率调度器，自适应学习率，每次参数更新的时候，就会更新一次学习率
-        self.scheduler_d = CosineAnnealingLR(self.optim_d, T_max=num_updates_total)
+        self.scheduler_g = CosineAnnealingLR(self.optim_g, T_max=self.lr_scheduler_total_steps)
+        self.scheduler_d = CosineAnnealingLR(self.optim_d, T_max=self.lr_scheduler_total_steps)
 
         # accelerate.prepare
         (
@@ -231,9 +318,12 @@ class SpeechTokenizerTrainer(nn.Module):
         self.discriminators = {k: self.accelerator.prepare(v) for k, v in self.discriminators.items()} #把每个判别器（D）模型通过 Accelerator 包装，让它支持分布式/多卡/混合精度训练。
 
         hps = {
-            "num_updates_total": num_updates_total,
-            "updates_per_epoch": updates_per_epoch,
-            "iters_per_epoch": iters_per_epoch,
+            "num_updates_total": self.lr_scheduler_total_steps,
+            "scheduler_total_steps": self.lr_scheduler_total_steps,
+            "scheduler_step_unit": self.lr_scheduler_plan["scheduler_step_unit"],
+            "planned_batch_steps_total": self.lr_scheduler_plan["planned_batch_steps_total"],
+            "legacy_update_steps_total": self.lr_scheduler_plan["legacy_update_steps_total"],
+            "iters_per_epoch": self.lr_scheduler_plan["batches_per_epoch"],
             "grad_accum_steps": self.grad_accum_steps,
             "num_warmup_steps": self.num_warmup_steps,
             "learning_rate": self.lr,
@@ -289,6 +379,17 @@ class SpeechTokenizerTrainer(nn.Module):
 
             # +1 to start from the next step and avoid overwriting the last checkpoint
             self.steps = torch.tensor([checkpoint_num_steps(path) + 1], device=self.device)
+            current_step = int(self.steps.item())
+            align_cosine_scheduler_to_training_plan(
+                self.scheduler_g,
+                total_steps=self.lr_scheduler_total_steps,
+                current_step=current_step,
+            )
+            align_cosine_scheduler_to_training_plan(
+                self.scheduler_d,
+                total_steps=self.lr_scheduler_total_steps,
+                current_step=current_step,
+            )
 
     def print(self, msg):
         self.accelerator.print(msg)
@@ -348,6 +449,15 @@ class SpeechTokenizerTrainer(nn.Module):
                 print(f"Epoch:{epoch} start...")
 
             for batch in self.dl:
+                if steps >= self.total_train_steps:
+                    self.print(f"planned_train_steps={self.total_train_steps} reached; stopping training")
+                    self.print("training complete")
+                    return
+                if self.max_train_steps is not None and steps >= int(self.max_train_steps):
+                    self.print(f"max_train_steps={self.max_train_steps} reached; stopping training early")
+                    self.print("training complete")
+                    return
+
                 tic = time.time()
 
                 x, semantic_feature = batch #x是audio一般为[B,T]，semantic_feature就是特征
@@ -386,13 +496,14 @@ class SpeechTokenizerTrainer(nn.Module):
                 loss_adversarial = sum(adversarial_loss(o[1]) for o in discriminator_outputs)#将y_d_gs传入adversarial_loss
                 #蒸馏损失
                 loss_distill = self.distill_loss(feature, semantic_feature) #求feature和semantic_feature的余弦相似度
+                current_distill_loss_lambda = resolve_distill_loss_lambda(self.cfg, steps)
                 loss_generator_all = (
                     loss_feature
                     + loss_adversarial
                     + loss_mel
                     + loss_q * self.commitment_loss_lambda
                     + loss_recon * self.recon_loss_lambda
-                    + self.distill_loss_lambda * loss_distill
+                    + current_distill_loss_lambda * loss_distill
                 )
                     #"recon_loss_lambda": 500,
                     # "commitment_loss_lambda": 10,
@@ -413,6 +524,7 @@ class SpeechTokenizerTrainer(nn.Module):
                         f"Epoch {epoch} -- Step {steps}: Gen Loss: {loss_generator_all.item():0.3f}; "
                         f"Train Mel Error:{mel_error:0.3f}; Train/Q Loss: {loss_q.item():0.3f}; "
                         f"Train Distill Loss: {loss_distill.item():0.3f}; "
+                        f"Distill Lambda: {current_distill_loss_lambda:0.3f}; "
                         f"Time step: {step_time_log['time_cost'] / self.stdout_steps:0.3f}s"
                     )
                     step_time_log = {}
@@ -428,6 +540,7 @@ class SpeechTokenizerTrainer(nn.Module):
                             "train/mel loss": loss_mel.item(),#梅尔损失
                             "train/mel error": mel_error,
                             "train/distillation loss": loss_distill.item(),#蒸馏损失
+                            "train/distillation lambda": current_distill_loss_lambda,
                             "train/learning_rate": lr,#学习率
                         },
                         step=steps,

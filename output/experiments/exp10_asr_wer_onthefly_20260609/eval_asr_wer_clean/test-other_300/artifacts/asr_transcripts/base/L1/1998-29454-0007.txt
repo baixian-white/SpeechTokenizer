@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0007
+# model=base
+# L=1
+
+GT:
+WHAT'S UP MATEY LOST YOUR WAY DICKIE EXPLAINED
+
+Whisper(original):
+What's up matey, lost your way. Dicky explained.
+
+Whisper(decoded):
+What's happening to you, Master Wib? Goody explained.

@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0039
+# model=lca
+# L=1
+
+GT:
+WHAT'S THAT THERE SAID DICKIE
+
+Whisper(original):
+What's that there, Satiki?
+
+Whisper(decoded):
+Respect there, Satiki.

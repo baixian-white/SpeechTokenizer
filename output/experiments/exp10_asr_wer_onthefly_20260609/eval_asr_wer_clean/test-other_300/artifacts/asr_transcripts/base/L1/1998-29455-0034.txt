@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0034
+# model=base
+# L=1
+
+GT:
+WELL YOU NEVER SEE IM
+
+Whisper(original):
+Well, you never see him.
+
+Whisper(decoded):
+Well, I never see him.

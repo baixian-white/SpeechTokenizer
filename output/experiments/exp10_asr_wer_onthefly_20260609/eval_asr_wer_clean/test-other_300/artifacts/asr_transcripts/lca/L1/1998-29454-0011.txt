@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0011
+# model=lca
+# L=1
+
+GT:
+WHEN IT WAS OVER THE MAN ASKED DICKIE IF HE COULD WALK A LITTLE WAY AND WHEN DICKIE SAID HE COULD THEY SET OUT IN THE MOST FRIENDLY WAY SIDE BY SIDE
+
+Whisper(original):
+When it was over, the man asked Dicky if he could walk a little way, and when Dicky said he could, they set out in the most friendly way side by side.
+
+Whisper(decoded):
+When it was over the nanostakity if he could walk the other way, the vindity safety grid Let it out in the worst vent away side this out.

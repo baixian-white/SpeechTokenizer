@@ -1,0 +1,352 @@
+{
+  "run_id": "exp2_scit_speech_training_20260527_232327_seed42",
+  "rows": [
+    {
+      "sample_id": "1737-148989-0006",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\1737-148989-0006.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L1\\1737-148989-0006.wav",
+      "duration_sec": 10.69,
+      "wave_l1": 0.02600291557610035,
+      "rmse": 0.045288294553756714,
+      "si_snr_db": -31.963361084867067,
+      "corr": 0.025217019021511078,
+      "mel_l1": 1.624800443649292,
+      "original_rms": 0.03728398680686951,
+      "recon_rms": 0.02666604146361351,
+      "rms_ratio_db": -2.91127498349666,
+      "recon_peak": 0.28424072265625,
+      "clip_ratio": 0.0,
+      "length_samples": 171040
+    },
+    {
+      "sample_id": "1737-148989-0006",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\1737-148989-0006.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L2\\1737-148989-0006.wav",
+      "duration_sec": 10.69,
+      "wave_l1": 0.02413354068994522,
+      "rmse": 0.044341105967760086,
+      "si_snr_db": -26.618969196062793,
+      "corr": 0.04662073031067848,
+      "mel_l1": 1.1605656147003174,
+      "original_rms": 0.03728398680686951,
+      "recon_rms": 0.025801878422498703,
+      "rms_ratio_db": -3.1974193853337973,
+      "recon_peak": 0.355377197265625,
+      "clip_ratio": 0.0,
+      "length_samples": 171040
+    },
+    {
+      "sample_id": "1737-148989-0006",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\1737-148989-0006.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L3\\1737-148989-0006.wav",
+      "duration_sec": 10.69,
+      "wave_l1": 0.02352963201701641,
+      "rmse": 0.04421639069914818,
+      "si_snr_db": -21.756995448522694,
+      "corr": 0.0814153179526329,
+      "mel_l1": 1.0490821599960327,
+      "original_rms": 0.03728398680686951,
+      "recon_rms": 0.026997623965144157,
+      "rms_ratio_db": -2.8039351448399237,
+      "recon_peak": 0.34033203125,
+      "clip_ratio": 0.0,
+      "length_samples": 171040
+    },
+    {
+      "sample_id": "4018-103416-0033",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\4018-103416-0033.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L1\\4018-103416-0033.wav",
+      "duration_sec": 15.13,
+      "wave_l1": 0.047874175012111664,
+      "rmse": 0.08046834915876389,
+      "si_snr_db": -5.796406608547736,
+      "corr": 0.4564949572086334,
+      "mel_l1": 1.218807339668274,
+      "original_rms": 0.09043633192777634,
+      "recon_rms": 0.042127374559640884,
+      "rms_ratio_db": -6.635569800092213,
+      "recon_peak": 0.3553466796875,
+      "clip_ratio": 0.0,
+      "length_samples": 242080
+    },
+    {
+      "sample_id": "4018-103416-0033",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\4018-103416-0033.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L2\\4018-103416-0033.wav",
+      "duration_sec": 15.13,
+      "wave_l1": 0.03270679712295532,
+      "rmse": 0.05571560189127922,
+      "si_snr_db": 2.136092381624074,
+      "corr": 0.787745475769043,
+      "mel_l1": 1.0095112323760986,
+      "original_rms": 0.09043633192777634,
+      "recon_rms": 0.07037882506847382,
+      "rms_ratio_db": -2.1780182640786214,
+      "recon_peak": 0.427581787109375,
+      "clip_ratio": 0.0,
+      "length_samples": 242080
+    },
+    {
+      "sample_id": "4018-103416-0033",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\4018-103416-0033.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L3\\4018-103416-0033.wav",
+      "duration_sec": 15.13,
+      "wave_l1": 0.028483672067523003,
+      "rmse": 0.048151109367609024,
+      "si_snr_db": 4.059039285724114,
+      "corr": 0.8473567366600037,
+      "mel_l1": 0.9605876803398132,
+      "original_rms": 0.09043633192777634,
+      "recon_rms": 0.0801285058259964,
+      "rms_ratio_db": -1.051117771192033,
+      "recon_peak": 0.538116455078125,
+      "clip_ratio": 0.0,
+      "length_samples": 242080
+    },
+    {
+      "sample_id": "5390-30102-0015",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\5390-30102-0015.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L1\\5390-30102-0015.wav",
+      "duration_sec": 15.26,
+      "wave_l1": 0.03556231036782265,
+      "rmse": 0.05676885321736336,
+      "si_snr_db": -10.422619739647267,
+      "corr": 0.2884104251861572,
+      "mel_l1": 1.428770899772644,
+      "original_rms": 0.05681357532739639,
+      "recon_rms": 0.03261468932032585,
+      "rms_ratio_db": -4.820776361072611,
+      "recon_peak": 0.284698486328125,
+      "clip_ratio": 0.0,
+      "length_samples": 244160
+    },
+    {
+      "sample_id": "5390-30102-0015",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\5390-30102-0015.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L2\\5390-30102-0015.wav",
+      "duration_sec": 15.26,
+      "wave_l1": 0.028527263551950455,
+      "rmse": 0.04509414732456207,
+      "si_snr_db": -1.7311660263333648,
+      "corr": 0.6337546706199646,
+      "mel_l1": 1.1450655460357666,
+      "original_rms": 0.05681357532739639,
+      "recon_rms": 0.04611074924468994,
+      "rms_ratio_db": -1.8129984775419883,
+      "recon_peak": 0.36895751953125,
+      "clip_ratio": 0.0,
+      "length_samples": 244160
+    },
+    {
+      "sample_id": "5390-30102-0015",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\5390-30102-0015.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L3\\5390-30102-0015.wav",
+      "duration_sec": 15.26,
+      "wave_l1": 0.025819972157478333,
+      "rmse": 0.04140482470393181,
+      "si_snr_db": 0.09582447464442825,
+      "corr": 0.7109964489936829,
+      "mel_l1": 1.0942105054855347,
+      "original_rms": 0.05681357532739639,
+      "recon_rms": 0.051269277930259705,
+      "rms_ratio_db": -0.8918982292102855,
+      "recon_peak": 0.368804931640625,
+      "clip_ratio": 0.0,
+      "length_samples": 244160
+    },
+    {
+      "sample_id": "8838-298545-0037",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\8838-298545-0037.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L1\\8838-298545-0037.wav",
+      "duration_sec": 13.79,
+      "wave_l1": 0.03707464411854744,
+      "rmse": 0.06740289181470871,
+      "si_snr_db": -10.131584905292527,
+      "corr": 0.29738178849220276,
+      "mel_l1": 1.5305957794189453,
+      "original_rms": 0.06718738377094269,
+      "recon_rms": 0.04067310318350792,
+      "rms_ratio_db": -4.359607593710917,
+      "recon_peak": 0.326263427734375,
+      "clip_ratio": 0.0,
+      "length_samples": 220640
+    },
+    {
+      "sample_id": "8838-298545-0037",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\8838-298545-0037.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L2\\8838-298545-0037.wav",
+      "duration_sec": 13.79,
+      "wave_l1": 0.03208010643720627,
+      "rmse": 0.05936630070209503,
+      "si_snr_db": -3.812672456002147,
+      "corr": 0.5418607592582703,
+      "mel_l1": 1.2584586143493652,
+      "original_rms": 0.06718738377094269,
+      "recon_rms": 0.05472583323717117,
+      "rms_ratio_db": -1.781906657373926,
+      "recon_peak": 0.395416259765625,
+      "clip_ratio": 0.0,
+      "length_samples": 220640
+    },
+    {
+      "sample_id": "8838-298545-0037",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "original_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\original\\8838-298545-0037.wav",
+      "recon_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\samples\\full_utterance\\recon_L3\\8838-298545-0037.wav",
+      "duration_sec": 13.79,
+      "wave_l1": 0.02991028130054474,
+      "rmse": 0.056006841361522675,
+      "si_snr_db": -2.085765715722771,
+      "corr": 0.6182148456573486,
+      "mel_l1": 1.1989706754684448,
+      "original_rms": 0.06718738377094269,
+      "recon_rms": 0.06018742918968201,
+      "rms_ratio_db": -0.9556385851882288,
+      "recon_peak": 0.510833740234375,
+      "clip_ratio": 0.0,
+      "length_samples": 220640
+    }
+  ],
+  "summary": {
+    "L1": {
+      "count": 4,
+      "wave_l1": {
+        "mean": 0.036628511268645525,
+        "median": 0.03631847724318504,
+        "min": 0.02600291557610035,
+        "max": 0.047874175012111664
+      },
+      "mel_l1": {
+        "mean": 1.4507436156272888,
+        "median": 1.4796833395957947,
+        "min": 1.218807339668274,
+        "max": 1.624800443649292
+      },
+      "si_snr_db": {
+        "mean": -14.578493084588649,
+        "median": -10.277102322469897,
+        "min": -31.963361084867067,
+        "max": -5.796406608547736
+      },
+      "corr": {
+        "mean": 0.2668760474771261,
+        "median": 0.29289610683918,
+        "min": 0.025217019021511078,
+        "max": 0.4564949572086334
+      },
+      "rms_ratio_db": {
+        "mean": -4.681807184593101,
+        "median": -4.590191977391765,
+        "min": -6.635569800092213,
+        "max": -2.91127498349666
+      },
+      "clip_ratio": {
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "L2": {
+      "count": 4,
+      "wave_l1": {
+        "mean": 0.029361926950514317,
+        "median": 0.03030368499457836,
+        "min": 0.02413354068994522,
+        "max": 0.03270679712295532
+      },
+      "mel_l1": {
+        "mean": 1.143400251865387,
+        "median": 1.152815580368042,
+        "min": 1.0095112323760986,
+        "max": 1.2584586143493652
+      },
+      "si_snr_db": {
+        "mean": -7.506678824193558,
+        "median": -2.771919241167756,
+        "min": -26.618969196062793,
+        "max": 2.136092381624074
+      },
+      "corr": {
+        "mean": 0.5024954089894891,
+        "median": 0.5878077149391174,
+        "min": 0.04662073031067848,
+        "max": 0.787745475769043
+      },
+      "rms_ratio_db": {
+        "mean": -2.242585696082083,
+        "median": -1.9955083708103047,
+        "min": -3.1974193853337973,
+        "max": -1.781906657373926
+      },
+      "clip_ratio": {
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "L3": {
+      "count": 4,
+      "wave_l1": {
+        "mean": 0.02693588938564062,
+        "median": 0.027151822112500668,
+        "min": 0.02352963201701641,
+        "max": 0.02991028130054474
+      },
+      "mel_l1": {
+        "mean": 1.0757127553224564,
+        "median": 1.0716463327407837,
+        "min": 0.9605876803398132,
+        "max": 1.1989706754684448
+      },
+      "si_snr_db": {
+        "mean": -4.921974350969231,
+        "median": -0.9949706205391714,
+        "min": -21.756995448522694,
+        "max": 4.059039285724114
+      },
+      "corr": {
+        "mean": 0.564495837315917,
+        "median": 0.6646056473255157,
+        "min": 0.0814153179526329,
+        "max": 0.8473567366600037
+      },
+      "rms_ratio_db": {
+        "mean": -1.4256474326076178,
+        "median": -1.0033781781901308,
+        "min": -2.8039351448399237,
+        "max": -0.8918982292102855
+      },
+      "clip_ratio": {
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    }
+  }
+}

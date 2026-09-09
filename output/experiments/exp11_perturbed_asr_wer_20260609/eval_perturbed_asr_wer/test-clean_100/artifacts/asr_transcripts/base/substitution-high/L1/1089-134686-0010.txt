@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0010
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+WELL NOW ENNIS I DECLARE YOU HAVE A HEAD AND SO HAS MY STICK
+
+Whisper(original):
+Well now Ennis, I declare you have a head and so has my stick.
+
+Whisper(decoded):
+Oh no, MS Addy, where you have a head and so has my snake.

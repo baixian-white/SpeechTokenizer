@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0012
+# model=base
+# L=3
+
+GT:
+THE TUBE SHOULD BE EXAMINED TO SEE THAT IT IS NOT BROKEN OR CRACKED AS ACCIDENTS HAVE HAPPENED FROM NEGLECTING THIS PRECAUTION
+
+Whisper(original):
+The tube should be examined to see that it is not broken or cracked, as accidents have happened from neglecting this precaution.
+
+Whisper(decoded):
+The tube should be examined to see that it is not broken or cracked, as the excellence has happened from neglecting this precaution.

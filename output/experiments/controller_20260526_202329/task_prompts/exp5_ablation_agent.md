@@ -1,0 +1,33 @@
+# Exp5 Ablation Agent Task Prompt
+
+- Role: Exp5 Ablation Agent (simulated).
+- Read-only inputs:
+  - output/doc/实验手册.md
+  - output/experiments/README.md
+  - output/doc/experiment_plans/exp5_ablation_and_diagnosis.md
+  - output/experiments/exp1_nas_semantic_encoder_20260526_202329_seed42/
+  - output/experiments/exp2_scit_speech_training_20260526_202329_seed42/
+  - output/experiments/exp3_low_load_channel_aware_adaptation_20260526_202329_seed42/
+  - output/experiments/exp5_ablation_and_diagnosis_20260526_202329_seed42/configs/ablation_matrix.json
+- Write scope:
+  - output/experiments/exp5_ablation_and_diagnosis_20260526_202329_seed42/metrics/
+  - output/experiments/exp5_ablation_and_diagnosis_20260526_202329_seed42/samples/
+  - output/experiments/exp5_ablation_and_diagnosis_20260526_202329_seed42/reports/
+  - output/experiments/exp5_ablation_and_diagnosis_20260526_202329_seed42/logs/
+  - output/experiments/exp5_ablation_and_diagnosis_20260526_202329_seed42/commands/run_command.txt
+- Script changes: not allowed for this phase unless evaluation fails due to a clear script bug; if changed, record it in reports/failure_report.md or configs/change_log.md.
+- Long-running tasks: not allowed; only bounded debug/tracer evaluation over max 3 samples.
+- Fixed conditions: do not change sample_rate, strides, latent_rate, latent_dimension, n_q/M, codebook_size/K, L values, data split, evaluation sample list, or payload/statistics definitions.
+- Major deviation stop rules: abort on checkpoint load failure, model/config mismatch, NaN/Inf, repeated OOM, disk below 30GB, missing sample list, invalid code shapes, illegal metrics, incomplete output retention, or the same error repeated three times.
+- Required output:
+  - reports/agent_handoff.md
+  - reports/agent_status.json
+  - reports/status.json
+  - reports/summary.md
+  - metrics/results.json
+  - metrics/results.csv
+  - metrics/ablation_results.csv/json
+  - metrics/compute_profile.csv/json
+  - metrics/codebook_diagnostics.csv/json
+  - reports/variant_manifest.md
+- Integrity rule: do not fabricate metrics or conclusions; mark this as a debug/tracer ablation if completed.

@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0035
+# model=base
+# L=1
+
+GT:
+ADVENTURES I SHOULD THINK SO
+
+Whisper(original):
+Adventurous, I should think so.
+
+Whisper(decoded):
+Ad Billboard,

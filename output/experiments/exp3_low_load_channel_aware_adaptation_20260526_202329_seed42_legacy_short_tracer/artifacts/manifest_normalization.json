@@ -1,0 +1,26 @@
+{
+  "train": {
+    "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+    "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_20260526_202329_seed42\\artifacts\\train_files.txt",
+    "total_read": 200,
+    "written": 200,
+    "missing_audio": 0,
+    "missing_feature": 0,
+    "mapped_paths": 200,
+    "bad_rows": 0,
+    "truncated_to": 200,
+    "missing_examples": []
+  },
+  "valid": {
+    "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\valid_files.txt",
+    "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_20260526_202329_seed42\\artifacts\\valid_files.txt",
+    "total_read": 200,
+    "written": 200,
+    "missing_audio": 0,
+    "missing_feature": 0,
+    "mapped_paths": 200,
+    "bad_rows": 0,
+    "truncated_to": 200,
+    "missing_examples": []
+  }
+}

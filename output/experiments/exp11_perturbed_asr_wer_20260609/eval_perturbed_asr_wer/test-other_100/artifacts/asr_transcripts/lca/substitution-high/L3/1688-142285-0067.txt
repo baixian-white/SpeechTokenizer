@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0067
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+DON'T THINK HARDLY ON HIM HE'S A GOOD MAN HE IS
+
+Whisper(original):
+Don't think hardly on him. He's a good man. He is
+
+Whisper(decoded):
+But I hope that he's hard to hear of him. He's a good man he is.

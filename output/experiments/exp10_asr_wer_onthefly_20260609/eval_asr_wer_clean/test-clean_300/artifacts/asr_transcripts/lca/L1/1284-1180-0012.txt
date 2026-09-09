@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0012
+# model=lca
+# L=1
+
+GT:
+WE HAVE COME FROM A FAR LONELIER PLACE THAN THIS A LONELIER PLACE
+
+Whisper(original):
+We have come from a far lonelier place than this. A lonelier place.
+
+Whisper(decoded):
+We have come from a phyloid place than this. Well no one in your case.

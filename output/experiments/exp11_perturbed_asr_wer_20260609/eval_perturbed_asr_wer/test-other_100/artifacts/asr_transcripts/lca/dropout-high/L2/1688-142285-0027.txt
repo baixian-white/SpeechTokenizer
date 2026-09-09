@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0027
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+I DON'T SET HIM UP FOR A HERO OR ANYTHING OF THAT KIND
+
+Whisper(original):
+I don't set him up for a hero or anything of that kind.
+
+Whisper(decoded):
+I'd be sitting up for a year or anything of that kind.

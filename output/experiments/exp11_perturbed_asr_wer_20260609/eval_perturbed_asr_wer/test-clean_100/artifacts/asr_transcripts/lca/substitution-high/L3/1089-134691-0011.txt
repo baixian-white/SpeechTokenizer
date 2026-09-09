@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0011
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+THEIR PIETY WOULD BE LIKE THEIR NAMES LIKE THEIR FACES LIKE THEIR CLOTHES AND IT WAS IDLE FOR HIM TO TELL HIMSELF THAT THEIR HUMBLE AND CONTRITE HEARTS IT MIGHT BE PAID A FAR RICHER TRIBUTE OF DEVOTION THAN HIS HAD EVER BEEN A GIFT TENFOLD MORE ACCEPTABLE THAN HIS ELABORATE ADORATION
+
+Whisper(original):
+Their piety would be, like their names, like their faces, like their clothes, and it was idle for him to tell himself that their humble and contrite hearts it might be paid a far richer tribute of devotion than his had ever been, a gift tenfold more acceptable than his elaborate adoration.
+
+Whisper(decoded):
+Their piety would be, like their names, like their faces, like their clothes. And it was idle for him to tell himself that their humble and contrite hearts it might be made a far richer tribute of devotion than his had ever been. A gift tenfold more acceptable than his elaborate adoration.

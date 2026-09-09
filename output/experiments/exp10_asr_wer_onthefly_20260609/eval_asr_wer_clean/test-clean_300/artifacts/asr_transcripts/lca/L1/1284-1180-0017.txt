@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0017
+# model=lca
+# L=1
+
+GT:
+AT ONE END STOOD A GREAT FIREPLACE IN WHICH A BLUE LOG WAS BLAZING WITH A BLUE FLAME AND OVER THE FIRE HUNG FOUR KETTLES IN A ROW ALL BUBBLING AND STEAMING AT A GREAT RATE
+
+Whisper(original):
+At one end stood a great fireplace, in which a blue log was blazing with a blue flame, and over the fire hung four kettles in a row, all bubbling and steaming at a great rate.
+
+Whisper(decoded):
+A one-end stirred a great fireplace, in which a blue all was blazing with a blue flame, and a blue methyre hung four kettles in a row, all bumbling and steaming at a great rate.

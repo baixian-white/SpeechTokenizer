@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0019
+# model=lca
+# L=1
+
+GT:
+THEN SAID THE EUNUCH TO ZAU AL MAKAN PEACE BE WITH THEE O MY LORD
+
+Whisper(original):
+Then set the UNOC to Zawal Makan. Peace be with thee, O my lord.
+
+Whisper(decoded):
+then sent the HU trip to Z bus. Steve MacDepot went on

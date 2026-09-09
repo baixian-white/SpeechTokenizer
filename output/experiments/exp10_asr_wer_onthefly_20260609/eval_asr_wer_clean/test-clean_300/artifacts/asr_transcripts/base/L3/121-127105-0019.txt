@@ -1,0 +1,12 @@
+# sample_id=121-127105-0019
+# model=base
+# L=3
+
+GT:
+MISSUS GRIFFIN HOWEVER EXPRESSED THE NEED FOR A LITTLE MORE LIGHT
+
+Whisper(original):
+Mrs. Griffin, however, expressed the need for a little more light.
+
+Whisper(decoded):
+Mrs. Griffin, however, expressed the need for a little more light.

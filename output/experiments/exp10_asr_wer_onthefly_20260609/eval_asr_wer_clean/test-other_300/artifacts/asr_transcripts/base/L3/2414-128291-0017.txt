@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0017
+# model=base
+# L=3
+
+GT:
+THUS SPAKE THE PEACEFUL ONE AND PUFFED HIMSELF AND PERSPIRED WITH HIS WORDS SO THAT THE KINE WONDERED ANEW
+
+Whisper(original):
+Thus begged the peaceful one, and puffed himself, and perspired with his words. So then the kind wondered anew.
+
+Whisper(decoded):
+Thus being the peaceful world, and loved himself, it was fired with his words, so that the time were new anew.

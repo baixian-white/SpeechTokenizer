@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0007
+# model=lca
+# L=1
+
+GT:
+AND IN IT ALL REJOICED AT THE ACCESSION OF THE LIGHT OF THE PLACE
+
+Whisper(original):
+and it all rejoiced at the accession of the light of the place.
+
+Whisper(decoded):
+They need to be prioritized by the assertion of the amount of the police.

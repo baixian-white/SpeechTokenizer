@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0025
+# model=base
+# L=3
+
+GT:
+A BIRD PAUSED IN ITS FLIGHT ON A BRANCH QUITE CLOSE AND CLUNG THERE SWAYING
+
+Whisper(original):
+A bird passed in its flight on a branch quite close and clung their swing.
+
+Whisper(decoded):
+Alert passengers, flight and branch going close andplug their swing.

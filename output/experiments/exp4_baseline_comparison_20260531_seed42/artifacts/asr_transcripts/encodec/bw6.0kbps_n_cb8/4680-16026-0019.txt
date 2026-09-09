@@ -1,0 +1,9 @@
+# method=encodec setting=bw6.0kbps_n_cb8 sample_id=4680-16026-0019
+# GT (LibriSpeech):
+YOU KNOW WELL THAT I'M NO FOOL
+
+# Whisper(original):
+You know well that I am no fool
+
+# Whisper(decoded):
+You know well that I am no fool

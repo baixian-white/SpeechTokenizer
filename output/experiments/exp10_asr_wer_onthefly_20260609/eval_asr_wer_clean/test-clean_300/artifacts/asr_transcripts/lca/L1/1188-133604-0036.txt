@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0036
+# model=lca
+# L=1
+
+GT:
+IN BOTH THESE HIGH MYTHICAL SUBJECTS THE SURROUNDING NATURE THOUGH SUFFERING IS STILL DIGNIFIED AND BEAUTIFUL
+
+Whisper(original):
+In both these high mythical subjects, the surrounding nature, those suffering, is still dignified and beautiful.
+
+Whisper(decoded):
+In both these high, mythical subjects, the surrounding nature of birth's suffering is still dignified and beautiful.

@@ -1,0 +1,12 @@
+{
+  "run_dir": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\supplementary\\S2_B_distill60_20260528_seed42",
+  "base_config": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\configs\\scit_speech_base_config.json",
+  "base_run_dir": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42",
+  "checkpoint": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+  "config_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\supplementary\\S2_B_distill60_20260528_seed42\\configs\\distill_weight_ablation_config.json",
+  "command_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\supplementary\\S2_B_distill60_20260528_seed42\\commands\\run_distill_weight_ablation.txt",
+  "scope": "distill_weight_ablation",
+  "variant_id": "S2-B",
+  "distill_loss_lambda": 60.0,
+  "distill_loss_schedule": null
+}

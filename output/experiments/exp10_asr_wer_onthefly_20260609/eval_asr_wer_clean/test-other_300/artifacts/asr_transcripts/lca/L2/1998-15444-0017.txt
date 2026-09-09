@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0017
+# model=lca
+# L=2
+
+GT:
+THIS PROCESS IS BASED UPON THE PRINCIPLE THAT THE SALTS OF THE ALKALOIDS ARE SOLUBLE IN ALCOHOL AND WATER AND INSOLUBLE IN ETHER
+
+Whisper(original):
+This process is based upon the principle that the salts of the acolytes are soluble in and air-colon water and insoluble an ether.
+
+Whisper(decoded):
+This process is based upon the principle, but the source of the alkalized salsubil and echolent water and insoluble in Ulfe.

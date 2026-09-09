@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0015
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+WORDS WAS IT THEIR COLOURS
+
+Whisper(original):
+words. Was it their colors?
+
+Whisper(decoded):
+words. Was it their colors?

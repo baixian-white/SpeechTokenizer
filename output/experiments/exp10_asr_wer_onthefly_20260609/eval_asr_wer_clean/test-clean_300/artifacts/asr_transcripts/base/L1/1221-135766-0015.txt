@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0015
+# model=base
+# L=1
+
+GT:
+IF SPOKEN TO SHE WOULD NOT SPEAK AGAIN
+
+Whisper(original):
+If spoken to, she would not speak again.
+
+Whisper(decoded):
+I've spoken to she without speedy time.

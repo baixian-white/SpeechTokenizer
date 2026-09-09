@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0013
+# model=base
+# L=2
+
+GT:
+WHEN IT WAS THE SEVENTY THIRD NIGHT
+
+Whisper(original):
+When it was the 73rd night...
+
+Whisper(decoded):
+When it was the 73rd night...

@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0018
+# model=base
+# L=2
+
+GT:
+LITTLE PEARL WHO WAS AS GREATLY PLEASED WITH THE GLEAMING ARMOUR AS SHE HAD BEEN WITH THE GLITTERING FRONTISPIECE OF THE HOUSE SPENT SOME TIME LOOKING INTO THE POLISHED MIRROR OF THE BREASTPLATE
+
+Whisper(original):
+Little Pearl, who was as greatly pleased with the gleaming armor as she had been with the glittering frontispiece of the house, spent some time looking into the polished mirror of the breastplate.
+
+Whisper(decoded):
+Little Pearl, who was as greatly pleased with the gleaming armor as she had been with the glittering, thuntous piece of the house, spent some time vetting into the polished mirror of the breastplate.

@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0035
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+HE HAD THE FAITH IN HIM THAT MOVES MOUNTAINS
+
+Whisper(original):
+He had the faith in him that moves mountains.
+
+Whisper(decoded):
+He art the faith in him that moves mountains.

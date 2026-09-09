@@ -1,0 +1,137 @@
+{
+  "args": {
+    "run_dir": "output\\experiments\\exp22_speaker_identity_ecapa_nontty_smoke_20260708_seed42",
+    "sample_list": "",
+    "audio_root": "data\\VCTK\\wav48_silence_trimmed",
+    "speaker_source": "vctk",
+    "base_config": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\configs\\scit_speech_base_config.json",
+    "base_checkpoint": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+    "lca_config": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\lca_finetune_config.json",
+    "lca_checkpoint": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_v2_step30000_robust_optimum.pt",
+    "models": [
+      "base"
+    ],
+    "layers": [
+      1
+    ],
+    "max_speakers": 2,
+    "enroll_per_speaker": 2,
+    "test_per_speaker": 1,
+    "seed": 42,
+    "sample_rate": 16000,
+    "n_mfcc": 40,
+    "speaker_backend": "ecapa",
+    "speaker_device": "cpu",
+    "ecapa_source": "speechbrain/spkrec-ecapa-voxceleb",
+    "ecapa_savedir": "H:\\H-CODE\\speechtokenizer\\output\\models\\speechbrain_spkrec_ecapa_voxceleb",
+    "threshold": 0.25,
+    "tar_far": 0.01,
+    "device": "cuda",
+    "progress_every": 1
+  },
+  "device": "cuda",
+  "speaker_device": "cpu",
+  "speaker_backend": "SpeechBrain ECAPA (`speechbrain/spkrec-ecapa-voxceleb`)",
+  "speaker_count": 2,
+  "models": {
+    "base": {
+      "config_path": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\configs\\scit_speech_base_config.json",
+      "checkpoint": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+      "sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6"
+    }
+  },
+  "rows": [
+    {
+      "model": "original",
+      "L": 0,
+      "sample_id": "p240_225_mic2",
+      "speaker_id": "p240",
+      "audio_path": "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_225_mic2.flac",
+      "predicted_speaker": "p240",
+      "top1_correct": 1,
+      "verified": 1,
+      "score": 0.7686439752578735,
+      "correct_score": 0.7686439752578735,
+      "max_impostor_score": 0.009390134364366531,
+      "margin": 0.759253840893507,
+      "duration_sec": 3.07375
+    },
+    {
+      "model": "base",
+      "L": 1,
+      "sample_id": "p240_225_mic2",
+      "speaker_id": "p240",
+      "audio_path": "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_225_mic2.flac",
+      "predicted_speaker": "p240",
+      "top1_correct": 1,
+      "verified": 0,
+      "score": 0.21070769429206848,
+      "correct_score": 0.21070769429206848,
+      "max_impostor_score": 0.09425496309995651,
+      "margin": 0.11645273119211197,
+      "duration_sec": 3.07375
+    },
+    {
+      "model": "original",
+      "L": 0,
+      "sample_id": "p313_101_mic1",
+      "speaker_id": "p313",
+      "audio_path": "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_101_mic1.flac",
+      "predicted_speaker": "p313",
+      "top1_correct": 1,
+      "verified": 1,
+      "score": 0.6889811158180237,
+      "correct_score": 0.6889811158180237,
+      "max_impostor_score": 0.0830724835395813,
+      "margin": 0.6059086322784424,
+      "duration_sec": 3.6299375
+    },
+    {
+      "model": "base",
+      "L": 1,
+      "sample_id": "p313_101_mic1",
+      "speaker_id": "p313",
+      "audio_path": "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_101_mic1.flac",
+      "predicted_speaker": "p313",
+      "top1_correct": 1,
+      "verified": 0,
+      "score": 0.2095365822315216,
+      "correct_score": 0.2095365822315216,
+      "max_impostor_score": 0.15618422627449036,
+      "margin": 0.05335235595703125,
+      "duration_sec": 3.6299375
+    }
+  ],
+  "summary": [
+    {
+      "model": "base",
+      "L": 1,
+      "n": 2,
+      "top1_accuracy": 1.0,
+      "verified_rate": 0.0,
+      "score_mean": 0.21012213826179504,
+      "correct_score_mean": 0.21012213826179504,
+      "max_impostor_score_mean": 0.12521959468722343,
+      "margin_mean": 0.08490254357457161,
+      "eer": 0.0,
+      "eer_threshold": 0.2095365822315216,
+      "tar_at_far": 1.0,
+      "tar_threshold": 0.2095365822315216
+    },
+    {
+      "model": "original",
+      "L": 0,
+      "n": 2,
+      "top1_accuracy": 1.0,
+      "verified_rate": 1.0,
+      "score_mean": 0.7288125455379486,
+      "correct_score_mean": 0.7288125455379486,
+      "max_impostor_score_mean": 0.046231308951973915,
+      "margin_mean": 0.6825812365859747,
+      "eer": 0.0,
+      "eer_threshold": 0.6889811158180237,
+      "tar_at_far": 1.0,
+      "tar_threshold": 0.6889811158180237
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "run_id": "exp5_ablation_and_diagnosis_20260601_seed42",
+  "created_at": "2026-06-01T00:00:00+08:00",
+  "ablation_matrix_version": "1.0",
+  "scope": "Single-factor ablations validating which design choices in the SCIT-Speech pipeline are necessary",
+  "fixed_conditions": {
+    "M_n_q": 3,
+    "K_codebook_size": 1024,
+    "sample_rate": 16000,
+    "latent_rate": 50,
+    "encoder_downsample_rate": 320,
+    "test_set": "fixed_sample_list.txt (8 LibriSpeech train-clean-100 utterances)",
+    "evaluation_script": "scripts/evaluate_lca_vs_base.py + scripts/run_asr_evaluation.py + scripts/codebook_usage_report.py",
+    "asr_model": "Whisper base.en",
+    "audio_quality_metrics": ["wave_l1", "rmse", "mel_l1", "si_snr_db", "corr", "stoi", "pesq_wb"]
+  },
+  "ablations": [
+    {
+      "ablation_id": "A1_nas_vs_hand",
+      "ablation_group": "encoder_architecture",
+      "control_variant": {
+        "variant_id": "A1_hand_designed_encoder",
+        "description": "Hand-designed SeaNet encoder (n_filters=64, lstm=2, ELU, base_seanet_resnet_block)",
+        "data_source": "exp1 stage1_profile - hand_encoder row (proxy training, NOT full Exp2-style training)",
+        "params_M": 67.7,
+        "macs_G_per_sec": 5.87,
+        "rtf_mean": 0.00819,
+        "status": "data_from_exp1_stage1_proxy",
+        "caveat": "Quality numbers are from short-distill proxy training; not directly comparable to full 60-epoch SCIT-Speech-Base training"
+      },
+      "treatment_variant": {
+        "variant_id": "A1_nas_encoder",
+        "description": "NAS-searched encoder (nas_seed42_000896): n_filters=24, lstm=1, Snake, layer_ops=[skip,std_k7,sep_k9,dil_k5]",
+        "data_source": "exp1 stage1_profile - nas_seed42_000896 row + exp2 distill30 SCIT-Speech-Base full training",
+        "params_M": 8.87,
+        "macs_G_per_sec": 0.618,
+        "rtf_mean": 0.00368,
+        "status": "data_from_exp1_stage1_proxy_plus_exp2_full_training"
+      },
+      "key_metric": "encoder_params, encoder_macs, encoder_rtf, plus L=1/2/3 wave_l1/mel_l1/stoi from exp4",
+      "expected_finding": "NAS encoder reduces params -86.9%, MACs -89.5%, RTF -55.1% versus hand-designed; full-training quality comparison requires hand-designed full retrain (future work)",
+      "decoder_control_caveat": "Both variants use identical SeaNet decoder + frozen RVQ interface; comparison is encoder-only as required by exp5 plan section 4"
+    },
+    {
+      "ablation_id": "A2_base_vs_lca",
+      "ablation_group": "lca_adaptation",
+      "control_variant": {
+        "variant_id": "A2_scit_base",
+        "description": "SCIT-Speech-Base, no LCA fine-tuning",
+        "checkpoint": "output/experiments/exp2_scit_speech_distill30_retrain_20260529_seed42/checkpoints/SCIT-Speech-Base_best.pt",
+        "checkpoint_sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6",
+        "training_summary": "60-epoch from-scratch training, distill_lambda=30, no random-L, no ChannelSim",
+        "status": "completed (exp2)"
+      },
+      "treatment_variant": {
+        "variant_id": "A2_scit_lca_v2",
+        "description": "SCIT-Speech-LCA v2: LCA fine-tuning with strong ChannelSim + consistency loss",
+        "checkpoint": "output/experiments/exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42/checkpoints/SCIT-Speech-LCA_best.pt",
+        "checkpoint_sha256": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a",
+        "training_summary": "10-epoch LCA fine-tuning from Base, strong-perturb (p_drop<=0.10, p_sub<=0.03), lambda_consistency=0.5",
+        "status": "completed (exp3 v2)"
+      },
+      "key_metric": "WER, mel_l1, stoi at L=1/2/3 clean conditions; perturbation degradation at L=3",
+      "data_source": "exp4 184-row evaluation table (audio_quality_results.csv + asr_results.csv)",
+      "expected_finding": "LCA v2 marginally improves clean reconstruction (mel_l1 ~3-4% lower, stoi +0.01); LCA's main benefit is robustness under perturbation (exp3 v2 robustness analysis: 6/6 metrics positive robust_imp)"
+    },
+    {
+      "ablation_id": "A3_with_vs_without_distillation",
+      "ablation_group": "semantic_distillation",
+      "control_variant": {
+        "variant_id": "A3_distill0",
+        "description": "SCIT-Speech-Base trained with distill_loss_lambda=0 (no semantic distillation from HuBERT teacher)",
+        "checkpoint": "output/experiments/exp5_ablation_and_diagnosis_20260601_seed42/checkpoints/A3_distill0/SCIT-Speech-Base_best.pt",
+        "training_summary": "60-epoch from-scratch training, identical to Exp2 distill30 except distill_loss_lambda=0",
+        "status": "in_progress_or_planned"
+      },
+      "treatment_variant": {
+        "variant_id": "A3_distill30",
+        "description": "SCIT-Speech-Base trained with distill_loss_lambda=30 (the production variant from Exp2)",
+        "checkpoint": "output/experiments/exp2_scit_speech_distill30_retrain_20260529_seed42/checkpoints/SCIT-Speech-Base_best.pt",
+        "checkpoint_sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6",
+        "training_summary": "60-epoch from-scratch training with distill_loss_lambda=30, NAS encoder",
+        "status": "completed (reuses exp2 production)"
+      },
+      "key_metric": "WER, semantic_similarity (proxy via WER vs ground-truth), mel_l1 at L=1/2",
+      "expected_finding": "Without distillation, low-layer indices (L=1) lose semantic content - measurable as WER degradation at L=1 vs the distill30 baseline",
+      "training_required": true,
+      "estimated_training_hours": 24
+    },
+    {
+      "ablation_id": "A4_with_vs_without_random_L",
+      "ablation_group": "random_L_sampling",
+      "control_variant": {
+        "variant_id": "A4_random_L_off",
+        "description": "Trained without random L sampling - full-depth (n_q=3) only at every step",
+        "data_source": "exp2 SCIT-Speech-Base IS effectively this control (no random-L during exp2 training)",
+        "checkpoint": "output/experiments/exp2_scit_speech_distill30_retrain_20260529_seed42/checkpoints/SCIT-Speech-Base_best.pt"
+      },
+      "treatment_variant": {
+        "variant_id": "A4_random_L_on",
+        "description": "Trained with random L sampling - per-batch L drawn uniformly from {1,2,3}",
+        "data_source": "exp3 SCIT-Speech-LCA v2 USES random-L during 10-epoch fine-tuning",
+        "checkpoint": "output/experiments/exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42/checkpoints/SCIT-Speech-LCA_best.pt"
+      },
+      "key_metric": "L=1/2 wave_l1/stoi - random-L should help low-layer reconstruction",
+      "data_source": "exp4 184-row evaluation - same Base-vs-LCA contrast carries the random-L signal",
+      "caveat_confound": "A4 control vs treatment is NOT a clean isolated single-factor ablation: LCA v2 also adds ChannelSim + lambda_consistency + lambda_comm=1.5 changes vs Base. Strictly attributing the LCA improvement to random-L alone is overstatement. A clean A4 would require training a Base-style 60-epoch run with random-L ON but no ChannelSim and no consistency loss, ~24h GPU. Listed as future work.",
+      "expected_finding": "LCA v2 (random-L on) outperforms Base (random-L off) on low-layer mel_l1 by 3-5%, but other LCA-specific factors confound this attribution. The exp3 v2 dev-matrix data (where random-L is held constant across LCA evaluation steps) provides stronger evidence that random-L is the unifying factor for L=1/2/3 simultaneous performance."
+    },
+    {
+      "ablation_id": "A5_channel_sim_on_vs_off_optional",
+      "ablation_group": "channel_sim_optional",
+      "control_variant": {
+        "variant_id": "A5_no_channel_sim",
+        "description": "No ChannelSim during training (LCA-style training but without index perturbation)",
+        "data_source": "Approximated by exp3 LCA v1 (weak ChannelSim p_drop<=0.03, p_sub<=0.005, lambda_consistency=0)",
+        "checkpoint": "output/experiments/exp3_low_load_channel_aware_adaptation_20260530_seed42/checkpoints/SCIT-Speech-LCA_best.pt",
+        "checkpoint_sha256": "9daa924ff5aeedf2fa4aa1ddb2d7ce7f53297548e7258d0ef8d5b1af255a8609",
+        "caveat": "v1 has weak (not zero) ChannelSim. A pure ChannelSim-off variant requires another 10h training run; v1's weak ChannelSim is a reasonable proxy because exp3 v1 robustness analysis showed near-zero robustness improvement (effectively no benefit)"
+      },
+      "treatment_variant": {
+        "variant_id": "A5_strong_channel_sim",
+        "description": "Strong ChannelSim + consistency loss",
+        "checkpoint": "output/experiments/exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42/checkpoints/SCIT-Speech-LCA_best.pt",
+        "checkpoint_sha256": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a"
+      },
+      "key_metric": "Robustness improvement (clean - perturbed degradation) - already computed in exp3 v2 summary",
+      "expected_finding": "v1 (weak ChannelSim) showed near-zero robustness improvement on 6/6 metrics; v2 (strong + consistency) showed positive robustness on 6/6 metrics with mel_l1 12/12 cells improved",
+      "status": "data_from_exp3_v1_v2_comparison_with_caveat"
+    }
+  ],
+  "parent_runs": {
+    "exp1": {
+      "run_id": "exp1_nas_distill_run1_seed42",
+      "purpose": "NAS encoder search; provides hand-designed and NAS encoder profiling data",
+      "key_artifact": "metrics/stage1_profile.json (hand vs NAS proxy data)"
+    },
+    "exp2": {
+      "run_id": "exp2_scit_speech_distill30_retrain_20260529_seed42",
+      "purpose": "SCIT-Speech-Base production training; serves as A2 control + A3 treatment + A4 control",
+      "checkpoint_sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6"
+    },
+    "exp3_v1": {
+      "run_id": "exp3_low_load_channel_aware_adaptation_20260530_seed42",
+      "purpose": "LCA v1 (weak channel sim) - serves as A5 control proxy",
+      "checkpoint_sha256": "9daa924ff5aeedf2fa4aa1ddb2d7ce7f53297548e7258d0ef8d5b1af255a8609"
+    },
+    "exp3_v2": {
+      "run_id": "exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42",
+      "purpose": "LCA v2 (strong channel sim + consistency) - serves as A2 treatment + A4 treatment + A5 treatment",
+      "checkpoint_sha256": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a"
+    },
+    "exp4": {
+      "run_id": "exp4_baseline_comparison_20260531_seed42",
+      "purpose": "Provides 184-row audio quality + WER/CER table for non-training ablations (A2, A4, A5)"
+    }
+  },
+  "execution_strategy": "C: distillation=0 only - train one new variant (A3_distill0), reuse all others from existing experiments. Total estimated GPU: ~24-28 hours."
+}

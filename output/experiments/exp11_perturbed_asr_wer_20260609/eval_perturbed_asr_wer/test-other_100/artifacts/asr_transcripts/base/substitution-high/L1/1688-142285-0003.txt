@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0003
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+I REALLY LIKED THAT ACCOUNT OF HIMSELF BETTER THAN ANYTHING ELSE HE SAID
+
+Whisper(original):
+I really like that account of himself, better than anything else he said.
+
+Whisper(decoded):
+Admiral not that a kind of himself, that's when anything else he said.

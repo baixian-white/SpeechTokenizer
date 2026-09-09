@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0015
+# model=base
+# L=2
+
+GT:
+THE WHOLE PARTY CROWDED TO THE SPOT WHERE UNCAS POINTED OUT THE IMPRESSION OF A MOCCASIN IN THE MOIST ALLUVION
+
+Whisper(original):
+The whole party crowded to the spot where Unkis pointed out the impression of a moccasin in the moist alluvian.
+
+Whisper(decoded):
+The whole party crowded to the spot where Unkis pointed out the impression of Amakasen and the moist alluvium.

@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0015
+# model=base
+# L=2
+
+GT:
+MOST PEOPLE TALK TOO MUCH SO IT IS A RELIEF TO FIND ONE WHO TALKS TOO LITTLE
+
+Whisper(original):
+Most people talk too much, so it is a relief to find one who talks too little.
+
+Whisper(decoded):
+Most people talk too much, so is a relief to find one who talks too little.

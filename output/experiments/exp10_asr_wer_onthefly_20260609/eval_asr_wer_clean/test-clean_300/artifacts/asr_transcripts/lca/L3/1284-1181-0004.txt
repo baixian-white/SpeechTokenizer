@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0004
+# model=lca
+# L=3
+
+GT:
+GOLD IS THE MOST COMMON METAL IN THE LAND OF OZ AND IS USED FOR MANY PURPOSES BECAUSE IT IS SOFT AND PLIABLE
+
+Whisper(original):
+Gold is the most common metal in the land of Oz and is used for many purposes because it is soft and pliable.
+
+Whisper(decoded):
+Gold is the most common metal in the land of Oz and is used for many purposes because it is soft and pliable.

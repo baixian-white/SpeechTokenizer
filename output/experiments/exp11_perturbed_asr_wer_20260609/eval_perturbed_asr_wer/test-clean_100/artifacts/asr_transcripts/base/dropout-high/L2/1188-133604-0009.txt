@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0009
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+NOW YOU WILL SEE IN THESE STUDIES THAT THE MOMENT THE WHITE IS INCLOSED PROPERLY AND HARMONIZED WITH THE OTHER HUES IT BECOMES SOMEHOW MORE PRECIOUS AND PEARLY THAN THE WHITE PAPER AND THAT I AM NOT AFRAID TO LEAVE A WHOLE FIELD OF UNTREATED WHITE PAPER ALL ROUND IT BEING SURE THAT EVEN THE LITTLE DIAMONDS IN THE ROUND WINDOW WILL TELL AS JEWELS IF THEY ARE GRADATED JUSTLY
+
+Whisper(original):
+Now you will see in these studies that the moment the white is enclosed properly and harmonized with the other hues, it becomes somehow more precious and pearly than the white paper. And then I am not afraid to leave a whole field of untreated white paper all round it, being sure that even the little diamonds in the round window will tell as jewels if they are gradated justly.
+
+Whisper(decoded):
+Now you will see in these studies that the moment the light is enclosed properly and harmonize with the other hues, it becomes somehow more precious and pearly than the white paper. And that I am not afraid to leave a whole field of untreated white paper all around it, being sure that even the little diamonds in the round window will tell those jewels if they are gradated justly.

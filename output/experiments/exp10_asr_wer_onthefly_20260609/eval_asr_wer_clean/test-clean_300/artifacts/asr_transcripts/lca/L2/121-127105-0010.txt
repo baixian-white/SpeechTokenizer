@@ -1,0 +1,12 @@
+# sample_id=121-127105-0010
+# model=lca
+# L=2
+
+GT:
+SHE SENT ME THE PAGES IN QUESTION BEFORE SHE DIED
+
+Whisper(original):
+She sent me the pages in question before she died.
+
+Whisper(decoded):
+She said that the pain doesn't push him before she died.

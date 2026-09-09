@@ -1,0 +1,12 @@
+# sample_id=121-127105-0011
+# model=lca
+# L=1
+
+GT:
+SHE WAS THE MOST AGREEABLE WOMAN I'VE EVER KNOWN IN HER POSITION SHE WOULD HAVE BEEN WORTHY OF ANY WHATEVER
+
+Whisper(original):
+She was the most agreeable woman I've ever known in her position. She would have been worthy of any, whatever.
+
+Whisper(decoded):
+She was the most agreeable woman I'd ever known in her position, she would have been worthy of any but in her.

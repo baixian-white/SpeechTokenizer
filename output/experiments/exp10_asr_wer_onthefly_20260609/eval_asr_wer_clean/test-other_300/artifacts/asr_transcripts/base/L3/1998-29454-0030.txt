@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0030
+# model=base
+# L=3
+
+GT:
+NOW WE'RE SQUARE HE SAID
+
+Whisper(original):
+Now, E square is set.
+
+Whisper(decoded):
+Now we square this head.

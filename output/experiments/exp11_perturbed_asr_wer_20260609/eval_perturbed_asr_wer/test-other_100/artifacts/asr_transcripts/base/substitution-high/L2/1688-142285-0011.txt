@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0011
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+ALL HIS FORMER FRIENDS SHRUNK FROM THE DISCLOSURES THAT HAD TO BE MADE OF HIS DISHONEST GAMBLING WILD HOPELESS STRUGGLES MADE WITH OTHER PEOPLE'S MONEY TO REGAIN HIS OWN MODERATE PORTION OF WEALTH
+
+Whisper(original):
+All his former friends shrunk from the disclosures that had to be made of his dishonest gambling. Wild, hopeless struggles, made with other people's money, to regain his own moderate portion of wealth.
+
+Whisper(decoded):
+All his formal friends shot from the disclosures that had to be made of his dishonest gambling. Wild, hopeless struggles made with other people's money. Sir Dan designed a more direct portion of wealth.

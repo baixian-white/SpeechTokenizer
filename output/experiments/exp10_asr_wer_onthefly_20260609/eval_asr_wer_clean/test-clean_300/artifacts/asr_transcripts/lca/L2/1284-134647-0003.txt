@@ -1,0 +1,12 @@
+# sample_id=1284-134647-0003
+# model=lca
+# L=2
+
+GT:
+CONSTANTINE EASILY BELIEVED THAT THE HERETICS WHO PRESUMED TO DISPUTE HIS OPINIONS OR TO OPPOSE HIS COMMANDS WERE GUILTY OF THE MOST ABSURD AND CRIMINAL OBSTINACY AND THAT A SEASONABLE APPLICATION OF MODERATE SEVERITIES MIGHT SAVE THOSE UNHAPPY MEN FROM THE DANGER OF AN EVERLASTING CONDEMNATION
+
+Whisper(original):
+Constantine easily believed that the heretics, who presumed to dispute his opinions, or to oppose his commands, were guilty of the most absurd and criminal obstinacy, and that a seasonable application of moderate severities might save those unhappy men from the danger of an everlasting condemnation.
+
+Whisper(decoded):
+Constantine either believed that the heretics, who presumed to dispute his opinions, or to oppose his commands, were guilty of the most absurd and criminal obstinacy, and that a seasonable application of moderate severities might save those unhappy men from the danger of an everlasting condemnation.

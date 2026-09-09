@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0005
+# model=lca
+# L=3
+
+GT:
+NO ONE WOULD DISTURB THEIR LITTLE HOUSE EVEN IF ANYONE CAME SO FAR INTO THE THICK FOREST WHILE THEY WERE GONE
+
+Whisper(original):
+No one would disturb their little house, even if anyone came so far into the thick forest while they were gone. // // // // // // // // // // // // // // // // // // // // // // //
+
+Whisper(decoded):
+No one would disturb their little house, even if anyone came so far into the thick forest while they were gone.

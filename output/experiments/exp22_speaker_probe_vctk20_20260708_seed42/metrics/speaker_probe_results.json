@@ -1,0 +1,178 @@
+{
+  "args": {
+    "run_dir": "output\\experiments\\exp22_speaker_probe_vctk20_20260708_seed42",
+    "sample_list": "",
+    "audio_root": "data\\VCTK\\wav48_silence_trimmed",
+    "speaker_source": "vctk",
+    "base_config": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\configs\\scit_speech_base_config.json",
+    "base_checkpoint": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+    "lca_config": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\lca_finetune_config.json",
+    "lca_checkpoint": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_v2_step30000_robust_optimum.pt",
+    "models": [
+      "base",
+      "lca"
+    ],
+    "feature_kinds": [
+      "codes_hist",
+      "latent_stats"
+    ],
+    "layers": [
+      1,
+      2,
+      3
+    ],
+    "max_speakers": 20,
+    "train_per_speaker": 5,
+    "test_per_speaker": 5,
+    "seed": 42,
+    "device": "cuda",
+    "progress_every": 20
+  },
+  "device": "cuda",
+  "models": {
+    "base": {
+      "config_path": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\configs\\scit_speech_base_config.json",
+      "checkpoint": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+      "sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6"
+    },
+    "lca": {
+      "config_path": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\lca_finetune_config.json",
+      "checkpoint": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_v2_step30000_robust_optimum.pt",
+      "sha256": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a"
+    }
+  },
+  "summary": [
+    {
+      "model": "base",
+      "feature_kind": "codes_hist",
+      "L": 1,
+      "feature_dim": 1024,
+      "top1_accuracy": 0.61,
+      "macro_f1": 0.5893362193362193,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.95
+    },
+    {
+      "model": "base",
+      "feature_kind": "codes_hist",
+      "L": 2,
+      "feature_dim": 2048,
+      "top1_accuracy": 0.69,
+      "macro_f1": 0.6742775280275279,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.98
+    },
+    {
+      "model": "base",
+      "feature_kind": "codes_hist",
+      "L": 3,
+      "feature_dim": 3072,
+      "top1_accuracy": 0.73,
+      "macro_f1": 0.7130808080808081,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.96
+    },
+    {
+      "model": "base",
+      "feature_kind": "latent_stats",
+      "L": 1,
+      "feature_dim": 2048,
+      "top1_accuracy": 0.59,
+      "macro_f1": 0.585551948051948,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.92
+    },
+    {
+      "model": "base",
+      "feature_kind": "latent_stats",
+      "L": 2,
+      "feature_dim": 4096,
+      "top1_accuracy": 0.76,
+      "macro_f1": 0.7547474747474747,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.96
+    },
+    {
+      "model": "base",
+      "feature_kind": "latent_stats",
+      "L": 3,
+      "feature_dim": 6144,
+      "top1_accuracy": 0.79,
+      "macro_f1": 0.7854401154401154,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.97
+    },
+    {
+      "model": "lca",
+      "feature_kind": "codes_hist",
+      "L": 1,
+      "feature_dim": 1024,
+      "top1_accuracy": 0.49,
+      "macro_f1": 0.4505500055500056,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.89
+    },
+    {
+      "model": "lca",
+      "feature_kind": "codes_hist",
+      "L": 2,
+      "feature_dim": 2048,
+      "top1_accuracy": 0.7,
+      "macro_f1": 0.6897097347097347,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.96
+    },
+    {
+      "model": "lca",
+      "feature_kind": "codes_hist",
+      "L": 3,
+      "feature_dim": 3072,
+      "top1_accuracy": 0.71,
+      "macro_f1": 0.6931188256188257,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.97
+    },
+    {
+      "model": "lca",
+      "feature_kind": "latent_stats",
+      "L": 1,
+      "feature_dim": 2048,
+      "top1_accuracy": 0.54,
+      "macro_f1": 0.5367279942279943,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.85
+    },
+    {
+      "model": "lca",
+      "feature_kind": "latent_stats",
+      "L": 2,
+      "feature_dim": 4096,
+      "top1_accuracy": 0.78,
+      "macro_f1": 0.7722513597513598,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.94
+    },
+    {
+      "model": "lca",
+      "feature_kind": "latent_stats",
+      "L": 3,
+      "feature_dim": 6144,
+      "top1_accuracy": 0.81,
+      "macro_f1": 0.8093506493506493,
+      "speaker_count": 20,
+      "test_count": 100,
+      "top5_accuracy": 0.96
+    }
+  ]
+}

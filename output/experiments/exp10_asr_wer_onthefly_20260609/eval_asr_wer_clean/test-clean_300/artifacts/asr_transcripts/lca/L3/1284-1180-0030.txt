@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0030
+# model=lca
+# L=3
+
+GT:
+WHEN I FOUND IT I SAID TO MYSELF THAT IT WOULD DO NICELY FOR MY SERVANT GIRL FOR WHEN SHE WAS BROUGHT TO LIFE SHE WOULD NOT BE PROUD NOR HAUGHTY AS THE GLASS CAT IS FOR SUCH A DREADFUL MIXTURE OF COLORS WOULD DISCOURAGE HER FROM TRYING TO BE AS DIGNIFIED AS THE BLUE MUNCHKINS ARE
+
+Whisper(original):
+When I found it, I said to myself that it would do nicely for my servant girl, for when she was brought to life she would not be proud nor haughty as the glass cat is, for such a dreadful mixture of colors would discourage her from trying to be as dignified as the blue munchkins are.
+
+Whisper(decoded):
+When I found it, I said to myself that it would do nicely for my servant girl, for when she was brought to life she would not be proud nor haughty as the glass cat is. If we sought to dreadful mixture of colors would discourage her from trying to be as dignified as the blue munchkins are.

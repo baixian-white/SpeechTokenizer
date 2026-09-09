@@ -1,0 +1,161 @@
+order,trial,sample_id,wav,pair,note,A_method,B_method
+1,71,121-121726-0011,121-121726-0011.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+2,91,121-127105-0029,121-127105-0029.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+3,54,121-121726-0003,121-121726-0003.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+4,142,1284-1181-0014,1284-1181-0014.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+5,41,1089-134691-0022,1089-134691-0022.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+6,8,1089-134686-0004,1089-134686-0004.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+7,9,1089-134686-0015,1089-134686-0015.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+8,127,1284-1181-0004,1284-1181-0004.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+9,131,1284-1181-0005,1284-1181-0005.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+10,87,121-127105-0012,121-127105-0012.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+11,72,121-121726-0011,121-121726-0011.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+12,75,121-127105-0002,121-127105-0002.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+13,151,1320-122612-0014,1320-122612-0014.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+14,130,1284-1181-0005,1284-1181-0005.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+15,134,1284-1181-0007,1284-1181-0007.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+16,73,121-127105-0002,121-127105-0002.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+17,26,1089-134691-0001,1089-134691-0001.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+18,2,1089-134686-0002,1089-134686-0002.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+19,15,1089-134686-0021,1089-134686-0021.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+20,70,121-121726-0011,121-121726-0011.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+21,4,1089-134686-0002,1089-134686-0002.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+22,62,121-121726-0005,121-121726-0005.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+23,52,1188-133604-0029,1188-133604-0029.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+24,98,1221-135767-0024,1221-135767-0024.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+25,21,1089-134686-0035,1089-134686-0035.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+26,37,1089-134691-0020,1089-134691-0020.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+27,80,121-127105-0003,121-127105-0003.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+28,11,1089-134686-0015,1089-134686-0015.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+29,113,1284-1180-0020,1284-1180-0020.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+30,78,121-127105-0003,121-127105-0003.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+31,115,1284-1180-0020,1284-1180-0020.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+32,129,1284-1181-0005,1284-1181-0005.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+33,3,1089-134686-0002,1089-134686-0002.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+34,22,1089-134686-0035,1089-134686-0035.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+35,97,1221-135767-0024,1221-135767-0024.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+36,143,1284-1181-0014,1284-1181-0014.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+37,156,1320-122617-0000,1320-122617-0000.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+38,93,121-127105-0034,121-127105-0034.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+39,12,1089-134686-0015,1089-134686-0015.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+40,10,1089-134686-0015,1089-134686-0015.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+41,138,1284-1181-0009,1284-1181-0009.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+42,95,121-127105-0034,121-127105-0034.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+43,63,121-121726-0005,121-121726-0005.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+44,85,121-127105-0012,121-127105-0012.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+45,74,121-127105-0002,121-127105-0002.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+46,6,1089-134686-0004,1089-134686-0004.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+47,45,1188-133604-0014,1188-133604-0014.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+48,29,1089-134691-0005,1089-134691-0005.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+49,136,1284-1181-0007,1284-1181-0007.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+50,79,121-127105-0003,121-127105-0003.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+51,124,1284-1181-0000,1284-1181-0000.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+52,86,121-127105-0012,121-127105-0012.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+53,152,1320-122612-0014,1320-122612-0014.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+54,5,1089-134686-0004,1089-134686-0004.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+55,53,121-121726-0003,121-121726-0003.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+56,105,1284-1180-0011,1284-1180-0011.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+57,32,1089-134691-0005,1089-134691-0005.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+58,139,1284-1181-0009,1284-1181-0009.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+59,140,1284-1181-0009,1284-1181-0009.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+60,1,1089-134686-0002,1089-134686-0002.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+61,84,121-127105-0006,121-127105-0006.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+62,117,1284-1180-0027,1284-1180-0027.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+63,35,1089-134691-0019,1089-134691-0019.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+64,61,121-121726-0005,121-121726-0005.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+65,59,121-121726-0004,121-121726-0004.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+66,57,121-121726-0004,121-121726-0004.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+67,145,1284-1181-0015,1284-1181-0015.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+68,100,1221-135767-0024,1221-135767-0024.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+69,144,1284-1181-0014,1284-1181-0014.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+70,67,121-121726-0009,121-121726-0009.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+71,96,121-127105-0034,121-127105-0034.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+72,122,1284-1181-0000,1284-1181-0000.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+73,121,1284-1181-0000,1284-1181-0000.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+74,92,121-127105-0029,121-127105-0029.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+75,116,1284-1180-0020,1284-1180-0020.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+76,106,1284-1180-0011,1284-1180-0011.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+77,81,121-127105-0006,121-127105-0006.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+78,94,121-127105-0034,121-127105-0034.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+79,123,1284-1181-0000,1284-1181-0000.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+80,158,1320-122617-0005,1320-122617-0005.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+81,14,1089-134686-0021,1089-134686-0021.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+82,33,1089-134691-0019,1089-134691-0019.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+83,99,1221-135767-0024,1221-135767-0024.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+84,111,1284-1180-0015,1284-1180-0015.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+85,120,1284-1180-0027,1284-1180-0027.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+86,64,121-121726-0005,121-121726-0005.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+87,34,1089-134691-0019,1089-134691-0019.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+88,25,1089-134691-0001,1089-134691-0001.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+89,65,121-121726-0009,121-121726-0009.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+90,104,1284-1180-0003,1284-1180-0003.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+91,83,121-127105-0006,121-127105-0006.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+92,89,121-127105-0029,121-127105-0029.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+93,147,1284-1181-0015,1284-1181-0015.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+94,18,1089-134686-0033,1089-134686-0033.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+95,153,1320-122617-0000,1320-122617-0000.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+96,20,1089-134686-0033,1089-134686-0033.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+97,135,1284-1181-0007,1284-1181-0007.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+98,107,1284-1180-0011,1284-1180-0011.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+99,109,1284-1180-0015,1284-1180-0015.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+100,149,1320-122612-0014,1320-122612-0014.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+101,82,121-127105-0006,121-127105-0006.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+102,68,121-121726-0009,121-121726-0009.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+103,38,1089-134691-0020,1089-134691-0020.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+104,76,121-127105-0002,121-127105-0002.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+105,155,1320-122617-0000,1320-122617-0000.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+106,56,121-121726-0003,121-121726-0003.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+107,39,1089-134691-0020,1089-134691-0020.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+108,48,1188-133604-0014,1188-133604-0014.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+109,24,1089-134686-0035,1089-134686-0035.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+110,146,1284-1181-0015,1284-1181-0015.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+111,132,1284-1181-0005,1284-1181-0005.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+112,31,1089-134691-0005,1089-134691-0005.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+113,27,1089-134691-0001,1089-134691-0001.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+114,102,1284-1180-0003,1284-1180-0003.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+115,137,1284-1181-0009,1284-1181-0009.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+116,150,1320-122612-0014,1320-122612-0014.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+117,126,1284-1181-0004,1284-1181-0004.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+118,58,121-121726-0004,121-121726-0004.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+119,90,121-127105-0029,121-127105-0029.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+120,50,1188-133604-0029,1188-133604-0029.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+121,101,1284-1180-0003,1284-1180-0003.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+122,13,1089-134686-0021,1089-134686-0021.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+123,47,1188-133604-0014,1188-133604-0014.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+124,43,1089-134691-0022,1089-134691-0022.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+125,46,1188-133604-0014,1188-133604-0014.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+126,42,1089-134691-0022,1089-134691-0022.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+127,103,1284-1180-0003,1284-1180-0003.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+128,30,1089-134691-0005,1089-134691-0005.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+129,36,1089-134691-0019,1089-134691-0019.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+130,128,1284-1181-0004,1284-1181-0004.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+131,69,121-121726-0011,121-121726-0011.wav,P1_lcaL3_vs_dac,both 1.5 kbps,scit_lca_L3,dac_1.5k
+132,114,1284-1180-0020,1284-1180-0020.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,encodec_1.5k,scit_lca_L3
+133,118,1284-1180-0027,1284-1180-0027.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+134,88,121-127105-0012,121-127105-0012.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+135,17,1089-134686-0033,1089-134686-0033.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+136,77,121-127105-0003,121-127105-0003.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+137,108,1284-1180-0011,1284-1180-0011.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+138,119,1284-1180-0027,1284-1180-0027.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+139,159,1320-122617-0005,1320-122617-0005.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+140,44,1089-134691-0022,1089-134691-0022.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+141,66,121-121726-0009,121-121726-0009.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+142,16,1089-134686-0021,1089-134686-0021.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+143,154,1320-122617-0000,1320-122617-0000.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+144,51,1188-133604-0029,1188-133604-0029.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+145,49,1188-133604-0029,1188-133604-0029.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+146,60,121-121726-0004,121-121726-0004.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+147,23,1089-134686-0035,1089-134686-0035.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+148,28,1089-134691-0001,1089-134691-0001.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+149,7,1089-134686-0004,1089-134686-0004.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+150,40,1089-134691-0020,1089-134691-0020.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+151,55,121-121726-0003,121-121726-0003.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),opus_6k,scit_lca_L3
+152,19,1089-134686-0033,1089-134686-0033.wav,P3_lcaL3_vs_opus6k,SCIT 1.5k vs Opus 6k (1/4 bw),scit_lca_L3,opus_6k
+153,148,1284-1181-0015,1284-1181-0015.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L3,scit_lca_L1
+154,133,1284-1181-0007,1284-1181-0007.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+155,112,1284-1180-0015,1284-1180-0015.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+156,110,1284-1180-0015,1284-1180-0015.wav,P2_lcaL3_vs_encodec,both 1.5 kbps,scit_lca_L3,encodec_1.5k
+157,157,1320-122617-0005,1320-122617-0005.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+158,160,1320-122617-0005,1320-122617-0005.wav,P4_lcaL1_vs_lcaL3,own rate ladder 500 vs 1500 bps,scit_lca_L1,scit_lca_L3
+159,125,1284-1181-0004,1284-1181-0004.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3
+160,141,1284-1181-0014,1284-1181-0014.wav,P1_lcaL3_vs_dac,both 1.5 kbps,dac_1.5k,scit_lca_L3

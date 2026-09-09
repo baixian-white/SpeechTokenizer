@@ -26,6 +26,7 @@ import os
 import gc
 import json
 import sys
+import argparse
 from pathlib import Path
 import optuna
 import torch
@@ -76,6 +77,11 @@ TOTAL_FLOPS_LIMIT = 4_000_000_000              # FLOPs 限制 (4G)，超过此�
 TRAIN_SUBSET_PATH = ARTIFACTS_DIR / "train_subset_nas.txt"  # 代理数据集路径 (由 make_subset.py 生成)
 GLOBAL_BEST_LOSS = float('inf')                # 记录全局最优 Loss
 FIXED_TEST_AUDIO_PATH = PROJECT_ROOT / "samples" / "example_input.wav"  # 用于可视化的固定测试音频
+SEARCH_N_TRIALS = 300
+SEARCH_N_EPOCHS = 100
+SEARCH_BATCH_SIZE = 16
+SEARCH_NUM_WORKERS = 4
+SEARCH_SEED = 42
 
 # ==========================
 # 辅助函数
@@ -230,11 +236,11 @@ def objective(trial):
             print("❌ 数据集为空！")
             return float('inf')
             
-        train_loader = get_dataloader(train_dataset, batch_size=16, num_workers=4)
+        train_loader = get_dataloader(train_dataset, batch_size=SEARCH_BATCH_SIZE, num_workers=SEARCH_NUM_WORKERS)
         optimizer = torch.optim.Adam(model.parameters(), lr=3e-4)
         
         # 搜索阶段 Epoch 不需太多，主要看收敛趋势
-        n_epochs = 100 
+        n_epochs = SEARCH_N_EPOCHS
         final_loss = float('inf')
         
         model.train()
@@ -357,8 +363,35 @@ def objective(trial):
     return final_loss
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run constrained SEANet autoencoder NAS search.")
+    parser.add_argument("--db_path", type=str, default=str(DB_PATH))
+    parser.add_argument("--study_name", type=str, default=STUDY_NAME)
+    parser.add_argument("--train_subset", type=str, default=str(TRAIN_SUBSET_PATH))
+    parser.add_argument("--results_dir", type=str, default=str(RESULTS_DIR))
+    parser.add_argument("--n_trials", type=int, default=SEARCH_N_TRIALS)
+    parser.add_argument("--n_epochs", type=int, default=SEARCH_N_EPOCHS)
+    parser.add_argument("--batch_size", type=int, default=SEARCH_BATCH_SIZE)
+    parser.add_argument("--num_workers", type=int, default=SEARCH_NUM_WORKERS)
+    parser.add_argument("--seed", type=int, default=SEARCH_SEED)
+    args = parser.parse_args()
+
+    DB_PATH = Path(args.db_path)
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    DB_URL = f"sqlite:///{DB_PATH.resolve().as_posix()}"
+    STUDY_NAME = args.study_name
+    TRAIN_SUBSET_PATH = Path(args.train_subset)
+    RESULTS_DIR = Path(args.results_dir)
+    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+    SEARCH_N_TRIALS = args.n_trials
+    SEARCH_N_EPOCHS = args.n_epochs
+    SEARCH_BATCH_SIZE = args.batch_size
+    SEARCH_NUM_WORKERS = args.num_workers
+    SEARCH_SEED = args.seed
+    torch.manual_seed(SEARCH_SEED)
+    np.random.seed(SEARCH_SEED)
+
     # 使用 TPE (Tree-structured Parzen Estimator) 贝叶斯优化算法
-    sampler = optuna.samplers.TPESampler(n_startup_trials=10)
+    sampler = optuna.samplers.TPESampler(n_startup_trials=10, seed=SEARCH_SEED)
     
     # 创建 Study，指向 SQLite 数据库实现断点续搜
     study = optuna.create_study(
@@ -370,4 +403,4 @@ if __name__ == "__main__":
     )
     
     # 开始搜索 (n_trials 决定了总共尝试多少种组合)
-    study.optimize(objective, n_trials=300)
+    study.optimize(objective, n_trials=SEARCH_N_TRIALS)

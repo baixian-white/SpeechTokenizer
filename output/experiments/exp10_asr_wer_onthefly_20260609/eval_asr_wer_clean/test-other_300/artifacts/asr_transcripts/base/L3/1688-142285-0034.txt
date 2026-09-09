@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0034
+# model=base
+# L=3
+
+GT:
+A SERVANT TO GIVE DIXON PERMANENT ASSISTANCE SHOULD BE GOT IF SHE GAVE UP HER WHOLE TIME TO THE SEARCH AND THEN AT ANY RATE HER MOTHER MIGHT HAVE ALL THE PERSONAL ATTENTION SHE REQUIRED AND HAD BEEN ACCUSTOMED TO HER WHOLE LIFE
+
+Whisper(original):
+A servant to give Dixon permanent assistance should be got if she gave up the whole time to the search, and then, at any rate, her mother might have all the personal attention she required, and had been accustomed to her whole life.
+
+Whisper(decoded):
+a servant to give Dixon a permanent assistant should be got if she gave up the whole times of the surge. And then, at any rate, her mother might have all the personal attention she required, and have been accustomed to it all the way.

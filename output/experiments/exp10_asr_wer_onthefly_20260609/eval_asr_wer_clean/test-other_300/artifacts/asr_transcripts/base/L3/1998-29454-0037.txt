@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0037
+# model=base
+# L=3
+
+GT:
+THAT WAS CHARMING BUT IT WAS PLEASANT TOO TO WASH THE MUD OFF ON THE WET GRASS
+
+Whisper(original):
+that was charming, but it was pleasant too to wash the mud off on the wet grass.
+
+Whisper(decoded):
+But was charming, that it was pleasant too, to rush the matter from the bad class.

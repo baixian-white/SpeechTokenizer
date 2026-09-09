@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0027
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+HE CLASPED HIS HANDS ON THE DESK AND SAID
+
+Whisper(original):
+He clasped his hands on the desk and said,
+
+Whisper(decoded):
+He clasped his hands on the desk and said...

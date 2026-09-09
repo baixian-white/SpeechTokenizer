@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0027
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+NOW HERE IS RAPHAEL EXACTLY BETWEEN THE TWO TREES STILL DRAWN LEAF BY LEAF WHOLLY FORMAL BUT BEAUTIFUL MIST COMING GRADUALLY INTO THE DISTANCE
+
+Whisper(original):
+Now here is Raphael. Exactly between the two, trees still drawn leaf by leaf, wholly formal, but beautiful mist come in gradually into the distance.
+
+Whisper(decoded):
+Now here's what I know. It's after the tune of the two. Trees still drowned in flat leaf, whole flumble. A beautiful mist come gradually into the distance.

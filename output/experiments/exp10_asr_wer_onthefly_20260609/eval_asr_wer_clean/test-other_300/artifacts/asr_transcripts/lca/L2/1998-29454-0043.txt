@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0043
+# model=lca
+# L=2
+
+GT:
+I KNOW YOU WILL SAID DICKIE WITH ENTHUSIASM I KNOW OW GOOD YOU ARE
+
+Whisper(original):
+I know you will, Satikki, was enthusiasm. I know how good you are.
+
+Whisper(decoded):
+I know you will if I take you with it fully as I know how good you are.

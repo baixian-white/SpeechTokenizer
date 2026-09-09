@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0017
+# model=lca
+# L=2
+
+GT:
+THAT A STYLE IS RESTRAINED OR SEVERE DOES NOT MEAN THAT IT IS ALSO ERRONEOUS
+
+Whisper(original):
+That a style is restrained or severe does not mean that it is also erroneous.
+
+Whisper(decoded):
+But a style is restrained or severe it does not mean that it is also erroneous.

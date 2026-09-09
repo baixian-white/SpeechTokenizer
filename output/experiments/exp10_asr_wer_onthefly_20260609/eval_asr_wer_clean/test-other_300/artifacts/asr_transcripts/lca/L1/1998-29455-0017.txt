@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0017
+# model=lca
+# L=1
+
+GT:
+THE TWO TRAVELLERS WERE LEFT FACING EACH OTHER THE RICHER BY A PENNY AND OH WONDERFUL GOOD FORTUNE A WHOLE HALF CROWN
+
+Whisper(original):
+The two travelers were left facing each other, the witch are by a penny and oh, wonderful good fortune, a whole half crown.
+
+Whisper(decoded):
+The two chairs from the y

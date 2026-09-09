@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0011
+# model=base
+# L=1
+
+GT:
+IF A ROCK OR A RIVULET OR A BIT OF EARTH HARDER THAN COMMON SEVERED THE LINKS OF THE CLEW THEY FOLLOWED THE TRUE EYE OF THE SCOUT RECOVERED THEM AT A DISTANCE AND SELDOM RENDERED THE DELAY OF A SINGLE MOMENT NECESSARY
+
+Whisper(original):
+If a rock or a rivulet or a bit of earth harder than common severed the links of the clue they followed. The true eye of the scout recovered them at a distance, and seldom rendered the delay of a single moment necessary.
+
+Whisper(decoded):
+If a rock or a wiggle it or a bit of earth habbing in Taunham, severed the lengths of the clear they followed, the tree-wire of a stout recovered them at a distance, and seldom rendered the the delay of a single moment necessary.

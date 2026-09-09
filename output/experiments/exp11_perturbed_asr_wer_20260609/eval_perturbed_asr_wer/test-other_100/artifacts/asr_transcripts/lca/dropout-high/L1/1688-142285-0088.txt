@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0088
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+I SHALL LIKE TO SEE HER SHE MUST BE AN UNCOMMON PERSON HER MOTHER ADDED
+
+Whisper(original):
+I shall like to see her. She must be an uncommon person. Her mother I do.
+
+Whisper(decoded):
+I'd like to see her. She'll whisper, and I'm coming to herself. Her modern record.

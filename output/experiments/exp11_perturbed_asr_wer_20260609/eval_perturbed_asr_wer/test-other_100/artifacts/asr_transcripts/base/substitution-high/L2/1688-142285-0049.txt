@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0049
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+I HAD FORGOTTEN WHAT I SAID FOR THE TIME CONTINUED MARGARET QUIETLY
+
+Whisper(original):
+I had forgotten what I said for the time continued Margaret quietly.
+
+Whisper(decoded):
+I have forgotten who are listed for the time, and to eat my good quality.

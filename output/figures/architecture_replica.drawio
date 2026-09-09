@@ -1,0 +1,306 @@
+<mxfile host="app.diagrams.net" modified="2026-06-10T00:00:00.000Z" agent="Claude" version="24.0.0">
+  <diagram name="SpeechTokenizer Architecture" id="arch1">
+    <mxGraphModel dx="2300" dy="1520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2300" pageHeight="1520" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ============= OUTER YELLOW DASHED FRAME ============= -->
+        <mxCell id="outer" value="" style="rounded=1;arcSize=2;dashed=1;dashPattern=8 4;fillColor=none;strokeColor=#E5A50A;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="2260" height="1480" as="geometry" />
+        </mxCell>
+
+        <!-- ============= PRE-SHARED CODEBOOK SECTION ============= -->
+        <mxCell id="cb_box" value="Pre-shared Codebook C*" style="rounded=1;arcSize=4;dashed=1;dashPattern=8 4;fillColor=#F0E9FE;strokeColor=#7B61FF;strokeWidth=2;fontSize=20;fontStyle=1;verticalAlign=top;align=center;spacingTop=10;fontColor=#3F2A87;" vertex="1" parent="1">
+          <mxGeometry x="640" y="40" width="980" height="430" as="geometry" />
+        </mxCell>
+
+        <!-- Layer 1 codebook label -->
+        <mxCell id="cb1_label" value="Layer 1 codebook&#10;(K = 1024 entries)" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="100" width="180" height="80" as="geometry" />
+        </mxCell>
+        <!-- Layer 1 codebook table -->
+        <mxCell id="cb1_tbl" value="&lt;table style='border-collapse:collapse;width:100%;font-size:11px;'&gt;&lt;tr style='background:#DCEEFB;'&gt;&lt;th style='border:1px solid #6F90A6;padding:3px 8px;'&gt;Index&lt;/th&gt;&lt;th style='border:1px solid #6F90A6;padding:3px 8px;'&gt;C&lt;sub&gt;1&lt;/sub&gt;&lt;/th&gt;&lt;th style='border:1px solid #6F90A6;padding:3px 8px;'&gt;...&lt;/th&gt;&lt;th style='border:1px solid #6F90A6;padding:3px 8px;'&gt;C&lt;sub&gt;K&lt;/sub&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;1&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;2&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;1024&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #B9C4CC;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="860" y="95" width="720" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Layer 2 codebook label -->
+        <mxCell id="cb2_label" value="Layer 2 codebook&#10;(K = 1024 entries)" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="220" width="180" height="80" as="geometry" />
+        </mxCell>
+        <!-- Layer 2 codebook table -->
+        <mxCell id="cb2_tbl" value="&lt;table style='border-collapse:collapse;width:100%;font-size:11px;'&gt;&lt;tr style='background:#FFF4D2;'&gt;&lt;th style='border:1px solid #B89A4A;padding:3px 8px;'&gt;Index&lt;/th&gt;&lt;th style='border:1px solid #B89A4A;padding:3px 8px;'&gt;C&lt;sub&gt;1&lt;/sub&gt;&lt;/th&gt;&lt;th style='border:1px solid #B89A4A;padding:3px 8px;'&gt;...&lt;/th&gt;&lt;th style='border:1px solid #B89A4A;padding:3px 8px;'&gt;C&lt;sub&gt;K&lt;/sub&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;1&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;2&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;1024&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #D4C290;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="860" y="215" width="720" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Layer 3 codebook label -->
+        <mxCell id="cb3_label" value="Layer 3 codebook&#10;(K = 1024 entries)" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="340" width="180" height="80" as="geometry" />
+        </mxCell>
+        <!-- Layer 3 codebook table -->
+        <mxCell id="cb3_tbl" value="&lt;table style='border-collapse:collapse;width:100%;font-size:11px;'&gt;&lt;tr style='background:#FFE2E0;'&gt;&lt;th style='border:1px solid #C97874;padding:3px 8px;'&gt;Index&lt;/th&gt;&lt;th style='border:1px solid #C97874;padding:3px 8px;'&gt;C&lt;sub&gt;1&lt;/sub&gt;&lt;/th&gt;&lt;th style='border:1px solid #C97874;padding:3px 8px;'&gt;...&lt;/th&gt;&lt;th style='border:1px solid #C97874;padding:3px 8px;'&gt;C&lt;sub&gt;K&lt;/sub&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;1&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;2&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;1024&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;td style='border:1px solid #DDA8A4;padding:2px 8px;text-align:center;'&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="860" y="335" width="720" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- "Deployed offline, never transmitted" labels -->
+        <mxCell id="off_left" value="Deployed offline,&#10;never transmitted" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=3;fontColor=#7B61FF;" vertex="1" parent="1">
+          <mxGeometry x="320" y="400" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="off_right" value="Deployed offline,&#10;never transmitted" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=3;fontColor=#7B61FF;" vertex="1" parent="1">
+          <mxGeometry x="1750" y="400" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Dashed purple arrows from codebook down to Sender / Receiver -->
+        <mxCell id="cb_to_sender" style="endArrow=classic;dashed=1;dashPattern=6 4;strokeColor=#7B61FF;strokeWidth=2;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cb_box" target="sender_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb_to_receiver" style="endArrow=classic;dashed=1;dashPattern=6 4;strokeColor=#7B61FF;strokeWidth=2;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cb_box" target="receiver_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ============= SENDER PANEL ============= -->
+        <mxCell id="sender_box" value="Sender" style="rounded=1;arcSize=2;dashed=1;dashPattern=8 4;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=2;fontSize=22;fontStyle=1;verticalAlign=top;align=center;spacingTop=10;fontColor=#1B5E20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="500" width="940" height="940" as="geometry" />
+        </mxCell>
+
+        <!-- Input speech x(t) container -->
+        <mxCell id="input_box" value="Input speech x(t)" style="rounded=1;arcSize=4;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="600" width="160" height="500" as="geometry" />
+        </mxCell>
+        <!-- Waveform mini -->
+        <mxCell id="wave_in" value="Waveform&#10;&#10;&lt;span style='font-family:monospace;color:#1565C0;'&gt;⌇⌇⌇⌇⌇&lt;/span&gt;&#10;Time" style="rounded=0;html=1;fillColor=#FAFAFA;strokeColor=#999999;fontSize=10;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="70" y="630" width="140" height="200" as="geometry" />
+        </mxCell>
+        <!-- Mel-spec mini -->
+        <mxCell id="mel_in" value="Mel-spectrogram&#10;&#10;&lt;span style='font-family:monospace;color:#6A1B9A;'&gt;▓▒░▒▓&lt;/span&gt;&#10;Freq (Hz) / Time" style="rounded=0;html=1;fillColor=#FAFAFA;strokeColor=#999999;fontSize=10;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="70" y="850" width="140" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Lightweight Encoder (NAS) container -->
+        <mxCell id="enc_box" value="Lightweight&#10;Encoder (NAS)" style="rounded=1;arcSize=4;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="240" y="580" width="180" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="conv1" value="Conv Layer 1&#10;(Stride 5)" style="rounded=1;arcSize=10;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="260" y="620" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="conv2" value="Conv Layer 2&#10;(Stride 4)" style="rounded=1;arcSize=10;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="260" y="710" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="conv3" value="Conv Layer 3&#10;(Stride 4)" style="rounded=1;arcSize=10;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="260" y="800" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="conv4" value="Conv Layer 4&#10;(Stride 4)" style="rounded=1;arcSize=10;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="260" y="890" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lstm" value="LSTM x 1" style="rounded=1;arcSize=10;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="260" y="980" width="140" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- HuBERT teacher (training only) -->
+        <mxCell id="hubert" value="HuBERT teacher&#10;(training only)" style="rounded=1;arcSize=6;dashed=1;dashPattern=4 4;fillColor=#F5F5F5;strokeColor=#999999;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="450" y="600" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="removed_label" value="removed&#10;at inference" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="640" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Latent z (cube) -->
+        <mxCell id="latent_z" value="Latent z&#10;(1024-dim)" style="shape=cube;size=20;fillColor=#A5D6A7;strokeColor=#2E7D32;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="460" y="820" width="160" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- L_distill arrow (HuBERT <-> latent z, dashed) -->
+        <mxCell id="distill_edge" value="L_distill,&#10;lambda = 30" style="endArrow=classic;startArrow=classic;dashed=1;dashPattern=4 4;strokeColor=#666666;strokeWidth=1.5;fontSize=11;fontStyle=2;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="hubert" target="latent_z">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- RVQ container -->
+        <mxCell id="rvq_box" value="Residual Vector&#10;Quantizer (RVQ)&#10;(K = 1024)" style="rounded=1;arcSize=4;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="650" y="580" width="200" height="540" as="geometry" />
+        </mxCell>
+        <!-- RVQ Layer 1 (blue) -->
+        <mxCell id="rvq1" value="&lt;b&gt;RVQ Layer 1&lt;/b&gt;&lt;br&gt;&lt;span style='font-size:9px;'&gt;Index | C&lt;sub&gt;1&lt;/sub&gt; | ... | C&lt;sub&gt;K&lt;/sub&gt;&lt;br&gt;1 | ... | ... | ...&lt;br&gt;1024 | ... | ... | ...&lt;/span&gt;" style="rounded=1;arcSize=8;html=1;fillColor=#DCEEFB;strokeColor=#6F90A6;fontSize=11;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="665" y="660" width="170" height="120" as="geometry" />
+        </mxCell>
+        <!-- RVQ Layer 2 (cream) -->
+        <mxCell id="rvq2" value="&lt;b&gt;RVQ Layer 2&lt;/b&gt;&lt;br&gt;&lt;span style='font-size:9px;'&gt;Index | C&lt;sub&gt;1&lt;/sub&gt; | ... | C&lt;sub&gt;K&lt;/sub&gt;&lt;br&gt;1 | ... | ... | ...&lt;br&gt;1024 | ... | ... | ...&lt;/span&gt;" style="rounded=1;arcSize=8;html=1;fillColor=#FFF4D2;strokeColor=#B89A4A;fontSize=11;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="665" y="800" width="170" height="120" as="geometry" />
+        </mxCell>
+        <!-- RVQ Layer 3 (pink) -->
+        <mxCell id="rvq3" value="&lt;b&gt;RVQ Layer 3&lt;/b&gt;&lt;br&gt;&lt;span style='font-size:9px;'&gt;Index | C&lt;sub&gt;1&lt;/sub&gt; | ... | C&lt;sub&gt;K&lt;/sub&gt;&lt;br&gt;1 | ... | ... | ...&lt;br&gt;1024 | ... | ... | ...&lt;/span&gt;" style="rounded=1;arcSize=8;html=1;fillColor=#FFE2E0;strokeColor=#C97874;fontSize=11;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="665" y="940" width="170" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Indices column -->
+        <mxCell id="idx_label" value="Indices" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="600" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="idx1" value="i&lt;sup&gt;(1)&lt;/sup&gt; &lt;span style='background:#7CB7E0;padding:0 6px;border:1px solid #4F8EBC;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#7CB7E0;padding:0 6px;border:1px solid #4F8EBC;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#7CB7E0;padding:0 6px;border:1px solid #4F8EBC;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;..." style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="870" y="700" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="idx2" value="i&lt;sup&gt;(2)&lt;/sup&gt; &lt;span style='background:#F0DC8A;padding:0 6px;border:1px solid #B89A4A;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#F0DC8A;padding:0 6px;border:1px solid #B89A4A;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#F0DC8A;padding:0 6px;border:1px solid #B89A4A;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;..." style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="870" y="840" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="idx3" value="i&lt;sup&gt;(3)&lt;/sup&gt; &lt;span style='background:#F0A5A1;padding:0 6px;border:1px solid #C97874;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#F0A5A1;padding:0 6px;border:1px solid #C97874;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#F0A5A1;padding:0 6px;border:1px solid #C97874;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;..." style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="870" y="980" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Sender flow arrows -->
+        <mxCell id="e_input_enc" style="endArrow=classic;strokeColor=#333333;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="input_box" target="enc_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_enc_z" style="endArrow=classic;strokeColor=#333333;strokeWidth=1.5;exitX=1;exitY=0.7;entryX=0;entryY=0.5;" edge="1" parent="1" source="enc_box" target="latent_z">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_z_rvq" style="endArrow=classic;strokeColor=#333333;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="latent_z" target="rvq_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_rvq1_idx1" style="endArrow=classic;strokeColor=#4F8EBC;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="rvq1" target="idx1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_rvq2_idx2" style="endArrow=classic;strokeColor=#B89A4A;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="rvq2" target="idx2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_rvq3_idx3" style="endArrow=classic;strokeColor=#C97874;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="rvq3" target="idx3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Sender bottom annotation -->
+        <mxCell id="sender_bottom" value="Total downsampling 320x &amp;rarr; f&lt;sub&gt;q&lt;/sub&gt; = 50 Hz" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1390" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ============= LOW-LOAD CHANNEL PANEL ============= -->
+        <mxCell id="channel_box" value="Low-Load Channel" style="rounded=1;arcSize=2;dashed=1;dashPattern=8 4;fillColor=#FFF8DD;strokeColor=#F0A800;strokeWidth=2;fontSize=22;fontStyle=1;verticalAlign=top;align=center;spacingTop=10;fontColor=#A77800;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="500" width="400" height="940" as="geometry" />
+        </mxCell>
+
+        <!-- Channel Perturbations -->
+        <mxCell id="perturb_box" value="&lt;b&gt;Channel Perturbations&lt;/b&gt;&lt;ul style='margin:8px 0 0 18px;padding:0;text-align:left;'&gt;&lt;li&gt;dropout&lt;/li&gt;&lt;li&gt;substitution&lt;/li&gt;&lt;li&gt;packet loss&lt;/li&gt;&lt;li&gt;burst loss&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;arcSize=4;html=1;fillColor=#FFF4D2;strokeColor=#B89A4A;fontSize=12;align=center;verticalAlign=top;spacingTop=8;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="600" width="340" height="200" as="geometry" />
+        </mxCell>
+
+        <!-- Index-only Transmission arrow -->
+        <mxCell id="trans_arrow" value="Index-only Transmission" style="endArrow=classic;strokeColor=#1565C0;strokeWidth=4;fontColor=#1565C0;fontSize=14;fontStyle=1;labelBackgroundColor=#FFF8DD;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1020" y="850" as="sourcePoint" />
+            <mxPoint x="1380" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Cloud: transmit top-L layers -->
+        <mxCell id="cloud" value="Transmit top-L layers,&#10;L in {1, 2, 3},&#10;R(L) = L * 500 bps" style="ellipse;shape=cloud;fillColor=#FFFFFF;strokeColor=#666666;fontSize=13;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="900" width="340" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- Red dashed X with text -->
+        <mxCell id="x_line" style="endArrow=none;dashed=1;dashPattern=8 4;strokeColor=#D32F2F;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1180" as="sourcePoint" />
+            <mxPoint x="1370" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_mark" value="✕" style="text;html=1;align=center;verticalAlign=middle;fontSize=28;fontStyle=1;fontColor=#D32F2F;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1160" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="no_wave_label" value="No waveform, no continuous features" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#D32F2F;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="1210" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ============= RECEIVER PANEL ============= -->
+        <mxCell id="receiver_box" value="Receiver" style="rounded=1;arcSize=2;dashed=1;dashPattern=8 4;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=2;fontSize=22;fontStyle=1;verticalAlign=top;align=center;spacingTop=10;fontColor=#1B5E20;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="500" width="840" height="940" as="geometry" />
+        </mxCell>
+
+        <!-- Received indices container -->
+        <mxCell id="recv_idx_box" value="Received indices" style="rounded=1;arcSize=4;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="600" width="220" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ridx1" value="i&lt;sup&gt;(1)&lt;/sup&gt; &lt;span style='background:#7CB7E0;padding:0 6px;border:1px solid #4F8EBC;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#7CB7E0;padding:0 6px;border:1px solid #4F8EBC;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#7CB7E0;padding:0 6px;border:1px solid #4F8EBC;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;..." style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1465" y="660" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ridx2" value="i&lt;sup&gt;(2)&lt;/sup&gt; &lt;span style='background:#F0DC8A;padding:0 6px;border:1px solid #B89A4A;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#F0DC8A;padding:0 6px;border:1px solid #B89A4A;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#F0DC8A;padding:0 6px;border:1px solid #B89A4A;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;..." style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1465" y="780" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ridx3" value="i&lt;sup&gt;(3)&lt;/sup&gt; &lt;span style='background:#F0A5A1;padding:0 6px;border:1px solid #C97874;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#F0A5A1;padding:0 6px;border:1px solid #C97874;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style='background:#F0A5A1;padding:0 6px;border:1px solid #C97874;'&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;..." style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1465" y="900" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="recv_note" value="i&lt;sup&gt;(2)&lt;/sup&gt; used when L &amp;ge; 2,&#10;i&lt;sup&gt;(3)&lt;/sup&gt; used when L = 3" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="1000" width="220" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Shared Codebook Lookup -->
+        <mxCell id="lookup" value="Shared Codebook&#10;Lookup&#10;&#10;🔍" style="rounded=1;arcSize=8;fillColor=#F0E9FE;strokeColor=#7B61FF;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1700" y="730" width="150" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Recovered z_hat cube -->
+        <mxCell id="zhat" value="Recovered&#10;z_hat" style="shape=cube;size=20;fillColor=#FFFFFF;strokeColor=#2E7D32;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="740" width="130" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Decoder D container -->
+        <mxCell id="dec_box" value="Decoder D" style="rounded=1;arcSize=4;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="2030" y="580" width="170" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="dec1" value="Conv Layer 1&#10;(Upsample x4)" style="rounded=1;arcSize=10;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2050" y="620" width="130" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="dec2" value="Conv Layer 2&#10;(Upsample x4)" style="rounded=1;arcSize=10;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2050" y="735" width="130" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="dec3" value="Conv Layer 3&#10;(Upsample x4)" style="rounded=1;arcSize=10;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2050" y="850" width="130" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="dec4" value="Conv Layer 4&#10;(Upsample x5)" style="rounded=1;arcSize=10;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2050" y="965" width="130" height="105" as="geometry" />
+        </mxCell>
+
+        <!-- Receiver flow arrows -->
+        <mxCell id="er_idx_lookup" style="endArrow=classic;strokeColor=#333333;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="recv_idx_box" target="lookup">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="er_lookup_zhat" style="endArrow=classic;strokeColor=#333333;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="lookup" target="zhat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="er_zhat_dec" style="endArrow=classic;strokeColor=#333333;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="zhat" target="dec_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Reconstructed speech container (placed to right of decoder, but limited space - put below decoder) -->
+        <mxCell id="recon_box" value="Reconstructed&#10;speech x_hat(t)" style="rounded=1;arcSize=4;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="2030" y="1140" width="220" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="wave_out" value="Waveform &lt;span style='font-family:monospace;color:#1565C0;'&gt;⌇⌇⌇⌇&lt;/span&gt; / Time" style="rounded=0;html=1;fillColor=#FAFAFA;strokeColor=#999999;fontSize=10;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="2050" y="1180" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mel_out" value="Mel-spectrogram &lt;span style='font-family:monospace;color:#6A1B9A;'&gt;▓▒░▒&lt;/span&gt; / Freq · Time" style="rounded=0;html=1;fillColor=#FAFAFA;strokeColor=#999999;fontSize=10;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="2050" y="1280" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="er_dec_recon" style="endArrow=classic;strokeColor=#333333;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="dec_box" target="recon_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Receiver bottom annotation -->
+        <mxCell id="recv_bottom" value="Total upsampling 320x &amp;rarr; 16 kHz waveform" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1820" y="1390" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Cross-panel arrows: Sender indices -> Channel cloud, Channel cloud -> Receiver indices -->
+        <mxCell id="cross1" style="endArrow=classic;strokeColor=#1565C0;strokeWidth=2;dashed=0;exitX=1;exitY=0.5;entryX=0;entryY=0.3;" edge="1" parent="1" source="idx1" target="perturb_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cross2" style="endArrow=classic;strokeColor=#1565C0;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="idx2" target="perturb_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cross3" style="endArrow=classic;strokeColor=#1565C0;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.7;" edge="1" parent="1" source="idx3" target="perturb_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cross_out1" style="endArrow=classic;strokeColor=#1565C0;strokeWidth=2;exitX=1;exitY=0.4;entryX=0;entryY=0.2;" edge="1" parent="1" source="cloud" target="recv_idx_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

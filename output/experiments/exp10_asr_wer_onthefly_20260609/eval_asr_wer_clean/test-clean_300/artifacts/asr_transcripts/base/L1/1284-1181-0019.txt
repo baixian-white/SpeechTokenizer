@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0019
+# model=base
+# L=1
+
+GT:
+I NOW USE THEM AS ORNAMENTAL STATUARY IN MY GARDEN
+
+Whisper(original):
+I now use them as ornamental statuary in my garden.
+
+Whisper(decoded):
+I know it usually does a little bit of a sanctuary in my garden.

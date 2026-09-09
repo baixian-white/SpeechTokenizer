@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0021
+# model=lca
+# L=2
+
+GT:
+PEARL ACCORDINGLY RAN TO THE BOW WINDOW AT THE FURTHER END OF THE HALL AND LOOKED ALONG THE VISTA OF A GARDEN WALK CARPETED WITH CLOSELY SHAVEN GRASS AND BORDERED WITH SOME RUDE AND IMMATURE ATTEMPT AT SHRUBBERY
+
+Whisper(original):
+Pearl accordingly ran to the bow window at the further end of the hall and looked along the vista of a garden walk, carpeted with closely shaven grass and bordered with some rude and immature attempt at shrubbery.
+
+Whisper(decoded):
+Pearl accordingly vanned to the bow window at the further end of the hall, and looked along the vista of a garden walk, carpeted with closely shavened grass, and boarded with some rude and inattour attempt at shrubbery.

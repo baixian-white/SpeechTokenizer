@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0027
+# model=lca
+# L=2
+
+GT:
+THE RESIDUE OF THE MATERIAL AFTER DIGESTION WITH HYDROCHLORIC ACID AND POTASSIUM CHLORATE MAY HAVE TO BE EXAMINED FOR SILVER LEAD AND BARIUM
+
+Whisper(original):
+The residue of the material after digestion was hydrochloric acid and potassium chloride may have to be examined for silver, lead and barium.
+
+Whisper(decoded):
+The residue of the material after adjusting with hydrochloric acid and potassium chloride may have to be exerrant-fecile, lead and barrier.

@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0033
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+EVERY PLANT IN THE GRASS IS SET FORMALLY GROWS PERFECTLY AND MAY BE REALIZED COMPLETELY
+
+Whisper(original):
+Every plant in the grass is set formally, grows perfectly, and may be realized completely.
+
+Whisper(decoded):
+Every plant in the grass is set formally grows perfectly and may be realized completely.

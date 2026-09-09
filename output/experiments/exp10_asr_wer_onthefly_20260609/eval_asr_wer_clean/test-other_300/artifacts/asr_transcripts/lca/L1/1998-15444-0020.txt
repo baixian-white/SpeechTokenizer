@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0020
+# model=lca
+# L=1
+
+GT:
+THE RESIDUE MAY BE SET ASIDE FOR THE DETECTION OF THE METALLIC POISONS IF SUSPECTED EXPEL THE ALCOHOL BY CAREFUL EVAPORATION
+
+Whisper(original):
+The residue may be set aside for the detection of the metallic poisons I've suspected. Expere the alcohol by careful evaporation.
+
+Whisper(decoded):
+The rivet unit may be set aside for the detection of the metallic polarisms as expected. Expertly I'll have a careful evaporation.

@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0033
+# model=base
+# L=1
+
+GT:
+HE REWARD THE WAKE THE LAST OF THE ENGLISH AND I WUNNERED WHAT IT STOOD FOR
+
+Whisper(original):
+He reward the wake, the loss of the English, and I want it what it's thought for.
+
+Whisper(decoded):
+We will roll at the break, the knots of the windness, and I will wire it by itself for her.

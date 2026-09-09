@@ -1,0 +1,12 @@
+# sample_id=121-123859-0001
+# model=base
+# L=1
+
+GT:
+O TIS THE FIRST TIS FLATTERY IN MY SEEING AND MY GREAT MIND MOST KINGLY DRINKS IT UP MINE EYE WELL KNOWS WHAT WITH HIS GUST IS GREEING AND TO HIS PALATE DOTH PREPARE THE CUP IF IT BE POISON'D TIS THE LESSER SIN THAT MINE EYE LOVES IT AND DOTH FIRST BEGIN
+
+Whisper(original):
+Oh, Tis the first! Tis flattery in my scene, and my great mind most Kingly drinks it up. Mine I well knows what with his gust is green, and to his palette doth prepare the cup, if it be poisoned, Tis the lesser sin, that mine I loves it, and doth first begin.
+
+Whisper(decoded):
+I'll just the first, just the mattery in my scene, and my late mind most keenly jinxed it up. Mine I will know is what with his dust is green, and choose palette doth prepare a cup, if it be poisoned, taste the mess as thin. my eye, that's it and that just Speeddin'.

@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0005
+# model=base
+# L=2
+
+GT:
+BUT NOW GO TO THY MASTER AND BRING HIM QUICKLY TO ME
+
+Whisper(original):
+But now go to thy master and bring him quickly to me.
+
+Whisper(decoded):
+But now go to the master, and breathe in quickly to me.

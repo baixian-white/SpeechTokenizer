@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0016
+# model=base
+# L=1
+
+GT:
+SO IT WAS AGREED THAT WE GO TO DAMASCUS AND FETCH THENCE THE KING'S SON SHARRKAN AND MAKE HIM SULTAN OVER HIS FATHER'S REALM
+
+Whisper(original):
+So it was agreed that we go to Damascus and fetch then the king's son, Sharcan, and make him Sultan over his father's realm.
+
+Whisper(decoded):
+So he was agreed that we did the masters, and that dense, de-tease son, Sharcan, and me to insult them over his father's realm.

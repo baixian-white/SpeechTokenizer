@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0015
+# model=base
+# L=1
+
+GT:
+THEN HE BADE HIM BE SEATED AND QUESTIONED HIM AND HE REPLIED THAT HE WAS CHAMBERLAIN TO THE EMIR OF DAMASCUS AND WAS BOUND TO KING OMAR WITH PRESENTS AND THE TRIBUTE OF SYRIA
+
+Whisper(original):
+Then he bad him be seated and questioned him, and he replied that he was chamberling to the Emir of Damascus, and was bound to King Omar with presence and the tribute of Syria.
+
+Whisper(decoded):
+Then she died she and deseated and questioned him. Then she replied that he was charming to the anir of the masters, and was bound to tingle with presence and the tribute of Syria.

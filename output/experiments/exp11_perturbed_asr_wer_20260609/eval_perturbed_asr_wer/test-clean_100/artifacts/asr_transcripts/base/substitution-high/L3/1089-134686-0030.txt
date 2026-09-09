@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0030
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+BEWARE OF MAKING THAT MISTAKE
+
+Whisper(original):
+Beware of making that mistake.
+
+Whisper(decoded):
+Beware of making that mistake.

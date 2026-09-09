@@ -1,0 +1,12 @@
+# sample_id=1089-134686-0033
+# model=lca
+# L=3
+
+GT:
+A GREAT SAINT SAINT FRANCIS XAVIER
+
+Whisper(original):
+A great Saint Francis Xavier.
+
+Whisper(decoded):
+A great Saint Francis Xavier.

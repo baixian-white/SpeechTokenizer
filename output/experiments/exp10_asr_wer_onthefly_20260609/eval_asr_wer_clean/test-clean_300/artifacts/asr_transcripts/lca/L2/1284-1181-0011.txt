@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0011
+# model=lca
+# L=2
+
+GT:
+VERY CAREFULLY THE MAGICIAN REMOVED THIS POWDER PLACING IT ALL TOGETHER IN A GOLDEN DISH WHERE HE MIXED IT WITH A GOLDEN SPOON
+
+Whisper(original):
+Very carefully, the magician removed this powder, placing it all together in a golden dish, where he mixed it with a golden spoon.
+
+Whisper(decoded):
+Very carefully, the magician removed this powder, placing it all together in a golden dish, where he mixed it with a golden spoon.

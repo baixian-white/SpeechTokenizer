@@ -1,0 +1,50 @@
+{
+  "candidate_id": "nas_seed42_000954",
+  "search_mode": "random",
+  "seed": 42,
+  "sample_index": 954,
+  "sample_attempt": 994,
+  "encoder_strides": [
+    5,
+    4,
+    4,
+    4
+  ],
+  "n_filters": 24,
+  "compress": 4,
+  "lstm": 2,
+  "activation": "Snake",
+  "layer_ops_list": [
+    "sep_k7",
+    "sep_k9",
+    "dil_k5",
+    "skip"
+  ],
+  "layer_se_list": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "decoder_strides": [
+    4,
+    4,
+    4,
+    5
+  ],
+  "decoder_condition": "geometry_matched_decoder",
+  "decoder_ops": "not_searched",
+  "seanet_ratios_arg": [
+    4,
+    4,
+    4,
+    5
+  ],
+  "dimension": 1024,
+  "sample_rate": 16000,
+  "encoder_downsample_rate": 320,
+  "latent_rate": 50,
+  "n_q": 3,
+  "codebook_size": 1024,
+  "candidate_signature": "c4b6a716696fefe56afdfc7ecefc0dec05e4ebf0"
+}

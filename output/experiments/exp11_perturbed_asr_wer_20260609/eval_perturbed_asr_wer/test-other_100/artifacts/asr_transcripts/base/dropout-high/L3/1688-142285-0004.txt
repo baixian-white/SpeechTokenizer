@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0004
+# model=base
+# L=3
+# channel=dropout-high
+
+GT:
+HIS STATEMENT OF HAVING BEEN A SHOP BOY WAS THE THING I LIKED BEST OF ALL
+
+Whisper(original):
+His statement of having been a shop boy was the thing I like best of all.
+
+Whisper(decoded):
+The statement of having been a shock boy was a thing I like best of all.

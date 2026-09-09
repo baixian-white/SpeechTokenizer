@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0017
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+THE EUROPE THEY HAD COME FROM LAY OUT THERE BEYOND THE IRISH SEA EUROPE OF STRANGE TONGUES AND VALLEYED AND WOODBEGIRT AND CITADELLED AND OF ENTRENCHED AND MARSHALLED RACES
+
+Whisper(original):
+The Europe they had come from lay out there beyond the Irish Sea, Europe of strange tongues and valid and wood-beagert and citadeld and of entrenched and marshalled races.
+
+Whisper(decoded):
+The Erip they had come fondly out there beyond the other sea. Erip of strange tongues and valid and would be dirt and sisad elve and of entrenched and they loveicia stranded bought eSports that They jackets

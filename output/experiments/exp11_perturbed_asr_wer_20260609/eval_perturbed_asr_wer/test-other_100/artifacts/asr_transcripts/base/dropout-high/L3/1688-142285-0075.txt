@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0075
+# model=base
+# L=3
+# channel=dropout-high
+
+GT:
+I WILL COME TO MORROW SAID MARGARET
+
+Whisper(original):
+I will come tomorrow, say Margaret.
+
+Whisper(decoded):
+Additional things about the whole tonics and more sliced suits, make this an important mission towers that we demoink all over the city the whole card is more important

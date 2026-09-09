@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0005
+# model=base
+# L=1
+
+GT:
+AFTER AWHILE THE DUST DISPERSED AND THERE APPEARED UNDER IT THE ARMY OF BAGHDAD AND KHORASAN A CONQUERING HOST LIKE THE FULL TIDE SEA AND SHAHRAZAD PERCEIVED THE DAWN OF DAY AND CEASED TO SAY HER PERMITTED SAY
+
+Whisper(original):
+After a while, the dust dispersed, and there appeared under it the army of Baghdad and Khorasan, a conquering host like the pool-tied sea. And Charizard perceived the dawn of day, and ceased to say her permitted say.
+
+Whisper(decoded):
+After a while, the dust disposed that they had appeared onto it the army of Baghdad and aAAA I

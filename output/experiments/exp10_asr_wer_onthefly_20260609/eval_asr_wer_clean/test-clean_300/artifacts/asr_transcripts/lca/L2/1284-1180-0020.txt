@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0020
+# model=lca
+# L=2
+
+GT:
+THE FIRST LOT WE TESTED ON OUR GLASS CAT WHICH NOT ONLY BEGAN TO LIVE BUT HAS LIVED EVER SINCE
+
+Whisper(original):
+The first lot we tested on our glass cat, which not only began to live but has lived ever since.
+
+Whisper(decoded):
+The first lot we tested on our blast cat, which not only began to live but has lived ever since.

@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0028
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+THE RETREAT WILL BEGIN ON WEDNESDAY AFTERNOON IN HONOUR OF SAINT FRANCIS XAVIER WHOSE FEAST DAY IS SATURDAY
+
+Whisper(original):
+The retreat will begin on Wednesday afternoon in honor of St. Francis Xavier whose feast day is Saturday.
+
+Whisper(decoded):
+Their retreat will begin on Wednesday afternoon in honor of St. Francis's ivner whose feast day is Saturday.

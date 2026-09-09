@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0021
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+IF A LAYMAN IN GIVING BAPTISM POUR THE WATER BEFORE SAYING THE WORDS IS THE CHILD BAPTIZED
+
+Whisper(original):
+If a layman in giving baptism poor the water before saying the words is the child baptized,
+
+Whisper(decoded):
+The filded engBY THING DATK Richardain told his word before saying the words slamters in order to get together. And took an honest while.

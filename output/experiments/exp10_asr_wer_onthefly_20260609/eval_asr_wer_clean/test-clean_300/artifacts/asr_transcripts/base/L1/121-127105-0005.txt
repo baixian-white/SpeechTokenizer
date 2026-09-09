@@ -1,0 +1,12 @@
+# sample_id=121-127105-0005
+# model=base
+# L=1
+
+GT:
+I COULD WRITE TO MY MAN AND ENCLOSE THE KEY HE COULD SEND DOWN THE PACKET AS HE FINDS IT
+
+Whisper(original):
+I could write to my man and enclose the key. He could send down the packet as he finds it.
+
+Whisper(decoded):
+Thack or bite, now an infinite close patini. He could send down the packet as if I have it.

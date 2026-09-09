@@ -1,0 +1,12 @@
+# sample_id=121-121726-0004
+# model=base
+# L=1
+
+GT:
+HEAVEN A GOOD PLACE TO BE RAISED TO
+
+Whisper(original):
+Heaven. A good place to be raised to.
+
+Whisper(decoded):
+Heaven! I'd run twice to be raised too.

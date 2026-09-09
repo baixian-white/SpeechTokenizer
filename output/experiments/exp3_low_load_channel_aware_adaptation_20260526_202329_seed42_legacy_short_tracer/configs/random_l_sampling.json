@@ -1,0 +1,9 @@
+﻿{
+    "values":  [
+                   1,
+                   2,
+                   3
+               ],
+    "seed":  42,
+    "strategy":  "round_robin_debug_cover_all_L"
+}

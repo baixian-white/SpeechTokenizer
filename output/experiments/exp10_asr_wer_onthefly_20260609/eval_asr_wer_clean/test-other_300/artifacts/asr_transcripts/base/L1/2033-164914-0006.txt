@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0006
+# model=base
+# L=1
+
+GT:
+WHAT AILS THEE THEN THAT THOU MUST NEEDS RECITE VERSES SEEING THAT WE ARE TIRED OUT WITH WALKING AND WATCHING AND ALL THE FOLK ARE ASLEEP FOR THEY REQUIRE SLEEP TO REST THEM OF THEIR FATIGUE
+
+Whisper(original):
+What else did then the thou must needs reside verses, seeing that we are tired out, with walking and watching, and all the folk are asleep, for they require sleep to rest them of their fatigue.
+
+Whisper(decoded):
+What deals did then, that now must need some sight-bursies, sitting that we are tired out, with walking and watching, and all the folk are asleep, for they require a seat to rest then I'll bare for teeth.

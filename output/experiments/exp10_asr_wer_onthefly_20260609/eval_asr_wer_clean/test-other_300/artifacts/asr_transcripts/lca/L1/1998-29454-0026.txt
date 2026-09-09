@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0026
+# model=lca
+# L=1
+
+GT:
+HE TOOK OUT OF HIS POCKET A NEW ENVELOPE A NEW SHEET OF PAPER AND A NEW PENCIL READY SHARPENED BY MACHINERY
+
+Whisper(original):
+He took out of his pocket in your envelope, a new sheet of paper and a new pencil, ready sharpened by machinery.
+
+Whisper(decoded):
+He took out of his cockroden and another, a new sheet of paper and a new cancer, run and sharpen to the machine.

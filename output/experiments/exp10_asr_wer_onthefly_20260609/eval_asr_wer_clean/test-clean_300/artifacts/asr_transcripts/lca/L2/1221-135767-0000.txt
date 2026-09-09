@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0000
+# model=lca
+# L=2
+
+GT:
+HESTER PRYNNE WENT ONE DAY TO THE MANSION OF GOVERNOR BELLINGHAM WITH A PAIR OF GLOVES WHICH SHE HAD FRINGED AND EMBROIDERED TO HIS ORDER AND WHICH WERE TO BE WORN ON SOME GREAT OCCASION OF STATE FOR THOUGH THE CHANCES OF A POPULAR ELECTION HAD CAUSED THIS FORMER RULER TO DESCEND A STEP OR TWO FROM THE HIGHEST RANK HE STILL HELD AN HONOURABLE AND INFLUENTIAL PLACE AMONG THE COLONIAL MAGISTRACY
+
+Whisper(original):
+Hester Prynne went one day to the mansion of Governor Bellingham with a pair of gloves which she had fringed and embroidered to his order, and which were to be worn on some great occasion of state. For, though the chances of a popular election had caused this former ruler to descend a step or two from the highest rank, he still held an honorable and influential place among the colonial magistricy.
+
+Whisper(decoded):
+Hester Prynne went one day to the mansion of Governor Bellingham with a pair of gloves where she had fringed and embroidered to his order, and which were to be worn on some great occasion of state. For, though the chances of a popular election had caused this former ruler to descend a step or two from the highest rank, he still held an honorable and influential place among the colonial magistra sea.

@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0037
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+WELL BESSY HOW ARE YOU
+
+Whisper(original):
+Well, Bissy, how are you?
+
+Whisper(decoded):
+Well, busy, how are you?

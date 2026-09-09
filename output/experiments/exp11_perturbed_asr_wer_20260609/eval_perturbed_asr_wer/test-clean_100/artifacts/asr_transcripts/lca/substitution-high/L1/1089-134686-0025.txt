@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0025
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+A GENTLE KICK FROM THE TALL BOY IN THE BENCH BEHIND URGED STEPHEN TO ASK A DIFFICULT QUESTION
+
+Whisper(original):
+A gentle kick from the tall boy in the bench behind urged Stephen to ask a difficult question.
+
+Whisper(decoded):
+A gentle kick from a tall boy in the pouch behind urged Stephen to ask if a difficult question.

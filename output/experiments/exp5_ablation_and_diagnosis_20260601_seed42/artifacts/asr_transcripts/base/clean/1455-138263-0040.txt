@@ -1,0 +1,9 @@
+# method=base setting=clean sample_id=1455-138263-0040
+# GT (LibriSpeech):
+ASKED NICHOLL QUICKLY BECAUSE MOST PROBABLY THEN THE ROTARY MOTION OF THE MOON UPON HER AXIS WAS NOT EQUAL TO HER REVOLUTION AN EQUALITY WHICH PRESENTS EACH PART OF HER DISC DURING FIFTEEN DAYS TO THE ACTION OF THE SOLAR RAYS
+
+# Whisper(original):
+As Nicole quickly, because most probably, then the rotary motion of the moon upon her axis was not equal to her revolution, an equality which presents each part of her disc during 15 days to the action of the solar rays.
+
+# Whisper(decoded):
+Yes, Nicole, quickly. Because most probably, then the rotary motion of the moon upon her axis was not equal to her revolution, an equality which presents each part of her disk during fifteen days to the action of the solarized.

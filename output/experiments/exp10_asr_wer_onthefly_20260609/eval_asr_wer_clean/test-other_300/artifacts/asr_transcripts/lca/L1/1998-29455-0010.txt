@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0010
+# model=lca
+# L=1
+
+GT:
+THIS LIFE OF THE RABBIT AS DESCRIBED BY MISTER BEALE WAS THE CHILD'S FIRST GLIMPSE OF FREEDOM I'D LIKE TO BE A RABBIT
+
+Whisper(original):
+This life of the rabbit, as described at Mr. Beale, was the child's first glimpse of freedom. I'd like to be a rabbit.
+
+Whisper(decoded):
+Whose knife of the rabbit, Mrs. Quatt, that Mr. Bearer, was the child's first rinse of freedom? Right here, Timmy Rabbit.

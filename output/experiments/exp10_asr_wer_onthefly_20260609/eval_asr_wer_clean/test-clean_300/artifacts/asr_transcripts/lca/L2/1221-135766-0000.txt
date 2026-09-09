@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0000
+# model=lca
+# L=2
+
+GT:
+HOW STRANGE IT SEEMED TO THE SAD WOMAN AS SHE WATCHED THE GROWTH AND THE BEAUTY THAT BECAME EVERY DAY MORE BRILLIANT AND THE INTELLIGENCE THAT THREW ITS QUIVERING SUNSHINE OVER THE TINY FEATURES OF THIS CHILD
+
+Whisper(original):
+How strange it seemed to the sad woman as she watched the growth and the beauty that became everyday more brilliant and the intelligence that threw its quivering sunshine over the tiny features of this child.
+
+Whisper(decoded):
+How strange it seemed to the sad woman as she watched the growth and the beauty that became everyday more brilliant than the intelligence that drew its quivering sunshine over the tiny features of this child.

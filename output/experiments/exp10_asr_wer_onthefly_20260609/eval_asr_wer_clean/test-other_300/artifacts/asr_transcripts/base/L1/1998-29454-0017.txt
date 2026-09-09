@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0017
+# model=base
+# L=1
+
+GT:
+THAT AIN'T WHAT SHE'LL BE IN WHEN YOU GETS BACK
+
+Whisper(original):
+That end what you be in when you get back.
+
+Whisper(decoded):
+But I'm pressure dealing when it hits that.

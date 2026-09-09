@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0001
+# model=lca
+# L=1
+
+GT:
+GOD AS A DIRECT CONSEQUENCE OF THE SIN WHICH MAN THUS PUNISHED HAD GIVEN HER A LOVELY CHILD WHOSE PLACE WAS ON THAT SAME DISHONOURED BOSOM TO CONNECT HER PARENT FOR EVER WITH THE RACE AND DESCENT OF MORTALS AND TO BE FINALLY A BLESSED SOUL IN HEAVEN
+
+Whisper(original):
+God, as a direct consequence of the sin which man thus punished, had given her a lovely child, whose place was on that same dishonored bosom to connect her parent forever with the race and descent of mortals, and to be finally a blessed soul in heaven.
+
+Whisper(decoded):
+But, as a direct consequence of the sin which man thus punished, had given her a lovely child, whose place was on that same designer bosom to connect her parent forever with the race and descent of mortals, then to be finally a blessed soul in heaven.

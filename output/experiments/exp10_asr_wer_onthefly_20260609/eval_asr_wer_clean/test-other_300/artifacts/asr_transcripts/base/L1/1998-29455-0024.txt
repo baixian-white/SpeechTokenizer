@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0024
+# model=base
+# L=1
+
+GT:
+BUT YOU SAID THE BED WITH THE GREEN CURTAINS URGED DICKIE
+
+Whisper(original):
+But you said the bed was the green curtains, Erchteke.
+
+Whisper(decoded):
+But he served, but that was a re-

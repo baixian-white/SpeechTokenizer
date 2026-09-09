@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0006
+# model=lca
+# L=3
+
+GT:
+AT THE FOOT OF THE MOUNTAIN THAT SEPARATED THE COUNTRY OF THE MUNCHKINS FROM THE COUNTRY OF THE GILLIKINS THE PATH DIVIDED
+
+Whisper(original):
+At the foot of the mountain that separated the country of the Munchkins from the country of the Gillicans, the path divided.
+
+Whisper(decoded):
+At the Fort of the mountain it separated the country of the lunchkins from the country of the Gillicans, the path divided.

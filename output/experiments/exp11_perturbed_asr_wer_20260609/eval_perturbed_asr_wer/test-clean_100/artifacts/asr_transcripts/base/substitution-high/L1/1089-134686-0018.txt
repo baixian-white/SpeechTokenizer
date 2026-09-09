@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0018
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+IT WAS STRANGE TOO THAT HE FOUND AN ARID PLEASURE IN FOLLOWING UP TO THE END THE RIGID LINES OF THE DOCTRINES OF THE CHURCH AND PENETRATING INTO OBSCURE SILENCES ONLY TO HEAR AND FEEL THE MORE DEEPLY HIS OWN CONDEMNATION
+
+Whisper(original):
+It was strange, too, that he found an arid pleasure in following up to the end the rigid lines of the doctrines of the church and penetrating into obscure silences only to hear and feel the more deeply his own condemnation.
+
+Whisper(decoded):
+It was strange, too, that he found an arid pleasure in following up to the end the rigid lines of the doctrines of the Church, and penetrate him into obscure silences only to hear and feel the more deeply his own condemnation.

@@ -1,0 +1,8 @@
+{
+  "status": "partial",
+  "run_id": "S1_decoder_only_acoustic_20260528_seed42",
+  "timestamp": "2026-05-28T20:03:39+0800",
+  "checkpoint": "checkpoints/SCIT-Speech-Base_best.pt",
+  "route": "short_debug_tracer_nas_encoder_only",
+  "warning": "debug/tracer packaging output, not completed formal Exp2 training"
+}

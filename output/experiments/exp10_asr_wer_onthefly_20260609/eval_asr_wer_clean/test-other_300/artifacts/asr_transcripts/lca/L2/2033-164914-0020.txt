@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0020
+# model=lca
+# L=2
+
+GT:
+O MY LORD CONTINUED THE EUNUCH AND SHAHRAZAD PERCEIVED THE DAWN OF DAY AND CEASED TO SAY HER PERMITTED SAY
+
+Whisper(original):
+O my Lord, continue the eunuch, and cherish that perceive that the dawn of day, and cease to say, her permitted say,
+
+Whisper(decoded):
+O my Lord, continue the unit. And shout as I have perceived the dawn of day and ceased to say her permitted say...

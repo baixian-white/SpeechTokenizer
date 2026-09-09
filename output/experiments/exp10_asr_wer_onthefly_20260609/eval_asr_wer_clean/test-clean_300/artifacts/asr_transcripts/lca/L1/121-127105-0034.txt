@@ -1,0 +1,12 @@
+# sample_id=121-127105-0034
+# model=lca
+# L=1
+
+GT:
+IT SOUNDED DULL IT SOUNDED STRANGE AND ALL THE MORE SO BECAUSE OF HIS MAIN CONDITION WHICH WAS
+
+Whisper(original):
+It sounded dull, that sounded strange, and all the more so because of his main condition, which was...
+
+Whisper(decoded):
+It's out of dull, that's on its strange. And all the more so because it is in condition. Dig wise.

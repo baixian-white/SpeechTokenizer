@@ -1,0 +1,12 @@
+# sample_id=1089-134686-0034
+# model=base
+# L=1
+
+GT:
+THE RECTOR PAUSED AND THEN SHAKING HIS CLASPED HANDS BEFORE HIM WENT ON
+
+Whisper(original):
+The rector paused and then, shaking his clasped hands before him, went on.
+
+Whisper(decoded):
+Director paused and ran, shaking his clasped her arms before him, went on.

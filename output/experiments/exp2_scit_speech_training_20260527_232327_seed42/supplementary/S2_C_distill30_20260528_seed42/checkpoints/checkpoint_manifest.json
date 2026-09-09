@@ -1,0 +1,7 @@
+{
+  "best_checkpoint": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\supplementary\\S2_C_distill30_20260528_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+  "sha256": "72276949e9b0373463c9c9440452cbb9e2498f6e2f6fc88315b5e66499ea8105",
+  "source_checkpoint": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\supplementary\\S2_C_distill30_20260528_seed42\\checkpoints\\SpeechTokenizer_best_dev.pt",
+  "config": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\supplementary\\S2_C_distill30_20260528_seed42\\configs\\distill_weight_ablation_config.json",
+  "note": "Short debug/tracer training checkpoint; not a full 60 epoch SCIT-Speech-Base run."
+}

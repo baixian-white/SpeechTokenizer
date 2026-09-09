@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0042
+# model=base
+# L=3
+
+GT:
+YOU ARE GOOD SAID DICKIE I DO LIKE YOU
+
+Whisper(original):
+You are good, Zatiki, I do like you.
+
+Whisper(decoded):
+You are a bit set to key, I don't like here.

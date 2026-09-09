@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0029
+# model=base
+# L=3
+
+GT:
+CLEVER AS A TRAINDAWG E IS AN ALL OUTER IS OWN EAD
+
+Whisper(original):
+Clever as a train dog is, in all outer's own head.
+
+Whisper(decoded):
+clap as a train block is and on outer zone at

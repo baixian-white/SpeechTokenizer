@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0002
+# model=base
+# L=3
+
+GT:
+THE HEAD OF THE PATCHWORK GIRL WAS THE MOST CURIOUS PART OF HER
+
+Whisper(original):
+The head of the Patchwork Girl was the most curious part of her.
+
+Whisper(decoded):
+The head of the Patchwork Girl was the most curious part of her.

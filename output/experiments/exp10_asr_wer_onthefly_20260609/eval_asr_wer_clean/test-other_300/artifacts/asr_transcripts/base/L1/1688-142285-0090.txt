@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0090
+# model=base
+# L=1
+
+GT:
+SHE SOUNDED TO BE SUCH A CAREFUL ECONOMICAL PERSON THAT I SHOULD LIKE ANY ONE OUT OF THE SAME FAMILY
+
+Whisper(original):
+She sounded to be such a careful, economical person that I should like anyone out of the same family.
+
+Whisper(decoded):
+She sounded to be such a careful hypnological person, though she could laugh at anyone out of the same family.

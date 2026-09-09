@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0016
+# model=base
+# L=2
+
+GT:
+WITH MANY VARIATIONS SUGGESTED BY THE NATURE OF HIS BUILDING MATERIALS DIVERSITY OF CLIMATE AND A DIFFERENT MODE OF SOCIAL LIFE GOVERNOR BELLINGHAM HAD PLANNED HIS NEW HABITATION AFTER THE RESIDENCES OF GENTLEMEN OF FAIR ESTATE IN HIS NATIVE LAND
+
+Whisper(original):
+With many variations, suggested by the nature of his building materials, diversity of climate, and a different mode of social life, Governor Bellingham had planned his new habitation after the residences of gentlemen of Ferris State in his native land.
+
+Whisper(decoded):
+With many variations suggested by the nature of his building materials, diversity of climate and a different mold of social life, Governor Bellingham had planned his new adaptation after the residences of gentlemen of Ferris State and his native land.

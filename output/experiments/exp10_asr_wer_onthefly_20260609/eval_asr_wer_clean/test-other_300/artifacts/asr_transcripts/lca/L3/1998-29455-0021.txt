@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0021
+# model=lca
+# L=3
+
+GT:
+PLEASE DO NOT BE TOO SHOCKED
+
+Whisper(original):
+Please don't be too shocked.
+
+Whisper(decoded):
+Please don't make it too short.

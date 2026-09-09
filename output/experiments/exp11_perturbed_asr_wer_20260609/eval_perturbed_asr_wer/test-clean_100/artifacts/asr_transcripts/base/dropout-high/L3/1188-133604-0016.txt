@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0016
+# model=base
+# L=3
+# channel=dropout-high
+
+GT:
+THIS AT ONCE COMPELS YOU TO UNDERSTAND THAT THE WORK IS TO BE IMAGINATIVE AND DECORATIVE THAT IT REPRESENTS BEAUTIFUL THINGS IN THE CLEAREST WAY BUT NOT UNDER EXISTING CONDITIONS AND THAT IN FACT YOU ARE PRODUCING JEWELER'S WORK RATHER THAN PICTURES
+
+Whisper(original):
+This, it once compels you to understand that the work is to be imaginative and decorative, that it represents beautiful things in the clearest way, but not under existing conditions. And that, in fact, you are producing jeweler's work rather than pictures.
+
+Whisper(decoded):
+This, it once compels you to understand that the work is to be imaginative and decorative, and it represents beautiful things in the clearest way, but not under existing conditions, and that, in fact, you're producing Jula's work rather than pictures.

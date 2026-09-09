@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0028
+# model=base
+# L=3
+# channel=dropout-high
+
+GT:
+WELL THEN LAST HERE IS TURNER'S GREEK SCHOOL OF THE HIGHEST CLASS AND YOU DEFINE HIS ART ABSOLUTELY AS FIRST THE DISPLAYING INTENSELY AND WITH THE STERNEST INTELLECT OF NATURAL FORM AS IT IS AND THEN THE ENVELOPMENT OF IT WITH CLOUD AND FIRE
+
+Whisper(original):
+Well, then last, here is Turner's Greek School of the Highest Class, and you define his art absolutely as first the displaying intensely and with the sternest intellect of natural form as it is, and then the envelopment of it with cloud and fire.
+
+Whisper(decoded):
+While there last, he was turned, grieved school of the highest class, and he defined his art absolutely as first the displaying intensely and with the sternest intellect of natural form as it is, and then the envelopment of it that cloud and fire.

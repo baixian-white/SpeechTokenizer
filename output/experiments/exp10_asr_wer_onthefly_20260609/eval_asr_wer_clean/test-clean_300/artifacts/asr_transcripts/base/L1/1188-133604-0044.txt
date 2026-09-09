@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0044
+# model=base
+# L=1
+
+GT:
+IT WILL BE WELL FOR YOU IF YOU JOIN NOT WITH THOSE WHO INSTEAD OF KITES FLY FALCONS WHO INSTEAD OF OBEYING THE LAST WORDS OF THE GREAT CLOUD SHEPHERD TO FEED HIS SHEEP LIVE THE LIVES HOW MUCH LESS THAN VANITY OF THE WAR WOLF AND THE GIER EAGLE
+
+Whisper(original):
+It will be well for you if you join not with those who instead of kites fly falcons, who instead of obeying the last words of the great cloud shepherd, to feed his sheep, live the lives. How much less than vanity of the war wolf and the gear eagle?
+
+Whisper(decoded):
+That will be well for you. Be joined not with those who instead of kites fly falcons, who instead of they'll dare in the last words of a great cloud shepherd, to feed his sheep with the vise. How much less than dinity are the woe wolf in the deary eagle?

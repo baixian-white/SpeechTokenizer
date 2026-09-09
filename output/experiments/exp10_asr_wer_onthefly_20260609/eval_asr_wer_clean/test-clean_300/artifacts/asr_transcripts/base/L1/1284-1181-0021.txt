@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0021
+# model=base
+# L=1
+
+GT:
+ASKED THE VOICE IN SCORNFUL ACCENTS
+
+Whisper(original):
+Ask the voice in scornful accents.
+
+Whisper(decoded):
+Ask the boys in scoring for accents.

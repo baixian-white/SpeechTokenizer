@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0004
+# model=base
+# L=2
+
+GT:
+BY ALLAH REPLIED THE FIREMAN I TELL THEE THE TRUTH
+
+Whisper(original):
+By Allah, reply the fireman, I tell thee the truth.
+
+Whisper(decoded):
+By Allah, I require the fireman. I tell the truth.

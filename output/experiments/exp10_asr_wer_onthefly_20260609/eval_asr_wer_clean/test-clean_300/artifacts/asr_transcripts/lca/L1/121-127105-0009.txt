@@ -1,0 +1,12 @@
+# sample_id=121-127105-0009
+# model=lca
+# L=1
+
+GT:
+SHE HAS BEEN DEAD THESE TWENTY YEARS
+
+Whisper(original):
+She has been dead these 20 years.
+
+Whisper(decoded):
+She has done that these 20 years.

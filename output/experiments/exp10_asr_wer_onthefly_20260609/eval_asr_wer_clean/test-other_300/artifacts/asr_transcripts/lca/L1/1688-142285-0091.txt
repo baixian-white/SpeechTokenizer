@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0091
+# model=lca
+# L=1
+
+GT:
+MY DEAR SAID MISTER HALE ALARMED PRAY DON'T GO OFF ON THAT IDEA
+
+Whisper(original):
+My dear, said Mr. Hell alarmed. Probably don't go off on that idea.
+
+Whisper(decoded):
+Why did I send this to hell? Well, I didn't go off on that idea.

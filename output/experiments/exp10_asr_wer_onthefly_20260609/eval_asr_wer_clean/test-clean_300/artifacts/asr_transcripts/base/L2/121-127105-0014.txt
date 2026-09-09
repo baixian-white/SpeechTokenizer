@@ -1,0 +1,12 @@
+# sample_id=121-127105-0014
+# model=base
+# L=2
+
+GT:
+YOU ARE ACUTE
+
+Whisper(original):
+You are acute.
+
+Whisper(decoded):
+You are acute.

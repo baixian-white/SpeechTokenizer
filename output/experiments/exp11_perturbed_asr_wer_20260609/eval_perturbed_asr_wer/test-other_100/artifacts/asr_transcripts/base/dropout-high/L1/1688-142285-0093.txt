@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0093
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+TAKE NOTICE THAT IS NOT MY KIND OF HAUGHTINESS PAPA IF I HAVE ANY AT ALL WHICH I DON'T AGREE TO THOUGH YOU'RE ALWAYS ACCUSING ME OF IT
+
+Whisper(original):
+Take notice that this is not my kind of fortuneless papa, if I have any at all, which I don't agree to, so you're always accusing me of it.
+
+Whisper(decoded):
+Tech coaches said this is not my kind of whole chest for pole, if I didn't at all, which I know the three chin, but it always achieves even a lot.

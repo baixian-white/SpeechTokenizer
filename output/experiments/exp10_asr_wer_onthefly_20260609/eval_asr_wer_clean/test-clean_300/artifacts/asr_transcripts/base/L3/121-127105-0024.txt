@@ -1,0 +1,12 @@
+# sample_id=121-127105-0024
+# model=base
+# L=3
+
+GT:
+POOR DOUGLAS BEFORE HIS DEATH WHEN IT WAS IN SIGHT COMMITTED TO ME THE MANUSCRIPT THAT REACHED HIM ON THE THIRD OF THESE DAYS AND THAT ON THE SAME SPOT WITH IMMENSE EFFECT HE BEGAN TO READ TO OUR HUSHED LITTLE CIRCLE ON THE NIGHT OF THE FOURTH
+
+Whisper(original):
+Poor Douglas, before his death, when it was in sight, committed to me the manuscript that reached him on the third of these days and that, on the same spot with immense effect, he began to read to our hushed little circle on the night of the fourth.
+
+Whisper(decoded):
+Poor Douglas, before his death, when it was in sight, committed to me the manuscript that reached him on the third of these days and that, on the same spot with immense effect, he began to read to our hushed little circle on the night of the fourth.

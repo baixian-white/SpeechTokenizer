@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0001
+# model=base
+# L=1
+
+GT:
+HE ASKED HIMSELF SOMETHING WARM AND LIVING QUICKENETH ME IT MUST BE IN THE NEIGHBOURHOOD
+
+Whisper(original):
+He asked himself Something wrong and living quick at me. It must be in that neighborhood
+
+Whisper(decoded):
+He asked himself, so jimbo, they're leaving quickly to me. It was the end of the movement.

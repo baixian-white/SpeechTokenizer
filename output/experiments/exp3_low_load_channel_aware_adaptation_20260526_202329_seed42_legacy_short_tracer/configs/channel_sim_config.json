@@ -1,0 +1,21 @@
+﻿{
+    "conditions":  [
+                       {
+                           "p_drop":  0,
+                           "name":  "clean",
+                           "p_sub":  0
+                       },
+                       {
+                           "p_drop":  0.01,
+                           "name":  "dropout-low",
+                           "p_sub":  0
+                       },
+                       {
+                           "p_drop":  0,
+                           "name":  "substitution-low",
+                           "p_sub":  0.001
+                       }
+                   ],
+    "dropout_implementation":  "previous-index replacement",
+    "substitution":  "uniform legal codebook index"
+}

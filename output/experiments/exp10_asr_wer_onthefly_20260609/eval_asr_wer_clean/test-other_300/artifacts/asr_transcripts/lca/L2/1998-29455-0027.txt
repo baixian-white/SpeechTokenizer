@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0027
+# model=lca
+# L=2
+
+GT:
+THE NEW GAME OF BEGGING AND INVENTING STORIES TO INTEREST THE PEOPLE FROM WHOM IT WAS WORTH WHILE TO BEG WENT ON GAILY DAY BY DAY AND WEEK BY WEEK AND DICKIE BY CONSTANT PRACTICE GREW SO CLEVER AT TAKING HIS PART IN THE ACTING THAT MISTER BEALE WAS QUITE DAZED WITH ADMIRATION
+
+Whisper(original):
+The new game of begging and inventing stories to interest the people from whom it was worthwhile to beg were done gaily, day by day and week by week, and Dickey, by constant practice, grew so clever at taking his part in the acting that Mr. B was quite dazed with admiration.
+
+Whisper(decoded):
+The new game of tagging and inventing stories to interest the people for women was worthwhile to death, but on daily, day by day and week by week, and Dickey, the constant practice, who is so clever to him as part of the new acting that Mr. Buell was quite dazed with admiration.

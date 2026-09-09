@@ -1,0 +1,12 @@
+# sample_id=121-127105-0006
+# model=lca
+# L=1
+
+GT:
+THE OTHERS RESENTED POSTPONEMENT BUT IT WAS JUST HIS SCRUPLES THAT CHARMED ME
+
+Whisper(original):
+The others resented for Sponement, but it was just his groupals that charmed me.
+
+Whisper(decoded):
+The other was entered for Stoneman, that it was Justice Cropals that chart me.

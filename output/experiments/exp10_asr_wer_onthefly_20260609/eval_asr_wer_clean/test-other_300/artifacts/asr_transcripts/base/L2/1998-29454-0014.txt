@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0014
+# model=base
+# L=2
+
+GT:
+I SHALL CATCH IT A FAIR TREAT AS IT IS
+
+Whisper(original):
+I should catch it if I treat as it is.
+
+Whisper(decoded):
+I should try to do it for a treat as it is.

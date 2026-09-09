@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0095
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+THEY CARED TOO LITTLE TO ASK IN WHAT MANNER HER SON HAD SPOKEN ABOUT HER
+
+Whisper(original):
+They cared too little to ask in what manner her son had spoken about her.
+
+Whisper(decoded):
+They cleared her to the west, and what man or his son had spoken about her.

@@ -1,0 +1,12 @@
+# sample_id=121-121726-0014
+# model=lca
+# L=1
+
+GT:
+HYPOCRITE A HORSE DEALER
+
+Whisper(original):
+hypocrite a horse dealer
+
+Whisper(decoded):
+They are accurate. A four-stirrer.

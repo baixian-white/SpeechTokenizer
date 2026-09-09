@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0025
+# model=base
+# L=1
+
+GT:
+TO PURIFY IT ADD A SMALL QUANTITY OF DILUTE SULPHURIC ACID AND AFTER EVAPORATING TO THREE QUARTERS OF ITS BULK ADD A SATURATED SOLUTION OF CARBONATE OF POTASH OR SODA
+
+Whisper(original):
+To purify it, add a small quantity of deludesophoric acid, and after evaporating to 3.5 of its bulk, add a saturated solution of carbonate of potash or soda.
+
+Whisper(decoded):
+To purify it and assume a quantity of the limits of third-person, learned after evaporating two three corners of its bulk, that is saturated solution of carburetor of point ash acerodin.

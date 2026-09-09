@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0043
+# model=base
+# L=3
+
+GT:
+SEE THAT YOUR LIVES BE IN NOTHING WORSE THAN A BOY'S CLIMBING FOR HIS ENTANGLED KITE
+
+Whisper(original):
+See that your lies being nothing worse than a boy's climbing for his entangled kite.
+
+Whisper(decoded):
+See that your lies being nothing worse than a boy's climbing for his entangled kite.

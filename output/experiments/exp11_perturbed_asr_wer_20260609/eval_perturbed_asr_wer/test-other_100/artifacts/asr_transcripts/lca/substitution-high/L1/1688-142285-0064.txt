@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0064
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+BUT HOO'S COME AT LAST AND HOO'S WELCOME AS LONG AS HOO'LL KEEP FROM PREACHING ON WHAT HOO KNOWS NOUGHT ABOUT
+
+Whisper(original):
+But who's come at last and who's welcome as long as who'll keep from preaching on what who knows not about?
+
+Whisper(decoded):
+But he's torn at Ross, and he's welcome as long as he will tip from twitching on a war and there is not a doubt.

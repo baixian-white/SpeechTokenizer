@@ -1,0 +1,12 @@
+# sample_id=1284-134647-0005
+# model=base
+# L=2
+
+GT:
+THEY ASSERTED WITH CONFIDENCE AND ALMOST WITH EXULTATION THAT THE APOSTOLICAL SUCCESSION WAS INTERRUPTED THAT ALL THE BISHOPS OF EUROPE AND ASIA WERE INFECTED BY THE CONTAGION OF GUILT AND SCHISM AND THAT THE PREROGATIVES OF THE CATHOLIC CHURCH WERE CONFINED TO THE CHOSEN PORTION OF THE AFRICAN BELIEVERS WHO ALONE HAD PRESERVED INVIOLATE THE INTEGRITY OF THEIR FAITH AND DISCIPLINE
+
+Whisper(original):
+They asserted with confidence, and almost with exaltation, that the apostolic succession was interrupted, that all the bishops of Europe and Asia were infected by the contagion of guilt and schism, and that the prerogatives of the Catholic Church were confined to the chosen portion of the African believers, who alone had preserved in violet the integrity of their faith and discipline.
+
+Whisper(decoded):
+They asserted with confidence and all moved with exaltation that the apostolic succession was interrupted, that all the bishops of Europe and Asia were infected by the contagion of guilt and schism, and that the prerogatives of the Catholic Church were confined to the chosen portion of the African believers, who alone had preserved in violet the integrity of their faith and discipline.

@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0077
+# model=base
+# L=1
+
+GT:
+SHE WAS LATE FOR TEA AT HOME
+
+Whisper(original):
+She was late for tea at home.
+
+Whisper(decoded):
+Which was the wait for T-Angel?

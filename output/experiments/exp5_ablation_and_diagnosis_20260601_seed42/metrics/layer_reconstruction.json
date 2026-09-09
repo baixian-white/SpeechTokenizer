@@ -1,0 +1,249 @@
+{
+  "run_id": "exp5_ablation_and_diagnosis_20260601_seed42",
+  "checkpoint": "output\\experiments\\exp5_ablation_and_diagnosis_20260601_seed42\\checkpoints\\A3_distill0\\SCIT-Speech-Base_distill0_step42500_extracted.pt",
+  "checkpoint_sha256": "84b0ff458fc0084a329795f4d540389fe48dbdcd3a3ccab7df43614c84c877ba",
+  "sample_count": 8,
+  "metrics": [
+    {
+      "sample_id": "8838-298545-0037",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.04390322417020798,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "8838-298545-0037",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.03283482417464256,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "8838-298545-0037",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.028159264475107193,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "5390-30102-0015",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.022253811359405518,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "5390-30102-0015",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.018275070935487747,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "5390-30102-0015",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.016943421214818954,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "4018-103416-0033",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.029045380651950836,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "4018-103416-0033",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.021412480622529984,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "4018-103416-0033",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.01867515966296196,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "1737-148989-0006",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.025050675496459007,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "1737-148989-0006",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.022810155525803566,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "1737-148989-0006",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.02229374833405018,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "1455-138263-0040",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.009025752544403076,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "1455-138263-0040",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.008294707164168358,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "1455-138263-0040",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.008078807033598423,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "311-124404-0119",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.02681897021830082,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "311-124404-0119",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.022419048473238945,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "311-124404-0119",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.02101973444223404,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "4680-16026-0019",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.03963498771190643,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "4680-16026-0019",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.03153863921761513,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "4680-16026-0019",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.02682744525372982,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "8098-278278-0035",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.02401038073003292,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "8098-278278-0035",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.021058758720755577,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    },
+    {
+      "sample_id": "8098-278278-0035",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.01940028741955757,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0,
+      "note": "sanity/proxy reconstruction, not final communication quality"
+    }
+  ],
+  "scope_note": "Sanity/proxy reconstruction only; not a final communication quality conclusion."
+}

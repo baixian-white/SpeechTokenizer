@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0040
+# model=lca
+# L=1
+
+GT:
+THE CRAMPNESS AND THE POVERTY ARE ALL INTENDED
+
+Whisper(original):
+The crampness and the poverty are all intended.
+
+Whisper(decoded):
+The clapness and the power of your own turned in.

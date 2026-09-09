@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0012
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+IT WAS IDLE FOR HIM TO MOVE HIMSELF TO BE GENEROUS TOWARDS THEM TO TELL HIMSELF THAT IF HE EVER CAME TO THEIR GATES STRIPPED OF HIS PRIDE BEATEN AND IN BEGGAR'S WEEDS THAT THEY WOULD BE GENEROUS TOWARDS HIM LOVING HIM AS THEMSELVES
+
+Whisper(original):
+It was idle for him to move himself to be generous towards them, to tell himself that, if he ever came to their gates, stripped of his pride, beaten and in beggar's weeds, that they would be generous towards him, loving him as themselves.
+
+Whisper(decoded):
+It was idle for him to move himself to be generous towards them, to tell himself that if he ever came to their gates stripped of his pride, beaten and in beggar's weeds, that they would be generous towards him, loving him as themselves.

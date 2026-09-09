@@ -1,0 +1,12 @@
+# sample_id=121-127105-0000
+# model=lca
+# L=3
+
+GT:
+IT WAS THIS OBSERVATION THAT DREW FROM DOUGLAS NOT IMMEDIATELY BUT LATER IN THE EVENING A REPLY THAT HAD THE INTERESTING CONSEQUENCE TO WHICH I CALL ATTENTION
+
+Whisper(original):
+It was this observation that drew from Douglas, not immediately but later in the evening, a reply that had the interesting consequence to which I call attention.
+
+Whisper(decoded):
+It was this observation that drew from Douglas. Not immediately but later in the evening, have replied that had the interesting consequence to which I call attention.

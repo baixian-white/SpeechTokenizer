@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0032
+# model=lca
+# L=1
+
+GT:
+I WILL SHOW YOU WHAT A GOOD JOB I DID AND SHE WENT TO A TALL CUPBOARD AND THREW OPEN THE DOORS
+
+Whisper(original):
+I will show you what a good job I did. And she went to a tall cupboard and threw open the doors.
+
+Whisper(decoded):
+I will show you where the brand-old I did. And she ran to a tall cover and furled up in with the worst.

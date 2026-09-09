@@ -1,0 +1,9 @@
+# method=dac setting=n_q_3 sample_id=311-124404-0119
+# GT (LibriSpeech):
+THERE IS NONE THAT IS MORE POWERFUL IN LEADING FEEBLE MINDS ASTRAY FROM THE STRAIGHT PATH OF VIRTUE
+
+# Whisper(original):
+There is none that is more powerful in leading feeble minds astray from the straight path of virtue
+
+# Whisper(decoded):
+There is none that is more powerful in leading feeble lines astray from the straight path of virtue

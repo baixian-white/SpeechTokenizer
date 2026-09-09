@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0006
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+THE DULL LIGHT FELL MORE FAINTLY UPON THE PAGE WHEREON ANOTHER EQUATION BEGAN TO UNFOLD ITSELF SLOWLY AND TO SPREAD ABROAD ITS WIDENING TAIL
+
+Whisper(original):
+The dull light fell more faintly upon the page, where on another equation began to unfold itself slowly, and to spread abroad its widening tail.
+
+Whisper(decoded):
+The dull white fell more faintly upon the page, where on another equation began to unfold itself slowly and to spread abroad its whitening tail.

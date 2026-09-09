@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0030
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+SHE AND DIXON HELD MYSTERIOUS CONSULTATIONS IN HER BEDROOM FROM WHICH DIXON WOULD COME OUT CRYING AND CROSS AS WAS HER CUSTOM WHEN ANY DISTRESS OF HER MISTRESS CALLED UPON HER SYMPATHY
+
+Whisper(original):
+She and Dixon held mysterious consultations in a bedroom, from which Dixon would come out crying and cross, as was a custom, when any distress of her mistress called upon her sympathy.
+
+Whisper(decoded):
+She and Dixon held mysterious consultations in the bedroom, from which Dixon would come up crying and cross, as was a custom, where any distress of a mistress called upon her sympathy.

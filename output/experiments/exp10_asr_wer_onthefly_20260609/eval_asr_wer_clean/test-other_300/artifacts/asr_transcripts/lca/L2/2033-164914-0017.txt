@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0017
+# model=lca
+# L=2
+
+GT:
+THEN HE KISSED THE EUNUCH'S HEAD AND SPAKE HIM FAIR TILL HE WENT AWAY BUT THE CASTRATO FETCHED A ROUND AND RETURNING SECRETLY CAME AND STOOD BEHIND THE FIREMAN FEARING TO GO BACK TO HIS MISTRESS WITHOUT TIDINGS
+
+Whisper(original):
+Then he kissed the Onoach's head and spake him fair till he went away. But the Castrato fetched around and returned in secretly, came and stood behind the fireman, fearing to go back to his mistress without tidings.
+
+Whisper(decoded):
+Then he kissed the Onab's head and spayed him fair till he went away. But a castrado touched the around and returned his secretly, came and stood behind the fireman, hearing to go back to his mistress without tidings.

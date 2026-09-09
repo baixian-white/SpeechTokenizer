@@ -1,0 +1,33 @@
+from pathlib import Path
+helpers=(Path(__file__).parent/'draw_base_training_simple.py').read_text(encoding='utf-8-sig').split("txt(700,45,")[0]
+exec(helpers)
+txt(700,42,'SCIT-Speech-Base：对抗训练框架',31,True)
+# Two competing networks form the central visual.
+box(45,235,180,105,'真实语音 x',n=25)
+box(320,215,360,145,'生成器 G\nEncoder → RVQ → Decoder',n=23)
+box(760,242,190,90,'重建语音\nx_hat',fill='#e8f7f1',n=22)
+box(1040,210,305,160,'判别器组 D\nWaveform / Periodic\nTime-Frequency',fill='#f1edfb',n=22,stroke='#8570b1')
+arrow([(225,287),(320,287)])
+arrow([(680,287),(760,287)])
+arrow([(950,287),(1040,287)])
+txt(989,257,'生成样本',17)
+arrow([(135,235),(135,140),(1190,140),(1190,210)])
+txt(640,120,'真实样本 x：直接送入判别器',22)
+# Objective boxes are below their respective models.
+box(1050,435,285,88,'判别器损失 L_D\n区分真实与生成语音',fill='#f1edfb',n=21,stroke='#8570b1')
+arrow([(1260,370),(1260,435)],'#8570b1')
+arrow([(1335,480),(1370,480),(1370,335),(1345,335)],'#8570b1',True)
+txt(1190,553,'只更新 D',20,c='#8570b1')
+box(610,435,320,88,'生成器对抗损失 L_adv\n让生成语音获得更高真实评分',fill='#fff3df',n=20,stroke=orange)
+arrow([(1100,370),(1100,400),(770,400),(770,435)])
+txt(871,382,'生成样本的判别评分',17)
+arrow([(610,480),(500,480),(500,360)],orange,True)
+txt(424,435,'更新 G',20,True,c=orange)
+# Supplemental objectives are grouped rather than individually wired.
+box(55,600,1290,150,'',fill='#f6f9fc',stroke='#8ca2b6')
+txt(700,627,'生成器同时使用的辅助损失',24,True)
+txt(275,686,'波形与 Mel 重建损失\n比较 x 与 x_hat',20)
+txt(700,686,'Feature-Matching Loss\n比较 D 的真实／生成中间特征',20)
+txt(1130,686,'Q1 语义蒸馏 + RVQ Commitment\nHuBERT 冻结',19)
+txt(700,788,'实线：数据或评分　　虚线：参数更新；更新 D 时对 x_hat 停止梯度。',20)
+out=Path(__file__).parent/'scit_base_training_gan.png';im.save(out);print(out)

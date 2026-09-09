@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0003
+# model=lca
+# L=1
+
+GT:
+THE PERIOD WAS HARDLY IF AT ALL EARLIER THAN THAT OF OUR STORY WHEN A DISPUTE CONCERNING THE RIGHT OF PROPERTY IN A PIG NOT ONLY CAUSED A FIERCE AND BITTER CONTEST IN THE LEGISLATIVE BODY OF THE COLONY BUT RESULTED IN AN IMPORTANT MODIFICATION OF THE FRAMEWORK ITSELF OF THE LEGISLATURE
+
+Whisper(original):
+The period was hardly if at all earlier than that of our story when a dispute concerning the right of property in a pig not only caused a fierce and bitter contest in the legislative body of the colony, but resulted in an important modification of the framework itself of the legislature.
+
+Whisper(decoded):
+The period is hardly death at all earlier than that of our story when it is deep concerning the rate of property been obtained not only cause a fierce and bitter contest in the legislative body of the colony, that resulted in an important notification of the framework itself on the legislature.

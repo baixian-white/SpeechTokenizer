@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0020
+# model=base
+# L=1
+
+GT:
+THE RESIDUE MAY BE SET ASIDE FOR THE DETECTION OF THE METALLIC POISONS IF SUSPECTED EXPEL THE ALCOHOL BY CAREFUL EVAPORATION
+
+Whisper(original):
+The residue may be set aside for the detection of the metallic poisons I've suspected. Expere the alcohol by careful evaporation.
+
+Whisper(decoded):
+I'm not going to be satisfied with the intention of the retirement policies I've suspected. Don't make them Creator.

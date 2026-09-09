@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0020
+# model=lca
+# L=1
+
+GT:
+IN TRUTH SHE SEEMED ABSOLUTELY HIDDEN BEHIND IT
+
+Whisper(original):
+In truth, she seemed absolutely hidden behind it.
+
+Whisper(decoded):
+In truth, she seemed absolutely fit in behind it.

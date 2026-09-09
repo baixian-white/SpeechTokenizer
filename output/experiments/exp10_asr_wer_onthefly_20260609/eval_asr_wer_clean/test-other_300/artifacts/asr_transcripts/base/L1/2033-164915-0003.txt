@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0003
+# model=base
+# L=1
+
+GT:
+AFTER A WHILE THEY CAME TO THEMSELVES AND NUZHAT AL ZAMAN REJOICED WITH EXCEEDING JOY OPPRESSION AND DEPRESSION LEFT HER AND GLADNESS TOOK THE MASTERY OF HER AND SHE REPEATED THESE VERSES
+
+Whisper(original):
+After a while, they came to themselves, and Uzzat Al-Zaman rejoiced with exceeding joy. Oppression and depression left her, and gladness took the mastery of her, and she repeated these verses.
+
+Whisper(decoded):
+After a while, they turned to themselves, and in the south of Azarhan, we rejoiced with its sitting joy. We crashed and depression left her, and gladness took the mastery of her, and she did it these myth and and breathe breathe in like like other ten imee eight moments and t and S .

@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0018
+# model=base
+# L=3
+
+GT:
+THE PURE ALKALOIDS WITH THE EXCEPTION OF MORPHINE IN ITS CRYSTALLINE FORM ARE SOLUBLE IN ETHER
+
+Whisper(original):
+The pure acolytes with the exception of morphine in its crystalline form are soluble in ether.
+
+Whisper(decoded):
+The pure econoids with the exception of morphine in its crystalline form are so annoying me for.

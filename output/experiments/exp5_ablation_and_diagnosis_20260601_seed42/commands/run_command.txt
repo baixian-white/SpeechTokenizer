@@ -1,0 +1,16 @@
+# Launch from H:\H-CODE\speechtokenizer with conda env "speechtokenizer".
+
+# conda activate speechtokenizer
+# cd /d H:\H-CODE\speechtokenizer
+
+# A3 distill=0 ablation training (60 epoch from scratch, NAS encoder, distill_loss_lambda=0)
+& 'C:\Users\Windows11\.conda\envs\speechtokenizer\Scripts\accelerate.exe' launch scripts/train_example.py --config output/experiments/exp5_ablation_and_diagnosis_20260601_seed42/configs/variants/A3_distill0.json
+
+# Resume from latest SpeechTokenizerTrainer_* if interrupted (do not specify --base-checkpoint):
+# accelerate launch scripts/train_example.py --config output/experiments/exp5_ablation_and_diagnosis_20260601_seed42/configs/variants/A3_distill0.json --continue_train
+
+# Expected timeline:
+# - Total batch steps: ~202740 (60 epoch * (27039 train / 8 batch))
+# - Estimated wall-clock: ~24 hours on RTX 5070 Ti
+# - dev/mel checkpoints every 2500 steps (every ~30 minutes)
+# - Final ckpt expected at H:\H-CODE\speechtokenizer\output\experiments\exp5_ablation_and_diagnosis_20260601_seed42\checkpoints\A3_distill0\SpeechTokenizer_best_dev.pt

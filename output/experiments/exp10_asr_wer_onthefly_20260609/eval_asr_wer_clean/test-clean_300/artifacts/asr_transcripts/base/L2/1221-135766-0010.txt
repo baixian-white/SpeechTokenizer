@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0010
+# model=base
+# L=2
+
+GT:
+IT WAS A LOOK SO INTELLIGENT YET INEXPLICABLE PERVERSE SOMETIMES SO MALICIOUS BUT GENERALLY ACCOMPANIED BY A WILD FLOW OF SPIRITS THAT HESTER COULD NOT HELP QUESTIONING AT SUCH MOMENTS WHETHER PEARL WAS A HUMAN CHILD
+
+Whisper(original):
+It was a look-so intelligent, yet inexplicable, perverse, sometimes so malicious, but generally accompanied by a wild flow of spirits, that Hester could not help questioning at such moments whether Pearl was a human child.
+
+Whisper(decoded):
+It was a look-so intelligent, yet inexplicable, perverse, sometimes so malicious, but generally accompanied by a wild flow of spirits. That Hester could not have questioning as such knowledge. her role was a human child.

@@ -1,0 +1,9 @@
+# method=dac setting=n_q_2 sample_id=4018-103416-0033
+# GT (LibriSpeech):
+SHE WAS HOLDING OUT BOTH HANDS TO HIM PITEOUSLY YOU WOULDN'T GO WOULD YOU I MIGHT HAVE TO GO HE EVADED YOU WOULDN'T GRAHAM YOU'RE ALL I HAVE ALL I HAVE LEFT TO LIVE FOR YOU WOULDN'T NEED TO GO IT'S RIDICULOUS YOU'RE NEEDED HERE
+
+# Whisper(original):
+She was holding out both hands too impitiously. You wouldn't go, would you? I might have to go, he abated. You wouldn't, Graham. You're all I have. All I have left to live for. You wouldn't need to go. It's ridiculous. You're needed here.
+
+# Whisper(decoded):
+She was holding up both hands to it pretty easily. He wouldn't go with you. I might have to go here, baby. You wouldn't, Graham, you all I had, all I have left to learn for. You wouldn't need to go. It's ridiculous you need it here.

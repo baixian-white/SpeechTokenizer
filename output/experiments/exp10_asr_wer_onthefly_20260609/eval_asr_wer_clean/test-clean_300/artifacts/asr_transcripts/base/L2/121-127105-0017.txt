@@ -1,0 +1,12 @@
+# sample_id=121-127105-0017
+# model=base
+# L=2
+
+GT:
+IT WAS ALMOST THE TONE OF HOPE EVERYBODY WILL STAY
+
+Whisper(original):
+It was almost the tone of hope. Everybody will stay.
+
+Whisper(decoded):
+It is almost the two in a group. Everybody will stay.

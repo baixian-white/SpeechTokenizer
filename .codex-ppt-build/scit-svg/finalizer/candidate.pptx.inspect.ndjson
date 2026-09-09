@@ -1,0 +1,6 @@
+{"kind":"deck","id":"pr/hdw52i","name":"Deck"}
+{"kind":"layout","layoutId":"00312901-a234-4326-bdb8-9aa838ff04cc","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"30c70eb5-0dec-471f-bb8d-a33bfe2b0793","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/4cr6ku","slide":1,"title":"Slide 1","textShapes":0}
+{"kind":"image","id":"im/sz69ofml","slide":1,"name":"","alt":"SCIT-Speech system blueprint with six modules, including encoder architecture search, three-layer RVQ transmission and decoding, training, and optional token-audio speaker classification.","bbox":[0,0,2400,1400]}
+{"kind":"notes","id":"nt/4cr6ku","slide":1,"text":"Source: figures/scit_speech_figure_blueprint.svg. The full-slide image is the 4800 × 2800 high-resolution render of that SVG, used to preserve all labels, arrowheads, and layout across PowerPoint renderers."}

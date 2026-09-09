@@ -1,0 +1,12 @@
+# sample_id=121-121726-0005
+# model=base
+# L=3
+
+GT:
+HEDGE A FENCE
+
+Whisper(original):
+Hedge, Offense
+
+Whisper(decoded):
+Hedge. Affairs. Parents.

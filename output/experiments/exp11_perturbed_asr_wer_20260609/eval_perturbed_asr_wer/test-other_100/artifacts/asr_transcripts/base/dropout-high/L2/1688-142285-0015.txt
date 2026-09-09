@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0015
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+HOW TAINTED ASKED HER FATHER
+
+Whisper(original):
+How tainted, asked a father.
+
+Whisper(decoded):
+How talented are staff rivals?

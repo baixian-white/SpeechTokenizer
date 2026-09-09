@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0006
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+THEN HE COMES TO THE BEAK OF IT
+
+Whisper(original):
+Then he comes to the beak of it.
+
+Whisper(decoded):
+Then he comes to the peak of it.

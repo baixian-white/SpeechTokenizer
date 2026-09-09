@@ -1,0 +1,12 @@
+# sample_id=121-123859-0004
+# model=lca
+# L=2
+
+GT:
+SO I RETURN REBUK'D TO MY CONTENT AND GAIN BY ILL THRICE MORE THAN I HAVE SPENT
+
+Whisper(original):
+So I return rebuked to my content, and gain by ill thrice more than I have spent.
+
+Whisper(decoded):
+So I return rebuked to my content, and gained by ill thrice more than I have spent.

@@ -1,0 +1,9 @@
+# method=dac setting=n_q_1 sample_id=311-124404-0119
+# GT (LibriSpeech):
+THERE IS NONE THAT IS MORE POWERFUL IN LEADING FEEBLE MINDS ASTRAY FROM THE STRAIGHT PATH OF VIRTUE
+
+# Whisper(original):
+There is none that is more powerful in leading feeble minds astray from the straight path of virtue
+
+# Whisper(decoded):
+You're actually not taking your prayer from the kingdom, you're not in this trade, in this trade, it's not the fact that...

@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0001
+# model=base
+# L=2
+
+GT:
+PERUSAL SAID THE PAWNBROKER THAT'S THE WAY TO PERNOUNCE IT
+
+Whisper(original):
+Perusal set the pawnbroker. That's the way to pronounce it.
+
+Whisper(decoded):
+The rizzo set on work, that's the way to pronounce it.

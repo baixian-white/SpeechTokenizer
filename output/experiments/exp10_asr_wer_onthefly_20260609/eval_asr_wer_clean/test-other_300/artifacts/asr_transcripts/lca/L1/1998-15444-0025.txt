@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0025
+# model=lca
+# L=1
+
+GT:
+TO PURIFY IT ADD A SMALL QUANTITY OF DILUTE SULPHURIC ACID AND AFTER EVAPORATING TO THREE QUARTERS OF ITS BULK ADD A SATURATED SOLUTION OF CARBONATE OF POTASH OR SODA
+
+Whisper(original):
+To purify it, add a small quantity of deludesophoric acid, and after evaporating to 3.5 of its bulk, add a saturated solution of carbonate of potash or soda.
+
+Whisper(decoded):
+To purify it and to add a similar quantity or if it limits the furrowed ascent, then that can evaporate into three coils of its part. That is a saturated solution of carbonate of cartache sodium.

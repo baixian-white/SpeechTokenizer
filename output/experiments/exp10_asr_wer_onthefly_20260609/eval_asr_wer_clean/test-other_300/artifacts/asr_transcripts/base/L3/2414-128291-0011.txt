@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0011
+# model=base
+# L=3
+
+GT:
+WANTON AVIDITY BILIOUS ENVY CAREWORN REVENGE POPULACE PRIDE ALL THESE STRUCK MINE EYE
+
+Whisper(original):
+want an out of duty, will be anyway. Care won't revenge. Popular spread. All these struck my eye.
+
+Whisper(decoded):
+want an entity, will stand there, cable and revenge, popular sprite, all these trunks might die.

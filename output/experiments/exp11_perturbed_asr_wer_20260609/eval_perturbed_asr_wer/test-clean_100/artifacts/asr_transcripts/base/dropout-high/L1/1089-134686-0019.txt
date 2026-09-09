@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0019
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+THE SENTENCE OF SAINT JAMES WHICH SAYS THAT HE WHO OFFENDS AGAINST ONE COMMANDMENT BECOMES GUILTY OF ALL HAD SEEMED TO HIM FIRST A SWOLLEN PHRASE UNTIL HE HAD BEGUN TO GROPE IN THE DARKNESS OF HIS OWN STATE
+
+Whisper(original):
+The sentence of St. James, which says that he who offends against one commandment becomes guilty of all, had seemed to him first a swollen phrase, until he had begun to grope in the darkness of his own state.
+
+Whisper(decoded):
+The sentence of St. James, which says that he who offends against one commandment becomes guilty of all, had seemed to him first a swollen phrase, until he had begun to grope in the darkness at its own state.

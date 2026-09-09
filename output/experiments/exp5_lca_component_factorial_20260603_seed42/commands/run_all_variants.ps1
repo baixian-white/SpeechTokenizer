@@ -1,0 +1,7 @@
+# Run from H:\H-CODE\speechtokenizer with conda env speechtokenizer.
+# Full LCA reference is already available in exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42.
+
+& 'C:\Users\Windows11\.conda\envs\speechtokenizer\Scripts\accelerate.exe' launch scripts/train_lca.py --config output\experiments\exp5_lca_component_factorial_20260603_seed42\configs\variants\V0_full_depth_clean_control.json --base-checkpoint output\experiments\exp2_scit_speech_distill30_retrain_20260529_seed42\checkpoints\SCIT-Speech-Base_best.pt
+& 'C:\Users\Windows11\.conda\envs\speechtokenizer\Scripts\accelerate.exe' launch scripts/train_lca.py --config output\experiments\exp5_lca_component_factorial_20260603_seed42\configs\variants\V1_random_l_only.json --base-checkpoint output\experiments\exp2_scit_speech_distill30_retrain_20260529_seed42\checkpoints\SCIT-Speech-Base_best.pt
+& 'C:\Users\Windows11\.conda\envs\speechtokenizer\Scripts\accelerate.exe' launch scripts/train_lca.py --config output\experiments\exp5_lca_component_factorial_20260603_seed42\configs\variants\V2_channelsim_only.json --base-checkpoint output\experiments\exp2_scit_speech_distill30_retrain_20260529_seed42\checkpoints\SCIT-Speech-Base_best.pt
+& 'C:\Users\Windows11\.conda\envs\speechtokenizer\Scripts\accelerate.exe' launch scripts/train_lca.py --config output\experiments\exp5_lca_component_factorial_20260603_seed42\configs\variants\V3_random_l_channelsim.json --base-checkpoint output\experiments\exp2_scit_speech_distill30_retrain_20260529_seed42\checkpoints\SCIT-Speech-Base_best.pt

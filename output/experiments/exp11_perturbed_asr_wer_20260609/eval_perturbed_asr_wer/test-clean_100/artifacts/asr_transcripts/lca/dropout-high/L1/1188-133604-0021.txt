@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0021
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+IT WILL BE WHOLLY IMPOSSIBLE FOR YOU TO RETAIN THE TRANQUILLITY OF TEMPER AND FELICITY OF FAITH NECESSARY FOR NOBLE PURIST PAINTING UNLESS YOU ARE ACTIVELY ENGAGED IN PROMOTING THE FELICITY AND PEACE OF PRACTICAL LIFE
+
+Whisper(original):
+It will be wholly impossible for you to retain the tranquility of temper and felicity of faith necessary for noble purist painting unless you are actively engaged in promoting the felicity and peace of practical life.
+
+Whisper(decoded):
+There will be wholly impossible for me to retain the tranquility of temper and felicity of faith, necessary from noble purists' tainting. Unless you were, I had to bring Pais to promote in the felisting and peace of practical life.

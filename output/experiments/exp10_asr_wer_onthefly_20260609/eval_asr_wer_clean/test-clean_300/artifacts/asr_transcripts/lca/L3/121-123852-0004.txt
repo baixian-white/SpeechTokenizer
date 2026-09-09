@@ -1,0 +1,12 @@
+# sample_id=121-123852-0004
+# model=lca
+# L=3
+
+GT:
+MY HEART DOTH PLEAD THAT THOU IN HIM DOST LIE A CLOSET NEVER PIERC'D WITH CRYSTAL EYES BUT THE DEFENDANT DOTH THAT PLEA DENY AND SAYS IN HIM THY FAIR APPEARANCE LIES
+
+Whisper(original):
+My heart doth plead that thou in him doth lie. A closet never pierced with crystal eyes. But the defendant doth that plea deny, and says in him thy fair appearance lies.
+
+Whisper(decoded):
+My heart doth plead that thou in him doth lie. A closet never pierced with crystal eyes. But the defendant doth that plea deny, and says in him thy fair appearance lies.

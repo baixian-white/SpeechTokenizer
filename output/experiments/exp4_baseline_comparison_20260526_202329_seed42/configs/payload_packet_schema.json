@@ -1,0 +1,11 @@
+{
+  "header_bytes": 16,
+  "fields": [
+    "magic/version",
+    "L",
+    "session_id",
+    "timestamp",
+    "packed_length"
+  ],
+  "note": "Toy packet schema for accounting; packed payload is bit-packed 10-bit indices, not npy storage size."
+}

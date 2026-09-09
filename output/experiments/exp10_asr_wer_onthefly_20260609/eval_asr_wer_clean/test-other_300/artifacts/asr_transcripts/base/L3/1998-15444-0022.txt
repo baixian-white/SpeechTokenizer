@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0022
+# model=base
+# L=3
+
+GT:
+EVAPORATE THE FILTRATE TO A SYRUP AND EXTRACT WITH SUCCESSIVE PORTIONS OF ABSOLUTE ALCOHOL
+
+Whisper(original):
+Evaporate the phagellate to a cyrup and extract with successive portions of absolute alcohol.
+
+Whisper(decoded):
+A federate the filter into a cygroup and extract for successive portions of absolute alcohol.

@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0011
+# model=base
+# L=2
+
+GT:
+IN USING THE ELASTIC STOMACH TUBE SOME FLUID SHOULD BE INTRODUCED INTO THE STOMACH BEFORE ATTEMPTING TO EMPTY IT OR A PORTION OF THE MUCOUS MEMBRANE MAY BE SUCKED INTO THE APERTURE
+
+Whisper(original):
+In using the elastic stomach tube, some fluid should be introduced into the stomach before attempting to empty it. Or a portion of the mucus membrane may be sucked into the aperture.
+
+Whisper(decoded):
+The musin-bylastic stymitude, some fluid should be introduced into the stymid before attempting to empty it, or a portion of the mucous man-brain lady sucked into the aperture.

@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0029
+# model=base
+# L=1
+
+GT:
+THEN HE FOLDED IT AND PUT IT IN HIS POCKET
+
+Whisper(original):
+Then he folded it and put it in his pocket.
+
+Whisper(decoded):
+and we formulated and put in this pocket.

@@ -1,0 +1,12 @@
+# sample_id=121-121726-0001
+# model=lca
+# L=2
+
+GT:
+HARANGUE THE TIRESOME PRODUCT OF A TIRELESS TONGUE
+
+Whisper(original):
+Hoorang! The tiresome product of a tireless tongue.
+
+Whisper(decoded):
+Hoorang! The tiresome product of the tireless tongue.

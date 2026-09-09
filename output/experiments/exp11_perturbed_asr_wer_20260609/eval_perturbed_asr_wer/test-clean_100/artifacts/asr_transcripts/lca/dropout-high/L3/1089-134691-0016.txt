@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0016
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+THEY WERE VOYAGING ACROSS THE DESERTS OF THE SKY A HOST OF NOMADS ON THE MARCH VOYAGING HIGH OVER IRELAND WESTWARD BOUND
+
+Whisper(original):
+They were voyaging across the deserts of the sky, a host of nomads on the march, voyaging high over Ireland, westward bound.
+
+Whisper(decoded):
+They were voyaging across the deserts of the sky, a host of nomads on the march, voyaging high over Ireland, westward bound.

@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0016
+# model=lca
+# L=1
+
+GT:
+AIN'T BAD WHEN SHE'S IN A GOOD TEMPER
+
+Whisper(original):
+and bad when she's in a good temper.
+
+Whisper(decoded):
+Range bad when she saw the temper.

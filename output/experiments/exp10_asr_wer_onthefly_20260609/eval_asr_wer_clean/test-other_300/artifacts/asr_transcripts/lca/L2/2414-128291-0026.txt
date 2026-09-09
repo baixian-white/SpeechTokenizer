@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0026
+# model=lca
+# L=2
+
+GT:
+THOU EVIL FLATTERER
+
+Whisper(original):
+Now it will saturate
+
+Whisper(decoded):
+How is this set for?

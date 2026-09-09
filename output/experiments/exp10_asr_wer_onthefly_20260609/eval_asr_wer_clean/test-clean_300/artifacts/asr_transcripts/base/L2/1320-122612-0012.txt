@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0012
+# model=base
+# L=2
+
+GT:
+EXTINGUISHED BRANDS WERE LYING AROUND A SPRING THE OFFALS OF A DEER WERE SCATTERED ABOUT THE PLACE AND THE TREES BORE EVIDENT MARKS OF HAVING BEEN BROWSED BY THE HORSES
+
+Whisper(original):
+Extinguished brands were lying around a spring. The offals of a deer were scattered about the place, and the trees bore evident marks of having been browsed by the horses.
+
+Whisper(decoded):
+Extinguished brands were lying around the spring. The offals of a deer were scattered about the place, and the trees bore evident marks of having them browsed by the horses.

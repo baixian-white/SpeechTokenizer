@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0000
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+HE HOPED THERE WOULD BE STEW FOR DINNER TURNIPS AND CARROTS AND BRUISED POTATOES AND FAT MUTTON PIECES TO BE LADLED OUT IN THICK PEPPERED FLOUR FATTENED SAUCE
+
+Whisper(original):
+He hoped there would be stew for dinner, turnips and carrots and bruised potatoes and fat mutton pieces to be ladled out in thick, peppered, flour-faten sauce.
+
+Whisper(decoded):
+He hoped there would be stew for dinner, turnips and carrots and bruised potatoes and fat mutton pieces to be ladled out in thick peppered flour-fat and sauce.

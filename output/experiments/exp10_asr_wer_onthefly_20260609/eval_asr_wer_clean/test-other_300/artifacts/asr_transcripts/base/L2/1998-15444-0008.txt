@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0008
+# model=base
+# L=2
+
+GT:
+THE DOSE FOR AN ADULT IS TEN MINIMS
+
+Whisper(original):
+The day for an adult is 10 min.
+
+Whisper(decoded):
+The dose for my doubt is termino names.

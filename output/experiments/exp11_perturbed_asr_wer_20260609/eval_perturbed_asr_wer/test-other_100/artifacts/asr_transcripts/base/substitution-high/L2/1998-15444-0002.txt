@@ -1,0 +1,13 @@
+# sample_id=1998-15444-0002
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+HE SHOULD NOTICE THE POSITION AND TEMPERATURE OF THE BODY THE CONDITION OF RIGOR MORTIS MARKS OF VIOLENCE APPEARANCE OF LIPS AND MOUTH
+
+Whisper(original):
+He should notice the position and temperature of the body, the condition of rigor mortis, marks of irons, appearance of lips and mouth.
+
+Whisper(decoded):
+We should notice the precision and temperature of the body, the conditioning of the motor, marks of items, appearance of lips and mouth.

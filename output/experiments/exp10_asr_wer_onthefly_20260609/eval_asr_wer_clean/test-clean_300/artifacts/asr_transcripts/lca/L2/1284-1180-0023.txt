@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0023
+# model=lca
+# L=2
+
+GT:
+YOU SEE I'VE LIVED ALL MY LIFE WITH UNC NUNKIE THE SILENT ONE AND THERE WAS NO ONE TO TELL ME ANYTHING
+
+Whisper(original):
+UCI've lived all my life without Nunky, the silent one, and there was no one to tell me anything.
+
+Whisper(decoded):
+You see, I've lived all my life without money, the silent one, and there was no one to tell me anything.

@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0032
+# model=base
+# L=3
+
+GT:
+I SEE THAT THERE IN A BOOK SAID DICKIE CHARMED
+
+Whisper(original):
+I see that they're in a box, I think it's round.
+
+Whisper(decoded):
+I see that the end box I did hit sharmed.

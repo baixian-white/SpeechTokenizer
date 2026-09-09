@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0013
+# model=lca
+# L=3
+
+GT:
+A CIRCLE OF A FEW HUNDRED FEET IN CIRCUMFERENCE WAS DRAWN AND EACH OF THE PARTY TOOK A SEGMENT FOR HIS PORTION
+
+Whisper(original):
+A circle of a few hundred feet in circumference was drawn, and each of the party took a segment for his portion. eat 2
+
+Whisper(decoded):
+A circle of a few hundred feet in circumference was drawn, and each of the party took a segment for his portion.

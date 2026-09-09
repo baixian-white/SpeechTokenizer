@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0054
+# model=lca
+# L=1
+
+GT:
+BUT NICHOLAS WAS NOT AT HOME WHEN THEY ENTERED
+
+Whisper(original):
+but Nicholas was not at home when they entered.
+
+Whisper(decoded):
+That meat was not at home when they answered.

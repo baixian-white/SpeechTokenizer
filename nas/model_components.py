@@ -201,11 +201,14 @@ class SLSTM(nn.Module):
     def __init__(self, dimension: int, num_layers: int = 2, skip: bool = True, bidirectional: bool = False):
         super().__init__()
         self.skip = skip
+        self.bidirectional = bidirectional
         self.lstm = nn.LSTM(dimension, dimension, num_layers, bidirectional=bidirectional)
 
     def forward(self, x):
         x = x.permute(2, 0, 1) # (T, B, C)
         y, _ = self.lstm(x)
+        if self.bidirectional:
+            x = x.repeat(1, 1, 2)
         if self.skip:
             y = y + x
         y = y.permute(1, 2, 0) # (B, C, T)
@@ -282,6 +285,42 @@ class DSConv1d(nn.Module):
         x = self.pointwise(x)
         return x
 
+class PWBottleneckConv1d(nn.Module):
+    """Pointwise bottleneck + temporal convolution.
+
+    The block keeps the input/output channel count unchanged while reducing the
+    intermediate channel width. It is useful as a lightweight residual operator
+    in the NAS search space.
+    """
+    def __init__(self, channels, kernel_size, stride=1, dilation=1, bottleneck_ratio=4,
+                 bias=True, causal=False, norm='none', norm_kwargs={}, pad_mode='reflect'):
+        super().__init__()
+        hidden_channels = max(channels // bottleneck_ratio, 1)
+        self.reduce = SConv1d(
+            channels, hidden_channels, kernel_size=1,
+            stride=1, dilation=1, groups=1,
+            bias=bias, causal=causal, norm=norm,
+            norm_kwargs=norm_kwargs, pad_mode=pad_mode
+        )
+        self.temporal = SConv1d(
+            hidden_channels, hidden_channels, kernel_size=kernel_size,
+            stride=stride, dilation=dilation, groups=1,
+            bias=bias, causal=causal, norm=norm,
+            norm_kwargs=norm_kwargs, pad_mode=pad_mode
+        )
+        self.expand = SConv1d(
+            hidden_channels, channels, kernel_size=1,
+            stride=1, dilation=1, groups=1,
+            bias=bias, causal=causal, norm=norm,
+            norm_kwargs=norm_kwargs, pad_mode=pad_mode
+        )
+
+    def forward(self, x):
+        x = self.reduce(x)
+        x = self.temporal(x)
+        x = self.expand(x)
+        return x
+
 # ==========================================
 # 3️⃣ NAS 逻辑 (OPS 字典与 ResBlock)
 # ------------------------------------------
@@ -298,23 +337,35 @@ def get_nas_ops(norm: str, pad_mode: str, causal: bool):
     D: 膨胀率 (Dilation)
     """
     return {
-        # 标准卷积 K=3
-        'std_k3': lambda C, D: SConv1d(C, C, kernel_size=3, dilation=D, stride=1, 
+        # 标准卷积
+        'std_k3': lambda C, D: SConv1d(C, C, kernel_size=3, dilation=D, stride=1,
                                        norm=norm, pad_mode=pad_mode, causal=causal),
-        # 标准卷积 K=5
-        'std_k5': lambda C, D: SConv1d(C, C, kernel_size=5, dilation=D, stride=1, 
+        'std_k5': lambda C, D: SConv1d(C, C, kernel_size=5, dilation=D, stride=1,
                                        norm=norm, pad_mode=pad_mode, causal=causal),
-        # 深度可分离卷积 K=7 (轻量化)
-        'sep_k7': lambda C, D: DSConv1d(C, C, kernel_size=7, dilation=D, 
+        'std_k7': lambda C, D: SConv1d(C, C, kernel_size=7, dilation=D, stride=1,
+                                       norm=norm, pad_mode=pad_mode, causal=causal),
+        # 深度可分离卷积
+        'sep_k3': lambda C, D: DSConv1d(C, C, kernel_size=3, dilation=D,
                                         norm=norm, pad_mode=pad_mode, causal=causal),
-        # 深度可分离卷积 K=9 (轻量化)
-        'sep_k9': lambda C, D: DSConv1d(C, C, kernel_size=9, dilation=D, 
+        'sep_k5': lambda C, D: DSConv1d(C, C, kernel_size=5, dilation=D,
                                         norm=norm, pad_mode=pad_mode, causal=causal),
-        # 大感受野卷积 K=9, Dilation 翻倍
-        'dil_k9': lambda C, D: SConv1d(C, C, kernel_size=9, dilation=D*2, stride=1, 
+        'sep_k7': lambda C, D: DSConv1d(C, C, kernel_size=7, dilation=D,
+                                        norm=norm, pad_mode=pad_mode, causal=causal),
+        'sep_k9': lambda C, D: DSConv1d(C, C, kernel_size=9, dilation=D,
+                                        norm=norm, pad_mode=pad_mode, causal=causal),
+        # 大感受野 dilation 卷积。D 是外层 residual block 的基础 dilation。
+        'dil_k3': lambda C, D: SConv1d(C, C, kernel_size=3, dilation=D * 2, stride=1,
                                        norm=norm, pad_mode=pad_mode, causal=causal),
+        'dil_k5': lambda C, D: SConv1d(C, C, kernel_size=5, dilation=D * 2, stride=1,
+                                       norm=norm, pad_mode=pad_mode, causal=causal),
+        'dil_k9': lambda C, D: SConv1d(C, C, kernel_size=9, dilation=D * 2, stride=1,
+                                       norm=norm, pad_mode=pad_mode, causal=causal),
+        # Pointwise bottleneck temporal op
+        'pw_bottleneck_k3': lambda C, D: PWBottleneckConv1d(
+            C, kernel_size=3, dilation=D, norm=norm, pad_mode=pad_mode, causal=causal
+        ),
         # 跳过连接 (Identity)
-        'skip':   lambda C, D: nn.Identity()
+        'skip': lambda C, D: nn.Identity()
     }
 
 class SearchableResBlock(nn.Module):

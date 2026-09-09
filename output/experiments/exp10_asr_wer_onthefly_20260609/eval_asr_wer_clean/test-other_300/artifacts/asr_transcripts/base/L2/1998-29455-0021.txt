@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0021
+# model=base
+# L=2
+
+GT:
+PLEASE DO NOT BE TOO SHOCKED
+
+Whisper(original):
+Please don't be too shocked.
+
+Whisper(decoded):
+Please do not be too shocked.

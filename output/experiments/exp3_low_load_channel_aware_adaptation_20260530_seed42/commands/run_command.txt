@@ -1,0 +1,12 @@
+# Launch from H:\H-CODE\speechtokenizer with conda env "speechtokenizer".
+
+# Option 1: conda activate then accelerate launch
+# conda activate speechtokenizer
+# cd /d H:\H-CODE\speechtokenizer
+# accelerate launch scripts/train_lca.py --config output/experiments/exp3_low_load_channel_aware_adaptation_20260530_seed42/configs/lca_finetune_config.json --base-checkpoint output/experiments/exp2_scit_speech_distill30_retrain_20260529_seed42/checkpoints/SCIT-Speech-Base_best.pt
+
+# Option 2: invoke env's accelerate.exe directly (no activate needed)
+& 'C:\Users\Windows11\.conda\envs\speechtokenizer\Scripts\accelerate.exe' launch scripts/train_lca.py --config output/experiments/exp3_low_load_channel_aware_adaptation_20260530_seed42/configs/lca_finetune_config.json --base-checkpoint output/experiments/exp2_scit_speech_distill30_retrain_20260529_seed42/checkpoints/SCIT-Speech-Base_best.pt
+
+# To resume after interruption (uses latest SpeechTokenizerTrainer_*; ignores --base-checkpoint):
+# accelerate launch scripts/train_lca.py --config output/experiments/exp3_low_load_channel_aware_adaptation_20260530_seed42/configs/lca_finetune_config.json --continue_train

@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0020
+# model=lca
+# L=2
+
+GT:
+IMPROVIDENT AND SELF INDULGENT WERE HIS WORDS
+
+Whisper(original):
+Improvident and self-indulgent were his words.
+
+Whisper(decoded):
+Improviting and self-indulgent words list

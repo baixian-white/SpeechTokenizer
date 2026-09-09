@@ -1,0 +1,12 @@
+# sample_id=121-127105-0023
+# model=lca
+# L=1
+
+GT:
+LET ME SAY HERE DISTINCTLY TO HAVE DONE WITH IT THAT THIS NARRATIVE FROM AN EXACT TRANSCRIPT OF MY OWN MADE MUCH LATER IS WHAT I SHALL PRESENTLY GIVE
+
+Whisper(original):
+Let me say here distinctly to have done with it that this narrative, from an exact transcript of my own made much later, is what I shall presently give.
+
+Whisper(decoded):
+Let me say fear distinctly to have done with it, that is narrative, from an exact transcript of IOMD much later. Is what I shall presently give.

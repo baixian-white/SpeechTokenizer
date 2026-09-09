@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0016
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+THEN YOU CAN ASK HIM QUESTIONS ON THE CATECHISM DEDALUS
+
+Whisper(original):
+Then you can ask him questions on the Catechism Daedalus.
+
+Whisper(decoded):
+Then you can ask them questions on the title-pism.us.

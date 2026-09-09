@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0012
+# model=base
+# L=3
+
+GT:
+BROODING OVER ALL THESE MATTERS THE MOTHER FELT LIKE ONE WHO HAS EVOKED A SPIRIT BUT BY SOME IRREGULARITY IN THE PROCESS OF CONJURATION HAS FAILED TO WIN THE MASTER WORD THAT SHOULD CONTROL THIS NEW AND INCOMPREHENSIBLE INTELLIGENCE
+
+Whisper(original):
+Bruting over all these matters, the mother felt like one who has evoked a spirit, but by some irregularity in the process of conjuration has failed to win the master word that should control this new and incomprehensible intelligence.
+
+Whisper(decoded):
+Brirting over all these matters, the mother felt like one who has evoked a spirit, but by some irregularity in the process of conjuration has failed to win the master word that should control this new and incomprehensible intelligence.

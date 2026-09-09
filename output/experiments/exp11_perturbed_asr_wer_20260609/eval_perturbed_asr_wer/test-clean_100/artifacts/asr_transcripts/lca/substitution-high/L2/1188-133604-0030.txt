@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0030
+# model=lca
+# L=2
+# channel=substitution-high
+
+GT:
+HE KNOWS THEM BOTH
+
+Whisper(original):
+He knows them both.
+
+Whisper(decoded):
+He knows them both.

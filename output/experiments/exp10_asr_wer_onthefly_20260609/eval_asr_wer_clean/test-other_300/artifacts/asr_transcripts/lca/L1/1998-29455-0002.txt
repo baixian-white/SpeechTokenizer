@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0002
+# model=lca
+# L=1
+
+GT:
+TELL YER WHAT MATE LOOKS TO ME AS IF I'D TOOK A FANCY TO YOU
+
+Whisper(original):
+Tell you what mate, looks to me as if I took a fancy to you.
+
+Whisper(decoded):
+Please automate, most of me is effective at fancy to you.

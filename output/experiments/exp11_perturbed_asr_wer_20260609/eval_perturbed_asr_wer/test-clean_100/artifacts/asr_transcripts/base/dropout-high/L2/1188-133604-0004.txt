@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0004
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+SOME OF THE TOUCHES INDEED WHEN THE TINT HAS BEEN MIXED WITH MUCH WATER HAVE BEEN LAID IN LITTLE DROPS OR PONDS SO THAT THE PIGMENT MIGHT CRYSTALLIZE HARD AT THE EDGE
+
+Whisper(original):
+Some of the touches, indeed, when the tint has been mixed with much water, have been laid in little drops or ponds, so that the pigment might crystallize hard at the edge.
+
+Whisper(decoded):
+Some of the touches, indeed, when the tent has been mixed with much water have been laid in little drops or ponds, so that the pavement might crystallize hard at the edge.

@@ -1,0 +1,12 @@
+# sample_id=121-127105-0017
+# model=lca
+# L=3
+
+GT:
+IT WAS ALMOST THE TONE OF HOPE EVERYBODY WILL STAY
+
+Whisper(original):
+It was almost the tone of hope. Everybody will stay.
+
+Whisper(decoded):
+It was almost the turn of hope. Everybody will stay.

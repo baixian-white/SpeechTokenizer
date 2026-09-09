@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0008
+# model=lca
+# L=1
+
+GT:
+THE EYES OF THE WHOLE PARTY FOLLOWED THE UNEXPECTED MOVEMENT AND READ THEIR SUCCESS IN THE AIR OF TRIUMPH THAT THE YOUTH ASSUMED
+
+Whisper(original):
+The eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed.
+
+Whisper(decoded):
+The eyes of the whole party followed the unexpected movement, and read their success in the air of triumph that the youth assumed.

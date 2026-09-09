@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0011
+# model=lca
+# L=2
+
+GT:
+WHEN IT WAS OVER THE MAN ASKED DICKIE IF HE COULD WALK A LITTLE WAY AND WHEN DICKIE SAID HE COULD THEY SET OUT IN THE MOST FRIENDLY WAY SIDE BY SIDE
+
+Whisper(original):
+When it was over, the man asked Dicky if he could walk a little way, and when Dicky said he could, they set out in the most friendly way side by side.
+
+Whisper(decoded):
+When he was over the man asked the key if he could walk a little way, the rendigty said he could, as of out in the most friendly way side to side.

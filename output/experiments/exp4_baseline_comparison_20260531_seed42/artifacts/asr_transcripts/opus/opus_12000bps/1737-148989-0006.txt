@@ -1,0 +1,9 @@
+# method=opus setting=opus_12000bps sample_id=1737-148989-0006
+# GT (LibriSpeech):
+FRANZ KEPT THE CABLE BUSY WITH HIS VARYING MESSAGES NAT SENT LOVING LETTERS FROM LEIPZIG AND TOM HARASSED THE SHIPPING AGENTS FOR NEWS EVEN BUSY JACK WROTE THEM WITH UNUSUAL WARMTH
+
+# Whisper(original):
+Franz kept the cable busy with his varying messages, Nat sent loving letters from Leipzig, and Tom harassed the shipping agents for news. Even Busy Jack wrote them with unusual warmth.
+
+# Whisper(decoded):
+Franz kept the cable busy with his varying messages, Nat sent loving letters from Leitezik, and Tom harassed the shipping agents for news. Even Busy Jack wrote them with unusual warmth.

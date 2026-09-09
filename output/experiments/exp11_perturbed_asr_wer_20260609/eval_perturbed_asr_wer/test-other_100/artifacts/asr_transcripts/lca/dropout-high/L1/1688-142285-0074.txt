@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0074
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+I'LL GO TO BED IT'S BEST PLACE BUT CATCHING AT MARGARET'S GOWN YO'LL COME AGAIN I KNOW YO WILL BUT JUST SAY IT
+
+Whisper(original):
+I'll go to bed. It's best place, but catching that Margaret's gown. You'll come again. I know you will. But just say it.
+
+Whisper(decoded):
+I'll go to bed. It's desperate. But, catching that barber's turn, you'll come again. I know you will. Do just say it.

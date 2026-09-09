@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0010
+# model=base
+# L=3
+
+GT:
+HE THEN REPAIRED TO THE HEART OF THE ENCAMPMENT AND ORDERED THE HOST TO HALT TEN DAYS
+
+Whisper(original):
+He then repaired to the heart of the encampment and ordered the host to halt ten days.
+
+Whisper(decoded):
+He then repaired to the heart of the encampment and ordered the host to hold ten days.

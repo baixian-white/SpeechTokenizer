@@ -1,0 +1,190 @@
+\begin{thebibliography}{10}
+
+\bibitem{borsos2022audiolm}
+Zal{\'a}n Borsos, Rapha{\"e}l Marinier, Damien Vincent, Eugene Kharitonov,
+  Olivier Pietquin, Matt Sharifi, Dominik Roblek, Olivier Teboul, David
+  Grangier, Marco Tagliasacchi, and Neil Zeghidour.
+\newblock Audiolm: A language modeling approach to audio generation.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, 31:2523--2533, 2023.
+
+\bibitem{bourtsoulatze2018deepjscc}
+Eirina Bourtsoulatze, David~Burth Kurka, and Deniz G{\"u}nd{\"u}z.
+\newblock Deep joint source-channel coding for wireless image transmission.
+\newblock {\em IEEE Transactions on Cognitive Communications and Networking},
+  5(3):567--579, 2019.
+
+\bibitem{cai2018proxylessnas}
+Han Cai, Ligeng Zhu, and Song Han.
+\newblock Proxylessnas: Direct neural architecture search on target task and
+  hardware.
+\newblock In {\em International Conference on Learning Representations}, 2019.
+
+\bibitem{chinen2020visqol}
+Michael Chinen, Felicia S.~C. Lim, Jan Skoglund, Nikita Gureev, Feargus
+  O'Gorman, and Andrew Hines.
+\newblock Visqol v3: An open source production ready objective speech and audio
+  metric.
+\newblock In {\em 2020 Twelfth International Conference on Quality of
+  Multimedia Experience (QoMEX)}, pages 1--6, 2020.
+
+\bibitem{defossez2022encodec}
+Alexandre D{\'e}fossez, Jade Copet, Gabriel Synnaeve, and Yossi Adi.
+\newblock High fidelity neural audio compression.
+\newblock {\em arXiv preprint arXiv:2210.13438}, 2022.
+
+\bibitem{defossez2024moshi}
+Alexandre D{\'e}fossez, Laurent Mazar{\'e}, Manu Orsini, Am{\'e}lie Royer,
+  Patrick P{\'e}rez, Herv{\'e} J{\'e}gou, Edouard Grave, and Neil Zeghidour.
+\newblock Moshi: A speech-text foundation model for real-time dialogue.
+\newblock Technical report, Kyutai, 2024.
+\newblock Technical report, arXiv:2410.00037.
+
+\bibitem{han2025packetloss}
+Zhuohang Han, Jincheng Dai, Shengshi Yao, Junyi Wang, Yanlong Li, Kai Niu,
+  Wenjun Xu, and Ping Zhang.
+\newblock Error-resilient semantic communication for speech transmission over
+  packet-loss networks.
+\newblock {\em arXiv preprint arXiv:2512.08203}, 2025.
+
+\bibitem{hsu2021hubert}
+Wei-Ning Hsu, Benjamin Bolte, Yao-Hung~Hubert Tsai, Kushal Lakhotia, Ruslan
+  Salakhutdinov, and Abdelrahman Mohamed.
+\newblock Hubert: Self-supervised speech representation learning by masked
+  prediction of hidden units.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, 29:3451--3460, 2021.
+
+\bibitem{huang2023repcodec}
+Zhichao Huang, Chutong Meng, and Tom Ko.
+\newblock Repcodec: A speech representation codec for speech tokenization.
+\newblock In {\em Proceedings of the 62nd Annual Meeting of the Association for
+  Computational Linguistics}, pages 5777--5790, 2024.
+
+\bibitem{itu2001pesq}
+{ITU-T}.
+\newblock Perceptual evaluation of speech quality (pesq): An objective method
+  for end-to-end speech quality assessment of narrow-band telephone networks
+  and speech codecs.
+\newblock Technical Report Recommendation P.862, International
+  Telecommunication Union, 2001.
+
+\bibitem{itu2002amrwb}
+{ITU-T}.
+\newblock Wideband coding of speech at around 16 kbit/s using adaptive
+  multi-rate wideband (amr-wb).
+\newblock Technical Report Recommendation G.722.2, International
+  Telecommunication Union, 2002.
+
+\bibitem{ji2024wavtokenizer}
+Shengpeng Ji, Ziyue Jiang, Wen Wang, Yifu Chen, Minghui Fang, Jialong Zuo, Qian
+  Yang, Xize Cheng, Zehan Wang, Ruiqi Li, Ziang Zhang, Xiaoda Yang, Rongjie
+  Huang, Yidi Jiang, Qian Chen, Siqi Zheng, Wen Wang, and Zhou Zhao.
+\newblock Wavtokenizer: An efficient acoustic discrete codec tokenizer for
+  audio language modeling.
+\newblock {\em arXiv preprint arXiv:2408.16532}, 2024.
+
+\bibitem{kumar2023dac}
+Rithesh Kumar, Prem Seetharaman, Alejandro Luebs, Ishaan Kumar, and Kundan
+  Kumar.
+\newblock High-fidelity audio compression with improved rvqgan.
+\newblock In {\em Advances in Neural Information Processing Systems 36}, pages
+  27980--27993, 2023.
+
+\bibitem{liu2018darts}
+Hanxiao Liu, Karen Simonyan, and Yiming Yang.
+\newblock Darts: Differentiable architecture search.
+\newblock In {\em International Conference on Learning Representations}, 2019.
+
+\bibitem{luo2021lightspeech}
+Renqian Luo, Xu~Tan, Rui Wang, Tao Qin, Jinzhu Li, Sheng Zhao, Enhong Chen, and
+  Tie-Yan Liu.
+\newblock Lightspeech: Lightweight and fast text to speech with neural
+  architecture search.
+\newblock In {\em IEEE International Conference on Acoustics, Speech and Signal
+  Processing}, pages 5699--5703, 2021.
+
+\bibitem{qin2022semantic}
+Zhijin Qin, Xiaoming Tao, Jianhua Lu, Wen Tong, and Geoffrey~Ye Li.
+\newblock Semantic communications: Principles and challenges.
+\newblock {\em arXiv preprint arXiv:2201.01389}, 2022.
+
+\bibitem{radford2022whisper}
+Alec Radford, Jong~Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and
+  Ilya Sutskever.
+\newblock Robust speech recognition via large-scale weak supervision.
+\newblock In {\em Proceedings of the 40th International Conference on Machine
+  Learning}, volume 202 of {\em Proceedings of Machine Learning Research},
+  pages 28492--28518, 2023.
+
+\bibitem{codec2repo}
+David Rowe.
+\newblock Codec 2: Open source low bit rate speech codec.
+\newblock Software repository, 2024.
+
+\bibitem{taal2011stoi}
+Cees~H. Taal, Richard~C. Hendriks, Richard Heusdens, and Jesper Jensen.
+\newblock An algorithm for intelligibility prediction of time-frequency
+  weighted noisy speech.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
+  19(7):2125--2136, 2011.
+
+\bibitem{tian2025largesc}
+Yun Tian, Zhijin Qin, Guocheng Lv, Ye~Jin, Kaibin Huang, and Zhu Han.
+\newblock Large speech model enabled semantic communication.
+\newblock {\em arXiv preprint arXiv:2512.04711}, 2025.
+
+\bibitem{valin2022plc}
+Jean-Marc Valin, Ahmed Mustafa, Christopher Montgomery, Timothy~B. Terriberry,
+  Michael Klingbeil, Paris Smaragdis, and Arvindh Krishnaswamy.
+\newblock Real-time packet loss concealment with mixed generative and
+  predictive model.
+\newblock In {\em Proceedings of Interspeech}, pages 570--574, 2022.
+
+\bibitem{valin2012opus}
+Jean-Marc Valin, Koen Vos, and Timothy~B. Terriberry.
+\newblock Definition of the opus audio codec.
+\newblock RFC 6716, 2012.
+
+\bibitem{wang2023valle}
+Chengyi Wang, Sanyuan Chen, Yu~Wu, Ziqiang Zhang, Long Zhou, Shujie Liu, Zhuo
+  Chen, Yanqing Liu, Huaming Wang, Jinyu Li, Lei He, Sheng Zhao, and Furu Wei.
+\newblock Neural codec language models are zero-shot text to speech
+  synthesizers.
+\newblock {\em IEEE Transactions on Audio, Speech and Language Processing},
+  33:705--718, 2025.
+
+\bibitem{weng2021deepscs}
+Zehui Weng and Zhijin Qin.
+\newblock Semantic communication systems for speech transmission.
+\newblock {\em IEEE Journal on Selected Areas in Communications},
+  39(8):2434--2444, 2021.
+
+\bibitem{weng2022deepscst}
+Zehui Weng, Zhijin Qin, Xiaoming Tao, Cunhua Pan, Guanding Liu, and Geoffrey~Ye
+  Li.
+\newblock Deep learning enabled semantic communications with speech recognition
+  and synthesis.
+\newblock {\em IEEE Transactions on Wireless Communications}, 22(9):6227--6240,
+  2023.
+
+\bibitem{westhausen2022tplcnet}
+Nils~L. Westhausen and Bernd~T. Meyer.
+\newblock tplcnet: Real-time deep packet loss concealment in the time domain
+  using a short temporal context.
+\newblock In {\em Proceedings of Interspeech}, pages 2903--2907, 2022.
+
+\bibitem{zeghidour2021soundstream}
+Neil Zeghidour, Alejandro Luebs, Ahmed Omran, Jan Skoglund, and Marco
+  Tagliasacchi.
+\newblock Soundstream: An end-to-end neural audio codec.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, 30:495--507, 2022.
+
+\bibitem{zhang2023speechtokenizer}
+Xin Zhang, Dong Zhang, Shimin Li, Yaqian Zhou, and Xipeng Qiu.
+\newblock Speechtokenizer: Unified speech tokenizer for speech large language
+  models.
+\newblock {\em arXiv preprint arXiv:2308.16692}, 2023.
+
+\end{thebibliography}

@@ -1,0 +1,12 @@
+# sample_id=121-127105-0025
+# model=base
+# L=3
+
+GT:
+THE DEPARTING LADIES WHO HAD SAID THEY WOULD STAY DIDN'T OF COURSE THANK HEAVEN STAY THEY DEPARTED IN CONSEQUENCE OF ARRANGEMENTS MADE IN A RAGE OF CURIOSITY AS THEY PROFESSED PRODUCED BY THE TOUCHES WITH WHICH HE HAD ALREADY WORKED US UP
+
+Whisper(original):
+The departing ladies who had said they would stay didn't, of course, thank heaven, stay, they departed in consequence of arrangements made. In a rage of curiosity as they professed, produced by the touches with which he had already worked us up.
+
+Whisper(decoded):
+The departing ladies who had said they would stay didn't, of course, faint heaven, steady, they departed in a consequence of arrangements made. In a range of curiosity as they professed, produced by the touches with which he had already worked us out.

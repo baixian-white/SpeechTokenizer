@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0002
+# model=base
+# L=3
+
+GT:
+YET THESE THOUGHTS AFFECTED HESTER PRYNNE LESS WITH HOPE THAN APPREHENSION
+
+Whisper(original):
+Yet these thoughts affected Hester Prynne less with hope than apprehension.
+
+Whisper(decoded):
+Yet these thoughts affected Hester Prynne less with hope than apprehension.

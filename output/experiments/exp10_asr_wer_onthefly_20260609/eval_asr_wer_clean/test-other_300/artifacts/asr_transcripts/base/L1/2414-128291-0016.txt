@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0016
+# model=base
+# L=1
+
+GT:
+THOU KNOWEST IT THYSELF BETTER EVEN THAN I
+
+Whisper(original):
+Down the waist it dies self, better even than I.
+
+Whisper(decoded):
+Now the rest is tested, we can't fit high.

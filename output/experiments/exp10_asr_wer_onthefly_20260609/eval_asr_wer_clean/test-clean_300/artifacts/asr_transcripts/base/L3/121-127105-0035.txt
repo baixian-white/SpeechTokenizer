@@ -1,0 +1,12 @@
+# sample_id=121-127105-0035
+# model=base
+# L=3
+
+GT:
+SHE PROMISED TO DO THIS AND SHE MENTIONED TO ME THAT WHEN FOR A MOMENT DISBURDENED DELIGHTED HE HELD HER HAND THANKING HER FOR THE SACRIFICE SHE ALREADY FELT REWARDED
+
+Whisper(original):
+She promised to do this, and she mentioned to me that when for a moment disburdened, delighted, he held her hand, thanking her for the sacrifice. She already felt rewarded.
+
+Whisper(decoded):
+She promised to do this, and she mentioned to me that when for a moment, disburdened, delighted, he held her hand, thanking her for the sacrifice. She already felt rewarded.

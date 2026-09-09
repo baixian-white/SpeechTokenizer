@@ -1,0 +1,13 @@
+# sample_id=1998-15444-0000
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+IF CALLED TO A CASE SUPPOSED OR SUSPECTED TO BE ONE OF POISONING THE MEDICAL MAN HAS TWO DUTIES TO PERFORM TO SAVE THE PATIENT'S LIFE AND TO PLACE HIMSELF IN A POSITION TO GIVE EVIDENCE IF CALLED ON TO DO SO
+
+Whisper(original):
+If college or case supposed or suspected to be one of poisoning, the medical man has two duties to perform. To save the patient's life and to place himself in a position to give evidence of college on to do so.
+
+Whisper(decoded):
+With cryo-tour case, the suspect that should be one of those men, the medical men has too much duty to stay before them. To save the patient's life, and to save the person in a position to take the evidence of cryo-tour medicine.

@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0019
+# model=base
+# L=1
+
+GT:
+YOU STICK TO THAT SAID BEALE RADIANT WITH DELIGHT YOU'RE A FAIR MASTERPIECE YOU ARE YOU EARNED IT HONEST IF EVER A KID DONE
+
+Whisper(original):
+You stick to that, said Beel, radiant was delayed. You're a fair masterpiece, you are. You earned it honest if ever a kid done.
+
+Whisper(decoded):
+In stick to that, the radiant vestigant, you have a fair amount of fatigue, you earn it under the cabinet you have done.

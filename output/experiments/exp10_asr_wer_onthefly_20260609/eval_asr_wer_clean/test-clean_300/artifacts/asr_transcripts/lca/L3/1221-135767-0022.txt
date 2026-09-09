@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0022
+# model=lca
+# L=3
+
+GT:
+BUT THE PROPRIETOR APPEARED ALREADY TO HAVE RELINQUISHED AS HOPELESS THE EFFORT TO PERPETUATE ON THIS SIDE OF THE ATLANTIC IN A HARD SOIL AND AMID THE CLOSE STRUGGLE FOR SUBSISTENCE THE NATIVE ENGLISH TASTE FOR ORNAMENTAL GARDENING
+
+Whisper(original):
+But the proprietor appeared already to have relinquished as hopeless the effort to perpetuate on this side of the Atlantic in a hard soil and amid the close struggle for subsistence, the native English taste for ornamental gardening.
+
+Whisper(decoded):
+that the proprietor appeared all made to have relinquished as hopeless the effort to perpetuate on this side of the Atlantic in a hard soil and amid the close struggle for subsistence, the native English taste for ornamental gardening.

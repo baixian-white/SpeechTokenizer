@@ -1,0 +1,5 @@
+{
+  "agent": "Preflight Agent (simulated)",
+  "status": "preflight_failed",
+  "output": "output\\experiments\\controller_20260526_202329\\reports\\preflight_status.json"
+}

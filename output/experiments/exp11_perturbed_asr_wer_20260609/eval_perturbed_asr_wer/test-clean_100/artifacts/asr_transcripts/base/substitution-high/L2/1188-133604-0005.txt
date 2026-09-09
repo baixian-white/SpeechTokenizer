@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0005
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+IT IS THE HEAD OF A PARROT WITH A LITTLE FLOWER IN HIS BEAK FROM A PICTURE OF CARPACCIO'S ONE OF HIS SERIES OF THE LIFE OF SAINT GEORGE
+
+Whisper(original):
+He does the head of a parrot with a little flower in his beak from a picture of Carpaccio's. One of his series of The Life of St. George.
+
+Whisper(decoded):
+It is the head of a parrot with a little flower in his beak from a picture of Carpoxias, one of his series of the life of St. George.

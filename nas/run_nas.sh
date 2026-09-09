@@ -10,7 +10,7 @@ NAS_DIR="${SCRIPT_DIR}"
 # =================配置区域=================
 CONFIG="${PROJECT_ROOT}/config/spt_base_cfg.json"
 NAS_CONFIG="${NAS_DIR}/best_seanet_config.json"
-export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0,1}"
+export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0}"
 # =========================================
 
 if [ ! -f ~/.cache/huggingface/accelerate/default_config.yaml ]; then

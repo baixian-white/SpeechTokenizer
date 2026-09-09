@@ -1,0 +1,35 @@
+{
+  "scope": "distill_weight_ablation",
+  "trainable_modules": [
+    "encoder",
+    "transform",
+    "decoder"
+  ],
+  "frozen_modules": [
+    "quantizer"
+  ],
+  "module_status": {
+    "encoder": {
+      "param_count": 8873360,
+      "trainable_param_count": 8873360,
+      "trainable": true
+    },
+    "quantizer": {
+      "param_count": 0,
+      "trainable_param_count": 0,
+      "trainable": false
+    },
+    "transform": {
+      "param_count": 787200,
+      "trainable_param_count": 787200,
+      "trainable": true
+    },
+    "decoder": {
+      "param_count": 35182530,
+      "trainable_param_count": 35182530,
+      "trainable": true
+    }
+  },
+  "trainable_param_count": 44843090,
+  "frozen_param_count": 0
+}

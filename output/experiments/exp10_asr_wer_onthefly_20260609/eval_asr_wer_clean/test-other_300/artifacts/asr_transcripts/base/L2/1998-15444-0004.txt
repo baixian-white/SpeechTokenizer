@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0004
+# model=base
+# L=2
+
+GT:
+THE GUT AND THE GULLET BEING CUT ACROSS BETWEEN THESE LIGATURES THE STOMACH MAY BE REMOVED ENTIRE WITHOUT SPILLING ITS CONTENTS
+
+Whisper(original):
+The gut and the garlic being cut across between these ligatures, the stomach may be removed and tired without spilling its contents.
+
+Whisper(decoded):
+The gladiumphe gala, being cut across between these leverages, the stomach might be removed and tired without spinning as crunetons.

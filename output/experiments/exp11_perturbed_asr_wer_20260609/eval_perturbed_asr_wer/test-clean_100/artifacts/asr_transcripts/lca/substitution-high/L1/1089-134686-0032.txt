@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0032
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+HE IS CALLED AS YOU KNOW THE APOSTLE OF THE INDIES
+
+Whisper(original):
+He is called, as you know, the apostle of the Indies.
+
+Whisper(decoded):
+It is pro original the opacle of the indies.

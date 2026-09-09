@@ -1,0 +1,1 @@
+conda run -n speechtokenizer accelerate launch scripts/train_example.py --config output\experiments\exp2_scit_speech_distill30_retrain_20260528_seed42\configs\scit_speech_base_config.json

@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0028
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+BUT GOOD NIGHT CHILD
+
+Whisper(original):
+But good night, child.
+
+Whisper(decoded):
+But good night child.

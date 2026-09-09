@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0004
+# model=lca
+# L=2
+
+GT:
+WHEN THEY WERE OUTSIDE UNC SIMPLY LATCHED THE DOOR AND STARTED UP THE PATH
+
+Whisper(original):
+When they were outside, UNG simply latched the door and started up the path.
+
+Whisper(decoded):
+When they were outside, I'll simply latch the door and start it up the path.

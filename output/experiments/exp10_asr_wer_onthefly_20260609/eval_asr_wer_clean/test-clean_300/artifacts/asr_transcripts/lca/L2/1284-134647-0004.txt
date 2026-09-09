@@ -1,0 +1,12 @@
+# sample_id=1284-134647-0004
+# model=lca
+# L=2
+
+GT:
+SOME OF THE PENAL REGULATIONS WERE COPIED FROM THE EDICTS OF DIOCLETIAN AND THIS METHOD OF CONVERSION WAS APPLAUDED BY THE SAME BISHOPS WHO HAD FELT THE HAND OF OPPRESSION AND PLEADED FOR THE RIGHTS OF HUMANITY
+
+Whisper(original):
+Some of the penal regulations were copied from the edicts of Diocletian, and this method of conversion was applauded by the same bishops who had felt the hand of oppression and pleaded for the rights of humanity.
+
+Whisper(decoded):
+Some of the penal regulations were copied from the edicts of diocletion, and this method of conversion was applauded by the same bishops who had felt the hand of oppression and pleaded for the rights of humanity.

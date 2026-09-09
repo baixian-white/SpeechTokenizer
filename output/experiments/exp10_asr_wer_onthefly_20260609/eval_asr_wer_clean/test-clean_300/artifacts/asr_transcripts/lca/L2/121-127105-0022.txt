@@ -1,0 +1,12 @@
+# sample_id=121-127105-0022
+# model=lca
+# L=2
+
+GT:
+WELL IF I DON'T KNOW WHO SHE WAS IN LOVE WITH I KNOW WHO HE WAS
+
+Whisper(original):
+Well, if I don't know who she was in love with, I know who he was.
+
+Whisper(decoded):
+For if I don't know who she was another I know who she was

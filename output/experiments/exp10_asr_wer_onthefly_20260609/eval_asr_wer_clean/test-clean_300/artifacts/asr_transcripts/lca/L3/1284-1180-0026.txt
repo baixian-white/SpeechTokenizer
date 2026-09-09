@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0026
+# model=lca
+# L=3
+
+GT:
+BUT FIRST I WILL TELL YOU THAT FOR MANY YEARS I HAVE LONGED FOR A SERVANT TO HELP ME WITH THE HOUSEWORK AND TO COOK THE MEALS AND WASH THE DISHES
+
+Whisper(original):
+But first I will tell you that for many years I have longed for a servant to help me with the housework and to cook the meals and wash the dishes.
+
+Whisper(decoded):
+But first I will tell you that for many years I had longed for a servant to help me with the housework and to cook the meals and wash the dishes.

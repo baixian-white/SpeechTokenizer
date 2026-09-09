@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0009
+# model=lca
+# L=2
+
+GT:
+SHE RAN TO HER HUSBAND'S SIDE AT ONCE AND HELPED HIM LIFT THE FOUR KETTLES FROM THE FIRE
+
+Whisper(original):
+She ran to her husband's side at once and helped him lift the four kettles from the fire.
+
+Whisper(decoded):
+She ran to her husband's side at once and helped him lift the four tails from the fire.

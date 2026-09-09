@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0008
+# model=lca
+# L=3
+
+GT:
+SEE IM CROST THE ROAD THERE SEE HIM
+
+Whisper(original):
+seam, cross the road there, seam.
+
+Whisper(decoded):
+See you. Questo rota. See you.

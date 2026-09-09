@@ -1,0 +1,9 @@
+{
+  "parent_run_id": "exp2_scit_speech_distill30_retrain_20260529_seed42",
+  "parent_run_dir": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42",
+  "config": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\configs\\scit_speech_base_config.json",
+  "checkpoint": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+  "checkpoint_sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6",
+  "training_summary": "Distill30 retrain, 60 epoch (early-stopped at step 122500 / epoch 36); dev/mel best 1.124 at step 107500",
+  "usage_in_exp4": "Used at L=1, 2, 3 for clean reconstruction (no channel sim)"
+}

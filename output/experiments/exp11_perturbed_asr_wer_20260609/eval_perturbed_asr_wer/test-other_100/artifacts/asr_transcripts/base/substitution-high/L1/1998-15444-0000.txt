@@ -1,0 +1,13 @@
+# sample_id=1998-15444-0000
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+IF CALLED TO A CASE SUPPOSED OR SUSPECTED TO BE ONE OF POISONING THE MEDICAL MAN HAS TWO DUTIES TO PERFORM TO SAVE THE PATIENT'S LIFE AND TO PLACE HIMSELF IN A POSITION TO GIVE EVIDENCE IF CALLED ON TO DO SO
+
+Whisper(original):
+If college or case supposed or suspected to be one of poisoning, the medical man has two duties to perform. To save the patient's life and to place himself in a position to give evidence of college on to do so.
+
+Whisper(decoded):
+With Carter to a case, the co-accesses ducted to be runn of poison and the medical men has to be cut into step of form, to save the patient's life and to face and sap in a position to the evidence of Carter and to do some.

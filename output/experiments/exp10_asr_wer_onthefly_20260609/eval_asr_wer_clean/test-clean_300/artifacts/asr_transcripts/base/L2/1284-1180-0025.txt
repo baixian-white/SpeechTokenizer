@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0025
+# model=base
+# L=2
+
+GT:
+I THINK I MUST SHOW YOU MY PATCHWORK GIRL SAID MARGOLOTTE LAUGHING AT THE BOY'S ASTONISHMENT FOR SHE IS RATHER DIFFICULT TO EXPLAIN
+
+Whisper(original):
+I think I must show you my patchwork girl," said Margolot, laughing at the boy's astonishment. For she is rather difficult to explain.
+
+Whisper(decoded):
+I think I must show you my patchwork girl," said Marvalot, while I think of the boy's astonishment. So she is rather difficult to explain.

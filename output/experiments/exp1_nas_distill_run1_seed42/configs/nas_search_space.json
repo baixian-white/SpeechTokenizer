@@ -1,0 +1,111 @@
+{
+  "fixed": {
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "latent_dimension": 1024,
+    "n_q": 3,
+    "codebook_size": 1024
+  },
+  "macro_space": {
+    "encoder_strides": [
+      [
+        8,
+        5,
+        4,
+        2
+      ],
+      [
+        5,
+        4,
+        4,
+        4
+      ],
+      [
+        10,
+        4,
+        4,
+        2
+      ],
+      [
+        4,
+        5,
+        4,
+        4
+      ],
+      [
+        4,
+        4,
+        5,
+        4
+      ],
+      [
+        4,
+        4,
+        4,
+        5
+      ]
+    ],
+    "n_filters": [
+      24,
+      32,
+      48
+    ],
+    "compress": [
+      2,
+      4
+    ],
+    "lstm": [
+      1,
+      2
+    ],
+    "activation": [
+      "ELU",
+      "Snake"
+    ]
+  },
+  "block_space": {
+    "num_blocks": 4,
+    "ops": [
+      "std_k3",
+      "std_k5",
+      "std_k7",
+      "sep_k3",
+      "sep_k5",
+      "sep_k7",
+      "sep_k9",
+      "dil_k3",
+      "dil_k5",
+      "dil_k9",
+      "pw_bottleneck_k3",
+      "skip"
+    ],
+    "se": [
+      false,
+      true
+    ],
+    "constraints": {
+      "max_skip_blocks": 1,
+      "skip_forces_se_false": true
+    }
+  },
+  "decoder_policy": {
+    "condition": "geometry_matched_decoder",
+    "decoder_strides": "reverse(encoder_strides)",
+    "decoder_ops": "not_searched",
+    "decoder_width_depth_activation": "fixed_to_base_config"
+  },
+  "search_policy": {
+    "mode": "random",
+    "num_candidates": 8192,
+    "seed": 42,
+    "deduplicate": true,
+    "selection_mode": "balanced",
+    "min_n_filters": 24,
+    "max_skip_blocks": 1,
+    "stage1_candidates": 8192,
+    "stage2_top_k": 512,
+    "stage3_top_k": 64,
+    "final_top_k": 8
+  }
+}

@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0009
+# model=lca
+# L=2
+
+GT:
+BUT BEHOLD THESE KINE
+
+Whisper(original):
+But behold this kind
+
+Whisper(decoded):
+but the whole disk fine.

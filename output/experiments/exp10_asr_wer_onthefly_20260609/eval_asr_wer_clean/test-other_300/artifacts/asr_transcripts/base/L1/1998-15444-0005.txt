@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0005
+# model=base
+# L=1
+
+GT:
+IF THE MEDICAL PRACTITIONER IS IN DOUBT ON ANY POINT HE SHOULD OBTAIN TECHNICAL ASSISTANCE FROM SOMEONE WHO HAS PAID ATTENTION TO THE SUBJECT
+
+Whisper(original):
+If the medical practitioners endowed on any point, he should obtain technical assistance from someone who has paid attention to the subject.
+
+Whisper(decoded):
+If the mitre practitioner has endowed a main point, you should obtain technical assistance for its own breastplate attention to the subject.

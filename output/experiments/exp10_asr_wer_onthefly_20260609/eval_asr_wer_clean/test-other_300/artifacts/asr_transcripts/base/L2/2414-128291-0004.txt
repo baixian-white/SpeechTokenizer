@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0004
+# model=base
+# L=2
+
+GT:
+ANSWERED HE THE SAME THAT THOU SEEKEST THOU MISCHIEF MAKER THAT IS TO SAY HAPPINESS UPON EARTH
+
+Whisper(original):
+And so would he. The same that thou seekest, thou mischief maker, that is to say happiness upon earth.
+
+Whisper(decoded):
+Answer here. The same the down-seat test that we shift native, that is to say, happiness upon thought.

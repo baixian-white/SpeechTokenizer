@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0001
+# model=base
+# L=1
+
+GT:
+WHAT'S ALL THAT THERE DICKIE ASKED POINTING TO THE ODD KNOBBLY BUNDLES OF ALL SORTS AND SHAPES TIED ON TO THE PERAMBULATOR'S FRONT
+
+Whisper(original):
+What's on that there, Dicky asked, pointing to the odd, knobbly bundles of all sorts and shapes tied onto the preamble later's front.
+
+Whisper(decoded):
+What's under there, D.T. asked, planting to the odd, ugly abundance of large source and shapes, tied onto a deep rim where it is front.

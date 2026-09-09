@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0014
+# model=lca
+# L=1
+
+GT:
+HE SELECTED A SMALL GOLD BOTTLE WITH A PEPPER BOX TOP SO THAT THE POWDER MIGHT BE SPRINKLED ON ANY OBJECT THROUGH THE SMALL HOLES
+
+Whisper(original):
+He selected a small gold bottle with a pepper box top so that the powder might be sprinkled on any object through the small holes.
+
+Whisper(decoded):
+He selected a small gold dial with a pepper box top so that the powder might be sprinkled on any object to the small holes.

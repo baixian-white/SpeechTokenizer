@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0035
+# model=lca
+# L=1
+
+GT:
+IF ANY ONE ARSTS YOU IF YOU EVER SEE IM YOU NEVER SET EYES ON IM IN ALL YOUR BORN NOT TO REMEMBER IM
+
+Whisper(original):
+If anyone asks you if you ever see him, you never said eyes on him and all you're born. Not to remember him.
+
+Whisper(decoded):
+If anyone are asleep, if you have a seat in the US and Arizona and have a good one, let him in London.

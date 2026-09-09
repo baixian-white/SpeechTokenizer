@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0045
+# model=base
+# L=2
+
+GT:
+STEP OUT SONNY OR WE'LL NEVER GET THERE THIS SIDE CHRISTMAS
+
+Whisper(original):
+Step out, Sunny, or we'll never get there this side of Christmas.
+
+Whisper(decoded):
+step out of time or they'll get there this side of Christmas.

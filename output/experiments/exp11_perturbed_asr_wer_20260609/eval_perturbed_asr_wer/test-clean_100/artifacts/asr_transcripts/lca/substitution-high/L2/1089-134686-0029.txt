@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0029
+# model=lca
+# L=2
+# channel=substitution-high
+
+GT:
+ON FRIDAY CONFESSION WILL BE HEARD ALL THE AFTERNOON AFTER BEADS
+
+Whisper(original):
+On Friday, confession will be heard all the afternoon after beads.
+
+Whisper(decoded):
+On Friday, confession will be heard all the afternoon and after beats.

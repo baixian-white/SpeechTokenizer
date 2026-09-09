@@ -1,0 +1,12 @@
+# sample_id=1320-122617-0007
+# model=lca
+# L=3
+
+GT:
+COME COME RETURNED HAWKEYE UNCASING HIS HONEST COUNTENANCE THE BETTER TO ASSURE THE WAVERING CONFIDENCE OF HIS COMPANION YOU MAY SEE A SKIN WHICH IF IT BE NOT AS WHITE AS ONE OF THE GENTLE ONES HAS NO TINGE OF RED TO IT THAT THE WINDS OF THE HEAVEN AND THE SUN HAVE NOT BESTOWED NOW LET US TO BUSINESS
+
+Whisper(original):
+Come, come, returned Hawkeye, uncasing his honest countenance, the better to assure the wavering confidence of his companion. You may see a skin which, if it be not as white as one of the gentle ones, has no tinge of red to it that the winds of the heaven and the sun have not bestowed. Now let us to business.
+
+Whisper(decoded):
+Kong, Kong returned Hawkeye, unkasing his honest countenance, the better to assure the wavering confidence of his companion. You may see a skin which, if it be not as white as one of the gentle ones, has no tinge of red to it that the winds of the heaven and the sun have not bestowed. Now let us to business.

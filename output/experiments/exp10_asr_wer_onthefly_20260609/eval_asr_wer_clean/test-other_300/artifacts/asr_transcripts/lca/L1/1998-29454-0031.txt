@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0031
+# model=lca
+# L=1
+
+GT:
+THEY COULD PUT A MAN AWAY FOR LESS THAN THAT
+
+Whisper(original):
+They could put a man away for less than that.
+
+Whisper(decoded):
+They could put a man away from us and we'll.

@@ -1,0 +1,131 @@
+{
+    "n_filters": 64,
+    "strides": [
+        8,
+        5,
+        4,
+        2
+    ],
+    "dimension": 1024,
+    "semantic_dimension": 768,
+    "bidirectional": true,
+    "dilation_base": 2,
+    "residual_kernel_size": 3,
+    "n_residual_layers": 1,
+    "lstm_layers": 2,
+    "activation": "ELU",
+    "codebook_size": 1024,
+    "n_q": 3,
+    "num_mels": 80,
+    "num_freq": 1025,
+    "n_fft": 1024,
+    "hop_size": 240,
+    "win_size": 1024,
+    "fmin": 0,
+    "fmax": 8000,
+    "fmax_for_loss": null,
+    "mel_loss_lambdas": [
+        45,
+        1,
+        1,
+        1
+    ],
+    "recon_loss_lambda": 500,
+    "commitment_loss_lambda": 10,
+    "distill_loss_lambda": 30.0,
+    "distill_type": "d_axis",
+    "semantic_model_path": "facebook/hubert-base-ls960",
+    "semantic_model_layer": "avg",
+    "train_files": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\artifacts\\train_files.txt",
+    "valid_files": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\artifacts\\valid_files.txt",
+    "results_folder": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints",
+    "sample_rate": 16000,
+    "batch_size": 8,
+    "epochs": 10,
+    "learning_rate": 1e-05,
+    "intial_learning_rate": 1e-05,
+    "num_warmup_steps": 0,
+    "betas": [
+        0.9,
+        0.99
+    ],
+    "adam_b2": 0.9,
+    "lr_decay": 0.98,
+    "seed": 42,
+    "segment_size": 16000,
+    "wd": 0,
+    "num_workers": 8,
+    "valid_num_workers": 0,
+    "log_steps": 100,
+    "stdout_steps": 10,
+    "save_model_steps": 2500,
+    "num_ckpt_keep": 8,
+    "showpiece_num": 8,
+    "gradient_accumulation_steps": 4,
+    "device": "cuda",
+    "mixed_precision": "bf16",
+    "nas_encoder_config": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\best_seanet_config.json",
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "lca_train_mode": "end_to_end",
+    "lca_base_checkpoint": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+    "lambda_full": 1.0,
+    "lambda_comm": 1.5,
+    "lambda_consistency": 0.5,
+    "random_l_sampling": {
+        "values": [
+            1,
+            2,
+            3
+        ],
+        "strategy": "uniform_random",
+        "seed": 42
+    },
+    "channel_sim": {
+        "sample_strategy": "uniform_random",
+        "conditions": [
+            {
+                "name": "clean",
+                "p_drop": 0.0,
+                "p_sub": 0.0
+            },
+            {
+                "name": "dropout-mid",
+                "p_drop": 0.05,
+                "p_sub": 0.0
+            },
+            {
+                "name": "dropout-high",
+                "p_drop": 0.1,
+                "p_sub": 0.0
+            },
+            {
+                "name": "substitution-mid",
+                "p_drop": 0.0,
+                "p_sub": 0.01
+            },
+            {
+                "name": "substitution-high",
+                "p_drop": 0.0,
+                "p_sub": 0.03
+            }
+        ],
+        "dropout_implementation": "previous-index replacement",
+        "substitution": "uniform legal codebook index"
+    },
+    "exp1_handoff": {
+        "config_path": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\best_seanet_config.json",
+        "source_path": "output\\experiments\\exp1_nas_distill_run1_seed42\\artifacts\\best_architecture\\best_seanet_config.json",
+        "candidate_id": "nas_seed42_000896",
+        "encoder_strides": [
+            5,
+            4,
+            4,
+            4
+        ],
+        "handoff_schema": "encoder_only_nas_v1"
+    },
+    "exp3_run_mode": "formal",
+    "exp3_experiment_tag": "lca_v2_strong_perturb_consistency",
+    "exp3_experiment_note": "LCA v2: Stronger ChannelSim probabilities (p_drop up to 0.10, p_sub up to 0.03; ~5x stronger than v1). Adds consistency loss (lambda=0.5) between clean-decoded and perturbed-decoded outputs of the same truncated codes to give an explicit perturbation-invariance objective. Initialized from same Exp2 distill30 base as v1 for clean v1-vs-v2 ablation. lambda_comm raised to 1.5 to weight low-load output more heavily."
+}

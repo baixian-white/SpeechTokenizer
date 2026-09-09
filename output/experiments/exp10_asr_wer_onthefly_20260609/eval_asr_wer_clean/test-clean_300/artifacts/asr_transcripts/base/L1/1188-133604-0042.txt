@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0042
+# model=base
+# L=1
+
+GT:
+THE SCENE IS ABSOLUTELY ARCADIAN
+
+Whisper(original):
+The scene is absolutely Arcadian.
+
+Whisper(decoded):
+The scene is absolutely receding him.

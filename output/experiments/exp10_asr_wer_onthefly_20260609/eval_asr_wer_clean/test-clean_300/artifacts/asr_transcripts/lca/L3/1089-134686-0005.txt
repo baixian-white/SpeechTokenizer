@@ -1,0 +1,12 @@
+# sample_id=1089-134686-0005
+# model=lca
+# L=3
+
+GT:
+THE MUSIC CAME NEARER AND HE RECALLED THE WORDS THE WORDS OF SHELLEY'S FRAGMENT UPON THE MOON WANDERING COMPANIONLESS PALE FOR WEARINESS
+
+Whisper(original):
+The music came nearer and he recalled the words, the words of Shelley's fragment upon the moon wandering companionless pale for weariness.
+
+Whisper(decoded):
+The music came nearer and he recalled the words, the words of Shelley's fragment upon the moon wandering companionless, pale for weariness.

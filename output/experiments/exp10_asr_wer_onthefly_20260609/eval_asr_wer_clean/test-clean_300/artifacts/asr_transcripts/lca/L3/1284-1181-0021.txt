@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0021
+# model=lca
+# L=3
+
+GT:
+ASKED THE VOICE IN SCORNFUL ACCENTS
+
+Whisper(original):
+Ask the voice in scornful accents.
+
+Whisper(decoded):
+Ask the voice in scornful accents.

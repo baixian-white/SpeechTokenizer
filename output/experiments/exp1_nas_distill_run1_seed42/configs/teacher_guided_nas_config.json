@@ -1,0 +1,45 @@
+{
+  "teacher_guided": true,
+  "teacher_target": "pre_rvq",
+  "teacher_cache_mode": "disk",
+  "metric_keys": [
+    "teacher_latent_smooth_l1",
+    "teacher_latent_cosine_distance",
+    "teacher_temporal_delta_loss",
+    "rvq_code_agreement",
+    "rvq_code_flip_rate",
+    "rvq_quantized_feature_l1"
+  ],
+  "selection_config": {
+    "mode": "balanced",
+    "quality_margin_sem": 0.1,
+    "quality_margin_recon": 0.1,
+    "quality_margin_mel": 0.1,
+    "quality_margin_latent": 0.1,
+    "quality_margin_delta": 0.1,
+    "quality_margin_cos": 0.05,
+    "weight_sem": 1.0,
+    "weight_recon": 0.6,
+    "weight_mel": 0.6,
+    "weight_latent": 1.2,
+    "weight_cos": 0.5,
+    "weight_delta": 0.5,
+    "weight_code": 0.8,
+    "weight_qfeat": 0.5,
+    "weight_macs": 0.12,
+    "weight_params": 0.12,
+    "weight_rtf": 0.03
+  },
+  "short_distillation": {
+    "enabled": true,
+    "stage2_steps": 100,
+    "stage3_steps": 500,
+    "final_steps": 1500,
+    "lr": 0.0001,
+    "latent_weight": 1.0,
+    "cosine_weight": 1.0,
+    "delta_weight": 0.5,
+    "optimized_module": "candidate encoder only",
+    "frozen_modules": "pretrained SpeechTokenizer teacher, transform, RVQ, decoder"
+  }
+}

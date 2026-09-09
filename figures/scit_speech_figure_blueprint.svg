@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1400" viewBox="0 0 2400 1400">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2386d8"/></marker>
+    <marker id="ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#3d6285"/></marker>
+    <style>
+      .panel{fill:#fff;stroke:#7db5e8;stroke-width:2;stroke-dasharray:9 6;rx:12}
+      .sub{fill:#fbfdff;stroke:#a8cbea;stroke-width:1.6;stroke-dasharray:7 5;rx:10}
+      .mod{fill:#f7fbff;stroke:#408fd2;stroke-width:2;rx:8}
+      .train{fill:#f7fbff;stroke:#527ca3;stroke-width:1.8;stroke-dasharray:6 5;rx:8}
+      .note{fill:#ecf6ff;stroke:#78afe0;stroke-width:1.5;rx:9}
+      .lossbox{fill:#fff8ea;stroke:#d89a33;stroke-width:1.8;rx:8}
+      .h1{font:700 26px Arial, sans-serif;fill:#0f1720}
+      .h2{font:700 21px Arial, sans-serif;fill:#17202a}
+      .t{font:600 17px Arial, sans-serif;fill:#18232e;text-anchor:middle}
+      .s{font:500 14px Arial, sans-serif;fill:#334155;text-anchor:middle}
+      .xs{font:500 12px Arial, sans-serif;fill:#415466;text-anchor:middle}
+      .math{font:italic 17px Georgia,serif;fill:#111827;text-anchor:middle}
+      .arrow{fill:none;stroke:#2386d8;stroke-width:2.5;marker-end:url(#a)}
+      .thin{fill:none;stroke:#2386d8;stroke-width:2;marker-end:url(#a)}
+      .dash{fill:none;stroke:#3d6285;stroke-width:2;stroke-dasharray:7 5;marker-end:url(#ad)}
+      .setup{fill:none;stroke:#2386d8;stroke-width:2;stroke-dasharray:7 5;marker-end:url(#a)}
+      .bracket{fill:none;stroke:#506070;stroke-width:1.6}
+      .num{fill:#080b0e}
+      .nt{font:700 27px Arial,sans-serif;fill:#fff;text-anchor:middle;dominant-baseline:middle}
+    </style>
+  </defs>
+
+  <rect width="2400" height="1400" fill="#fff"/>
+
+  <!-- PANEL 1 -->
+  <rect class="panel" x="20" y="20" width="2360" height="235"/>
+  <circle class="num" cx="55" cy="55" r="28"/><text class="nt" x="55" y="55">1</text>
+  <text class="h1" x="95" y="63">OFFLINE ENCODER ARCHITECTURE SEARCH</text>
+  <rect class="note" x="2170" y="34" width="180" height="40"/><text class="t" x="2260" y="60">Encoder Search Only</text>
+
+  <rect class="mod" x="70" y="105" width="300" height="85"/><text class="t" x="220" y="137">Candidate Encoder Space</text><text class="s" x="220" y="163">candidate blocks, widths and depths</text>
+  <path class="arrow" d="M370 147H450"/>
+  <rect class="mod" x="450" y="95" width="365" height="105"/><text class="t" x="632" y="128">Teacher-Guided Proxy Training</text><text class="s" x="632" y="153">Teacher → distillation → Student</text><text class="s" x="632" y="177">short proxy training for every candidate</text>
+  <path class="arrow" d="M815 147H895"/>
+  <rect class="mod" x="895" y="95" width="365" height="105"/><text class="t" x="1077" y="128">Resource and Quality Profiling</text><text class="s" x="1077" y="153">quality ↑ · latency ↓ · model size ↓</text><text class="s" x="1077" y="177">one point per candidate encoder</text>
+  <path class="arrow" d="M1260 147H1340"/>
+  <rect class="mod" x="1340" y="105" width="290" height="85"/><text class="t" x="1485" y="137">Pareto Selection</text><text class="s" x="1485" y="163">quality versus resource cost</text>
+  <path class="arrow" d="M1630 147H1710"/>
+  <rect class="mod" x="1710" y="95" width="365" height="105"/><text class="t" x="1892" y="128">NAS-Selected Encoder</text><text class="s" x="1892" y="153">selected architecture only</text><text class="s" x="1892" y="177">used for full codec training</text>
+  <path class="setup" d="M1892 200V238H290V395"/>
+
+  <!-- PANEL 2 -->
+  <rect class="panel" x="20" y="275" width="1170" height="385"/>
+  <circle class="num" cx="55" cy="310" r="28"/><text class="nt" x="55" y="310">2</text>
+  <text class="h1" x="95" y="318">SPEECH ENCODING AND THREE-LAYER RVQ</text>
+  <rect class="mod" x="45" y="405" width="125" height="105"/><text class="t" x="107" y="445">16 kHz</text><text class="t" x="107" y="472">Input Speech</text><path d="M62 493L70 475L78 506L87 466L96 511L105 480L114 503L123 470L132 508L143 486L153 496" fill="none" stroke="#13ad95" stroke-width="4"/>
+  <path class="arrow" d="M170 457H205"/>
+  <rect class="mod" x="205" y="395" width="170" height="125"/><text class="t" x="290" y="438">NAS-Selected</text><text class="t" x="290" y="465">SEANet Encoder</text><text class="s" x="290" y="492">architecture from Panel 1</text>
+  <path class="arrow" d="M375 457H410"/>
+  <rect class="mod" x="410" y="405" width="145" height="105"/><text class="t" x="482" y="445">Continuous</text><text class="t" x="482" y="470">Latent z</text><text class="s" x="482" y="494">50 Hz, d = 1024</text>
+  <path class="arrow" d="M555 457H590"/>
+
+  <rect x="590" y="392" width="165" height="130" rx="8" fill="#fff7ed" stroke="#ef8d32" stroke-width="2"/><text class="t" x="672" y="430">Q1 / Codebook C1</text><text class="s" x="672" y="456">Coarse Content</text><text class="s" x="672" y="480">1,024 entries</text><text class="math" x="672" y="507">index i₁ → q₁</text>
+  <path class="arrow" d="M755 457H785"/><text class="s" x="770" y="440">r₁</text>
+  <rect x="785" y="392" width="165" height="130" rx="8" fill="#effaf4" stroke="#4ca873" stroke-width="2"/><text class="t" x="867" y="430">Q2 / Codebook C2</text><text class="s" x="867" y="456">Acoustic Refinement</text><text class="s" x="867" y="480">1,024 entries</text><text class="math" x="867" y="507">index i₂ → q₂</text>
+  <path class="arrow" d="M950 457H980"/><text class="s" x="965" y="440">r₂</text>
+  <rect x="980" y="392" width="180" height="130" rx="8" fill="#f4f2ff" stroke="#7374d8" stroke-width="2"/><text class="t" x="1070" y="430">Q3 / Codebook C3</text><text class="s" x="1070" y="456">Fine Acoustic Refinement</text><text class="s" x="1070" y="480">1,024 entries</text><text class="math" x="1070" y="507">index i₃ → q₃</text>
+
+  <g transform="translate(600 545)"><rect x="0" y="0" width="35" height="22" fill="#fb923c"/><rect x="42" y="0" width="35" height="22" fill="#fb923c"/><rect x="84" y="0" width="35" height="22" fill="#fb923c"/></g><text class="math" x="735" y="562">i₁</text>
+  <g transform="translate(795 545)"><rect x="0" y="0" width="35" height="22" fill="#70bd92"/><rect x="42" y="0" width="35" height="22" fill="#70bd92"/><rect x="84" y="0" width="35" height="22" fill="#70bd92"/></g><text class="math" x="930" y="562">i₂</text>
+  <g transform="translate(995 545)"><rect x="0" y="0" width="35" height="22" fill="#8588e8"/><rect x="42" y="0" width="35" height="22" fill="#8588e8"/><rect x="84" y="0" width="35" height="22" fill="#8588e8"/></g><text class="math" x="1130" y="562">i₃</text>
+  <path class="bracket" d="M590 590V610H1160V590"/><text class="t" x="875" y="642">Quantized Latent zq = q₁ + q₂ + q₃</text>
+
+  <!-- PANEL 3 -->
+  <rect class="panel" x="1210" y="275" width="520" height="385"/>
+  <circle class="num" cx="1245" cy="310" r="28"/><text class="nt" x="1245" y="310">3</text>
+  <text class="h1" x="1285" y="318">DISCRETE INDEX TRANSMISSION</text>
+  <rect class="mod" x="1238" y="390" width="105" height="175"/><text class="s" x="1290" y="418">i₁</text><rect x="1255" y="430" width="70" height="16" fill="#fb923c"/><text class="s" x="1290" y="470">i₂</text><rect x="1255" y="482" width="70" height="16" fill="#70bd92"/><text class="s" x="1290" y="522">i₃</text><rect x="1255" y="534" width="70" height="16" fill="#8588e8"/>
+  <path class="arrow" d="M1343 470H1370"/>
+  <rect class="mod" x="1370" y="410" width="125" height="120"/><text class="t" x="1432" y="442">Index Packing</text><text class="s" x="1432" y="466">and</text><text class="t" x="1432" y="490">Packetization</text><text class="s" x="1432" y="517">3 × 10 bits × 50 Hz</text>
+  <path class="arrow" d="M1495 470H1520"/>
+  <rect class="mod" x="1520" y="410" width="90" height="120"/><text class="t" x="1565" y="452">Discrete</text><text class="t" x="1565" y="478">Bitstream</text>
+  <path class="arrow" d="M1610 470H1635"/>
+  <rect class="mod" x="1635" y="410" width="70" height="120"/><text class="t" x="1670" y="458">Comm.</text><text class="t" x="1670" y="484">Channel</text>
+  <text class="t" x="1470" y="580">Nominal Index Payload: 1.5 kbit/s</text>
+  <rect class="note" x="1310" y="602" width="320" height="42"/><text class="t" x="1470" y="630">ONLY DISCRETE INDICES ARE TRANSMITTED</text>
+
+  <!-- PANEL 4 -->
+  <rect class="panel" x="1750" y="275" width="630" height="385"/>
+  <circle class="num" cx="1785" cy="310" r="28"/><text class="nt" x="1785" y="310">4</text>
+  <text x="1825" y="304" font-family="Arial,sans-serif" font-size="22" font-weight="700">SHARED-CODEBOOK RECONSTRUCTION</text><text x="1825" y="330" font-family="Arial,sans-serif" font-size="22" font-weight="700">AND DECODING</text>
+  <rect class="mod" x="1775" y="415" width="75" height="125"/><text class="s" x="1812" y="400">Received</text><rect x="1790" y="435" width="45" height="15" fill="#fb923c"/><rect x="1790" y="468" width="45" height="15" fill="#70bd92"/><rect x="1790" y="501" width="45" height="15" fill="#8588e8"/>
+  <path class="thin" d="M1850 445H1875"/><path class="thin" d="M1850 477H1875"/><path class="thin" d="M1850 510H1875"/>
+  <rect x="1875" y="405" width="135" height="70" rx="7" fill="#fff7ed" stroke="#ef8d32"/><text class="xs" x="1942" y="425">Pre-Shared</text><text class="xs" x="1942" y="442">Codebook C1</text><text class="math" x="1942" y="466">i₁ → q₁</text>
+  <rect x="1875" y="480" width="135" height="70" rx="7" fill="#effaf4" stroke="#4ca873"/><text class="xs" x="1942" y="500">Pre-Shared</text><text class="xs" x="1942" y="517">Codebook C2</text><text class="math" x="1942" y="541">i₂ → q₂</text>
+  <rect x="1875" y="555" width="135" height="70" rx="7" fill="#f4f2ff" stroke="#7374d8"/><text class="xs" x="1942" y="575">Pre-Shared</text><text class="xs" x="1942" y="592">Codebook C3</text><text class="math" x="1942" y="616">i₃ → q₃</text>
+  <path class="thin" d="M2010 440H2040V505"/><path class="thin" d="M2010 515H2040"/><path class="thin" d="M2010 590H2040V525"/>
+  <circle cx="2055" cy="515" r="25" fill="#fff" stroke="#5668d2" stroke-width="2"/><text x="2055" y="525" font-family="Arial" font-size="31" text-anchor="middle">+</text>
+  <text class="math" x="2055" y="382">q₁ + q₂ + q₃</text>
+  <path class="arrow" d="M2080 515H2110"/>
+  <rect class="mod" x="2110" y="460" width="95" height="110"/><text class="t" x="2157" y="490">Recovered</text><text class="t" x="2157" y="515">Latent zq</text><text class="xs" x="2157" y="540">using shared</text><text class="xs" x="2157" y="557">codebooks</text>
+  <path class="arrow" d="M2205 515H2235"/>
+  <rect class="mod" x="2235" y="460" width="95" height="110"/><text class="t" x="2282" y="496">SEANet</text><text class="t" x="2282" y="522">Decoder</text>
+  <path class="arrow" d="M2330 515H2350"/>
+  <text class="s" x="2282" y="600">Reconstructed</text><text class="s" x="2282" y="620">Speech output →</text>
+  <rect class="note" x="1870" y="628" width="410" height="28"/><text class="xs" x="2075" y="647">Codebooks and decoder are pre-deployed; never transmitted</text>
+
+  <!-- PANEL 5 -->
+  <rect class="panel" x="20" y="680" width="1710" height="700"/>
+  <circle class="num" cx="55" cy="715" r="28"/><text class="nt" x="55" y="715">5</text>
+  <text class="h1" x="95" y="723">ADVERSARIAL TRAINING AND CHANNEL-AWARE FINE-TUNING</text>
+  <rect class="note" x="1510" y="694" width="185" height="40"/><text class="t" x="1602" y="720">TRAINING ONLY</text>
+
+  <!-- 5A -->
+  <rect class="sub" x="35" y="750" width="950" height="610"/>
+  <rect x="50" y="765" width="50" height="30" rx="15" fill="#1467b8"/><text x="75" y="787" font-family="Arial" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">5A</text>
+  <text class="h2" x="115" y="790">SCIT-Speech-Base Training</text>
+
+  <rect class="mod" x="70" y="900" width="145" height="70"/><text class="t" x="142" y="928">Real Speech x</text><text class="s" x="142" y="952">training reference</text>
+  <rect class="mod" x="290" y="900" width="235" height="90"/><text class="t" x="407" y="930">SCIT-Speech Generator G</text><text class="s" x="407" y="955">Encoder + RVQ + Decoder</text><text class="s" x="407" y="978">produces reconstructed speech x̂</text>
+  <path class="arrow" d="M215 935H290"/>
+
+  <!-- semantic path -->
+  <rect class="train" x="250" y="800" width="190" height="78"/><text class="t" x="345" y="826">Frozen HuBERT</text><text class="t" x="345" y="849">Teacher</text><text class="xs" x="345" y="869">teacher feature</text>
+  <path class="dash" d="M142 900V839H250"/><path class="dash" d="M440 839H490V900"/><text class="xs" x="535" y="820">Semantic Distillation</text><text class="xs" x="535" y="838">to Q1</text>
+
+  <!-- reconstructed speech -->
+  <rect class="mod" x="575" y="900" width="160" height="70"/><text class="t" x="655" y="928">Reconstructed</text><text class="t" x="655" y="952">Speech x̂</text><path class="arrow" d="M525 935H575"/>
+
+  <!-- GAN path -->
+  <rect class="mod" x="575" y="1040" width="165" height="125"/><text class="t" x="657" y="1070">Multi-Scale GAN</text><text class="t" x="657" y="1095">Discriminators</text><text class="s" x="657" y="1122">waveform · periodic</text><text class="s" x="657" y="1145">time-frequency</text>
+  <path class="thin" d="M142 970V1100H575"/><text class="s" x="315" y="1087">Real x</text>
+  <path class="thin" d="M655 970V1040"/><text class="s" x="710" y="1018">Generated x̂</text>
+  <rect class="lossbox" x="790" y="1035" width="155" height="58"/><text class="t" x="867" y="1070">Adversarial Loss</text>
+  <rect class="lossbox" x="790" y="1110" width="155" height="62"/><text class="t" x="867" y="1138">Feature-Matching</text><text class="t" x="867" y="1160">Loss</text>
+  <path class="thin" d="M740 1070H790"/><path class="thin" d="M740 1138H790"/>
+  <path class="dash" d="M790 1065H765V1210H470V990"/><path class="dash" d="M790 1140H750V1235H440V990"/>
+
+  <!-- reconstruction path -->
+  <rect class="lossbox" x="285" y="1245" width="290" height="90"/><text class="t" x="430" y="1273">Waveform + Mel</text><text class="t" x="430" y="1297">Reconstruction Loss</text><text class="s" x="430" y="1321">compares x and x̂ directly</text>
+  <path class="dash" d="M142 970H60V1345H430V1335"/><path class="dash" d="M655 970V1225H575V1290"/><path class="dash" d="M430 1245V1195H410V990"/>
+  <rect class="lossbox" x="80" y="1260" width="155" height="65"/><text class="t" x="157" y="1288">RVQ Commitment</text><text class="s" x="157" y="1312">updates RVQ only</text><path class="dash" d="M157 1260V1175H350V990"/>
+
+  <!-- 5B -->
+  <rect class="sub" x="1005" y="750" width="705" height="610"/>
+  <rect x="1020" y="765" width="50" height="30" rx="15" fill="#1467b8"/><text x="1045" y="787" font-family="Arial" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">5B</text>
+  <text class="h2" x="1085" y="790">Channel-Aware Fine-Tuning</text>
+  <rect class="mod" x="1030" y="990" width="125" height="80"/><text class="t" x="1092" y="1020">Base Model</text><text class="t" x="1092" y="1045">Checkpoint</text>
+  <path class="arrow" d="M1155 1030H1190"/>
+  <rect class="train" x="1190" y="830" width="365" height="465"/>
+  <text class="t" x="1372" y="860">CHANNEL-AWARE FINE-TUNING BLOCK</text>
+  <rect class="mod" x="1260" y="885" width="225" height="55"/><text class="t" x="1372" y="910">Random RVQ-Depth Sampling</text><text class="xs" x="1372" y="931">training augmentation only</text>
+  <path class="thin" d="M1372 940V970H1250"/>
+  <rect class="mod" x="1210" y="970" width="120" height="60"/><text class="t" x="1270" y="997">Clean Indices</text><text class="math" x="1270" y="1020">i₁,i₂,i₃</text>
+
+  <path class="thin" d="M1330 1000H1360"/>
+  <rect class="mod" x="1360" y="970" width="125" height="60"/><text class="t" x="1422" y="996">Decoder Dθ</text><text class="xs" x="1422" y="1018">clean pass</text>
+  <path class="thin" d="M1485 1000H1500"/><rect class="mod" x="1500" y="970" width="45" height="60"/><text class="xs" x="1522" y="996">Clean</text><text class="xs" x="1522" y="1014">Mel</text>
+
+  <path class="thin" d="M1270 1030V1080"/>
+  <rect class="mod" x="1210" y="1080" width="145" height="60"/><text class="t" x="1282" y="1115">Index Perturbation</text>
+  <path class="thin" d="M1355 1110H1380"/>
+  <rect class="mod" x="1380" y="1080" width="130" height="60"/><text class="t" x="1445" y="1105">Perturbed</text><text class="math" x="1445" y="1128">ĩ₁,ĩ₂,ĩ₃</text>
+  <path class="thin" d="M1445 1140V1170"/>
+  <rect class="mod" x="1380" y="1170" width="125" height="60"/><text class="t" x="1442" y="1196">Decoder Dθ</text><text class="xs" x="1442" y="1218">same weights</text>
+  <path class="thin" d="M1505 1200H1515"/><rect class="mod" x="1515" y="1170" width="40" height="60"/><text class="xs" x="1535" y="1196">Pert.</text><text class="xs" x="1535" y="1214">Mel</text>
+
+  <rect class="lossbox" x="1245" y="1250" width="255" height="60"/><text class="t" x="1372" y="1277">Clean–Perturbed Mel</text><text class="t" x="1372" y="1300">Consistency Loss</text>
+  <path class="dash" d="M1522 1030V1280H1500"/><path class="dash" d="M1535 1230V1280H1500"/>
+  <path class="arrow" d="M1555 900H1637V980"/><text class="xs" x="1600" y="890">optimized weights</text>
+  <rect class="mod" x="1585" y="980" width="105" height="100"/><text class="t" x="1637" y="1015">SCIT-Speech</text><text class="t" x="1637" y="1040">LCA</text><text class="xs" x="1637" y="1063">final checkpoint</text>
+
+  <!-- PANEL 6 -->
+  <rect class="panel" x="1750" y="680" width="630" height="700"/>
+  <circle class="num" cx="1785" cy="715" r="28"/><text class="nt" x="1785" y="715">6</text>
+  <text x="1825" y="710" font-family="Arial,sans-serif" font-size="22" font-weight="700">OPTIONAL TOKEN–AUDIO</text><text x="1825" y="736" font-family="Arial,sans-serif" font-size="22" font-weight="700">SPEAKER CLASSIFICATION</text>
+
+  <text class="t" x="1830" y="805">Received RVQ Indices</text><text class="math" x="1830" y="830">i₁, i₂, i₃</text>
+  <g transform="translate(1775 850)"><rect width="110" height="18" fill="#fb923c"/><rect y="32" width="110" height="18" fill="#70bd92"/><rect y="64" width="110" height="18" fill="#8588e8"/></g>
+  <path class="arrow" d="M1885 890H1910"/>
+  <rect class="mod" x="1910" y="845" width="145" height="90"/><text class="t" x="1982" y="878">Trainable RVQ</text><text class="t" x="1982" y="903">Token Encoder</text><text class="s" x="1982" y="925">→ e_token</text>
+
+  <text class="t" x="1830" y="1045">Reconstructed Speech</text>
+  <rect class="mod" x="1775" y="1070" width="110" height="70"/><text class="t" x="1830" y="1098">Speech x̂</text><text class="s" x="1830" y="1122">from Panel 4</text>
+  <path class="arrow" d="M1885 1105H1910"/>
+  <rect class="mod" x="1910" y="1070" width="125" height="70"/><text class="t" x="1972" y="1098">Frozen</text><text class="t" x="1972" y="1122">ECAPA-TDNN</text>
+  <path class="arrow" d="M2035 1105H2055"/>
+  <rect class="mod" x="2055" y="1070" width="120" height="70"/><text class="t" x="2115" y="1098">Trainable</text><text class="t" x="2115" y="1122">Projection</text><text class="s" x="2115" y="1162">→ e_audio</text>
+
+  <rect class="mod" x="2100" y="860" width="165" height="200"/><text class="t" x="2182" y="895">Learned Gate g</text><line x1="2120" y1="912" x2="2245" y2="912" stroke="#8bbce7"/><text class="math" x="2182" y="955">e_fused =</text><text class="math" x="2182" y="987">g e_token +</text><text class="math" x="2182" y="1019">(1−g)e_audio</text>
+  <path class="thin" d="M2055 890H2100"/><path class="thin" d="M2175 1105H2182V1060"/>
+  <path class="arrow" d="M2265 960H2280"/>
+  <rect class="mod" x="2280" y="900" width="85" height="120"/><text x="2322" y="938" font-family="Arial" font-size="10" font-weight="600" text-anchor="middle">110-Speaker</text><text x="2322" y="960" font-family="Arial" font-size="10" font-weight="600" text-anchor="middle">Closed-Set</text><text x="2322" y="982" font-family="Arial" font-size="10" font-weight="600" text-anchor="middle">Classifier</text>
+  <path class="thin" d="M2322 1020V1145H2275V1160"/>
+  <rect class="mod" x="2190" y="1160" width="170" height="65"/><text class="s" x="2275" y="1187">Predicted Speaker ID</text><text class="t" x="2275" y="1212">p225</text>
+  <rect class="note" x="1775" y="1270" width="165" height="48"/><text class="s" x="1857" y="1299">Frozen Speech Codec</text>
+  <rect class="note" x="1950" y="1270" width="230" height="48"/><text class="s" x="2065" y="1299">Separately Trained Classifier</text>
+  <rect class="note" x="2190" y="1270" width="165" height="48"/><text class="xs" x="2272" y="1290">Receiver-side only;</text><text class="xs" x="2272" y="1308">no additional transmission</text>
+
+  <!-- INPUT LINKS TO PANEL 6 -->
+  <path class="setup" d="M1812 540V670H1815V680"/>
+  <path class="setup" d="M2350 515V665H2340V680"/>
+
+  <!-- LEGEND -->
+  <rect x="1035" y="1332" width="680" height="42" rx="8" fill="#fff" stroke="#c7d6e5"/>
+  <path class="arrow" d="M1060 1353H1110"/><text class="s" x="1200" y="1358">forward data flow</text>
+  <path class="dash" d="M1320 1353H1370"/><text class="s" x="1490" y="1358">training supervision / optimization</text>
+</svg>

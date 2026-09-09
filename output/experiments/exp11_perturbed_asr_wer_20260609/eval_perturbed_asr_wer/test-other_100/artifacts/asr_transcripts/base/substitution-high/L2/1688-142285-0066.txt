@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0066
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+BUT THE GIRL ONLY PLEADED THE MORE WITH MARGARET
+
+Whisper(original):
+But the girl and you played it the more with Margaret.
+
+Whisper(decoded):
+But the door only played at the lowest level.

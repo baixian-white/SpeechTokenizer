@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0025
+# model=lca
+# L=1
+
+GT:
+A BIRD PAUSED IN ITS FLIGHT ON A BRANCH QUITE CLOSE AND CLUNG THERE SWAYING
+
+Whisper(original):
+A bird passed in its flight on a branch quite close and clung their swing.
+
+Whisper(decoded):
+It might cause him to fight and branch criterism and carry me a spillum.

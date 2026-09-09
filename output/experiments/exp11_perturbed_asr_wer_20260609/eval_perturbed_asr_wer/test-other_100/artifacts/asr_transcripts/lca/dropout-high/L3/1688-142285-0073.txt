@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0073
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+PRESENTLY THE SPASM THAT FORESHADOWED DEATH HAD PASSED AWAY AND BESSY ROUSED HERSELF AND SAID
+
+Whisper(original):
+Presently the spasm that foreshadowed death had passed away, and Bessie roused herself and said
+
+Whisper(decoded):
+present-break this person that all shadowed jet had passed away. And this he roused itself and said...

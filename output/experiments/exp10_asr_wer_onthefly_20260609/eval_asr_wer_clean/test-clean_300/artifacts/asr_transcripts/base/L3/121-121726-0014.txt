@@ -1,0 +1,12 @@
+# sample_id=121-121726-0014
+# model=base
+# L=3
+
+GT:
+HYPOCRITE A HORSE DEALER
+
+Whisper(original):
+hypocrite a horse dealer
+
+Whisper(decoded):
+Hit the crit. A force dearer. My fault I go here again for the lastclMO beginning, and I re accompanying the first step to making sure that I see that my beauty, my beauty

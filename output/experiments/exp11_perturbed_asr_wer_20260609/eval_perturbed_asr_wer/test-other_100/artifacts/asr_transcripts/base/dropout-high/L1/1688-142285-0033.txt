@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0033
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+SHE LAY AWAKE VERY LONG THIS NIGHT PLANNING HOW TO LESSEN THE EVIL INFLUENCE OF THEIR MILTON LIFE ON HER MOTHER
+
+Whisper(original):
+She lay awake very long this night, planning how to lessen the evil influence of their Milton life on her mother.
+
+Whisper(decoded):
+She now work for a bond restaurant. I know, have to listen to the evil influence of the love to rifle and mother.

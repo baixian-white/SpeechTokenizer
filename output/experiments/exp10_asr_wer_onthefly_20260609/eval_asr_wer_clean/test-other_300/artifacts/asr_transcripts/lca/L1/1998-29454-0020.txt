@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0020
+# model=lca
+# L=1
+
+GT:
+NO SAID DICKIE OH NO NO I NEVER
+
+Whisper(original):
+No, Satiki. Oh, no. No, I never.
+
+Whisper(decoded):
+Mom said to T, and no, not remember.

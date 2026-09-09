@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0012
+# model=base
+# L=3
+
+GT:
+WE HAVE COME FROM A FAR LONELIER PLACE THAN THIS A LONELIER PLACE
+
+Whisper(original):
+We have come from a far lonelier place than this. A lonelier place.
+
+Whisper(decoded):
+We've come from a file only a place than this. A lonelier place.

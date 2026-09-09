@@ -1,0 +1,9 @@
+# method=dac setting=n_q_1 sample_id=1737-148989-0006
+# GT (LibriSpeech):
+FRANZ KEPT THE CABLE BUSY WITH HIS VARYING MESSAGES NAT SENT LOVING LETTERS FROM LEIPZIG AND TOM HARASSED THE SHIPPING AGENTS FOR NEWS EVEN BUSY JACK WROTE THEM WITH UNUSUAL WARMTH
+
+# Whisper(original):
+Franz kept the cable busy with his varying messages, Nat sent loving letters from Leipzig, and Tom harassed the shipping agents for news. Even Busy Jack wrote them with unusual warmth.
+
+# Whisper(decoded):
+Fast-nipped table, basic, stability, and necessities. That's it, money, money, money. It's all the last situations for me. It's the most exact part of the visual part.

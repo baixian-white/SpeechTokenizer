@@ -1,0 +1,10 @@
+{
+  "parent_run_id": "exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42",
+  "parent_run_dir": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42",
+  "config": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\lca_finetune_config.json",
+  "checkpoint": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_best.pt",
+  "checkpoint_sha256": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a",
+  "training_summary": "LCA v2: strong-perturb (p_drop up to 0.10, p_sub up to 0.03) + lambda_consistency=0.5; selected at step 30000 (sub-high cells global optimum)",
+  "usage_in_exp4": "Used at L=1, 2, 3 for clean reconstruction (no channel sim)",
+  "note": "v1 (weak-perturb) is retained as ablation reference at output\\experiments\\exp3_low_load_channel_aware_adaptation_20260530_seed42, but exp4 uses v2"
+}

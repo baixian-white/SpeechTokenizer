@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0041
+# model=base
+# L=1
+
+GT:
+IT IS A GLEANER BRINGING DOWN HER ONE SHEAF OF CORN TO AN OLD WATERMILL ITSELF MOSSY AND RENT SCARCELY ABLE TO GET ITS STONES TO TURN
+
+Whisper(original):
+It is a greener bringing down her one's sheaf of corn to an old water mill, itself mossy and rent, scarcely able to get its stones to turn.
+
+Whisper(decoded):
+It is a bleener when endowed her one's sheaf of clum to an old warm knoll, itself nossy and rant, scarcely able to get it's storms to time.

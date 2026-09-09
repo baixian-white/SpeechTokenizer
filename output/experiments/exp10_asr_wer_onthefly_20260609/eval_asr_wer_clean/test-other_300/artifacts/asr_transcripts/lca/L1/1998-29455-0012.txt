@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0012
+# model=lca
+# L=1
+
+GT:
+I LIKE YOU NEXTER MY OWN DADDY AND MISTER BAXTER NEXT DOOR
+
+Whisper(original):
+I'll like you next time I own Daddy and Mr. Baxter next door.
+
+Whisper(decoded):
+I'll act you next to my own dirty and Mr. Baxter next door.

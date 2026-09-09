@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0010
+# model=base
+# L=3
+
+GT:
+UNC KNOCKED AT THE DOOR OF THE HOUSE AND A CHUBBY PLEASANT FACED WOMAN DRESSED ALL IN BLUE OPENED IT AND GREETED THE VISITORS WITH A SMILE
+
+Whisper(original):
+Unc knocked at the door of the house and a chubby, pleasant-faced woman dressed all in blue, opened it, and greeted the visitors with a smile.
+
+Whisper(decoded):
+Onk knocked at the door of the house, and a chubby, pleasant-faced woman dressed all in blue, opened it, and created the visitors with a smile.

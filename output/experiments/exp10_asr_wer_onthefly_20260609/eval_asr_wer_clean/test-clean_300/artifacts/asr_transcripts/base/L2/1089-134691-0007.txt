@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0007
+# model=base
+# L=2
+
+GT:
+SOON THE WHOLE BRIDGE WAS TREMBLING AND RESOUNDING
+
+Whisper(original):
+Soon the whole bridge was trembling and resounding.
+
+Whisper(decoded):
+Soon the whole bridge was trembling and resounding.

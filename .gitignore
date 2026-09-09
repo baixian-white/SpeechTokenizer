@@ -119,3 +119,22 @@ tools/
 *.sh~
 *.swp
 *.swo
+
+# Local backups, dependencies and temporary work
+*.tar.zst
+*.tar.zst.*
+node_modules/
+/tmp/
+/temp/
+~$*
+/speechtokenizer_no_datasets_support/test_*/
+/speechtokenizer_no_datasets_support/retry_test_*/
+/speechtokenizer_no_datasets_support/xxhash/
+
+# Model weights and caches without standard checkpoint extensions
+SpeechTokenizerTrainer_*
+*.pt.broken_*
+*.safetensors
+*.th
+/output/baseline_model_cache/
+*.opus

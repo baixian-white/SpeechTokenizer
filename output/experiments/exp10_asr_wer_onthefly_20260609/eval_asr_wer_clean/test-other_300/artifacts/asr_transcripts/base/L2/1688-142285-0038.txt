@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0038
+# model=base
+# L=2
+
+GT:
+BETTER AND NOT BETTER IF YO KNOW WHAT THAT MEANS
+
+Whisper(original):
+Better and not better if you know what that means.
+
+Whisper(decoded):
+This, her, and not this, her. If you'd know what that means.

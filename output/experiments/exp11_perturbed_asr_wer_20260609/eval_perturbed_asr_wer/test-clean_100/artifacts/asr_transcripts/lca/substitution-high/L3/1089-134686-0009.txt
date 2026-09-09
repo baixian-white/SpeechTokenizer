@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0009
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+AT MOST BY AN ALMS GIVEN TO A BEGGAR WHOSE BLESSING HE FLED FROM HE MIGHT HOPE WEARILY TO WIN FOR HIMSELF SOME MEASURE OF ACTUAL GRACE
+
+Whisper(original):
+At most, by an alms given to a beggar whose blessing he fled from, he might hope wearily to win for himself some measure of actual grace.
+
+Whisper(decoded):
+At most, by an alms given to a beggar whose blessing he fled from, he might hope wearily to win for himself some measure of actual grace.

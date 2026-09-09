@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0038
+# model=lca
+# L=3
+
+GT:
+DICKIE ALWAYS REMEMBERED THAT MOMENT
+
+Whisper(original):
+Dickey always remember at that moment.
+
+Whisper(decoded):
+Dickey always remember that that moment.

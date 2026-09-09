@@ -1,0 +1,6 @@
+{
+  "lca_checkpoint": "output\\experiments\\exp3_low_load_channel_aware_adaptation_20260526_202329_seed42\\checkpoints\\SCIT-Speech-LCA_best.pt",
+  "base_checkpoint": "output/experiments/exp2_scit_speech_training_20260526_202329_seed42/checkpoints/SCIT-Speech-Base_best.pt",
+  "max_train_steps": 3,
+  "note": "Short debug/tracer LCA fine-tuning run; not a full main experiment conclusion."
+}

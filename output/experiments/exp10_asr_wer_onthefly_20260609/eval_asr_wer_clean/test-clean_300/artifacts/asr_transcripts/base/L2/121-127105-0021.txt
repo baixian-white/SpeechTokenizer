@@ -1,0 +1,12 @@
+# sample_id=121-127105-0021
+# model=base
+# L=2
+
+GT:
+WON'T YOU TELL DOUGLAS
+
+Whisper(original):
+Won't you tell Douglas?
+
+Whisper(decoded):
+Don't you tell Douglas?

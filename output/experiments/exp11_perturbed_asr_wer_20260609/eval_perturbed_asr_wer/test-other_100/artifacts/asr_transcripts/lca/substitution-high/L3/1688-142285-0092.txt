@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0092
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+I AM SURE AT ANY RATE SHE WOULD NOT LIKE STRANGERS TO KNOW ANYTHING ABOUT IT
+
+Whisper(original):
+I'm sure at any rate, she would not like strangers to know anything about it.
+
+Whisper(decoded):
+I'm sure at any rate, she would not like strangers to know anything about it.

@@ -1,0 +1,107 @@
+\relax 
+\citation{zeghidour2021soundstream,defossez2022encodec,kumar2023dac,zhang2023speechtokenizer,ji2024wavtokenizer,defossez2024moshi}
+\citation{weng2021deepscs,weng2022deepscst,qin2022semantic,tian2025largesc,han2025packetloss}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\citation{zeghidour2021soundstream,defossez2022encodec,kumar2023dac}
+\citation{zhang2023speechtokenizer,ji2024wavtokenizer,defossez2024moshi,huang2023repcodec}
+\citation{hsu2021hubert}
+\citation{zhang2023speechtokenizer,borsos2022audiolm,wang2023valle}
+\citation{weng2021deepscs,weng2022deepscst,qin2022semantic}
+\citation{tian2025largesc,han2025packetloss}
+\citation{bourtsoulatze2018deepjscc}
+\citation{valin2022plc,westhausen2022tplcnet}
+\citation{liu2018darts,cai2018proxylessnas}
+\citation{luo2021lightspeech}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Method}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Shared RVQ Codebook Index Transmission}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Constrained NAS Transmitter Encoder}{2}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces SCIT-Speech{} system overview. The transmitter and receiver pre-share the RVQ codebooks \(C^\ast \), decoder \(D\), and configuration. Runtime packets contain only the first \(L\) layers of RVQ indices. LCA trains the shared decoder to reconstruct robustly from truncated and perturbed index sequences; the HuBERT teacher is used only during Base training.}}{3}{}\protected@file@percent }
+\newlabel{fig:overview}{{1}{3}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}SCIT-Speech-Base{} Training}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Low-load Channel-aware Adaptation}{3}{}\protected@file@percent }
+\citation{valin2012opus,defossez2022encodec,kumar2023dac,itu2002amrwb,codec2repo}
+\citation{taal2011stoi}
+\citation{itu2001pesq}
+\citation{chinen2020visqol}
+\citation{radford2022whisper}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Experimental Setup}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Results}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Same-bitrate Comparison}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Rate-quality trade-off on test-clean-300 and test-other-300. The three panels show mel-L1, STOI, and PESQ-WB against actual packed bitrate on a log scale. The shaded band marks the 500--1500 bps SCIT-Speech{} operating range; error bars denote 95\% bootstrap confidence intervals.}}{5}{}\protected@file@percent }
+\newlabel{fig:rate_quality}{{2}{5}{}{figure.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Key same-bitrate results on LibriSpeech 300-sample subsets. Values are mean with 95\% bootstrap confidence intervals from the source draft. ViSQOL is MOS-LQO.}}{5}{}\protected@file@percent }
+\newlabel{tab:same_bitrate}{{I}{5}{}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces ViSQOL MOS-LQO against bitrate on test-clean-300 and test-other-300. The dotted line is the PCM upper bound under this metric; the shaded band marks 500--1500 bps.}}{5}{}\protected@file@percent }
+\newlabel{fig:visqol}{{3}{5}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}ViSQOL Perceptual Quality}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Clean Full-set Generalization}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces ViSQOL differences \(\Delta \)MOS-LQO = SCIT-Speech-LCA{} minus baseline.}}{6}{}\protected@file@percent }
+\newlabel{tab:visqol}{{II}{6}{}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Full-set clean evaluation. \(\Delta \) denotes LCA minus Base.}}{6}{}\protected@file@percent }
+\newlabel{tab:clean_full}{{III}{6}{}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Index Perturbation, Packet Loss, and Burst Loss}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}ASR/WER Subsets}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-F}}English Cross-corpus Zero-shot}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-G}}System Prototype Validation}{6}{}\protected@file@percent }
+\newlabel{sec:prototype}{{\mbox  {V-G}}{6}{}{subsection.5.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Ablation}{6}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Full-set high index perturbation and evaluation-only loss robustness. \(\Delta \) denotes LCA minus Base.}}{7}{}\protected@file@percent }
+\newlabel{tab:perturb_delta}{{IV}{7}{}{table.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Perturbation robustness on LibriSpeech test-other (\(n=2939\)). Solid lines are LCA, dashed lines are Base, and colors encode \(L\in \{1,2,3\}\). Across mel-L1 and STOI, LCA is consistently better under previous-frame coverage, random substitution, packet loss, and burst loss.}}{7}{}\protected@file@percent }
+\newlabel{fig:perturb}{{4}{7}{}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Whisper WER under high index perturbations. The annotations show LCA minus Base in percentage points. LCA consistently improves test-other, while test-clean gains are concentrated at \(L=1\).}}{7}{}\protected@file@percent }
+\newlabel{fig:wer}{{5}{7}{}{figure.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Limitations}{7}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Perturbed ASR results with Whisper base.en.}}{8}{}\protected@file@percent }
+\newlabel{tab:wer_pert}{{V}{8}{}{table.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Three-user central-router prototype architecture. All clients pre-share the same SCIT-Speech-LCA{} weights, RVQ codebooks, and decoder. Runtime clients send RVQ index packets to the central router; the router performs packet forwarding only and does not decode or access codebooks.}}{8}{}\protected@file@percent }
+\newlabel{fig:router}{{6}{8}{}{figure.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Clean ASR results with Whisper base.en.}}{8}{}\protected@file@percent }
+\newlabel{tab:wer_clean}{{VI}{8}{}{table.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces English cross-corpus zero-shot clean reconstruction for SCIT-Speech-Base{}.}}{8}{}\protected@file@percent }
+\newlabel{tab:vctk}{{VII}{8}{}{table.7}{}}
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{zeghidour2021soundstream}{1}
+\bibcite{defossez2022encodec}{2}
+\bibcite{kumar2023dac}{3}
+\bibcite{zhang2023speechtokenizer}{4}
+\bibcite{ji2024wavtokenizer}{5}
+\bibcite{defossez2024moshi}{6}
+\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces Three-client TCP prototype measurement. RTF entries are mean / worst endpoint mean.}}{9}{}\protected@file@percent }
+\newlabel{tab:prototype}{{VIII}{9}{}{table.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces LCA factorized variants.}}{9}{}\protected@file@percent }
+\newlabel{tab:variants}{{IX}{9}{}{table.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{9}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Cumulative contribution of the LCA components. Error bars are 95\% confidence intervals over the paired 256-sample, 12-cell robustness evaluation.}}{9}{}\protected@file@percent }
+\newlabel{fig:ablation}{{7}{9}{}{figure.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {X}{\ignorespaces Twelve-cell mel robustness improvement for V0--V4.}}{9}{}\protected@file@percent }
+\newlabel{tab:ablation}{{X}{9}{}{table.10}{}}
+\@writefile{toc}{\contentsline {section}{References}{9}{}\protected@file@percent }
+\bibcite{weng2021deepscs}{7}
+\bibcite{weng2022deepscst}{8}
+\bibcite{qin2022semantic}{9}
+\bibcite{tian2025largesc}{10}
+\bibcite{han2025packetloss}{11}
+\bibcite{huang2023repcodec}{12}
+\bibcite{hsu2021hubert}{13}
+\bibcite{borsos2022audiolm}{14}
+\bibcite{wang2023valle}{15}
+\bibcite{bourtsoulatze2018deepjscc}{16}
+\bibcite{valin2022plc}{17}
+\bibcite{westhausen2022tplcnet}{18}
+\bibcite{liu2018darts}{19}
+\bibcite{cai2018proxylessnas}{20}
+\bibcite{luo2021lightspeech}{21}
+\bibcite{valin2012opus}{22}
+\bibcite{itu2002amrwb}{23}
+\bibcite{codec2repo}{24}
+\bibcite{taal2011stoi}{25}
+\bibcite{itu2001pesq}{26}
+\bibcite{chinen2020visqol}{27}
+\bibcite{radford2022whisper}{28}
+\@writefile{lot}{\contentsline {table}{\numberline {XI}{\ignorespaces Paired marginal contribution tests for LCA components.}}{10}{}\protected@file@percent }
+\newlabel{tab:ablation_tests}{{XI}{10}{}{table.11}{}}
+\@writefile{toc}{\contentsline {section}{Appendix}{10}{}\protected@file@percent }
+\gdef \@abspage@last{11}

@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0026
+# model=base
+# L=3
+
+GT:
+THOU EVIL FLATTERER
+
+Whisper(original):
+Now it will saturate
+
+Whisper(decoded):
+Don't give a sec

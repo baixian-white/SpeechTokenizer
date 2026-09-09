@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0007
+# model=lca
+# L=2
+
+GT:
+AND HE ALSO IMPROVISED THE TWO FOLLOWING DISTICHS
+
+Whisper(original):
+And he also improvised the two following these stitches.
+
+Whisper(decoded):
+And he also improvised the two following the stitch.

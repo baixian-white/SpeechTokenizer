@@ -1,0 +1,254 @@
+{
+  "layer_reconstruction": [
+    {
+      "sample_id": "8838-298545-0037",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.05377739295363426,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "8838-298545-0037",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.04184887185692787,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "8838-298545-0037",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.03584904968738556,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "5390-30102-0015",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.027238840237259865,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "5390-30102-0015",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.02240198291838169,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "5390-30102-0015",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.01961366832256317,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "4018-103416-0033",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.03422271087765694,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "4018-103416-0033",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.023008521646261215,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "4018-103416-0033",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.022548936307430267,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "1737-148989-0006",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.02560366503894329,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "1737-148989-0006",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.02330613136291504,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "1737-148989-0006",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.022565292194485664,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "1455-138263-0040",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.00961150974035263,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "1455-138263-0040",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.009314978495240211,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "1455-138263-0040",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.009342861361801624,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "311-124404-0119",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.028117710724473,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "311-124404-0119",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.025246120989322662,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "311-124404-0119",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.023618951439857483,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "4680-16026-0019",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.05076098442077637,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "4680-16026-0019",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.03794821351766586,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "4680-16026-0019",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.03379431366920471,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "8098-278278-0035",
+      "L": 1,
+      "ideal_bitrate_bps": 500,
+      "recon_l1": 0.030068473890423775,
+      "codes_shape": "[1, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "8098-278278-0035",
+      "L": 2,
+      "ideal_bitrate_bps": 1000,
+      "recon_l1": 0.027195138856768608,
+      "codes_shape": "[2, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    },
+    {
+      "sample_id": "8098-278278-0035",
+      "L": 3,
+      "ideal_bitrate_bps": 1500,
+      "recon_l1": 0.024811089038848877,
+      "codes_shape": "[3, 1, 50]",
+      "output_shape": "[1, 1, 16000]",
+      "duration_sec": 1.0
+    }
+  ],
+  "codebook_usage": [
+    {
+      "layer": 1,
+      "codebook_size": 1024,
+      "used_codes": 132,
+      "usage_rate": 0.12890625,
+      "perplexity": 84.72664214371329,
+      "dead_codes": 892,
+      "dead_code_ratio": 0.87109375,
+      "top1_frequency": 0.0825
+    },
+    {
+      "layer": 2,
+      "codebook_size": 1024,
+      "used_codes": 265,
+      "usage_rate": 0.2587890625,
+      "perplexity": 216.7691152805117,
+      "dead_codes": 759,
+      "dead_code_ratio": 0.7412109375,
+      "top1_frequency": 0.04
+    },
+    {
+      "layer": 3,
+      "codebook_size": 1024,
+      "used_codes": 278,
+      "usage_rate": 0.271484375,
+      "perplexity": 238.37768872899306,
+      "dead_codes": 746,
+      "dead_code_ratio": 0.728515625,
+      "top1_frequency": 0.0175
+    }
+  ],
+  "checkpoint": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\supplementary\\S2_C_distill30_20260528_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+  "checkpoint_sha256": "72276949e9b0373463c9c9440452cbb9e2498f6e2f6fc88315b5e66499ea8105"
+}

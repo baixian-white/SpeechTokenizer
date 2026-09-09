@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0031
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+ONCE MARGARET HAD GONE INTO THE CHAMBER SOON AFTER DIXON LEFT IT AND FOUND HER MOTHER ON HER KNEES AND AS MARGARET STOLE OUT SHE CAUGHT A FEW WORDS WHICH WERE EVIDENTLY A PRAYER FOR STRENGTH AND PATIENCE TO ENDURE SEVERE BODILY SUFFERING
+
+Whisper(original):
+Once Margaret had gone into the chamber soon after Dixim lifted, and found her mother on her knees, and as Margaret stole out, she caught a few words which were evidently a prayer for strength and patience to induce severe bodily suffering.
+
+Whisper(decoded):
+Once Margaret had gone into the chain of sin after being submitted, and found her mother on her knees, and as Margaret stole her out, she caught a few words which were evidently at prayer for strength and patience to induce a mere bodily suffering.

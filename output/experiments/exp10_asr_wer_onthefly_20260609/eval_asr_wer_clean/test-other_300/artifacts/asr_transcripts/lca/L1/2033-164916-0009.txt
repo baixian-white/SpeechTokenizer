@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0009
+# model=lca
+# L=1
+
+GT:
+MOREOVER THE SULTAN COMMANDED HIS WAZIR DANDAN CALL A TEN DAYS HALT OF THE ARMY THAT HE MIGHT BE PRIVATE WITH HIM AND LEARN FROM HIM HOW AND WHEREFORE HIS FATHER HAD BEEN SLAIN
+
+Whisper(original):
+Moreover, the Sultan commanded his wasier than done, call a ten-day halt of the army, that he might be private with him, and learn from him how and wherefore his father had been slain.
+
+Whisper(decoded):
+What over, the Sultan provided she was here then done, called at ten days' hopes, of the army. That she might private the hymn, and learn from him, how, and wherefore, his father had been slain.

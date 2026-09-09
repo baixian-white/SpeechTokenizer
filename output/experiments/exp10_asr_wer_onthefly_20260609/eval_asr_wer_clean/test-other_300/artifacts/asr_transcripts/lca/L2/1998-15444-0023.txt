@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0023
+# model=lca
+# L=2
+
+GT:
+SEPARATE THE ETHEREAL SOLUTION AND EVAPORATE
+
+Whisper(original):
+Separate the ethereal solution and evaporate.
+
+Whisper(decoded):
+Separate the ephemera solution under vibrate.

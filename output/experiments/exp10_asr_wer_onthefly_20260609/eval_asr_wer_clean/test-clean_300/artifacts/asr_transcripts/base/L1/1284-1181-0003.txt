@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0003
+# model=base
+# L=1
+
+GT:
+THE HAIR WAS OF BROWN YARN AND HUNG DOWN ON HER NECK IN SEVERAL NEAT BRAIDS
+
+Whisper(original):
+The hair was of brown yarn and hung down on her neck in several neat braids.
+
+Whisper(decoded):
+The hair was a brown yarn and hung down on her neck in several lead braids.

@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0004
+# model=base
+# L=3
+
+GT:
+WHEN DICKIE CAME DOWN HIS AUNT SLIGHTLY SLAPPED HIM AND HE TOOK THE HALFPENNY AND LIMPED OFF OBEDIENTLY
+
+Whisper(original):
+When Dickey came down, his aunt slightly slapped him and he took the half-penny and limped off obediently.
+
+Whisper(decoded):
+When the key came down his arms satisfied him and he took the half-pinning them to a obediently.

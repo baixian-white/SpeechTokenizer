@@ -1,0 +1,9 @@
+ablation_id,variant_id,L,channel,encoder_params,encoder_macs,encoder_rtf_mean,mel_l1,stoi,pesq_wb,si_snr_db,wer_vs_gt,sample_count,notes
+A1_nas_vs_hand,A1_hand_designed,,profile_only,67705856,5869363200,0.00818658000061987,,,,,,,from exp1 stage1_profile (proxy short training)
+A1_nas_vs_hand,A1_nas_encoder,,profile_only,8873360,618393600,0.0036764600008609705,,,,,,,from exp1 stage1_profile (proxy short training)
+A2_base_vs_lca,A2_scit_base,1,clean,,,,1.2021676898002625,0.7866416790863908,1.333045855164528,-7.182592967459567,0.44733227968377454,8,from exp4 184-row evaluation (clean conditions)
+A2_base_vs_lca,A2_scit_lca,1,clean,,,,1.1465983241796494,0.7969981190227354,1.3465678691864014,-7.772322346300925,0.4611359938907146,8,from exp4 184-row evaluation (clean conditions)
+A2_base_vs_lca,A2_scit_base,2,clean,,,,0.9547102600336075,0.8441734682930951,1.7072670757770538,-1.4465246637350542,0.23132716953035604,8,from exp4 184-row evaluation (clean conditions)
+A2_base_vs_lca,A2_scit_lca,2,clean,,,,0.9225965216755867,0.8566880639346897,1.708939552307129,-1.7605037326701485,0.18748316221762323,8,from exp4 184-row evaluation (clean conditions)
+A2_base_vs_lca,A2_scit_base,3,clean,,,,0.8915158957242966,0.8697350591790336,1.9123446345329285,0.35442711937581844,0.15738583308901954,8,from exp4 184-row evaluation (clean conditions)
+A2_base_vs_lca,A2_scit_lca,3,clean,,,,0.8587384596467018,0.8790310573314747,1.891273632645607,-0.029083785192543177,0.14190995591959402,8,from exp4 184-row evaluation (clean conditions)

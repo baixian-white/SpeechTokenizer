@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0009
+# model=base
+# L=3
+
+GT:
+HE WHO RECITED THE FIRST TIME HATH RECITED A SECOND TIME AND I HEARD HIM HARD BY
+
+Whisper(original):
+He who recited the first time, had recited the second time, and I heard him hard by.
+
+Whisper(decoded):
+He who recited the first time had recited the second time, and I heard him hard by.

@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0022
+# model=base
+# L=2
+
+GT:
+THEN THE EUNUCH WENT OUT TO ZAU AL MAKAN AND SAID TO HIM RECITE WHAT VERSES THOU KNOWEST FOR MY LADY IS HERE HARD BY LISTENING TO THEE AND AFTER I WILL ASK THEE OF THY NAME AND THY NATIVE COUNTRY AND THY CONDITION
+
+Whisper(original):
+Then the eunuch went out to Zaul Makan and said to him, recite what verses thou knowest, for my ladies hear hard by, listening to thee, and after I will ask thee of thy name and thy native country and thy condition.
+
+Whisper(decoded):
+Then the Unuch went out to Zaul Makan and said to him, recite what verses down know us, for my ladies hear hard by, listening to thee, and after I will ask thee of thy name and thy native country, and thy condition.

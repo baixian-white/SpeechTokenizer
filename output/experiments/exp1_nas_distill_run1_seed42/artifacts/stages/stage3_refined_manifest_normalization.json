@@ -1,0 +1,12 @@
+{
+  "source_path": "data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+  "output_path": "output\\experiments\\exp1_nas_distill_run1_seed42\\artifacts\\stages\\stage3_refined_subset.txt",
+  "total_read": 16,
+  "written": 16,
+  "missing_audio": 0,
+  "missing_feature": 0,
+  "mapped_paths": 16,
+  "bad_rows": 0,
+  "truncated_to": 16,
+  "missing_examples": []
+}

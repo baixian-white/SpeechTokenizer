@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0038
+# model=lca
+# L=2
+
+GT:
+THEY DID NOT STAY THERE BUT WALKED OUT ACROSS THE DOWNS WHERE THE SKYLARKS WERE SINGING AND ON A DIP OF THE DOWNS CAME UPON GREAT STONE WALLS AND TOWERS VERY STRONG AND GRAY
+
+Whisper(original):
+They did not stay there but walked out across the downs. With the sky-lax were singing and on a dip of the downs, came upon great stone walls and towers very strong and grey.
+
+Whisper(decoded):
+Lived it on stage there, but walked out across the stones, with the sky-lapse with singing and or a dip of the stones came upon great stone walls and told us they strong and gray.

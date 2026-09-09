@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0014
+# model=base
+# L=3
+
+GT:
+IN THE ABSENCE OF A HYPODERMIC SYRINGE THE REMEDY MAY BE GIVEN BY THE RECTUM
+
+Whisper(original):
+In the absence of the hypodermic syringe, the remedy may be given by the rectum.
+
+Whisper(decoded):
+In the absence of the hydrodermic syringe, the remedy may be given by the rectum.

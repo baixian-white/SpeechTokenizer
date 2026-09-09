@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0014
+# model=base
+# L=1
+
+GT:
+DICKIE QUICK TO IMITATE TOUCHED HIS
+
+Whisper(original):
+Dickey quick to imitate touched his.
+
+Whisper(decoded):
+The key question is with touchness.

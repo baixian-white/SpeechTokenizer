@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0023
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+WHY WAS THE SACRAMENT OF THE EUCHARIST INSTITUTED UNDER THE TWO SPECIES OF BREAD AND WINE IF JESUS CHRIST BE PRESENT BODY AND BLOOD SOUL AND DIVINITY IN THE BREAD ALONE AND IN THE WINE ALONE
+
+Whisper(original):
+Why was the sacrament of the Eucharist instituted under the two species of bread and wine if Jesus Christ be present, body and blood, soul and divinity in the bread alone and in the wine alone?
+
+Whisper(decoded):
+While was the sacrament of the Eucharist is to conjured under the two species of bread and wine, if Jesus Christ be present, body and blood, so went divinity, in the bread and mown, and in the wine of all.

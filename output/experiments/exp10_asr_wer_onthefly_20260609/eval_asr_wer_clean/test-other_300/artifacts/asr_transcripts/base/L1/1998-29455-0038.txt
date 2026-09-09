@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0038
+# model=base
+# L=1
+
+GT:
+THEY DID NOT STAY THERE BUT WALKED OUT ACROSS THE DOWNS WHERE THE SKYLARKS WERE SINGING AND ON A DIP OF THE DOWNS CAME UPON GREAT STONE WALLS AND TOWERS VERY STRONG AND GRAY
+
+Whisper(original):
+They did not stay there but walked out across the downs. With the sky-lax were singing and on a dip of the downs, came upon great stone walls and towers very strong and grey.
+
+Whisper(decoded):
+With a different street there, I'd walk down to rest the downs. With this balance and singing, and I did rest the downs, I'd go and play the stone wards and tell us, please, to run and play.

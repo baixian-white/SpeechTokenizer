@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0020
+# model=lca
+# L=2
+
+GT:
+HELLO STEPHANOS HERE COMES THE DEDALUS
+
+Whisper(original):
+Hello, Stefanos. Here comes the Daedalus.
+
+Whisper(decoded):
+Hello, Staphanos. Here comes the Daedalus.

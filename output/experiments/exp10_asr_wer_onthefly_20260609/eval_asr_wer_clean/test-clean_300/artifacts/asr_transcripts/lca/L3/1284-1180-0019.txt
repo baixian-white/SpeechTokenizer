@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0019
+# model=lca
+# L=3
+
+GT:
+YOU MUST KNOW SAID MARGOLOTTE WHEN THEY WERE ALL SEATED TOGETHER ON THE BROAD WINDOW SEAT THAT MY HUSBAND FOOLISHLY GAVE AWAY ALL THE POWDER OF LIFE HE FIRST MADE TO OLD MOMBI THE WITCH WHO USED TO LIVE IN THE COUNTRY OF THE GILLIKINS TO THE NORTH OF HERE
+
+Whisper(original):
+"'You must know,' said Mark a lot, when they were all seated together on the broad window-seat, that my husband foolishly gave away all the powder of life he first made to old Mambi the witch who used to live in the country of the Gillicans to the north of here."
+
+Whisper(decoded):
+"'You must know,' said Mark a lot, when they were all seated together on the broad window-seat, that my husband foolishly gave away all the powder of life he first made to Old Mambi the witch who used to live in the country of the Gillicans to the north at here."

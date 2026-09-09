@@ -1,0 +1,12 @@
+# sample_id=1284-134647-0001
+# model=base
+# L=1
+
+GT:
+THE EDICT OF MILAN THE GREAT CHARTER OF TOLERATION HAD CONFIRMED TO EACH INDIVIDUAL OF THE ROMAN WORLD THE PRIVILEGE OF CHOOSING AND PROFESSING HIS OWN RELIGION
+
+Whisper(original):
+The Edict of Milan, the great Charter of Toleration, had confirmed to each individual of the Roman world the privilege of choosing and professing his own religion.
+
+Whisper(decoded):
+The event of Milan, the great charter of toleration, had been found to eat individual of the growing world that privileged in choosing and professing his own origin.

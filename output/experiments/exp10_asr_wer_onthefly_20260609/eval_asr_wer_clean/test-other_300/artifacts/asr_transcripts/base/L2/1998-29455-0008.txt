@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0008
+# model=base
+# L=2
+
+GT:
+SEE IM CROST THE ROAD THERE SEE HIM
+
+Whisper(original):
+seam, cross the road there, seam.
+
+Whisper(decoded):
+See you. What's the worth it? See you.

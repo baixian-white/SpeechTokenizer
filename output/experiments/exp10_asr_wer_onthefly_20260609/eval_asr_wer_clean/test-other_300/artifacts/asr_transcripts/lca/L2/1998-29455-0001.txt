@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0001
+# model=lca
+# L=2
+
+GT:
+WHAT'S ALL THAT THERE DICKIE ASKED POINTING TO THE ODD KNOBBLY BUNDLES OF ALL SORTS AND SHAPES TIED ON TO THE PERAMBULATOR'S FRONT
+
+Whisper(original):
+What's on that there, Dicky asked, pointing to the odd, knobbly bundles of all sorts and shapes tied onto the preamble later's front.
+
+Whisper(decoded):
+What's on that there?" Gicky asked, pointing to the utter knovely bangles of old swords and shapes, tied onto the prey and relate as front.

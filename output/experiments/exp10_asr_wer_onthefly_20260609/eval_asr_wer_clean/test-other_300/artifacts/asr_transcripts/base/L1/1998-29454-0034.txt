@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0034
+# model=base
+# L=1
+
+GT:
+WILD ONES AIN'T ALF THE SIZE I LAY
+
+Whisper(original):
+White once and a half size LA.
+
+Whisper(decoded):
+Weight runs and heart size are new.

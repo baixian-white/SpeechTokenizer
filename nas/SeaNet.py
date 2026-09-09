@@ -134,7 +134,7 @@ class SEANetEncoder(nn.Module):
         if lstm:
             model += [SLSTM(mult * n_filters, num_layers=lstm, bidirectional=bidirectional)]
 
-        mult = mult * 2 if bidirectional else mult
+        mult = mult * 2 if (lstm and bidirectional) else mult
 
         # 4. 最终投影层 (Project to dimension)
         model += [

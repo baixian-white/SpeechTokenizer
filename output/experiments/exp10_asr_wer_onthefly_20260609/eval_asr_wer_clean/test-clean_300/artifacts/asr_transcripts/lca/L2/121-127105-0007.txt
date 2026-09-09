@@ -1,0 +1,12 @@
+# sample_id=121-127105-0007
+# model=lca
+# L=2
+
+GT:
+TO THIS HIS ANSWER WAS PROMPT OH THANK GOD NO AND IS THE RECORD YOURS
+
+Whisper(original):
+To this his answer was prompt. Oh, thank God. No, and is the record yours?
+
+Whisper(decoded):
+To this his answer was prompt, oh, thank God, no, and is the record yours?

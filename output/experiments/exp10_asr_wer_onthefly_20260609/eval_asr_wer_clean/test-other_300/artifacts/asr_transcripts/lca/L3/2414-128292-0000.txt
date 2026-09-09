@@ -1,0 +1,12 @@
+# sample_id=2414-128292-0000
+# model=lca
+# L=3
+
+GT:
+WHITHER HATH MY LONESOMENESS GONE SPAKE HE
+
+Whisper(original):
+With a hat my lonesome disc on Spakey
+
+Whisper(decoded):
+With a hat my lance of this call stay here

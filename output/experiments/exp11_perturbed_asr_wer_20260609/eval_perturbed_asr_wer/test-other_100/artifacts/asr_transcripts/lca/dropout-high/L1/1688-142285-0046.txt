@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0046
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+NOUGHT WORSE THAN MANY OTHERS I RECKON
+
+Whisper(original):
+Not worse than many others I reckon.
+
+Whisper(decoded):
+Not worse than any other to reckon.

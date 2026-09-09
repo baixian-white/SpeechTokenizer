@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0040
+# model=lca
+# L=2
+
+GT:
+SOME BLOKES THINK IT PAYS TO BE DIRTY BUT IT DON'T
+
+Whisper(original):
+Some looks think it pays to be dirty, but it don't.
+
+Whisper(decoded):
+Some those think it tends to be dirty, that it don't.

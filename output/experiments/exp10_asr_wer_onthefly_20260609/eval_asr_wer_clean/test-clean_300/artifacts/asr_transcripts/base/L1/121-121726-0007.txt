@@ -1,0 +1,12 @@
+# sample_id=121-121726-0007
+# model=base
+# L=1
+
+GT:
+HORSE SENSE A DEGREE OF WISDOM THAT KEEPS ONE FROM BETTING ON THE RACES
+
+Whisper(original):
+Horse sense. A degree of wisdom that keeps one from betting on the races.
+
+Whisper(decoded):
+Horsersons In degree of wisdom the keeps won from betting on the races

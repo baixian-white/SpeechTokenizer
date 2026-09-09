@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0018
+# model=lca
+# L=1
+
+GT:
+AGAIN AGAIN
+
+Whisper(original):
+Again, again.
+
+Whisper(decoded):
+Again, again.

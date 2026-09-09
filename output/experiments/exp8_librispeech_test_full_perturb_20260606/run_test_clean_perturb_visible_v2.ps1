@@ -1,0 +1,22 @@
+﻿$ErrorActionPreference = 'Continue'
+Set-Location 'H:\H-CODE\speechtokenizer'
+New-Item -ItemType Directory -Force -Path 'H:\H-CODE\speechtokenizer\output\experiments\exp8_librispeech_test_full_perturb_20260606\logs' | Out-Null
+'VISIBLE_V2_STARTED ' + (Get-Date) | Set-Content 'H:\H-CODE\speechtokenizer\output\experiments\exp8_librispeech_test_full_perturb_20260606\logs\visible_v2_marker.txt'
+Start-Transcript -Path 'H:\H-CODE\speechtokenizer\output\experiments\exp8_librispeech_test_full_perturb_20260606\logs\test-clean_perturb_full_transcript.log' -Append
+Write-Host '=== SCIT full LibriSpeech perturb eval: test-clean ==='
+Write-Host 'Using conda env python directly.'
+Write-Host ('Started at: ' + (Get-Date))
+& 'C:\Users\Windows11\.conda\envs\speechtokenizer\python.exe' scripts/evaluate_perturb_large_nosave.py `
+  --run-dir output/experiments/exp8_librispeech_test_full_perturb_20260606/eval_perturb_full_lca_nosave/test-clean `
+  --base-config output/experiments/exp2_scit_speech_distill30_retrain_20260529_seed42/configs/scit_speech_base_config.json `
+  --base-checkpoint output/experiments/exp2_scit_speech_distill30_retrain_20260529_seed42/checkpoints/SCIT-Speech-Base_best.pt `
+  --lca-config output/experiments/exp6_librispeech_test_subset_20260606/configs/full_lca_perturb_eval_config.json `
+  --lca-checkpoint output/experiments/exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42/checkpoints/SCIT-Speech-LCA_v2_step30000_robust_optimum.pt `
+  --sample-list output/experiments/exp7_librispeech_test_full_clean_20260606/artifacts/test-clean_all_files.txt `
+  --save-sample-count 5 `
+  --device cuda
+$exitCode = $LASTEXITCODE
+Write-Host ('Python exit code: ' + $exitCode)
+Write-Host ('Finished at: ' + (Get-Date))
+Stop-Transcript
+exit $exitCode

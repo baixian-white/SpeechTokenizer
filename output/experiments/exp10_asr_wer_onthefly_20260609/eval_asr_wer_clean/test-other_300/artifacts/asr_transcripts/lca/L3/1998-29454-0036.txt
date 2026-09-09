@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0036
+# model=lca
+# L=3
+
+GT:
+AH SAID DICKIE AND A FULL SILENCE FELL BETWEEN THEM
+
+Whisper(original):
+Ahh, satiggy, and the food silence fell between them.
+
+Whisper(decoded):
+I asked the tiki and the food side and the spout between them.

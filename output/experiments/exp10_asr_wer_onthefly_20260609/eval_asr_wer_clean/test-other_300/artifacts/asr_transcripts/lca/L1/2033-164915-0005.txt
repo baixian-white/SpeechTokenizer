@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0005
+# model=lca
+# L=1
+
+GT:
+BUT NOW GO TO THY MASTER AND BRING HIM QUICKLY TO ME
+
+Whisper(original):
+But now go to thy master and bring him quickly to me.
+
+Whisper(decoded):
+But now go to thy master, and be shimpy to me.

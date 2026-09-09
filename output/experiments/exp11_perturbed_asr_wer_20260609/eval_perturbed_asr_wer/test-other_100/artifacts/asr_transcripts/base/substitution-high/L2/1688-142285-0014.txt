@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0014
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+SO THEY LEFT MILTON
+
+Whisper(original):
+So they left Milton.
+
+Whisper(decoded):
+So that they left no to you.

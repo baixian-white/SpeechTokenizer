@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0006
+# model=lca
+# L=1
+
+GT:
+THE PRIDE OF THAT DIM IMAGE BROUGHT BACK TO HIS MIND THE DIGNITY OF THE OFFICE HE HAD REFUSED
+
+Whisper(original):
+The pride of that dim image brought back to his mind the dignity of the office he had refused.
+
+Whisper(decoded):
+The part that didn't image brought back to his mind for dignity of the office he had refused.

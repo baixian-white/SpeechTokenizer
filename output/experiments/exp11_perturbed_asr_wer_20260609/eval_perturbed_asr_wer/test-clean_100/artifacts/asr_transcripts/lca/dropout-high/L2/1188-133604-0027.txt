@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0027
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+NOW HERE IS RAPHAEL EXACTLY BETWEEN THE TWO TREES STILL DRAWN LEAF BY LEAF WHOLLY FORMAL BUT BEAUTIFUL MIST COMING GRADUALLY INTO THE DISTANCE
+
+Whisper(original):
+Now here is Raphael. Exactly between the two, trees still drawn leaf by leaf, wholly formal, but beautiful mist come in gradually into the distance.
+
+Whisper(decoded):
+Now here's Raphael. Exactly between the two, trees still draw on leaf by leaf, wholly formal. The beautiful mist can then gradually enter the distance.

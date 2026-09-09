@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0024
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+STEPHANOS DEDALOS
+
+Whisper(original):
+Stefanos dead loss
+
+Whisper(decoded):
+Stuff and all, stuff and all, stuff and all.

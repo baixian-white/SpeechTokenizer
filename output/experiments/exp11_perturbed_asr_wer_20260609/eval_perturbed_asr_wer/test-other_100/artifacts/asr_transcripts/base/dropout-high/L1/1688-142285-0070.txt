@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0070
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+BUT YOU WILL BE THERE FATHER YOU SHALL OH MY HEART
+
+Whisper(original):
+But you'll be there father you shall oh my heart
+
+Whisper(decoded):
+But to be there for me is shall come her heart.

@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0017
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+THE EUROPE THEY HAD COME FROM LAY OUT THERE BEYOND THE IRISH SEA EUROPE OF STRANGE TONGUES AND VALLEYED AND WOODBEGIRT AND CITADELLED AND OF ENTRENCHED AND MARSHALLED RACES
+
+Whisper(original):
+The Europe they had come from lay out there beyond the Irish Sea, Europe of strange tongues and valid and wood-beagert and citadeld and of entrenched and marshalled races.
+
+Whisper(decoded):
+The Europe they had come from lay out there beyond the IRC, Europe of strange tons and valleyed and woodbeakered and citadelled and of entrenched and marshalled races.

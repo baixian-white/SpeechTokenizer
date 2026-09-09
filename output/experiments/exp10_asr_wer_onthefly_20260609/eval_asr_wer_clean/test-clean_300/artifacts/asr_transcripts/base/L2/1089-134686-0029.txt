@@ -1,0 +1,12 @@
+# sample_id=1089-134686-0029
+# model=base
+# L=2
+
+GT:
+ON FRIDAY CONFESSION WILL BE HEARD ALL THE AFTERNOON AFTER BEADS
+
+Whisper(original):
+On Friday, confession will be heard all the afternoon after beads.
+
+Whisper(decoded):
+On Friday, confession will be heard all the afternoon after beads.

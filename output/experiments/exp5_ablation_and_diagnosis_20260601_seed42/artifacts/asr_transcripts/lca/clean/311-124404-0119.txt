@@ -1,0 +1,9 @@
+# method=lca setting=clean sample_id=311-124404-0119
+# GT (LibriSpeech):
+THERE IS NONE THAT IS MORE POWERFUL IN LEADING FEEBLE MINDS ASTRAY FROM THE STRAIGHT PATH OF VIRTUE
+
+# Whisper(original):
+There is none that is more powerful in leading feeble minds astray from the straight path of virtue
+
+# Whisper(decoded):
+There is no that is more powerful in leading the feeble minds astray in a straight path of virtue.

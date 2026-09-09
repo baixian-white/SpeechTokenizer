@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0003
+# model=lca
+# L=1
+
+GT:
+REJOINED THE EUNUCH WHO THEN WAS THE RECITER POINT HIM OUT TO ME
+
+Whisper(original):
+Rejoin the UNUC. Who then was the reciter? Point him out to me.
+
+Whisper(decoded):
+Retime the unit. Whose time was the insider? Mind she know to me?

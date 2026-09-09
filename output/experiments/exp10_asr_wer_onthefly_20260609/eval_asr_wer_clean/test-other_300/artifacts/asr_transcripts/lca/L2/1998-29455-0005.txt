@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0005
+# model=lca
+# L=2
+
+GT:
+THEY'RE ONLY WEEDS SAID BEALE
+
+Whisper(original):
+They're only weeds, said Beel.
+
+Whisper(decoded):
+That only leads to you.

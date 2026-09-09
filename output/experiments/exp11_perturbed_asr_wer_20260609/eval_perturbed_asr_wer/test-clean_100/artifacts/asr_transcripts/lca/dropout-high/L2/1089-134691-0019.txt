@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0019
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+A VOICE FROM BEYOND THE WORLD WAS CALLING
+
+Whisper(original):
+A voice from beyond the world was calling.
+
+Whisper(decoded):
+A voice from beyond the world was calling.

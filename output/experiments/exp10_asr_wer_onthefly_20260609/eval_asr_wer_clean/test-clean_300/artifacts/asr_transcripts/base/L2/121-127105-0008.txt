@@ -1,0 +1,12 @@
+# sample_id=121-127105-0008
+# model=base
+# L=2
+
+GT:
+HE HUNG FIRE AGAIN A WOMAN'S
+
+Whisper(original):
+He hung fire again, a woman's.
+
+Whisper(decoded):
+He hung fire at them, old woman's.

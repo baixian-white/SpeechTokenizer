@@ -1,0 +1,828 @@
+IEEE SENSORS JOURNAL, VOL. XX, NO. XX, XXXX 2024
+1
+Adv-DARTS: Robustness Enhancement
+Framework Based on Adversarial Differentiable
+Architecture Search
+Jianwei Tai, Cheng Qian, Shuangning Yang and Kun Jing
+Abstract— Deep neural networks have become a pivotal compo-
+nent in modern embedded systems for smart sensing. However,
+their vulnerability to adversarial examples poses a severe threat
+to applications deployed in safety-critical edge domains. Currently,
+adversarial training is the dominant defense strategy against adver-
+sarial attacks. Nevertheless, standard adversarial training typically
+optimizes parameters on fixed, manually designed architectures,
+overlooking the impact of the architecture itself on robustness.
+On the other hand, neural architecture search, represented by
+differentiable architecture search, automates the design of high-
+performance model architectures. Yet, differentiable architecture
+search strategies optimize almost exclusively for accuracy on clean
+samples. Their search process fails to incorporate robustness considerations. Consequently, the discovered architectures
+lack robustness, and their reliability in safety-critical applications cannot be guaranteed. To address these limitations, we
+propose Adversarial Differentiable Architecture Search. It mainly consists of two components: a neural architecture search
+strategy based on an adversarial consistency penalty, and an adversarial training pipeline. The core of the proposed
+framework lies in integrating adversarial examples into the neural architecture search process, thereby further enhancing
+the effectiveness of adversarial training. Experimental results demonstrate that our approach significantly improves the
+adversarial robustness of models. This provides a more stable and reliable decision-making foundation for intelligent
+embedded sensing systems.
+Index Terms— Adversarial robustness, Adversarial training, Bilevel optimization, Differentiable architecture search, Neural
+architecture search.
+I. INTRODUCTION
+Deep Neural Networks (DNNs) have demonstrated sig-
+nificant potential in various fields, particularly in the realm
+of modern embedded systems for smart sensing [1]. This
+field is dedicated to integrating physical sensing hardware
+with advanced computational algorithms at the edge to in-
+terpret complex environmental data and facilitate decision-
+making [2], [3]. As a prime representative of such advanced
+algorithms, DNNs have consequently become an indispens-
+able computational component of these intelligent embedded
+systems [4]. However, they are highly vulnerable to small
+but carefully crafted input perturbations, known as adver-
+sarial examples [5]–[7]. Specifically, the process of using
+specific algorithms to generate adversarial examples to deceive
+models is known as adversarial attacks. These examples can
+significantly degrade model recognition accuracy, hindering
+their application in safety-critical fields such as autonomous
+driving and medical diagnosis [8]. For example, in autonomous
+driving, Eykholt et al. demonstrated a physical attack. They
+Jianwei Tai, Cheng Qian, Shuangning Yang and Kun Jing are
+with the School of Internet, Anhui University, Hefei 230039, China
+(e-mail: 24012@ahu.edu.cn; 2650096247@qq.com; realyangshuangn-
+ing@gmail.com; jingkun@ahu.edu.cn). (Corresponding author: Kun
+Jing.)
+showed that pasting crafted stickers on a ”Stop” sign can
+mislead the vehicle’s visual system [9]. As a result, the
+system misclassifies the sign as a ”Speed Limit 45” sign [10].
+Similarly, in medical diagnosis, research has identified risks in
+X-ray analysis. Adding imperceptible perturbations to images
+of malignant tumors can cause the model to misdiagnose
+them as benign, thereby delaying patient treatment [11]. These
+issues highlight the vulnerability of deep learning models
+to adversarial attacks. Therefore, improving their adversarial
+robustness is a critical issue.
+Adversarial training (AT) is a primary defense method
+against adversarial attacks. It incorporates adversarial exam-
+ples during the training phase [12]. This process forces the
+model to learn more robust features [13]. Consequently, the
+model’s adversarial robustness is significantly improved. AT
+is widely proven to be one of the most effective and reliable
+strategies for enhancing model robustness [14], [15]. However,
+research indicates that model architecture differences also play
+a critical role in adversarial robustness [16], [17]. Current AT
+methods mainly focus on optimizing model parameters [14],
+[18]. They often overlook the critical impact of the architecture
+itself. Therefore, defense strategies should not solely focus on
+optimizing parameters for a fixed architecture. Architecture
+design must also be considered.
+
+
+2
+IEEE SENSORS JOURNAL, VOL. XX, NO. XX, XXXX 2024
+In this context, Neural Architecture Search (NAS) serves
+as a technique for automating model architecture design [19].
+It automatically explores vast design spaces. By doing so, it
+discovers novel and efficient network architectures. Among
+various NAS approaches, Differentiable Architecture Search
+(DARTS) stands out as a representative framework based
+on gradient optimization. It achieves high search efficiency
+and superior performance compared to manually designed
+models [20], [21]. However, existing DARTS-based strategies
+optimize almost exclusively for accuracy on clean samples.
+They fail to incorporate robustness into their search objec-
+tives. This single-objective strategy poses challenges to their
+reliability in safety-critical applications.
+To address these limitations, we propose Adversarial
+Differentiable Architecture Search, abbreviated as Adv-
+DARTS. This is a robustness enhancement framework based
+on adversarial differentiable architecture search. It integrates
+adversarial training into the search process to further enhance
+model robustness. Specifically, Adv-DARTS consists of two
+stages: adversarial neural architecture search and adversarial
+training.
+The first stage is adversarial neural architecture search.
+This stage builds upon Differentiable Architecture Search
+(DARTS). It introduces adversarial examples to update archi-
+tecture parameters. The goal is to automatically search for
+model architectures that simultaneously achieve high perfor-
+mance and adversarial robustness. Furthermore, to improve
+search effectiveness, the framework introduces an adversarial
+consistency penalty. This penalty minimizes the difference be-
+tween the outputs of clean samples and adversarial examples.
+After the search yields a fixed architecture, the adversarial
+training stage begins. In this stage, the derived architecture
+undergoes standard adversarial training, completing the entire
+robustness enhancement pipeline.
+Experimental results demonstrate that Adv-DARTS effec-
+tively combines differentiable architecture search with adver-
+sarial examples. It automatically discovers architectures with
+superior robustness. Consequently, the effectiveness of adver-
+sarial training is significantly enhanced, ultimately providing
+more stable and reliable models for intelligent embedded
+systems.
+The main contributions of this paper are summarized as
+follows:
+1) We propose a novel framework named Adv-DARTS,
+which introduces adversarial examples into neural ar-
+chitecture search for the first time, guiding the search
+process to discover more robust architectures.
+2) We introduce an adversarial consistency penalty to
+redesign the objective function of neural architecture
+search, ensuring that the search process simultaneously
+achieves high performance and adversarial robustness.
+3) We develop an analytical method to investigate the ro-
+bustness of different network architectures. This includes
+visualizing adversarial examples within neural activation
+layers, thereby enabling a preliminary analysis of their
+impact.
+II. METHODOLOGY
+A. Overall Framework
+As stated in the introduction, Adv-DARTS is a robustness
+enhancement framework based on adversarial differentiable
+architecture search. This framework primarily comprises two
+stages: adversarial neural architecture search and adversarial
+training.
+The core of Adv-DARTS lies in the first stage. Here, we
+formulate the adversarial architecture search as an iterative
+bilevel optimization process. Specifically, this process involves
+two alternating optimization loops. Both loops explicitly in-
+corporate adversarial examples.
+1) Outer Loop Optimization: We mix clean samples with
+adversarial samples. We then perform architecture search
+on this mixture to identify robust network architectures.
+2) Inner Loop Optimization: We similarly mix adversar-
+ial samples with clean samples. We use these samples
+to optimize the model weights based on the current
+architecture. These robust weights are then used to
+update the architecture parameters.
+These two optimization steps alternate to yield the final
+network architecture. Furthermore, to enhance search stabil-
+ity, we introduce an adversarial consistency penalty into the
+optimization objective.
+Upon completion of the search, we perform adversarial
+training on the fixed architecture to obtain the final model.
+In the following sections, we first introduce the generation
+of adversarial examples. Then, we describe the adversarial
+neural architecture search. Finally, we detail the loss functions.
+The general framework of Adv-DARTS is illustrated in Fig. 1.
+B. Adversarial Perturbation
+1) Explanation of Adversarial Perturbation: The core of the
+Adv-DARTS framework lies in integrating adversarial exam-
+ples into the bilevel optimization process of differentiable
+architecture search. To clearly understand the technical details
+of this framework, we first need to clarify the mathematical
+definition of the basic concept of adversarial perturbation.
+Let θ denote the model parameters, x the clean input sample,
+and y its corresponding label. The objective of an adversarial
+attack is to find a perturbation δ that maximizes the model’s
+loss function L on the adversarial sample x′.
+To ensure the perturbation is visually imperceptible, δ must
+be constrained within a set S. In many adversarial attacks, this
+set S is defined by the L∞norm, with the constraint:
+∥δ∥∞≤ϵ.
+(1)
+Here, δ is a perturbation tensor with the same dimensions as
+the input x, and ϵ is a small positive scalar (referred to as the
+perturbation radius). This constraint ensures that the absolute
+value of each individual element in δ does not exceed ϵ.
+Consequently, the objective of finding the optimal adversar-
+ial perturbation δ∗can be formulated as:
+δ∗= arg max
+δ∈S
+L(θ, x + δ, y).
+(2)
+
+
+AUTHOR et al.: PREPARATION OF PAPERS FOR IEEE TRANSACTIONS AND JOURNALS (MAY 2024)
+3
+Fig. 1.
+Framework of Adv-DARTS. The left part of the figure shows the generation of adversarial samples from clean inputs by adding bounded
+perturbations, iteratively updated via the gradient sign method. The center part highlights the evolution of normal and reduced cells under the
+influence of architecture parameters α, from the initial stage to the final stage. On the right side, the training process is depicted, including the
+addition of adversarial samples to the dataset, the introduction of a consistency penalty, parameter updates, and the final adversarial training
+procedure.
+After obtaining the optimal perturbation δ∗, the final adver-
+sarial sample x′ is generated by adding it to the original input
+x:
+x′ = x + δ∗,
+(3)
+This is equivalent to:
+x′ = x + arg max
+δ∈S
+L(θ, x + δ, y).
+(4)
+2) Generation of Adversarial Perturbations: In the Adv-
+DARTS framework, we employ the following two attack
+algorithms to generate adversarial perturbations.
+The first method is the Fast Gradient Sign Method (FGSM)
+[12]. FGSM is an efficient single-step attack method. It as-
+sumes that the loss function L is locally linear around the input
+x. Therefore, it estimates the perturbation by taking a step of
+size ϵ in the direction of the gradient of the loss function with
+respect to the input x. The calculation formula is as follows:
+δ = ϵ · sign(∇xL(θ, x, y)).
+(5)
+Here, ϵ is the perturbation radius under the L∞constraint,
+and sign(·) is the sign function.
+The second method is Projected Gradient Descent (PGD)
+[14]. PGD is a more powerful multi-step iterative attack
+method. PGD is essentially an iterative version of FGSM. It
+projects the result back onto the allowed perturbation space S
+after each iteration to find a more optimal attack. The iterative
+update process is as follows:
+xt+1 = Πx+S
+
+xt + α · sign(∇xL(θ, xt, y))
+
+.
+(6)
+Here, xt+1 is the adversarial sample generated in the (t+1)-
+th iteration, and α is the step size controlling the magnitude
+of each gradient update. ∇xL(θ, xt, y) denotes the gradient of
+the loss function at the current iteration point xt. Πx+S(·) is
+a projection function. Its role is to ensure that the constraint
+∥δ∥∞≤ϵ is always satisfied at every step.
+C. Adversarial Neural Architecture Search
+The core of the Adv-DARTS framework is adversarial
+neural architecture search. It involves two key optimization
+targets: network weights w (updated on the training set) and
+architecture parameters α (updated on the validation set).
+Compared with traditional DARTS, the key difference is that
+Adv-DARTS generates adversarial examples at each iteration.
+It also incorporates an additional penalty term into the loss
+function to enhance the robustness of the discovered archi-
+tecture against adversarial attacks. Our search space consists
+of repeatedly stacked Normal Cells and Reduction Cells, and
+Adv-DARTS aims to search for the optimal structures of these
+two types of cells. In the following, we first review the basic
+DARTS framework. Then, we introduce how to embed the
+adversarial search into this structure.
+1) Bilevel
+Optimization
+Framework:
+In
+the
+traditional
+DARTS framework, architecture search is a bilevel optimiza-
+tion problem. This problem involves two nested optimization
+objectives: the architecture parameters α in the outer loop and
+the network weights w in the inner loop.
+For fixed network weights w, the objective of the outer op-
+timization is to find the optimal architecture α∗that minimizes
+the loss on the validation set.
+For a fixed architecture α, the objective of the inner opti-
+mization is to find a set of optimal network weights w∗(α) on
+the training set. These weights minimize the training loss.
+This process of alternating updates for the architecture
+parameters α and network weights w is expressed as:
+
+
+4
+IEEE SENSORS JOURNAL, VOL. XX, NO. XX, XXXX 2024
+Fig. 2.
+Illustration of the adversarial bilevel optimization loop in Adv-
+DARTS. The upper section visualizes the construction of mixed sam-
+ples, combining clean inputs (Dclean) and adversarial examples (Dadv)
+in a 1:1 ratio. The central cycle depicts the alternating optimization
+process: architecture parameters α are updated on the validation set
+using the Adam optimizer, while network weights w are optimized on
+the training set using SGD.
+min
+α
+Lval(ω∗(α), α)
+(7)
+s.t. ω∗(α) = arg min
+ω Ltrain(ω, α).
+(8)
+Here, the evaluation of the outer objective function Lval
+depends on the optimal solution w∗(α) of the inner optimiza-
+tion problem Ltrain. In other words, in the traditional DARTS
+framework, the ultimate goal is to optimize the architecture
+parameters α.
+2) Adversarial Bilevel Optimization Framework: The funda-
+mental goal of traditional DARTS is to find model architec-
+tures with excellent performance. However, to ensure that the
+searched architecture remains stable under adversarial attacks,
+it is necessary to introduce adversarial examples during the
+search phase. Specifically, we introduce adversarial constraints
+into both the inner and outer loops of the bilevel optimization.
+In the outer optimization of architecture parameters, we
+introduce mixed samples (clean samples and adversarial sam-
+ples) into the validation set. Based on the network weights
+w updated from the inner optimization, we calculate the
+loss function on the validation set. From this, we obtain the
+gradient of the loss function with respect to the architecture
+parameters α. Finally, we use the Adam optimizer to perform
+a single update on the architecture parameters α.
+In the inner optimization of network weights, we introduce
+mixed samples into the training set. Based on the architecture
+parameters α updated from the outer optimization, we calcu-
+late the loss function on the training set. We then calculate
+the gradient of the loss function with respect to the network
+weights w via backpropagation. Finally, the network weights
+w are updated by the SGD optimizer to obtain the weight
+parameters for the outer optimization.
+By simultaneously modifying both the inner and outer
+loops, Adv-DARTS ensures that the process of weight learning
+and architecture updates consistently aligns with the ultimate
+goal of robustness. The adversarial bilevel optimization loop
+of Adv-DARTS is illustrated in Fig. 2.
+D. Details of Loss Functions
+In the previous section, we presented the core idea of Adv-
+DARTS: incorporating adversarial constraints into both the
+inner and outer loops of the bilevel optimization. To realize
+this mathematically, the key lies in the design of the loss
+functions (Ltrain and Lval) for these two loops. This section
+details the loss functions employed in Adv-DARTS.
+1) Adversarial Consistency Penalty: To minimize the dis-
+crepancy between clean and adversarial samples in the logits
+space, we propose a regularization term named the Adversarial
+Consistency Penalty. Specifically, we employ the ℓ1 norm to
+quantify this difference [22]. A smaller ℓ1 norm indicates
+that the model outputs of clean and adversarial samples are
+closer. This helps reduce the sensitivity of the model to small
+perturbations.
+Let f(x; θ) denote the model output for input x. For a clean
+sample x and its adversarial counterpart x′, we define:
+LCons = λ · ∥f(x; θ) −f(x′; θ)∥1.
+(9)
+Here, λ controls the strength of the adversarial consistency
+constraint. For a batch of size m, we can apply this regu-
+larization by averaging or summing the penalty values over
+all pairs (xi, x′
+i). We then integrate this term into the total
+loss function. This guides the learned model architecture to
+be more robust against adversarial perturbations during the
+neural architecture search process. The penalty term is jointly
+optimized with other standard objective functions to form the
+overall search objective.
+2) Loss Function in Training Phase: In the traditional
+DARTS training loop, each iteration involves sampling a batch
+from the training queue and updating the network weights w
+using Stochastic Gradient Descent (SGD). In Adv-DARTS,
+the batch comprises two parts: clean samples x and their
+corresponding adversarial examples x′. We concatenate the
+clean and adversarial samples into a larger batch and randomly
+shuffle them. This allows for joint training in a single forward
+pass. The overall training loss function consists of the standard
+cross-entropy loss and the adversarial consistency penalty. It
+is mathematically expressed as:
+Ltrain = LCE(z, y) + λ · ∥f(x; θ) −f(x′; θ)∥1.
+(10)
+Here, z denotes the logits output of the mixed samples, and
+y represents the corresponding ground-truth labels. The cross-
+entropy loss function LCE(z, y) aims to improve the classifi-
+cation performance of the model. The adversarial consistency
+penalty encourages the model to maintain consistency under
+
+
+AUTHOR et al.: PREPARATION OF PAPERS FOR IEEE TRANSACTIONS AND JOURNALS (MAY 2024)
+5
+small perturbations. This ensures that during training, the net-
+work simultaneously minimizes both the classification loss and
+the consistency loss. Consequently, it accounts for standard
+model performance while improving adversarial robustness.
+3) Loss Function in Validation Phase: In Adv-DARTS, the
+update of architecture parameters α relies on the validation set.
+We generate adversarial examples during the validation phase
+and construct the overall loss function. By minimizing this
+loss function, the update of architecture parameters is guided
+towards a more robust design.
+To prevent the architecture parameters α, which are normal-
+ized by the softmax function, from converging prematurely
+to a single dominant operation, we introduce an entropy
+regularization term into the loss function. This encourages the
+distribution of α to maintain a certain degree of diversity. The
+mathematical expression is:
+λent ·
+ 
+−
+X
+i
+pi log pi
+!
+.
+(11)
+Here, λent controls the strength of the regularization, and
+pi represents the probability of each candidate operation after
+applying the softmax function. The entropy regularization term
+encourages exploration by maintaining diversity in the search
+space.
+Similar to the training set, we also introduce the adversarial
+consistency penalty into the validation loss function. Specif-
+ically, the difference between the clean logits zclean val and
+the adversarial logits zadv val is minimized. This helps build
+a more robust architecture. The mathematical expression is:
+λdiff · ∥zadv val −zclean val∥1.
+(12)
+Therefore, the overall objective function for updating archi-
+tecture parameters α on the validation set can be formulated
+as:
+Ladv
+val (α) = LCE(zval, yval)
++ λent ·
+ 
+−
+X
+i
+pi log pi
+!
++ λdiff · ∥zadv val −zclean val∥1.
+(13)
+Here, zval denotes the logits output of the mixed validation
+batch, and LCE(zval, yval) represents the standard cross-
+entropy loss on the validation set. λent maintains the diversity
+of α, and λdiff enforces consistency between clean and
+adversarial samples in the validation set. Based on the above
+loss function, the architecture parameters α are updated via
+gradient descent as follows:
+α ←α −ηα∇αLadv
+val (α),
+(14)
+where ηα is the learning rate for α, and ∇αLadv
+val (α) denotes
+the gradient of the adversarial validation loss with respect to
+α.
+III. EXPERIMENTS
+A. Experimental Settings
+Datasets and Model Architectures. We evaluate the effec-
+tiveness of our method on the CIFAR-10 dataset. CIFAR-10
+consists of 10 classes, with 6,000 images per class. For data
+preprocessing, we normalize the pixel values ranging from 0 to
+255 to have zero mean and unit variance. This is implemented
+for each channel (R, G, B) via the transformation x′ = x−µ
+σ ,
+where µ and σ denote the mean and standard deviation
+calculated over the entire training dataset, respectively.
+In terms of model architecture, the network is constructed
+via neural architecture search. The initial number of channels
+is set to 36. The network depth is dynamically adjusted across
+three stages, increasing by 0, 6, and 12 layers, respectively.
+The architecture search space comprises 14 edges, where
+each edge is associated with candidate operations such as
+convolution, pooling, and skip connections.
+In these three stages, we retain the top-5, top-3, and top-
+1 candidate operations with the highest weights, respectively.
+Simultaneously, we prune the 3, 2, and 2 operations with lower
+weights. In the final stage, all Zero operations are removed to
+ensure the validity of the architectural connections.
+Baseline Methods. We primarily compare our method with
+two categories of baselines: (1) model architecture baselines,
+including fixed-architecture networks, DARTS, and P-DARTS;
+and (2) adversarial training baselines, including PGD-2-AT
+and Fast-AT. For training, we set the perturbation budget to
+ϵ =
+16
+255.
+Search Details. To optimize the network weights, we
+employ the SGD optimizer with a momentum of 0.9 and a
+weight decay of 3×10−4. For the architecture parameters, we
+utilize the Adam optimizer with momentum parameters set to
+β1 = 0.5 and β2 = 0.999 [23]. We adopt a cosine annealing
+schedule to dynamically adjust the learning rate during the
+search process. The batch size is set to 96.
+The search process is divided into three stages, each consist-
+ing of 25 epochs. In each stage, the network weights are up-
+dated for the first 10 epochs, while the architecture parameters
+remain fixed. For the remaining epochs, the network weights
+and architecture parameters are optimized in an alternating
+manner. During the last 5 epochs of the process, we evaluate
+the model’s performance on the validation set to assess the
+quality of the searched architecture.
+Training Details. We maintain the SGD optimization set-
+tings and the cosine annealing scheduler from the search
+phase. Additionally, we introduce a drop path rate that in-
+creases linearly from 0 to a predefined maximum value over
+the training epochs. We save model checkpoints every 50
+epochs. The batch size is set to 128, and the model is trained
+for a total of 600 epochs.
+Evaluation Details. In the adversarial evaluation, we assess
+robust accuracy using the same attack method employed
+during the architecture search phase [24]. For an architecture
+discovered via FGSM-based search, we perform both standard
+and FGSM-based adversarial training on this architecture,
+and then evaluate its robustness against FGSM attacks. We
+also conduct an ablation study to investigate the individual
+
+
+6
+IEEE SENSORS JOURNAL, VOL. XX, NO. XX, XXXX 2024
+TABLE I
+PERFORMANCE OF ADV-DARTS. S AND T DENOTE STANDARD SEARCH
+AND STANDARD TRAINING, RESPECTIVELY, WHILE ADVS AND ADVT
+DENOTE ADVERSARIAL SEARCH AND ADVERSARIAL TRAINING.
+NOTE
+THAT ADVT
+REPRESENTS
+STANDARD
+ADVERSARIAL
+TRAINING ON THE FIXED ARCHITECTURE. DEF-ACC AND
+CLEAN-ACC DENOTE THE ACCURACY ON ADVERSAR-
+IAL AND CLEAN SAMPLES, RESPECTIVELY.
+Models
+PGD
+FGSM
+Def-Acc Clean-Acc Def-Acc Clean-Acc
+T
+0.51%
+95.7%
+19.7%
+94.9%
+AdvT
+18.7%
+87.4%
+80.9%
+85.4%
+AdvS-T
+0.58%
+94.64% 25.47%
+94.46%
+Adv-PDARTS 23.55%
+94.44% 92.53%
+93.64%
+Adv-DARTS
+27.3%
+93.56% 96.88%
+93.24%
+TABLE II
+ABLATION STUDY. S AND T DENOTE STANDARD SEARCH AND STAN-
+DARD TRAINING, RESPECTIVELY, WHILE ADVS AND ADVT DENOTE
+ADVERSARIAL SEARCH AND ADVERSARIAL TRAINING. HERE, S-
+ADVT REFERS TO ADVERSARIAL TRAINING PERFORMED ON
+THE ARCHITECTURE DISCOVERED BY STANDARD SEARCH.
+DEF-ACC AND CLEAN-ACC DENOTE THE ACCURACY
+ON ADVERSARIAL AND CLEAN SAMPLES, RESPEC-
+TIVELY.
+Models
+PGD
+FGSM
+Def-Acc Clean-Acc Def-Acc Clean-Acc
+S-T
+0.6%
+96.24%
+22.7%
+95.95%
+AdvS-T
+0.58%
+94.64% 25.47%
+94.46%
+S-AdvT
+22.34%
+94.34% 85.42%
+93.57%
+Adv-DARTS
+27.3%
+93.56% 96.88%
+93.24%
+contributions of architecture search and adversarial training
+to model robustness. Furthermore, we evaluate the standard
+accuracy of models under different experimental settings on
+clean samples. It is worth emphasizing that, to ensure a fair
+comparison, all methods are executed under identical settings
+regarding batch size, epochs, and training hardware.
+B. Experimental Results
+Overall Performance of Adv-DARTS. On the CIFAR-
+10 dataset, as shown in Table I, compared with baseline
+methods(T), Adv-DARTS improves the defensive accuracy on
+adversarial examples by 26.79% (PGD) and 77.18% (FGSM),
+respectively. Compared with standard adversarial training
+(AdvT), it improves by 8.6% (PGD) and 15.98% (FGSM),
+respectively. Additionally, compared with AdvT, Adv-DARTS
+improves the accuracy on clean samples by 6.16% (PGD) and
+7.84% (FGSM). The experimental results demonstrate that,
+compared with applying adversarial training on fixed archi-
+tectures, the architecture searched by Adv-DARTS exhibits
+significantly stronger adversarial robustness against PGD and
+FGSM attacks after adversarial training. At the same time, it
+incurs less loss in model performance.
+As illustrated in Fig. 3, under PGD attacks, both Adv-
+DARTS and the Standard Search with Adversarial Training
+(S-AdvT) model achieve convergence in robust accuracy after
+300 epochs. Notably, after convergence, the robust accuracy
+Fig. 3.
+Accuracy variation: PGD-based Adv-Search vs. Standard-
+Search.
+Fig. 4. Model Architecture.
+of Adv-DARTS consistently outperforms that of the S-AdvT
+model.
+Ablation Study. As shown in Table II, we conducted an
+ablation study to analyze the individual impacts of introducing
+adversarial examples during the search and training phases of
+Adv-DARTS.
+First, we evaluated the impact of introducing adversarial
+search alone (AdvS-T). The results indicate that without the
+support of adversarial training, the adversarial architecture
+alone (AdvS-T) cannot withstand PGD attacks. Its defensive
+accuracy is only 0.58% (PGD) and 25.47% (FGSM), which is
+comparable to the baseline (S-T) accuracy of 0.6% (PGD) and
+22.7% (FGSM). This suggests that architecture optimization
+alone is insufficient for improving adversarial robustness; it
+must be coupled with adversarial training.
+Second, we compared S-AdvT with Adv-DARTS. Under
+identical adversarial training settings, Adv-DARTS achieves
+defensive accuracies of 27.3% (PGD) and 96.88% (FGSM),
+both significantly outperforming standard adversarial train-
+ing (S-AdvT), which achieves 22.34% (PGD) and 85.42%
+(FGSM). This proves that the architecture discovered by Adv-
+DARTS possesses superior intrinsic robustness. This architec-
+tural advantage enables the model to leverage the adversarial
+training mechanism more fully, thereby achieving superior
+robustness gains under identical training settings.
+C. Adversarial Sensitivity Analysis
+Activation Feature Visualization. We utilize hook func-
+tions to capture the activation maps of each convolutional
+
+
+AUTHOR et al.: PREPARATION OF PAPERS FOR IEEE TRANSACTIONS AND JOURNALS (MAY 2024)
+7
+Fig. 5. Activation Map in four states.
+Fig. 6. Entropy Distribution in four states.
+layer. This allows us to visualize the neural network. Specif-
+ically, we first define a forward hook function to capture
+and store the outputs of each layer. Then, we register this
+hook to every convolutional layer in the network. When
+test data are fed into the network for a forward pass, the
+hooks are automatically triggered at each convolutional layer.
+Consequently, the output values are captured and visualized
+as activation maps.
+As shown in Fig. 4, we utilized PGD-based Adv-Search and
+Standard-Search to obtain their corresponding architectures.
+Subsequently, as illustrated in Fig. 5, we performed adversarial
+training on these two architectures to acquire their activation
+maps when processing both adversarial and clean samples.
+To analyze the impact of the two search methods on model
+robustness, we employed multiple statistical metrics. Specifi-
+cally, we utilized these activation values to compute the mean
+and variance of each activation map matrix. Furthermore, we
+discretized the activation values of each map to calculate the
+corresponding entropy.
+As presented in Fig. 6, for clean samples, the models
+obtained by both search methods (Adv-Search and Standard-
+Search) exhibit no significant differences in the distribution
+of means, standard deviations, and entropy fluctuations of the
+activation maps. However, for adversarial samples, the entropy
+distribution of Standard-Search becomes dispersed, whereas
+the distribution for Adv-Search is significantly more concen-
+trated. This indicates that the model architecture derived from
+adversarial search is less sensitive to variations in the input
+distribution. In other words, the model can produce stable
+outputs even when the input is severely perturbed. Based on
+this observation, we infer that adversarial search contributes
+to enhancing model robustness.
+IV. CONCLUSION
+In this paper, we have introduced a novel bilevel opti-
+mization framework named Adv-DARTS, which is built upon
+standard differentiable architecture search and designed to
+enhance model robustness. By introducing adversarial per-
+turbations during both the search and training phases, Adv-
+DARTS ensures that the discovered architectures are intrin-
+sically resistant to adversarial examples. Meanwhile, the in-
+troduction of the adversarial consistency penalty enables the
+framework to effectively balance performance and robust-
+ness. Extensive experiments demonstrate that Adv-DARTS
+achieves significant improvements in adversarial robustness
+while well maintaining performance on clean samples. The
+results indicate that the synergy between adversarial search
+and adversarial training plays a pivotal role in improving
+model robustness. Furthermore, sensitivity analysis reveals that
+Adv-DARTS mitigates the sensitivity of activation values to
+input perturbations, thereby yielding more stable and robust
+feature representations. This stability is crucial for ensuring
+the reliable operation of intelligent embedded sensing systems
+deployed in unpredictable environments.
+In future work, we plan to focus on integrating more
+advanced adversarial strategies to further enhance model
+robustness and adaptability. This may involve developing
+more complex attack vectors to accurately simulate real-
+world adversarial scenarios, thereby pushing the boundaries
+of model resilience. Additionally, applying the adversarial
+training paradigm to large-scale natural language process-
+ing tasks, high-dimensional image recognition systems, or
+real-time autonomous systems may yield new insights and
+improvements. We also intend to evaluate the deployment
+efficiency and computational overhead of these robust archi-
+tectures on resource-constrained embedded sensing platforms,
+thereby further bridging the gap between algorithmic defenses
+and hardware-level reliability.
+REFERENCES
+[1] K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for
+image recognition,” in Proc. IEEE Conf. Comput. Vis. Pattern Recognit.
+(CVPR), Las Vegas, NV, USA, Jun. 2016, pp. 770–778.
+[2] Y. Liu, M. Ping, J. Han, X. Cheng, H. Qin, and W. Wang,
+“Neural network methods in the development of MEMS sensors,”
+Micromachines, vol. 15, no. 11, Nov. 2024. [Online]. Available:
+https://www.mdpi.com/2072-666X/15/11/1368
+[3] A. A. Musa, A. Hussaini, W. Liao, F. Liang, and W. Yu, “Deep neural
+networks for spatial-temporal cyber-physical systems: A survey,” Future
+Internet, vol. 15, no. 6, p. 199, May 2023.
+
+
+8
+IEEE SENSORS JOURNAL, VOL. XX, NO. XX, XXXX 2024
+[4] J. Schauer, P. Goodarzi, A. Sch¨utze, and T. Schneider, “Efficient hard-
+ware implementation of interpretable machine learning based on deep
+neural network representations for sensor data processing,” J. Sens. Sens.
+Syst., vol. 14, no. 2, pp. 169–185, Aug. 2025.
+[5] C. Szegedy, W. Zaremba, I. Sutskever, J. Bruna, D. Erhan, I. J.
+Goodfellow, and R. Fergus, “Intriguing properties of neural networks,”
+in Proc. 2nd Int. Conf. Learn. Represent. (ICLR), Banff, AB, Canada,
+Apr. 2014. [Online]. Available: http://arxiv.org/abs/1312.6199
+[6] N. Carlini and D. A. Wagner, “Towards evaluating the robustness of
+neural networks,” in Proc. IEEE Symp. Secur. Privacy (SP), San Jose,
+CA, USA, May 2017, pp. 39–57.
+[7] N. Papernot, P. D. McDaniel, S. Jha, M. Fredrikson, Z. B. Celik, and
+A. Swami, “The limitations of deep learning in adversarial settings,”
+in Proc. IEEE Eur. Symp. Secur. Privacy (EuroS&P), Saarbr¨ucken,
+Germany, Mar. 2016, pp. 372–387.
+[8] D. Yin, K. Ramchandran, and P. L. Bartlett, “Rademacher complexity
+for adversarially robust generalization,” in Proc. 36th Int. Conf. Mach.
+Learn. (ICML), Long Beach, CA, USA, Jun. 2019, pp. 7085–7094.
+[9] T.
+B.
+Brown,
+D.
+Man´e,
+A.
+Roy,
+M.
+Abadi,
+and
+J.
+Gilmer,
+“Adversarial patch,” CoRR, vol. abs/1712.09665, 2017. [Online].
+Available: http://arxiv.org/abs/1712.09665
+[10] K. Eykholt, I. Evtimov, E. Fernandes, B. Li, A. Rahmati, C. Xiao,
+A. Prakash, T. Kohno, and D. Song, “Robust physical-world attacks
+on deep learning visual classification,” in Proc. IEEE Conf. Comput.
+Vis. Pattern Recognit. (CVPR), Salt Lake City, UT, USA, Jun. 2018, pp.
+1625–1634.
+[11] Y. Mirsky, T. Mahler, I. Shelef, and Y. Elovici, “CT-GAN: Malicious
+tampering of 3d medical imagery using deep learning,” in Proc. 28th
+USENIX Secur. Symp., Santa Clara, CA, USA, Aug. 2019, pp. 461–478.
+[12] I. J. Goodfellow, J. Shlens, and C. Szegedy, “Explaining and harnessing
+adversarial examples,” in Proc. 3rd Int. Conf. Learn. Represent.
+(ICLR), San Diego, CA, USA, May 2015. [Online]. Available:
+http://arxiv.org/abs/1412.6572
+[13] A. Ilyas, S. Santurkar, D. Tsipras, L. Engstrom, B. Tran, and A. Madry,
+“Adversarial examples are not bugs, they are features,” in Proc. Adv.
+Neural Inf. Process. Syst. (NeurIPS), Vancouver, BC, Canada, Dec. 2019,
+pp. 125–136.
+[14] A. Madry, A. Makelov, L. Schmidt, D. Tsipras, and A. Vladu, “Towards
+deep learning models resistant to adversarial attacks,” in Proc. 6th Int.
+Conf. Learn. Represent. (ICLR), Vancouver, BC, Canada, Apr. 2018.
+[15] T. Bai, J. Luo, J. Zhao, B. Wen, and Q. Wang, “Recent advances in
+adversarial training for adversarial robustness,” in Proc. 30th Int. Joint
+Conf. Artif. Intell. (IJCAI), Montreal, QC, Canada, Aug. 2021, pp. 4312–
+4321.
+[16] A. Liu, S. Tang, S. Liang, R. Gong, B. Wu, X. Liu, and D. Tao, “Ex-
+ploring the relationship between architectural design and adversarially
+robust generalization,” in Proc. IEEE/CVF Conf. Comput. Vis. Pattern
+Recognit. (CVPR), Vancouver, BC, Canada, Jun. 2023, pp. 4096–4107.
+[17] M. Guo, Y. Yang, R. Xu, Z. Liu, and D. Lin, “When NAS meets
+robustness: In search of robust architectures against adversarial attacks,”
+in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR),
+Seattle, WA, USA, Jun. 2020, pp. 628–637.
+[18] E. Wong, L. Rice, and J. Z. Kolter, “Fast is better than free: Revisiting
+adversarial training,” in Proc. 8th Int. Conf. Learn. Represent. (ICLR),
+Addis Ababa, Ethiopia, Apr. 2020.
+[19] B. Zoph and Q. V. Le, “Neural architecture search with reinforcement
+learning,” in Proc. 5th Int. Conf. Learn. Represent. (ICLR), Toulon,
+France, Apr. 2017.
+[20] H. Liu, K. Simonyan, and Y. Yang, “DARTS: Differentiable architecture
+search,” in Proc. 7th Int. Conf. Learn. Represent. (ICLR), New Orleans,
+LA, USA, May 2019.
+[21] A. Heuillet, A. Nasser, H. Arioui, and H. Tabia, “Efficient automation
+of neural network design: A survey on differentiable neural architecture
+search,” ACM Comput. Surv., vol. 56, no. 11, pp. 270:1–270:36, 2024.
+[22] H. Zhang, Y. Yu, J. Jiao, E. P. Xing, L. E. Ghaoui, and M. I. Jordan,
+“Theoretically principled trade-off between robustness and accuracy,” in
+Proc. 36th Int. Conf. Mach. Learn. (ICML), Long Beach, CA, USA,
+Jun. 2019, pp. 7472–7482.
+[23] D. P. Kingma and J. Ba, “Adam: A method for stochastic optimization,”
+in Proc. 3rd Int. Conf. Learn. Represent. (ICLR), San Diego, CA, USA,
+May 2015.
+[24] F. Croce and M. Hein, “Reliable evaluation of adversarial robustness
+with an ensemble of diverse parameter-free attacks,” in Proc. 37th Int.
+Conf. Mach. Learn. (ICML), Virtual Event, Jul. 2020, pp. 2206–2216.
+Jianwei Tai is currently a Lecturer with the
+School of Internet, Anhui University, Hefei,
+China.
+His
+research
+interests
+include
+cy-
+berspace security and artificial intelligence.
+Cheng Qian is currently pursuing the master’s
+degree with the School of Internet, Anhui Univer-
+sity, Hefei, China. His research interests include
+cyberspace security and artificial intelligence.
+Shuangning Yang is currently pursuing the
+master’s degree with the School of Internet,
+Anhui University, Hefei, China. His research in-
+terests include cyberspace security and artificial
+intelligence.
+Kun Jing is currently a Lecturer with the School
+of Internet, Anhui University, Hefei, China. His
+research interests include efficient model de-
+sign, neural architecture search, model com-
+pression, and large models.

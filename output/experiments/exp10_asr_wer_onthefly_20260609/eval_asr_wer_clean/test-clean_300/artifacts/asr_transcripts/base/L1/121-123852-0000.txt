@@ -1,0 +1,12 @@
+# sample_id=121-123852-0000
+# model=base
+# L=1
+
+GT:
+THOSE PRETTY WRONGS THAT LIBERTY COMMITS WHEN I AM SOMETIME ABSENT FROM THY HEART THY BEAUTY AND THY YEARS FULL WELL BEFITS FOR STILL TEMPTATION FOLLOWS WHERE THOU ART
+
+Whisper(original):
+Those pretty wrongs that liberty commits, When I am some time absent from thy heart, Thy beauty and thy years full well befits, For still temptation follows where thou art.
+
+Whisper(decoded):
+There's pretty rounds that liberty can this. When I am suntan, absent from my heart, identity, then my ears fall well-defense, for still temptation follows we are now art.

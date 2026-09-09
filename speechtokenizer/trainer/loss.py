@@ -1,5 +1,8 @@
 import torch
 import torchaudio
+import matplotlib
+
+matplotlib.use("Agg")
 import matplotlib.pylab as plt
 
 # =========================

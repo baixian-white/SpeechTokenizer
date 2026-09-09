@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0031
+# model=base
+# L=1
+
+GT:
+THERE'S ONE AND THERE'S ANOTHER THE DUDLEY AND THE FLINT
+
+Whisper(original):
+There's one and there's another the Dudley and the Flint
+
+Whisper(decoded):
+There's one and there's a motor that's doubly in the front.

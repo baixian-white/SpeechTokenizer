@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0029
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+THERE WERE SEVERAL OTHER SIGNS OF SOMETHING WRONG ABOUT MISSUS HALE
+
+Whisper(original):
+There were several other signs of something wrong about Mrs Hale.
+
+Whisper(decoded):
+There were several other signs of some being rural badness as hell.

@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0032
+# model=base
+# L=3
+
+GT:
+IF E'S STRAIGHT E'LL DO FOR ME AND IF HE AIN'T I'LL DO FOR IM SEE
+
+Whisper(original):
+If you're straight, you do for me. And if you end, I do for him. See?
+
+Whisper(decoded):
+If you straight you do for me and if you end, I will fly in. See?

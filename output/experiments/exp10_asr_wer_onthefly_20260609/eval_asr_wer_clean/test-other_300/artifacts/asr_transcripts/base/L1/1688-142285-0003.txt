@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0003
+# model=base
+# L=1
+
+GT:
+I REALLY LIKED THAT ACCOUNT OF HIMSELF BETTER THAN ANYTHING ELSE HE SAID
+
+Whisper(original):
+I really like that account of himself, better than anything else he said.
+
+Whisper(decoded):
+Admiral not got a kind of himself, that's where anything else he said.

@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0005
+# model=base
+# L=1
+
+GT:
+YET HERE ARE WE WITHIN A SHORT RANGE OF THE SCAROONS AND NOT A SIGN OF A TRAIL HAVE WE CROSSED
+
+Whisper(original):
+Yet here are we within a short range of the Skaroons, and not a sign of a trail have we crossed.
+
+Whisper(decoded):
+Yet here we, within a short range of the sturumans, and not a sign of a trail have The cost.

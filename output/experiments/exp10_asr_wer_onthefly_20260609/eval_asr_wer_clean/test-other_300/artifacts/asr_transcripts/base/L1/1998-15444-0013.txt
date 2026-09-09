@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0013
+# model=base
+# L=1
+
+GT:
+ANTIDOTES ARE USUALLY GIVEN HYPODERMICALLY OR IF BY MOUTH IN THE FORM OF TABLETS
+
+Whisper(original):
+Antidotes are usually given hyperdermically or if they're mouth in the form of tablets.
+
+Whisper(decoded):
+And the birds and the usually gather at the dernacunden, bore the mouth and the form of ternents.

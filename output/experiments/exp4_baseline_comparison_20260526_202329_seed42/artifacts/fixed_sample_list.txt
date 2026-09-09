@@ -1,0 +1,3 @@
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\8838\298545\8838-298545-0037.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\8838\298545\8838-298545-0037.hubert.npy
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\5390\30102\5390-30102-0015.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\5390\30102\5390-30102-0015.hubert.npy
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\4018\103416\4018-103416-0033.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\4018\103416\4018-103416-0033.hubert.npy

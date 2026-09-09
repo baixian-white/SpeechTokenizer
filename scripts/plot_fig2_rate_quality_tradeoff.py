@@ -84,12 +84,7 @@ fig.legend(
     fontsize=10,
 )
 
-fig.suptitle(
-    "Figure 2. Bitrate vs quality trade-off on the fixed 8-sample baseline (exp4).",
-    fontsize=12, y=0.995,
-)
-
-fig.subplots_adjust(left=0.055, right=0.99, top=0.90, bottom=0.20, wspace=0.28)
+fig.subplots_adjust(left=0.055, right=0.99, top=0.96, bottom=0.20, wspace=0.28)
 
 png = OUT / "fig2_rate_quality_tradeoff.png"
 pdf = OUT / "fig2_rate_quality_tradeoff.pdf"

@@ -1,0 +1,1 @@
+﻿Set-Location 'H:\H-CODE\speechtokenizer'; New-Item -ItemType Directory -Force -Path 'output/experiments/exp7_librispeech_test_full_clean_20260606/logs' | Out-Null; Start-Transcript -Path 'output/experiments/exp7_librispeech_test_full_clean_20260606/logs/transcript_marker.log' -Append; Write-Host 'hello transcript'; Stop-Transcript

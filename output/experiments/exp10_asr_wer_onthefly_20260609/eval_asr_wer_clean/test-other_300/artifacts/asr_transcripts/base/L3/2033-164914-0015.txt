@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0015
+# model=base
+# L=3
+
+GT:
+NOW WHEN THE FIREMAN HEARD THESE WORDS HE FEARED FOR ZAU AL MAKAN AND WEPT WITH EXCEEDING WEEPING AND SAID TO THE EUNUCH BY ALLAH IT WAS NOT I AND I KNOW HIM NOT
+
+Whisper(original):
+Now, when the firemen heard these words, he feared for Zawal Makan and wept with exceeding weeping and said to the unit, By Allah, it was not I, and they know Him not.
+
+Whisper(decoded):
+Now, when the firemen heard these words, he feared for Zawa Mokan and wept with exceeding weeping and said to the unit, Baela, it was not I, and I knew him not.

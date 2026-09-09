@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0000
+# model=base
+# L=3
+
+GT:
+A THOUSAND BLESSINGS FROM A GRATEFUL HEART
+
+Whisper(original):
+A thousand blessings from a grateful heart.
+
+Whisper(decoded):
+A thousand blessing from a grateful heart.

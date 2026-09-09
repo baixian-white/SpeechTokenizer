@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0017
+# model=base
+# L=2
+
+GT:
+AND AMONGST THEM WERE SOME WHO WOULD HAVE CHOSEN THE CADET ZAU AL MAKAN FOR QUOTH THEY HIS NAME BE LIGHT OF THE PLACE AND HE HATH A SISTER NUZHAT AL ZAMAN HIGHS THE DELIGHT OF THE TIME BUT THEY SET OUT FIVE YEARS AGO FOR AL HIJAZ AND NONE WOTTETH WHAT IS BECOME OF THEM
+
+Whisper(original):
+And amongst them were some who would have chosen the cadet, Zawa al-Makan, for what they, his name be light of the place, and he hath a sister, Nusad al-Zaman, heis, the delight of the time. But they set out five years ago for al-Hijaz, and none whateth what is become of them.
+
+Whisper(decoded):
+Amongst them were some who would have chosen the credit, Zalom Akan, for what they, his name delight of the place, and he hath a sister, Nusat Azaman, heis, the delight of the time. But they set out five years ago for Al-Hijaz, and none what is, what is become of them.

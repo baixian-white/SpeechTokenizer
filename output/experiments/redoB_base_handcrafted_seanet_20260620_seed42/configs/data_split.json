@@ -1,0 +1,12 @@
+{
+  "source_train_files": "data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+  "source_valid_files": "data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\valid_files.txt",
+  "normalized_train_files": "output\\experiments\\redoB_base_handcrafted_seanet_20260620_seed42\\artifacts\\train_files.txt",
+  "normalized_valid_files": "output\\experiments\\redoB_base_handcrafted_seanet_20260620_seed42\\artifacts\\valid_files.txt",
+  "smoke_valid_files": "output\\experiments\\redoB_base_handcrafted_seanet_20260620_seed42\\artifacts\\valid_files_smoke.txt",
+  "train_count": 27039,
+  "valid_count": 1500,
+  "smoke_valid_count": 16,
+  "path_normalization": "Source lines used POSIX paths under '/home/user/Desktop/speechtokenier/SpeechTokenizer/'; rewritten to 'H:\\H-CODE\\speechtokenizer\\' with backslash separators to match the canonical exp2 artifacts and the Windows working tree.",
+  "note": "First-line audio (.flac) and HuBERT (.npy) verified present on disk for both train and valid."
+}

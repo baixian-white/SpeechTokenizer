@@ -1,0 +1,28 @@
+# Experiment 1 Staged NAS Summary
+
+- status: completed
+- run_id: exp1_nas_distill_run1_seed42
+- seed: 42
+- selection_mode: balanced
+- capacity_guard: min_n_filters=24, max_skip_blocks=1
+- stage1_generated: 8192
+- stage1_to_stage2: 512
+- distill_stage2_steps: 100
+- stage2_proxy_samples: 8
+- stage2_to_stage3: 64
+- distill_stage3_steps: 500
+- stage3_refined_samples: 16
+- stage3_to_final: 8
+- distill_final_steps: 1500
+- final_samples: 32
+- failed_candidate_evaluations: 0
+- selected_encoder: nas_seed42_000896
+- selected_encoder_strides: [5, 4, 4, 4]
+- selected_decoder_strides: [8, 5, 4, 2]
+- decoder_condition: frozen_teacher_decoder
+- fixed interface: sample_rate=16000, prod(encoder_strides)=320, latent_rate=50, latent_dimension=1024, M=3, K=1024.
+- decoder contamination: decoder ops/width/depth/activation are not searched; proxy reconstruction uses the frozen pretrained SpeechTokenizer decoder.
+- selection rule: short-distilled quality-constrained proxy score plus multi-objective Pareto over teacher alignment, RVQ compatibility, semantic, reconstruction, mel, MACs, params, and RTF.
+- limitation: all quality numbers are proxy metrics, not final SCIT-Speech training results.
+- best_architecture: artifacts/best_architecture/best_seanet_config.json
+- raw_selected_candidate: artifacts/best_architecture/best_candidate_raw.json

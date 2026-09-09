@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0017
+# model=base
+# L=3
+
+GT:
+THE WIZARD OF OZ WHO USED TO BE A HUMBUG AND KNEW NO MAGIC AT ALL HAS BEEN TAKING LESSONS OF GLINDA AND I'M TOLD HE IS GETTING TO BE A PRETTY GOOD WIZARD BUT HE IS MERELY THE ASSISTANT OF THE GREAT SORCERESS
+
+Whisper(original):
+The Wizard of Oz, who used to be a humbug and knew no magic at all, has been taking lessons of Glinda, and I'm told he is getting to be a pretty good wizard, but he is merely the assistant of the great sorcerers.
+
+Whisper(decoded):
+The Wizard of Oz, who used to be a humbug in New Nomadic at all, has been taking lessons of Glenda, and I'm told he is getting to be a pretty good wizard, but he is nearly the assistant at the Great Sorcerer's.

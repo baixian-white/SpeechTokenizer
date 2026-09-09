@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0064
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+BUT HOO'S COME AT LAST AND HOO'S WELCOME AS LONG AS HOO'LL KEEP FROM PREACHING ON WHAT HOO KNOWS NOUGHT ABOUT
+
+Whisper(original):
+But who's come at last and who's welcome as long as who'll keep from preaching on what who knows not about?
+
+Whisper(decoded):
+Then he's turning at rest and here's a way out kinder as long as he'll pit for a pitch and rolling boy and in nerves and all to that

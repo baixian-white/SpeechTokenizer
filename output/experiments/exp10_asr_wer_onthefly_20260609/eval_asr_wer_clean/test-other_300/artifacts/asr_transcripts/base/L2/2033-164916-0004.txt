@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0004
+# model=base
+# L=2
+
+GT:
+THEN HE ADDED O MY UNCLE HOW SHALL I DO WITH MY BROTHER SHARRKAN
+
+Whisper(original):
+Then he added, Oh my uncle, how shall I do with my brother Sharcan?
+
+Whisper(decoded):
+Then he added, Oh my uncle, how shall I do with my brother's shark turn?

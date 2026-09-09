@@ -1,0 +1,12 @@
+# sample_id=2414-128292-0002
+# model=lca
+# L=1
+
+GT:
+WHAT MATTER ABOUT MY SHADOW
+
+Whisper(original):
+What matter about my shadow?
+
+Whisper(decoded):
+The bad variable pre-shadow.

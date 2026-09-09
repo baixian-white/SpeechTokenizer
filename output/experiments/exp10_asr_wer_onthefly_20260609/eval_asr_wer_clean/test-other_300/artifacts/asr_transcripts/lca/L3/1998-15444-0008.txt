@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0008
+# model=lca
+# L=3
+
+GT:
+THE DOSE FOR AN ADULT IS TEN MINIMS
+
+Whisper(original):
+The day for an adult is 10 min.
+
+Whisper(decoded):
+The days when a doubt is 10 minutes.

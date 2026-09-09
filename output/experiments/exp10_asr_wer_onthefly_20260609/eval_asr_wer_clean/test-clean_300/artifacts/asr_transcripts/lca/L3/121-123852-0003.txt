@@ -1,0 +1,12 @@
+# sample_id=121-123852-0003
+# model=lca
+# L=3
+
+GT:
+THOUGHT KILLS ME THAT I AM NOT THOUGHT TO LEAP LARGE LENGTHS OF MILES WHEN THOU ART GONE BUT THAT SO MUCH OF EARTH AND WATER WROUGHT I MUST ATTEND TIME'S LEISURE WITH MY MOAN RECEIVING NOUGHT BY ELEMENTS SO SLOW BUT HEAVY TEARS BADGES OF EITHER'S WOE
+
+Whisper(original):
+Thought kills me that I am not thought, to leap large lengths of miles when thou art gone, but that so much of earth and water wrought, I must attend, times leisure with my moan, Not by elements so slow, but heavy tears, Badges of either's woe.
+
+Whisper(decoded):
+Thought kills me that I am not, but, to leave large lengths of miles without gone, but that so much of earth and water rot, I must attend, times leisure with my moon. Receiving not, by elements so slow, that heavy tears, badges of either's Gene

@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0037
+# model=base
+# L=3
+
+GT:
+EVERY LINE IN WHICH THE MASTER TRACES IT EVEN WHERE SEEMINGLY NEGLIGENT IS LOVELY AND SET DOWN WITH A MEDITATIVE CALMNESS WHICH MAKES THESE TWO ETCHINGS CAPABLE OF BEING PLACED BESIDE THE MOST TRANQUIL WORK OF HOLBEIN OR DUERER
+
+Whisper(original):
+Every line in which the master traces it, even where seemingly negligent, is lovely and set down with a meditative calmness which makes these two etchings capable of being placed beside the most tranquil work of Holbein or Dure.
+
+Whisper(decoded):
+Every line in which the master traces it, even more seemingly negligent, is lovely and set down with a meditative calmness, which makes these two etchings capable of being placed beside the most tranquil work of Holbein or Durer.

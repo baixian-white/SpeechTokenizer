@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0061
+# model=base
+# L=1
+
+GT:
+I BELIEVE WHAT I SEE AND NO MORE
+
+Whisper(original):
+I believe what I see and no more.
+
+Whisper(decoded):
+Id relate for a single novel.

@@ -1,0 +1,19 @@
+method,model,L,sample_id,duration_sec,ideal_bitrate_bps,ideal_payload_bits,packed_payload_bytes,packed_payload_bps,packetized_payload_bytes,packetized_payload_bps,overhead_ratio,notes
+SCIT-Speech,scit_base,1,8838-298545-0037,1.0,500,500,63,504.0,79,632.0,0.264,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_base,2,8838-298545-0037,1.0,1000,1000,125,1000.0,141,1128.0,0.128,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_base,3,8838-298545-0037,1.0,1500,1500,188,1504.0,204,1632.0,0.088,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_lca,1,8838-298545-0037,1.0,500,500,63,504.0,79,632.0,0.264,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_lca,2,8838-298545-0037,1.0,1000,1000,125,1000.0,141,1128.0,0.128,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_lca,3,8838-298545-0037,1.0,1500,1500,188,1504.0,204,1632.0,0.088,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_base,1,5390-30102-0015,1.0,500,500,63,504.0,79,632.0,0.264,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_base,2,5390-30102-0015,1.0,1000,1000,125,1000.0,141,1128.0,0.128,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_base,3,5390-30102-0015,1.0,1500,1500,188,1504.0,204,1632.0,0.088,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_lca,1,5390-30102-0015,1.0,500,500,63,504.0,79,632.0,0.264,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_lca,2,5390-30102-0015,1.0,1000,1000,125,1000.0,141,1128.0,0.128,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_lca,3,5390-30102-0015,1.0,1500,1500,188,1504.0,204,1632.0,0.088,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_base,1,4018-103416-0033,1.0,500,500,63,504.0,79,632.0,0.264,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_base,2,4018-103416-0033,1.0,1000,1000,125,1000.0,141,1128.0,0.128,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_base,3,4018-103416-0033,1.0,1500,1500,188,1504.0,204,1632.0,0.088,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_lca,1,4018-103416-0033,1.0,500,500,63,504.0,79,632.0,0.264,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_lca,2,4018-103416-0033,1.0,1000,1000,125,1000.0,141,1128.0,0.128,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting
+SCIT-Speech,scit_lca,3,4018-103416-0033,1.0,1500,1500,188,1504.0,204,1632.0,0.088,packed payload is bit-packed 10-bit indices; npy storage is not used for payload accounting

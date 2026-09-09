@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0002
+# model=base
+# L=2
+
+GT:
+WHEN HOWEVER ZARATHUSTRA WAS QUITE NIGH UNTO THEM THEN DID HE HEAR PLAINLY THAT A HUMAN VOICE SPAKE IN THE MIDST OF THE KINE AND APPARENTLY ALL OF THEM HAD TURNED THEIR HEADS TOWARDS THE SPEAKER
+
+Whisper(original):
+who went, however, the two stravers quite nigh unto them. Then did he hear clearly that human voice peak in the midst of the kind, and apparently all of them had turned their heads towards the speaker.
+
+Whisper(decoded):
+However, the fish that was quite nice to do. Then did he hear a feeling of human voice fake in the midst of the time. And if he knew all of them had gone to the hostess before.

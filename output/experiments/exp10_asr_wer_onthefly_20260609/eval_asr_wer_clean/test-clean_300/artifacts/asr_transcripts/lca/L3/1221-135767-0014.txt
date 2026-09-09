@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0014
+# model=lca
+# L=3
+
+GT:
+YEA HIS HONOURABLE WORSHIP IS WITHIN BUT HE HATH A GODLY MINISTER OR TWO WITH HIM AND LIKEWISE A LEECH
+
+Whisper(original):
+Yay, his honorable worship is within, but he hath a godly minister or two with him, and likewise a leech.
+
+Whisper(decoded):
+Yay, his honorable worship is the thin, but he hath a godly minister or two with him, and likewise a leech.

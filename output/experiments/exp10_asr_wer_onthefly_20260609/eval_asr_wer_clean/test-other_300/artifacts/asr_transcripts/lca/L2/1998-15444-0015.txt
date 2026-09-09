@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0015
+# model=lca
+# L=2
+
+GT:
+NOTICE THE SMELL COLOUR AND GENERAL APPEARANCE OF THE MATTER SUBMITTED FOR EXAMINATION
+
+Whisper(original):
+Notice the small color and general appearance of the matter submitted for examination.
+
+Whisper(decoded):
+Notice this now, color and general appearance of the meta-submitted for examination.

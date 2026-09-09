@@ -1,0 +1,31 @@
+{
+  "sample_rate": 16000,
+  "codebook_size": 1024,
+  "n_q": 3,
+  "packet_header_bytes": 16,
+  "required_traditional_codec_tools": [
+    "ffmpeg or opusenc/opusdec"
+  ],
+  "tool_availability": {
+    "ffmpeg": {
+      "path": null,
+      "version": null,
+      "stderr": "not found"
+    },
+    "opusenc": {
+      "path": null,
+      "version": null,
+      "stderr": "not found"
+    },
+    "opusdec": {
+      "path": null,
+      "version": null,
+      "stderr": "not found"
+    },
+    "codec2": {
+      "path": null,
+      "version": null,
+      "stderr": "not found"
+    }
+  }
+}

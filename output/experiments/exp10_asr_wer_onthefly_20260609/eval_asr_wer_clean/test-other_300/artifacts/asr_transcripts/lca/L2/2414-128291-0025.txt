@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0025
+# model=lca
+# L=2
+
+GT:
+FOR THEY ARE THY WARMEST FRIENDS AND PRECEPTORS
+
+Whisper(original):
+So they are the warmest friends and perceptions.
+
+Whisper(decoded):
+For they are thy walrus friends and perceptions.

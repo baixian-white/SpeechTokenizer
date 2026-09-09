@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0023
+# model=base
+# L=1
+
+GT:
+THERE WERE A FEW ROSE BUSHES HOWEVER AND A NUMBER OF APPLE TREES PROBABLY THE DESCENDANTS OF THOSE PLANTED BY THE REVEREND MISTER BLACKSTONE THE FIRST SETTLER OF THE PENINSULA THAT HALF MYTHOLOGICAL PERSONAGE WHO RIDES THROUGH OUR EARLY ANNALS SEATED ON THE BACK OF A BULL
+
+Whisper(original):
+There were a few rose bushes, however, and a number of apple trees, probably the descendants of those planted by the Reverend Mr. Blackstone, the first settler of the peninsula, that half mythological personage who rides through our early annals seated on the back of a ball.
+
+Whisper(decoded):
+There were a few nose-blushes, however, and a member of apple-chase, commonly the descendants of those trained to buy the Reverend Mr. Blackstone, the first settler of the peninsula, that have mythological percentage who guides the war early animals seated on the back of the So those guys who would help operate through this quarantine or don't go through anything. They'll be close. Throw out emergency arcade room now.

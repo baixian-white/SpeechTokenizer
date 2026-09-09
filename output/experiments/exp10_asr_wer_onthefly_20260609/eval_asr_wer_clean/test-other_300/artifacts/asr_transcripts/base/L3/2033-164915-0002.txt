@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0002
+# model=base
+# L=3
+
+GT:
+WHEN THE EUNUCH SAW THIS CASE HE WONDERED AT THEM AND THROWING OVER THEM SOMEWHAT TO COVER THEM WAITED TILL THEY SHOULD RECOVER
+
+Whisper(original):
+When the UNOC saw these caves, he wondered at them and throwing over them somewhat to cover them, waited till they should recover.
+
+Whisper(decoded):
+When the UNUX saw this case, he wondered at them and throwing over them somewhat to cover them, waited till they should recover.

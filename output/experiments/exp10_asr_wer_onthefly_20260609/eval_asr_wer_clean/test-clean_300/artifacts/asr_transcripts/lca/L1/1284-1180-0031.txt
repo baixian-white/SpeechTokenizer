@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0031
+# model=lca
+# L=1
+
+GT:
+AT THE EMERALD CITY WHERE OUR PRINCESS OZMA LIVES GREEN IS THE POPULAR COLOR
+
+Whisper(original):
+At the Emerald City where our Princess Osmolives green is the popular color.
+
+Whisper(decoded):
+At the Emerald City where our Princess Osman Lynn's bringing is a popular color.

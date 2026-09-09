@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0009
+# model=lca
+# L=3
+
+GT:
+WHY DIDST THOU SAY I NEVER REPEATED THESE COUPLETS NOR DO I KNOW WHO REPEATED THEM WHEN IT WAS THY COMPANION
+
+Whisper(original):
+Why did thou say I never repeated these couplets, nor do I know who repeated them? When it was thy companion?
+
+Whisper(decoded):
+Why did thou say I never repeated these couplets, nor do I know who repeated them when it was the companion?

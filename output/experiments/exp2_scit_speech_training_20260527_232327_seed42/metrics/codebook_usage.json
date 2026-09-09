@@ -1,0 +1,45 @@
+{
+  "run_id": "exp2_scit_speech_training_20260527_232327_seed42",
+  "checkpoint": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+  "checkpoint_sha256": "8bc159f6ba0e26fb5c2471ce0529345dfa72fc283e956e73aa195f3ae8d73d8f",
+  "sample_count": 128,
+  "rows": [
+    {
+      "layer": 1,
+      "codebook_size": 1024,
+      "used_codes": 180,
+      "usage_rate": 0.17578125,
+      "perplexity": 122.60744419853627,
+      "dead_codes": 844,
+      "dead_code_ratio": 0.82421875,
+      "top1_frequency": 0.040625,
+      "sample_count": 128,
+      "note": "sanity/proxy codebook usage, not final communication quality"
+    },
+    {
+      "layer": 2,
+      "codebook_size": 1024,
+      "used_codes": 972,
+      "usage_rate": 0.94921875,
+      "perplexity": 579.627664861094,
+      "dead_codes": 52,
+      "dead_code_ratio": 0.05078125,
+      "top1_frequency": 0.01609375,
+      "sample_count": 128,
+      "note": "sanity/proxy codebook usage, not final communication quality"
+    },
+    {
+      "layer": 3,
+      "codebook_size": 1024,
+      "used_codes": 975,
+      "usage_rate": 0.9521484375,
+      "perplexity": 580.8331930596707,
+      "dead_codes": 49,
+      "dead_code_ratio": 0.0478515625,
+      "top1_frequency": 0.0178125,
+      "sample_count": 128,
+      "note": "sanity/proxy codebook usage, not final communication quality"
+    }
+  ],
+  "scope_note": "Sanity/proxy codebook usage only; not a final communication quality conclusion."
+}

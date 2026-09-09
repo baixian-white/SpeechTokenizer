@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0013
+# model=base
+# L=2
+
+GT:
+LIFTING THE IRON HAMMER THAT HUNG AT THE PORTAL HESTER PRYNNE GAVE A SUMMONS WHICH WAS ANSWERED BY ONE OF THE GOVERNOR'S BOND SERVANT A FREE BORN ENGLISHMAN BUT NOW A SEVEN YEARS SLAVE
+
+Whisper(original):
+Lifting the iron hammer that hung at the portal, Hester Prynne gave a summons which was answered by one of the governor's bond servants. A freeborn Englishman but now a seven-year slave.
+
+Whisper(decoded):
+Lifting the Iron Hammer at Holland at the Portal, Hester Prain gave a summons which was answered by one of the governor's bond servants, a freeborn Englishman but now a seven-year slave.

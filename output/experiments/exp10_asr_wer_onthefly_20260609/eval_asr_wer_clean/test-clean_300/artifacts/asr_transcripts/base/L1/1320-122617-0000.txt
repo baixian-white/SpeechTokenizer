@@ -1,0 +1,12 @@
+# sample_id=1320-122617-0000
+# model=base
+# L=1
+
+GT:
+NOTWITHSTANDING THE HIGH RESOLUTION OF HAWKEYE HE FULLY COMPREHENDED ALL THE DIFFICULTIES AND DANGER HE WAS ABOUT TO INCUR
+
+Whisper(original):
+Notwithstanding the high resolution of Hawkeye, he fully comprehended all the difficulties in danger he was about to incur.
+
+Whisper(decoded):
+Notwithstanding the high resolution of clock eye, he fully comprehended all the difficulties and danger he was about to incur.

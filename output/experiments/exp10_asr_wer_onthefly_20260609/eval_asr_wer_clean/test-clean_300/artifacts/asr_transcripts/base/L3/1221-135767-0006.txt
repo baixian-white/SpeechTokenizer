@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0006
+# model=base
+# L=3
+
+GT:
+THE MOTHER HERSELF AS IF THE RED IGNOMINY WERE SO DEEPLY SCORCHED INTO HER BRAIN THAT ALL HER CONCEPTIONS ASSUMED ITS FORM HAD CAREFULLY WROUGHT OUT THE SIMILITUDE LAVISHING MANY HOURS OF MORBID INGENUITY TO CREATE AN ANALOGY BETWEEN THE OBJECT OF HER AFFECTION AND THE EMBLEM OF HER GUILT AND TORTURE
+
+Whisper(original):
+The mother herself, as if the red ignominy were so deeply scorched into her brain that all her conceptions assumed its form, had carefully wrought out the similitude, lavishing many hours of morbid ingenuity to create an analogy between the object of her affection and the emblem of her guilt and torture.
+
+Whisper(decoded):
+The mother herself, as if the red ignominy were so deeply scorched into her brain that all her conceptions assumed its form, had carefully wrought out the sinillitude, lotishing many hours of morbid ingenuity to create an analogy between the object of her affection and the the emblem of her guilt and torture.

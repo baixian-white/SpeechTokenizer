@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0072
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+MARGARET HELD HER IN HER ARMS AND PUT THE WEARY HEAD TO REST UPON HER BOSOM
+
+Whisper(original):
+Margaret held her in her arms and put the weary head to rest upon her bosom.
+
+Whisper(decoded):
+My notebook shows a regular lens, and I fit the way it paste in the wrist when it efficient

@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0012
+# model=base
+# L=2
+
+GT:
+RETURN QUICKLY AND LINGER NOT
+
+Whisper(original):
+Return quickly and linger knots.
+
+Whisper(decoded):
+return quickly and lean their knots.

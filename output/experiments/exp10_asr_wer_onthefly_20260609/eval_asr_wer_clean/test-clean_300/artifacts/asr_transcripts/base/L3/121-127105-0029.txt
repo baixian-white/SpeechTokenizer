@@ -1,0 +1,12 @@
+# sample_id=121-127105-0029
+# model=base
+# L=3
+
+GT:
+THERE WERE PLENTY OF PEOPLE TO HELP BUT OF COURSE THE YOUNG LADY WHO SHOULD GO DOWN AS GOVERNESS WOULD BE IN SUPREME AUTHORITY
+
+Whisper(original):
+There were plenty of people to help, but of course the young lady who should go down as governess would be in supreme authority.
+
+Whisper(decoded):
+There are plenty of people to help, but of course the young lady who should go down as governess would be in supreme authority.

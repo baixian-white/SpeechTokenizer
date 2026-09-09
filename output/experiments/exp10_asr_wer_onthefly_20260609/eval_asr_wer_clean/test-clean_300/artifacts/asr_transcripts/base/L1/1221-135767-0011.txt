@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0011
+# model=base
+# L=1
+
+GT:
+IT WAS FURTHER DECORATED WITH STRANGE AND SEEMINGLY CABALISTIC FIGURES AND DIAGRAMS SUITABLE TO THE QUAINT TASTE OF THE AGE WHICH HAD BEEN DRAWN IN THE STUCCO WHEN NEWLY LAID ON AND HAD NOW GROWN HARD AND DURABLE FOR THE ADMIRATION OF AFTER TIMES
+
+Whisper(original):
+It was further decorated with strange and seemingly capitalistic figures and diagrams, suitable to the quaint taste of the age which had been drawn in the stucco when newly laid on and had now grown hard and durable for the admiration of after times.
+
+Whisper(decoded):
+It was further decorated with strange and seemingly tabulistic figures and diagrams, syllable to the quite taste of the age which had been drawn in the stutter when nearly laid on, and had now grown hard and durable for the admiration of aftertons.

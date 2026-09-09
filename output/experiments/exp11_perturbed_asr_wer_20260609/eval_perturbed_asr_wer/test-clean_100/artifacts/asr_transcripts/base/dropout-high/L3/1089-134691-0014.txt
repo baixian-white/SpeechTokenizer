@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0014
+# model=base
+# L=3
+# channel=dropout-high
+
+GT:
+THE PHRASE AND THE DAY AND THE SCENE HARMONIZED IN A CHORD
+
+Whisper(original):
+The phrase and the day and the scene harmonized in accord.
+
+Whisper(decoded):
+The phrase and the day and the scene harmonized in accord.

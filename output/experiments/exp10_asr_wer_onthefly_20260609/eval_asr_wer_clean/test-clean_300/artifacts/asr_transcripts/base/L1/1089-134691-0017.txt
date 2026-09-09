@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0017
+# model=base
+# L=1
+
+GT:
+THE EUROPE THEY HAD COME FROM LAY OUT THERE BEYOND THE IRISH SEA EUROPE OF STRANGE TONGUES AND VALLEYED AND WOODBEGIRT AND CITADELLED AND OF ENTRENCHED AND MARSHALLED RACES
+
+Whisper(original):
+The Europe they had come from lay out there beyond the Irish Sea, Europe of strange tongues and valid and wood-beagert and citadeld and of entrenched and marshalled races.
+
+Whisper(decoded):
+The European Union had come from way out there beyond the Irish Sea. Europe of strange tons and valid and would be hurt and sit it out above entrenched and marvel races Banter burden

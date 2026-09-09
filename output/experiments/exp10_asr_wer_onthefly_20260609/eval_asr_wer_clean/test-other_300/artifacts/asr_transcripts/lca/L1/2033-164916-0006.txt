@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0006
+# model=lca
+# L=1
+
+GT:
+WHEN IT WAS THE SEVENTY EIGHTH NIGHT
+
+Whisper(original):
+When it was a 78th night.
+
+Whisper(decoded):
+When it was a 78th night.

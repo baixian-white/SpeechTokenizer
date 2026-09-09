@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0012
+# model=base
+# L=2
+
+GT:
+IT IS NO LONGER TRUE THAT THE POOR ARE BLESSED
+
+Whisper(original):
+It is no longer true, let a poor outblest.
+
+Whisper(decoded):
+It is no longer true, neither for obvious.

@@ -1,0 +1,2 @@
+model,feature_kind,L,feature_dim,speaker_count,test_count,top1_accuracy,top5_accuracy,macro_f1
+base,codes_hist,1,1024,2,2,0.5,1.0,0.3333333333333333

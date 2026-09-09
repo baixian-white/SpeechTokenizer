@@ -1,0 +1,12 @@
+# sample_id=121-127105-0020
+# model=base
+# L=2
+
+GT:
+WHO WAS IT SHE WAS IN LOVE WITH THE STORY WILL TELL I TOOK UPON MYSELF TO REPLY OH I CAN'T WAIT FOR THE STORY THE STORY WON'T TELL SAID DOUGLAS NOT IN ANY LITERAL VULGAR WAY MORE'S THE PITY THEN
+
+Whisper(original):
+Who was it she was in love with? The story will tell, I took upon myself to reply. Oh, I can't wait for the story. The story won't tell, said Douglas. Not in any literal vulgar way. the pity then.
+
+Whisper(decoded):
+Who was it she was in love with? The story will tell, I took upon myself to reply. Oh, I can't read of the story. The story won't tell, said Douglas. Not in any literal vulgar way. the kitty done.

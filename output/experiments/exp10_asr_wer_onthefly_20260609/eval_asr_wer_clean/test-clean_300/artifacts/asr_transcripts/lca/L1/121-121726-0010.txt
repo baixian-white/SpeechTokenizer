@@ -1,0 +1,12 @@
+# sample_id=121-121726-0010
+# model=lca
+# L=1
+
+GT:
+HOUSECLEANING A DOMESTIC UPHEAVAL THAT MAKES IT EASY FOR THE GOVERNMENT TO ENLIST ALL THE SOLDIERS IT NEEDS
+
+Whisper(original):
+House cleaning. A domestic upheaval that makes it easy for the government to enlist all the soldiers it needs.
+
+Whisper(decoded):
+House training. They domestic upheaval. That makes it easy for the government to enlist all the soldiers it needs.

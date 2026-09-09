@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0066
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+BUT THE GIRL ONLY PLEADED THE MORE WITH MARGARET
+
+Whisper(original):
+But the girl and you played it the more with Margaret.
+
+Whisper(decoded):
+that they throw on any plane of the lowest bowler.

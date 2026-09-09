@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0003
+# model=base
+# L=2
+
+GT:
+FOR A LONG TIME HE HAD WISHED TO EXPLORE THE BEAUTIFUL LAND OF OZ IN WHICH THEY LIVED
+
+Whisper(original):
+For a long time he had wished to explore the beautiful land of Oz in which they lived.
+
+Whisper(decoded):
+For a long time he had wished to explore the beautiful line of ours in which they lived.

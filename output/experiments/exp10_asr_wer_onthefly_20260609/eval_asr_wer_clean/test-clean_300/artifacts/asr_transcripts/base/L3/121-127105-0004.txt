@@ -1,0 +1,12 @@
+# sample_id=121-127105-0004
+# model=base
+# L=3
+
+GT:
+THE STORY'S WRITTEN
+
+Whisper(original):
+The story's written.
+
+Whisper(decoded):
+The story's written.

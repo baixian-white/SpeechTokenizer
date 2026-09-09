@@ -1,0 +1,31 @@
+{
+  "run_id": "exp5_ablation_and_diagnosis_20260601_seed42",
+  "ablation_id": "A3_distill0",
+  "packaged_at": "2026-06-01T19:15:00+08:00",
+  "official_name": "SCIT-Speech-Base_distill0_step42500_extracted.pt",
+  "official_path": "h:\\H-CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260601_seed42\\checkpoints\\A3_distill0\\SCIT-Speech-Base_distill0_step42500_extracted.pt",
+  "sha256": "84b0ff458fc0084a329795f4d540389fe48dbdcd3a3ccab7df43614c84c877ba",
+  "source_trainer_pkg": "h:\\H-CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260601_seed42\\checkpoints\\A3_distill0\\SpeechTokenizerTrainer_00042500",
+  "source_step": 42500,
+  "source_epoch_approx": 12.6,
+  "source_dev_mel_loss": 3.141531,
+  "alternative_snapshot": "h:\\H-CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260601_seed42\\checkpoints\\A3_distill0\\SCIT-Speech-Base_distill0_step42500_best_snapshot.pt",
+  "training_started_at": "2026-06-01T07:12:00+08:00",
+  "training_stopped_at": "2026-06-01T19:00:00+08:00",
+  "epochs_completed": "~14.8 / 60",
+  "stop_reason": "Early-stopped after the ablation signal vs distill30 control became conclusive (+1.4 dev/mel error gap at step 47500, monotonically widening).",
+  "control_run_for_comparison": {
+    "run_id": "exp2_scit_speech_distill30_retrain_20260529_seed42",
+    "checkpoint_sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6",
+    "control_dev_mel_at_step_42500": 2.0371,
+    "control_full_run_best_dev_mel": 1.124
+  },
+  "key_diff_vs_control": "Only one factor changed: distill_loss_lambda 30.0 -> 0.0. All other hyperparameters identical (seed=42, batch=8, lr=1e-4, NAS encoder, 27039 train samples).",
+  "interruption_event": {
+    "occurred_at": "2026-06-01T14:30:00+08:00",
+    "reason": "User-initiated pause (not a crash)",
+    "resumed_at": "2026-06-01T16:42:00+08:00",
+    "resume_from_step": 37500
+  },
+  "note": "Packaging only; not a training or evaluation result."
+}

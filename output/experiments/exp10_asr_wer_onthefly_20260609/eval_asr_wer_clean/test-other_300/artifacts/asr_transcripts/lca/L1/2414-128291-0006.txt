@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0006
+# model=lca
+# L=1
+
+GT:
+HE WOULD NOT BE RID OF HIS AFFLICTION
+
+Whisper(original):
+He will not be rid of his affiliation.
+
+Whisper(decoded):
+Feel that he read of his assation.

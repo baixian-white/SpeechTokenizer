@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0030
+# model=lca
+# L=2
+
+GT:
+I AIN'T SURE AS I ADN'T BETTER STICK TO THE ROAD AND KEEP AWAY FROM OLD ANDS LIKE YOU JIM
+
+Whisper(original):
+I ensure as I add and better stick to the road and keep away from old ends like you Jim.
+
+Whisper(decoded):
+I am sure as I hadn't better stick to the root and keep away from old ends that huge Okay. Again. So that's replaced with all of this important action, obviously.

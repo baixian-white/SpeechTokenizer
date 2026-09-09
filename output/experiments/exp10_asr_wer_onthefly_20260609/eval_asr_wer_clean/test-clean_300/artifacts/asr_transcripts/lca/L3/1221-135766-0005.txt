@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0005
+# model=lca
+# L=3
+
+GT:
+HESTER COULD ONLY ACCOUNT FOR THE CHILD'S CHARACTER AND EVEN THEN MOST VAGUELY AND IMPERFECTLY BY RECALLING WHAT SHE HERSELF HAD BEEN DURING THAT MOMENTOUS PERIOD WHILE PEARL WAS IMBIBING HER SOUL FROM THE SPIRITUAL WORLD AND HER BODILY FRAME FROM ITS MATERIAL OF EARTH
+
+Whisper(original):
+Hester could only account for the child's character, and even then most vaguely and imperfectly, by recalling what she herself had been during that momentous period, while Pearl was imbibing her soul from the spiritual world, and her bodily frame from its material of earth.
+
+Whisper(decoded):
+Hester could only account for the child's character, and even then most vaguely and imperfectly, by recalling what she herself had been during that momentous period, while Perot was imbibing her soul from the spiritual world, and her bodily frame from its material of earth.

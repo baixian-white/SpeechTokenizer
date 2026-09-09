@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0047
+# model=base
+# L=2
+
+GT:
+BUT WHAT WAS IT
+
+Whisper(original):
+But what was it?
+
+Whisper(decoded):
+But what was it?

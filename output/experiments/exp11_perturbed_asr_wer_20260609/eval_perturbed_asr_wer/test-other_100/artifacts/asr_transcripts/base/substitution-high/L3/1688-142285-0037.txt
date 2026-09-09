@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0037
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+WELL BESSY HOW ARE YOU
+
+Whisper(original):
+Well, Bissy, how are you?
+
+Whisper(decoded):
+Well, good to see. How are you?

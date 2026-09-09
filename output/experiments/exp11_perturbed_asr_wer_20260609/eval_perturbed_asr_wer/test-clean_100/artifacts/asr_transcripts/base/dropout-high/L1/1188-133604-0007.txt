@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0007
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+THE BROWN GROUND BENEATH IS LEFT FOR THE MOST PART ONE TOUCH OF BLACK IS PUT FOR THE HOLLOW TWO DELICATE LINES OF DARK GRAY DEFINE THE OUTER CURVE AND ONE LITTLE QUIVERING TOUCH OF WHITE DRAWS THE INNER EDGE OF THE MANDIBLE
+
+Whisper(original):
+The brown ground beneath is left for the most part. One touch of black is put for the hollow, two delicate lines of dark grey to find the outer curve, and one little quivering touch of white draws the inner edge of the mandible.
+
+Whisper(decoded):
+The brown brown underneath is laughed for the most part. One touch of black is twipped for the hollow, teed out of your lines of dark grey to find the outer curve, and one little quivering touch of white, jossing in her heads of the and have the bone.
