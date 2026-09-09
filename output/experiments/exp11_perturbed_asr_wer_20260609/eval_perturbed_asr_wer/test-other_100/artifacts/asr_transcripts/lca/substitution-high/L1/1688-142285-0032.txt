@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0032
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+BUT THOUGH SHE RECEIVED CARESSES AND FOND WORDS BACK AGAIN IN SUCH PROFUSION AS WOULD HAVE GLADDENED HER FORMERLY YET SHE FELT THAT THERE WAS A SECRET WITHHELD FROM HER AND SHE BELIEVED IT BORE SERIOUS REFERENCE TO HER MOTHER'S HEALTH
+
+Whisper(original):
+But though she received caresses and fond words back again, in such profusion as would have glad in her formally, yet she felt that there was a secret withheld from her, and She believed it bore serious reference to her mother's health.
+
+Whisper(decoded):
+But I sure see purses and fun ones back again. In such perfusion, her would have bled in her formally. Yet she felt that there was a secret that helped from her. And she believed that both serious ruffers turned on as health.

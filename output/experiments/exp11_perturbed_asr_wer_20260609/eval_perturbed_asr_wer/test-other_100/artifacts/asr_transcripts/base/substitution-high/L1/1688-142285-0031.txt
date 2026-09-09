@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0031
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+ONCE MARGARET HAD GONE INTO THE CHAMBER SOON AFTER DIXON LEFT IT AND FOUND HER MOTHER ON HER KNEES AND AS MARGARET STOLE OUT SHE CAUGHT A FEW WORDS WHICH WERE EVIDENTLY A PRAYER FOR STRENGTH AND PATIENCE TO ENDURE SEVERE BODILY SUFFERING
+
+Whisper(original):
+Once Margaret had gone into the chamber soon after Dixim lifted, and found her mother on her knees, and as Margaret stole out, she caught a few words which were evidently a prayer for strength and patience to induce severe bodily suffering.
+
+Whisper(decoded):
+Once Margaret had gone into the chamber set off the Dixielle, and found her lover at her knees, and had not reached all around, she caught a few bullets that were evidently a prayer for strength and patience, turning jail so they had bodily suffering.

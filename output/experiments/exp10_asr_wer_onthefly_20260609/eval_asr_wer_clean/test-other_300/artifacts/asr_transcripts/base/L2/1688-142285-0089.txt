@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0089
+# model=base
+# L=2
+
+GT:
+PERHAPS SHE MAY HAVE A RELATION WHO MIGHT SUIT US AND BE GLAD OF OUR PLACE
+
+Whisper(original):
+Perhaps she may have a relation who might suit us and be glad of our place.
+
+Whisper(decoded):
+Perhaps she might have a relation with my tsuite and be glad about this.

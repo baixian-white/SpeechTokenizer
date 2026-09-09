@@ -1,0 +1,32 @@
+{
+  "run_id": "exp3_low_load_channel_aware_adaptation_20260530_seed42",
+  "packaged_at": "2026-05-31T08:35:24+08:00",
+  "official_name": "SCIT-Speech-LCA_best.pt",
+  "official_path": "output\\experiments\\exp3_low_load_channel_aware_adaptation_20260530_seed42\\checkpoints\\SCIT-Speech-LCA_best.pt",
+  "sha256": "9daa924ff5aeedf2fa4aa1ddb2d7ce7f53297548e7258d0ef8d5b1af255a8609",
+  "source_trainer_pkg": "output\\experiments\\exp3_low_load_channel_aware_adaptation_20260530_seed42\\checkpoints\\SpeechTokenizerTrainer_00030000",
+  "source_step": 30000,
+  "source_epoch_approx": 8.88,
+  "selection_reason": "dev/comm_mel global optimum across all 15 (L, channel) cells; mean improvement 12.97% vs LCA step 2500 reference",
+  "alternative_snapshots": {
+    "step17500_full_mel_optimum": {
+      "path": "output\\experiments\\exp3_low_load_channel_aware_adaptation_20260530_seed42\\checkpoints\\SCIT-Speech-LCA_step17500_full_mel_optimum.pt",
+      "dev_full_mel": 1.013055,
+      "selection_reason": "global minimum of dev/full_depth_mel_error across 13 dev evaluations"
+    },
+    "step30000_comm_mel_optimum": {
+      "path": "output\\experiments\\exp3_low_load_channel_aware_adaptation_20260530_seed42\\checkpoints\\SCIT-Speech-LCA_step30000_comm_mel_optimum.pt",
+      "selection_reason": "best for low-load communication scenarios; same weights as official SCIT-Speech-LCA_best.pt"
+    }
+  },
+  "base_run": {
+    "run_id": "exp2_scit_speech_distill30_retrain_20260529_seed42",
+    "checkpoint": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+    "sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6"
+  },
+  "training_config": "output\\experiments\\exp3_low_load_channel_aware_adaptation_20260530_seed42\\configs\\lca_finetune_config.json",
+  "training_completed_at": "2026-05-31T07:59:00+08:00",
+  "total_train_steps": 33790,
+  "epochs_completed": 10,
+  "note": "Packaging only; not a training or evaluation result. Both alternative snapshots retained for ablation."
+}

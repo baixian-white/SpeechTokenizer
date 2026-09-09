@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0006
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+I DON'T THINK MISTER HALE YOU HAVE DONE QUITE RIGHT IN INTRODUCING SUCH A PERSON TO US WITHOUT TELLING US WHAT HE HAD BEEN
+
+Whisper(original):
+I don't think Mr Hale you have done quite right in introducing such a person to us without telling us what he had been.
+
+Whisper(decoded):
+I don't think Mr. Hell you have done quite right in introducing such a person to us without telling us what he had been.

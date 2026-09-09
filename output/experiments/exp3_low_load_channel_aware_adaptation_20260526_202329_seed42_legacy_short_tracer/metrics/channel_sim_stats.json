@@ -1,0 +1,1082 @@
+[
+  {
+    "model": "base",
+    "sample_id": "8838-298545-0037",
+    "L": 1,
+    "channel": "clean",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1235,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "8838-298545-0037",
+    "L": 2,
+    "channel": "clean",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1236,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "8838-298545-0037",
+    "L": 3,
+    "channel": "clean",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "8838-298545-0037",
+    "L": 1,
+    "channel": "dropout-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1235,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "8838-298545-0037",
+    "L": 2,
+    "channel": "dropout-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1236,
+    "total_indices": 100,
+    "replaced_by_previous": 1,
+    "substituted": 0,
+    "actual_p_drop": 0.01,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "8838-298545-0037",
+    "L": 3,
+    "channel": "dropout-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 150,
+    "replaced_by_previous": 3,
+    "substituted": 0,
+    "actual_p_drop": 0.02,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "8838-298545-0037",
+    "L": 1,
+    "channel": "substitution-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1235,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "8838-298545-0037",
+    "L": 2,
+    "channel": "substitution-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1236,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "8838-298545-0037",
+    "L": 3,
+    "channel": "substitution-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1237,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "8838-298545-0037",
+    "L": 1,
+    "channel": "clean",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1235,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "8838-298545-0037",
+    "L": 2,
+    "channel": "clean",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1236,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "8838-298545-0037",
+    "L": 3,
+    "channel": "clean",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "8838-298545-0037",
+    "L": 1,
+    "channel": "dropout-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1235,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "8838-298545-0037",
+    "L": 2,
+    "channel": "dropout-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1236,
+    "total_indices": 100,
+    "replaced_by_previous": 1,
+    "substituted": 0,
+    "actual_p_drop": 0.01,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "8838-298545-0037",
+    "L": 3,
+    "channel": "dropout-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 150,
+    "replaced_by_previous": 3,
+    "substituted": 0,
+    "actual_p_drop": 0.02,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "8838-298545-0037",
+    "L": 1,
+    "channel": "substitution-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1235,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "8838-298545-0037",
+    "L": 2,
+    "channel": "substitution-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1236,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "8838-298545-0037",
+    "L": 3,
+    "channel": "substitution-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1237,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "5390-30102-0015",
+    "L": 1,
+    "channel": "clean",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1236,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "5390-30102-0015",
+    "L": 2,
+    "channel": "clean",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "5390-30102-0015",
+    "L": 3,
+    "channel": "clean",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1238,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "5390-30102-0015",
+    "L": 1,
+    "channel": "dropout-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1236,
+    "total_indices": 50,
+    "replaced_by_previous": 1,
+    "substituted": 0,
+    "actual_p_drop": 0.02,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "5390-30102-0015",
+    "L": 2,
+    "channel": "dropout-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 100,
+    "replaced_by_previous": 3,
+    "substituted": 0,
+    "actual_p_drop": 0.03,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "5390-30102-0015",
+    "L": 3,
+    "channel": "dropout-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1238,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "5390-30102-0015",
+    "L": 1,
+    "channel": "substitution-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1236,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "5390-30102-0015",
+    "L": 2,
+    "channel": "substitution-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1237,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "5390-30102-0015",
+    "L": 3,
+    "channel": "substitution-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1238,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "5390-30102-0015",
+    "L": 1,
+    "channel": "clean",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1236,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "5390-30102-0015",
+    "L": 2,
+    "channel": "clean",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "5390-30102-0015",
+    "L": 3,
+    "channel": "clean",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1238,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "5390-30102-0015",
+    "L": 1,
+    "channel": "dropout-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1236,
+    "total_indices": 50,
+    "replaced_by_previous": 1,
+    "substituted": 0,
+    "actual_p_drop": 0.02,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "5390-30102-0015",
+    "L": 2,
+    "channel": "dropout-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 100,
+    "replaced_by_previous": 3,
+    "substituted": 0,
+    "actual_p_drop": 0.03,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "5390-30102-0015",
+    "L": 3,
+    "channel": "dropout-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1238,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "5390-30102-0015",
+    "L": 1,
+    "channel": "substitution-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1236,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "5390-30102-0015",
+    "L": 2,
+    "channel": "substitution-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1237,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "5390-30102-0015",
+    "L": 3,
+    "channel": "substitution-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1238,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "4018-103416-0033",
+    "L": 1,
+    "channel": "clean",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "4018-103416-0033",
+    "L": 2,
+    "channel": "clean",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1238,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "4018-103416-0033",
+    "L": 3,
+    "channel": "clean",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1239,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "4018-103416-0033",
+    "L": 1,
+    "channel": "dropout-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 50,
+    "replaced_by_previous": 1,
+    "substituted": 0,
+    "actual_p_drop": 0.02,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "4018-103416-0033",
+    "L": 2,
+    "channel": "dropout-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1238,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "4018-103416-0033",
+    "L": 3,
+    "channel": "dropout-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1239,
+    "total_indices": 150,
+    "replaced_by_previous": 2,
+    "substituted": 0,
+    "actual_p_drop": 0.013333333333333334,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "4018-103416-0033",
+    "L": 1,
+    "channel": "substitution-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1237,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "4018-103416-0033",
+    "L": 2,
+    "channel": "substitution-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1238,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "base",
+    "sample_id": "4018-103416-0033",
+    "L": 3,
+    "channel": "substitution-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1239,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "4018-103416-0033",
+    "L": 1,
+    "channel": "clean",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "4018-103416-0033",
+    "L": 2,
+    "channel": "clean",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1238,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "4018-103416-0033",
+    "L": 3,
+    "channel": "clean",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.0,
+    "seed": 1239,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "4018-103416-0033",
+    "L": 1,
+    "channel": "dropout-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1237,
+    "total_indices": 50,
+    "replaced_by_previous": 1,
+    "substituted": 0,
+    "actual_p_drop": 0.02,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "4018-103416-0033",
+    "L": 2,
+    "channel": "dropout-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1238,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "4018-103416-0033",
+    "L": 3,
+    "channel": "dropout-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.01,
+    "p_sub": 0.0,
+    "seed": 1239,
+    "total_indices": 150,
+    "replaced_by_previous": 2,
+    "substituted": 0,
+    "actual_p_drop": 0.013333333333333334,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "4018-103416-0033",
+    "L": 1,
+    "channel": "substitution-low",
+    "shape": [
+      1,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1237,
+    "total_indices": 50,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "4018-103416-0033",
+    "L": 2,
+    "channel": "substitution-low",
+    "shape": [
+      2,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1238,
+    "total_indices": 100,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  },
+  {
+    "model": "lca",
+    "sample_id": "4018-103416-0033",
+    "L": 3,
+    "channel": "substitution-low",
+    "shape": [
+      3,
+      1,
+      50
+    ],
+    "codebook_size": 1024,
+    "p_drop": 0.0,
+    "p_sub": 0.001,
+    "seed": 1239,
+    "total_indices": 150,
+    "replaced_by_previous": 0,
+    "substituted": 0,
+    "actual_p_drop": 0.0,
+    "actual_p_sub": 0.0
+  }
+]

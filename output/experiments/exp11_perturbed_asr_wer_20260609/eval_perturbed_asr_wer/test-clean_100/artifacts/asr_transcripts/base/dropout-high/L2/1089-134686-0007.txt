@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0007
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+A COLD LUCID INDIFFERENCE REIGNED IN HIS SOUL
+
+Whisper(original):
+A cold, lucid indifference rained in his soul.
+
+Whisper(decoded):
+A cold, lucid indifference rained in his soul.

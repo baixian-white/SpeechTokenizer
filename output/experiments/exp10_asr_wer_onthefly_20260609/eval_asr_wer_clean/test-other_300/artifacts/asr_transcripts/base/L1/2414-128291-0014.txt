@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0014
+# model=base
+# L=1
+
+GT:
+WHY DOST THOU TEMPT ME
+
+Whisper(original):
+Why those don't tempt me?
+
+Whisper(decoded):
+Why those don't take me?

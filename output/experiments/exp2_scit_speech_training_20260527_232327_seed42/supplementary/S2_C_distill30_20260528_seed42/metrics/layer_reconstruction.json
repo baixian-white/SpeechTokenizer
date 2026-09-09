@@ -1,0 +1,218 @@
+[
+  {
+    "sample_id": "8838-298545-0037",
+    "L": 1,
+    "ideal_bitrate_bps": 500,
+    "recon_l1": 0.05377739295363426,
+    "codes_shape": "[1, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "8838-298545-0037",
+    "L": 2,
+    "ideal_bitrate_bps": 1000,
+    "recon_l1": 0.04184887185692787,
+    "codes_shape": "[2, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "8838-298545-0037",
+    "L": 3,
+    "ideal_bitrate_bps": 1500,
+    "recon_l1": 0.03584904968738556,
+    "codes_shape": "[3, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "5390-30102-0015",
+    "L": 1,
+    "ideal_bitrate_bps": 500,
+    "recon_l1": 0.027238840237259865,
+    "codes_shape": "[1, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "5390-30102-0015",
+    "L": 2,
+    "ideal_bitrate_bps": 1000,
+    "recon_l1": 0.02240198291838169,
+    "codes_shape": "[2, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "5390-30102-0015",
+    "L": 3,
+    "ideal_bitrate_bps": 1500,
+    "recon_l1": 0.01961366832256317,
+    "codes_shape": "[3, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "4018-103416-0033",
+    "L": 1,
+    "ideal_bitrate_bps": 500,
+    "recon_l1": 0.03422271087765694,
+    "codes_shape": "[1, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "4018-103416-0033",
+    "L": 2,
+    "ideal_bitrate_bps": 1000,
+    "recon_l1": 0.023008521646261215,
+    "codes_shape": "[2, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "4018-103416-0033",
+    "L": 3,
+    "ideal_bitrate_bps": 1500,
+    "recon_l1": 0.022548936307430267,
+    "codes_shape": "[3, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "1737-148989-0006",
+    "L": 1,
+    "ideal_bitrate_bps": 500,
+    "recon_l1": 0.02560366503894329,
+    "codes_shape": "[1, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "1737-148989-0006",
+    "L": 2,
+    "ideal_bitrate_bps": 1000,
+    "recon_l1": 0.02330613136291504,
+    "codes_shape": "[2, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "1737-148989-0006",
+    "L": 3,
+    "ideal_bitrate_bps": 1500,
+    "recon_l1": 0.022565292194485664,
+    "codes_shape": "[3, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "1455-138263-0040",
+    "L": 1,
+    "ideal_bitrate_bps": 500,
+    "recon_l1": 0.00961150974035263,
+    "codes_shape": "[1, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "1455-138263-0040",
+    "L": 2,
+    "ideal_bitrate_bps": 1000,
+    "recon_l1": 0.009314978495240211,
+    "codes_shape": "[2, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "1455-138263-0040",
+    "L": 3,
+    "ideal_bitrate_bps": 1500,
+    "recon_l1": 0.009342861361801624,
+    "codes_shape": "[3, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "311-124404-0119",
+    "L": 1,
+    "ideal_bitrate_bps": 500,
+    "recon_l1": 0.028117710724473,
+    "codes_shape": "[1, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "311-124404-0119",
+    "L": 2,
+    "ideal_bitrate_bps": 1000,
+    "recon_l1": 0.025246120989322662,
+    "codes_shape": "[2, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "311-124404-0119",
+    "L": 3,
+    "ideal_bitrate_bps": 1500,
+    "recon_l1": 0.023618951439857483,
+    "codes_shape": "[3, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "4680-16026-0019",
+    "L": 1,
+    "ideal_bitrate_bps": 500,
+    "recon_l1": 0.05076098442077637,
+    "codes_shape": "[1, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "4680-16026-0019",
+    "L": 2,
+    "ideal_bitrate_bps": 1000,
+    "recon_l1": 0.03794821351766586,
+    "codes_shape": "[2, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "4680-16026-0019",
+    "L": 3,
+    "ideal_bitrate_bps": 1500,
+    "recon_l1": 0.03379431366920471,
+    "codes_shape": "[3, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "8098-278278-0035",
+    "L": 1,
+    "ideal_bitrate_bps": 500,
+    "recon_l1": 0.030068473890423775,
+    "codes_shape": "[1, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "8098-278278-0035",
+    "L": 2,
+    "ideal_bitrate_bps": 1000,
+    "recon_l1": 0.027195138856768608,
+    "codes_shape": "[2, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  },
+  {
+    "sample_id": "8098-278278-0035",
+    "L": 3,
+    "ideal_bitrate_bps": 1500,
+    "recon_l1": 0.024811089038848877,
+    "codes_shape": "[3, 1, 50]",
+    "output_shape": "[1, 1, 16000]",
+    "duration_sec": 1.0
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "run_id": "eval_unified_20260605",
+  "base_config": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\configs\\scit_speech_base_config.json",
+  "base_checkpoint": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+  "sample_list": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\artifacts\\valid_files.txt",
+  "max_samples": 8,
+  "L_values": [
+    1,
+    2,
+    3
+  ],
+  "channel_conditions": [
+    {
+      "name": "clean",
+      "p_drop": 0.0,
+      "p_sub": 0.0
+    },
+    {
+      "name": "dropout-mid",
+      "p_drop": 0.05,
+      "p_sub": 0.0
+    },
+    {
+      "name": "dropout-high",
+      "p_drop": 0.1,
+      "p_sub": 0.0
+    },
+    {
+      "name": "substitution-mid",
+      "p_drop": 0.0,
+      "p_sub": 0.01
+    },
+    {
+      "name": "substitution-high",
+      "p_drop": 0.0,
+      "p_sub": 0.03
+    }
+  ],
+  "variants": [
+    {
+      "id": "V0_clean_control_step30000",
+      "note": "V0 checkpoint near best L3 clean comm-mel.",
+      "eval_config": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\configs\\eval\\V0_clean_control_step30000.json",
+      "checkpoint": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\runs\\V0_full_depth_clean_control\\checkpoints\\SpeechTokenizerTrainer_00030000",
+      "run_dir": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\eval_unified_20260605\\V0_clean_control_step30000"
+    },
+    {
+      "id": "V1_random_l_only_step25000",
+      "note": "V1 checkpoint near best L2/L3 clean comm-mel.",
+      "eval_config": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\configs\\eval\\V1_random_l_only_step25000.json",
+      "checkpoint": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\runs\\V1_random_l_only\\checkpoints\\SpeechTokenizerTrainer_00025000",
+      "run_dir": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\eval_unified_20260605\\V1_random_l_only_step25000"
+    },
+    {
+      "id": "V2_channelsim_only_step17500",
+      "note": "V2 checkpoint near best L3 perturbation dev-mel.",
+      "eval_config": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\configs\\eval\\V2_channelsim_only_step17500.json",
+      "checkpoint": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\runs\\V2_channelsim_only\\checkpoints\\SpeechTokenizerTrainer_00017500",
+      "run_dir": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\eval_unified_20260605\\V2_channelsim_only_step17500"
+    },
+    {
+      "id": "V3_random_l_channelsim_step32500",
+      "note": "V3 final checkpoint; best for most L2/L3 dev metrics.",
+      "eval_config": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\configs\\eval\\V3_random_l_channelsim_step32500.json",
+      "checkpoint": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\runs\\V3_random_l_channelsim\\checkpoints\\SpeechTokenizerTrainer_00032500",
+      "run_dir": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\eval_unified_20260605\\V3_random_l_channelsim_step32500"
+    },
+    {
+      "id": "V4_full_lca_step30000",
+      "note": "Full LCA reference with random-L + ChannelSim + consistency.",
+      "eval_config": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\configs\\eval\\V4_full_lca_step30000.json",
+      "checkpoint": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_v2_step30000_robust_optimum.pt",
+      "run_dir": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\eval_unified_20260605\\V4_full_lca_step30000"
+    }
+  ]
+}

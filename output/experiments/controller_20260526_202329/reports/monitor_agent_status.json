@@ -1,0 +1,22 @@
+{
+  "controller_run_id": "controller_20260526_202329",
+  "agent": "monitor_reviewer",
+  "status": "completed",
+  "review_status": "needs_attention",
+  "completed_at": "2026-05-26T20:27:15.9981758+08:00",
+  "wrote_files": [
+    "output/experiments/controller_20260526_202329/reports/monitor_review.md",
+    "output/experiments/controller_20260526_202329/reports/monitor_status.json",
+    "output/experiments/controller_20260526_202329/reports/monitor_agent_handoff.md",
+    "output/experiments/controller_20260526_202329/reports/monitor_agent_status.json"
+  ],
+  "structural_findings": {
+    "required_run_directories_present": true,
+    "required_subdirectories_present_for_all_runs": true,
+    "all_run_subdirectories_empty": true,
+    "all_experiments_pending_in_orchestrator": true,
+    "experiment_6_directory_found": false,
+    "results_claimed_without_provenance": false,
+    "stop_rules_triggered": []
+  }
+}

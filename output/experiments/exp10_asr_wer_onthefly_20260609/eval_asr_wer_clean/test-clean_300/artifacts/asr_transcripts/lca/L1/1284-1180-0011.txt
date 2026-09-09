@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0011
+# model=lca
+# L=1
+
+GT:
+I AM MY DEAR AND ALL STRANGERS ARE WELCOME TO MY HOME
+
+Whisper(original):
+I am my dear and all strangers are welcome to my home.
+
+Whisper(decoded):
+I am my dear and all strangers are welcome to my home.

@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0003
+# model=lca
+# L=2
+
+GT:
+HE GOT IT UP AND PUSHED HIS TREASURES AS FAR IN AS HE COULD ALONG THE ROUGH CRUMBLY SURFACE OF THE LATH AND PLASTER
+
+Whisper(original):
+He got it up and pushed his treasures as far in as he could, along the rough, crumbly surface of the lass and plaster.
+
+Whisper(decoded):
+He got attacked and pushed his treasures best for him as he could, allowing the rough, timely surface of the lice and plaster.

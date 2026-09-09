@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0021
+# model=lca
+# L=3
+
+GT:
+SAID ZARATHUSTRA THOU SHOULDST ALSO SEE MINE ANIMALS MINE EAGLE AND MY SERPENT THEIR LIKE DO NOT AT PRESENT EXIST ON EARTH
+
+Whisper(original):
+Sesenatustra. Now, shouldst also see my animals, my eagle and my serpent. Their like do not at present exist on earth.
+
+Whisper(decoded):
+says a hushta. No shudders also seen my animals, my people, and my associate. Their light do not have present exist on earth.

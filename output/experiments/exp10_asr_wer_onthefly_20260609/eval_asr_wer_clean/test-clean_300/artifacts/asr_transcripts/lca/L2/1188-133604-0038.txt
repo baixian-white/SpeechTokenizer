@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0038
+# model=lca
+# L=2
+
+GT:
+BUT NOW HERE IS A SUBJECT OF WHICH YOU WILL WONDER AT FIRST WHY TURNER DREW IT AT ALL
+
+Whisper(original):
+But now here is the subject of which you will wonder at first why Turner drew it at all.
+
+Whisper(decoded):
+But now here is a subject of which you will wonder at first why Turner drew it at all.

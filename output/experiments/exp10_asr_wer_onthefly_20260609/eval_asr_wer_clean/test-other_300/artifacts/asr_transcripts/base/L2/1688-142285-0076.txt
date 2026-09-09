@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0076
+# model=base
+# L=2
+
+GT:
+MARGARET WENT AWAY VERY SAD AND THOUGHTFUL
+
+Whisper(original):
+Margaret went away very sad and thoughtful.
+
+Whisper(decoded):
+not going to wear very sad and thoughtful.

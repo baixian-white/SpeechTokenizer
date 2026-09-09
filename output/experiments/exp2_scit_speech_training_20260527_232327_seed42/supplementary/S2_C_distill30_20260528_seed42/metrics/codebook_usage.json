@@ -1,0 +1,32 @@
+[
+  {
+    "layer": 1,
+    "codebook_size": 1024,
+    "used_codes": 132,
+    "usage_rate": 0.12890625,
+    "perplexity": 84.72664214371329,
+    "dead_codes": 892,
+    "dead_code_ratio": 0.87109375,
+    "top1_frequency": 0.0825
+  },
+  {
+    "layer": 2,
+    "codebook_size": 1024,
+    "used_codes": 265,
+    "usage_rate": 0.2587890625,
+    "perplexity": 216.7691152805117,
+    "dead_codes": 759,
+    "dead_code_ratio": 0.7412109375,
+    "top1_frequency": 0.04
+  },
+  {
+    "layer": 3,
+    "codebook_size": 1024,
+    "used_codes": 278,
+    "usage_rate": 0.271484375,
+    "perplexity": 238.37768872899306,
+    "dead_codes": 746,
+    "dead_code_ratio": 0.728515625,
+    "top1_frequency": 0.0175
+  }
+]

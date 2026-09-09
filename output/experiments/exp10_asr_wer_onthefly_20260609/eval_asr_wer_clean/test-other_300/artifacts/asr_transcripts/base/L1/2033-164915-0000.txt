@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0000
+# model=base
+# L=1
+
+GT:
+AND ALSO THESE
+
+Whisper(original):
+and also these
+
+Whisper(decoded):
+and also bees.

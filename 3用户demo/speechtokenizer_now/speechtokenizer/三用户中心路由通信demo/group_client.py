@@ -36,6 +36,7 @@ from common_protocol import recv_message, send_message
 from crypto_utils import xor_bytes
 from channel_perturb import apply_packet_burst, CONDITIONS
 from speechtokenizer import SpeechTokenizer
+from speaker_identity import StreamingSpeakerIdentifier
 
 
 # 默认指向本 bundle 内捆绑的本地训练模型（即论文 SCIT-Speech-LCA v2：
@@ -236,6 +237,13 @@ class IncomingStream:
     recv_total_bytes: int = 0
     decode_ms_samples: list[float] = field(default_factory=list)
     jitter_sec_samples: list[float] = field(default_factory=list)
+    last_speaker_pred: str = ""
+    last_speaker_score: float = float("nan")
+    last_speaker_margin: float = float("nan")
+    last_speaker_verified: bool = False
+    speaker_eval_count: int = 0
+    speaker_correct_count: int = 0
+    speaker_verified_count: int = 0
 
 
 class GroupClient:
@@ -272,6 +280,7 @@ class GroupClient:
         self.codebook_size = 1024
         self.index_bits = 10
         self._channel_cond = CONDITIONS.get(getattr(args, "channel", "clean"), CONDITIONS["clean"])
+        self.speaker_identifier: Optional[StreamingSpeakerIdentifier] = None
 
     def load_model(self):
         print("[MODEL] loading ...")
@@ -289,6 +298,63 @@ class GroupClient:
         self.index_bits = max(1, (self.codebook_size - 1).bit_length())
         print(f"[MODEL] ready sr={self.model_sr} device={self.device} "
               f"codebook_size={self.codebook_size} index_bits={self.index_bits}")
+
+    def init_speaker_identifier(self):
+        bundle_dir = str(getattr(self.args, 'speaker_classifier_bundle', '') or '').strip()
+        profile_dir_value = str(getattr(self.args, 'speaker_profile_dir', '') or '').strip()
+        if bundle_dir and profile_dir_value:
+            raise ValueError('classifier bundle and profile directory are mutually exclusive')
+        if bundle_dir:
+            sample_rate = self.model_sr
+            bundle_device = str(getattr(self.args, 'speaker_classifier_device', 'cpu'))
+            self.speaker_identifier = StreamingSpeakerIdentifier(
+                profile_dir='',
+                sample_rate=sample_rate,
+                window_sec=float(self.args.speaker_window_sec),
+                hop_sec=float(self.args.speaker_hop_sec),
+                threshold=float(self.args.speaker_classifier_threshold),
+                bundle_dir=bundle_dir,
+                bundle_device=bundle_device,
+            )
+            print(
+                f'[SPKID] enabled speakers={self.speaker_identifier.speaker_count} '
+                f'backend=exp23-bundle device={bundle_device} sr={sample_rate} '
+                f'window={self.args.speaker_window_sec:.2f}s hop={self.args.speaker_hop_sec:.2f}s '
+                f'threshold={self.args.speaker_classifier_threshold:.2f}'
+            )
+            return
+        if not getattr(self.args, "speaker_id_enable", False):
+            return
+        profile_dir = str(getattr(self.args, "speaker_profile_dir", "") or "").strip()
+        if not profile_dir:
+            print("[SPKID] disabled: --speaker_profile_dir is empty")
+            return
+        sample_rate = self.out_sr if self.rs_model2out is not None else self.model_sr
+        speaker_device = str(getattr(self.args, "speaker_device", "cpu"))
+        if speaker_device == "auto":
+            speaker_device = "cuda" if self.device.type == "cuda" and torch.cuda.is_available() else "cpu"
+        self.speaker_identifier = StreamingSpeakerIdentifier(
+            profile_dir=profile_dir,
+            sample_rate=sample_rate,
+            window_sec=float(self.args.speaker_window_sec),
+            hop_sec=float(self.args.speaker_hop_sec),
+            threshold=float(self.args.speaker_threshold),
+            n_mfcc=int(self.args.speaker_n_mfcc),
+            backend=str(self.args.speaker_backend),
+            speaker_device=speaker_device,
+            ecapa_source=str(self.args.ecapa_source),
+            ecapa_savedir=str(self.args.ecapa_savedir),
+        )
+        if not self.speaker_identifier.enabled:
+            print(f"[SPKID] disabled: no profile wav/flac found under {profile_dir}")
+            self.speaker_identifier = None
+            return
+        print(
+            f"[SPKID] enabled speakers={self.speaker_identifier.speaker_count} "
+            f"backend={self.args.speaker_backend} device={speaker_device} "
+            f"sr={sample_rate} window={self.args.speaker_window_sec:.2f}s "
+            f"hop={self.args.speaker_hop_sec:.2f}s threshold={self.args.speaker_threshold:.2f}"
+        )
 
     def connect(self):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -649,11 +715,14 @@ class GroupClient:
                 with torch.no_grad(), amp_ctx, self.model_lock:
                     wav_t = self.model.decode(codes_t)
                 decode_ms = (time.perf_counter() - t0) * 1000.0
+                codes = codes_t.detach().cpu().numpy().astype(np.int64, copy=False)
                 wav = wav_t.detach().cpu().squeeze(0).squeeze(0).to(torch.float32)
+                speaker_pcm = wav.numpy().astype(np.float32, copy=False)
                 if self.rs_model2out is not None:
                     with torch.no_grad():
                         wav = self.rs_model2out(wav.unsqueeze(0)).squeeze(0)
                 pcm = wav.numpy().astype(np.float32, copy=False)
+                self.update_speaker_identity(stream, speaker_pcm, codes)
                 pcm_rms = rms(pcm)
                 jitter_sec = self.add_pcm_to_jitter(stream, pcm)
                 with stream.lock:
@@ -664,6 +733,28 @@ class GroupClient:
                     stream.jitter_sec_samples.append(jitter_sec)
             except Exception as exc:
                 print(f"[DECODE:{stream.sender_id}] failed: {exc}", file=sys.stderr)
+
+    def update_speaker_identity(self, stream: IncomingStream, pcm: np.ndarray, codes: np.ndarray) -> None:
+        if self.speaker_identifier is None:
+            return
+        try:
+            prediction = self.speaker_identifier.update(stream.sender_id, pcm, codes=codes)
+        except Exception as exc:
+            print(f"[SPKID:{stream.sender_id}] failed: {exc}", file=sys.stderr)
+            return
+        if prediction is None:
+            return
+        correct = prediction.predicted_speaker == stream.sender_id
+        with stream.lock:
+            stream.last_speaker_pred = prediction.predicted_speaker
+            stream.last_speaker_score = prediction.score
+            stream.last_speaker_margin = prediction.margin
+            stream.last_speaker_verified = prediction.verified
+            stream.speaker_eval_count += 1
+            if correct:
+                stream.speaker_correct_count += 1
+            if prediction.verified:
+                stream.speaker_verified_count += 1
 
     def add_pcm_to_jitter(self, stream: IncomingStream, pcm: np.ndarray) -> float:
         max_samples = max(1, int(self.args.max_lat * self.out_sr))
@@ -778,12 +869,27 @@ class GroupClient:
                     last_seq = s.last_seq
                     last_rms = s.last_rms
                     last_decode_ms = s.last_decode_ms
+                    spk_pred = s.last_speaker_pred
+                    spk_score = s.last_speaker_score
+                    spk_margin = s.last_speaker_margin
+                    spk_verified = s.last_speaker_verified
+                    spk_eval = s.speaker_eval_count
+                    spk_correct = s.speaker_correct_count
                 drop_rate = drops / max(1, packets + drops)
                 dec_rtf = last_decode_ms / self.chunk_ms()
+                spk_detail = ""
+                if self.speaker_identifier is not None:
+                    spk_acc = spk_correct / max(1, spk_eval)
+                    spk_detail = (
+                        f" spk={spk_pred or 'n/a'} score={fmt_num(spk_score, 3)} "
+                        f"margin={fmt_num(spk_margin, 3)} verified={'yes' if spk_verified else 'no'} "
+                        f"spk_acc={fmt_pct(spk_acc)}"
+                    )
                 details.append(
                     f"from_{s.sender_id}:seq={last_seq} q={s.packet_queue.qsize()} "
                     f"jit={jitter_sec:.3f}s rms={last_rms:.4f} dec={last_decode_ms:.1f}ms "
                     f"dec_rtf={dec_rtf:.2f} drop={drops} drop_rate={fmt_pct(drop_rate)}"
+                    f"{spk_detail}"
                 )
             print(
                 f"[MON:{self.user_id}] sent={sent_packets} recv={recv_packets} "
@@ -819,16 +925,32 @@ class GroupClient:
                 stream_decoded = stream.decoded
                 stream_body = stream.recv_body_bytes
                 stream_total = stream.recv_total_bytes
+                spk_eval = stream.speaker_eval_count
+                spk_correct = stream.speaker_correct_count
+                spk_verified = stream.speaker_verified_count
+                spk_pred = stream.last_speaker_pred
+                spk_score = stream.last_speaker_score
+                spk_margin = stream.last_speaker_margin
+                spk_last_verified = stream.last_speaker_verified
             decode_samples.extend(stream_decode)
             jitter_samples.extend(stream_jitter)
             decoded_packets += stream_decoded
             dropped_packets += stream_drops
             stream_drop_rate = stream_drops / max(1, stream_packets + stream_drops)
+            speaker_suffix = ""
+            if self.speaker_identifier is not None:
+                speaker_suffix = (
+                    f" speaker_eval={spk_eval} speaker_acc={fmt_pct(spk_correct / max(1, spk_eval))} "
+                    f"speaker_verified={spk_verified} last_speaker={spk_pred or 'n/a'} "
+                    f"score={fmt_num(spk_score, 3)} margin={fmt_num(spk_margin, 3)} "
+                    f"verified={'yes' if spk_last_verified else 'no'}"
+                )
             per_stream.append(
                 f"  from_{stream.sender_id}: packets={stream_packets} decoded={stream_decoded} "
                 f"drops={stream_drops} drop_rate={fmt_pct(stream_drop_rate)} "
                 f"body={stream_body * 8.0 / duration / 1000.0:.1f}kbps "
                 f"total={stream_total * 8.0 / duration / 1000.0:.1f}kbps"
+                f"{speaker_suffix}"
             )
 
         total_body = sent_body + recv_body
@@ -888,6 +1010,7 @@ class GroupClient:
                 encode_rtf_samples=encode_rtf_samples,
                 decode_rtf_samples=decode_rtf_samples,
                 jitter_samples=jitter_samples,
+                streams=streams,
             )
 
     def write_summary_csv(self, **m) -> None:
@@ -921,6 +1044,22 @@ class GroupClient:
             "jitter_s_p95": _round_or_none(percentile_value(m["jitter_samples"], 95), 3),
             "one_way_latency_budget_ms": round(one_way_latency_ms, 1),
         }
+        streams = m.get("streams", [])
+        speaker_eval = sum(stream.speaker_eval_count for stream in streams)
+        speaker_correct = sum(stream.speaker_correct_count for stream in streams)
+        speaker_verified = sum(stream.speaker_verified_count for stream in streams)
+        row.update(
+            {
+                "speaker_id_enabled": int(self.speaker_identifier is not None),
+                "speaker_eval_count": int(speaker_eval),
+                "speaker_correct_count": int(speaker_correct),
+                "speaker_verified_count": int(speaker_verified),
+                "speaker_accuracy_mean": _round_or_none(
+                    speaker_correct / max(1, speaker_eval) if speaker_eval else None,
+                    4,
+                ),
+            }
+        )
         csv_path = Path(self.args.summary_csv)
         csv_path.parent.mkdir(parents=True, exist_ok=True)
         write_header = not csv_path.exists()
@@ -935,6 +1074,7 @@ class GroupClient:
         self.load_model()
         self.connect()
         self.start_playback()
+        self.init_speaker_identifier()
         threads = [
             threading.Thread(target=self.recv_loop, daemon=True),
             threading.Thread(target=self.mic_send_loop, daemon=True),
@@ -1008,7 +1148,22 @@ def main():
     parser.add_argument("--channel_seed", type=int, default=42, help="信道扰动确定性种子基值")
     parser.add_argument("--run_seconds", type=float, default=0.0, help="若>0，运行该秒数后自动干净退出并写 CSV（跑批用，避免依赖信号）")
     parser.add_argument("--summary_csv", default="", help="若指定，退出时把本客户端汇总指标追加写入该 CSV（用于论文跑批填表）")
+    parser.add_argument("--speaker_id_enable", action="store_true", help="启用本地 decoded-audio 说话人识别监控")
+    parser.add_argument("--speaker_profile_dir", default="", help="说话人档案目录，格式为 <dir>/<speaker_id>/*.wav 或 *.flac")
+    parser.add_argument("--speaker_window_sec", type=float, default=3.0, help="说话人识别滑动窗口秒数")
+    parser.add_argument("--speaker_hop_sec", type=float, default=1.0, help="说话人识别更新间隔秒数")
+    parser.add_argument("--speaker_threshold", type=float, default=0.65, help="说话人 verified 判定阈值")
+    parser.add_argument("--speaker_n_mfcc", type=int, default=40, help="MFCC 说话人特征维度")
+    parser.add_argument("--speaker_backend", default="mfcc", choices=["mfcc", "ecapa"], help="说话人识别后端：mfcc 或 ECAPA-TDNN")
+    parser.add_argument("--speaker_device", default="cpu", choices=["auto", "cuda", "cpu"], help="ECAPA 后端运行设备")
+    parser.add_argument("--ecapa_source", default="speechbrain/spkrec-ecapa-voxceleb", help="SpeechBrain ECAPA 模型来源")
+    parser.add_argument("--ecapa_savedir", default="output/models/speechbrain_spkrec_ecapa_voxceleb", help="SpeechBrain ECAPA 本地缓存目录")
+    parser.add_argument('--speaker_classifier_bundle', default='', help='Exp23 classifier bundle directory')
+    parser.add_argument('--speaker_classifier_device', default='cpu', choices=['cuda', 'cpu'], help='Exp23 classifier device')
+    parser.add_argument('--speaker_classifier_threshold', type=float, default=0.65, help='Exp23 display-only verified threshold')
     args = parser.parse_args()
+    if args.speaker_classifier_bundle and args.speaker_profile_dir:
+        parser.error('--speaker_classifier_bundle and --speaker_profile_dir are mutually exclusive')
 
     try:
         torch.set_num_threads(max(1, min(4, os.cpu_count() or 4)))

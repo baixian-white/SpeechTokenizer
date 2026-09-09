@@ -1,0 +1,12 @@
+# sample_id=1320-122617-0001
+# model=base
+# L=2
+
+GT:
+IN HIS RETURN TO THE CAMP HIS ACUTE AND PRACTISED INTELLECTS WERE INTENTLY ENGAGED IN DEVISING MEANS TO COUNTERACT A WATCHFULNESS AND SUSPICION ON THE PART OF HIS ENEMIES THAT HE KNEW WERE IN NO DEGREE INFERIOR TO HIS OWN
+
+Whisper(original):
+In his return to the camp, his acute and practiced intellects were intently engaged in devising means to counteract a watchfulness and suspicion on the part of his enemies that he knew were in no degree inferior to his own.
+
+Whisper(decoded):
+In his return to the camp, his acute and practiced intellects were intently engaged in devising memes to counteract a watchfulness and suspicion on the part of his enemies that he knew were in no degree inferior to his own.

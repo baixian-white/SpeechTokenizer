@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0008
+# model=base
+# L=2
+
+GT:
+LASTLY THE MINISTER WENT IN AND KISSED THE GROUND BEFORE ZAU AL MAKAN WHO ROSE TO MEET HIM SAYING WELCOME O WAZIR AND SIRE SANS PEER
+
+Whisper(original):
+Lastly, the minister went in and kissed the ground before Zawal Makan, who rose to meet him, saying, Welcome, O wasir, and Sires, son's peer.
+
+Whisper(decoded):
+Lastly, the minister went in and kissed the ground before Zao Al-Aqag, who rose to meet him, saying, Welcome or was here and Sire's Sausage year.

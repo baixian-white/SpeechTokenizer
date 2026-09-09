@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0002
+# model=base
+# L=3
+
+GT:
+INSTEAD OF SHOES THE OLD MAN WORE BOOTS WITH TURNOVER TOPS AND HIS BLUE COAT HAD WIDE CUFFS OF GOLD BRAID
+
+Whisper(original):
+Instead of shoes, the old man wore boots with turnover tops, and his blue coat had wide cuffs of gold braid.
+
+Whisper(decoded):
+Instead of shoes, the old man wore boots with turnover tops and his blue coat had wide costs as gold braid.

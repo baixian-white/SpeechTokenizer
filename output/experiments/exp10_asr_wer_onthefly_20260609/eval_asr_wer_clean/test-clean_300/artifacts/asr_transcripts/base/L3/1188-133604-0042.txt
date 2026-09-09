@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0042
+# model=base
+# L=3
+
+GT:
+THE SCENE IS ABSOLUTELY ARCADIAN
+
+Whisper(original):
+The scene is absolutely Arcadian.
+
+Whisper(decoded):
+I've seen this absolutely Arcadian.

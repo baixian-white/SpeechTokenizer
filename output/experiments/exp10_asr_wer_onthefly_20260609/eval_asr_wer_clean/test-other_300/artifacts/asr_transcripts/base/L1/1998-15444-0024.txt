@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0024
+# model=base
+# L=1
+
+GT:
+FIVE A PART OF THIS ETHEREAL SOLUTION IS POURED INTO A WATCH GLASS AND ALLOWED TO EVAPORATE
+
+Whisper(original):
+5. A part of this is theory of solution is poured into a watch glass and allowed to evaporate.
+
+Whisper(decoded):
+Thalith, a pilot with a female insulationist put until what she can ask and without her I'd like to go back.

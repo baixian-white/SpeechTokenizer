@@ -1,0 +1,12 @@
+# sample_id=121-123852-0002
+# model=lca
+# L=3
+
+GT:
+NO MATTER THEN ALTHOUGH MY FOOT DID STAND UPON THE FARTHEST EARTH REMOV'D FROM THEE FOR NIMBLE THOUGHT CAN JUMP BOTH SEA AND LAND AS SOON AS THINK THE PLACE WHERE HE WOULD BE BUT AH
+
+Whisper(original):
+No matter then, although my foot did stand, upon the farthest earth removed from thee, for nimble thought can jump both sea and land, as soon as think the place where he would be. Y'all.
+
+Whisper(decoded):
+No matter then, although my foot did stand, upon the farthest earth, removed from thee, for nimble thought can jump both sea and land, as soon as think the place where he would be. y'all.

@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0014
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+HE TRIED TO THINK HOW IT COULD BE
+
+Whisper(original):
+He tried to think how it could be
+
+Whisper(decoded):
+He tried to think how it could be.

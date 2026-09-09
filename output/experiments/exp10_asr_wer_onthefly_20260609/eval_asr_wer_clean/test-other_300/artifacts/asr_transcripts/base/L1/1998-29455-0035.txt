@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0035
+# model=base
+# L=1
+
+GT:
+IF ANY ONE ARSTS YOU IF YOU EVER SEE IM YOU NEVER SET EYES ON IM IN ALL YOUR BORN NOT TO REMEMBER IM
+
+Whisper(original):
+If anyone asks you if you ever see him, you never said eyes on him and all you're born. Not to remember him.
+
+Whisper(decoded):
+If anyone asks you that you are the same, you never said I'm the one. But remember...

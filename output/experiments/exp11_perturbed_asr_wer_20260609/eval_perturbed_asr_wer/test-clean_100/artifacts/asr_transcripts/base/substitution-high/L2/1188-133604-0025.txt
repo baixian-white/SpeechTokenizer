@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0025
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+YOU KNOW I HAVE JUST BEEN TELLING YOU HOW THIS SCHOOL OF MATERIALISM AND CLAY INVOLVED ITSELF AT LAST IN CLOUD AND FIRE
+
+Whisper(original):
+You know I've just been telling you how this school of materialism and clay involved itself at last and cloud and fire.
+
+Whisper(decoded):
+You know, I've just been telling you how this school material is an enclave involved itself at lasting cloud and fire.

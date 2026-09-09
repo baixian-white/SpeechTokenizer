@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0030
+# model=base
+# L=3
+
+GT:
+I AIN'T SURE AS I ADN'T BETTER STICK TO THE ROAD AND KEEP AWAY FROM OLD ANDS LIKE YOU JIM
+
+Whisper(original):
+I ensure as I add and better stick to the road and keep away from old ends like you Jim.
+
+Whisper(decoded):
+I am sure as I am in plastic to the world and keep away from all the ends that huger.

@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0024
+# model=lca
+# L=3
+
+GT:
+THOU AMIABLE ONE
+
+Whisper(original):
+Thou amiable one
+
+Whisper(decoded):
+Without that big blue one

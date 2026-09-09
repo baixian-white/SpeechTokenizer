@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0022
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+YOU MUST LOOK AT HIM IN THE FACE FIGHT HIM CONQUER HIM WITH WHAT SCATHE YOU MAY YOU NEED NOT THINK TO KEEP OUT OF THE WAY OF HIM
+
+Whisper(original):
+You must look at him in the face. Fight him. Conquer him. With what scathe you may, you need not think to keep out of the way of him.
+
+Whisper(decoded):
+You must mittin' him in the face. Fight him, talk or him. With what's scathing, man, you mean that thinkin' he got it away of him?

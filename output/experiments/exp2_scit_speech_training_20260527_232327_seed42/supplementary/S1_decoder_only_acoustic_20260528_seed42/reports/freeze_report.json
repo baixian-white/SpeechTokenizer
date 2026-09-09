@@ -1,0 +1,35 @@
+{
+  "scope": "decoder_only_acoustic",
+  "trainable_modules": [
+    "decoder"
+  ],
+  "frozen_modules": [
+    "encoder",
+    "quantizer",
+    "transform"
+  ],
+  "module_status": {
+    "encoder": {
+      "param_count": 8873360,
+      "trainable_param_count": 0,
+      "trainable": false
+    },
+    "quantizer": {
+      "param_count": 0,
+      "trainable_param_count": 0,
+      "trainable": false
+    },
+    "transform": {
+      "param_count": 787200,
+      "trainable_param_count": 0,
+      "trainable": false
+    },
+    "decoder": {
+      "param_count": 35182530,
+      "trainable_param_count": 35182530,
+      "trainable": true
+    }
+  },
+  "trainable_param_count": 35182530,
+  "frozen_param_count": 9660560
+}

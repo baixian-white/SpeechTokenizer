@@ -1,0 +1,38 @@
+{
+  "run_id": "exp2_scit_speech_training_20260527_232327_seed42",
+  "seed": 42,
+  "mode": "formal",
+  "base_config_copy": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\configs\\spt_base_cfg.json",
+  "exp1_best_config_copy": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\configs\\best_seanet_config.json",
+  "train_files": {
+    "source_path": "data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+    "output_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\artifacts\\train_files.txt",
+    "total_read": 27039,
+    "written": 27039,
+    "missing_audio": 0,
+    "missing_feature": 0,
+    "mapped_paths": 27039,
+    "bad_rows": 0,
+    "truncated_to": null,
+    "missing_examples": [],
+    "fallback_raw_copy": false
+  },
+  "valid_files": {
+    "source_path": "data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\valid_files.txt",
+    "output_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\artifacts\\valid_files.txt",
+    "total_read": 1500,
+    "written": 1500,
+    "missing_audio": 0,
+    "missing_feature": 0,
+    "mapped_paths": 1500,
+    "bad_rows": 0,
+    "truncated_to": null,
+    "missing_examples": [],
+    "fallback_raw_copy": false
+  },
+  "fixed_sample_list": {
+    "source_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\artifacts\\valid_files.txt",
+    "output_path": "output\\experiments\\exp2_scit_speech_training_20260527_232327_seed42\\artifacts\\fixed_sample_list.txt",
+    "written": 8
+  }
+}

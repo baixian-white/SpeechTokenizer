@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0013
+# model=lca
+# L=1
+
+GT:
+THAT'S ALL RIGHT SAID MISTER BEALE AWKWARDLY
+
+Whisper(original):
+That's all right, said Mr. B awkwardly.
+
+Whisper(decoded):
+That's all right, so we study how quickly.

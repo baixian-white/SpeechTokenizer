@@ -1,0 +1,4 @@
+layer,codebook_size,used_codes,usage_rate,perplexity,dead_codes,dead_code_ratio,top1_frequency,sample_count,note
+1,1024,179,0.1748046875,130.00932036472904,845,0.8251953125,0.05,8,"sanity/proxy codebook usage, not final communication quality"
+2,1024,244,0.23828125,188.30590727963653,780,0.76171875,0.0375,8,"sanity/proxy codebook usage, not final communication quality"
+3,1024,273,0.2666015625,231.17450608248467,751,0.7333984375,0.0175,8,"sanity/proxy codebook usage, not final communication quality"

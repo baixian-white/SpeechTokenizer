@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0035
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+VISITING REGISTER OFFICES SEEING ALL MANNER OF UNLIKELY PEOPLE AND VERY FEW IN THE LEAST LIKELY ABSORBED MARGARET'S TIME AND THOUGHTS FOR SEVERAL DAYS
+
+Whisper(original):
+Visiting register officers, seeing all manner of unlikely people, and very few in the least likely, absorbed Margaret's time and thoughts for several days.
+
+Whisper(decoded):
+visiting register offices, seeing owner of unwanted people, and very feeling the least likely, absorbed Margaret's time and thoughts for simple days.

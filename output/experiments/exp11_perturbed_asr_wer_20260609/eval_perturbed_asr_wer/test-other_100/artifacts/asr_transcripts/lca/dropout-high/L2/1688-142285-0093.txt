@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0093
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+TAKE NOTICE THAT IS NOT MY KIND OF HAUGHTINESS PAPA IF I HAVE ANY AT ALL WHICH I DON'T AGREE TO THOUGH YOU'RE ALWAYS ACCUSING ME OF IT
+
+Whisper(original):
+Take notice that this is not my kind of fortuneless papa, if I have any at all, which I don't agree to, so you're always accusing me of it.
+
+Whisper(decoded):
+Take notice that this is not my kind of thought he was the plot, if I didn't at all. Which I only perete you, though you always are choosing me a little bit.

@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0078
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+HAVE YOU MET WITH A SERVANT DEAR
+
+Whisper(original):
+Have you met with a servant, dear?
+
+Whisper(decoded):
+Fucking that with a servant, do you?

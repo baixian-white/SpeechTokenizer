@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0021
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+MARGARET WAS COLLECTING HER MOTHER'S WORKING MATERIALS AND PREPARING TO GO TO BED
+
+Whisper(original):
+Margaret was collecting her mother's working materials and preparing to go to bed.
+
+Whisper(decoded):
+Margaret was collecting her mother's working materials and preparing to go to bed.

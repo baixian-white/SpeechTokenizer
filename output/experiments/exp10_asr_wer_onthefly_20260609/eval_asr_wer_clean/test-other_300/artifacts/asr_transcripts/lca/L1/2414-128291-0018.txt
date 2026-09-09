@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0018
+# model=lca
+# L=1
+
+GT:
+THOU DOEST VIOLENCE TO THYSELF THOU PREACHER ON THE MOUNT WHEN THOU USEST SUCH SEVERE WORDS
+
+Whisper(original):
+Thou doest words to thyself, thou preacher on the mount, and thou uses such saviour words.
+
+Whisper(decoded):
+That'd be reached voice to that service. Tell Pete Gipp was involved. Now, he's theest to see the voice.

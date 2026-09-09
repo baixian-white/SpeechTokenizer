@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0002
+# model=lca
+# L=2
+
+GT:
+HE SET OFF ABRUPTLY FOR THE BULL WALKING RAPIDLY LEST HIS FATHER'S SHRILL WHISTLE MIGHT CALL HIM BACK AND IN A FEW MOMENTS HE HAD ROUNDED THE CURVE AT THE POLICE BARRACK AND WAS SAFE
+
+Whisper(original):
+He set off abruptly for the bull, walking rapidly lest his father's shrill whistle might call him back, and in a few moments he had rounded the curve at the police barrack and was safe.
+
+Whisper(decoded):
+He set off abruptly for the bull, walking rapidly lest his father's shrill whistle might crawl him back. And in a few moments he had rounded the curve at the police barrack, and was safe.

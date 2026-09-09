@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0018
+# model=lca
+# L=3
+
+GT:
+IN ALL EARLY GOTHIC ART INDEED YOU WILL FIND FAILURE OF THIS KIND ESPECIALLY DISTORTION AND RIGIDITY WHICH ARE IN MANY RESPECTS PAINFULLY TO BE COMPARED WITH THE SPLENDID REPOSE OF CLASSIC ART
+
+Whisper(original):
+In all early Gothic art, indeed, you will find failure of this kind, especially distortion and rigidity, which are in many respects painfully to be compared with the splendid repose of classic art.
+
+Whisper(decoded):
+In all early Gothic art, indeed, you will find failure of this kind, especially distortion and rigidity, which are in many respects painfully to be compared with the splendid repose of classic art.

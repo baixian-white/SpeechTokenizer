@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0023
+# model=lca
+# L=2
+# channel=substitution-high
+
+GT:
+THE COLORIST SAYS FIRST OF ALL AS MY DELICIOUS PAROQUET WAS RUBY SO THIS NASTY VIPER SHALL BE BLACK AND THEN IS THE QUESTION CAN I ROUND HIM OFF EVEN THOUGH HE IS BLACK AND MAKE HIM SLIMY AND YET SPRINGY AND CLOSE DOWN CLOTTED LIKE A POOL OF BLACK BLOOD ON THE EARTH ALL THE SAME
+
+Whisper(original):
+The colorist says, first of all, as my delicious parake was ruby, so this nasty viper shall be black. And then is the question, can I round him off, even though he is black, and make him slimy, and yet springy and close down, clotted like a pool of black blood on the earth, all the same?
+
+Whisper(decoded):
+The colorist says, first of all, as my delicious parquet was ruby, so this nasty vaudiper shall be black. And then is the question, can I round him off, even though he is black, and make him slimy, and yet springy and close down, clotted like a pool of black blood on the earth, all the same.

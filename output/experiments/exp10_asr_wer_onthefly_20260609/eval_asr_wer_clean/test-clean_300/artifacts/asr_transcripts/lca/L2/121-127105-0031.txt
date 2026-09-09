@@ -1,0 +1,12 @@
+# sample_id=121-127105-0031
+# model=lca
+# L=2
+
+GT:
+SHE WAS YOUNG UNTRIED NERVOUS IT WAS A VISION OF SERIOUS DUTIES AND LITTLE COMPANY OF REALLY GREAT LONELINESS
+
+Whisper(original):
+She was young, untried, nervous. It was a vision of serious duties in little company, of really great loneliness.
+
+Whisper(decoded):
+She was young, I haven't tried nervous. It was a vision of serious duties and little company for really great loneliness.

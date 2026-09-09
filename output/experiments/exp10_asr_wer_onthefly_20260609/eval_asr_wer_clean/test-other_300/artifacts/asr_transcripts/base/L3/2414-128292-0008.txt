@@ -1,0 +1,12 @@
+# sample_id=2414-128292-0008
+# model=base
+# L=3
+
+GT:
+ALSO METHINKETH THAT AFTER ALL IT HATH LONGER LEGS THAN MINE
+
+Whisper(original):
+Also, we think it that after all, it had longer legs than mine.
+
+Whisper(decoded):
+Also, we think that after all, it has longer legs in mind.

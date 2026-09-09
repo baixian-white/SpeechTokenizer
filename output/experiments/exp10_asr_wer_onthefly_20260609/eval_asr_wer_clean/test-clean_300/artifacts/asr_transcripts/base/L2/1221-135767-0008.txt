@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0008
+# model=base
+# L=2
+
+GT:
+COME THEREFORE AND LET US FLING MUD AT THEM
+
+Whisper(original):
+Come, therefore, and let us fling mad at them.
+
+Whisper(decoded):
+come therefore and let us fling matit down.

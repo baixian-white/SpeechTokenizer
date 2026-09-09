@@ -1,0 +1,12 @@
+# sample_id=1284-134647-0000
+# model=lca
+# L=3
+
+GT:
+THE GRATEFUL APPLAUSE OF THE CLERGY HAS CONSECRATED THE MEMORY OF A PRINCE WHO INDULGED THEIR PASSIONS AND PROMOTED THEIR INTEREST
+
+Whisper(original):
+The grateful applause of the clergy has consecrated the memory of a prince who indulged their passions and promoted their interest.
+
+Whisper(decoded):
+The grateful applause of the clergy has consecrated the memory of a prince who indulged their passions and promoted their interest.

@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0008
+# model=lca
+# L=3
+
+GT:
+I BELIEVE HE HATH DENOUNCED ME TO THE EUNUCH HENCE THESE PAGES ET ABOUT ME AND HE HATH MADE ME AN ACCOMPLICE IN HIS CRIME
+
+Whisper(original):
+I believe he has denounced me to the UNOC, hence these pages at about me. And he has made me an accomplice in his crime.
+
+Whisper(decoded):
+I believe he has denounced me to the Europe, hence these pages have vowed me. And he has made me an accomplice in his crime.

@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0008
+# model=base
+# L=2
+
+GT:
+THOU ALSO THOU ALSO
+
+Whisper(original):
+Da walsu, Da walsu
+
+Whisper(decoded):
+That was so that was so

@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0012
+# model=base
+# L=2
+
+GT:
+NO ONE SAW HIM DO THIS FOR ALL WERE LOOKING AT THE POWDER OF LIFE BUT SOON THE WOMAN REMEMBERED WHAT SHE HAD BEEN DOING AND CAME BACK TO THE CUPBOARD
+
+Whisper(original):
+No one saw him do this, for all were looking at the powder of life, but soon the woman remembered what she had been doing, and came back to the cupboard.
+
+Whisper(decoded):
+No one saw him do this, for all were looking at the powder of life, but soon the woman remembered what she had been doing, and came back to the cupboard.

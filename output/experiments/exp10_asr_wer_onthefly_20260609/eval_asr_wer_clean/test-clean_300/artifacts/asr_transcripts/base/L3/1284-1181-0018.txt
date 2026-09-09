@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0018
+# model=base
+# L=3
+
+GT:
+IT TRULY IS ASSERTED THE MAGICIAN
+
+Whisper(original):
+It truly is asserted that magician...
+
+Whisper(decoded):
+It truly is asserted that the magician...

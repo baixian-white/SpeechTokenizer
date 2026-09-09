@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0010
+# model=base
+# L=1
+
+GT:
+TICKLING THE FAUCES WITH A FEATHER MAY EXCITE VOMITING
+
+Whisper(original):
+Ticking the forces with the feather makes side vomiting.
+
+Whisper(decoded):
+tickling the forces doing the twilight wail at a minute

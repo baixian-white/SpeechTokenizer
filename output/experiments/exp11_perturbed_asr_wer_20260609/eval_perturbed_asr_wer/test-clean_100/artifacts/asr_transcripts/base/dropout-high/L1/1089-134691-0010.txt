@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0010
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+BROTHER MAC ARDLE BROTHER KEOGH
+
+Whisper(original):
+Brother McCartill, Brother Kiaff
+
+Whisper(decoded):
+by the McCarrel, by the Kiaf.

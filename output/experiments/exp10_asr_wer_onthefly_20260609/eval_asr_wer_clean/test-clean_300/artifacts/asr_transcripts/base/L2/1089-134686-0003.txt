@@ -1,0 +1,12 @@
+# sample_id=1089-134686-0003
+# model=base
+# L=2
+
+GT:
+HELLO BERTIE ANY GOOD IN YOUR MIND
+
+Whisper(original):
+Hello Bertie, any good in your mind?
+
+Whisper(decoded):
+Hello Bertie, any good in your mind?

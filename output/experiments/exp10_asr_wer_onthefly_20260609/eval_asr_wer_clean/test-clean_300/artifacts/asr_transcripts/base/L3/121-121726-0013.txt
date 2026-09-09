@@ -1,0 +1,12 @@
+# sample_id=121-121726-0013
+# model=base
+# L=3
+
+GT:
+TIED TO A WOMAN
+
+Whisper(original):
+Tied to a woman.
+
+Whisper(decoded):
+Tied to a woman.

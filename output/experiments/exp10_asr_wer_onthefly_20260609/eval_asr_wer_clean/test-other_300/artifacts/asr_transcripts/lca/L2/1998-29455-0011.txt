@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0011
+# model=lca
+# L=2
+
+GT:
+OW'M I TO WHEEL THE BLOOMIN PRAM IF YOU GOES ON LIKE AS IF YOU WAS A BAG OF EELS
+
+Whisper(original):
+I'll might to wear the room in prem if you go sun like I said if you was a pecker feels.
+
+Whisper(decoded):
+I would like to hear the woman's problem if you got something like this if you was a picker for you.

@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0001
+# model=lca
+# L=2
+# channel=substitution-high
+
+GT:
+THEY UNITE EVERY QUALITY AND SOMETIMES YOU WILL FIND ME REFERRING TO THEM AS COLORISTS SOMETIMES AS CHIAROSCURISTS
+
+Whisper(original):
+They unite every quality, and sometimes you will find me referring to them as colorists, sometimes as Kiaroscurosts.
+
+Whisper(decoded):
+They unite every quality. And sometimes you will find you referring to them as colorists. Sometimes as Kiarascurists.

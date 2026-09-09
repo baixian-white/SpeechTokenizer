@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0006
+# model=lca
+# L=3
+
+GT:
+WELL THAT MAY BE TRUE AGREED MARGOLOTTE BUT ON THE CONTRARY A SERVANT WITH TOO MUCH BRAINS IS SURE TO BECOME INDEPENDENT AND HIGH AND MIGHTY AND FEEL ABOVE HER WORK
+
+Whisper(original):
+Well, that may be true, agreed Margalot. But on the contrary, a servant with too much brains is sure to become independent and high in mighty and feel above her work.
+
+Whisper(decoded):
+Well, that may be true, agreed Margulot. But on the contrary, a servant with too much brains is sure to become independent and high and mighty and feel above her work.

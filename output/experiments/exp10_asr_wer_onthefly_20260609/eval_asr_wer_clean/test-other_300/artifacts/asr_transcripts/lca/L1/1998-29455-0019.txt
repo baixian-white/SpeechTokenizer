@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0019
+# model=lca
+# L=1
+
+GT:
+YOU STICK TO THAT SAID BEALE RADIANT WITH DELIGHT YOU'RE A FAIR MASTERPIECE YOU ARE YOU EARNED IT HONEST IF EVER A KID DONE
+
+Whisper(original):
+You stick to that, said Beel, radiant was delayed. You're a fair masterpiece, you are. You earned it honest if ever a kid done.
+
+Whisper(decoded):
+The stick to that, fit the radiant vest in art, near a firm-nossed beef-lore, you end it un-nossed the bed I could done.

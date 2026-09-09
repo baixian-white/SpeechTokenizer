@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0005
+# model=base
+# L=1
+
+GT:
+HE HAD NEVER SEEN ONE BEFORE AND IT INTERESTED HIM EXTREMELY
+
+Whisper(original):
+He had never seen one before and it interested him extremely.
+
+Whisper(decoded):
+You've never seen them before and it interested in this twin.

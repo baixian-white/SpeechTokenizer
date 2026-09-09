@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0010
+# model=lca
+# L=3
+
+GT:
+THE KINE HOWEVER GAZED AT IT ALL AND WONDERED
+
+Whisper(original):
+The kind, however, Gaze added all and wondered.
+
+Whisper(decoded):
+Decide, however, use it as a wonder.

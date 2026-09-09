@@ -1,0 +1,12 @@
+# sample_id=2414-128292-0004
+# model=lca
+# L=1
+
+GT:
+THUS SPAKE ZARATHUSTRA TO HIS HEART AND RAN AWAY
+
+Whisper(original):
+The spake that two strikes to his heart and ran away.
+
+Whisper(decoded):
+The speed of the stretchers act, and finally...

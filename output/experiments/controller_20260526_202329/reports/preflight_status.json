@@ -1,0 +1,429 @@
+{
+  "status": "preflight_failed",
+  "environment": {
+    "timestamp": "2026-05-26T20:39:28+08:00",
+    "python_executable": "C:\\Users\\Windows11\\.conda\\envs\\speechtokenizer\\python.exe",
+    "python_version": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "cwd": "E:\\CODE\\speechtokenizer",
+    "disk_free_gb": 58.61140823364258,
+    "packages": {
+      "torch": "2.9.1+cu128",
+      "torchaudio": "2.9.1+cu128",
+      "numpy": "2.2.6",
+      "accelerate": "1.12.0",
+      "beartype": "0.22.9",
+      "einops": "0.8.1",
+      "optuna": "4.8.0",
+      "thop": "0.1.1",
+      "filelock": "3.20.0",
+      "matplotlib": "3.10.8",
+      "soundfile": "0.13.1"
+    },
+    "cuda": {
+      "available": true,
+      "torch_cuda": "12.8",
+      "device_count": 1,
+      "devices": [
+        "NVIDIA GeForce RTX 5070 Ti"
+      ]
+    },
+    "git": {
+      "commit": "cb9929cb60e05540b24d59bc68f117187219d810",
+      "status_short": "M config/spt_base_cfg.json\n D nas/best_seanet_config.json\n M nas/run_nas.sh\n M nas/search_autoencoder.py\n M nas/train_nas.py\n M scripts/train_example.py\n M scripts/train_example.sh\n M speechtokenizer/trainer/dataset.py\n D \"\\345\\257\\271\\346\\257\\224wav\\350\\257\\255\\351\\237\\263\\345\\267\\256\\350\\267\\235.ipynb\"\n D \"\\350\\257\\273\\345\\217\\226wav\\346\\226\\207\\344\\273\\266\\344\\277\\241\\346\\201\\257.ipynb\"\n?? output/\n?? scripts/channel_sim.py\n?? scripts/collect_environment.py\n?? scripts/convert_single_flac_to_wav.py\n?? scripts/create_experiment_run.py\n?? scripts/experiment_utils.py\n?? scripts/normalize_filelist_paths.py\n?? scripts/pack_indices.py\n?? scripts/payload_accounting.py\n?? scripts/preflight_experiments.py\n?? scripts/preflight_smoke_test.py\n?? tests/"
+    },
+    "tools": {
+      "ffmpeg": {
+        "path": null,
+        "version": null,
+        "stderr": "not found"
+      },
+      "opusenc": {
+        "path": null,
+        "version": null,
+        "stderr": "not found"
+      },
+      "opusdec": {
+        "path": null,
+        "version": null,
+        "stderr": "not found"
+      },
+      "codec2": {
+        "path": null,
+        "version": null,
+        "stderr": "not found"
+      }
+    }
+  },
+  "fixed_condition_problems": [],
+  "scripts": [
+    {
+      "group": "shared",
+      "path": "scripts/create_experiment_run.py",
+      "exists": true
+    },
+    {
+      "group": "shared",
+      "path": "scripts/collect_environment.py",
+      "exists": true
+    },
+    {
+      "group": "shared",
+      "path": "scripts/preflight_experiments.py",
+      "exists": true
+    },
+    {
+      "group": "shared",
+      "path": "scripts/pack_indices.py",
+      "exists": true
+    },
+    {
+      "group": "shared",
+      "path": "scripts/channel_sim.py",
+      "exists": true
+    },
+    {
+      "group": "exp1",
+      "path": "nas/make_subset.py",
+      "exists": true
+    },
+    {
+      "group": "exp1",
+      "path": "nas/search_autoencoder.py",
+      "exists": true
+    },
+    {
+      "group": "exp1",
+      "path": "nas/export_best_model.py",
+      "exists": true
+    },
+    {
+      "group": "exp1",
+      "path": "nas/custom_model.py",
+      "exists": true
+    },
+    {
+      "group": "exp1",
+      "path": "nas/train_nas.py",
+      "exists": true
+    },
+    {
+      "group": "exp2",
+      "path": "scripts/train_example.py",
+      "exists": true
+    },
+    {
+      "group": "exp2",
+      "path": "scripts/hubert_rep_extract.py",
+      "exists": true
+    },
+    {
+      "group": "exp2",
+      "path": "speechtokenizer/model.py",
+      "exists": true
+    },
+    {
+      "group": "exp2",
+      "path": "speechtokenizer/trainer/trainer.py",
+      "exists": true
+    },
+    {
+      "group": "exp2",
+      "path": "speechtokenizer/trainer/dataset.py",
+      "exists": true
+    },
+    {
+      "group": "exp2",
+      "path": "speechtokenizer/trainer/loss.py",
+      "exists": true
+    },
+    {
+      "group": "exp3",
+      "path": "scripts/channel_sim.py",
+      "exists": true
+    },
+    {
+      "group": "exp4",
+      "path": "scripts/pack_indices.py",
+      "exists": true
+    },
+    {
+      "group": "exp5",
+      "path": "scripts/channel_sim.py",
+      "exists": true
+    }
+  ],
+  "missing_scripts": [],
+  "manifest_stats": {
+    "exp1": {
+      "train": {
+        "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+        "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp1_nas_semantic_encoder_20260526_202329_seed42\\artifacts\\train_files.txt",
+        "total_read": 200,
+        "written": 200,
+        "missing_audio": 0,
+        "missing_feature": 0,
+        "mapped_paths": 200,
+        "bad_rows": 0,
+        "truncated_to": 200,
+        "missing_examples": []
+      },
+      "valid": {
+        "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\valid_files.txt",
+        "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp1_nas_semantic_encoder_20260526_202329_seed42\\artifacts\\valid_files.txt",
+        "total_read": 200,
+        "written": 200,
+        "missing_audio": 0,
+        "missing_feature": 0,
+        "mapped_paths": 200,
+        "bad_rows": 0,
+        "truncated_to": 200,
+        "missing_examples": []
+      }
+    },
+    "exp2": {
+      "train": {
+        "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+        "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_training_20260526_202329_seed42\\artifacts\\train_files.txt",
+        "total_read": 200,
+        "written": 200,
+        "missing_audio": 0,
+        "missing_feature": 0,
+        "mapped_paths": 200,
+        "bad_rows": 0,
+        "truncated_to": 200,
+        "missing_examples": []
+      },
+      "valid": {
+        "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\valid_files.txt",
+        "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_training_20260526_202329_seed42\\artifacts\\valid_files.txt",
+        "total_read": 200,
+        "written": 200,
+        "missing_audio": 0,
+        "missing_feature": 0,
+        "mapped_paths": 200,
+        "bad_rows": 0,
+        "truncated_to": 200,
+        "missing_examples": []
+      }
+    },
+    "exp3": {
+      "train": {
+        "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+        "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_20260526_202329_seed42\\artifacts\\train_files.txt",
+        "total_read": 200,
+        "written": 200,
+        "missing_audio": 0,
+        "missing_feature": 0,
+        "mapped_paths": 200,
+        "bad_rows": 0,
+        "truncated_to": 200,
+        "missing_examples": []
+      },
+      "valid": {
+        "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\valid_files.txt",
+        "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_20260526_202329_seed42\\artifacts\\valid_files.txt",
+        "total_read": 200,
+        "written": 200,
+        "missing_audio": 0,
+        "missing_feature": 0,
+        "mapped_paths": 200,
+        "bad_rows": 0,
+        "truncated_to": 200,
+        "missing_examples": []
+      }
+    },
+    "exp4": {
+      "train": {
+        "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+        "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp4_baseline_comparison_20260526_202329_seed42\\artifacts\\train_files.txt",
+        "total_read": 200,
+        "written": 200,
+        "missing_audio": 0,
+        "missing_feature": 0,
+        "mapped_paths": 200,
+        "bad_rows": 0,
+        "truncated_to": 200,
+        "missing_examples": []
+      },
+      "valid": {
+        "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\valid_files.txt",
+        "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp4_baseline_comparison_20260526_202329_seed42\\artifacts\\valid_files.txt",
+        "total_read": 200,
+        "written": 200,
+        "missing_audio": 0,
+        "missing_feature": 0,
+        "mapped_paths": 200,
+        "bad_rows": 0,
+        "truncated_to": 200,
+        "missing_examples": []
+      }
+    },
+    "exp5": {
+      "train": {
+        "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+        "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260526_202329_seed42\\artifacts\\train_files.txt",
+        "total_read": 200,
+        "written": 200,
+        "missing_audio": 0,
+        "missing_feature": 0,
+        "mapped_paths": 200,
+        "bad_rows": 0,
+        "truncated_to": 200,
+        "missing_examples": []
+      },
+      "valid": {
+        "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\valid_files.txt",
+        "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260526_202329_seed42\\artifacts\\valid_files.txt",
+        "total_read": 200,
+        "written": 200,
+        "missing_audio": 0,
+        "missing_feature": 0,
+        "mapped_paths": 200,
+        "bad_rows": 0,
+        "truncated_to": 200,
+        "missing_examples": []
+      }
+    }
+  },
+  "smoke_result": {
+    "data_batch_audio_shape": [
+      1,
+      1,
+      16000
+    ],
+    "data_batch_semantic_shape": [
+      1,
+      768,
+      50
+    ],
+    "forward_output_shape": [
+      1,
+      1,
+      16000
+    ],
+    "feature_shape": [
+      1,
+      50,
+      768
+    ],
+    "commit_loss_is_finite": true,
+    "codes_shape": [
+      3,
+      1,
+      50
+    ],
+    "decoded_shapes": {
+      "L1": [
+        1,
+        1,
+        16000
+      ],
+      "L2": [
+        1,
+        1,
+        16000
+      ],
+      "L3": [
+        1,
+        1,
+        16000
+      ]
+    },
+    "expected_latent_frames_for_segment": 50,
+    "observed_latent_frames": 50,
+    "codes_shape_valid": true,
+    "latent_frame_check": true
+  },
+  "smoke_error": null,
+  "payload_toy_check": {
+    "input_shape": [
+      3,
+      5
+    ],
+    "sim_output_shape": [
+      2,
+      5
+    ],
+    "sim_stats": {
+      "shape": [
+        2,
+        5
+      ],
+      "L": 2,
+      "codebook_size": 1024,
+      "p_drop": 0.2,
+      "p_sub": 0.1,
+      "seed": 42,
+      "total_indices": 10,
+      "replaced_by_previous": 2,
+      "substituted": 1,
+      "actual_p_drop": 0.2,
+      "actual_p_sub": 0.1
+    },
+    "packed_bytes": 13,
+    "ideal_bits_L2_for_5_frames": 100
+  },
+  "experiments": {
+    "exp1": {
+      "run_id": "exp1_nas_semantic_encoder_20260526_202329_seed42",
+      "run_dir": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp1_nas_semantic_encoder_20260526_202329_seed42",
+      "status": "preflight_passed",
+      "blockers": [],
+      "warnings": []
+    },
+    "exp2": {
+      "run_id": "exp2_scit_speech_training_20260526_202329_seed42",
+      "run_dir": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_training_20260526_202329_seed42",
+      "status": "preflight_failed",
+      "blockers": [
+        {
+          "kind": "dependency_pending",
+          "details": "Exp2 must wait for Exp1 completed or explicit hand-designed encoder fallback."
+        }
+      ],
+      "warnings": []
+    },
+    "exp3": {
+      "run_id": "exp3_low_load_channel_aware_adaptation_20260526_202329_seed42",
+      "run_dir": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_20260526_202329_seed42",
+      "status": "preflight_failed",
+      "blockers": [
+        {
+          "kind": "dependency_pending",
+          "details": "Exp3 must wait for a completed, loadable Exp2 Base checkpoint."
+        }
+      ],
+      "warnings": []
+    },
+    "exp4": {
+      "run_id": "exp4_baseline_comparison_20260526_202329_seed42",
+      "run_dir": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp4_baseline_comparison_20260526_202329_seed42",
+      "status": "preflight_failed",
+      "blockers": [
+        {
+          "kind": "dependency_pending",
+          "details": "SCIT Exp4 results must wait for Exp2/Exp3 checkpoints; codec/tool preflight can proceed."
+        }
+      ],
+      "warnings": [
+        {
+          "kind": "traditional_codec_tool_missing",
+          "details": "ffmpeg/opusenc not found; Opus/AMR baseline cannot run until a tool is installed or another documented codec path is supplied."
+        }
+      ]
+    },
+    "exp5": {
+      "run_id": "exp5_ablation_and_diagnosis_20260526_202329_seed42",
+      "run_dir": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260526_202329_seed42",
+      "status": "preflight_failed",
+      "blockers": [
+        {
+          "kind": "dependency_pending",
+          "details": "Exp5 must wait for valid Exp1-Exp3 artifacts."
+        }
+      ],
+      "warnings": []
+    }
+  }
+}

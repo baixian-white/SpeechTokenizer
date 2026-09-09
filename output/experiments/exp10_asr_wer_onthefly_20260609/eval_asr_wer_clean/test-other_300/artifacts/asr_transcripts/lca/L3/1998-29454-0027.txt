@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0027
+# model=lca
+# L=3
+
+GT:
+AN I ASKS YOU LET ME COME ALONGER YOU GOT THAT
+
+Whisper(original):
+And I ask you, let me come along with you. Got that?
+
+Whisper(decoded):
+And I ask you, let me come along with you. Have that.

@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0037
+# model=lca
+# L=1
+
+GT:
+NOR WAS IT SUNDAY ON WHICH THEY TOOK A REST AND WASHED THEIR SHIRTS ACCORDING TO MISTER BEALE'S RULE OF LIFE
+
+Whisper(original):
+Nor was it Sunday, on which they took a rest and washed their shirts, according to Mr. Beards' rule of life.
+
+Whisper(decoded):
+know when its unnamed, unrich the triple rest and rush their shirts, according to Mr. Eats for a new life.

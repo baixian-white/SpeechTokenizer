@@ -1,0 +1,12 @@
+# sample_id=121-127105-0033
+# model=lca
+# L=3
+
+GT:
+IT WAS THE BEAUTY OF IT
+
+Whisper(original):
+It was the beauty of it.
+
+Whisper(decoded):
+It was the beauty of it.

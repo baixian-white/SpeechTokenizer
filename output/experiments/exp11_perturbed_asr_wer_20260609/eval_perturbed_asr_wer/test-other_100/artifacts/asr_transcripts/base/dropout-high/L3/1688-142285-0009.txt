@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0009
+# model=base
+# L=3
+# channel=dropout-high
+
+GT:
+WHY IT MIGHT HAVE BEEN IN THE WORKHOUSE
+
+Whisper(original):
+Why, it might have been in the workhouse.
+
+Whisper(decoded):
+Well, it might open in the world house.

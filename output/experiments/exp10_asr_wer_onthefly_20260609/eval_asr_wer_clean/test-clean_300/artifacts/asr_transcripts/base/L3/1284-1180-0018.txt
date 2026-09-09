@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0018
+# model=base
+# L=3
+
+GT:
+IT TAKES ME SEVERAL YEARS TO MAKE THIS MAGIC POWDER BUT AT THIS MOMENT I AM PLEASED TO SAY IT IS NEARLY DONE YOU SEE I AM MAKING IT FOR MY GOOD WIFE MARGOLOTTE WHO WANTS TO USE SOME OF IT FOR A PURPOSE OF HER OWN
+
+Whisper(original):
+It takes me several years to make this magic powder, but at this moment I am pleased to say it is nearly done. You see, I am making it for my good wife, Margalot, who wants to use some of it for a purpose of her own. and and and and
+
+Whisper(decoded):
+It takes me several years to make this magic powder, but at this moment I am pleased to say it is nearly done. You see, I am making it for my good wife, Mild-A-Lot, who wants to use some of it for a purpose of her own.

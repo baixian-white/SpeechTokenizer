@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0028
+# model=lca
+# L=3
+
+GT:
+GET IT WROTE DOWN THEN DONE
+
+Whisper(original):
+Get it right down then.
+
+Whisper(decoded):
+Can I show a turn then?

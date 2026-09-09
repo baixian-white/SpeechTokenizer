@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0006
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+I DON'T THINK MISTER HALE YOU HAVE DONE QUITE RIGHT IN INTRODUCING SUCH A PERSON TO US WITHOUT TELLING US WHAT HE HAD BEEN
+
+Whisper(original):
+I don't think Mr Hale you have done quite right in introducing such a person to us without telling us what he had been.
+
+Whisper(decoded):
+I don't think Mr. Hale, you have to reply right even to case he was such a person's voice, but I turn as one-hand thing.

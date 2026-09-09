@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0006
+# model=lca
+# L=1
+
+GT:
+HE LOOKED ABOUT HIM AND KNEW THAT HE DID NOT AT ALL KNOW WHERE HE WAS
+
+Whisper(original):
+He looked about him and knew that he did not at all know where he was.
+
+Whisper(decoded):
+He looked at Walter and knew that he did not adore him over where he was.

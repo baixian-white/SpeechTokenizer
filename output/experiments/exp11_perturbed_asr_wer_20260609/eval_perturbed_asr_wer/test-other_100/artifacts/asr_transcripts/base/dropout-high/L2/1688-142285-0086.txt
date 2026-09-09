@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0086
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+THE MOTHER OF WHOM HE SPOKE TO US SAID MARGARET
+
+Whisper(original):
+The mother of whom he spoke to us said, mother.
+
+Whisper(decoded):
+Another of whom Spirit was said louder.

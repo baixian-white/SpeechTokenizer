@@ -1,0 +1,12 @@
+# sample_id=121-121726-0008
+# model=lca
+# L=1
+
+GT:
+HOSE MAN'S EXCUSE FOR WETTING THE WALK
+
+Whisper(original):
+Hose. Man's excuse for wetting the walk.
+
+Whisper(decoded):
+Howers. Nance excuses for wetting the walk.

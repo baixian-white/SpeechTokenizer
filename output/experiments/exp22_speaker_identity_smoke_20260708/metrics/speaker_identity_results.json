@@ -1,0 +1,131 @@
+{
+  "args": {
+    "run_dir": "output\\experiments\\exp22_speaker_identity_smoke_20260708",
+    "sample_list": "",
+    "audio_root": "data\\VCTK\\wav48_silence_trimmed",
+    "speaker_source": "vctk",
+    "base_config": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\configs\\scit_speech_base_config.json",
+    "base_checkpoint": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+    "lca_config": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\lca_finetune_config.json",
+    "lca_checkpoint": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_v2_step30000_robust_optimum.pt",
+    "models": [
+      "base"
+    ],
+    "layers": [
+      1
+    ],
+    "max_speakers": 2,
+    "enroll_per_speaker": 1,
+    "test_per_speaker": 1,
+    "seed": 42,
+    "sample_rate": 16000,
+    "n_mfcc": 40,
+    "threshold": 0.65,
+    "tar_far": 0.01,
+    "device": "cpu",
+    "progress_every": 1
+  },
+  "device": "cpu",
+  "speaker_count": 2,
+  "models": {
+    "base": {
+      "config_path": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\configs\\scit_speech_base_config.json",
+      "checkpoint": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+      "sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6"
+    }
+  },
+  "rows": [
+    {
+      "model": "original",
+      "L": 0,
+      "sample_id": "p240_376_mic2",
+      "speaker_id": "p240",
+      "audio_path": "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_376_mic2.flac",
+      "predicted_speaker": "p240",
+      "top1_correct": 1,
+      "verified": 1,
+      "score": 0.9918277859687805,
+      "correct_score": 0.9918277859687805,
+      "max_impostor_score": 0.9792700409889221,
+      "margin": 0.012557744979858398,
+      "duration_sec": 3.5420625
+    },
+    {
+      "model": "base",
+      "L": 1,
+      "sample_id": "p240_376_mic2",
+      "speaker_id": "p240",
+      "audio_path": "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_376_mic2.flac",
+      "predicted_speaker": "p240",
+      "top1_correct": 1,
+      "verified": 1,
+      "score": 0.9872393608093262,
+      "correct_score": 0.9872393608093262,
+      "max_impostor_score": 0.9764016270637512,
+      "margin": 0.010837733745574951,
+      "duration_sec": 3.5420625
+    },
+    {
+      "model": "original",
+      "L": 0,
+      "sample_id": "p313_133_mic2",
+      "speaker_id": "p313",
+      "audio_path": "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_133_mic2.flac",
+      "predicted_speaker": "p313",
+      "top1_correct": 1,
+      "verified": 1,
+      "score": 0.9882833361625671,
+      "correct_score": 0.9882833361625671,
+      "max_impostor_score": 0.9829235076904297,
+      "margin": 0.005359828472137451,
+      "duration_sec": 2.5225625
+    },
+    {
+      "model": "base",
+      "L": 1,
+      "sample_id": "p313_133_mic2",
+      "speaker_id": "p313",
+      "audio_path": "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_133_mic2.flac",
+      "predicted_speaker": "p313",
+      "top1_correct": 1,
+      "verified": 1,
+      "score": 0.9769269227981567,
+      "correct_score": 0.9769269227981567,
+      "max_impostor_score": 0.9753909111022949,
+      "margin": 0.0015360116958618164,
+      "duration_sec": 2.5225625
+    }
+  ],
+  "summary": [
+    {
+      "model": "base",
+      "L": 1,
+      "n": 2,
+      "top1_accuracy": 1.0,
+      "verified_rate": 1.0,
+      "score_mean": 0.9820831418037415,
+      "correct_score_mean": 0.9820831418037415,
+      "max_impostor_score_mean": 0.9758962690830231,
+      "margin_mean": 0.006186872720718384,
+      "eer": 0.0,
+      "eer_threshold": 0.9769269227981567,
+      "tar_at_far": 1.0,
+      "tar_threshold": 0.9769269227981567
+    },
+    {
+      "model": "original",
+      "L": 0,
+      "n": 2,
+      "top1_accuracy": 1.0,
+      "verified_rate": 1.0,
+      "score_mean": 0.9900555610656738,
+      "correct_score_mean": 0.9900555610656738,
+      "max_impostor_score_mean": 0.9810967743396759,
+      "margin_mean": 0.008958786725997925,
+      "eer": 0.0,
+      "eer_threshold": 0.9882833361625671,
+      "tar_at_far": 1.0,
+      "tar_threshold": 0.9882833361625671
+    }
+  ]
+}

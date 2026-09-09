@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0012
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+NO ONE CAME FORWARDS TO HELP THE MOTHER AND THIS BOY
+
+Whisper(original):
+No one came forwards to help the mother and this boy.
+
+Whisper(decoded):
+no one had four ups to help them all around this boy.

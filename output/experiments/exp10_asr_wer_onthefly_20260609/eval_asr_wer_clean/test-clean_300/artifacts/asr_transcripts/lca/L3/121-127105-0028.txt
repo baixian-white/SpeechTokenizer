@@ -1,0 +1,12 @@
+# sample_id=121-127105-0028
+# model=lca
+# L=3
+
+GT:
+THE AWKWARD THING WAS THAT THEY HAD PRACTICALLY NO OTHER RELATIONS AND THAT HIS OWN AFFAIRS TOOK UP ALL HIS TIME
+
+Whisper(original):
+The awkward thing was that they had practically no other relations, and that his own affairs took up all his time.
+
+Whisper(decoded):
+The awkward thing was that they had practically no other relations. And that his own affairs took up all this time.

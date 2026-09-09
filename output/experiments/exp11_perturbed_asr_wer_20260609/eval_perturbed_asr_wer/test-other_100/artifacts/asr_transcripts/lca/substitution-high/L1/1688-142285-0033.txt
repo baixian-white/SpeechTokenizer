@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0033
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+SHE LAY AWAKE VERY LONG THIS NIGHT PLANNING HOW TO LESSEN THE EVIL INFLUENCE OF THEIR MILTON LIFE ON HER MOTHER
+
+Whisper(original):
+She lay awake very long this night, planning how to lessen the evil influence of their Milton life on her mother.
+
+Whisper(decoded):
+She had a wet throne on the side. Clandol, heartless and the evil, influenced what they'd known to write on her model.

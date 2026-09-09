@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0013
+# model=lca
+# L=3
+
+GT:
+ANTIDOTES ARE USUALLY GIVEN HYPODERMICALLY OR IF BY MOUTH IN THE FORM OF TABLETS
+
+Whisper(original):
+Antidotes are usually given hyperdermically or if they're mouth in the form of tablets.
+
+Whisper(decoded):
+Antidotes are usually given hypothetically, or is their mouth in the form of toilets.

@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0011
+# model=lca
+# L=1
+
+GT:
+BEHOLDING IT HESTER WAS CONSTRAINED TO RUSH TOWARDS THE CHILD TO PURSUE THE LITTLE ELF IN THE FLIGHT WHICH SHE INVARIABLY BEGAN TO SNATCH HER TO HER BOSOM WITH A CLOSE PRESSURE AND EARNEST KISSES NOT SO MUCH FROM OVERFLOWING LOVE AS TO ASSURE HERSELF THAT PEARL WAS FLESH AND BLOOD AND NOT UTTERLY DELUSIVE
+
+Whisper(original):
+Beholding it, Hester was constrained to rush towards the child, to pursue the little elf in the flight which she invariably began, to snatch her to her bosom with a close pressure and earnest kisses, not so much from overflowing love as to assure herself that Pearl was flesh blood and not utterly delusive.
+
+Whisper(decoded):
+Beholding it, Pestil was constrained to rush towards the child, to pursue the little elf in the flake that she invariably began, to snatch her to my bosom, with a close pressure and earnest kisses. Not so much from overflowing love as to assure herself that Pearl was fashioned not, and not utterly delusive.

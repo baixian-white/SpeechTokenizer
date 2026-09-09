@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0019
+# model=lca
+# L=2
+
+GT:
+I NOW USE THEM AS ORNAMENTAL STATUARY IN MY GARDEN
+
+Whisper(original):
+I now use them as ornamental statuary in my garden.
+
+Whisper(decoded):
+I know you use them as a ornamental sanctuary in my garden.

@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0025
+# model=base
+# L=3
+
+GT:
+A MOMENT BEFORE THE GHOST OF THE ANCIENT KINGDOM OF THE DANES HAD LOOKED FORTH THROUGH THE VESTURE OF THE HAZEWRAPPED CITY
+
+Whisper(original):
+A moment before the ghost of the ancient kingdom of the Danes had looked forth through the vesture of the haze-wrapped city.
+
+Whisper(decoded):
+A moment before the ghost of the ancient kingdom of the Danes had looked forth through the vesture of the Hazrat city.

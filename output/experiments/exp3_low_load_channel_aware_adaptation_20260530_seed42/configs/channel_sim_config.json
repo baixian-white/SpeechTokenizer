@@ -1,0 +1,16 @@
+{
+  "sample_strategy": "uniform_random",
+  "conditions": [
+    { "name": "clean",            "p_drop": 0.0,  "p_sub": 0.0    },
+    { "name": "dropout-low",      "p_drop": 0.01, "p_sub": 0.0    },
+    { "name": "dropout-mid",      "p_drop": 0.03, "p_sub": 0.0    },
+    { "name": "substitution-low", "p_drop": 0.0,  "p_sub": 0.001  },
+    { "name": "substitution-mid", "p_drop": 0.0,  "p_sub": 0.005  }
+  ],
+  "dropout_implementation": "previous-index replacement",
+  "dropout_first_step_behavior": "keep original (no previous index available)",
+  "substitution": "uniform legal codebook index in [0, K-1]",
+  "implementation": "speechtokenizer/trainer/lca_trainer.py:apply_channel_sim_torch (torch on-device version of scripts/channel_sim.py)",
+  "seed": 42,
+  "note": "Channel sim is sampled per-batch independently from L sampling. Stats per step are written to metrics/lca_train_metrics.jsonl."
+}

@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0016
+# model=base
+# L=2
+
+GT:
+THE WOMAN SEEMED THOUGHTFUL
+
+Whisper(original):
+The woman seemed thoughtful.
+
+Whisper(decoded):
+The woman is being thoughtful.

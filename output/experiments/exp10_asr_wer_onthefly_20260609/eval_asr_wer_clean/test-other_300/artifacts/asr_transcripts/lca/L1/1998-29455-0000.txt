@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0000
+# model=lca
+# L=1
+
+GT:
+THE SINGING AND LAUGHING WENT ON LONG AFTER HE HAD FALLEN ASLEEP AND IF LATER IN THE EVENING THERE WERE LOUD VOICED ARGUMENTS OR QUARRELS EVEN DICKIE DID NOT HEAR THEM
+
+Whisper(original):
+The singing and laughing went on long after her falling asleep, and if, later in the evening, there were a loud voice arguments or a quabbal's even, Dickie did not hear them.
+
+Whisper(decoded):
+The sending and laughing went on and on after your pharmacy. I did. They turned the evening. There were no towards admins or the covers even. They could get my t-shirt on.

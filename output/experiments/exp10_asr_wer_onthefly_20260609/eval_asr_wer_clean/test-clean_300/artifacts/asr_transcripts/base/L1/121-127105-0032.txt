@@ -1,0 +1,12 @@
+# sample_id=121-127105-0032
+# model=base
+# L=1
+
+GT:
+YES BUT THAT'S JUST THE BEAUTY OF HER PASSION
+
+Whisper(original):
+Yes, but that's just the beauty of her passion.
+
+Whisper(decoded):
+Yes, that was just the beauty of a treasure.

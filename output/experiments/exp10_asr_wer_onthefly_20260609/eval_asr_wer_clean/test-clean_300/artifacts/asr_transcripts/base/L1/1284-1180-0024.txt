@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0024
+# model=base
+# L=1
+
+GT:
+THAT IS ONE REASON YOU ARE OJO THE UNLUCKY SAID THE WOMAN IN A SYMPATHETIC TONE
+
+Whisper(original):
+That is one reason you are Ojo the unlucky," said the woman in sympathetic tone.
+
+Whisper(decoded):
+That is one reason you are all jolly unlucky," said the woman in a sympathetic tone.

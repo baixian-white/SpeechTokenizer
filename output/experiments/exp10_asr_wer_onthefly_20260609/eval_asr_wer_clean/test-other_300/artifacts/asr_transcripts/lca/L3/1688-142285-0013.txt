@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0013
+# model=lca
+# L=3
+
+GT:
+AT LEAST NO FRIEND CAME FORWARDS IMMEDIATELY AND MISSUS THORNTON IS NOT ONE I FANCY TO WAIT TILL TARDY KINDNESS COMES TO FIND HER OUT
+
+Whisper(original):
+At least no friend came forward immediately, and Mr Thornton is not one, I fancy, to wait till Tardie Kydness comes to find her out.
+
+Whisper(decoded):
+At least no friend came forwards immediately, and this Thornton was not one I fancy, to wait till Tardie Klimas comes to find her out.

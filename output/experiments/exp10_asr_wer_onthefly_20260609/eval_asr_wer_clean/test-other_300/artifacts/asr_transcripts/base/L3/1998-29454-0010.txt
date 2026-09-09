@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0010
+# model=base
+# L=3
+
+GT:
+NOT EXACKLY SAID THE MAN BUT IT'S ALL RIGHT
+
+Whisper(original):
+Not exactly, said the men, but it's alright.
+
+Whisper(decoded):
+Not exactly said the man, but it's alright.

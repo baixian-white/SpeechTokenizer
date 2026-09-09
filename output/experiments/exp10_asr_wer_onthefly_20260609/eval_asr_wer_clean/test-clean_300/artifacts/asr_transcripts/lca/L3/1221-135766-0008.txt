@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0008
+# model=lca
+# L=3
+
+GT:
+MINDFUL HOWEVER OF HER OWN ERRORS AND MISFORTUNES SHE EARLY SOUGHT TO IMPOSE A TENDER BUT STRICT CONTROL OVER THE INFANT IMMORTALITY THAT WAS COMMITTED TO HER CHARGE
+
+Whisper(original):
+Mindful, however, of her own errors and misfortunes, she early sought to impose a tender but strict control over the infant immortality that was committed to her charge.
+
+Whisper(decoded):
+mindful, however, of her own errors and misfortunes. She early sought to impose a tender but strict control over the infant immortality that was committed to her charge.

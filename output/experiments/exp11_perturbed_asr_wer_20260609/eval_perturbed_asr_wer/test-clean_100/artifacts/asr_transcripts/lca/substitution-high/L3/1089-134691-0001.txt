@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0001
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+FOR A FULL HOUR HE HAD PACED UP AND DOWN WAITING BUT HE COULD WAIT NO LONGER
+
+Whisper(original):
+For a full hour he had paced up and down waiting, but he could wait no longer.
+
+Whisper(decoded):
+For a full hour he had paced up and down waiting, but he can wait no longer.

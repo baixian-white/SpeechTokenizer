@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0022
+# model=base
+# L=1
+
+GT:
+EVAPORATE THE FILTRATE TO A SYRUP AND EXTRACT WITH SUCCESSIVE PORTIONS OF ABSOLUTE ALCOHOL
+
+Whisper(original):
+Evaporate the phagellate to a cyrup and extract with successive portions of absolute alcohol.
+
+Whisper(decoded):
+They've racked up the filter to show sign-up and instructs were successive portions of active acrylon.

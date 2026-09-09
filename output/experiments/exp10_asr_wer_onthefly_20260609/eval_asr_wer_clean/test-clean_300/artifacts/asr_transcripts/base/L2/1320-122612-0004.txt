@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0004
+# model=base
+# L=2
+
+GT:
+DISTRUSTING HIS OWN JUDGMENT HIS APPEALS TO THE OPINION OF CHINGACHGOOK WERE FREQUENT AND EARNEST
+
+Whisper(original):
+distrusting his own judgment, his appeals to the opinion of Chingaczkuk were frequent and earnest.
+
+Whisper(decoded):
+Distressing his own judgment has appealed to the opinion of Chindach book of frequent and earnest.

@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0058
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+REMEMBER WHO GAVE IT YOU AND MADE IT WHAT IT IS
+
+Whisper(original):
+Remember who gave it to you and made it what it is.
+
+Whisper(decoded):
+Remember who gave it to you and made it what it is.

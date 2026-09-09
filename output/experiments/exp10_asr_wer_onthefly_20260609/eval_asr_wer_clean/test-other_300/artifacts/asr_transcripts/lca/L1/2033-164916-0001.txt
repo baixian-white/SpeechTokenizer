@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0001
+# model=lca
+# L=1
+
+GT:
+KNOW O CHIEF WAZIR THAT HERE WHERE YOU HAVE ENCOUNTERED ME ALLAH HATH GIVEN YOU REST FROM FATIGUE AND BRINGETH YOU YOUR DESIRE AFTER THE EASIEST OF FASHIONS FOR THAT HIS ALMIGHTY WILL RESTORETH TO YOU ZAU AL MAKAN AND HIS SISTER NUZHAT AL ZAMAN WHEREBY WE WILL SETTLE THE MATTER AS WE EASILY CAN
+
+Whisper(original):
+No, O chief was here, that here, where you have encountered me, Allah has given you rest from fatigue and bringeth you your desire, after the easiest of fashions. For that his almighty will restore it to you, Zawah Makan, and his sister, Nusad Al-Zaman. whereby we will settle the matter as we easily can.
+
+Whisper(decoded):
+No, what chief was here, that year, when you haven't entered me, but I have given you rest, from fatigue, and bring this view here to sigh, of the de-pisiest of fashions. But that is a mighty meal, restored to him, Zawon Akan, and his sister, Musad Bazahan. thereby, we will settle the matter as we easily turn.

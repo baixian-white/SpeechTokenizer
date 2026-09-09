@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0016
+# model=base
+# L=1
+
+GT:
+FOR THE SEPARATION OF AN ALKALOID THE FOLLOWING IS THE PROCESS OF STAS OTTO
+
+Whisper(original):
+For the separation of an alkaloid, the following is the process of starts or two.
+
+Whisper(decoded):
+For the separation of the air-coloured, the following is the process of stance at all.

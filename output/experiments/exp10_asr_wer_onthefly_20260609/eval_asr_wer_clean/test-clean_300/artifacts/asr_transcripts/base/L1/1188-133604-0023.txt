@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0023
+# model=base
+# L=1
+
+GT:
+THE COLORIST SAYS FIRST OF ALL AS MY DELICIOUS PAROQUET WAS RUBY SO THIS NASTY VIPER SHALL BE BLACK AND THEN IS THE QUESTION CAN I ROUND HIM OFF EVEN THOUGH HE IS BLACK AND MAKE HIM SLIMY AND YET SPRINGY AND CLOSE DOWN CLOTTED LIKE A POOL OF BLACK BLOOD ON THE EARTH ALL THE SAME
+
+Whisper(original):
+The colorist says, first of all, as my delicious parake was ruby, so this nasty viper shall be black. And then is the question, can I round him off, even though he is black, and make him slimy, and yet springy and close down, clotted like a pool of black blood on the earth, all the same?
+
+Whisper(decoded):
+The colors says, first of all, as my delicious perky was ribby, so this massing viper shall be black. Conven as the question. Can I round him out, even there he is blocked, and make him slime, and yet spun me and closed down, clotted like a pool of black blot on the earth. All of a sudden...

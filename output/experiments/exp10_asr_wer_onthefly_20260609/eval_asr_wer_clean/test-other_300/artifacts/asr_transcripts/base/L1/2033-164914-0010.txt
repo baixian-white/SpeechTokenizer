@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0010
+# model=base
+# L=1
+
+GT:
+BY ALLAH AN THOU FETCH HIM NOT TO ME I WILL ASSUREDLY ROUSE THE CHAMBERLAIN ON THEE AND HE SHALL BEAT THEE AND CAST THEE OUT
+
+Whisper(original):
+By Allah, and the Alpha achieve not to me, I will assuredly rouse the chamberlain on thee, and he shall beat thee and cast thee out.
+
+Whisper(decoded):
+Well, and I'll fachin' not to be, I will shortly browse the chain man when I'm gay. And he shall be gay and cast the arrows.

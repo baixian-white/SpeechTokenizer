@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0026
+# model=base
+# L=2
+
+GT:
+THE NIGHT IS FULL OF INTERESTING LITTLE SOUNDS THAT WILL NOT AT FIRST LET YOU SLEEP THE RUSTLE OF LITTLE WILD THINGS IN THE HEDGES THE BARKING OF DOGS IN DISTANT FARMS THE CHIRP OF CRICKETS AND THE CROAKING OF FROGS
+
+Whisper(original):
+The night is full of interesting little sounds that will not at first let you sleep. The rustle of little white things in the hatches, the barking of dogs and distant farms, the chair of crickets and the quarking of frogs.
+
+Whisper(decoded):
+The night is full of interesting little sounds that will not at first let you sleep. The rustle of furloughed things on the hatches, the barking of dogs and distant farms, the of credits and the croaking frogs.

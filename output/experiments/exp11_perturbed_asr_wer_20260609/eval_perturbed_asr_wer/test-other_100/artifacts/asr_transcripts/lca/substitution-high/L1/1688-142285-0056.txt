@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0056
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+BESSY TOOK A LONG AND FEVERISH DRAUGHT AND THEN FELL BACK AND SHUT HER EYES
+
+Whisper(original):
+Bessie took a long and feverish draft and then fell back and shut her eyes.
+
+Whisper(decoded):
+This took a longer of a few fish dropped, ending full back, and shot for rest.

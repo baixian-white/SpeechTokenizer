@@ -1,0 +1,12 @@
+# sample_id=1089-134686-0021
+# model=lca
+# L=1
+
+GT:
+IF A LAYMAN IN GIVING BAPTISM POUR THE WATER BEFORE SAYING THE WORDS IS THE CHILD BAPTIZED
+
+Whisper(original):
+If a layman in giving baptism poor the water before saying the words is the child baptized,
+
+Whisper(decoded):
+The foramen, in giving baptism, pour the water before saying the words, is the child baptized.

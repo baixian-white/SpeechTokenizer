@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0018
+# model=lca
+# L=1
+
+GT:
+I SAY WHAT MADE MY IGNOMY WHATE'ER THE BITTER CUP I DRAIN FAR BE FRO ME THAT LAND TO FLEE NOR WILL I BOW TO THOSE WHO BLAME AND FOR SUCH LOVE WOULD DEAL ME SHAME
+
+Whisper(original):
+I say, what made my economy? What have the bitter cup I drain? Far be from me that land to flee? Nor will I bow to those who blame, and for such love would deal me shame.
+
+Whisper(decoded):
+I say, what made my eat movie? What happened if the beats are caught by clay? Fire me from me, then I'm too free. What will I bow to those who blame, and for such love, would deal with shame?

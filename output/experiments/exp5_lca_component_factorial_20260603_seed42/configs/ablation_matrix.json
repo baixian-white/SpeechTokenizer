@@ -1,0 +1,121 @@
+{
+  "run_id": "exp5_lca_component_factorial_20260603_seed42",
+  "purpose": "LCA component factorial ablation",
+  "base_config": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\lca_finetune_config.json",
+  "base_checkpoint": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+  "existing_full_lca_reference": "output/experiments/exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42",
+  "variants": {
+    "V0_full_depth_clean_control": {
+      "description": "Matched fine-tune control: full-depth only, clean channel, no communication branch weight.",
+      "config": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\configs\\variants\\V0_full_depth_clean_control.json",
+      "results_folder": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\runs\\V0_full_depth_clean_control\\checkpoints",
+      "random_l_values": [
+        3
+      ],
+      "channel_conditions": [
+        {
+          "name": "clean",
+          "p_drop": 0.0,
+          "p_sub": 0.0
+        }
+      ],
+      "lambda_comm": 0.0,
+      "lambda_consistency": 0.0
+    },
+    "V1_random_l_only": {
+      "description": "random-L enabled, clean channel only, no consistency loss.",
+      "config": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\configs\\variants\\V1_random_l_only.json",
+      "results_folder": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\runs\\V1_random_l_only\\checkpoints",
+      "random_l_values": [
+        1,
+        2,
+        3
+      ],
+      "channel_conditions": [
+        {
+          "name": "clean",
+          "p_drop": 0.0,
+          "p_sub": 0.0
+        }
+      ],
+      "lambda_comm": 1.5,
+      "lambda_consistency": 0.0
+    },
+    "V2_channelsim_only": {
+      "description": "ChannelSim enabled at fixed full depth L=3, no random-L, no consistency loss.",
+      "config": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\configs\\variants\\V2_channelsim_only.json",
+      "results_folder": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\runs\\V2_channelsim_only\\checkpoints",
+      "random_l_values": [
+        3
+      ],
+      "channel_conditions": [
+        {
+          "name": "clean",
+          "p_drop": 0.0,
+          "p_sub": 0.0
+        },
+        {
+          "name": "dropout-mid",
+          "p_drop": 0.05,
+          "p_sub": 0.0
+        },
+        {
+          "name": "dropout-high",
+          "p_drop": 0.1,
+          "p_sub": 0.0
+        },
+        {
+          "name": "substitution-mid",
+          "p_drop": 0.0,
+          "p_sub": 0.01
+        },
+        {
+          "name": "substitution-high",
+          "p_drop": 0.0,
+          "p_sub": 0.03
+        }
+      ],
+      "lambda_comm": 1.5,
+      "lambda_consistency": 0.0
+    },
+    "V3_random_l_channelsim": {
+      "description": "random-L + strong ChannelSim enabled, no consistency loss.",
+      "config": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\configs\\variants\\V3_random_l_channelsim.json",
+      "results_folder": "output\\experiments\\exp5_lca_component_factorial_20260603_seed42\\runs\\V3_random_l_channelsim\\checkpoints",
+      "random_l_values": [
+        1,
+        2,
+        3
+      ],
+      "channel_conditions": [
+        {
+          "name": "clean",
+          "p_drop": 0.0,
+          "p_sub": 0.0
+        },
+        {
+          "name": "dropout-mid",
+          "p_drop": 0.05,
+          "p_sub": 0.0
+        },
+        {
+          "name": "dropout-high",
+          "p_drop": 0.1,
+          "p_sub": 0.0
+        },
+        {
+          "name": "substitution-mid",
+          "p_drop": 0.0,
+          "p_sub": 0.01
+        },
+        {
+          "name": "substitution-high",
+          "p_drop": 0.0,
+          "p_sub": 0.03
+        }
+      ],
+      "lambda_comm": 1.5,
+      "lambda_consistency": 0.0
+    }
+  }
+}

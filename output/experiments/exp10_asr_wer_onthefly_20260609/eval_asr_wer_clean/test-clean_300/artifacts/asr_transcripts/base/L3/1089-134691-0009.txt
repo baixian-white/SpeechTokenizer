@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0009
+# model=base
+# L=3
+
+GT:
+ANGRY WITH HIMSELF HE TRIED TO HIDE HIS FACE FROM THEIR EYES BY GAZING DOWN SIDEWAYS INTO THE SHALLOW SWIRLING WATER UNDER THE BRIDGE BUT HE STILL SAW A REFLECTION THEREIN OF THEIR TOP HEAVY SILK HATS AND HUMBLE TAPE LIKE COLLARS AND LOOSELY HANGING CLERICAL CLOTHES BROTHER HICKEY
+
+Whisper(original):
+angry with himself, he tried to hide his face from their eyes by gazing down sideways into the shallow swirling water under the bridge, but he still saw a reflection therein of their top-heavy silksats, and humble, tape-like collars and loosely hanging clerical clothes. Brother Hickey
+
+Whisper(decoded):
+Embry with himself, he tried to hide his face from their eyes by gazing down sideways into the shallow swirling water under the bridge, but he still saw a reflection therein of their top-heavy silks and humble tape-like collars and loosely hanging clerical clothes. Brother Hickey

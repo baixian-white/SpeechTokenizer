@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0014
+# model=base
+# L=1
+
+GT:
+OJO HAD NEVER EATEN SUCH A FINE MEAL IN ALL HIS LIFE
+
+Whisper(original):
+Ojo had never eaten such a fine meal in all his life.
+
+Whisper(decoded):
+I would tell that never eaten such a fine meal in all this life.

@@ -1,0 +1,22 @@
+{
+  "source": "data\\VCTK\\wav48_silence_trimmed",
+  "speaker_source": "vctk",
+  "enroll": {
+    "p240": [
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_128_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_376_mic2.flac"
+    ],
+    "p313": [
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_133_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_187_mic1.flac"
+    ]
+  },
+  "test": {
+    "p240": [
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_225_mic2.flac"
+    ],
+    "p313": [
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_101_mic1.flac"
+    ]
+  }
+}

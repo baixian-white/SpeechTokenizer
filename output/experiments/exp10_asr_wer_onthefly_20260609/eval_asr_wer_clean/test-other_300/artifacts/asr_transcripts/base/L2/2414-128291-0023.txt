@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0023
+# model=base
+# L=2
+
+GT:
+NOW HOWEVER TAKE LEAVE AT ONCE OF THY KINE THOU STRANGE ONE
+
+Whisper(original):
+Now, however, they leave at once of their kind. Thou strange one.
+
+Whisper(decoded):
+Now, however, the heat was a very kind. Now stage 1.

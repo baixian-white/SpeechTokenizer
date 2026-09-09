@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0029
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+ONLY THERE ARE TWO SORTS OF CLOUD AND FIRE
+
+Whisper(original):
+Only, there are two sorts of cloud and fire.
+
+Whisper(decoded):
+Only, there are two sorts of cloud and fire.

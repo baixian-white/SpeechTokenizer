@@ -1,0 +1,7 @@
+variant_id,encoder_params,encoder_macs,encoder_rtf,total_params,total_macs,total_rtf,profile_sample_sec,notes
+hand_encoder_base,67705856,5869363200,,103675586,,0.9509911999994074,1.0,encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run
+nas_encoder_base,5398016,510988800,,41367746,,0.010099599996465258,1.0,encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run
+base_debug,5398016,510988800,,41367746,,0.014643300004536286,1.0,encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run
+lca_random_l_on,5398016,510988800,,41367746,,0.014581199997337535,1.0,encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run
+no_semantic_distill,5398016,510988800,,41367746,,0.009034599999722559,1.0,encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run
+random_l_off,5398016,510988800,,41367746,,0.008538900001440197,1.0,encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run

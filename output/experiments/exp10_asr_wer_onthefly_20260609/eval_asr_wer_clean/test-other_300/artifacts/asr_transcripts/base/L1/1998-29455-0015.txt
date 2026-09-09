@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0015
+# model=base
+# L=1
+
+GT:
+POOR LITTLE MAN SAID THE LADY YOU MISS YOUR MOTHER DON'T YOU
+
+Whisper(original):
+Poor little man said the lady, you must your mother don't you?
+
+Whisper(decoded):
+Who will it and my inset, Canadian? You must have never turned to you.

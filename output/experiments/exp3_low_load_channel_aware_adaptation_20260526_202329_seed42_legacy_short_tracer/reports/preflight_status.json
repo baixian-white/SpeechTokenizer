@@ -1,0 +1,12 @@
+{
+  "run_id": "exp3_low_load_channel_aware_adaptation_20260526_202329_seed42",
+  "run_dir": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_20260526_202329_seed42",
+  "status": "preflight_failed",
+  "blockers": [
+    {
+      "kind": "dependency_pending",
+      "details": "Exp3 must wait for a completed, loadable Exp2 Base checkpoint."
+    }
+  ],
+  "warnings": []
+}

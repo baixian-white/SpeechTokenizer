@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0024
+# model=lca
+# L=2
+
+GT:
+PEARL SEEING THE ROSE BUSHES BEGAN TO CRY FOR A RED ROSE AND WOULD NOT BE PACIFIED
+
+Whisper(original):
+Pearl, seeing the rose bushes, began to cry for a red rose and would not be pacified.
+
+Whisper(decoded):
+Pearl, seeing the rose bushes, began to cry for a red rose and would not be pacified.

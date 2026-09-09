@@ -1,0 +1,12 @@
+# sample_id=1089-134686-0008
+# model=base
+# L=3
+
+GT:
+THE CHAOS IN WHICH HIS ARDOUR EXTINGUISHED ITSELF WAS A COLD INDIFFERENT KNOWLEDGE OF HIMSELF
+
+Whisper(original):
+The chaos in which his order extinguished itself was a cold, indifferent knowledge of himself.
+
+Whisper(decoded):
+The chaos in which his ardour extinguished itself was a cold and different knowledge of himself.

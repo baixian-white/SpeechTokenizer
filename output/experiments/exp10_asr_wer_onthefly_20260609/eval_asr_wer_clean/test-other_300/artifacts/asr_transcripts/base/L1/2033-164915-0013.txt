@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0013
+# model=base
+# L=1
+
+GT:
+AND HE ANSWERED I AM THE CHAMBERLAIN OF THE EMIR OF DAMASCUS KING SHARRKAN SON OF OMAR BIN AL NU'UMAN LORD OF BAGHDAD AND OF THE LAND OF KHORASAN AND I BRING TRIBUTE AND PRESENTS FROM HIM TO HIS FATHER IN BAGHDAD
+
+Whisper(original):
+And he answered, I am the chamberlain of the Emir of Damascus, King Sharkan, Song of Omar bin al-Luman, Lord Vadad, and of the land of Khorasan, and I bring tribute and presence from him to his father in Baghdad.
+
+Whisper(decoded):
+And he answered, and on the chandelion of the near of Damascus, Tintraken, Sangua Umar Pinagnuman, Noltevakdad, and of the land of Khorasan, and had been tribute and presence from him to his father in Baghdad.

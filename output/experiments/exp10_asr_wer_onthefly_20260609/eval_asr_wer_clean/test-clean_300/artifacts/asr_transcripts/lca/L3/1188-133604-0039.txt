@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0039
+# model=lca
+# L=3
+
+GT:
+IT HAS NO BEAUTY WHATSOEVER NO SPECIALTY OF PICTURESQUENESS AND ALL ITS LINES ARE CRAMPED AND POOR
+
+Whisper(original):
+It has no beauty whatsoever, no specialty of picturesque-ness, and all its lines are cramped and poor.
+
+Whisper(decoded):
+It has no beauty whatsoever, no specialty of picturesque-ness, and all its lines are cramped and poor.

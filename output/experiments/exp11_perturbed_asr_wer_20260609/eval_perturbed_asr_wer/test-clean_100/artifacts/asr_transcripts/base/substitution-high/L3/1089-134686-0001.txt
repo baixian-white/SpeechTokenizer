@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0001
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+STUFF IT INTO YOU HIS BELLY COUNSELLED HIM
+
+Whisper(original):
+Stuffered into you, his belly counseled him.
+
+Whisper(decoded):
+Stuff it into you, his belly counseled him.

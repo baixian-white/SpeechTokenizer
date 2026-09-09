@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0009
+# model=lca
+# L=1
+
+GT:
+BUT BEHOLD THESE KINE
+
+Whisper(original):
+But behold this kind
+
+Whisper(decoded):
+Like before it is fine

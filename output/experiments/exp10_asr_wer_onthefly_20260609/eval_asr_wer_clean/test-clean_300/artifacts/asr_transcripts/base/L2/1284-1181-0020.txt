@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0020
+# model=base
+# L=2
+
+GT:
+DEAR ME WHAT A CHATTERBOX YOU'RE GETTING TO BE UNC REMARKED THE MAGICIAN WHO WAS PLEASED WITH THE COMPLIMENT
+
+Whisper(original):
+Dear me, what a chatterbox you're getting to be on. Remark the magician, who was pleased with the compliment.
+
+Whisper(decoded):
+Do you need what a chatterbox you're getting to be on?" remarked the magician, who was pleased with the compliment.

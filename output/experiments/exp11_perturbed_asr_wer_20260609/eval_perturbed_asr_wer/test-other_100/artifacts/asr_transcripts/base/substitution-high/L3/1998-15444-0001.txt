@@ -1,0 +1,13 @@
+# sample_id=1998-15444-0001
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+HE SHOULD MAKE INQUIRIES AS TO SYMPTOMS AND TIME AT WHICH FOOD OR MEDICINE WAS LAST TAKEN
+
+Whisper(original):
+He should make inquiries as to symptoms and time at which food or medicine was last taken.
+
+Whisper(decoded):
+You should make inquiries as to symptoms and time of the truth or medicine was last to you Kim.

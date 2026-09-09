@@ -1,0 +1,3202 @@
+[
+  {
+    "candidate_id": "nas_seed42_000187",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 187,
+    "sample_attempt": 191,
+    "encoder_strides": [
+      4,
+      4,
+      5,
+      4
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "skip",
+      "dil_k3",
+      "sep_k7",
+      "sep_k3"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      4,
+      5,
+      4,
+      4
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      4,
+      5,
+      4,
+      4
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "2cc2b3ae3a7b62f2a7e9c211130f5f128da7ec14"
+  },
+  {
+    "candidate_id": "nas_seed42_000188",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 188,
+    "sample_attempt": 192,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "dil_k9",
+      "dil_k9",
+      "skip"
+    ],
+    "layer_se_list": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "860f28e78e7142b4b989259499fa6857a42e4046"
+  },
+  {
+    "candidate_id": "nas_seed42_000248",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 248,
+    "sample_attempt": 253,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k9",
+      "dil_k3",
+      "sep_k3",
+      "skip"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "737dab708c4ecb4e52e59c707f39ae0bcc99b916"
+  },
+  {
+    "candidate_id": "nas_seed42_000444",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 444,
+    "sample_attempt": 459,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k3",
+      "sep_k9",
+      "dil_k3",
+      "std_k5"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "8f4b18a20c021993f37824c9ea2d6cd187c3e923"
+  },
+  {
+    "candidate_id": "nas_seed42_000516",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 516,
+    "sample_attempt": 532,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "dil_k5",
+      "std_k3",
+      "skip"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "95c151de1e098ecfda7d50f2e6ff2de053af53df"
+  },
+  {
+    "candidate_id": "nas_seed42_000888",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 888,
+    "sample_attempt": 927,
+    "encoder_strides": [
+      4,
+      5,
+      4,
+      4
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "skip",
+      "std_k5",
+      "dil_k3",
+      "sep_k9"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      4,
+      4,
+      5,
+      4
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      4,
+      4,
+      5,
+      4
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "89d8f2f3c7b9a36fa999590ae872e032a76de3fe"
+  },
+  {
+    "candidate_id": "nas_seed42_000896",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 896,
+    "sample_attempt": 935,
+    "encoder_strides": [
+      5,
+      4,
+      4,
+      4
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "skip",
+      "std_k7",
+      "sep_k9",
+      "dil_k5"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      4,
+      4,
+      4,
+      5
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      4,
+      4,
+      4,
+      5
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "5c200cb780a45890530efb68cb45e17574ea9813"
+  },
+  {
+    "candidate_id": "nas_seed42_000906",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 906,
+    "sample_attempt": 945,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "dil_k9",
+      "std_k3",
+      "sep_k3"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "d7532fe328c29cef15c9a4d577f754d1b8cc9525"
+  },
+  {
+    "candidate_id": "nas_seed42_001063",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 1063,
+    "sample_attempt": 1107,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k9",
+      "sep_k9",
+      "std_k7",
+      "sep_k9"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "721994ca9d918724bc5cb806af73186ebba80dd5"
+  },
+  {
+    "candidate_id": "nas_seed42_001307",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 1307,
+    "sample_attempt": 1359,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k3",
+      "dil_k9",
+      "sep_k9",
+      "std_k5"
+    ],
+    "layer_se_list": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "adff92539b9148dbbf48950e89af8065d067be47"
+  },
+  {
+    "candidate_id": "nas_seed42_001540",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 1540,
+    "sample_attempt": 1598,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k3",
+      "std_k3",
+      "sep_k9",
+      "dil_k3"
+    ],
+    "layer_se_list": [
+      true,
+      true,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "4fc45839ab4cdf97cbd3eb622f3defa77fd30f83"
+  },
+  {
+    "candidate_id": "nas_seed42_001629",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 1629,
+    "sample_attempt": 1689,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k3",
+      "sep_k7",
+      "std_k3",
+      "dil_k3"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "2afbc66b122f3ae25d307166c3e8cdc1a5fb5f78"
+  },
+  {
+    "candidate_id": "nas_seed42_002338",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 2338,
+    "sample_attempt": 2433,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "sep_k3",
+      "sep_k9",
+      "dil_k3"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "aab21e1dbc4ad07bb49efb276af96c44af7bfc06"
+  },
+  {
+    "candidate_id": "nas_seed42_002496",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 2496,
+    "sample_attempt": 2595,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "skip",
+      "std_k7",
+      "dil_k5",
+      "std_k3"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "a80c90cfe215d1ca1794f2239ad09920d55852a2"
+  },
+  {
+    "candidate_id": "nas_seed42_002593",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 2593,
+    "sample_attempt": 2696,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "sep_k5",
+      "sep_k7",
+      "dil_k3"
+    ],
+    "layer_se_list": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "965e808647bb4bd4726ca7bd0e9f9971efe29cfa"
+  },
+  {
+    "candidate_id": "nas_seed42_002632",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 2632,
+    "sample_attempt": 2736,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "sep_k3",
+      "std_k7",
+      "sep_k9"
+    ],
+    "layer_se_list": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "9f62ceab61b1aeaa2669287db8c26ce5331d22a6"
+  },
+  {
+    "candidate_id": "nas_seed42_002711",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 2711,
+    "sample_attempt": 2816,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k7",
+      "dil_k9",
+      "sep_k5",
+      "sep_k5"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "16a2c4db88f0224e003b75fe48c3049bef876b34"
+  },
+  {
+    "candidate_id": "nas_seed42_002986",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 2986,
+    "sample_attempt": 3098,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "skip",
+      "sep_k3",
+      "dil_k9"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "3e87341fddc7822189ecc649daf14e0153596928"
+  },
+  {
+    "candidate_id": "nas_seed42_003135",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 3135,
+    "sample_attempt": 3252,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "std_k5",
+      "pw_bottleneck_k3",
+      "sep_k3"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "310023ce14b0c72c83da561a3e67ea7312a43a0b"
+  },
+  {
+    "candidate_id": "nas_seed42_003203",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 3203,
+    "sample_attempt": 3323,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k3",
+      "sep_k7",
+      "std_k3",
+      "sep_k5"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "28b1ede4e4bb6c565475f06ae8b627b943654351"
+  },
+  {
+    "candidate_id": "nas_seed42_003251",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 3251,
+    "sample_attempt": 3373,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "std_k3",
+      "sep_k7",
+      "dil_k5"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "c5ce072bbfa6699300640a5ace9a1b801b6b43f9"
+  },
+  {
+    "candidate_id": "nas_seed42_003333",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 3333,
+    "sample_attempt": 3458,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k7",
+      "sep_k9",
+      "dil_k5",
+      "sep_k3"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "6c0715bc9a96a179dc1931efdc250f685fa78e72"
+  },
+  {
+    "candidate_id": "nas_seed42_003379",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 3379,
+    "sample_attempt": 3506,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k3",
+      "dil_k5",
+      "sep_k3",
+      "sep_k9"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "7f35e6ea980855c0f904d755421644876f832715"
+  },
+  {
+    "candidate_id": "nas_seed42_003708",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 3708,
+    "sample_attempt": 3845,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "std_k5",
+      "sep_k7",
+      "sep_k7"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "2c7994c724581a2bb4a24fececf08fb66d15f5c1"
+  },
+  {
+    "candidate_id": "nas_seed42_003733",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 3733,
+    "sample_attempt": 3870,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k3",
+      "sep_k7",
+      "sep_k7",
+      "sep_k5"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "e15d2ed28b0a9424abe3c32a62db7816d9f21df8"
+  },
+  {
+    "candidate_id": "nas_seed42_003813",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 3813,
+    "sample_attempt": 3953,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "std_k5",
+      "std_k7",
+      "pw_bottleneck_k3"
+    ],
+    "layer_se_list": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "df0578d8d1fccd8b56990ae0491247adabdabab7"
+  },
+  {
+    "candidate_id": "nas_seed42_004018",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 4018,
+    "sample_attempt": 4166,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k7",
+      "std_k5",
+      "std_k3",
+      "skip"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "6381f4ed504634db8338e0b338010c96d14ab359"
+  },
+  {
+    "candidate_id": "nas_seed42_004215",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 4215,
+    "sample_attempt": 4366,
+    "encoder_strides": [
+      4,
+      4,
+      5,
+      4
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "pw_bottleneck_k3",
+      "sep_k9",
+      "dil_k3"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      4,
+      5,
+      4,
+      4
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      4,
+      5,
+      4,
+      4
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "14b2d65878ef697f3b9ef79abf8789dea6c4328e"
+  },
+  {
+    "candidate_id": "nas_seed42_004236",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 4236,
+    "sample_attempt": 4388,
+    "encoder_strides": [
+      4,
+      5,
+      4,
+      4
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "skip",
+      "dil_k3",
+      "sep_k5",
+      "sep_k5"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      4,
+      4,
+      5,
+      4
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      4,
+      4,
+      5,
+      4
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "6c8b0f6ee8c2c6014c07c0390ce17638076bcea9"
+  },
+  {
+    "candidate_id": "nas_seed42_004350",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 4350,
+    "sample_attempt": 4507,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k3",
+      "sep_k9",
+      "sep_k3",
+      "sep_k9"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "a4dfd9f29bb25331559a078c6561188fd2e3e44a"
+  },
+  {
+    "candidate_id": "nas_seed42_004404",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 4404,
+    "sample_attempt": 4561,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k3",
+      "dil_k9",
+      "sep_k3",
+      "sep_k7"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "0b010f8e3551b7f3d05049e9c1d39de486a35b58"
+  },
+  {
+    "candidate_id": "nas_seed42_004435",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 4435,
+    "sample_attempt": 4593,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k9",
+      "sep_k9",
+      "sep_k5",
+      "dil_k3"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "bbaad86a126a51432b3284e05704bcb0725f1f82"
+  },
+  {
+    "candidate_id": "nas_seed42_004730",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 4730,
+    "sample_attempt": 4897,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "skip",
+      "sep_k7",
+      "sep_k9"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      true,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "786fa00aff2d4b71443c6f0e491909aa53f110d6"
+  },
+  {
+    "candidate_id": "nas_seed42_004827",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 4827,
+    "sample_attempt": 4998,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "dil_k5",
+      "sep_k7",
+      "skip"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "f58de192306ec1fed233fd4323855553dc4d4ae1"
+  },
+  {
+    "candidate_id": "nas_seed42_004917",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 4917,
+    "sample_attempt": 5090,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k7",
+      "pw_bottleneck_k3",
+      "std_k5",
+      "std_k3"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "9303b0c1b35de4776dfd100241c62ff153c88a19"
+  },
+  {
+    "candidate_id": "nas_seed42_005314",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 5314,
+    "sample_attempt": 5500,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k7",
+      "sep_k5",
+      "std_k3",
+      "sep_k5"
+    ],
+    "layer_se_list": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "c8a41b4037638a53958c60aa20b8ff9682d1b2e1"
+  },
+  {
+    "candidate_id": "nas_seed42_005500",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 5500,
+    "sample_attempt": 5693,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "dil_k5",
+      "sep_k3",
+      "sep_k9"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "f638c7b2236cb6b34910edf5fc1fbd8b83cffb80"
+  },
+  {
+    "candidate_id": "nas_seed42_005582",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 5582,
+    "sample_attempt": 5775,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "sep_k7",
+      "std_k5",
+      "sep_k3"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "b5eccaa063a31743b4b30c0a392af2cb89d095a5"
+  },
+  {
+    "candidate_id": "nas_seed42_005687",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 5687,
+    "sample_attempt": 5882,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "skip",
+      "std_k7",
+      "dil_k3",
+      "sep_k7"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "9841c7c7cedca2e510cb1a9a094234b21878500e"
+  },
+  {
+    "candidate_id": "nas_seed42_005722",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 5722,
+    "sample_attempt": 5920,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "std_k5",
+      "skip",
+      "std_k5"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "fe0ce081163ae5b2e70c6621a60d25805633bc09"
+  },
+  {
+    "candidate_id": "nas_seed42_005738",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 5738,
+    "sample_attempt": 5939,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k7",
+      "sep_k5",
+      "dil_k5",
+      "sep_k7"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "6222074b49384752a177c07d9c5de95b2625ebe4"
+  },
+  {
+    "candidate_id": "nas_seed42_005912",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 5912,
+    "sample_attempt": 6115,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k7",
+      "skip",
+      "dil_k5",
+      "std_k3"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "f06ee095064ad18a07870eea1d4e5e915d9e4261"
+  },
+  {
+    "candidate_id": "nas_seed42_005944",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 5944,
+    "sample_attempt": 6148,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k7",
+      "sep_k9",
+      "dil_k3",
+      "sep_k7"
+    ],
+    "layer_se_list": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "b5acded3975aad9f0fb0c1dbcbfb1b5eb006997b"
+  },
+  {
+    "candidate_id": "nas_seed42_005951",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 5951,
+    "sample_attempt": 6156,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "dil_k5",
+      "std_k7",
+      "dil_k5"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "b7d44ae80d60a9ea1f733de41ccabda1f02bc4e7"
+  },
+  {
+    "candidate_id": "nas_seed42_006041",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6041,
+    "sample_attempt": 6250,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "pw_bottleneck_k3",
+      "std_k5",
+      "dil_k5"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "4819dd8d0d4db73a8befc6481419015b730a9adb"
+  },
+  {
+    "candidate_id": "nas_seed42_006081",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6081,
+    "sample_attempt": 6290,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "skip",
+      "sep_k9",
+      "pw_bottleneck_k3"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "5c37a4d4e973b6cbab37d0530e024d32216e2f21"
+  },
+  {
+    "candidate_id": "nas_seed42_006085",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6085,
+    "sample_attempt": 6294,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "dil_k3",
+      "pw_bottleneck_k3",
+      "dil_k3"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "b37b3d9faf6d0996ae1a15ece83bb58057612ace"
+  },
+  {
+    "candidate_id": "nas_seed42_006096",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6096,
+    "sample_attempt": 6306,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k3",
+      "sep_k7",
+      "sep_k5",
+      "std_k7"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "795396e6fa2ef72b339ac7fdb92b06d3d1bdb5b8"
+  },
+  {
+    "candidate_id": "nas_seed42_006101",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6101,
+    "sample_attempt": 6311,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k3",
+      "sep_k3",
+      "sep_k3",
+      "dil_k5"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "4ba27a93eed23ec9123caf7956b90e83e601a775"
+  },
+  {
+    "candidate_id": "nas_seed42_006144",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6144,
+    "sample_attempt": 6355,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "sep_k9",
+      "std_k7",
+      "std_k3"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "1809328a9a8cd592f6ebceb0ee5f9c8a92867a49"
+  },
+  {
+    "candidate_id": "nas_seed42_006303",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6303,
+    "sample_attempt": 6518,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "skip",
+      "dil_k5",
+      "sep_k9",
+      "std_k5"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "7fb9d0d877b103bb72937975319c30990182bba3"
+  },
+  {
+    "candidate_id": "nas_seed42_006530",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6530,
+    "sample_attempt": 6751,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "std_k3",
+      "sep_k3",
+      "dil_k5"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "deda6dafa0c677ed86f0b5ceaaff30ef66f5bdfd"
+  },
+  {
+    "candidate_id": "nas_seed42_006679",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6679,
+    "sample_attempt": 6903,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "sep_k7",
+      "sep_k5",
+      "sep_k7"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "f0418bc2120e26343dfe8f6acb5cf631ec52a5d9"
+  },
+  {
+    "candidate_id": "nas_seed42_006833",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6833,
+    "sample_attempt": 7063,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k7",
+      "pw_bottleneck_k3",
+      "std_k3",
+      "sep_k5"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "220ffd3f2f527aa57f67befaecf840acfd834304"
+  },
+  {
+    "candidate_id": "nas_seed42_006958",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 6958,
+    "sample_attempt": 7193,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k3",
+      "sep_k5",
+      "std_k5",
+      "std_k5"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "aa14a3f2e29e4481fe23863df9e0d43bd9132d6a"
+  },
+  {
+    "candidate_id": "nas_seed42_007347",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 7347,
+    "sample_attempt": 7605,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k3",
+      "dil_k3",
+      "sep_k9",
+      "sep_k9"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "f039b8e74b35b574a7df493888e07780fd067e9b"
+  },
+  {
+    "candidate_id": "nas_seed42_007401",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 7401,
+    "sample_attempt": 7660,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "dil_k5",
+      "dil_k3",
+      "pw_bottleneck_k3"
+    ],
+    "layer_se_list": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "24a7ab07f7a5f950dc05f99d56a7ca120cc4ec3a"
+  },
+  {
+    "candidate_id": "nas_seed42_007573",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 7573,
+    "sample_attempt": 7836,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k5",
+      "pw_bottleneck_k3",
+      "dil_k5",
+      "sep_k7"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "d807e4ce45dad9d83fef2460027705ecb7d96c8d"
+  },
+  {
+    "candidate_id": "nas_seed42_007792",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 7792,
+    "sample_attempt": 8064,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "std_k7",
+      "std_k5",
+      "dil_k3",
+      "sep_k9"
+    ],
+    "layer_se_list": [
+      true,
+      true,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "e516b1b16726bfa67d54ee1a510c7979443e7e59"
+  },
+  {
+    "candidate_id": "nas_seed42_007812",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 7812,
+    "sample_attempt": 8084,
+    "encoder_strides": [
+      4,
+      5,
+      4,
+      4
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "pw_bottleneck_k3",
+      "sep_k3",
+      "sep_k5"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "decoder_strides": [
+      4,
+      4,
+      5,
+      4
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      4,
+      4,
+      5,
+      4
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "976cb0f805456e7b754d7d41d991dbe17277d839"
+  },
+  {
+    "candidate_id": "nas_seed42_007851",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 7851,
+    "sample_attempt": 8127,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k3",
+      "dil_k3",
+      "sep_k9",
+      "dil_k3"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "d907f31460ed31e5925abe64750090124925022b"
+  },
+  {
+    "candidate_id": "nas_seed42_007861",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 7861,
+    "sample_attempt": 8139,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k5",
+      "sep_k7",
+      "std_k5",
+      "sep_k9"
+    ],
+    "layer_se_list": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "9f43e5e47010c5bd93708a254082d99748d8de6a"
+  },
+  {
+    "candidate_id": "nas_seed42_007901",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 7901,
+    "sample_attempt": 8180,
+    "encoder_strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 4,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k9",
+      "sep_k9",
+      "pw_bottleneck_k3",
+      "dil_k5"
+    ],
+    "layer_se_list": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "845ad6fd49b55c0a94d097f39dc16f87f789ebff"
+  },
+  {
+    "candidate_id": "nas_seed42_008080",
+    "search_mode": "random",
+    "seed": 42,
+    "sample_index": 8080,
+    "sample_attempt": 8372,
+    "encoder_strides": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "n_filters": 24,
+    "compress": 2,
+    "lstm": 1,
+    "activation": "Snake",
+    "layer_ops_list": [
+      "dil_k9",
+      "dil_k3",
+      "sep_k9",
+      "sep_k7"
+    ],
+    "layer_se_list": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "decoder_strides": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "decoder_condition": "geometry_matched_decoder",
+    "decoder_ops": "not_searched",
+    "seanet_ratios_arg": [
+      2,
+      4,
+      4,
+      10
+    ],
+    "dimension": 1024,
+    "sample_rate": 16000,
+    "encoder_downsample_rate": 320,
+    "latent_rate": 50,
+    "n_q": 3,
+    "codebook_size": 1024,
+    "candidate_signature": "d34e75d987f4e7936a85d3ea35e0fc06c478f4a7"
+  }
+]

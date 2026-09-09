@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0010
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+BROTHER MAC ARDLE BROTHER KEOGH
+
+Whisper(original):
+Brother McCartill, Brother Kiaff
+
+Whisper(decoded):
+whether lacArdle, Brother presume.

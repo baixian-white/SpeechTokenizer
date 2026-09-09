@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0012
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+HER EYES SEEMED TO REGARD HIM WITH MILD PITY HER HOLINESS A STRANGE LIGHT GLOWING FAINTLY UPON HER FRAIL FLESH DID NOT HUMILIATE THE SINNER WHO APPROACHED HER
+
+Whisper(original):
+Her eyes seemed to regard him with mild pity. Her holiness, a strange light glowing faintly upon her frail flesh, did not humiliate the sinner who approached her.
+
+Whisper(decoded):
+Her eyes seemed to regard him with mild pity. Her holiness, a strange light glowing faintly upon her frail flesh, did not humiliate the sooner who approached her.

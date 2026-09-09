@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0007
+# model=lca
+# L=1
+
+GT:
+WHO HATH NOT AT PRESENT HIS HEART HIS MOUTH AND HIS EYES FULL OF DISGUST
+
+Whisper(original):
+who had not at present his heart, his mouth and his eyes full of disgust.
+
+Whisper(decoded):
+He was at night that present he saw it. He's now to despise it as mistrust.

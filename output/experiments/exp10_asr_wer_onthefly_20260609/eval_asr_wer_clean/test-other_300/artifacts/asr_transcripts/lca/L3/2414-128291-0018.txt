@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0018
+# model=lca
+# L=3
+
+GT:
+THOU DOEST VIOLENCE TO THYSELF THOU PREACHER ON THE MOUNT WHEN THOU USEST SUCH SEVERE WORDS
+
+Whisper(original):
+Thou doest words to thyself, thou preacher on the mount, and thou uses such saviour words.
+
+Whisper(decoded):
+Now do it once to thyself, thou picture of the mouth, and thou use this to such serial voice.

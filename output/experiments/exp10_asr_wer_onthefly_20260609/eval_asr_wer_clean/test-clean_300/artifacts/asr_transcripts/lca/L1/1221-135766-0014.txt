@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0014
+# model=lca
+# L=1
+
+GT:
+PEARL SAW AND GAZED INTENTLY BUT NEVER SOUGHT TO MAKE ACQUAINTANCE
+
+Whisper(original):
+Pearl saw and gazed intently, but never sought to make acquaintance.
+
+Whisper(decoded):
+Furls saw and dazed intently but never softened acquaintance.

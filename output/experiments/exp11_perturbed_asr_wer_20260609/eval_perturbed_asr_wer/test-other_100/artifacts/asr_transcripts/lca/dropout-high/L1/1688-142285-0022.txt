@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0022
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+JUST AS SHE WAS LEAVING THE ROOM SHE HESITATED SHE WAS INCLINED TO MAKE AN ACKNOWLEDGMENT WHICH SHE THOUGHT WOULD PLEASE HER FATHER BUT WHICH TO BE FULL AND TRUE MUST INCLUDE A LITTLE ANNOYANCE
+
+Whisper(original):
+Just as she was leaving the room, she hesitated. She was inclined to make an acknowledgement which she thought would please her father. But which, to be full and true, must include a little annoyance.
+
+Whisper(decoded):
+Just as she was labeled in room, she hesitated. Choined for him to break in a mortgage rent, but she's born with plays of Arthur. But break should be full and sure, musty for the little annoyance.

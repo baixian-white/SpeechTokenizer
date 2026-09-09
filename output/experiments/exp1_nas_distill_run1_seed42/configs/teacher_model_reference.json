@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "teacher_config": "model_hub\\speechtokenizer_hubert_avg\\config.json",
+  "teacher_checkpoint": "model_hub\\speechtokenizer_hubert_avg\\SpeechTokenizer.pt",
+  "teacher_target": "pre_rvq",
+  "teacher_cache_mode": "disk",
+  "teacher_role": "frozen SpeechTokenizer encoder pre-RVQ latent anchor",
+  "teacher_encoder_frozen": true,
+  "teacher_quantizer_frozen": true,
+  "teacher_decoder_frozen": true
+}

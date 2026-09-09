@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0013
+# model=base
+# L=1
+
+GT:
+THE KINGDOM OF HEAVEN HOWEVER IS WITH THE KINE AND WHY IS IT NOT WITH THE RICH
+
+Whisper(original):
+The kingdom of heaven, however, is with the kind. And why is it not with the rich?
+
+Whisper(decoded):
+But much of aurentable feeling in these days is not enough

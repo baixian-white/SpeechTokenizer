@@ -1,0 +1,13 @@
+# sample_id=1998-15444-0003
+# model=lca
+# L=2
+# channel=substitution-high
+
+GT:
+IN MAKING A POST MORTEM EXAMINATION THE ALIMENTARY CANAL SHOULD BE REMOVED AND PRESERVED FOR FURTHER INVESTIGATION
+
+Whisper(original):
+In making a post-mortem examination, the elementary canal should be removed and preserved for further investigation.
+
+Whisper(decoded):
+The making of the first modern examination, the elementary collage should be removed and reserved for further investigation.

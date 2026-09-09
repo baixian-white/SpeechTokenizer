@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0064
+# model=base
+# L=1
+
+GT:
+BUT HOO'S COME AT LAST AND HOO'S WELCOME AS LONG AS HOO'LL KEEP FROM PREACHING ON WHAT HOO KNOWS NOUGHT ABOUT
+
+Whisper(original):
+But who's come at last and who's welcome as long as who'll keep from preaching on what who knows not about?
+
+Whisper(decoded):
+that his turn at rest and his outcome as long as he'll keep her speech and wrong and wrong and in there is a note about

@@ -1,0 +1,1 @@
+conda run -n speechtokenizer accelerate launch scripts/train_example.py --config output\experiments\redoB_base_handcrafted_seanet_20260620_seed42\configs\scit_speech_base_config.json

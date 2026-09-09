@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0011
+# model=lca
+# L=2
+
+GT:
+BUT TAKE THESE HUNDRED DINERS AND GIVE THEM TO THE SINGER AND BRING HIM TO ME GENTLY AND DO HIM NO HURT
+
+Whisper(original):
+But take these hundred dinners and give them to the singer and bring him to me gently, and do him no hurt.
+
+Whisper(decoded):
+But take these hundred demons, and give them to the senior, and bring him to me gently. And do him no work."

@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0003
+# model=base
+# L=1
+
+GT:
+ZAU AL MAKAN BOWED HIS HEAD AWHILE AND THEN SAID I ACCEPT THIS POSITION FOR INDEED THERE WAS NO REFUSING AND HE WAS CERTIFIED THAT THE CHAMBERLAIN HAD COUNSELLED HIM WELL AND WISELY AND SET HIM ON THE RIGHT WAY
+
+Whisper(original):
+Zawah account bowed his head awhile and then said, "'I accept the position.' For indeed there was no refusing. And he was certified that the chamberlain had cancelled him well and wisely and set him on the right way."
+
+Whisper(decoded):
+Zawa was playing biology side of the world and outside the position. But indeed, there was no reason. And he was certified by the chairmanly at council in world and wisely and sat him on the right way.

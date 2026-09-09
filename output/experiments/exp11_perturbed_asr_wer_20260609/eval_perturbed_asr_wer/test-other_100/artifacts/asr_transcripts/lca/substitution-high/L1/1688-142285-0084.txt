@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0084
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+WHY I WOULD APPLY TO SOME GOOD HOUSE MOTHER TO RECOMMEND ME ONE KNOWN TO HERSELF OR HER SERVANTS
+
+Whisper(original):
+Well, I would apply it to some good house mother to recommend me, one known to herself for her servants.
+
+Whisper(decoded):
+Well, I would apply to some good-house furniture, and then be wired into a self-fuller service.

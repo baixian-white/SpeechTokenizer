@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0033
+# model=base
+# L=1
+
+GT:
+SHE LAY AWAKE VERY LONG THIS NIGHT PLANNING HOW TO LESSEN THE EVIL INFLUENCE OF THEIR MILTON LIFE ON HER MOTHER
+
+Whisper(original):
+She lay awake very long this night, planning how to lessen the evil influence of their Milton life on her mother.
+
+Whisper(decoded):
+She now work for any bond destroyed. I know how to listen to the evil influence, but they know to rifle now model.

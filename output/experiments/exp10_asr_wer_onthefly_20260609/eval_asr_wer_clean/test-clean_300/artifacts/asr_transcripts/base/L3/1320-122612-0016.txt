@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0016
+# model=base
+# L=3
+
+GT:
+RUN BACK UNCAS AND BRING ME THE SIZE OF THE SINGER'S FOOT
+
+Whisper(original):
+Run back, Onkus, and bring me the size of the singer's foot. you
+
+Whisper(decoded):
+Run back, Lucas, and bring me the size of the singer's foot.

@@ -1,0 +1,33 @@
+﻿Polished academic system architecture diagram, flat vector, white background, 16:9, IEEE/ACM paper style, crisp lines, restrained colors, no 3D, no gradients, no people.
+
+Main idea: shared-codebook, index-only, three-user real-time speech communication. Three clients share identical SCIT-Speech-LCA weights, RVQ codebooks, and decoder offline. Online network carries only compact RVQ index packets through a central router. Router forwards only; it never decodes or accesses codebooks.
+
+Layout: Client A left, Client B right, Client C bottom center, symmetric panels. Central gray box in middle labeled exactly "Central Router".
+
+Each client contains two pipelines:
+Send pipeline: "Audio Input" -> "SCIT Encoder" -> "RVQ Index Pack" -> "Index Packet"
+Receive pipeline: "Packet Unpack" -> "Jitter Buffer" -> "SCIT Decoder" -> "Audio Output"
+Use blue for SCIT Encoder/Decoder, light blue for audio/buffer modules, green for RVQ Index Pack and Index Packet.
+
+Shared-codebook setting MUST be visually prominent: draw a large dashed block labeled "Shared offline deployment" with three items:
+"Pre-shared SCIT-Speech-LCA weights"
+"Pre-shared RVQ codebooks"
+"Pre-shared decoder"
+Also include label "same codebooks at all clients". Connect this block by dashed lines to Client A, Client B, Client C only, never to router. Add identical small codebook-grid glyphs inside every client near encoder/decoder.
+
+Index transmission MUST be visually obvious: use thick green online arrows from each "Index Packet" to Central Router, and from Central Router to other clients' "Packet Unpack". Along these arrows draw repeated small green token chips labeled "i1", "i2", "i3", "...". Add central callout:
+"Index-only network payload"
+"10-bit RVQ indices"
+"L = 1 / 2 / 3"
+"body payload"
+Do not draw audio waveform on network.
+
+Inside Central Router include exactly:
+"packet forwarding only"
+"no decoding"
+"no codebook access"
+
+Bottom note exactly:
+"XOR is demo-only packet obfuscation, not a security claim"
+
+Make it more visually polished than a basic flowchart: subtle section bands for "Offline shared artifacts" and "Online index forwarding", deep blue client outlines, green index flow, neutral gray router, readable text, no overlaps, no spelling changes, no unrelated symbols.

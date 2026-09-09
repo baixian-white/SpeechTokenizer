@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0004
+# model=base
+# L=3
+
+GT:
+PRIDE AFTER SATISFACTION UPLIFTED HIM LIKE LONG SLOW WAVES
+
+Whisper(original):
+Pride after satisfaction uplifted him like long, slow waves.
+
+Whisper(decoded):
+Bright after satisfaction uplifted him like long, slow waves.

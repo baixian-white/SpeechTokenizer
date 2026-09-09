@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0029
+# model=lca
+# L=2
+
+GT:
+THEN HE FOLDED IT AND PUT IT IN HIS POCKET
+
+Whisper(original):
+Then he folded it and put it in his pocket.
+
+Whisper(decoded):
+Then he furlitted and told him his pocket.

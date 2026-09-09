@@ -1,0 +1,13 @@
+# sample_id=1998-15444-0000
+# model=lca
+# L=2
+# channel=substitution-high
+
+GT:
+IF CALLED TO A CASE SUPPOSED OR SUSPECTED TO BE ONE OF POISONING THE MEDICAL MAN HAS TWO DUTIES TO PERFORM TO SAVE THE PATIENT'S LIFE AND TO PLACE HIMSELF IN A POSITION TO GIVE EVIDENCE IF CALLED ON TO DO SO
+
+Whisper(original):
+If college or case supposed or suspected to be one of poisoning, the medical man has two duties to perform. To save the patient's life and to place himself in a position to give evidence of college on to do so.
+
+Whisper(decoded):
+If Kai to a case, supposed as expected to be wonderful as a nope, the medical man is too duty-sto-leform to save the patient's knife and to plex himself in a position to give evidence of Kai to do so.

@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0024
+# model=lca
+# L=3
+
+GT:
+PAPA I DO THINK MISTER THORNTON A VERY REMARKABLE MAN BUT PERSONALLY I DON'T LIKE HIM AT ALL
+
+Whisper(original):
+Papa, I do think Mr Thornton a very remarkable man. But personally, I don't like him at all.
+
+Whisper(decoded):
+Pappar, I do think Mr. Thornton are very remarkable men, but personally, I don't like him at all.

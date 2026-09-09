@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0033
+# model=lca
+# L=2
+
+GT:
+HE REWARD THE WAKE THE LAST OF THE ENGLISH AND I WUNNERED WHAT IT STOOD FOR
+
+Whisper(original):
+He reward the wake, the loss of the English, and I want it what it's thought for.
+
+Whisper(decoded):
+He reward the rake, the lass of bloomers, and it weren't what it served for.

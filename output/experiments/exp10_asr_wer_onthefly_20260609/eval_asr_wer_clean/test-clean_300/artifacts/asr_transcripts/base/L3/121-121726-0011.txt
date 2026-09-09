@@ -1,0 +1,12 @@
+# sample_id=121-121726-0011
+# model=base
+# L=3
+
+GT:
+HUSBAND THE NEXT THING TO A WIFE
+
+Whisper(original):
+husband. the next thing to a wife.
+
+Whisper(decoded):
+husband, the next thing to a wife.

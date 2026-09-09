@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0014
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+SO THEY LEFT MILTON
+
+Whisper(original):
+So they left Milton.
+
+Whisper(decoded):
+Say the tinnest notes in...

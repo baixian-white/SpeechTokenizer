@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0050
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+I SHOULD HAVE THOUGHT OF IT AGAIN WHEN I WAS LESS BUSY MAY I GO WITH YOU NOW
+
+Whisper(original):
+I should have thought of it again when I was less busy. May I go with you now?
+
+Whisper(decoded):
+I should have thought of it again when I was less busy. We're not there with you, no.

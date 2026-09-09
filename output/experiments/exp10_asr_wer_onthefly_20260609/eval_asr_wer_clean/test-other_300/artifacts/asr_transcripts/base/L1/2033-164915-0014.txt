@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0014
+# model=base
+# L=1
+
+GT:
+SO FARE YE FORWARDS NO HARM SHALL BEFAL YOU TILL YOU JOIN HIS GRAND WAZIR DANDAN
+
+Whisper(original):
+So, fairy forwards, no harm shall befall you till you join his grand was year than done.
+
+Whisper(decoded):
+Sophia he forwards. Mofam shall be followed through, till he join his brand was here, then time.

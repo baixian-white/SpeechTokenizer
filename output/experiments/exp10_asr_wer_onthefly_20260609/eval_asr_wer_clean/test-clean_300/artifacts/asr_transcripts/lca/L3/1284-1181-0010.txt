@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0010
+# model=lca
+# L=3
+
+GT:
+THEIR CONTENTS HAD ALL BOILED AWAY LEAVING IN THE BOTTOM OF EACH KETTLE A FEW GRAINS OF FINE WHITE POWDER
+
+Whisper(original):
+Their contents had all boiled away, leaving in the bottom of each kettle a few grains of fine white powder.
+
+Whisper(decoded):
+Their contents had all boiled away, leaving in the bottom of each tattle a few grains of fine white powder.

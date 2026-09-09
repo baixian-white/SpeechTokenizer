@@ -96,7 +96,41 @@ python group_client.py --user_id C --room_id demo --router_ip 192.168.31.39 --ro
 
 机器 A 防火墙需要允许 TCP `12350` 端口。
 
-## 5. 当前边界
+## 5. 可选：说话人身份识别
+
+客户端可以在本地 decoded PCM 上做说话人识别，用来观察重建语音里是否还能区分 A/B/C。Router 仍然只转发 `codes_v1` 索引包，不保存音频，也不做识别。
+
+先准备注册音频目录，目录名建议直接使用 demo 的 `user_id`：
+
+```text
+speaker_profiles/
+  A/a_001.wav
+  A/a_002.wav
+  B/b_001.wav
+  B/b_002.wav
+  C/c_001.wav
+  C/c_002.wav
+```
+
+然后在需要监控的客户端上增加参数：
+
+```powershell
+python group_client.py --user_id C --room_id demo --router_ip 127.0.0.1 --router_port 12350 --no_mic --no_play --device cpu --rvq_layers 3 --monitor --speaker_id_enable --speaker_profile_dir .\speaker_profiles --speaker_window_sec 3 --speaker_hop_sec 1 --speaker_threshold 0.65
+```
+
+如果要使用更强的 ECAPA-TDNN 后端，可以增加：
+
+```powershell
+python group_client.py --user_id C --room_id demo --router_ip 127.0.0.1 --router_port 12350 --no_mic --no_play --device cuda --rvq_layers 3 --monitor --speaker_id_enable --speaker_profile_dir .\speaker_profiles --speaker_backend ecapa --speaker_device cpu --ecapa_savedir ..\..\..\output\models\speechbrain_spkrec_ecapa_voxceleb --speaker_window_sec 3 --speaker_hop_sec 1 --speaker_threshold 0.25
+```
+
+Windows 三进程 demo 中建议先使用 `--speaker_device cpu`，避免 ECAPA 在多 client CUDA 并发初始化时触发 cuFFT/ptxas 错误；确认本机 CUDA 稳定后也可以显式改成 `--speaker_device cuda`。
+
+监控日志会在每个 `from_A/from_B` 后追加 `spk=<预测说话人>`、`score`、`margin`、`verified` 和 `spk_acc`。如果同时指定 `--summary_csv`，CSV 会增加 `speaker_id_enabled`、`speaker_eval_count`、`speaker_correct_count`、`speaker_verified_count`、`speaker_accuracy_mean` 字段。
+
+当前默认后端仍是轻量 MFCC 统计 + cosine profile，优点是无需额外安装 speaker embedding 包；`--speaker_backend ecapa` 会复用 SpeechBrain ECAPA-TDNN，更适合展示说话人识别效果，但启动和推理会更慢。论文级结论建议以 `scripts/evaluate_speaker_identity.py` 和 `scripts/evaluate_speaker_probe.py` 的离线实验为准。
+
+## 6. 当前边界
 
 第一版仍使用 TCP，适合局域网科研原型。弱网实时性后续建议升级 UDP/RTP 风格。
 

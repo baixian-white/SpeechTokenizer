@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0019
+# model=base
+# L=2
+
+GT:
+THEY ALSO ABSTAIN FROM ALL HEAVY THOUGHTS WHICH INFLATE THE HEART
+
+Whisper(original):
+They also abstain from all heavy thoughts which inflate the heart.
+
+Whisper(decoded):
+They also abstain from all the favorite parts which invade the heart.

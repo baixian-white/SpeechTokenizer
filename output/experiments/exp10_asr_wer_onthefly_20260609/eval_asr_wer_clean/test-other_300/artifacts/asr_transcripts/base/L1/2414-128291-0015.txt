@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0015
+# model=base
+# L=1
+
+GT:
+ANSWERED THE OTHER
+
+Whisper(original):
+and so the other
+
+Whisper(decoded):
+It served up it, but...

@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0094
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+I DON'T KNOW POSITIVELY THAT IT IS HERS EITHER BUT FROM LITTLE THINGS I HAVE GATHERED FROM HIM I FANCY SO
+
+Whisper(original):
+I don't know positively that it is hers either, but from little things I've gathered from him, I fancy so.
+
+Whisper(decoded):
+I don't know if he's positive or not, but a friend of mine was dead there.

@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0045
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+BESSY WAS SILENT IN HER TURN FOR A MINUTE OR TWO THEN SHE REPLIED
+
+Whisper(original):
+Bessie was silent in her turn for a minute or two. Then she replied.
+
+Whisper(decoded):
+Brazil's solid, you now check for a new hotel. Thanks for your client.

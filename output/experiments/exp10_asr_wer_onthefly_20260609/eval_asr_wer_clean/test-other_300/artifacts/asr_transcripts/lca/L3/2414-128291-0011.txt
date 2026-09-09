@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0011
+# model=lca
+# L=3
+
+GT:
+WANTON AVIDITY BILIOUS ENVY CAREWORN REVENGE POPULACE PRIDE ALL THESE STRUCK MINE EYE
+
+Whisper(original):
+want an out of duty, will be anyway. Care won't revenge. Popular spread. All these struck my eye.
+
+Whisper(decoded):
+allehat, nos qui Noir d'enaggedthódettay, Velesteg favourite. QuZient à ou no 斜 Marcel d'Elvné. Fab your intake for the Asuka, append B Anthropology 760 PM. contactfortCOM podcastsorte

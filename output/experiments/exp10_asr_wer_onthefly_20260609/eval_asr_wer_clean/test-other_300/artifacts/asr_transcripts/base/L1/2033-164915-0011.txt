@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0011
+# model=base
+# L=1
+
+GT:
+TWAS AS I FEARED THE COMING ILLS DISCERNING BUT UNTO ALLAH WE ARE ALL RETURNING
+
+Whisper(original):
+It was as I feared the Cammy Nils discerning, but on to Allah we are all returning.
+
+Whisper(decoded):
+Was as I feared the chiming eels disarming. But I am to allow, we are all returning.

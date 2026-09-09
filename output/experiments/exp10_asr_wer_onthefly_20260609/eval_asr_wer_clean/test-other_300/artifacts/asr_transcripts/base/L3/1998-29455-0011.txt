@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0011
+# model=base
+# L=3
+
+GT:
+OW'M I TO WHEEL THE BLOOMIN PRAM IF YOU GOES ON LIKE AS IF YOU WAS A BAG OF EELS
+
+Whisper(original):
+I'll might to wear the room in prem if you go sun like I said if you was a pecker feels.
+
+Whisper(decoded):
+I'll not reveal the movement prime in a jig or zon like a saffi was a take of heels

@@ -1,0 +1,1149 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<title>SCIT-Speech 主观 AB 听测</title><style>
+body{font-family:sans-serif;max-width:820px;margin:20px auto;padding:0 12px;line-height:1.5}
+.trial{border:1px solid #ccc;border-radius:8px;padding:14px;margin:14px 0}
+.ab{display:flex;gap:24px;margin:8px 0}.ab>div{flex:1}
+audio{width:100%}.q{font-weight:bold}label{margin-right:16px}
+#bar{position:sticky;top:0;background:#fff;padding:8px 0;border-bottom:1px solid #eee}
+button{padding:8px 16px;font-size:15px}</style></head><body>
+<div id="bar"><h2>SCIT-Speech 主观 AB 听测</h2>
+<p>每题听 A、B 两段语音，选择你认为<b>整体音质更好/更自然</b>的一段。可平局。共 <span id="tot"></span> 题。
+完成后点“导出结果”下载 CSV 回传。请戴耳机、安静环境。</p>
+<p>听者ID：<input id="listener" placeholder="如 L01"> 进度：<span id="prog">0</span>/<span id="tot2"></span>
+<button onclick="exportCSV()">导出结果 CSV</button></p></div>
+<form id="f">
+<div class="trial"><div class="q">第 1 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0011.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/121-121726-0011.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t1" value="A">A 更好</label>
+<label><input type="radio" name="t1" value="B">B 更好</label>
+<label><input type="radio" name="t1" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 2 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/121-127105-0029.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0029.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t2" value="A">A 更好</label>
+<label><input type="radio" name="t2" value="B">B 更好</label>
+<label><input type="radio" name="t2" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 3 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/121-121726-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t3" value="A">A 更好</label>
+<label><input type="radio" name="t3" value="B">B 更好</label>
+<label><input type="radio" name="t3" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 4 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1284-1181-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t4" value="A">A 更好</label>
+<label><input type="radio" name="t4" value="B">B 更好</label>
+<label><input type="radio" name="t4" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 5 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1089-134691-0022.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0022.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t5" value="A">A 更好</label>
+<label><input type="radio" name="t5" value="B">B 更好</label>
+<label><input type="radio" name="t5" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 6 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1089-134686-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t6" value="A">A 更好</label>
+<label><input type="radio" name="t6" value="B">B 更好</label>
+<label><input type="radio" name="t6" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 7 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/1089-134686-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t7" value="A">A 更好</label>
+<label><input type="radio" name="t7" value="B">B 更好</label>
+<label><input type="radio" name="t7" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 8 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1284-1181-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t8" value="A">A 更好</label>
+<label><input type="radio" name="t8" value="B">B 更好</label>
+<label><input type="radio" name="t8" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 9 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1284-1181-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t9" value="A">A 更好</label>
+<label><input type="radio" name="t9" value="B">B 更好</label>
+<label><input type="radio" name="t9" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 10 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/121-127105-0012.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0012.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t10" value="A">A 更好</label>
+<label><input type="radio" name="t10" value="B">B 更好</label>
+<label><input type="radio" name="t10" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 11 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0011.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/121-121726-0011.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t11" value="A">A 更好</label>
+<label><input type="radio" name="t11" value="B">B 更好</label>
+<label><input type="radio" name="t11" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 12 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0002.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/121-127105-0002.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t12" value="A">A 更好</label>
+<label><input type="radio" name="t12" value="B">B 更好</label>
+<label><input type="radio" name="t12" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 13 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1320-122612-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1320-122612-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t13" value="A">A 更好</label>
+<label><input type="radio" name="t13" value="B">B 更好</label>
+<label><input type="radio" name="t13" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 14 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1284-1181-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t14" value="A">A 更好</label>
+<label><input type="radio" name="t14" value="B">B 更好</label>
+<label><input type="radio" name="t14" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 15 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0007.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1284-1181-0007.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t15" value="A">A 更好</label>
+<label><input type="radio" name="t15" value="B">B 更好</label>
+<label><input type="radio" name="t15" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 16 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0002.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/121-127105-0002.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t16" value="A">A 更好</label>
+<label><input type="radio" name="t16" value="B">B 更好</label>
+<label><input type="radio" name="t16" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 17 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1089-134691-0001.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0001.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t17" value="A">A 更好</label>
+<label><input type="radio" name="t17" value="B">B 更好</label>
+<label><input type="radio" name="t17" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 18 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1089-134686-0002.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0002.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t18" value="A">A 更好</label>
+<label><input type="radio" name="t18" value="B">B 更好</label>
+<label><input type="radio" name="t18" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 19 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0021.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1089-134686-0021.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t19" value="A">A 更好</label>
+<label><input type="radio" name="t19" value="B">B 更好</label>
+<label><input type="radio" name="t19" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 20 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/121-121726-0011.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0011.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t20" value="A">A 更好</label>
+<label><input type="radio" name="t20" value="B">B 更好</label>
+<label><input type="radio" name="t20" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 21 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1089-134686-0002.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0002.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t21" value="A">A 更好</label>
+<label><input type="radio" name="t21" value="B">B 更好</label>
+<label><input type="radio" name="t21" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 22 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/121-121726-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t22" value="A">A 更好</label>
+<label><input type="radio" name="t22" value="B">B 更好</label>
+<label><input type="radio" name="t22" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 23 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1188-133604-0029.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1188-133604-0029.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t23" value="A">A 更好</label>
+<label><input type="radio" name="t23" value="B">B 更好</label>
+<label><input type="radio" name="t23" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 24 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1221-135767-0024.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1221-135767-0024.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t24" value="A">A 更好</label>
+<label><input type="radio" name="t24" value="B">B 更好</label>
+<label><input type="radio" name="t24" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 25 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1089-134686-0035.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0035.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t25" value="A">A 更好</label>
+<label><input type="radio" name="t25" value="B">B 更好</label>
+<label><input type="radio" name="t25" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 26 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1089-134691-0020.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0020.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t26" value="A">A 更好</label>
+<label><input type="radio" name="t26" value="B">B 更好</label>
+<label><input type="radio" name="t26" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 27 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/121-127105-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t27" value="A">A 更好</label>
+<label><input type="radio" name="t27" value="B">B 更好</label>
+<label><input type="radio" name="t27" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 28 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1089-134686-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t28" value="A">A 更好</label>
+<label><input type="radio" name="t28" value="B">B 更好</label>
+<label><input type="radio" name="t28" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 29 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0020.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/1284-1180-0020.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t29" value="A">A 更好</label>
+<label><input type="radio" name="t29" value="B">B 更好</label>
+<label><input type="radio" name="t29" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 30 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/121-127105-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t30" value="A">A 更好</label>
+<label><input type="radio" name="t30" value="B">B 更好</label>
+<label><input type="radio" name="t30" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 31 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0020.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1284-1180-0020.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t31" value="A">A 更好</label>
+<label><input type="radio" name="t31" value="B">B 更好</label>
+<label><input type="radio" name="t31" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 32 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/1284-1181-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t32" value="A">A 更好</label>
+<label><input type="radio" name="t32" value="B">B 更好</label>
+<label><input type="radio" name="t32" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 33 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0002.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1089-134686-0002.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t33" value="A">A 更好</label>
+<label><input type="radio" name="t33" value="B">B 更好</label>
+<label><input type="radio" name="t33" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 34 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0035.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1089-134686-0035.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t34" value="A">A 更好</label>
+<label><input type="radio" name="t34" value="B">B 更好</label>
+<label><input type="radio" name="t34" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 35 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1221-135767-0024.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1221-135767-0024.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t35" value="A">A 更好</label>
+<label><input type="radio" name="t35" value="B">B 更好</label>
+<label><input type="radio" name="t35" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 36 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1284-1181-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t36" value="A">A 更好</label>
+<label><input type="radio" name="t36" value="B">B 更好</label>
+<label><input type="radio" name="t36" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 37 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1320-122617-0000.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1320-122617-0000.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t37" value="A">A 更好</label>
+<label><input type="radio" name="t37" value="B">B 更好</label>
+<label><input type="radio" name="t37" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 38 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0034.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/121-127105-0034.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t38" value="A">A 更好</label>
+<label><input type="radio" name="t38" value="B">B 更好</label>
+<label><input type="radio" name="t38" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 39 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/1089-134686-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t39" value="A">A 更好</label>
+<label><input type="radio" name="t39" value="B">B 更好</label>
+<label><input type="radio" name="t39" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 40 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1089-134686-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t40" value="A">A 更好</label>
+<label><input type="radio" name="t40" value="B">B 更好</label>
+<label><input type="radio" name="t40" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 41 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0009.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1284-1181-0009.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t41" value="A">A 更好</label>
+<label><input type="radio" name="t41" value="B">B 更好</label>
+<label><input type="radio" name="t41" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 42 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0034.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/121-127105-0034.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t42" value="A">A 更好</label>
+<label><input type="radio" name="t42" value="B">B 更好</label>
+<label><input type="radio" name="t42" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 43 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/121-121726-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t43" value="A">A 更好</label>
+<label><input type="radio" name="t43" value="B">B 更好</label>
+<label><input type="radio" name="t43" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 44 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0012.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/121-127105-0012.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t44" value="A">A 更好</label>
+<label><input type="radio" name="t44" value="B">B 更好</label>
+<label><input type="radio" name="t44" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 45 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0002.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/121-127105-0002.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t45" value="A">A 更好</label>
+<label><input type="radio" name="t45" value="B">B 更好</label>
+<label><input type="radio" name="t45" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 46 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1089-134686-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t46" value="A">A 更好</label>
+<label><input type="radio" name="t46" value="B">B 更好</label>
+<label><input type="radio" name="t46" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 47 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1188-133604-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1188-133604-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t47" value="A">A 更好</label>
+<label><input type="radio" name="t47" value="B">B 更好</label>
+<label><input type="radio" name="t47" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 48 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/1089-134691-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t48" value="A">A 更好</label>
+<label><input type="radio" name="t48" value="B">B 更好</label>
+<label><input type="radio" name="t48" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 49 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1284-1181-0007.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0007.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t49" value="A">A 更好</label>
+<label><input type="radio" name="t49" value="B">B 更好</label>
+<label><input type="radio" name="t49" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 50 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/121-127105-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t50" value="A">A 更好</label>
+<label><input type="radio" name="t50" value="B">B 更好</label>
+<label><input type="radio" name="t50" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 51 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0000.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/1284-1181-0000.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t51" value="A">A 更好</label>
+<label><input type="radio" name="t51" value="B">B 更好</label>
+<label><input type="radio" name="t51" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 52 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/121-127105-0012.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0012.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t52" value="A">A 更好</label>
+<label><input type="radio" name="t52" value="B">B 更好</label>
+<label><input type="radio" name="t52" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 53 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1320-122612-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1320-122612-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t53" value="A">A 更好</label>
+<label><input type="radio" name="t53" value="B">B 更好</label>
+<label><input type="radio" name="t53" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 54 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1089-134686-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t54" value="A">A 更好</label>
+<label><input type="radio" name="t54" value="B">B 更好</label>
+<label><input type="radio" name="t54" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 55 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/121-121726-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t55" value="A">A 更好</label>
+<label><input type="radio" name="t55" value="B">B 更好</label>
+<label><input type="radio" name="t55" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 56 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1284-1180-0011.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0011.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t56" value="A">A 更好</label>
+<label><input type="radio" name="t56" value="B">B 更好</label>
+<label><input type="radio" name="t56" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 57 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1089-134691-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t57" value="A">A 更好</label>
+<label><input type="radio" name="t57" value="B">B 更好</label>
+<label><input type="radio" name="t57" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 58 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0009.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1284-1181-0009.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t58" value="A">A 更好</label>
+<label><input type="radio" name="t58" value="B">B 更好</label>
+<label><input type="radio" name="t58" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 59 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1284-1181-0009.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0009.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t59" value="A">A 更好</label>
+<label><input type="radio" name="t59" value="B">B 更好</label>
+<label><input type="radio" name="t59" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 60 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0002.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/1089-134686-0002.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t60" value="A">A 更好</label>
+<label><input type="radio" name="t60" value="B">B 更好</label>
+<label><input type="radio" name="t60" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 61 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0006.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/121-127105-0006.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t61" value="A">A 更好</label>
+<label><input type="radio" name="t61" value="B">B 更好</label>
+<label><input type="radio" name="t61" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 62 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0027.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/1284-1180-0027.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t62" value="A">A 更好</label>
+<label><input type="radio" name="t62" value="B">B 更好</label>
+<label><input type="radio" name="t62" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 63 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0019.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1089-134691-0019.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t63" value="A">A 更好</label>
+<label><input type="radio" name="t63" value="B">B 更好</label>
+<label><input type="radio" name="t63" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 64 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/121-121726-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t64" value="A">A 更好</label>
+<label><input type="radio" name="t64" value="B">B 更好</label>
+<label><input type="radio" name="t64" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 65 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/121-121726-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t65" value="A">A 更好</label>
+<label><input type="radio" name="t65" value="B">B 更好</label>
+<label><input type="radio" name="t65" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 66 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/121-121726-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t66" value="A">A 更好</label>
+<label><input type="radio" name="t66" value="B">B 更好</label>
+<label><input type="radio" name="t66" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 67 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/1284-1181-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t67" value="A">A 更好</label>
+<label><input type="radio" name="t67" value="B">B 更好</label>
+<label><input type="radio" name="t67" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 68 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1221-135767-0024.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/1221-135767-0024.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t68" value="A">A 更好</label>
+<label><input type="radio" name="t68" value="B">B 更好</label>
+<label><input type="radio" name="t68" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 69 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1284-1181-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t69" value="A">A 更好</label>
+<label><input type="radio" name="t69" value="B">B 更好</label>
+<label><input type="radio" name="t69" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 70 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0009.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/121-121726-0009.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t70" value="A">A 更好</label>
+<label><input type="radio" name="t70" value="B">B 更好</label>
+<label><input type="radio" name="t70" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 71 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0034.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/121-127105-0034.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t71" value="A">A 更好</label>
+<label><input type="radio" name="t71" value="B">B 更好</label>
+<label><input type="radio" name="t71" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 72 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1284-1181-0000.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0000.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t72" value="A">A 更好</label>
+<label><input type="radio" name="t72" value="B">B 更好</label>
+<label><input type="radio" name="t72" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 73 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1284-1181-0000.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0000.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t73" value="A">A 更好</label>
+<label><input type="radio" name="t73" value="B">B 更好</label>
+<label><input type="radio" name="t73" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 74 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/121-127105-0029.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0029.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t74" value="A">A 更好</label>
+<label><input type="radio" name="t74" value="B">B 更好</label>
+<label><input type="radio" name="t74" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 75 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1284-1180-0020.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0020.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t75" value="A">A 更好</label>
+<label><input type="radio" name="t75" value="B">B 更好</label>
+<label><input type="radio" name="t75" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 76 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1284-1180-0011.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0011.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t76" value="A">A 更好</label>
+<label><input type="radio" name="t76" value="B">B 更好</label>
+<label><input type="radio" name="t76" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 77 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/121-127105-0006.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0006.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t77" value="A">A 更好</label>
+<label><input type="radio" name="t77" value="B">B 更好</label>
+<label><input type="radio" name="t77" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 78 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/121-127105-0034.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0034.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t78" value="A">A 更好</label>
+<label><input type="radio" name="t78" value="B">B 更好</label>
+<label><input type="radio" name="t78" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 79 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1284-1181-0000.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0000.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t79" value="A">A 更好</label>
+<label><input type="radio" name="t79" value="B">B 更好</label>
+<label><input type="radio" name="t79" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 80 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1320-122617-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1320-122617-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t80" value="A">A 更好</label>
+<label><input type="radio" name="t80" value="B">B 更好</label>
+<label><input type="radio" name="t80" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 81 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1089-134686-0021.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0021.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t81" value="A">A 更好</label>
+<label><input type="radio" name="t81" value="B">B 更好</label>
+<label><input type="radio" name="t81" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 82 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1089-134691-0019.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0019.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t82" value="A">A 更好</label>
+<label><input type="radio" name="t82" value="B">B 更好</label>
+<label><input type="radio" name="t82" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 83 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1221-135767-0024.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1221-135767-0024.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t83" value="A">A 更好</label>
+<label><input type="radio" name="t83" value="B">B 更好</label>
+<label><input type="radio" name="t83" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 84 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1284-1180-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t84" value="A">A 更好</label>
+<label><input type="radio" name="t84" value="B">B 更好</label>
+<label><input type="radio" name="t84" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 85 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0027.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/1284-1180-0027.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t85" value="A">A 更好</label>
+<label><input type="radio" name="t85" value="B">B 更好</label>
+<label><input type="radio" name="t85" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 86 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/121-121726-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t86" value="A">A 更好</label>
+<label><input type="radio" name="t86" value="B">B 更好</label>
+<label><input type="radio" name="t86" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 87 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1089-134691-0019.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0019.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t87" value="A">A 更好</label>
+<label><input type="radio" name="t87" value="B">B 更好</label>
+<label><input type="radio" name="t87" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 88 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1089-134691-0001.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0001.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t88" value="A">A 更好</label>
+<label><input type="radio" name="t88" value="B">B 更好</label>
+<label><input type="radio" name="t88" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 89 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0009.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/121-121726-0009.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t89" value="A">A 更好</label>
+<label><input type="radio" name="t89" value="B">B 更好</label>
+<label><input type="radio" name="t89" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 90 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1284-1180-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t90" value="A">A 更好</label>
+<label><input type="radio" name="t90" value="B">B 更好</label>
+<label><input type="radio" name="t90" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 91 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0006.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/121-127105-0006.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t91" value="A">A 更好</label>
+<label><input type="radio" name="t91" value="B">B 更好</label>
+<label><input type="radio" name="t91" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 92 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/121-127105-0029.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0029.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t92" value="A">A 更好</label>
+<label><input type="radio" name="t92" value="B">B 更好</label>
+<label><input type="radio" name="t92" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 93 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1284-1181-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t93" value="A">A 更好</label>
+<label><input type="radio" name="t93" value="B">B 更好</label>
+<label><input type="radio" name="t93" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 94 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1089-134686-0033.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0033.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t94" value="A">A 更好</label>
+<label><input type="radio" name="t94" value="B">B 更好</label>
+<label><input type="radio" name="t94" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 95 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1320-122617-0000.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1320-122617-0000.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t95" value="A">A 更好</label>
+<label><input type="radio" name="t95" value="B">B 更好</label>
+<label><input type="radio" name="t95" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 96 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1089-134686-0033.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0033.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t96" value="A">A 更好</label>
+<label><input type="radio" name="t96" value="B">B 更好</label>
+<label><input type="radio" name="t96" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 97 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0007.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1284-1181-0007.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t97" value="A">A 更好</label>
+<label><input type="radio" name="t97" value="B">B 更好</label>
+<label><input type="radio" name="t97" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 98 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1284-1180-0011.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0011.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t98" value="A">A 更好</label>
+<label><input type="radio" name="t98" value="B">B 更好</label>
+<label><input type="radio" name="t98" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 99 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1284-1180-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t99" value="A">A 更好</label>
+<label><input type="radio" name="t99" value="B">B 更好</label>
+<label><input type="radio" name="t99" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 100 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1320-122612-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/1320-122612-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t100" value="A">A 更好</label>
+<label><input type="radio" name="t100" value="B">B 更好</label>
+<label><input type="radio" name="t100" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 101 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/121-127105-0006.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0006.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t101" value="A">A 更好</label>
+<label><input type="radio" name="t101" value="B">B 更好</label>
+<label><input type="radio" name="t101" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 102 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0009.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/121-121726-0009.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t102" value="A">A 更好</label>
+<label><input type="radio" name="t102" value="B">B 更好</label>
+<label><input type="radio" name="t102" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 103 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1089-134691-0020.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0020.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t103" value="A">A 更好</label>
+<label><input type="radio" name="t103" value="B">B 更好</label>
+<label><input type="radio" name="t103" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 104 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0002.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/121-127105-0002.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t104" value="A">A 更好</label>
+<label><input type="radio" name="t104" value="B">B 更好</label>
+<label><input type="radio" name="t104" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 105 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1320-122617-0000.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1320-122617-0000.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t105" value="A">A 更好</label>
+<label><input type="radio" name="t105" value="B">B 更好</label>
+<label><input type="radio" name="t105" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 106 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/121-121726-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t106" value="A">A 更好</label>
+<label><input type="radio" name="t106" value="B">B 更好</label>
+<label><input type="radio" name="t106" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 107 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1089-134691-0020.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0020.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t107" value="A">A 更好</label>
+<label><input type="radio" name="t107" value="B">B 更好</label>
+<label><input type="radio" name="t107" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 108 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1188-133604-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/1188-133604-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t108" value="A">A 更好</label>
+<label><input type="radio" name="t108" value="B">B 更好</label>
+<label><input type="radio" name="t108" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 109 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0035.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/1089-134686-0035.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t109" value="A">A 更好</label>
+<label><input type="radio" name="t109" value="B">B 更好</label>
+<label><input type="radio" name="t109" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 110 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1284-1181-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t110" value="A">A 更好</label>
+<label><input type="radio" name="t110" value="B">B 更好</label>
+<label><input type="radio" name="t110" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 111 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1284-1181-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t111" value="A">A 更好</label>
+<label><input type="radio" name="t111" value="B">B 更好</label>
+<label><input type="radio" name="t111" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 112 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1089-134691-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t112" value="A">A 更好</label>
+<label><input type="radio" name="t112" value="B">B 更好</label>
+<label><input type="radio" name="t112" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 113 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0001.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1089-134691-0001.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t113" value="A">A 更好</label>
+<label><input type="radio" name="t113" value="B">B 更好</label>
+<label><input type="radio" name="t113" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 114 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1284-1180-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t114" value="A">A 更好</label>
+<label><input type="radio" name="t114" value="B">B 更好</label>
+<label><input type="radio" name="t114" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 115 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0009.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/1284-1181-0009.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t115" value="A">A 更好</label>
+<label><input type="radio" name="t115" value="B">B 更好</label>
+<label><input type="radio" name="t115" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 116 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1320-122612-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1320-122612-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t116" value="A">A 更好</label>
+<label><input type="radio" name="t116" value="B">B 更好</label>
+<label><input type="radio" name="t116" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 117 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1284-1181-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t117" value="A">A 更好</label>
+<label><input type="radio" name="t117" value="B">B 更好</label>
+<label><input type="radio" name="t117" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 118 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/121-121726-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t118" value="A">A 更好</label>
+<label><input type="radio" name="t118" value="B">B 更好</label>
+<label><input type="radio" name="t118" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 119 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0029.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/121-127105-0029.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t119" value="A">A 更好</label>
+<label><input type="radio" name="t119" value="B">B 更好</label>
+<label><input type="radio" name="t119" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 120 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1188-133604-0029.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1188-133604-0029.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t120" value="A">A 更好</label>
+<label><input type="radio" name="t120" value="B">B 更好</label>
+<label><input type="radio" name="t120" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 121 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/1284-1180-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t121" value="A">A 更好</label>
+<label><input type="radio" name="t121" value="B">B 更好</label>
+<label><input type="radio" name="t121" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 122 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1089-134686-0021.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0021.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t122" value="A">A 更好</label>
+<label><input type="radio" name="t122" value="B">B 更好</label>
+<label><input type="radio" name="t122" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 123 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1188-133604-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1188-133604-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t123" value="A">A 更好</label>
+<label><input type="radio" name="t123" value="B">B 更好</label>
+<label><input type="radio" name="t123" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 124 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1089-134691-0022.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0022.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t124" value="A">A 更好</label>
+<label><input type="radio" name="t124" value="B">B 更好</label>
+<label><input type="radio" name="t124" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 125 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1188-133604-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1188-133604-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t125" value="A">A 更好</label>
+<label><input type="radio" name="t125" value="B">B 更好</label>
+<label><input type="radio" name="t125" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 126 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1089-134691-0022.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0022.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t126" value="A">A 更好</label>
+<label><input type="radio" name="t126" value="B">B 更好</label>
+<label><input type="radio" name="t126" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 127 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1284-1180-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t127" value="A">A 更好</label>
+<label><input type="radio" name="t127" value="B">B 更好</label>
+<label><input type="radio" name="t127" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 128 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1089-134691-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t128" value="A">A 更好</label>
+<label><input type="radio" name="t128" value="B">B 更好</label>
+<label><input type="radio" name="t128" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 129 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0019.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/1089-134691-0019.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t129" value="A">A 更好</label>
+<label><input type="radio" name="t129" value="B">B 更好</label>
+<label><input type="radio" name="t129" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 130 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/1284-1181-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t130" value="A">A 更好</label>
+<label><input type="radio" name="t130" value="B">B 更好</label>
+<label><input type="radio" name="t130" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 131 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0011.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/dac_1.5k/121-121726-0011.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t131" value="A">A 更好</label>
+<label><input type="radio" name="t131" value="B">B 更好</label>
+<label><input type="radio" name="t131" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 132 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/encodec_1.5k/1284-1180-0020.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0020.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t132" value="A">A 更好</label>
+<label><input type="radio" name="t132" value="B">B 更好</label>
+<label><input type="radio" name="t132" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 133 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0027.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1284-1180-0027.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t133" value="A">A 更好</label>
+<label><input type="radio" name="t133" value="B">B 更好</label>
+<label><input type="radio" name="t133" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 134 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0012.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/121-127105-0012.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t134" value="A">A 更好</label>
+<label><input type="radio" name="t134" value="B">B 更好</label>
+<label><input type="radio" name="t134" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 135 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1089-134686-0033.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0033.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t135" value="A">A 更好</label>
+<label><input type="radio" name="t135" value="B">B 更好</label>
+<label><input type="radio" name="t135" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 136 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/121-127105-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-127105-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t136" value="A">A 更好</label>
+<label><input type="radio" name="t136" value="B">B 更好</label>
+<label><input type="radio" name="t136" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 137 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0011.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/1284-1180-0011.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t137" value="A">A 更好</label>
+<label><input type="radio" name="t137" value="B">B 更好</label>
+<label><input type="radio" name="t137" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 138 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1284-1180-0027.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0027.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t138" value="A">A 更好</label>
+<label><input type="radio" name="t138" value="B">B 更好</label>
+<label><input type="radio" name="t138" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 139 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1320-122617-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1320-122617-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t139" value="A">A 更好</label>
+<label><input type="radio" name="t139" value="B">B 更好</label>
+<label><input type="radio" name="t139" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 140 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1089-134691-0022.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0022.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t140" value="A">A 更好</label>
+<label><input type="radio" name="t140" value="B">B 更好</label>
+<label><input type="radio" name="t140" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 141 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0009.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/121-121726-0009.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t141" value="A">A 更好</label>
+<label><input type="radio" name="t141" value="B">B 更好</label>
+<label><input type="radio" name="t141" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 142 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1089-134686-0021.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0021.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t142" value="A">A 更好</label>
+<label><input type="radio" name="t142" value="B">B 更好</label>
+<label><input type="radio" name="t142" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 143 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1320-122617-0000.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1320-122617-0000.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t143" value="A">A 更好</label>
+<label><input type="radio" name="t143" value="B">B 更好</label>
+<label><input type="radio" name="t143" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 144 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1188-133604-0029.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1188-133604-0029.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t144" value="A">A 更好</label>
+<label><input type="radio" name="t144" value="B">B 更好</label>
+<label><input type="radio" name="t144" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 145 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1188-133604-0029.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1188-133604-0029.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t145" value="A">A 更好</label>
+<label><input type="radio" name="t145" value="B">B 更好</label>
+<label><input type="radio" name="t145" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 146 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/121-121726-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t146" value="A">A 更好</label>
+<label><input type="radio" name="t146" value="B">B 更好</label>
+<label><input type="radio" name="t146" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 147 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/1089-134686-0035.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0035.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t147" value="A">A 更好</label>
+<label><input type="radio" name="t147" value="B">B 更好</label>
+<label><input type="radio" name="t147" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 148 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1089-134691-0001.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0001.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t148" value="A">A 更好</label>
+<label><input type="radio" name="t148" value="B">B 更好</label>
+<label><input type="radio" name="t148" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 149 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1089-134686-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t149" value="A">A 更好</label>
+<label><input type="radio" name="t149" value="B">B 更好</label>
+<label><input type="radio" name="t149" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 150 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1089-134691-0020.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1089-134691-0020.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t150" value="A">A 更好</label>
+<label><input type="radio" name="t150" value="B">B 更好</label>
+<label><input type="radio" name="t150" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 151 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/opus_6k/121-121726-0003.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/121-121726-0003.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t151" value="A">A 更好</label>
+<label><input type="radio" name="t151" value="B">B 更好</label>
+<label><input type="radio" name="t151" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 152 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1089-134686-0033.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/opus_6k/1089-134686-0033.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t152" value="A">A 更好</label>
+<label><input type="radio" name="t152" value="B">B 更好</label>
+<label><input type="radio" name="t152" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 153 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L1/1284-1181-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t153" value="A">A 更好</label>
+<label><input type="radio" name="t153" value="B">B 更好</label>
+<label><input type="radio" name="t153" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 154 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1284-1181-0007.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0007.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t154" value="A">A 更好</label>
+<label><input type="radio" name="t154" value="B">B 更好</label>
+<label><input type="radio" name="t154" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 155 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1284-1180-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t155" value="A">A 更好</label>
+<label><input type="radio" name="t155" value="B">B 更好</label>
+<label><input type="radio" name="t155" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 156 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L3/1284-1180-0015.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/encodec_1.5k/1284-1180-0015.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t156" value="A">A 更好</label>
+<label><input type="radio" name="t156" value="B">B 更好</label>
+<label><input type="radio" name="t156" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 157 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1320-122617-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1320-122617-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t157" value="A">A 更好</label>
+<label><input type="radio" name="t157" value="B">B 更好</label>
+<label><input type="radio" name="t157" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 158 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/scit_lca_L1/1320-122617-0005.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1320-122617-0005.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t158" value="A">A 更好</label>
+<label><input type="radio" name="t158" value="B">B 更好</label>
+<label><input type="radio" name="t158" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 159 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1284-1181-0004.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0004.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t159" value="A">A 更好</label>
+<label><input type="radio" name="t159" value="B">B 更好</label>
+<label><input type="radio" name="t159" value="tie">差不多</label></div></div>
+<div class="trial"><div class="q">第 160 题</div>
+<div class="ab"><div>A<audio controls preload="none" src="../samples/dac_1.5k/1284-1181-0014.wav"></audio></div>
+<div>B<audio controls preload="none" src="../samples/scit_lca_L3/1284-1181-0014.wav"></audio></div></div>
+<div>哪个更好？
+<label><input type="radio" name="t160" value="A">A 更好</label>
+<label><input type="radio" name="t160" value="B">B 更好</label>
+<label><input type="radio" name="t160" value="tie">差不多</label></div></div></form>
+<script>
+const N=160;
+document.getElementById('tot').textContent=N;document.getElementById('tot2').textContent=N;
+document.getElementById('f').addEventListener('change',()=>{
+ let c=0;for(let i=1;i<=N;i++){if(document.querySelector('input[name=t'+i+']:checked'))c++;}
+ document.getElementById('prog').textContent=c;});
+function exportCSV(){
+ const lid=document.getElementById('listener').value||'anon';
+ let rows=[['listener','order','choice']];
+ for(let i=1;i<=N;i++){const v=document.querySelector('input[name=t'+i+']:checked');
+  rows.push([lid,i,v?v.value:'']);}
+ const csv=rows.map(r=>r.join(',')).join('\n');
+ const blob=new Blob([csv],{type:'text/csv'});const a=document.createElement('a');
+ a.href=URL.createObjectURL(blob);a.download='responses_'+lid+'.csv';a.click();}
+</script></body></html>

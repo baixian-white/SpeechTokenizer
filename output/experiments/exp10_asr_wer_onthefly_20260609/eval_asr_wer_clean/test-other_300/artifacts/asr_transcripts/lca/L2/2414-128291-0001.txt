@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0001
+# model=lca
+# L=2
+
+GT:
+HE ASKED HIMSELF SOMETHING WARM AND LIVING QUICKENETH ME IT MUST BE IN THE NEIGHBOURHOOD
+
+Whisper(original):
+He asked himself Something wrong and living quick at me. It must be in that neighborhood
+
+Whisper(decoded):
+The passion says something long and leaving quick next to me. It was me in that neighborhood.

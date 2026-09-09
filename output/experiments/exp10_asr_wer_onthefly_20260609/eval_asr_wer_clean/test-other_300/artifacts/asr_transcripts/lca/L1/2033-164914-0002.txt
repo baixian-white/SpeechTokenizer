@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0002
+# model=lca
+# L=1
+
+GT:
+THEN SAID THE EUNUCH ART THOU HE WHO REPEATED POETRY BUT NOW AND MY LADY HEARD HIM
+
+Whisper(original):
+Then said the Unoch. Ardau, he who repeated poetry but now, and my lady heard him.
+
+Whisper(decoded):
+Then set the unit. But now she repeated point clip up now, and I hate her again.

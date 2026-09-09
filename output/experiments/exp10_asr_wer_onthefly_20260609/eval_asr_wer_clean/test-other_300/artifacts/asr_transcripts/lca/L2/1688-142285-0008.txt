@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0008
+# model=lca
+# L=2
+
+GT:
+HIS FATHER DYING IN MISERABLE CIRCUMSTANCES
+
+Whisper(original):
+His father dying in miserable circumstances.
+
+Whisper(decoded):
+He's followed, dying in miserable circumstances.

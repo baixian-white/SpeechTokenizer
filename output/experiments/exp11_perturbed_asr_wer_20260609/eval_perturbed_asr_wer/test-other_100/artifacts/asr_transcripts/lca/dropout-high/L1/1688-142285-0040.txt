@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0040
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+I'M BETTER IN NOT BEING TORN TO PIECES BY COUGHING O'NIGHTS BUT I'M WEARY AND TIRED O MILTON AND LONGING TO GET AWAY TO THE LAND O BEULAH AND WHEN I THINK I'M FARTHER AND FARTHER OFF MY HEART SINKS AND I'M NO BETTER I'M WORSE
+
+Whisper(original):
+I'm better in not being torn to pieces by coughing at nights, but I'm weary and tired of Milton, and longing to get away to the land of Bula. And when I think I'm farther and farther off, my heart sinks, and I'm no better. I'm worse.
+
+Whisper(decoded):
+I met her in all being torn spaces, her coffee reminds, from where the tide of Milton. I'm going to get away to the Renau Boona. And when I think I'm farther and farther off, my heart seems, none no better. On worse.

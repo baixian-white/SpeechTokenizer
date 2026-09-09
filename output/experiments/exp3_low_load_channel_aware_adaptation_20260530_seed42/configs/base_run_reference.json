@@ -1,0 +1,11 @@
+{
+  "base_run_id": "exp2_scit_speech_distill30_retrain_20260529_seed42",
+  "base_config_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\configs\\scit_speech_base_config.json",
+  "base_checkpoint_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+  "base_checkpoint_sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6",
+  "base_distill_loss_lambda": 30.0,
+  "base_best_dev_mel_loss": 1.123815,
+  "base_best_step": 107500,
+  "base_packaged_at": "2026-05-30T16:26:14+08:00",
+  "note": "LCA fine-tuning initializes generator weights from this base; discriminator and optimizer state start fresh."
+}

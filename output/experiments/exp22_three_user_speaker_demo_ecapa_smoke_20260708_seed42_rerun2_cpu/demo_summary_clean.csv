@@ -1,0 +1,4 @@
+user_id,device,rvq_layers,chunk_seconds,duration_s,sent_packets,recv_packets,decoded_packets,dropped_packets,drop_rate,body_kbps,total_kbps,encode_ms_mean,encode_ms_p95,decode_ms_mean,decode_ms_p95,encode_rtf_mean,encode_rtf_p95,decode_rtf_mean,decode_rtf_p95,jitter_s_mean,jitter_s_p95,one_way_latency_budget_ms,speaker_id_enabled,speaker_eval_count,speaker_correct_count,speaker_verified_count,speaker_accuracy_mean
+p225,cuda,3,0.5,65.36,116,226,225,0,0.0,3.93,13.67,19.0,9.6,7.6,12.1,0.038,0.019,0.015,0.024,0.499,0.75,750.0,1,110,94,71,0.8545
+p226,cuda,3,0.5,65.9,117,231,231,0,0.0,3.97,13.8,18.8,10.9,11.8,10.5,0.038,0.022,0.024,0.021,0.499,0.75,750.0,1,113,108,103,0.9558
+p227,cuda,3,0.5,65.79,117,233,233,0,0.0,4.0,13.9,21.0,18.2,18.6,20.7,0.042,0.036,0.037,0.041,0.499,0.75,750.0,1,114,102,84,0.8947

@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0077
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+SHE WAS LATE FOR TEA AT HOME
+
+Whisper(original):
+She was late for tea at home.
+
+Whisper(decoded):
+She was late for tea at home.

@@ -1,0 +1,68 @@
+{
+  "run_id": "exp2_scit_speech_distill30_retrain_20260529_seed42",
+  "checkpoint": "output/experiments/exp2_scit_speech_distill30_retrain_20260529_seed42/checkpoints/SCIT-Speech-Base_best.pt",
+  "sample_count": 4,
+  "rows": [
+    {
+      "sample_id": "8838-298545-0037",
+      "source_audio": "H:\\H-CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\8838\\298545\\8838-298545-0037.flac",
+      "duration_sec": 13.79,
+      "original_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\original\\8838-298545-0037.wav",
+      "recon_L1_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L1\\8838-298545-0037.wav",
+      "recon_L1_l1": 0.03287935256958008,
+      "recon_L1_shape": "[1, 1, 220800]",
+      "recon_L2_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L2\\8838-298545-0037.wav",
+      "recon_L2_l1": 0.02581063099205494,
+      "recon_L2_shape": "[1, 1, 220800]",
+      "recon_L3_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L3\\8838-298545-0037.wav",
+      "recon_L3_l1": 0.02371298521757126,
+      "recon_L3_shape": "[1, 1, 220800]"
+    },
+    {
+      "sample_id": "5390-30102-0015",
+      "source_audio": "H:\\H-CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\5390\\30102\\5390-30102-0015.flac",
+      "duration_sec": 15.26,
+      "original_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\original\\5390-30102-0015.wav",
+      "recon_L1_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L1\\5390-30102-0015.wav",
+      "recon_L1_l1": 0.031079884618520737,
+      "recon_L1_shape": "[1, 1, 244160]",
+      "recon_L2_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L2\\5390-30102-0015.wav",
+      "recon_L2_l1": 0.025145765393972397,
+      "recon_L2_shape": "[1, 1, 244160]",
+      "recon_L3_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L3\\5390-30102-0015.wav",
+      "recon_L3_l1": 0.022906074300408363,
+      "recon_L3_shape": "[1, 1, 244160]"
+    },
+    {
+      "sample_id": "4018-103416-0033",
+      "source_audio": "H:\\H-CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\4018\\103416\\4018-103416-0033.flac",
+      "duration_sec": 15.13,
+      "original_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\original\\4018-103416-0033.wav",
+      "recon_L1_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L1\\4018-103416-0033.wav",
+      "recon_L1_l1": 0.038625940680503845,
+      "recon_L1_shape": "[1, 1, 242240]",
+      "recon_L2_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L2\\4018-103416-0033.wav",
+      "recon_L2_l1": 0.027028799057006836,
+      "recon_L2_shape": "[1, 1, 242240]",
+      "recon_L3_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L3\\4018-103416-0033.wav",
+      "recon_L3_l1": 0.023180902004241943,
+      "recon_L3_shape": "[1, 1, 242240]"
+    },
+    {
+      "sample_id": "1737-148989-0006",
+      "source_audio": "H:\\H-CODE\\speechtokenizer\\data\\SpeechPretrain\\LibriSpeech\\train-clean-100\\1737\\148989\\1737-148989-0006.flac",
+      "duration_sec": 10.69,
+      "original_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\original\\1737-148989-0006.wav",
+      "recon_L1_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L1\\1737-148989-0006.wav",
+      "recon_L1_l1": 0.025542467832565308,
+      "recon_L1_shape": "[1, 1, 171200]",
+      "recon_L2_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L2\\1737-148989-0006.wav",
+      "recon_L2_l1": 0.022374605759978294,
+      "recon_L2_shape": "[1, 1, 171200]",
+      "recon_L3_path": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\samples\\full_utterance\\recon_L3\\1737-148989-0006.wav",
+      "recon_L3_l1": 0.021462587639689445,
+      "recon_L3_shape": "[1, 1, 171200]"
+    }
+  ],
+  "scope_note": "Complete utterance listening/proxy reconstruction only; not final communication quality."
+}

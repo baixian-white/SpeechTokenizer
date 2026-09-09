@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0026
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+THE RECTOR DID NOT ASK FOR A CATECHISM TO HEAR THE LESSON FROM
+
+Whisper(original):
+The rector did not ask for a catechism to hear the lesson from.
+
+Whisper(decoded):
+The laughter could not ask for a catechism to hear the lesson from.

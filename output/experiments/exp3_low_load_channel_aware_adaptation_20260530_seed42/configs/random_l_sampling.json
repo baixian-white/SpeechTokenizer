@@ -1,0 +1,7 @@
+{
+  "values": [1, 2, 3],
+  "strategy": "uniform_random",
+  "weights": null,
+  "seed": 42,
+  "note": "Per-batch L is sampled uniformly from {1, 2, 3}. Distribution stats per step are recorded in metrics/lca_train_metrics.jsonl under sampled_L."
+}

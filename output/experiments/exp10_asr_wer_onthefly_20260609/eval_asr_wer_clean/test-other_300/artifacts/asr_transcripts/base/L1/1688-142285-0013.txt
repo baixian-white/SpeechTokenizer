@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0013
+# model=base
+# L=1
+
+GT:
+AT LEAST NO FRIEND CAME FORWARDS IMMEDIATELY AND MISSUS THORNTON IS NOT ONE I FANCY TO WAIT TILL TARDY KINDNESS COMES TO FIND HER OUT
+
+Whisper(original):
+At least no friend came forward immediately, and Mr Thornton is not one, I fancy, to wait till Tardie Kydness comes to find her out.
+
+Whisper(decoded):
+At least my friend came forward to me at me, and his thoughts in was not one breath fancy. She wailed till Tardie Thomas comes to fly in her yard.

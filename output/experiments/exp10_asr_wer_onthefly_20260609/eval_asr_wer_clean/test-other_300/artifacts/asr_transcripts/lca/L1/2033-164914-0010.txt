@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0010
+# model=lca
+# L=1
+
+GT:
+BY ALLAH AN THOU FETCH HIM NOT TO ME I WILL ASSUREDLY ROUSE THE CHAMBERLAIN ON THEE AND HE SHALL BEAT THEE AND CAST THEE OUT
+
+Whisper(original):
+By Allah, and the Alpha achieve not to me, I will assuredly rouse the chamberlain on thee, and he shall beat thee and cast thee out.
+
+Whisper(decoded):
+Vayrao, and thou fach him not to be, and we are shortly aroused the chambering on thee. We shall be deep and just be out.

@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0000
+# model=base
+# L=3
+
+GT:
+IF CALLED TO A CASE SUPPOSED OR SUSPECTED TO BE ONE OF POISONING THE MEDICAL MAN HAS TWO DUTIES TO PERFORM TO SAVE THE PATIENT'S LIFE AND TO PLACE HIMSELF IN A POSITION TO GIVE EVIDENCE IF CALLED ON TO DO SO
+
+Whisper(original):
+If college or case supposed or suspected to be one of poisoning, the medical man has two duties to perform. To save the patient's life and to place himself in a position to give evidence of college on to do so.
+
+Whisper(decoded):
+If college okay is supposed to suspect it to be vermoplasing, the medical plan has two duties to perform. To save the patient's life and to place himself in a position to give evidence of college and to do so.

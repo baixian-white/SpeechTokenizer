@@ -1,0 +1,12 @@
+# sample_id=121-127105-0001
+# model=lca
+# L=1
+
+GT:
+SOMEONE ELSE TOLD A STORY NOT PARTICULARLY EFFECTIVE WHICH I SAW HE WAS NOT FOLLOWING
+
+Whisper(original):
+Someone else told a story not particularly effective, which I saw he was not following.
+
+Whisper(decoded):
+Someone else told us to adapt to the effect of, which I saw he was not following.

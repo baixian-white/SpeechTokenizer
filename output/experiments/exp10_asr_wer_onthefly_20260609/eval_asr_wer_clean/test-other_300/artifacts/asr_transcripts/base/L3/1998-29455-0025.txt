@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0025
+# model=base
+# L=3
+
+GT:
+WHICH THIS AIN'T NOT BY NO MEANS
+
+Whisper(original):
+Which this end, not by no means.
+
+Whisper(decoded):
+Which was earned, not by no means.

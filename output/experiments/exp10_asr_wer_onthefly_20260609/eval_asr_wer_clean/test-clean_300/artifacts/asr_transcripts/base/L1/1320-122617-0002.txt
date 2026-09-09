@@ -1,0 +1,12 @@
+# sample_id=1320-122617-0002
+# model=base
+# L=1
+
+GT:
+IN OTHER WORDS WHILE HE HAD IMPLICIT FAITH IN THE ABILITY OF BALAAM'S ASS TO SPEAK HE WAS SOMEWHAT SKEPTICAL ON THE SUBJECT OF A BEAR'S SINGING AND YET HE HAD BEEN ASSURED OF THE LATTER ON THE TESTIMONY OF HIS OWN EXQUISITE ORGANS
+
+Whisper(original):
+In other words, while he had implicit faith in the ability of Balaam's ass to speak, he was somewhat skeptical on the subject of a bear's singing, and yet he had been assured of the latter on the testimony of his own exquisite organs.
+
+Whisper(decoded):
+In other words, while he had implicit faith in the ability of Beowans to speak, he was so not skeptical on the subject of a bear singing, and yet he had been assured of the latter on the testimony of his own exquisite organs.

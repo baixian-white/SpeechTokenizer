@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0011
+# model=lca
+# L=2
+
+GT:
+WANTON AVIDITY BILIOUS ENVY CAREWORN REVENGE POPULACE PRIDE ALL THESE STRUCK MINE EYE
+
+Whisper(original):
+want an out of duty, will be anyway. Care won't revenge. Popular spread. All these struck my eye.
+
+Whisper(decoded):
+bit of the sprite coming cool wants to try that Vietnam prince who who

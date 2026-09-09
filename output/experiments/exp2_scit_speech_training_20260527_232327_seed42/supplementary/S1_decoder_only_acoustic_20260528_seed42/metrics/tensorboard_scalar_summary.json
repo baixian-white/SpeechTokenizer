@@ -1,0 +1,809 @@
+{
+  "rows": [
+    {
+      "tag": "train/discriminators loss",
+      "step": 0,
+      "value": 13.287631034851074
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 100,
+      "value": 10.028486251831055
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 200,
+      "value": 9.124361038208008
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 300,
+      "value": 8.98793888092041
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 400,
+      "value": 8.79568862915039
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 500,
+      "value": 8.553406715393066
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 600,
+      "value": 8.326009750366211
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 700,
+      "value": 8.119224548339844
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 800,
+      "value": 7.967892169952393
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 900,
+      "value": 7.859661102294922
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 1000,
+      "value": 7.821953773498535
+    },
+    {
+      "tag": "train/discriminators loss",
+      "step": 1100,
+      "value": 7.797111511230469
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 0,
+      "value": 108.5122299194336
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 100,
+      "value": 106.85992431640625
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 200,
+      "value": 107.33876037597656
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 300,
+      "value": 95.56890869140625
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 400,
+      "value": 96.93730926513672
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 500,
+      "value": 108.30823516845703
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 600,
+      "value": 92.03992462158203
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 700,
+      "value": 103.62198638916016
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 800,
+      "value": 107.09549713134766
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 900,
+      "value": 104.36479187011719
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 1000,
+      "value": 94.79061889648438
+    },
+    {
+      "tag": "train/generator loss",
+      "step": 1100,
+      "value": 103.18390655517578
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 0,
+      "value": 0.2514677941799164
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 100,
+      "value": 0.2847811281681061
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 200,
+      "value": 0.3548886179924011
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 300,
+      "value": 0.22622276842594147
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 400,
+      "value": 0.23993892967700958
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 500,
+      "value": 0.334638774394989
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 600,
+      "value": 0.18803545832633972
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 700,
+      "value": 0.24882125854492188
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 800,
+      "value": 0.22881688177585602
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 900,
+      "value": 0.3265579044818878
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 1000,
+      "value": 0.18517722189426422
+    },
+    {
+      "tag": "train/feature loss",
+      "step": 1100,
+      "value": 0.3266445994377136
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 0,
+      "value": 13.24744701385498
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 100,
+      "value": 9.32612419128418
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 200,
+      "value": 7.163769245147705
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 300,
+      "value": 7.034331321716309
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 400,
+      "value": 6.838751792907715
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 500,
+      "value": 6.572242736816406
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 600,
+      "value": 6.331324577331543
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 700,
+      "value": 6.089656352996826
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 800,
+      "value": 5.930130958557129
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 900,
+      "value": 5.8052520751953125
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 1000,
+      "value": 5.762218475341797
+    },
+    {
+      "tag": "train/adversarial loss",
+      "step": 1100,
+      "value": 5.702474594116211
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 0,
+      "value": 3.4543299674987793
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 100,
+      "value": 3.399318218231201
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 200,
+      "value": 3.6569342613220215
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 300,
+      "value": 3.0727109909057617
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 400,
+      "value": 2.8416190147399902
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 500,
+      "value": 3.7291316986083984
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 600,
+      "value": 3.0231614112854004
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 700,
+      "value": 3.3113174438476562
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 800,
+      "value": 2.9447944164276123
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 900,
+      "value": 3.4039103984832764
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 1000,
+      "value": 3.0514562129974365
+    },
+    {
+      "tag": "train/quantizer loss",
+      "step": 1100,
+      "value": 3.275209426879883
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 0,
+      "value": 47.74556350708008
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 100,
+      "value": 48.74138641357422
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 200,
+      "value": 45.844173431396484
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 300,
+      "value": 46.406349182128906
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 400,
+      "value": 49.85116958618164
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 500,
+      "value": 48.0518798828125
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 600,
+      "value": 46.488529205322266
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 700,
+      "value": 52.85453414916992
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 800,
+      "value": 61.10598373413086
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 900,
+      "value": 49.47455596923828
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 1000,
+      "value": 50.03226089477539
+    },
+    {
+      "tag": "train/mel loss",
+      "step": 1100,
+      "value": 49.62418746948242
+    },
+    {
+      "tag": "train/mel error",
+      "step": 0,
+      "value": 0.983814537525177
+    },
+    {
+      "tag": "train/mel error",
+      "step": 100,
+      "value": 1.0040584802627563
+    },
+    {
+      "tag": "train/mel error",
+      "step": 200,
+      "value": 0.9420201182365417
+    },
+    {
+      "tag": "train/mel error",
+      "step": 300,
+      "value": 0.954769492149353
+    },
+    {
+      "tag": "train/mel error",
+      "step": 400,
+      "value": 1.0264842510223389
+    },
+    {
+      "tag": "train/mel error",
+      "step": 500,
+      "value": 0.9885050654411316
+    },
+    {
+      "tag": "train/mel error",
+      "step": 600,
+      "value": 0.9568659067153931
+    },
+    {
+      "tag": "train/mel error",
+      "step": 700,
+      "value": 1.0926542282104492
+    },
+    {
+      "tag": "train/mel error",
+      "step": 800,
+      "value": 1.2707523107528687
+    },
+    {
+      "tag": "train/mel error",
+      "step": 900,
+      "value": 1.0179235935211182
+    },
+    {
+      "tag": "train/mel error",
+      "step": 1000,
+      "value": 1.032806158065796
+    },
+    {
+      "tag": "train/mel error",
+      "step": 1100,
+      "value": 1.0221620798110962
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 0,
+      "value": 0.4477287828922272
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 100,
+      "value": 0.44354987144470215
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 200,
+      "value": 0.4490630328655243
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 300,
+      "value": 0.4415230453014374
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 400,
+      "value": 0.44319114089012146
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 500,
+      "value": 0.4518473446369171
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 600,
+      "value": 0.4440329670906067
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 700,
+      "value": 0.4513080418109894
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 800,
+      "value": 0.4431302845478058
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 900,
+      "value": 0.4458833932876587
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 1000,
+      "value": 0.4442322552204132
+    },
+    {
+      "tag": "train/distillation loss",
+      "step": 1100,
+      "value": 0.44632476568222046
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 0,
+      "value": 2.9999948765180307e-06
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 100,
+      "value": 2.9478674150595907e-06
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 200,
+      "value": 2.7970702376478584e-06
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 300,
+      "value": 2.557879724918166e-06
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 400,
+      "value": 2.2465965230367146e-06
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 500,
+      "value": 1.8844340274881688e-06
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 600,
+      "value": 1.4960729686208651e-06
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 700,
+      "value": 1.1079795285695582e-06
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 800,
+      "value": 7.466016995749669e-07
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 900,
+      "value": 4.36566665484861e-07
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 1000,
+      "value": 1.990028550835632e-07
+    },
+    {
+      "tag": "train/learning_rate",
+      "step": 1100,
+      "value": 5.009984604953388e-08
+    },
+    {
+      "tag": "dev/mel error",
+      "step": 600,
+      "value": 3.583195447921753
+    },
+    {
+      "tag": "dev/distillation loss",
+      "step": 600,
+      "value": 0.5903099775314331
+    }
+  ],
+  "summary": {
+    "dev/distillation loss": {
+      "count": 1,
+      "first": {
+        "tag": "dev/distillation loss",
+        "step": 600,
+        "value": 0.5903099775314331
+      },
+      "last": {
+        "tag": "dev/distillation loss",
+        "step": 600,
+        "value": 0.5903099775314331
+      },
+      "min": {
+        "tag": "dev/distillation loss",
+        "step": 600,
+        "value": 0.5903099775314331
+      },
+      "max": {
+        "tag": "dev/distillation loss",
+        "step": 600,
+        "value": 0.5903099775314331
+      }
+    },
+    "dev/mel error": {
+      "count": 1,
+      "first": {
+        "tag": "dev/mel error",
+        "step": 600,
+        "value": 3.583195447921753
+      },
+      "last": {
+        "tag": "dev/mel error",
+        "step": 600,
+        "value": 3.583195447921753
+      },
+      "min": {
+        "tag": "dev/mel error",
+        "step": 600,
+        "value": 3.583195447921753
+      },
+      "max": {
+        "tag": "dev/mel error",
+        "step": 600,
+        "value": 3.583195447921753
+      }
+    },
+    "train/adversarial loss": {
+      "count": 12,
+      "first": {
+        "tag": "train/adversarial loss",
+        "step": 0,
+        "value": 13.24744701385498
+      },
+      "last": {
+        "tag": "train/adversarial loss",
+        "step": 1100,
+        "value": 5.702474594116211
+      },
+      "min": {
+        "tag": "train/adversarial loss",
+        "step": 1100,
+        "value": 5.702474594116211
+      },
+      "max": {
+        "tag": "train/adversarial loss",
+        "step": 0,
+        "value": 13.24744701385498
+      }
+    },
+    "train/discriminators loss": {
+      "count": 12,
+      "first": {
+        "tag": "train/discriminators loss",
+        "step": 0,
+        "value": 13.287631034851074
+      },
+      "last": {
+        "tag": "train/discriminators loss",
+        "step": 1100,
+        "value": 7.797111511230469
+      },
+      "min": {
+        "tag": "train/discriminators loss",
+        "step": 1100,
+        "value": 7.797111511230469
+      },
+      "max": {
+        "tag": "train/discriminators loss",
+        "step": 0,
+        "value": 13.287631034851074
+      }
+    },
+    "train/distillation loss": {
+      "count": 12,
+      "first": {
+        "tag": "train/distillation loss",
+        "step": 0,
+        "value": 0.4477287828922272
+      },
+      "last": {
+        "tag": "train/distillation loss",
+        "step": 1100,
+        "value": 0.44632476568222046
+      },
+      "min": {
+        "tag": "train/distillation loss",
+        "step": 300,
+        "value": 0.4415230453014374
+      },
+      "max": {
+        "tag": "train/distillation loss",
+        "step": 500,
+        "value": 0.4518473446369171
+      }
+    },
+    "train/feature loss": {
+      "count": 12,
+      "first": {
+        "tag": "train/feature loss",
+        "step": 0,
+        "value": 0.2514677941799164
+      },
+      "last": {
+        "tag": "train/feature loss",
+        "step": 1100,
+        "value": 0.3266445994377136
+      },
+      "min": {
+        "tag": "train/feature loss",
+        "step": 1000,
+        "value": 0.18517722189426422
+      },
+      "max": {
+        "tag": "train/feature loss",
+        "step": 200,
+        "value": 0.3548886179924011
+      }
+    },
+    "train/generator loss": {
+      "count": 12,
+      "first": {
+        "tag": "train/generator loss",
+        "step": 0,
+        "value": 108.5122299194336
+      },
+      "last": {
+        "tag": "train/generator loss",
+        "step": 1100,
+        "value": 103.18390655517578
+      },
+      "min": {
+        "tag": "train/generator loss",
+        "step": 600,
+        "value": 92.03992462158203
+      },
+      "max": {
+        "tag": "train/generator loss",
+        "step": 0,
+        "value": 108.5122299194336
+      }
+    },
+    "train/learning_rate": {
+      "count": 12,
+      "first": {
+        "tag": "train/learning_rate",
+        "step": 0,
+        "value": 2.9999948765180307e-06
+      },
+      "last": {
+        "tag": "train/learning_rate",
+        "step": 1100,
+        "value": 5.009984604953388e-08
+      },
+      "min": {
+        "tag": "train/learning_rate",
+        "step": 1100,
+        "value": 5.009984604953388e-08
+      },
+      "max": {
+        "tag": "train/learning_rate",
+        "step": 0,
+        "value": 2.9999948765180307e-06
+      }
+    },
+    "train/mel error": {
+      "count": 12,
+      "first": {
+        "tag": "train/mel error",
+        "step": 0,
+        "value": 0.983814537525177
+      },
+      "last": {
+        "tag": "train/mel error",
+        "step": 1100,
+        "value": 1.0221620798110962
+      },
+      "min": {
+        "tag": "train/mel error",
+        "step": 200,
+        "value": 0.9420201182365417
+      },
+      "max": {
+        "tag": "train/mel error",
+        "step": 800,
+        "value": 1.2707523107528687
+      }
+    },
+    "train/mel loss": {
+      "count": 12,
+      "first": {
+        "tag": "train/mel loss",
+        "step": 0,
+        "value": 47.74556350708008
+      },
+      "last": {
+        "tag": "train/mel loss",
+        "step": 1100,
+        "value": 49.62418746948242
+      },
+      "min": {
+        "tag": "train/mel loss",
+        "step": 200,
+        "value": 45.844173431396484
+      },
+      "max": {
+        "tag": "train/mel loss",
+        "step": 800,
+        "value": 61.10598373413086
+      }
+    },
+    "train/quantizer loss": {
+      "count": 12,
+      "first": {
+        "tag": "train/quantizer loss",
+        "step": 0,
+        "value": 3.4543299674987793
+      },
+      "last": {
+        "tag": "train/quantizer loss",
+        "step": 1100,
+        "value": 3.275209426879883
+      },
+      "min": {
+        "tag": "train/quantizer loss",
+        "step": 400,
+        "value": 2.8416190147399902
+      },
+      "max": {
+        "tag": "train/quantizer loss",
+        "step": 500,
+        "value": 3.7291316986083984
+      }
+    }
+  }
+}

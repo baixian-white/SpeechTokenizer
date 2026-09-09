@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0021
+# model=lca
+# L=1
+
+GT:
+THEIR DIVING STONE POISED ON ITS RUDE SUPPORTS AND ROCKING UNDER THEIR PLUNGES AND THE ROUGH HEWN STONES OF THE SLOPING BREAKWATER OVER WHICH THEY SCRAMBLED IN THEIR HORSEPLAY GLEAMED WITH COLD WET LUSTRE
+
+Whisper(original):
+Their diving stone, poised on its rude supports and rocking under their plunges, and the rough-hewn stones of the sloping breakwater over which they scrambled in their horse-play, gleamed with cold, wet luster.
+
+Whisper(decoded):
+They are dying stone, poised on its root supports and rocking under their plunges, and the rough human stones of the sloping breakwater over which they spumbled in their horse play, Spained with cold wet luster.

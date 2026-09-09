@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0060
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+BUT SURELY SAID MARGARET FACING ROUND YOU BELIEVE IN WHAT I SAID THAT GOD GAVE HER LIFE AND ORDERED WHAT KIND OF LIFE IT WAS TO BE
+
+Whisper(original):
+But surely, said Margaret, facing around. You believe in what I said that God gave her life and ordered what kind of life it was to be.
+
+Whisper(decoded):
+But surely, said Margaret, facing around. You believe in what I said, that God gave her life and ordered what kind of life it was to be.

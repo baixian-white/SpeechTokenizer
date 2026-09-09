@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0019
+# model=base
+# L=2
+
+GT:
+THEN SAID THE EUNUCH TO ZAU AL MAKAN PEACE BE WITH THEE O MY LORD
+
+Whisper(original):
+Then set the UNOC to Zawal Makan. Peace be with thee, O my lord.
+
+Whisper(decoded):
+Then set the unit to Zauwelmatan. Please leave it be for my lord.

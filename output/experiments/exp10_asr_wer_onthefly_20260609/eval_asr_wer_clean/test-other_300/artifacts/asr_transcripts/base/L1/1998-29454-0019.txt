@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0019
+# model=base
+# L=1
+
+GT:
+I WOULDN'T GO OME NOT IF I WAS YOU SAID THE MAN
+
+Whisper(original):
+I wouldn't go home not to fair with use at the men.
+
+Whisper(decoded):
+I wouldn't that early no differ what's used like the known.

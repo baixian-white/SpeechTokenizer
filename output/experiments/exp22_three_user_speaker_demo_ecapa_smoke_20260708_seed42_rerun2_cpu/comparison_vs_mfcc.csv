@@ -1,0 +1,4 @@
+user_id,mfcc_accuracy,ecapa_accuracy,absolute_gain,mfcc_eval_count,ecapa_eval_count,ecapa_verified_count
+p225,0.4375,0.8545,0.4170,32,110,71
+p226,0.5312,0.9558,0.4246,32,113,103
+p227,0.5938,0.8947,0.3009,32,114,84

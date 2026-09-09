@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0044
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+BESSY DO YOU WISH TO DIE
+
+Whisper(original):
+Bessie, do you wish to die?
+
+Whisper(decoded):
+This he, he wished to die.

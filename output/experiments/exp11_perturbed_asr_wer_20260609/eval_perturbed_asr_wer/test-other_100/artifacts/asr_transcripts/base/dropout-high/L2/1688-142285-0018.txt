@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0018
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+AND THE POOR MEN AROUND HIM THEY WERE POOR BECAUSE THEY WERE VICIOUS OUT OF THE PALE OF HIS SYMPATHIES BECAUSE THEY HAD NOT HIS IRON NATURE AND THE CAPABILITIES THAT IT GIVES HIM FOR BEING RICH
+
+Whisper(original):
+and the poor men around him. They were poor because they were vicious, out of the pale of his sympathies because they had not his iron nature, and the capabilities that it gives him for being rich.
+
+Whisper(decoded):
+and the poor men around him. They were poor because they were vicious out of the pale of his sympathies because they had not his eye nature, and the pale abilities that it gives him for being rich.

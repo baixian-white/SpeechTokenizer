@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0068
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+I SOMETIMES THINK I SHALL BE MOPED WI SORROW EVEN IN THE CITY OF GOD IF FATHER IS NOT THERE
+
+Whisper(original):
+I sometimes think I shall be murk with sorrow even in the city of God if other is not there.
+
+Whisper(decoded):
+I sometimes think I should be the most rude sorrow even in the city of God, if others love there.

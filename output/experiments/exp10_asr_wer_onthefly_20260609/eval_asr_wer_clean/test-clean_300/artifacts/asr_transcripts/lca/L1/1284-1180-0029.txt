@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0029
+# model=lca
+# L=1
+
+GT:
+SOMETIMES IT IS CALLED A CRAZY QUILT BECAUSE THE PATCHES AND COLORS ARE SO MIXED UP
+
+Whisper(original):
+Sometimes it is called a crazy quilt because the patches and colors are so mixed up.
+
+Whisper(decoded):
+Sometimes it is called a crazy quilt, because the patches and colors are so mixed up.

@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0057
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+MARGARET BENT OVER AND SAID BESSY DON'T BE IMPATIENT WITH YOUR LIFE WHATEVER IT IS OR MAY HAVE BEEN
+
+Whisper(original):
+Margaret bent over and said, Bessie, don't be impatient with your life, whatever it is, or may have been.
+
+Whisper(decoded):
+Margaret Ben's home and said, this year, gently impatient of your life, whatever it is, or may have been.

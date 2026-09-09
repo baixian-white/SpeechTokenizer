@@ -1,0 +1,12 @@
+# sample_id=121-127105-0018
+# model=base
+# L=1
+
+GT:
+CRIED THE LADIES WHOSE DEPARTURE HAD BEEN FIXED
+
+Whisper(original):
+Cry the ladies whose departure had been fixed.
+
+Whisper(decoded):
+Cry the ladies who Mr. Carter had been fixed.

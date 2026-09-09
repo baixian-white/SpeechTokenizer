@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0013
+# model=base
+# L=1
+
+GT:
+AND YOU MUST BE OJO THE UNLUCKY SHE ADDED
+
+Whisper(original):
+And you must be Ojo the unlucky," she added.
+
+Whisper(decoded):
+And you must be told the only way I'm lucky," she added.

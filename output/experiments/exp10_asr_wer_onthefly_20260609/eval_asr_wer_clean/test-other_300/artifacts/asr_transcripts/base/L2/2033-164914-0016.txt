@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0016
+# model=base
+# L=2
+
+GT:
+SO GO THOU TO THY STATION AND IF THOU AGAIN MEET ANY ONE AFTER THIS HOUR RECITING AUGHT OF POETRY WHETHER HE BE NEAR OR FAR IT WILL BE I OR SOME ONE I KNOW AND THOU SHALT NOT LEARN OF HIM BUT BY ME
+
+Whisper(original):
+So go thou to thy station, and if thou again meet any one after this hour, reciting ought of poetry, whether he be near or far, it will be I, or someone I know, and thou shall not learn of him but by me.
+
+Whisper(decoded):
+So go down to the station, and if thou gave me any one after this hour reciting out of poetry, whether he be near or far, it will be I or someone I know, and thou shall not learn of him but by me.

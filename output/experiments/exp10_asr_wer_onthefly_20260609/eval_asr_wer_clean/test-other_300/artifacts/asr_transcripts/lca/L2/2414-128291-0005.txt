@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0005
+# model=lca
+# L=2
+
+GT:
+FOR I TELL THEE THAT I HAVE ALREADY TALKED HALF A MORNING UNTO THEM AND JUST NOW WERE THEY ABOUT TO GIVE ME THEIR ANSWER
+
+Whisper(original):
+For I tell thee that I have already talked half a morning unto them and just now were what they are about to give me the answer.
+
+Whisper(decoded):
+It's like the energy if I have what you thought. Half a morning to death. And just know, what I want to do to make the answer.

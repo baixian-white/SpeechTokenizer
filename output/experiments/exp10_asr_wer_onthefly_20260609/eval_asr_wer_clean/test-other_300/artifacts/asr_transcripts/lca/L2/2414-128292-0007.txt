@@ -1,0 +1,12 @@
+# sample_id=2414-128292-0007
+# model=lca
+# L=2
+
+GT:
+BUT DOTH ZARATHUSTRA NEED TO BE FRIGHTENED BY HIS SHADOW
+
+Whisper(original):
+But those at Ustra need to be frightened by shadow.
+
+Whisper(decoded):
+But, don't you, Tristra, need to be fighting my shell.

@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-05-30T17:07:17+08:00",
+  "python_executable": "C:\\Users\\Windows11\\.conda\\envs\\speechtokenizer\\python.exe",
+  "python_version": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "cwd": "H:\\H-CODE\\speechtokenizer",
+  "disk_free_gb": 726.0767059326172,
+  "packages": {
+    "torch": "2.9.1+cu128",
+    "torchaudio": "2.9.1+cu128",
+    "numpy": "2.2.6",
+    "accelerate": "1.12.0",
+    "beartype": "0.22.9",
+    "einops": "0.8.1",
+    "optuna": "4.8.0",
+    "thop": "0.1.1",
+    "filelock": "3.20.0",
+    "matplotlib": "3.10.8",
+    "soundfile": "0.13.1"
+  },
+  "cuda": {
+    "available": true,
+    "torch_cuda": "12.8",
+    "device_count": 1,
+    "devices": [
+      "NVIDIA GeForce RTX 5070 Ti"
+    ]
+  },
+  "git": {
+    "commit": "cb9929cb60e05540b24d59bc68f117187219d810",
+    "status_short": "M config/spt_base_cfg.json\n M nas/SeaNet.py\n D nas/best_seanet_config.json\n M nas/model_components.py\n M nas/run_nas.sh\n M nas/search_autoencoder.py\n M nas/train_nas.py\n M scripts/train_example.py\n M scripts/train_example.sh\n M speechtokenizer/trainer/dataset.py\n M speechtokenizer/trainer/loss.py\n M speechtokenizer/trainer/trainer.py\n D \"\\345\\257\\271\\346\\257\\224wav\\350\\257\\255\\351\\237\\263\\345\\267\\256\\350\\267\\235.ipynb\"\n D \"\\350\\257\\273\\345\\217\\226wav\\346\\226\\207\\344\\273\\266\\344\\277\\241\\346\\201\\257.ipynb\"\n?? nas/encoder_handoff.py\n?? nas/encoder_only_model_variant.py\n?? nas/evaluate_encoder_proxy.py\n?? nas/run_staged_encoder_nas.py\n?? nas/search_space.py\n?? nas/teacher_guided_proxy.py\n?? nas/validate_short_distill.py\n?? output/\n?? scripts/channel_sim.py\n?? scripts/codebook_usage_report.py\n?? scripts/collect_environment.py\n?? scripts/compare_reconstruction_audio.py\n?? scripts/convert_single_flac_to_wav.py\n?? scripts/create_experiment_run.py\n?? scripts/evaluate_ablation_variants.py\n?? scripts/evaluate_layer_reconstruction.py\n?? scripts/evaluate_lca_vs_base.py\n?? scripts/evaluate_sample_audio_quality.py\n?? scripts/exp2_supplementary.py\n?? scripts/experiment_utils.py\n?? scripts/export_full_utterance_samples.py\n?? scripts/export_loss_curves.py\n?? scripts/extract_best_from_trainer.py\n?? scripts/migrate_paths_e_to_h.py\n?? scripts/normalize_filelist_paths.py\n?? scripts/pack_indices.py\n?? scripts/package_checkpoint.py\n?? scripts/package_exp2_outputs.py\n?? scripts/payload_accounting.py\n?? scripts/prefetch_baseline_models.py\n?? scripts/preflight_experiments.py\n?? scripts/preflight_smoke_test.py\n?? scripts/prepare_exp2_config.py\n?? scripts/prepare_exp2_supplementary.py\n?? scripts/review_experiment_outputs.py\n?? scripts/run_exp2_training.bat\n?? scripts/run_exp2_training.ps1\n?? scripts/run_exp4_baselines.py\n?? scripts/summarize_exp2.py\n?? scripts/train_decoder_only_finetune.py\n?? scripts/train_distill_weight_ablation.py\n?? scripts/train_lca.py\n?? speechtokenizer/trainer/lca_trainer.py\n?? tests/"
+  },
+  "tools": {}
+}

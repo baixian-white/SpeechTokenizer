@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0069
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+THE FEVERISH COLOUR CAME INTO HER CHEEK AND THE FEVERISH FLAME INTO HER EYE
+
+Whisper(original):
+The feverish colour came into her cheeks and the feverish flame into her eye.
+
+Whisper(decoded):
+The feverish color came into her cheeks and the feverish turned into her eye.

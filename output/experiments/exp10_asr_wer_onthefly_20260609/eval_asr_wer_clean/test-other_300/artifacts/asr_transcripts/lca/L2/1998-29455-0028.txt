@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0028
+# model=lca
+# L=2
+
+GT:
+BLESSED IF I EVER SEE SUCH A NIPPER HE SAID OVER AND OVER AGAIN
+
+Whisper(original):
+Blessed if I ever see such a nipper, he said, I won't over again.
+
+Whisper(decoded):
+Blessed if I ever see such a little birdie said, I won't over him."

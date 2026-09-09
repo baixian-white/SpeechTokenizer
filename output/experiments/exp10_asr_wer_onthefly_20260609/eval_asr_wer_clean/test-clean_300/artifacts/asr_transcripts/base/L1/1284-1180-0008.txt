@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0008
+# model=base
+# L=1
+
+GT:
+ALL THE MORNING THEY TRUDGED UP THE MOUNTAIN PATH AND AT NOON UNC AND OJO SAT ON A FALLEN TREE TRUNK AND ATE THE LAST OF THE BREAD WHICH THE OLD MUNCHKIN HAD PLACED IN HIS POCKET
+
+Whisper(original):
+All the morning they trudged up the mountain path, and at noon, Onk and Ojo sat on a fallen tree trunk, and ate the last of the bread which the old munchkin had placed in his pocket.
+
+Whisper(decoded):
+All the morning it rinsed out the mountain path and it milled all in old Joe sat on the fallen tree trunk and ate the last of the brad which the old lunge him had placed in his pocket.

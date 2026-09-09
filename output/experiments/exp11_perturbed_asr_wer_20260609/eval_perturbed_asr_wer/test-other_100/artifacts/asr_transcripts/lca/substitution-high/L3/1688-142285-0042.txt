@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0042
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+BUT FOR A MINUTE OR TWO SHE DID NOT SPEAK
+
+Whisper(original):
+But for a minute or two, she did not speak.
+
+Whisper(decoded):
+But for a minute or two, she didn't speak.

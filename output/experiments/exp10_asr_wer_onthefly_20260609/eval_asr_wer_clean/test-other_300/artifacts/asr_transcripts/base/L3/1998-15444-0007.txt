@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0007
+# model=base
+# L=3
+
+GT:
+THE BEST EMETIC IS THAT WHICH IS AT HAND
+
+Whisper(original):
+The best amatic is that which is at hand.
+
+Whisper(decoded):
+The best amount is that bridge is at hand.

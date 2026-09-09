@@ -1,0 +1,5 @@
+{
+  "agent": "Exp4 Baseline Agent (simulated)",
+  "status": "aborted",
+  "reason": "required traditional codec tool missing: ffmpeg/opusenc not found"
+}

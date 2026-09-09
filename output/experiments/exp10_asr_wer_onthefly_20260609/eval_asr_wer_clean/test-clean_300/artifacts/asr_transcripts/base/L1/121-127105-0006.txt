@@ -1,0 +1,12 @@
+# sample_id=121-127105-0006
+# model=base
+# L=1
+
+GT:
+THE OTHERS RESENTED POSTPONEMENT BUT IT WAS JUST HIS SCRUPLES THAT CHARMED ME
+
+Whisper(original):
+The others resented for Sponement, but it was just his groupals that charmed me.
+
+Whisper(decoded):
+The ad has resented for Scotland, but at least just as scope was the chart made.

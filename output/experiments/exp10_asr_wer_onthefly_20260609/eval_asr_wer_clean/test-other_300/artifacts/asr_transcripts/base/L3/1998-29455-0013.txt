@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0013
+# model=base
+# L=3
+
+GT:
+THAT'S ALL RIGHT SAID MISTER BEALE AWKWARDLY
+
+Whisper(original):
+That's all right, said Mr. B awkwardly.
+
+Whisper(decoded):
+That's our right, Sir Mr. New York City.

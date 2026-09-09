@@ -1,0 +1,12 @@
+# sample_id=121-123852-0001
+# model=lca
+# L=2
+
+GT:
+AY ME
+
+Whisper(original):
+I'm me.
+
+Whisper(decoded):
+I'm me.

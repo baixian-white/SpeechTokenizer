@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0020
+# model=base
+# L=2
+
+GT:
+NO SAID DICKIE OH NO NO I NEVER
+
+Whisper(original):
+No, Satiki. Oh, no. No, I never.
+
+Whisper(decoded):
+No satiki. I know. No another.

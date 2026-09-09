@@ -1,0 +1,12 @@
+# sample_id=121-121726-0003
+# model=lca
+# L=1
+
+GT:
+HAY FEVER A HEART TROUBLE CAUSED BY FALLING IN LOVE WITH A GRASS WIDOW
+
+Whisper(original):
+Hey, fever. A heart trouble caused by falling in love with a grass widow.
+
+Whisper(decoded):
+Hey, hey, hey there. A hot treble crossed by falling in love with a grass redare.

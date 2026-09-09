@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0000
+# model=base
+# L=2
+
+GT:
+YOU WILL FIND ME CONTINUALLY SPEAKING OF FOUR MEN TITIAN HOLBEIN TURNER AND TINTORET IN ALMOST THE SAME TERMS
+
+Whisper(original):
+You will find me continually speaking of four men, Titian, Holbein, Turner, and Tinteret, in almost the same terms.
+
+Whisper(decoded):
+You will find me continually speaking of foremen, Titian, Holbein Turner, and Tim Perrette, in almost the same charms.

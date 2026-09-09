@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0046
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+NOUGHT WORSE THAN MANY OTHERS I RECKON
+
+Whisper(original):
+Not worse than many others I reckon.
+
+Whisper(decoded):
+Not worse than any others I reckon.

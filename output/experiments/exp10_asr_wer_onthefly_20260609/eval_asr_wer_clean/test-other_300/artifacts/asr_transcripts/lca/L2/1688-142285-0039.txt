@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0039
+# model=lca
+# L=2
+
+GT:
+NOT EXACTLY REPLIED MARGARET SMILING
+
+Whisper(original):
+Not exactly, replied Margaret, smiling.
+
+Whisper(decoded):
+What's exactly replied number and lineage inspires.

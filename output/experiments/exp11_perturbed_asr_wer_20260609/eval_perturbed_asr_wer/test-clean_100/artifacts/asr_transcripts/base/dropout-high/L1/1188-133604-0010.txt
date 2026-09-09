@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0010
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+BUT IN THIS VIGNETTE COPIED FROM TURNER YOU HAVE THE TWO PRINCIPLES BROUGHT OUT PERFECTLY
+
+Whisper(original):
+But in this vignette, copied from Turner, you have the two principles brought out perfectly.
+
+Whisper(decoded):
+But in this thing, yeah, copy from Tiner, you add the two principles, thought out perfectly.

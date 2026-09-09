@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0006
+# model=base
+# L=1
+
+GT:
+BUT I SHALL HAVE THEM WHILE THEY'RE ALIVE SAID DICKIE AS HE HAD SAID TO THE PAWNBROKER ABOUT THE MOONFLOWERS
+
+Whisper(original):
+But I shall have them while they are live, Satiki, as he had said to the pond broker about the moon flowers.
+
+Whisper(decoded):
+But I should have been why they are more aestheticy, as it said to be proper about the moonflowers.

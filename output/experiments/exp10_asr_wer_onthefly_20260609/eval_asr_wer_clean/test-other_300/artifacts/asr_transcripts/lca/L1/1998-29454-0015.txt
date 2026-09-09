@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0015
+# model=lca
+# L=1
+
+GT:
+SHE WAS WAITIN FOR THE WOOD TO BOIL THE KETTLE WHEN I COME OUT MOTHER
+
+Whisper(original):
+She was waiting for the board to boil the kettle when it came out. Mother?
+
+Whisper(decoded):
+She has waited for her what to worry the kurt will when it comes out. Nothing?

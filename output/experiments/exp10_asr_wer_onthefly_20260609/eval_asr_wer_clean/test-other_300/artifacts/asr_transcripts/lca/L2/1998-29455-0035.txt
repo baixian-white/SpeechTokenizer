@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0035
+# model=lca
+# L=2
+
+GT:
+IF ANY ONE ARSTS YOU IF YOU EVER SEE IM YOU NEVER SET EYES ON IM IN ALL YOUR BORN NOT TO REMEMBER IM
+
+Whisper(original):
+If anyone asks you if you ever see him, you never said eyes on him and all you're born. Not to remember him.
+
+Whisper(decoded):
+If anyone asks you if you have a CM, you notice that I assume and now you're born. Not to remember.

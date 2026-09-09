@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0014
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+DO NOT THEREFORE THINK THAT THE GOTHIC SCHOOL IS AN EASY ONE
+
+Whisper(original):
+Do not, therefore, think that the Gothic school is an easy one.
+
+Whisper(decoded):
+Do not therefore think that the goddess calls me using one.

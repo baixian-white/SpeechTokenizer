@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0016
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+OH PAPA BY THAT TESTING EVERYTHING BY THE STANDARD OF WEALTH
+
+Whisper(original):
+Opa-pa, by that testing everything by the standard of wealth.
+
+Whisper(decoded):
+Open card. By that test of everything by the standard of wealth.

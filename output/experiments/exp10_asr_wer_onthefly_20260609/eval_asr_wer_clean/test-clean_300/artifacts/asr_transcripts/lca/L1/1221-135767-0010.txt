@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0010
+# model=lca
+# L=1
+
+GT:
+SHE SCREAMED AND SHOUTED TOO WITH A TERRIFIC VOLUME OF SOUND WHICH DOUBTLESS CAUSED THE HEARTS OF THE FUGITIVES TO QUAKE WITHIN THEM
+
+Whisper(original):
+She screamed and shouted too with a terrific volume of sound, which doubtless caused the hearts of the fugitives to quake within them.
+
+Whisper(decoded):
+She spained and shouted too with a terrific volume of sound, which, that must cause the the farts and the fugitives to quake within them.

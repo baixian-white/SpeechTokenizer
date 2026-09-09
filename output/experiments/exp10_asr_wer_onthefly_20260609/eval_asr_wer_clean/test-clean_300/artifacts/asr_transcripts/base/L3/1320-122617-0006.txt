@@ -1,0 +1,12 @@
+# sample_id=1320-122617-0006
+# model=base
+# L=3
+
+GT:
+CAN THESE THINGS BE RETURNED DAVID BREATHING MORE FREELY AS THE TRUTH BEGAN TO DAWN UPON HIM
+
+Whisper(original):
+Can these things be returned David breathing more freely as the truth began to dawn upon him?
+
+Whisper(decoded):
+Can these things be returned David breathing more freely as the truth began to dawn upon him?

@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0007
+# model=base
+# L=1
+
+GT:
+SHE POURED INTO THE DISH A QUANTITY FROM EACH OF THESE BOTTLES
+
+Whisper(original):
+She poured into the dish a quantity from each of these bottles.
+
+Whisper(decoded):
+She poured into India's equality from each of these bottles.

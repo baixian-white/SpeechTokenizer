@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0020
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+HELLO STEPHANOS HERE COMES THE DEDALUS
+
+Whisper(original):
+Hello, Stefanos. Here comes the Daedalus.
+
+Whisper(decoded):
+For what we are currently at Staphanos, we're going to poke them out.

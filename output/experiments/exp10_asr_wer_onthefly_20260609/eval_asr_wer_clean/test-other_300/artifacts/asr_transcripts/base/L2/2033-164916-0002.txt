@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0002
+# model=base
+# L=2
+
+GT:
+WHEN THE MINISTER HEARD THESE WORDS HE REJOICED WITH GREAT JOY AND SAID O CHAMBERLAIN TELL ME THE TALE OF THE TWAIN AND WHAT BEFEL THEM AND THE CAUSE OF THEIR LONG ABSENCE
+
+Whisper(original):
+When the minister heard these words, he rejoiced with great joy and said, O chamberlain, tell me the tale of the twain and what befell them and the cause of their long absence.
+
+Whisper(decoded):
+When the minister brought these words, he rejoiced with great joy and said, O chamberlain, tell me the tale of the dream and what we fell down and the cause of their own absence."

@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0015
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+BUT THE DUSK DEEPENING IN THE SCHOOLROOM COVERED OVER HIS THOUGHTS THE BELL RANG
+
+Whisper(original):
+but the dusk deepening in the schoolroom covered over his thoughts. The bell rang.
+
+Whisper(decoded):
+but the dusk, deepening in the schoolroom, covered over his thoughts. The bell rang.

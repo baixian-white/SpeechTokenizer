@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0041
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+MARGARET TURNED ROUND TO WALK ALONGSIDE OF THE GIRL IN HER FEEBLE PROGRESS HOMEWARD
+
+Whisper(original):
+Margaret turned around to walk alongside of the girl in her feeble progress homeward.
+
+Whisper(decoded):
+My return to round to walk on the side of the road in a feeble progress field.

@@ -1,0 +1,12 @@
+# sample_id=121-127105-0036
+# model=base
+# L=2
+
+GT:
+BUT WAS THAT ALL HER REWARD ONE OF THE LADIES ASKED
+
+Whisper(original):
+But was that all her reward? One of the ladies asked.
+
+Whisper(decoded):
+That was that all her real board, one of the ladies asked.

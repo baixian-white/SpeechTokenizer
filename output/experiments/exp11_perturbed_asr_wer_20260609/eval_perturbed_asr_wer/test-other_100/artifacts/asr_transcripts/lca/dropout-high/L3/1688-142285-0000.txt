@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0000
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+THERE'S IRON THEY SAY IN ALL OUR BLOOD AND A GRAIN OR TWO PERHAPS IS GOOD BUT HIS HE MAKES ME HARSHLY FEEL HAS GOT A LITTLE TOO MUCH OF STEEL ANON
+
+Whisper(original):
+There's iron, they say, in all our blood, and a grain or two perhaps is good, but his, he makes me harshly feel, has got a little too much of steel. And on.
+
+Whisper(decoded):
+There's iron they say in all our blood, and a grain of two perhaps is good, but his, he makes me harshly feel, has got a little too much of steel.

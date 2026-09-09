@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0000
+# model=base
+# L=1
+
+GT:
+A THOUSAND BLESSINGS FROM A GRATEFUL HEART
+
+Whisper(original):
+A thousand blessings from a grateful heart.
+
+Whisper(decoded):
+or even if you do Wide Quality and other ATMs currently know that site should chapter Friday, May 25th be next.

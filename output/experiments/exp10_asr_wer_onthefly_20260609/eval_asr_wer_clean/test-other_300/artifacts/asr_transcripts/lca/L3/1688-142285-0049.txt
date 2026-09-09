@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0049
+# model=lca
+# L=3
+
+GT:
+I HAD FORGOTTEN WHAT I SAID FOR THE TIME CONTINUED MARGARET QUIETLY
+
+Whisper(original):
+I had forgotten what I said for the time continued Margaret quietly.
+
+Whisper(decoded):
+I had forgotten where I said for the time, and to meet Margaret quietly.

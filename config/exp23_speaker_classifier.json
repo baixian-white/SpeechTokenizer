@@ -1,0 +1,72 @@
+{
+  "task": {
+    "name": "closed_set_speaker_classification",
+    "speaker_count": 110
+  },
+  "primary_condition": {
+    "model": "lca",
+    "rvq_layers": 3
+  },
+  "frozen_upstream": {
+    "base": {
+      "config": "output/experiments/exp2_scit_speech_distill30_retrain_20260529_seed42/configs/scit_speech_base_config.json",
+      "checkpoint": "output/experiments/exp2_scit_speech_distill30_retrain_20260529_seed42/checkpoints/SCIT-Speech-Base_best.pt"
+    },
+    "lca": {
+      "config": "output/experiments/exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42/configs/lca_finetune_config.json",
+      "checkpoint": "output/experiments/exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42/checkpoints/SCIT-Speech-LCA_v2_step30000_robust_optimum.pt"
+    }
+  },
+  "split": {
+    "seed": 42,
+    "counts": {
+      "train": 80,
+      "validation": 15,
+      "test": 15
+    }
+  },
+  "text_controlled_split": {
+    "seed": 1,
+    "counts": {
+      "train": 80,
+      "validation": 10,
+      "test": 10
+    },
+    "excluded_speakers": [
+      "p315"
+    ]
+  },
+  "model": {
+    "token_branch": {
+      "pad_index": 1024,
+      "token_embedding_dim": 128,
+      "model_dim": 256,
+      "speaker_embedding_dim": 256,
+      "block_count": 4
+    },
+    "classification_head": {
+      "aam_softmax": {
+        "scale": 30,
+        "margin": 0.2
+      }
+    }
+  },
+  "training": {
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "crop_seconds": 3,
+    "effective_batch_size": 128,
+    "early_stopping_patience": 6
+  },
+  "cache": {
+    "budget_gb": 30,
+    "free_space_multiplier": 1.2
+  },
+  "stage_gates": {
+    "metric_split": "validation",
+    "replication_validation_top1": 0.88
+  }
+}

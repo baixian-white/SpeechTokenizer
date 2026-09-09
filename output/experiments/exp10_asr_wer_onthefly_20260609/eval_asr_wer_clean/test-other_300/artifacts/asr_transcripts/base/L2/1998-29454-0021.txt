@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0021
+# model=base
+# L=2
+
+GT:
+I AIN'T IT YER HAVE I LIKE WHAT YER AUNT DO
+
+Whisper(original):
+I had a chair, have I? Like what you're onto?
+
+Whisper(decoded):
+and that yeah have a Hoodie arm too.

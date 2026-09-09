@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0022
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+HOW COMES IT THAT WHILE THE FIRST BEATITUDE PROMISES THE KINGDOM OF HEAVEN TO THE POOR OF HEART THE SECOND BEATITUDE PROMISES ALSO TO THE MEEK THAT THEY SHALL POSSESS THE LAND
+
+Whisper(original):
+How comes it that while the first beattitude promises the kingdom of heaven to the poor of heart, the second beattitude promises also to the meek that they shall possess the land?
+
+Whisper(decoded):
+How comes it that while the first pre-attitude promises the kingdom of heaven to the poor of heart, the second pre-attitude promises also to the meek that they shall possess the land?

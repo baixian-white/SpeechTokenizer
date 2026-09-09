@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0063
+# model=lca
+# L=3
+
+GT:
+I DON'T BELIEVE ALL I HEAR NO NOT BY A BIG DEAL
+
+Whisper(original):
+I don't believe all I hear. No, not by a big deal.
+
+Whisper(decoded):
+I don't believe what I hear. No, not by big deal.

@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0037
+# model=base
+# L=1
+
+GT:
+NOR WAS IT SUNDAY ON WHICH THEY TOOK A REST AND WASHED THEIR SHIRTS ACCORDING TO MISTER BEALE'S RULE OF LIFE
+
+Whisper(original):
+Nor was it Sunday, on which they took a rest and washed their shirts, according to Mr. Beards' rule of life.
+
+Whisper(decoded):
+No women's her name, unwitched the top and rest, and much no shirts, the client from that you have to go in for more.

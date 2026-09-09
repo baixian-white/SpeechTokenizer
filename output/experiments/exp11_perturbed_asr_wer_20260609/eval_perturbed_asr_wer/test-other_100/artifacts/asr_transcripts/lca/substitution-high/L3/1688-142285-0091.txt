@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0091
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+MY DEAR SAID MISTER HALE ALARMED PRAY DON'T GO OFF ON THAT IDEA
+
+Whisper(original):
+My dear, said Mr. Hell alarmed. Probably don't go off on that idea.
+
+Whisper(decoded):
+Why do you stand Mr. Hill wound? Why do you go off on that idea?

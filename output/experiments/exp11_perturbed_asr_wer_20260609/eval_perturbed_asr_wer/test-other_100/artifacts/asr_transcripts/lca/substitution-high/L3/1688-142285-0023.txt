@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0023
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+HOWEVER OUT IT CAME
+
+Whisper(original):
+However, out it came.
+
+Whisper(decoded):
+However, aren't it, Kane?

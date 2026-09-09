@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0082
+# model=lca
+# L=2
+
+GT:
+I MAY BE THE CINDERELLA TO PUT ON THE SLIPPER AFTER ALL
+
+Whisper(original):
+I may be the Cinderella to put on the slipper after all.
+
+Whisper(decoded):
+I made the same route to the bottom of the slipper after all.

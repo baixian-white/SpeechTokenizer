@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0019
+# model=base
+# L=3
+# channel=substitution-high
+
+GT:
+NOT VICIOUS HE NEVER SAID THAT
+
+Whisper(original):
+Not vicious. He never said that.
+
+Whisper(decoded):
+Not vicious. He never said that.

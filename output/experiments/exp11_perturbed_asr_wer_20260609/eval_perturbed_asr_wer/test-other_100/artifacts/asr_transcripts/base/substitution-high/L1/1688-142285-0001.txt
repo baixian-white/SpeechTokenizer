@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0001
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+MARGARET SAID MISTER HALE AS HE RETURNED FROM SHOWING HIS GUEST DOWNSTAIRS I COULD NOT HELP WATCHING YOUR FACE WITH SOME ANXIETY WHEN MISTER THORNTON MADE HIS CONFESSION OF HAVING BEEN A SHOP BOY
+
+Whisper(original):
+Margaret said Mr. Hale as he returned from showing his guests downstairs. I could not help watching your face with some anxiety when Mr. Thornton made his confession of having been a shop boy.
+
+Whisper(decoded):
+My other second is to hell, as in my time from showing this guest downstairs. How can I help watching your face with some anxiety, when Mr. Daunty remembers his condition having been a shocked boy?

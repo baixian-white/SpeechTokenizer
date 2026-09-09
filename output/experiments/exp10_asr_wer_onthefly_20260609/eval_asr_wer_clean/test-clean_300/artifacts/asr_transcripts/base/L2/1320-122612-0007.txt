@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0007
+# model=base
+# L=2
+
+GT:
+CHINGACHGOOK HAD CAUGHT THE LOOK AND MOTIONING WITH HIS HAND HE BADE HIM SPEAK
+
+Whisper(original):
+Chingaczuk had caught the look, and motioning with his hand, he bade him speak.
+
+Whisper(decoded):
+Chingac's book had caught the loop, and motioning with his hand, he bade him speak.

@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0003
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+THE UNIVERSITY
+
+Whisper(original):
+The University
+
+Whisper(decoded):
+The University

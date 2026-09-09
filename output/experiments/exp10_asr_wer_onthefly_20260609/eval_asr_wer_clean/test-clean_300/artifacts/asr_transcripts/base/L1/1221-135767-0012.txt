@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0012
+# model=base
+# L=1
+
+GT:
+THEY APPROACHED THE DOOR WHICH WAS OF AN ARCHED FORM AND FLANKED ON EACH SIDE BY A NARROW TOWER OR PROJECTION OF THE EDIFICE IN BOTH OF WHICH WERE LATTICE WINDOWS THE WOODEN SHUTTERS TO CLOSE OVER THEM AT NEED
+
+Whisper(original):
+They approached the door, which was of an arched form and flanked on each side by a narrow tower or projection of the edifice, in both of which were lattice windows, the wooden shutters to close over them at need.
+
+Whisper(decoded):
+They approached the door, which was of an arched forearm, and flanked on each side by a narrow tower of projecting of the IFS, in both of which were mad as bundles, the wooden shutters to pull us over to that meat.

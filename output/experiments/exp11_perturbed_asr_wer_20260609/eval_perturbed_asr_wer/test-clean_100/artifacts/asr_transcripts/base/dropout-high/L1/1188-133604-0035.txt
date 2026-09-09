@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0035
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+THUS IN CHAUCER'S DREAM
+
+Whisper(original):
+Thus, in Chaucer's dream...
+
+Whisper(decoded):
+Thus, entrusts his dream.

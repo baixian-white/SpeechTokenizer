@@ -1,0 +1,45 @@
+﻿Create a clean academic system architecture diagram for a paper.
+
+Style: flat vector diagram, white background, minimal colors, publication-ready, 16:9 aspect ratio, sharp lines, no 3D, no decorative gradients, no people.
+
+Content:
+Show a three-user real-time speech communication prototype with a central router.
+
+Layout:
+- Place a central box in the middle labeled exactly: "Central Router"
+- Around it place three client boxes: "Client A", "Client B", "Client C"
+- Each client box contains two local pipelines:
+
+Send pipeline:
+"Audio Input" -> "SCIT Encoder" -> "RVQ Index Pack" -> "Index Packet"
+
+Receive pipeline:
+"Packet Unpack" -> "Jitter Buffer" -> "SCIT Decoder" -> "Audio Output"
+
+- Draw arrows from each client's "Index Packet" to the Central Router.
+- Draw arrows from the Central Router back to the other clients, showing packet forwarding among A, B, and C.
+- The Central Router must be labeled with three small notes:
+  "packet forwarding only"
+  "no decoding"
+  "no codebook access"
+
+- Add a shared offline deployment badge near the clients, connected with dashed lines to all three clients:
+  "Pre-shared SCIT-Speech-LCA weights"
+  "Pre-shared RVQ codebooks"
+  "Pre-shared decoder"
+
+- Label the network arrows:
+  "10-bit RVQ indices"
+  "L = 1 / 2 / 3"
+  "body payload"
+
+- Add a small note at the bottom:
+  "XOR is demo-only packet obfuscation, not a security claim"
+
+Visual emphasis:
+- Make the Central Router visually simple and neutral.
+- Make the clients symmetrical.
+- Use blue for client-side encoding/decoding modules, green for index packets, gray for router forwarding.
+- Use dashed lines only for pre-shared offline components.
+- Ensure all text is readable and spelled exactly as provided.
+- Avoid extra icons, decorative objects, or unrelated network symbols.

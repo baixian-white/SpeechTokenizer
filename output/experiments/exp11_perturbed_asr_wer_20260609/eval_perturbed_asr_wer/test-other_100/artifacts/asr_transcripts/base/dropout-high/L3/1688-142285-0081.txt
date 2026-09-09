@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0081
+# model=base
+# L=3
+# channel=dropout-high
+
+GT:
+EVERYBODY ELSE HAS HAD THEIR TURN AT THIS GREAT DIFFICULTY NOW LET ME TRY
+
+Whisper(original):
+Everybody else has had their turn at this great difficulty. Now let me try.
+
+Whisper(decoded):
+The report also says that it's an obvious grade difficulty. Now, let me try.

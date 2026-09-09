@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0000
+# model=lca
+# L=2
+
+GT:
+HE WORE BLUE SILK STOCKINGS BLUE KNEE PANTS WITH GOLD BUCKLES A BLUE RUFFLED WAIST AND A JACKET OF BRIGHT BLUE BRAIDED WITH GOLD
+
+Whisper(original):
+He wore blue silk stockings, blue knee pants with gold buckles, a blue ruffled waist, and a jacket of bright blue braided with gold.
+
+Whisper(decoded):
+He wore blue silk stockings, blue knee pants with gold buckles, a blue ruffled waist, and a jacket of bright blue braided with gold.

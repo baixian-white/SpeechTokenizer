@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0020
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+BUT OBSERVE YOU CAN ONLY DO THIS ON ONE CONDITION THAT OF STRIVING ALSO TO CREATE IN REALITY THE BEAUTY WHICH YOU SEEK IN IMAGINATION
+
+Whisper(original):
+But observe, you can only do this on one condition, that of striving also to create in reality the beauty which you seek in imagination.
+
+Whisper(decoded):
+But observe, you can only do this on one condition that is striving also to create in reality the beauty which you seek in imagination.

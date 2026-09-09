@@ -1,0 +1,12 @@
+# sample_id=121-123859-0003
+# model=base
+# L=1
+
+GT:
+LOVE IS A BABE THEN MIGHT I NOT SAY SO TO GIVE FULL GROWTH TO THAT WHICH STILL DOTH GROW
+
+Whisper(original):
+Love is a babe, then might I not say so, to give full growth to that which stillc
+
+Whisper(decoded):
+Now there's a date, for might I not say so, to give Thalbrof to that which do Thalbro.

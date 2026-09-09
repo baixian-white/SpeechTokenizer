@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0018
+# model=lca
+# L=1
+
+GT:
+I GOT TO STICK IT SAID DICKIE SADLY I'D BEST BE GETTING HOME
+
+Whisper(original):
+I got a ticket," said Dickie sadly. I'd best be getting home.
+
+Whisper(decoded):
+I got a.- parcelsm Checking away. S S so S

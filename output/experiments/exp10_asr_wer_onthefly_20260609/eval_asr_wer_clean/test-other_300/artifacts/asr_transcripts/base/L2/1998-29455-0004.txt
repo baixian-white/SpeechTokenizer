@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0004
+# model=base
+# L=2
+
+GT:
+OH LOOK SAID DICKIE THE FLOWERS
+
+Whisper(original):
+Oh look, Zediggy, the flowers!
+
+Whisper(decoded):
+Oh look, it's a diggy. The flowers.

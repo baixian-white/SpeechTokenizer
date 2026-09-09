@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0037
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+IN THE SILENCE THEIR DARK FIRE KINDLED THE DUSK INTO A TAWNY GLOW
+
+Whisper(original):
+In the silence, their dark fire kindled the dusk into a tawny glow.
+
+Whisper(decoded):
+In the silence, their dark fire kindled the dusk into a tawny glow.

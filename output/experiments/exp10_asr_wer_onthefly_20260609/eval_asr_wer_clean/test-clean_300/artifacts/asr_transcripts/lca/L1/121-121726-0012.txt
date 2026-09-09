@@ -1,0 +1,12 @@
+# sample_id=121-121726-0012
+# model=lca
+# L=1
+
+GT:
+HUSSY WOMAN AND BOND TIE
+
+Whisper(original):
+Hussy, Woman, and Bond. Ty.
+
+Whisper(decoded):
+Hussy, woman and born, tie.

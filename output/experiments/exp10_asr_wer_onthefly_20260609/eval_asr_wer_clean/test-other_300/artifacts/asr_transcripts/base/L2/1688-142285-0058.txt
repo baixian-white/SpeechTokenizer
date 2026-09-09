@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0058
+# model=base
+# L=2
+
+GT:
+REMEMBER WHO GAVE IT YOU AND MADE IT WHAT IT IS
+
+Whisper(original):
+Remember who gave it to you and made it what it is.
+
+Whisper(decoded):
+Remember who gave it to you, the made of what it is.

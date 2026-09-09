@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0008
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+FOR BELIEVE ME THE FINAL PHILOSOPHY OF ART CAN ONLY RATIFY THEIR OPINION THAT THE BEAUTY OF A COCK ROBIN IS TO BE RED AND OF A GRASS PLOT TO BE GREEN AND THE BEST SKILL OF ART IS IN INSTANTLY SEIZING ON THE MANIFOLD DELICIOUSNESS OF LIGHT WHICH YOU CAN ONLY SEIZE BY PRECISION OF INSTANTANEOUS TOUCH
+
+Whisper(original):
+For, believe me, the final philosophy of art can only ratify their opinion that the beauty of a cock robin is to be red, and of a grass-plot to be green, and the best skill of art is an instantly seizing on the manifold deliciousness of light, which you can only seize by precision of instantaneous touch.
+
+Whisper(decoded):
+For, believe me, the final philosophy of Orp can only ground a fiber opinion where the gee of a cock robin is to be wed, and of a brass plot to be green. And the best still of Orp is an instantly seasoned and a manifold deliciousness of light. should only cease by a second of instantaneous touch.'

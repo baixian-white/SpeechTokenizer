@@ -1,0 +1,12 @@
+# sample_id=2414-128292-0001
+# model=base
+# L=1
+
+GT:
+MY SHADOW CALLETH ME
+
+Whisper(original):
+My shadow call with me.
+
+Whisper(decoded):
+My shadow quads me.

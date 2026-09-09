@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0022
+# model=base
+# L=2
+
+GT:
+HE STOOD STILL IN DEFERENCE TO THEIR CALLS AND PARRIED THEIR BANTER WITH EASY WORDS
+
+Whisper(original):
+He stood still in deference to their calls and parried their banter with easy words.
+
+Whisper(decoded):
+He stood still in deference to their calls and parried their banter with easy words.

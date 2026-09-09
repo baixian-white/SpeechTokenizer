@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0059
+# model=base
+# L=1
+# channel=substitution-high
+
+GT:
+NOW I'LL NOT HAVE MY WENCH PREACHED TO
+
+Whisper(original):
+No, I'll not have my wench preached to.
+
+Whisper(decoded):
+Now, I'll not have my wish peach too.

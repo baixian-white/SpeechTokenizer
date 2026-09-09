@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0006
+# model=lca
+# L=2
+
+GT:
+LET US RETRACE OUR STEPS AND EXAMINE AS WE GO WITH KEENER EYES
+
+Whisper(original):
+Let us retrace our steps and examine as we go with keener eyes.
+
+Whisper(decoded):
+Let us retrace our steps and examine as we go with keener eyes.

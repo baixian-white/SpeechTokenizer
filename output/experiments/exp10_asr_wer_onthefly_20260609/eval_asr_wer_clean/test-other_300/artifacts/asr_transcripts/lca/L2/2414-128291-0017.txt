@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0017
+# model=lca
+# L=2
+
+GT:
+THUS SPAKE THE PEACEFUL ONE AND PUFFED HIMSELF AND PERSPIRED WITH HIS WORDS SO THAT THE KINE WONDERED ANEW
+
+Whisper(original):
+Thus begged the peaceful one, and puffed himself, and perspired with his words. So then the kind wondered anew.
+
+Whisper(decoded):
+Just think that this will work, and both himself can proceed with the sports. Select a time for new value.

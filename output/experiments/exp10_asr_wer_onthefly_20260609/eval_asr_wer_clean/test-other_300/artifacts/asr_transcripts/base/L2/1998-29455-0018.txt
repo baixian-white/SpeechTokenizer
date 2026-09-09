@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0018
+# model=base
+# L=2
+
+GT:
+NO I NEVER SAID DICKIE ERE'S THE STEEVER
+
+Whisper(original):
+No, I never said to keep you. Yes, the steve.
+
+Whisper(decoded):
+No another satiki, yes to steger.

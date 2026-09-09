@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0027
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+HE CLASPED HIS HANDS ON THE DESK AND SAID
+
+Whisper(original):
+He clasped his hands on the desk and said,
+
+Whisper(decoded):
+He clasped his hands on the desk and spread.

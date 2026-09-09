@@ -1,0 +1,12 @@
+# sample_id=121-121726-0009
+# model=lca
+# L=3
+
+GT:
+HOTEL A PLACE WHERE A GUEST OFTEN GIVES UP GOOD DOLLARS FOR POOR QUARTERS
+
+Whisper(original):
+Hotel. A place where a guest often gives up good dollars for poor quarters.
+
+Whisper(decoded):
+Hotel. A place where a guest often gives up good dollars for poor quarters.

@@ -1,0 +1,6 @@
+variant,consistency_active,loss_consistency_max,lambda_consistency_max,full_mel_best,full_mel_last,last_dev_step
+V0,False,0.0,0.0,1.0975,1.173,32500
+V1,False,0.0,0.0,1.0133,1.0922,32500
+V2,False,0.0,0.0,0.9779,1.093,32500
+V3,False,0.0,0.0,0.9792,0.9792,32500
+V4,True,20.42857,0.5,0.9811,1.0564,32500

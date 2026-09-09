@@ -1,0 +1,12 @@
+# sample_id=121-127105-0003
+# model=lca
+# L=3
+
+GT:
+THERE WAS A UNANIMOUS GROAN AT THIS AND MUCH REPROACH AFTER WHICH IN HIS PREOCCUPIED WAY HE EXPLAINED
+
+Whisper(original):
+There was a unanimous groan at this, and much for approach, after which in his preoccupied way he explained.
+
+Whisper(decoded):
+There was a unanimous groan at this, and much for approach. After which in his preoccupied way he explained.

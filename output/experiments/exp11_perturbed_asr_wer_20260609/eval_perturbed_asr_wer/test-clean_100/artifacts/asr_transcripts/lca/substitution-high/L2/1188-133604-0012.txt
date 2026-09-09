@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0012
+# model=lca
+# L=2
+# channel=substitution-high
+
+GT:
+IT MAY BE THAT A GREAT COLORIST WILL USE HIS UTMOST FORCE OF COLOR AS A SINGER HIS FULL POWER OF VOICE BUT LOUD OR LOW THE VIRTUE IS IN BOTH CASES ALWAYS IN REFINEMENT NEVER IN LOUDNESS
+
+Whisper(original):
+It may be that a great colorless will use his utmost force of color as a singer his full power of voice. But loud or low, the virtue is in both cases always in refinement, never in loudness.
+
+Whisper(decoded):
+It may be that a great colorless will use his utmost force of color as a singer his full power of voice. But, loud or low, the virtue is in birth-case as always in the fine-new, never-in- loudness.

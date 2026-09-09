@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0012
+# model=base
+# L=2
+
+GT:
+THEN THE EUNUCH CRIED UPON THE PAGES SAYING TAKE HIM OFF THE ASS
+
+Whisper(original):
+Then the Unoch cried upon the pages, saying, Take him off the ass.
+
+Whisper(decoded):
+Then the UNOC cried upon your pages, saying, Take you off the ass!

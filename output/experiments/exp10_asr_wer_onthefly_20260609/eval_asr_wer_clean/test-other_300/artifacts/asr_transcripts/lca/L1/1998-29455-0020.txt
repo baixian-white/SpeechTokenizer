@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0020
+# model=lca
+# L=1
+
+GT:
+THEY WENT ON UP THE HILL AS HAPPY AS ANY ONE NEED WISH TO BE
+
+Whisper(original):
+They went on up the hill as happy as anyone needs wish to be.
+
+Whisper(decoded):
+They went on up there as soon as we wished to be.

@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0009
+# model=lca
+# L=3
+
+GT:
+HERE WE ARE SAID THE MAN
+
+Whisper(original):
+Here we are, sit them in.
+
+Whisper(decoded):
+Yeah, we offset them in.

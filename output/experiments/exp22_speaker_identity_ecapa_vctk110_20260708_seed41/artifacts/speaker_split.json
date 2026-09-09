@@ -1,0 +1,1328 @@
+{
+  "source": "data\\VCTK\\wav48_silence_trimmed",
+  "speaker_source": "vctk",
+  "enroll": {
+    "p225": [
+      "data\\VCTK\\wav48_silence_trimmed\\p225\\p225_014_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p225\\p225_174_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p225\\p225_329_mic1.flac"
+    ],
+    "p226": [
+      "data\\VCTK\\wav48_silence_trimmed\\p226\\p226_007_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p226\\p226_279_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p226\\p226_326_mic1.flac"
+    ],
+    "p227": [
+      "data\\VCTK\\wav48_silence_trimmed\\p227\\p227_222_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p227\\p227_349_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p227\\p227_365_mic1.flac"
+    ],
+    "p228": [
+      "data\\VCTK\\wav48_silence_trimmed\\p228\\p228_051_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p228\\p228_139_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p228\\p228_227_mic1.flac"
+    ],
+    "p229": [
+      "data\\VCTK\\wav48_silence_trimmed\\p229\\p229_060_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p229\\p229_072_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p229\\p229_110_mic1.flac"
+    ],
+    "p230": [
+      "data\\VCTK\\wav48_silence_trimmed\\p230\\p230_076_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p230\\p230_141_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p230\\p230_331_mic1.flac"
+    ],
+    "p231": [
+      "data\\VCTK\\wav48_silence_trimmed\\p231\\p231_041_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p231\\p231_089_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p231\\p231_466_mic1.flac"
+    ],
+    "p232": [
+      "data\\VCTK\\wav48_silence_trimmed\\p232\\p232_074_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p232\\p232_203_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p232\\p232_263_mic2.flac"
+    ],
+    "p233": [
+      "data\\VCTK\\wav48_silence_trimmed\\p233\\p233_161_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p233\\p233_179_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p233\\p233_249_mic1.flac"
+    ],
+    "p234": [
+      "data\\VCTK\\wav48_silence_trimmed\\p234\\p234_066_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p234\\p234_157_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p234\\p234_200_mic2.flac"
+    ],
+    "p236": [
+      "data\\VCTK\\wav48_silence_trimmed\\p236\\p236_140_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p236\\p236_269_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p236\\p236_438_mic1.flac"
+    ],
+    "p237": [
+      "data\\VCTK\\wav48_silence_trimmed\\p237\\p237_004_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p237\\p237_213_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p237\\p237_346_mic1.flac"
+    ],
+    "p238": [
+      "data\\VCTK\\wav48_silence_trimmed\\p238\\p238_104_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p238\\p238_105_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p238\\p238_192_mic2.flac"
+    ],
+    "p239": [
+      "data\\VCTK\\wav48_silence_trimmed\\p239\\p239_052_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p239\\p239_385_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p239\\p239_456_mic1.flac"
+    ],
+    "p240": [
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_193_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_201_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_364_mic2.flac"
+    ],
+    "p241": [
+      "data\\VCTK\\wav48_silence_trimmed\\p241\\p241_199_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p241\\p241_284_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p241\\p241_327_mic1.flac"
+    ],
+    "p243": [
+      "data\\VCTK\\wav48_silence_trimmed\\p243\\p243_053_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p243\\p243_073_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p243\\p243_152_mic2.flac"
+    ],
+    "p244": [
+      "data\\VCTK\\wav48_silence_trimmed\\p244\\p244_143_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p244\\p244_172_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p244\\p244_356_mic2.flac"
+    ],
+    "p245": [
+      "data\\VCTK\\wav48_silence_trimmed\\p245\\p245_079_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p245\\p245_204_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p245\\p245_296_mic1.flac"
+    ],
+    "p246": [
+      "data\\VCTK\\wav48_silence_trimmed\\p246\\p246_072_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p246\\p246_145_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p246\\p246_255_mic2.flac"
+    ],
+    "p247": [
+      "data\\VCTK\\wav48_silence_trimmed\\p247\\p247_300_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p247\\p247_309_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p247\\p247_349_mic1.flac"
+    ],
+    "p248": [
+      "data\\VCTK\\wav48_silence_trimmed\\p248\\p248_127_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p248\\p248_184_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p248\\p248_376_mic2.flac"
+    ],
+    "p249": [
+      "data\\VCTK\\wav48_silence_trimmed\\p249\\p249_074_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p249\\p249_103_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p249\\p249_350_mic2.flac"
+    ],
+    "p250": [
+      "data\\VCTK\\wav48_silence_trimmed\\p250\\p250_082_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p250\\p250_156_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p250\\p250_321_mic2.flac"
+    ],
+    "p251": [
+      "data\\VCTK\\wav48_silence_trimmed\\p251\\p251_046_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p251\\p251_159_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p251\\p251_205_mic1.flac"
+    ],
+    "p252": [
+      "data\\VCTK\\wav48_silence_trimmed\\p252\\p252_094_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p252\\p252_149_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p252\\p252_252_mic2.flac"
+    ],
+    "p253": [
+      "data\\VCTK\\wav48_silence_trimmed\\p253\\p253_288_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p253\\p253_289_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p253\\p253_301_mic2.flac"
+    ],
+    "p254": [
+      "data\\VCTK\\wav48_silence_trimmed\\p254\\p254_072_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p254\\p254_106_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p254\\p254_183_mic1.flac"
+    ],
+    "p255": [
+      "data\\VCTK\\wav48_silence_trimmed\\p255\\p255_029_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p255\\p255_074_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p255\\p255_110_mic1.flac"
+    ],
+    "p256": [
+      "data\\VCTK\\wav48_silence_trimmed\\p256\\p256_097_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p256\\p256_126_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p256\\p256_232_mic2.flac"
+    ],
+    "p257": [
+      "data\\VCTK\\wav48_silence_trimmed\\p257\\p257_328_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p257\\p257_381_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p257\\p257_427_mic1.flac"
+    ],
+    "p258": [
+      "data\\VCTK\\wav48_silence_trimmed\\p258\\p258_149_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p258\\p258_214_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p258\\p258_225_mic1.flac"
+    ],
+    "p259": [
+      "data\\VCTK\\wav48_silence_trimmed\\p259\\p259_055_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p259\\p259_328_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p259\\p259_472_mic1.flac"
+    ],
+    "p260": [
+      "data\\VCTK\\wav48_silence_trimmed\\p260\\p260_159_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p260\\p260_260_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p260\\p260_306_mic2.flac"
+    ],
+    "p261": [
+      "data\\VCTK\\wav48_silence_trimmed\\p261\\p261_206_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p261\\p261_335_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p261\\p261_445_mic1.flac"
+    ],
+    "p262": [
+      "data\\VCTK\\wav48_silence_trimmed\\p262\\p262_081_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p262\\p262_088_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p262\\p262_245_mic2.flac"
+    ],
+    "p263": [
+      "data\\VCTK\\wav48_silence_trimmed\\p263\\p263_153_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p263\\p263_214_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p263\\p263_271_mic2.flac"
+    ],
+    "p264": [
+      "data\\VCTK\\wav48_silence_trimmed\\p264\\p264_091_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p264\\p264_201_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p264\\p264_409_mic2.flac"
+    ],
+    "p265": [
+      "data\\VCTK\\wav48_silence_trimmed\\p265\\p265_095_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p265\\p265_159_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p265\\p265_198_mic2.flac"
+    ],
+    "p266": [
+      "data\\VCTK\\wav48_silence_trimmed\\p266\\p266_205_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p266\\p266_236_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p266\\p266_408_mic2.flac"
+    ],
+    "p267": [
+      "data\\VCTK\\wav48_silence_trimmed\\p267\\p267_078_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p267\\p267_079_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p267\\p267_125_mic1.flac"
+    ],
+    "p268": [
+      "data\\VCTK\\wav48_silence_trimmed\\p268\\p268_010_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p268\\p268_072_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p268\\p268_300_mic2.flac"
+    ],
+    "p269": [
+      "data\\VCTK\\wav48_silence_trimmed\\p269\\p269_048_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p269\\p269_079_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p269\\p269_272_mic1.flac"
+    ],
+    "p270": [
+      "data\\VCTK\\wav48_silence_trimmed\\p270\\p270_128_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p270\\p270_350_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p270\\p270_459_mic1.flac"
+    ],
+    "p271": [
+      "data\\VCTK\\wav48_silence_trimmed\\p271\\p271_074_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p271\\p271_205_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p271\\p271_223_mic1.flac"
+    ],
+    "p272": [
+      "data\\VCTK\\wav48_silence_trimmed\\p272\\p272_049_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p272\\p272_102_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p272\\p272_316_mic1.flac"
+    ],
+    "p273": [
+      "data\\VCTK\\wav48_silence_trimmed\\p273\\p273_057_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p273\\p273_166_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p273\\p273_410_mic2.flac"
+    ],
+    "p274": [
+      "data\\VCTK\\wav48_silence_trimmed\\p274\\p274_148_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p274\\p274_220_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p274\\p274_436_mic2.flac"
+    ],
+    "p275": [
+      "data\\VCTK\\wav48_silence_trimmed\\p275\\p275_016_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p275\\p275_179_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p275\\p275_297_mic2.flac"
+    ],
+    "p276": [
+      "data\\VCTK\\wav48_silence_trimmed\\p276\\p276_110_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p276\\p276_157_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p276\\p276_167_mic2.flac"
+    ],
+    "p277": [
+      "data\\VCTK\\wav48_silence_trimmed\\p277\\p277_003_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p277\\p277_105_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p277\\p277_324_mic1.flac"
+    ],
+    "p278": [
+      "data\\VCTK\\wav48_silence_trimmed\\p278\\p278_129_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p278\\p278_228_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p278\\p278_267_mic1.flac"
+    ],
+    "p279": [
+      "data\\VCTK\\wav48_silence_trimmed\\p279\\p279_003_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p279\\p279_040_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p279\\p279_117_mic2.flac"
+    ],
+    "p280": [
+      "data\\VCTK\\wav48_silence_trimmed\\p280\\p280_117_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p280\\p280_141_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p280\\p280_293_mic1.flac"
+    ],
+    "p281": [
+      "data\\VCTK\\wav48_silence_trimmed\\p281\\p281_140_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p281\\p281_212_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p281\\p281_242_mic1.flac"
+    ],
+    "p282": [
+      "data\\VCTK\\wav48_silence_trimmed\\p282\\p282_057_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p282\\p282_215_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p282\\p282_267_mic1.flac"
+    ],
+    "p283": [
+      "data\\VCTK\\wav48_silence_trimmed\\p283\\p283_038_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p283\\p283_259_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p283\\p283_352_mic1.flac"
+    ],
+    "p284": [
+      "data\\VCTK\\wav48_silence_trimmed\\p284\\p284_151_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p284\\p284_242_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p284\\p284_346_mic1.flac"
+    ],
+    "p285": [
+      "data\\VCTK\\wav48_silence_trimmed\\p285\\p285_120_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p285\\p285_200_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p285\\p285_393_mic1.flac"
+    ],
+    "p286": [
+      "data\\VCTK\\wav48_silence_trimmed\\p286\\p286_040_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p286\\p286_159_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p286\\p286_207_mic1.flac"
+    ],
+    "p287": [
+      "data\\VCTK\\wav48_silence_trimmed\\p287\\p287_128_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p287\\p287_133_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p287\\p287_242_mic2.flac"
+    ],
+    "p288": [
+      "data\\VCTK\\wav48_silence_trimmed\\p288\\p288_014_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p288\\p288_248_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p288\\p288_279_mic1.flac"
+    ],
+    "p292": [
+      "data\\VCTK\\wav48_silence_trimmed\\p292\\p292_068_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p292\\p292_249_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p292\\p292_407_mic1.flac"
+    ],
+    "p293": [
+      "data\\VCTK\\wav48_silence_trimmed\\p293\\p293_051_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p293\\p293_077_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p293\\p293_384_mic1.flac"
+    ],
+    "p294": [
+      "data\\VCTK\\wav48_silence_trimmed\\p294\\p294_035_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p294\\p294_122_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p294\\p294_298_mic2.flac"
+    ],
+    "p295": [
+      "data\\VCTK\\wav48_silence_trimmed\\p295\\p295_040_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p295\\p295_121_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p295\\p295_391_mic2.flac"
+    ],
+    "p297": [
+      "data\\VCTK\\wav48_silence_trimmed\\p297\\p297_115_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p297\\p297_280_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p297\\p297_387_mic2.flac"
+    ],
+    "p298": [
+      "data\\VCTK\\wav48_silence_trimmed\\p298\\p298_079_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p298\\p298_226_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p298\\p298_233_mic1.flac"
+    ],
+    "p299": [
+      "data\\VCTK\\wav48_silence_trimmed\\p299\\p299_085_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p299\\p299_097_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p299\\p299_131_mic1.flac"
+    ],
+    "p300": [
+      "data\\VCTK\\wav48_silence_trimmed\\p300\\p300_193_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p300\\p300_327_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p300\\p300_362_mic1.flac"
+    ],
+    "p301": [
+      "data\\VCTK\\wav48_silence_trimmed\\p301\\p301_196_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p301\\p301_303_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p301\\p301_395_mic2.flac"
+    ],
+    "p302": [
+      "data\\VCTK\\wav48_silence_trimmed\\p302\\p302_111_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p302\\p302_154_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p302\\p302_316_mic2.flac"
+    ],
+    "p303": [
+      "data\\VCTK\\wav48_silence_trimmed\\p303\\p303_010_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p303\\p303_069_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p303\\p303_295_mic1.flac"
+    ],
+    "p304": [
+      "data\\VCTK\\wav48_silence_trimmed\\p304\\p304_028_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p304\\p304_061_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p304\\p304_340_mic1.flac"
+    ],
+    "p305": [
+      "data\\VCTK\\wav48_silence_trimmed\\p305\\p305_105_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p305\\p305_233_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p305\\p305_323_mic1.flac"
+    ],
+    "p306": [
+      "data\\VCTK\\wav48_silence_trimmed\\p306\\p306_062_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p306\\p306_110_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p306\\p306_135_mic2.flac"
+    ],
+    "p307": [
+      "data\\VCTK\\wav48_silence_trimmed\\p307\\p307_063_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p307\\p307_168_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p307\\p307_250_mic1.flac"
+    ],
+    "p308": [
+      "data\\VCTK\\wav48_silence_trimmed\\p308\\p308_025_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p308\\p308_217_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p308\\p308_239_mic1.flac"
+    ],
+    "p310": [
+      "data\\VCTK\\wav48_silence_trimmed\\p310\\p310_222_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p310\\p310_395_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p310\\p310_422_mic1.flac"
+    ],
+    "p311": [
+      "data\\VCTK\\wav48_silence_trimmed\\p311\\p311_180_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p311\\p311_408_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p311\\p311_417_mic1.flac"
+    ],
+    "p312": [
+      "data\\VCTK\\wav48_silence_trimmed\\p312\\p312_073_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p312\\p312_128_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p312\\p312_305_mic2.flac"
+    ],
+    "p313": [
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_085_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_147_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_378_mic2.flac"
+    ],
+    "p314": [
+      "data\\VCTK\\wav48_silence_trimmed\\p314\\p314_032_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p314\\p314_211_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p314\\p314_419_mic2.flac"
+    ],
+    "p315": [
+      "data\\VCTK\\wav48_silence_trimmed\\p315\\p315_005_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p315\\p315_105_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p315\\p315_380_mic1.flac"
+    ],
+    "p316": [
+      "data\\VCTK\\wav48_silence_trimmed\\p316\\p316_006_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p316\\p316_039_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p316\\p316_417_mic2.flac"
+    ],
+    "p317": [
+      "data\\VCTK\\wav48_silence_trimmed\\p317\\p317_207_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p317\\p317_262_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p317\\p317_279_mic2.flac"
+    ],
+    "p318": [
+      "data\\VCTK\\wav48_silence_trimmed\\p318\\p318_032_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p318\\p318_177_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p318\\p318_302_mic2.flac"
+    ],
+    "p323": [
+      "data\\VCTK\\wav48_silence_trimmed\\p323\\p323_084_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p323\\p323_325_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p323\\p323_413_mic2.flac"
+    ],
+    "p326": [
+      "data\\VCTK\\wav48_silence_trimmed\\p326\\p326_019_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p326\\p326_022_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p326\\p326_107_mic1.flac"
+    ],
+    "p329": [
+      "data\\VCTK\\wav48_silence_trimmed\\p329\\p329_079_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p329\\p329_333_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p329\\p329_402_mic2.flac"
+    ],
+    "p330": [
+      "data\\VCTK\\wav48_silence_trimmed\\p330\\p330_017_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p330\\p330_368_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p330\\p330_396_mic2.flac"
+    ],
+    "p333": [
+      "data\\VCTK\\wav48_silence_trimmed\\p333\\p333_073_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p333\\p333_309_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p333\\p333_410_mic1.flac"
+    ],
+    "p334": [
+      "data\\VCTK\\wav48_silence_trimmed\\p334\\p334_202_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p334\\p334_360_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p334\\p334_384_mic1.flac"
+    ],
+    "p335": [
+      "data\\VCTK\\wav48_silence_trimmed\\p335\\p335_025_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p335\\p335_032_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p335\\p335_035_mic2.flac"
+    ],
+    "p336": [
+      "data\\VCTK\\wav48_silence_trimmed\\p336\\p336_061_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p336\\p336_200_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p336\\p336_355_mic2.flac"
+    ],
+    "p339": [
+      "data\\VCTK\\wav48_silence_trimmed\\p339\\p339_002_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p339\\p339_076_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p339\\p339_360_mic1.flac"
+    ],
+    "p340": [
+      "data\\VCTK\\wav48_silence_trimmed\\p340\\p340_043_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p340\\p340_278_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p340\\p340_387_mic2.flac"
+    ],
+    "p341": [
+      "data\\VCTK\\wav48_silence_trimmed\\p341\\p341_114_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p341\\p341_269_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p341\\p341_296_mic1.flac"
+    ],
+    "p343": [
+      "data\\VCTK\\wav48_silence_trimmed\\p343\\p343_051_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p343\\p343_100_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p343\\p343_191_mic2.flac"
+    ],
+    "p345": [
+      "data\\VCTK\\wav48_silence_trimmed\\p345\\p345_030_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p345\\p345_198_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p345\\p345_353_mic1.flac"
+    ],
+    "p347": [
+      "data\\VCTK\\wav48_silence_trimmed\\p347\\p347_202_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p347\\p347_252_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p347\\p347_348_mic2.flac"
+    ],
+    "p351": [
+      "data\\VCTK\\wav48_silence_trimmed\\p351\\p351_037_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p351\\p351_342_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p351\\p351_390_mic1.flac"
+    ],
+    "p360": [
+      "data\\VCTK\\wav48_silence_trimmed\\p360\\p360_084_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p360\\p360_112_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p360\\p360_203_mic2.flac"
+    ],
+    "p361": [
+      "data\\VCTK\\wav48_silence_trimmed\\p361\\p361_151_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p361\\p361_269_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p361\\p361_269_mic2.flac"
+    ],
+    "p362": [
+      "data\\VCTK\\wav48_silence_trimmed\\p362\\p362_195_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p362\\p362_198_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p362\\p362_255_mic1.flac"
+    ],
+    "p363": [
+      "data\\VCTK\\wav48_silence_trimmed\\p363\\p363_013_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p363\\p363_074_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p363\\p363_380_mic1.flac"
+    ],
+    "p364": [
+      "data\\VCTK\\wav48_silence_trimmed\\p364\\p364_032_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p364\\p364_043_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p364\\p364_227_mic2.flac"
+    ],
+    "p374": [
+      "data\\VCTK\\wav48_silence_trimmed\\p374\\p374_169_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p374\\p374_258_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p374\\p374_303_mic1.flac"
+    ],
+    "p376": [
+      "data\\VCTK\\wav48_silence_trimmed\\p376\\p376_023_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p376\\p376_135_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p376\\p376_369_mic1.flac"
+    ],
+    "s5": [
+      "data\\VCTK\\wav48_silence_trimmed\\s5\\s5_096_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\s5\\s5_110_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\s5\\s5_170_mic2.flac"
+    ]
+  },
+  "test": {
+    "p225": [
+      "data\\VCTK\\wav48_silence_trimmed\\p225\\p225_007_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p225\\p225_064_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p225\\p225_131_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p225\\p225_173_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p225\\p225_305_mic2.flac"
+    ],
+    "p226": [
+      "data\\VCTK\\wav48_silence_trimmed\\p226\\p226_057_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p226\\p226_174_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p226\\p226_198_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p226\\p226_298_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p226\\p226_331_mic2.flac"
+    ],
+    "p227": [
+      "data\\VCTK\\wav48_silence_trimmed\\p227\\p227_181_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p227\\p227_186_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p227\\p227_305_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p227\\p227_351_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p227\\p227_360_mic1.flac"
+    ],
+    "p228": [
+      "data\\VCTK\\wav48_silence_trimmed\\p228\\p228_159_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p228\\p228_225_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p228\\p228_244_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p228\\p228_300_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p228\\p228_344_mic1.flac"
+    ],
+    "p229": [
+      "data\\VCTK\\wav48_silence_trimmed\\p229\\p229_019_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p229\\p229_066_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p229\\p229_089_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p229\\p229_251_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p229\\p229_352_mic1.flac"
+    ],
+    "p230": [
+      "data\\VCTK\\wav48_silence_trimmed\\p230\\p230_053_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p230\\p230_113_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p230\\p230_174_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p230\\p230_296_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p230\\p230_377_mic1.flac"
+    ],
+    "p231": [
+      "data\\VCTK\\wav48_silence_trimmed\\p231\\p231_140_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p231\\p231_193_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p231\\p231_288_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p231\\p231_379_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p231\\p231_381_mic2.flac"
+    ],
+    "p232": [
+      "data\\VCTK\\wav48_silence_trimmed\\p232\\p232_151_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p232\\p232_298_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p232\\p232_386_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p232\\p232_399_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p232\\p232_406_mic1.flac"
+    ],
+    "p233": [
+      "data\\VCTK\\wav48_silence_trimmed\\p233\\p233_046_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p233\\p233_184_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p233\\p233_255_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p233\\p233_332_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p233\\p233_386_mic1.flac"
+    ],
+    "p234": [
+      "data\\VCTK\\wav48_silence_trimmed\\p234\\p234_090_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p234\\p234_132_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p234\\p234_204_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p234\\p234_205_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p234\\p234_360_mic2.flac"
+    ],
+    "p236": [
+      "data\\VCTK\\wav48_silence_trimmed\\p236\\p236_023_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p236\\p236_197_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p236\\p236_341_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p236\\p236_451_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p236\\p236_492_mic1.flac"
+    ],
+    "p237": [
+      "data\\VCTK\\wav48_silence_trimmed\\p237\\p237_124_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p237\\p237_253_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p237\\p237_280_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p237\\p237_283_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p237\\p237_320_mic2.flac"
+    ],
+    "p238": [
+      "data\\VCTK\\wav48_silence_trimmed\\p238\\p238_093_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p238\\p238_169_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p238\\p238_244_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p238\\p238_252_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p238\\p238_314_mic1.flac"
+    ],
+    "p239": [
+      "data\\VCTK\\wav48_silence_trimmed\\p239\\p239_024_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p239\\p239_194_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p239\\p239_225_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p239\\p239_393_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p239\\p239_437_mic2.flac"
+    ],
+    "p240": [
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_058_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_093_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_204_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_225_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p240\\p240_366_mic2.flac"
+    ],
+    "p241": [
+      "data\\VCTK\\wav48_silence_trimmed\\p241\\p241_071_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p241\\p241_144_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p241\\p241_250_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p241\\p241_272_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p241\\p241_319_mic2.flac"
+    ],
+    "p243": [
+      "data\\VCTK\\wav48_silence_trimmed\\p243\\p243_018_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p243\\p243_131_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p243\\p243_149_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p243\\p243_221_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p243\\p243_361_mic1.flac"
+    ],
+    "p244": [
+      "data\\VCTK\\wav48_silence_trimmed\\p244\\p244_122_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p244\\p244_230_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p244\\p244_246_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p244\\p244_295_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p244\\p244_301_mic1.flac"
+    ],
+    "p245": [
+      "data\\VCTK\\wav48_silence_trimmed\\p245\\p245_070_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p245\\p245_072_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p245\\p245_177_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p245\\p245_209_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p245\\p245_343_mic1.flac"
+    ],
+    "p246": [
+      "data\\VCTK\\wav48_silence_trimmed\\p246\\p246_047_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p246\\p246_098_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p246\\p246_161_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p246\\p246_187_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p246\\p246_208_mic1.flac"
+    ],
+    "p247": [
+      "data\\VCTK\\wav48_silence_trimmed\\p247\\p247_012_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p247\\p247_129_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p247\\p247_141_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p247\\p247_203_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p247\\p247_353_mic1.flac"
+    ],
+    "p248": [
+      "data\\VCTK\\wav48_silence_trimmed\\p248\\p248_036_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p248\\p248_100_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p248\\p248_199_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p248\\p248_212_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p248\\p248_221_mic2.flac"
+    ],
+    "p249": [
+      "data\\VCTK\\wav48_silence_trimmed\\p249\\p249_039_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p249\\p249_052_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p249\\p249_104_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p249\\p249_161_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p249\\p249_345_mic2.flac"
+    ],
+    "p250": [
+      "data\\VCTK\\wav48_silence_trimmed\\p250\\p250_071_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p250\\p250_221_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p250\\p250_273_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p250\\p250_434_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p250\\p250_453_mic2.flac"
+    ],
+    "p251": [
+      "data\\VCTK\\wav48_silence_trimmed\\p251\\p251_065_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p251\\p251_097_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p251\\p251_117_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p251\\p251_244_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p251\\p251_350_mic1.flac"
+    ],
+    "p252": [
+      "data\\VCTK\\wav48_silence_trimmed\\p252\\p252_094_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p252\\p252_098_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p252\\p252_281_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p252\\p252_338_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p252\\p252_348_mic1.flac"
+    ],
+    "p253": [
+      "data\\VCTK\\wav48_silence_trimmed\\p253\\p253_035_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p253\\p253_072_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p253\\p253_188_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p253\\p253_214_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p253\\p253_217_mic1.flac"
+    ],
+    "p254": [
+      "data\\VCTK\\wav48_silence_trimmed\\p254\\p254_026_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p254\\p254_091_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p254\\p254_096_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p254\\p254_198_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p254\\p254_243_mic1.flac"
+    ],
+    "p255": [
+      "data\\VCTK\\wav48_silence_trimmed\\p255\\p255_199_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p255\\p255_232_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p255\\p255_303_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p255\\p255_362_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p255\\p255_366_mic1.flac"
+    ],
+    "p256": [
+      "data\\VCTK\\wav48_silence_trimmed\\p256\\p256_046_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p256\\p256_065_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p256\\p256_213_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p256\\p256_240_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p256\\p256_288_mic1.flac"
+    ],
+    "p257": [
+      "data\\VCTK\\wav48_silence_trimmed\\p257\\p257_115_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p257\\p257_200_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p257\\p257_289_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p257\\p257_299_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p257\\p257_310_mic1.flac"
+    ],
+    "p258": [
+      "data\\VCTK\\wav48_silence_trimmed\\p258\\p258_037_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p258\\p258_049_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p258\\p258_105_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p258\\p258_247_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p258\\p258_289_mic2.flac"
+    ],
+    "p259": [
+      "data\\VCTK\\wav48_silence_trimmed\\p259\\p259_009_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p259\\p259_135_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p259\\p259_300_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p259\\p259_346_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p259\\p259_437_mic1.flac"
+    ],
+    "p260": [
+      "data\\VCTK\\wav48_silence_trimmed\\p260\\p260_011_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p260\\p260_025_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p260\\p260_037_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p260\\p260_061_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p260\\p260_337_mic2.flac"
+    ],
+    "p261": [
+      "data\\VCTK\\wav48_silence_trimmed\\p261\\p261_111_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p261\\p261_135_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p261\\p261_151_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p261\\p261_225_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p261\\p261_372_mic2.flac"
+    ],
+    "p262": [
+      "data\\VCTK\\wav48_silence_trimmed\\p262\\p262_132_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p262\\p262_154_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p262\\p262_237_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p262\\p262_310_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p262\\p262_343_mic2.flac"
+    ],
+    "p263": [
+      "data\\VCTK\\wav48_silence_trimmed\\p263\\p263_246_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p263\\p263_294_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p263\\p263_316_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p263\\p263_404_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p263\\p263_442_mic2.flac"
+    ],
+    "p264": [
+      "data\\VCTK\\wav48_silence_trimmed\\p264\\p264_030_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p264\\p264_263_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p264\\p264_368_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p264\\p264_419_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p264\\p264_488_mic1.flac"
+    ],
+    "p265": [
+      "data\\VCTK\\wav48_silence_trimmed\\p265\\p265_035_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p265\\p265_056_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p265\\p265_117_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p265\\p265_129_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p265\\p265_192_mic1.flac"
+    ],
+    "p266": [
+      "data\\VCTK\\wav48_silence_trimmed\\p266\\p266_018_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p266\\p266_027_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p266\\p266_222_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p266\\p266_268_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p266\\p266_301_mic1.flac"
+    ],
+    "p267": [
+      "data\\VCTK\\wav48_silence_trimmed\\p267\\p267_049_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p267\\p267_087_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p267\\p267_123_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p267\\p267_413_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p267\\p267_419_mic2.flac"
+    ],
+    "p268": [
+      "data\\VCTK\\wav48_silence_trimmed\\p268\\p268_030_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p268\\p268_203_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p268\\p268_204_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p268\\p268_348_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p268\\p268_386_mic2.flac"
+    ],
+    "p269": [
+      "data\\VCTK\\wav48_silence_trimmed\\p269\\p269_006_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p269\\p269_013_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p269\\p269_154_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p269\\p269_258_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p269\\p269_310_mic1.flac"
+    ],
+    "p270": [
+      "data\\VCTK\\wav48_silence_trimmed\\p270\\p270_153_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p270\\p270_160_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p270\\p270_253_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p270\\p270_327_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p270\\p270_387_mic1.flac"
+    ],
+    "p271": [
+      "data\\VCTK\\wav48_silence_trimmed\\p271\\p271_063_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p271\\p271_190_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p271\\p271_251_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p271\\p271_385_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p271\\p271_423_mic1.flac"
+    ],
+    "p272": [
+      "data\\VCTK\\wav48_silence_trimmed\\p272\\p272_187_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p272\\p272_191_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p272\\p272_219_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p272\\p272_251_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p272\\p272_306_mic1.flac"
+    ],
+    "p273": [
+      "data\\VCTK\\wav48_silence_trimmed\\p273\\p273_151_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p273\\p273_179_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p273\\p273_228_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p273\\p273_373_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p273\\p273_399_mic1.flac"
+    ],
+    "p274": [
+      "data\\VCTK\\wav48_silence_trimmed\\p274\\p274_059_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p274\\p274_181_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p274\\p274_215_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p274\\p274_236_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p274\\p274_382_mic2.flac"
+    ],
+    "p275": [
+      "data\\VCTK\\wav48_silence_trimmed\\p275\\p275_011_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p275\\p275_037_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p275\\p275_054_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p275\\p275_274_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p275\\p275_275_mic2.flac"
+    ],
+    "p276": [
+      "data\\VCTK\\wav48_silence_trimmed\\p276\\p276_046_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p276\\p276_122_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p276\\p276_243_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p276\\p276_322_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p276\\p276_411_mic2.flac"
+    ],
+    "p277": [
+      "data\\VCTK\\wav48_silence_trimmed\\p277\\p277_131_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p277\\p277_135_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p277\\p277_174_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p277\\p277_321_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p277\\p277_333_mic2.flac"
+    ],
+    "p278": [
+      "data\\VCTK\\wav48_silence_trimmed\\p278\\p278_160_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p278\\p278_212_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p278\\p278_214_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p278\\p278_313_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p278\\p278_317_mic1.flac"
+    ],
+    "p279": [
+      "data\\VCTK\\wav48_silence_trimmed\\p279\\p279_137_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p279\\p279_150_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p279\\p279_162_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p279\\p279_190_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p279\\p279_256_mic2.flac"
+    ],
+    "p280": [
+      "data\\VCTK\\wav48_silence_trimmed\\p280\\p280_067_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p280\\p280_171_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p280\\p280_222_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p280\\p280_223_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p280\\p280_389_mic1.flac"
+    ],
+    "p281": [
+      "data\\VCTK\\wav48_silence_trimmed\\p281\\p281_192_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p281\\p281_239_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p281\\p281_247_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p281\\p281_255_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p281\\p281_316_mic1.flac"
+    ],
+    "p282": [
+      "data\\VCTK\\wav48_silence_trimmed\\p282\\p282_013_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p282\\p282_027_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p282\\p282_035_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p282\\p282_104_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p282\\p282_228_mic2.flac"
+    ],
+    "p283": [
+      "data\\VCTK\\wav48_silence_trimmed\\p283\\p283_010_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p283\\p283_057_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p283\\p283_158_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p283\\p283_271_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p283\\p283_406_mic1.flac"
+    ],
+    "p284": [
+      "data\\VCTK\\wav48_silence_trimmed\\p284\\p284_205_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p284\\p284_208_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p284\\p284_272_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p284\\p284_373_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p284\\p284_414_mic2.flac"
+    ],
+    "p285": [
+      "data\\VCTK\\wav48_silence_trimmed\\p285\\p285_072_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p285\\p285_112_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p285\\p285_115_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p285\\p285_167_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p285\\p285_192_mic2.flac"
+    ],
+    "p286": [
+      "data\\VCTK\\wav48_silence_trimmed\\p286\\p286_108_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p286\\p286_126_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p286\\p286_142_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p286\\p286_452_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p286\\p286_461_mic2.flac"
+    ],
+    "p287": [
+      "data\\VCTK\\wav48_silence_trimmed\\p287\\p287_034_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p287\\p287_161_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p287\\p287_172_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p287\\p287_202_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p287\\p287_295_mic2.flac"
+    ],
+    "p288": [
+      "data\\VCTK\\wav48_silence_trimmed\\p288\\p288_040_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p288\\p288_054_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p288\\p288_141_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p288\\p288_163_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p288\\p288_387_mic2.flac"
+    ],
+    "p292": [
+      "data\\VCTK\\wav48_silence_trimmed\\p292\\p292_091_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p292\\p292_246_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p292\\p292_272_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p292\\p292_308_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p292\\p292_416_mic1.flac"
+    ],
+    "p293": [
+      "data\\VCTK\\wav48_silence_trimmed\\p293\\p293_025_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p293\\p293_036_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p293\\p293_053_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p293\\p293_237_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p293\\p293_337_mic2.flac"
+    ],
+    "p294": [
+      "data\\VCTK\\wav48_silence_trimmed\\p294\\p294_022_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p294\\p294_061_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p294\\p294_365_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p294\\p294_415_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p294\\p294_422_mic1.flac"
+    ],
+    "p295": [
+      "data\\VCTK\\wav48_silence_trimmed\\p295\\p295_057_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p295\\p295_104_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p295\\p295_164_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p295\\p295_168_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p295\\p295_189_mic2.flac"
+    ],
+    "p297": [
+      "data\\VCTK\\wav48_silence_trimmed\\p297\\p297_118_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p297\\p297_128_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p297\\p297_213_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p297\\p297_230_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p297\\p297_275_mic2.flac"
+    ],
+    "p298": [
+      "data\\VCTK\\wav48_silence_trimmed\\p298\\p298_115_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p298\\p298_161_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p298\\p298_273_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p298\\p298_306_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p298\\p298_382_mic1.flac"
+    ],
+    "p299": [
+      "data\\VCTK\\wav48_silence_trimmed\\p299\\p299_117_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p299\\p299_136_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p299\\p299_267_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p299\\p299_290_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p299\\p299_395_mic1.flac"
+    ],
+    "p300": [
+      "data\\VCTK\\wav48_silence_trimmed\\p300\\p300_105_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p300\\p300_150_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p300\\p300_250_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p300\\p300_273_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p300\\p300_363_mic1.flac"
+    ],
+    "p301": [
+      "data\\VCTK\\wav48_silence_trimmed\\p301\\p301_230_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p301\\p301_294_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p301\\p301_309_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p301\\p301_318_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p301\\p301_397_mic1.flac"
+    ],
+    "p302": [
+      "data\\VCTK\\wav48_silence_trimmed\\p302\\p302_004_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p302\\p302_038_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p302\\p302_066_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p302\\p302_088_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p302\\p302_172_mic1.flac"
+    ],
+    "p303": [
+      "data\\VCTK\\wav48_silence_trimmed\\p303\\p303_097_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p303\\p303_134_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p303\\p303_241_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p303\\p303_317_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p303\\p303_318_mic2.flac"
+    ],
+    "p304": [
+      "data\\VCTK\\wav48_silence_trimmed\\p304\\p304_052_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p304\\p304_060_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p304\\p304_103_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p304\\p304_264_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p304\\p304_347_mic1.flac"
+    ],
+    "p305": [
+      "data\\VCTK\\wav48_silence_trimmed\\p305\\p305_097_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p305\\p305_181_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p305\\p305_210_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p305\\p305_323_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p305\\p305_372_mic2.flac"
+    ],
+    "p306": [
+      "data\\VCTK\\wav48_silence_trimmed\\p306\\p306_002_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p306\\p306_143_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p306\\p306_255_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p306\\p306_258_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p306\\p306_342_mic1.flac"
+    ],
+    "p307": [
+      "data\\VCTK\\wav48_silence_trimmed\\p307\\p307_151_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p307\\p307_203_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p307\\p307_252_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p307\\p307_321_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p307\\p307_344_mic2.flac"
+    ],
+    "p308": [
+      "data\\VCTK\\wav48_silence_trimmed\\p308\\p308_208_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p308\\p308_327_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p308\\p308_351_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p308\\p308_375_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p308\\p308_380_mic2.flac"
+    ],
+    "p310": [
+      "data\\VCTK\\wav48_silence_trimmed\\p310\\p310_077_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p310\\p310_144_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p310\\p310_195_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p310\\p310_332_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p310\\p310_345_mic2.flac"
+    ],
+    "p311": [
+      "data\\VCTK\\wav48_silence_trimmed\\p311\\p311_097_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p311\\p311_103_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p311\\p311_110_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p311\\p311_214_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p311\\p311_324_mic1.flac"
+    ],
+    "p312": [
+      "data\\VCTK\\wav48_silence_trimmed\\p312\\p312_019_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p312\\p312_026_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p312\\p312_059_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p312\\p312_132_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p312\\p312_383_mic1.flac"
+    ],
+    "p313": [
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_008_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_040_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_248_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_379_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p313\\p313_405_mic2.flac"
+    ],
+    "p314": [
+      "data\\VCTK\\wav48_silence_trimmed\\p314\\p314_063_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p314\\p314_181_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p314\\p314_275_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p314\\p314_321_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p314\\p314_335_mic2.flac"
+    ],
+    "p315": [
+      "data\\VCTK\\wav48_silence_trimmed\\p315\\p315_171_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p315\\p315_241_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p315\\p315_260_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p315\\p315_265_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p315\\p315_266_mic1.flac"
+    ],
+    "p316": [
+      "data\\VCTK\\wav48_silence_trimmed\\p316\\p316_022_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p316\\p316_181_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p316\\p316_195_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p316\\p316_321_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p316\\p316_403_mic2.flac"
+    ],
+    "p317": [
+      "data\\VCTK\\wav48_silence_trimmed\\p317\\p317_103_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p317\\p317_200_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p317\\p317_265_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p317\\p317_267_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p317\\p317_311_mic1.flac"
+    ],
+    "p318": [
+      "data\\VCTK\\wav48_silence_trimmed\\p318\\p318_077_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p318\\p318_100_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p318\\p318_133_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p318\\p318_364_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p318\\p318_397_mic2.flac"
+    ],
+    "p323": [
+      "data\\VCTK\\wav48_silence_trimmed\\p323\\p323_001_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p323\\p323_046_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p323\\p323_215_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p323\\p323_270_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p323\\p323_363_mic1.flac"
+    ],
+    "p326": [
+      "data\\VCTK\\wav48_silence_trimmed\\p326\\p326_044_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p326\\p326_086_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p326\\p326_093_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p326\\p326_170_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p326\\p326_268_mic2.flac"
+    ],
+    "p329": [
+      "data\\VCTK\\wav48_silence_trimmed\\p329\\p329_209_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p329\\p329_346_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p329\\p329_354_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p329\\p329_393_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p329\\p329_410_mic1.flac"
+    ],
+    "p330": [
+      "data\\VCTK\\wav48_silence_trimmed\\p330\\p330_010_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p330\\p330_079_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p330\\p330_161_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p330\\p330_375_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p330\\p330_423_mic2.flac"
+    ],
+    "p333": [
+      "data\\VCTK\\wav48_silence_trimmed\\p333\\p333_027_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p333\\p333_031_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p333\\p333_113_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p333\\p333_296_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p333\\p333_345_mic1.flac"
+    ],
+    "p334": [
+      "data\\VCTK\\wav48_silence_trimmed\\p334\\p334_046_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p334\\p334_092_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p334\\p334_112_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p334\\p334_260_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p334\\p334_391_mic2.flac"
+    ],
+    "p335": [
+      "data\\VCTK\\wav48_silence_trimmed\\p335\\p335_004_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p335\\p335_281_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p335\\p335_301_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p335\\p335_326_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p335\\p335_363_mic2.flac"
+    ],
+    "p336": [
+      "data\\VCTK\\wav48_silence_trimmed\\p336\\p336_066_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p336\\p336_109_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p336\\p336_208_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p336\\p336_309_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p336\\p336_404_mic1.flac"
+    ],
+    "p339": [
+      "data\\VCTK\\wav48_silence_trimmed\\p339\\p339_091_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p339\\p339_151_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p339\\p339_183_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p339\\p339_345_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p339\\p339_366_mic1.flac"
+    ],
+    "p340": [
+      "data\\VCTK\\wav48_silence_trimmed\\p340\\p340_012_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p340\\p340_251_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p340\\p340_260_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p340\\p340_292_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p340\\p340_411_mic2.flac"
+    ],
+    "p341": [
+      "data\\VCTK\\wav48_silence_trimmed\\p341\\p341_032_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p341\\p341_046_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p341\\p341_064_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p341\\p341_247_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p341\\p341_250_mic2.flac"
+    ],
+    "p343": [
+      "data\\VCTK\\wav48_silence_trimmed\\p343\\p343_128_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p343\\p343_213_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p343\\p343_227_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p343\\p343_242_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p343\\p343_325_mic1.flac"
+    ],
+    "p345": [
+      "data\\VCTK\\wav48_silence_trimmed\\p345\\p345_005_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p345\\p345_101_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p345\\p345_138_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p345\\p345_218_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p345\\p345_276_mic1.flac"
+    ],
+    "p347": [
+      "data\\VCTK\\wav48_silence_trimmed\\p347\\p347_009_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p347\\p347_103_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p347\\p347_114_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p347\\p347_123_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p347\\p347_208_mic1.flac"
+    ],
+    "p351": [
+      "data\\VCTK\\wav48_silence_trimmed\\p351\\p351_135_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p351\\p351_155_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p351\\p351_244_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p351\\p351_320_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p351\\p351_398_mic1.flac"
+    ],
+    "p360": [
+      "data\\VCTK\\wav48_silence_trimmed\\p360\\p360_051_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p360\\p360_141_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p360\\p360_160_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p360\\p360_204_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p360\\p360_327_mic2.flac"
+    ],
+    "p361": [
+      "data\\VCTK\\wav48_silence_trimmed\\p361\\p361_024_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p361\\p361_079_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p361\\p361_179_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p361\\p361_248_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p361\\p361_365_mic2.flac"
+    ],
+    "p362": [
+      "data\\VCTK\\wav48_silence_trimmed\\p362\\p362_054_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p362\\p362_114_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p362\\p362_154_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p362\\p362_337_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p362\\p362_390_mic1.flac"
+    ],
+    "p363": [
+      "data\\VCTK\\wav48_silence_trimmed\\p363\\p363_200_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p363\\p363_223_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p363\\p363_254_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p363\\p363_329_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p363\\p363_333_mic1.flac"
+    ],
+    "p364": [
+      "data\\VCTK\\wav48_silence_trimmed\\p364\\p364_089_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p364\\p364_116_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p364\\p364_264_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p364\\p364_279_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p364\\p364_283_mic1.flac"
+    ],
+    "p374": [
+      "data\\VCTK\\wav48_silence_trimmed\\p374\\p374_009_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p374\\p374_111_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p374\\p374_278_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p374\\p374_345_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p374\\p374_423_mic2.flac"
+    ],
+    "p376": [
+      "data\\VCTK\\wav48_silence_trimmed\\p376\\p376_001_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p376\\p376_065_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p376\\p376_103_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p376\\p376_205_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\p376\\p376_417_mic1.flac"
+    ],
+    "s5": [
+      "data\\VCTK\\wav48_silence_trimmed\\s5\\s5_001_mic1.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\s5\\s5_018_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\s5\\s5_230_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\s5\\s5_292_mic2.flac",
+      "data\\VCTK\\wav48_silence_trimmed\\s5\\s5_296_mic1.flac"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+# sample_id=1221-135766-0013
+# model=lca
+# L=1
+
+GT:
+PEARL WAS A BORN OUTCAST OF THE INFANTILE WORLD
+
+Whisper(original):
+Pearl was a born outcast of the infantile world.
+
+Whisper(decoded):
+Pearl was a blown out test of the infantile world.

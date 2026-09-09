@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0016
+# model=base
+# L=2
+
+GT:
+AIN'T BAD WHEN SHE'S IN A GOOD TEMPER
+
+Whisper(original):
+and bad when she's in a good temper.
+
+Whisper(decoded):
+And bad when she's out of her temper.

@@ -1,0 +1,12 @@
+# sample_id=2414-128292-0003
+# model=lca
+# L=1
+
+GT:
+LET IT RUN AFTER ME I RUN AWAY FROM IT
+
+Whisper(original):
+Let it run after me. I run away from it.
+
+Whisper(decoded):
+Whenever I lose, then I know you're funny.

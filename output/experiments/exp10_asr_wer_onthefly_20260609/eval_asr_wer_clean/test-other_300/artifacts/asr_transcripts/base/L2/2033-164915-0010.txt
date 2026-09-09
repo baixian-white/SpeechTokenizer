@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0010
+# model=base
+# L=2
+
+GT:
+BUT NOW I WILL NOT LEAVE THEE BETWEEN THIS PLACE AND BAGHDAD AND WHAT BETIDETH THY COMRADE SHALL BETIDE THEE
+
+Whisper(original):
+But now I will not leave the between this place and Baghdad. And what be tied is thy comrade shall be tied thee.
+
+Whisper(decoded):
+But now I will not leave the between this place and back that. And what we tied is thy convert shall be tied thee.

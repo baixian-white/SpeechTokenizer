@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0010
+# model=base
+# L=2
+
+GT:
+SEE SAID UNCAS POINTING NORTH AND SOUTH AT THE EVIDENT MARKS OF THE BROAD TRAIL ON EITHER SIDE OF HIM THE DARK HAIR HAS GONE TOWARD THE FOREST
+
+Whisper(original):
+C. Céroncas, pointing north and south at the evident marks of the broad trail on either side of him, the dark hair has gone toward the forest.
+
+Whisper(decoded):
+C. Sedoncas, pointing north and south, with the evident marks of the broad trail on either side of him, the dark air has dawned toward the forest.

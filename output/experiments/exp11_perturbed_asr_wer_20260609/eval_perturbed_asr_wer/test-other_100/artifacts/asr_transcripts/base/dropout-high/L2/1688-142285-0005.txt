@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0005
+# model=base
+# L=2
+# channel=dropout-high
+
+GT:
+YOU WHO WERE ALWAYS ACCUSING PEOPLE OF BEING SHOPPY AT HELSTONE
+
+Whisper(original):
+You who are always accusing people of being choppy at Halston.
+
+Whisper(decoded):
+You know what always a choosing people think shopping at health center.

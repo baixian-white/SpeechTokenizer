@@ -1,0 +1,12 @@
+# sample_id=121-121726-0000
+# model=base
+# L=2
+
+GT:
+ALSO A POPULAR CONTRIVANCE WHEREBY LOVE MAKING MAY BE SUSPENDED BUT NOT STOPPED DURING THE PICNIC SEASON
+
+Whisper(original):
+Also, a popular contrivance whereby lovemaking may be suspended but not stopped during the picnic season.
+
+Whisper(decoded):
+Also, a popular contrivance whereby love-making maydies astended but not stopped during the technique season.

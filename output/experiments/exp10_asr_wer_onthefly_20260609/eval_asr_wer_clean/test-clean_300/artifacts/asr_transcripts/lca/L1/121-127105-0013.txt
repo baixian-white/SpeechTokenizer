@@ -1,0 +1,12 @@
+# sample_id=121-127105-0013
+# model=lca
+# L=1
+
+GT:
+YOU'LL EASILY JUDGE WHY WHEN YOU HEAR BECAUSE THE THING HAD BEEN SUCH A SCARE HE CONTINUED TO FIX ME
+
+Whisper(original):
+You'll easily judge why when you hear, because the thing had been such a scare? He continued to fix me.
+
+Whisper(decoded):
+You'll easily judge why I'm in here. They trust the thing it done such a stand? They didn't tell me to fix me.

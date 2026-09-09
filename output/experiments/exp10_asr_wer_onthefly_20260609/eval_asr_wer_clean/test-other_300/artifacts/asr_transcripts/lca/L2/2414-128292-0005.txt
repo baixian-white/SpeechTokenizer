@@ -1,0 +1,12 @@
+# sample_id=2414-128292-0005
+# model=lca
+# L=2
+
+GT:
+VERILY MY FOLLY HATH GROWN BIG IN THE MOUNTAINS
+
+Whisper(original):
+readily my folly had gone big in the mountains
+
+Whisper(decoded):
+vv, my employees gone visit it mountains

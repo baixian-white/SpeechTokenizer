@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0033
+# model=lca
+# L=1
+
+GT:
+SEE THAT BLOKE JUST NOW SAID MISTER BEALE YUSS SAID DICKIE
+
+Whisper(original):
+See that bloke just now, said Mr. B. Yes, said Diggie.
+
+Whisper(decoded):
+See that natural smell, said Mr. D. Yes, said D.

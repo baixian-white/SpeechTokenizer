@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0019
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+THE LARGE LETTER CONTAINS INDEED ENTIRELY FEEBLE AND ILL DRAWN FIGURES THAT IS MERELY CHILDISH AND FAILING WORK OF AN INFERIOR HAND IT IS NOT CHARACTERISTIC OF GOTHIC OR ANY OTHER SCHOOL
+
+Whisper(original):
+The large letter contains, indeed, entirely feeble and ill-drawn figures. That is merely childish and failing work of an inferior hand. It is not characteristic of Gothic, or any other school.
+
+Whisper(decoded):
+The large letter contains, indeed, entirely feeble and held for unfigures. That is merely childish and failing worker in fear or hint. It is not characteristic of garlic, or any other school.

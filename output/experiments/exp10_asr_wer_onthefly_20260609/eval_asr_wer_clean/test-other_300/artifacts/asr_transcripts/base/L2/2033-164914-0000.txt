@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0000
+# model=base
+# L=2
+
+GT:
+REPLIED HE OF A TRUTH I HEARD HIM NOT AND I WOT HIM NOT AND FOLKS ARE ALL SLEEPING
+
+Whisper(original):
+replied he. Of a truth I heard him not, and I watched him not, and folks are all sleeping.
+
+Whisper(decoded):
+With my sheep, of ex-houth I hurt him not, and I watch him not, and folks are all sleeping.

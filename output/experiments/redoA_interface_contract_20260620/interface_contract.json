@@ -1,0 +1,94 @@
+{
+  "i1_claim": "R(L) = L * f_q * ceil(log2 K) = 500L bps for L in {1,2,3}",
+  "source_config": "config/spt_base_cfg.json",
+  "source_values": {
+    "codebook_size_K": 1024,
+    "n_q": 3,
+    "strides": [
+      8,
+      5,
+      4,
+      2
+    ],
+    "sample_rate_hz": 16000
+  },
+  "derived_values": {
+    "total_downsample": 320,
+    "latent_frame_rate_f_q_hz": 50.0,
+    "bits_per_index_b": 10,
+    "R_bps": {
+      "1": 500.0,
+      "2": 1000.0,
+      "3": 1500.0
+    }
+  },
+  "assertions": [
+    {
+      "name": "K == 1024",
+      "passed": true,
+      "got": 1024,
+      "expected": 1024
+    },
+    {
+      "name": "n_q == 3",
+      "passed": true,
+      "got": 3,
+      "expected": 3
+    },
+    {
+      "name": "strides == [8,5,4,2]",
+      "passed": true,
+      "got": [
+        8,
+        5,
+        4,
+        2
+      ],
+      "expected": [
+        8,
+        5,
+        4,
+        2
+      ]
+    },
+    {
+      "name": "product(strides) == 320",
+      "passed": true,
+      "got": 320,
+      "expected": 320
+    },
+    {
+      "name": "sample_rate == 16000",
+      "passed": true,
+      "got": 16000,
+      "expected": 16000
+    },
+    {
+      "name": "f_q == 50.0",
+      "passed": true,
+      "got": 50.0,
+      "expected": 50.0
+    },
+    {
+      "name": "bits_per_index b == 10",
+      "passed": true,
+      "got": 10,
+      "expected": 10
+    },
+    {
+      "name": "R(L) == [500,1000,1500]",
+      "passed": true,
+      "got": [
+        500.0,
+        1000.0,
+        1500.0
+      ],
+      "expected": [
+        500.0,
+        1000.0,
+        1500.0
+      ]
+    }
+  ],
+  "all_assertions_passed": true
+}

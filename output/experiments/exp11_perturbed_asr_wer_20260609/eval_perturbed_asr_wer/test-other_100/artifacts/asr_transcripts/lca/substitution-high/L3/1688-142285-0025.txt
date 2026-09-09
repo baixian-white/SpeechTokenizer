@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0025
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+AND I DO SAID HER FATHER LAUGHING
+
+Whisper(original):
+And I do, said her father laughing.
+
+Whisper(decoded):
+Should I do, said her father laughing?

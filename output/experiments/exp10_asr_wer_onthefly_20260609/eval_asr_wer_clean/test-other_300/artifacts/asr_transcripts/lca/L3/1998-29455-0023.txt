@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0023
+# model=lca
+# L=3
+
+GT:
+TO THE ELDER TRAMP LIES AND BEGGING WERE NATURAL MEANS OF LIVELIHOOD
+
+Whisper(original):
+to the other tramp, lies and packing, where natural means of livelihood.
+
+Whisper(decoded):
+to the other trend, rise and packing, the natural means of livelihood.

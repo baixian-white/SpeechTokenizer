@@ -121,7 +121,15 @@ class audioDataset(Dataset):
         读取音频 -> 单声道 float32，并重采样到 self.sample_rate。
         返回 shape: [T]
         """
-        audio, sr = torchaudio.load(audio_file)  # [C, T]
+        try:
+            audio, sr = torchaudio.load(audio_file)  # [C, T]
+        except ImportError as exc:
+            if "TorchCodec" not in str(exc):
+                raise
+            import soundfile as sf
+
+            data, sr = sf.read(audio_file, always_2d=True, dtype="float32")
+            audio = torch.from_numpy(data.T).contiguous()  # [C, T]
         # 转单声道
         if audio.shape[0] > 1:
             audio = audio.mean(dim=0)
@@ -150,6 +158,8 @@ class audioDataset(Dataset):
         # 解析一行 "<audio>\t<feature>"
         file = self.file_list[index].strip()
         audio_file, feature_file = file.split('\t')
+        audio_file = audio_file.lstrip('\ufeff').strip()
+        feature_file = feature_file.lstrip('\ufeff').strip()
 
         # 加载音频与特征
         audio = self._load_audio(audio_file)        # [T]

@@ -1,0 +1,12 @@
+# sample_id=121-127105-0026
+# model=base
+# L=1
+
+GT:
+THE FIRST OF THESE TOUCHES CONVEYED THAT THE WRITTEN STATEMENT TOOK UP THE TALE AT A POINT AFTER IT HAD IN A MANNER BEGUN
+
+Whisper(original):
+The first of these touches conveyed that the written statement took up the tail at a point after it had in a manner begun.
+
+Whisper(decoded):
+The thrust of these touches conveyed that the ribbon statement took a good tail at a point after it had in a manner that gun.

@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0002
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+AFTER EARLY NIGHTFALL THE YELLOW LAMPS WOULD LIGHT UP HERE AND THERE THE SQUALID QUARTER OF THE BROTHELS
+
+Whisper(original):
+After early nightfall the yellow lamps would light up here and there the squalid quarter of the brothels.
+
+Whisper(decoded):
+After early nightfall the yellow lamps would light up here and there the squalid quarter of the brothels.

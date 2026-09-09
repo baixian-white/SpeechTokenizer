@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0000
+# model=lca
+# L=1
+
+GT:
+SO HE TURNED TO THE WAZIR DANDAN AND SAID TO HIM VERILY YOUR TALE IS A WONDER OF WONDERS
+
+Whisper(original):
+So, he turned to the wasier than done and said to him, Verily, your tail is a wander of wonders.
+
+Whisper(decoded):
+So he turned to the wazir bandana, and said to he, baby, your tale is a wonder of wonders.

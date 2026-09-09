@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0014
+# model=base
+# L=1
+
+GT:
+BUT THE EUNUCH SAID I WILL NOT LEAVE THEE TILL THOU SHOW ME WHO IT WAS THAT RECITED THE VERSES FOR I DREAD RETURNING TO MY LADY WITHOUT HIM
+
+Whisper(original):
+But the Unox said, I will not leave thee till thou show me who it was that recited the verses, for I dread returning to my lady without him.
+
+Whisper(decoded):
+But he don't accept. I will not leave thee till thou show me which was the society, the persons, when I tried return me to my lady behind you.

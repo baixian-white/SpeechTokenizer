@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0002
+# model=lca
+# L=1
+
+GT:
+WHEN HOWEVER ZARATHUSTRA WAS QUITE NIGH UNTO THEM THEN DID HE HEAR PLAINLY THAT A HUMAN VOICE SPAKE IN THE MIDST OF THE KINE AND APPARENTLY ALL OF THEM HAD TURNED THEIR HEADS TOWARDS THE SPEAKER
+
+Whisper(original):
+who went, however, the two stravers quite nigh unto them. Then did he hear clearly that human voice peak in the midst of the kind, and apparently all of them had turned their heads towards the speaker.
+
+Whisper(decoded):
+Then, however, this foul was played by Nai, did he hear a feeling that human voice speak in the midst of the cry? Did he feel he or was dead if he don't hear his stories disappear?

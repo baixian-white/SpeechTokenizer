@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0031
+# model=lca
+# L=2
+# channel=substitution-high
+
+GT:
+THERE'S ONE AND THERE'S ANOTHER THE DUDLEY AND THE FLINT
+
+Whisper(original):
+There's one and there's another the Dudley and the Flint
+
+Whisper(decoded):
+Where's Wanna, there's another. The doubly, in the front.

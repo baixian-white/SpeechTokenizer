@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0071
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+SHE PUT HER HAND TO IT AND BECAME GHASTLY PALE
+
+Whisper(original):
+She put her hand to it and became ghastly pale.
+
+Whisper(decoded):
+She brought her hand to it and the candy glassy kale.

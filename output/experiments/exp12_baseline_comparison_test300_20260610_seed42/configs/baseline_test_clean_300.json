@@ -1,0 +1,50 @@
+{
+  "run_id": "exp12_baseline_comparison_test300_20260610_seed42_test-clean",
+  "split": "test-clean",
+  "max_samples": 300,
+  "created_at": "2026-06-10T22:00:00+08:00",
+  "test_files": "output\\experiments\\exp7_librispeech_test_full_clean_20260606\\artifacts\\test-clean_all_files.txt",
+  "fixed_sample_list": "output\\experiments\\exp7_librispeech_test_full_clean_20260606\\artifacts\\test-clean_all_files.txt",
+
+  "scit_base": {
+    "config": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\configs\\scit_speech_base_config.json",
+    "checkpoint": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+    "checkpoint_sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6"
+  },
+  "scit_lca": {
+    "config": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\lca_finetune_config.json",
+    "checkpoint": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_best.pt",
+    "checkpoint_sha256": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a",
+    "version_note": "LCA v2 (strong perturbation + consistency loss)"
+  },
+
+  "scit_layers": [1, 2, 3],
+  "scit_n_q": 3,
+  "scit_codebook_size": 1024,
+  "scit_latent_rate_per_sec": 50,
+  "scit_ideal_bitrate_per_layer_bps": {"L1": 500, "L2": 1000, "L3": 1500},
+
+  "baselines": {
+    "pcm": {"enabled": true},
+    "encodec": {
+      "enabled": true,
+      "model_name": "facebook/encodec_24khz",
+      "sample_rate": 24000,
+      "bandwidths_kbps": [1.5, 3.0, 6.0, 12.0]
+    },
+    "dac": {
+      "enabled": true,
+      "model_name": "16khz",
+      "sample_rate": 16000
+    },
+    "opus": {"enabled": false, "skipped_reason": "Run via run_opus_baseline.py after the SCIT/EnCodec/DAC pass."},
+    "amr_wb": {"enabled": false, "skipped_reason": "ffmpeg build lacks libvo-amrwbenc"},
+    "codec2": {"enabled": false, "skipped_reason": "Codec2 module/CLI not installed in current env"}
+  },
+
+  "audio_format": {"sample_rate": 16000, "channels": 1, "bit_depth": 16},
+  "payload_packet_schema": {"header_bytes": 16},
+  "metrics": {"audio_quality": ["wave_l1", "rmse", "mel_l1", "si_snr_db", "corr", "stoi", "pesq_wb"]},
+  "seed": 42,
+  "experiment_notes": "exp12 extends exp4 from 8 fixed samples to 300 test-clean samples. Subset is the first 300 lines of test-clean_all_files.txt, identical to the exp10 ASR subset."
+}

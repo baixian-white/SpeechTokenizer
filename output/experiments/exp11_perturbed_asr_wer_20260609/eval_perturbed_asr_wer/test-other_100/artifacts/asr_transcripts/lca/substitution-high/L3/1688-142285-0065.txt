@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0065
+# model=lca
+# L=3
+# channel=substitution-high
+
+GT:
+IT'S SIMPLE AND NOT FAR TO FETCH NOR HARD TO WORK
+
+Whisper(original):
+It's simple and not far to fetch nor hard to work.
+
+Whisper(decoded):
+It's simple and not far to fetch no hard work.

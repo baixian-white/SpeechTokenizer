@@ -1,0 +1,8 @@
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\8838\298545\8838-298545-0037.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\8838\298545\8838-298545-0037.hubert.npy
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\5390\30102\5390-30102-0015.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\5390\30102\5390-30102-0015.hubert.npy
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\4018\103416\4018-103416-0033.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\4018\103416\4018-103416-0033.hubert.npy
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\1737\148989\1737-148989-0006.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\1737\148989\1737-148989-0006.hubert.npy
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\1455\138263\1455-138263-0040.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\1455\138263\1455-138263-0040.hubert.npy
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\311\124404\311-124404-0119.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\311\124404\311-124404-0119.hubert.npy
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\4680\16026\4680-16026-0019.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\4680\16026\4680-16026-0019.hubert.npy
+H:\H-CODE\speechtokenizer\data\SpeechPretrain\LibriSpeech\train-clean-100\8098\278278\8098-278278-0035.flac	H:\H-CODE\speechtokenizer\data\SpeechPretrain\hubert_rep\LibriSpeech\8098\278278\8098-278278-0035.hubert.npy

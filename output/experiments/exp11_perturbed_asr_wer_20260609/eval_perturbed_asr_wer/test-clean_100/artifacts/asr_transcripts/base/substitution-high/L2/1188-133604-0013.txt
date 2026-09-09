@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0013
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+IT MUST REMEMBER BE ONE OR THE OTHER
+
+Whisper(original):
+It must remember be one or the other.
+
+Whisper(decoded):
+It must remember Bewon or the other.

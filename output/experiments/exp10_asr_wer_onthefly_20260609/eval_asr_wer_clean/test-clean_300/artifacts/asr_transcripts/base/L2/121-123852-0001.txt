@@ -1,0 +1,12 @@
+# sample_id=121-123852-0001
+# model=base
+# L=2
+
+GT:
+AY ME
+
+Whisper(original):
+I'm me.
+
+Whisper(decoded):
+Hi, me

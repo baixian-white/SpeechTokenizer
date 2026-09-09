@@ -201,11 +201,14 @@ class SLSTM(nn.Module):
     def __init__(self, dimension: int, num_layers: int = 2, skip: bool = True, bidirectional: bool = False):
         super().__init__()
         self.skip = skip
+        self.bidirectional = bidirectional
         self.lstm = nn.LSTM(dimension, dimension, num_layers, bidirectional=bidirectional)
 
     def forward(self, x):
         x = x.permute(2, 0, 1) # (T, B, C)
         y, _ = self.lstm(x)
+        if self.bidirectional:
+            x = x.repeat(1, 1, 2)
         if self.skip:
             y = y + x
         y = y.permute(1, 2, 0) # (B, C, T)
@@ -304,12 +307,16 @@ def get_nas_ops(norm: str, pad_mode: str, causal: bool):
         # 标准卷积 K=5
         'std_k5': lambda C, D: SConv1d(C, C, kernel_size=5, dilation=D, stride=1, 
                                        norm=norm, pad_mode=pad_mode, causal=causal),
+        'std_k7': lambda C, D: SConv1d(C, C, kernel_size=7, dilation=D, stride=1,
+                                       norm=norm, pad_mode=pad_mode, causal=causal),
         # 深度可分离卷积 K=7 (轻量化)
         'sep_k7': lambda C, D: DSConv1d(C, C, kernel_size=7, dilation=D, 
                                         norm=norm, pad_mode=pad_mode, causal=causal),
         # 深度可分离卷积 K=9 (轻量化)
         'sep_k9': lambda C, D: DSConv1d(C, C, kernel_size=9, dilation=D, 
                                         norm=norm, pad_mode=pad_mode, causal=causal),
+        'dil_k5': lambda C, D: SConv1d(C, C, kernel_size=5, dilation=D * 2, stride=1,
+                                       norm=norm, pad_mode=pad_mode, causal=causal),
         # 大感受野卷积 K=9, Dilation 翻倍
         'dil_k9': lambda C, D: SConv1d(C, C, kernel_size=9, dilation=D*2, stride=1, 
                                        norm=norm, pad_mode=pad_mode, causal=causal),

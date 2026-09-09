@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0031
+# model=lca
+# L=3
+# channel=dropout-high
+
+GT:
+THERE'S ONE AND THERE'S ANOTHER THE DUDLEY AND THE FLINT
+
+Whisper(original):
+There's one and there's another the Dudley and the Flint
+
+Whisper(decoded):
+There's one and there's another, the Dudley, and the Flint.

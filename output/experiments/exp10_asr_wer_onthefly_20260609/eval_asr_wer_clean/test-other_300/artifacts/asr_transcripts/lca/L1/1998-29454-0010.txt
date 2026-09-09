@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0010
+# model=lca
+# L=1
+
+GT:
+NOT EXACKLY SAID THE MAN BUT IT'S ALL RIGHT
+
+Whisper(original):
+Not exactly, said the men, but it's alright.
+
+Whisper(decoded):
+That exactly set around, but it's alright.

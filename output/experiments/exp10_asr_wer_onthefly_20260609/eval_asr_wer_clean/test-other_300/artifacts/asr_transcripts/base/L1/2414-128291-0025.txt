@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0025
+# model=base
+# L=1
+
+GT:
+FOR THEY ARE THY WARMEST FRIENDS AND PRECEPTORS
+
+Whisper(original):
+So they are the warmest friends and perceptions.
+
+Whisper(decoded):
+The dead part of all these fields and the sectors.

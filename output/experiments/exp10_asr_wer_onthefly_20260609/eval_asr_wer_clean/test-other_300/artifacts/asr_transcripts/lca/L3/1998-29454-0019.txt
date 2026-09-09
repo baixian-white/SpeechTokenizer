@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0019
+# model=lca
+# L=3
+
+GT:
+I WOULDN'T GO OME NOT IF I WAS YOU SAID THE MAN
+
+Whisper(original):
+I wouldn't go home not to fair with use at the men.
+
+Whisper(decoded):
+I wouldn't go home no to fail us use at the moment.

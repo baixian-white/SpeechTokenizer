@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0013
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+IF EVER HE WAS IMPELLED TO CAST SIN FROM HIM AND TO REPENT THE IMPULSE THAT MOVED HIM WAS THE WISH TO BE HER KNIGHT
+
+Whisper(original):
+If ever he was impelled to cast sin from him and to repent, the impulse that moved him was the wish to be her night.
+
+Whisper(decoded):
+The further he was in power to cast sin from him and to repent, the impulse that Muhshem was the wish to be her night.

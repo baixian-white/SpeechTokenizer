@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0014
+# model=lca
+# L=1
+
+GT:
+SO FARE YE FORWARDS NO HARM SHALL BEFAL YOU TILL YOU JOIN HIS GRAND WAZIR DANDAN
+
+Whisper(original):
+So, fairy forwards, no harm shall befall you till you join his grand was year than done.
+
+Whisper(decoded):
+So fear he forwards. No foul shall befall you. He rejoined his blood was here. Turn down.

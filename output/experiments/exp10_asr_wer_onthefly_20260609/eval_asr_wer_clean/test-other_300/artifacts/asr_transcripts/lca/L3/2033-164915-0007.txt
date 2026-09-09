@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0007
+# model=lca
+# L=3
+
+GT:
+SHE SAID IT HATH REACHED ME O AUSPICIOUS KING THAT WHEN THE STOKER GIRTHED HIS ASS FOR FLIGHT AND BESPAKE HIMSELF SAYING OH WOULD I KNEW WHAT IS BECOME OF HIM
+
+Whisper(original):
+She said, It has reached me, our special king, that when the stalker girded his ass for flight, and we staked himself, saying, Oh, would I knew what has become of him?
+
+Whisper(decoded):
+She said, it has reached me over a species king, that when the stalker girded his ass for pride and he stayed himself, saying, oh, would I knew what has become of him?

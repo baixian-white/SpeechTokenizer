@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0036
+# model=base
+# L=3
+
+GT:
+DICKIE WAS FULL OF QUESTIONS BUT MISTER BEALE HAD NO ANSWERS FOR THEM
+
+Whisper(original):
+Take you as full of questions, but Mr. B had no answers for them.
+
+Whisper(decoded):
+Taking those one questions, but Mr. D had no answers for them.

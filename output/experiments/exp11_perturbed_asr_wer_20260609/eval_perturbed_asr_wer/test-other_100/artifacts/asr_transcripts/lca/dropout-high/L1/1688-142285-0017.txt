@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0017
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+WHEN HE SPOKE OF THE MECHANICAL POWERS HE EVIDENTLY LOOKED UPON THEM ONLY AS NEW WAYS OF EXTENDING TRADE AND MAKING MONEY
+
+Whisper(original):
+When he spoke of the mechanical powers, he evidently looked upon them only as new ways of extending trade and making money.
+
+Whisper(decoded):
+When he spoke of the mechanical powers, he evidently looked at whether Ernie has numerous outstanding trade and action money.

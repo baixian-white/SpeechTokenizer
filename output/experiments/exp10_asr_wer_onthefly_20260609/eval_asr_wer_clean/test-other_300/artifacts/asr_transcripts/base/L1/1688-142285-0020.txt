@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0020
+# model=base
+# L=1
+
+GT:
+IMPROVIDENT AND SELF INDULGENT WERE HIS WORDS
+
+Whisper(original):
+Improvident and self-indulgent were his words.
+
+Whisper(decoded):
+In quantity I'm very self-indulgent, whereas worse.

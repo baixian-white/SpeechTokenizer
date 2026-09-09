@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0012
+# model=lca
+# L=1
+
+GT:
+IT IS NO LONGER TRUE THAT THE POOR ARE BLESSED
+
+Whisper(original):
+It is no longer true, let a poor outblest.
+
+Whisper(decoded):
+It is not on the film, it is for the happiest.

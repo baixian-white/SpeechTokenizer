@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0021
+# model=base
+# L=1
+
+GT:
+ON THE EVAPORATION OF THE ALCOHOL THE RESINOUS AND FATTY MATTERS SEPARATE
+
+Whisper(original):
+On the evaporation of the alcohol, the vasanas and fatty medis separate.
+
+Whisper(decoded):
+I'm near the operation of the aqua or the resonance and hurting that is a great

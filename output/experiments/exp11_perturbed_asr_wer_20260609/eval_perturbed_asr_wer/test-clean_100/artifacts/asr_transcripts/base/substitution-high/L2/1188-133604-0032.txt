@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0032
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+IT IS ONLY A PENCIL OUTLINE BY EDWARD BURNE JONES IN ILLUSTRATION OF THE STORY OF PSYCHE IT IS THE INTRODUCTION OF PSYCHE AFTER ALL HER TROUBLES INTO HEAVEN
+
+Whisper(original):
+It is only a pencil outline by Edward Byrne Jones in illustration of the story of Psyche. It is the introduction of Psyche after all her troubles into Heaven.
+
+Whisper(decoded):
+It was only a pencil outline by Edward Byrne Janin's, an illustration of the story of Psyche. It was the introduction of Psyche, after all her troubles sent to heaven.

@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0014
+# model=base
+# L=3
+
+GT:
+THE EXAMINATION HOWEVER RESULTED IN NO DISCOVERY
+
+Whisper(original):
+The examination, however, resulted in no discovery.
+
+Whisper(decoded):
+The examination, however, resulted in no discovery.

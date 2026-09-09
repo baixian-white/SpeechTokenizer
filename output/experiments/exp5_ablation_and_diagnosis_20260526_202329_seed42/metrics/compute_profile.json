@@ -1,0 +1,68 @@
+[
+  {
+    "variant_id": "hand_encoder_base",
+    "encoder_params": 67705856,
+    "encoder_macs": 5869363200,
+    "encoder_rtf": "",
+    "total_params": 103675586,
+    "total_macs": "",
+    "total_rtf": 0.9509911999994074,
+    "profile_sample_sec": 1.0,
+    "notes": "encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run"
+  },
+  {
+    "variant_id": "nas_encoder_base",
+    "encoder_params": 5398016,
+    "encoder_macs": 510988800,
+    "encoder_rtf": "",
+    "total_params": 41367746,
+    "total_macs": "",
+    "total_rtf": 0.010099599996465258,
+    "profile_sample_sec": 1.0,
+    "notes": "encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run"
+  },
+  {
+    "variant_id": "base_debug",
+    "encoder_params": 5398016,
+    "encoder_macs": 510988800,
+    "encoder_rtf": "",
+    "total_params": 41367746,
+    "total_macs": "",
+    "total_rtf": 0.014643300004536286,
+    "profile_sample_sec": 1.0,
+    "notes": "encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run"
+  },
+  {
+    "variant_id": "lca_random_l_on",
+    "encoder_params": 5398016,
+    "encoder_macs": 510988800,
+    "encoder_rtf": "",
+    "total_params": 41367746,
+    "total_macs": "",
+    "total_rtf": 0.014581199997337535,
+    "profile_sample_sec": 1.0,
+    "notes": "encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run"
+  },
+  {
+    "variant_id": "no_semantic_distill",
+    "encoder_params": 5398016,
+    "encoder_macs": 510988800,
+    "encoder_rtf": "",
+    "total_params": 41367746,
+    "total_macs": "",
+    "total_rtf": 0.009034599999722559,
+    "profile_sample_sec": 1.0,
+    "notes": "encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run"
+  },
+  {
+    "variant_id": "random_l_off",
+    "encoder_params": 5398016,
+    "encoder_macs": 510988800,
+    "encoder_rtf": "",
+    "total_params": 41367746,
+    "total_macs": "",
+    "total_rtf": 0.008538900001440197,
+    "profile_sample_sec": 1.0,
+    "notes": "encoder_macs computed with THOP for 1s input; total_macs not computed in this debug run"
+  }
+]

@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0038
+# model=lca
+# L=1
+
+GT:
+DICKIE ALWAYS REMEMBERED THAT MOMENT
+
+Whisper(original):
+Dickey always remember at that moment.
+
+Whisper(decoded):
+BTS is my right language. The Lauren Bow has gotten over her time taking care of her brother and it's around her birthday. Now she gets over here. Before that, a Call Zone fades down beyond other looms directly

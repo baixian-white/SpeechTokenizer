@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0007
+# model=lca
+# L=2
+
+GT:
+HI THERE GOES A RABBIT
+
+Whisper(original):
+Hi, there goes the rubber.
+
+Whisper(decoded):
+Hi, there's a rabbit.

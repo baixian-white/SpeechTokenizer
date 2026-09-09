@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0007
+# model=lca
+# L=2
+
+GT:
+BUT IN TRUTH PEARL WAS THE ONE AS WELL AS THE OTHER AND ONLY IN CONSEQUENCE OF THAT IDENTITY HAD HESTER CONTRIVED SO PERFECTLY TO REPRESENT THE SCARLET LETTER IN HER APPEARANCE
+
+Whisper(original):
+But in truth, Pearl was the one as well as the other, and only in consequence of that identity had Hester contrived so perfectly to represent the scarlet letter in her appearance.
+
+Whisper(decoded):
+But in truth, for all was the one as well as the other, and only in consequence of that identity had Hezdge pin drive so perfectly to represent the Skarnet letter and her appearance.

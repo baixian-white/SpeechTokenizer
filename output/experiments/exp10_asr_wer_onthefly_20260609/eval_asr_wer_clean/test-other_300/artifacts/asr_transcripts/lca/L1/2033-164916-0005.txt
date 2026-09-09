@@ -1,0 +1,12 @@
+# sample_id=2033-164916-0005
+# model=lca
+# L=1
+
+GT:
+AFTER AWHILE THE DUST DISPERSED AND THERE APPEARED UNDER IT THE ARMY OF BAGHDAD AND KHORASAN A CONQUERING HOST LIKE THE FULL TIDE SEA AND SHAHRAZAD PERCEIVED THE DAWN OF DAY AND CEASED TO SAY HER PERMITTED SAY
+
+Whisper(original):
+After a while, the dust dispersed, and there appeared under it the army of Baghdad and Khorasan, a conquering host like the pool-tied sea. And Charizard perceived the dawn of day, and ceased to say her permitted say.
+
+Whisper(decoded):
+After a while, the dust dispersed, and they appeared underneath the army of Baghdad in Cora Sun. The concrete was by the pool tight sea, and Chirazar proceeded to die of the end, and seized say, or permitting say.

@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0028
+# model=lca
+# L=3
+
+GT:
+A BED QUILT MADE OF PATCHES OF DIFFERENT KINDS AND COLORS OF CLOTH ALL NEATLY SEWED TOGETHER
+
+Whisper(original):
+A bed quilt made of patches of different kinds and colors of cloth all neatly sewed together.
+
+Whisper(decoded):
+A bed quilt made of patches of different kinds and collars of cloth all neatly sewed together.

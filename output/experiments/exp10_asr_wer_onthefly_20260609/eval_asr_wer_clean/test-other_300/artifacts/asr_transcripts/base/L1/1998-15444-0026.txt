@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0026
+# model=base
+# L=1
+
+GT:
+BOIL THE FINELY DIVIDED SUBSTANCE WITH ABOUT ONE EIGHTH ITS BULK OF PURE HYDROCHLORIC ACID ADD FROM TIME TO TIME POTASSIC CHLORATE UNTIL THE SOLIDS ARE REDUCED TO A STRAW YELLOW FLUID
+
+Whisper(original):
+Boil the finely divided substance with about 1-8th its bulk of pure hydrochloric acid. Add from time to time potassium chloride until the solids are reduced to a straw yellow fluid.
+
+Whisper(decoded):
+Biodefirmal Divine Substance with about 1.8 is diode of pure hydroprode acid. Act from trying to turn the tessic chloride weight until the solid is ever teased to its try linelese and the axis.

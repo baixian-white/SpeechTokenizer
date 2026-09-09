@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0039
+# model=base
+# L=1
+
+GT:
+SO YOU SHALL SAID MISTER BEALE A REG'LER WASH ALL OVER THIS VERY NIGHT I ALWAYS LIKE A WASH MESELF
+
+Whisper(original):
+So you shall, said Mr. Buell, a regular wash all over, this very night. I always like a wash myself."
+
+Whisper(decoded):
+Serena Charles said most appear, but regna russia knowman is spectacular. I o! sookie washman south

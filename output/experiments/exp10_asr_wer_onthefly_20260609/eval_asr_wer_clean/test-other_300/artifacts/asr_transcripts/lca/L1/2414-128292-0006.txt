@@ -1,0 +1,12 @@
+# sample_id=2414-128292-0006
+# model=lca
+# L=1
+
+GT:
+NOW DO I HEAR SIX OLD FOOLS LEGS RATTLING BEHIND ONE ANOTHER
+
+Whisper(original):
+Now, do I hear 6 old full legs rattling behind one another?
+
+Whisper(decoded):
+Now, right here, 6th place sleeps, pressing behind one can end up.

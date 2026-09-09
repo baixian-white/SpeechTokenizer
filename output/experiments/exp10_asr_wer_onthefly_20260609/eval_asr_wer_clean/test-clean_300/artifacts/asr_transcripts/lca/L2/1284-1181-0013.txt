@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0013
+# model=lca
+# L=2
+
+GT:
+OJO BECAME A BIT UNEASY AT THIS FOR HE HAD ALREADY PUT QUITE A LOT OF THE CLEVERNESS POWDER IN THE DISH BUT HE DARED NOT INTERFERE AND SO HE COMFORTED HIMSELF WITH THE THOUGHT THAT ONE CANNOT HAVE TOO MUCH CLEVERNESS
+
+Whisper(original):
+Ojo became a bit uneasy at this, for he had already put quite a lot of the cleverness powder in the dish, but he dared not interfere, and so he comforted himself with the thought that one cannot have too much cleverness.
+
+Whisper(decoded):
+Odil became a bit uneasy at this, for he had already put quite a lot of the cleverness powder in the dish, but he dared not interfere, and so he comforted himself with the thought that one cannot have too much cleverness.

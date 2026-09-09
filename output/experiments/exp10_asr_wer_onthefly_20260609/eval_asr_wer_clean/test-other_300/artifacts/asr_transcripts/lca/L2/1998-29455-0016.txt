@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0016
+# model=lca
+# L=2
+
+GT:
+OH WELL DONE LITTLE UN SAID MISTER BEALE TO HIMSELF
+
+Whisper(original):
+Well done little ones, had Mr. Butte himself.
+
+Whisper(decoded):
+Oh, why did I'm little ones? It must have be you to himself.

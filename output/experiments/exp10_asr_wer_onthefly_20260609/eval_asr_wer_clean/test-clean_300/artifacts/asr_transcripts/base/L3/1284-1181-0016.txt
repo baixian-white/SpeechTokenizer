@@ -1,0 +1,12 @@
+# sample_id=1284-1181-0016
+# model=base
+# L=3
+
+GT:
+I AM NOT ALLOWED TO PERFORM MAGIC EXCEPT FOR MY OWN AMUSEMENT HE TOLD HIS VISITORS AS HE LIGHTED A PIPE WITH A CROOKED STEM AND BEGAN TO SMOKE
+
+Whisper(original):
+I am not allowed to perform magic except for my own amusement," he told his visitors, as he lighted up hype with a crooked stem and began to smoke.
+
+Whisper(decoded):
+I am not allowed to perform magic, except for my own amusement," he told his visitors, as he lighted a pipe with a crooked stem and began to smoke.

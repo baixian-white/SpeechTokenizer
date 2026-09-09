@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0005
+# model=base
+# L=2
+
+GT:
+THEY'RE ONLY WEEDS SAID BEALE
+
+Whisper(original):
+They're only weeds, said Beel.
+
+Whisper(decoded):
+There are only reeds set view.

@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0027
+# model=lca
+# L=3
+
+GT:
+YET THAT TASK WAS NOT SO EASY AS YOU MAY SUPPOSE
+
+Whisper(original):
+Yet that task was not so easy as you may suppose.
+
+Whisper(decoded):
+Get that task was not so easy as you may suppose. // // // // // // // // // // // // // // // // // // // // // // // // // // //

@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0011
+# model=lca
+# L=2
+# channel=dropout-high
+
+GT:
+THEY ARE BEYOND ALL OTHER WORKS THAT I KNOW EXISTING DEPENDENT FOR THEIR EFFECT ON LOW SUBDUED TONES THEIR FAVORITE CHOICE IN TIME OF DAY BEING EITHER DAWN OR TWILIGHT AND EVEN THEIR BRIGHTEST SUNSETS PRODUCED CHIEFLY OUT OF GRAY PAPER
+
+Whisper(original):
+They are beyond all other works than I know existing, dependent for their effect on low subdued tones, their favorite choice in time of day being either dawn or twilight, and even their brightest sunsets produced chiefly out of grey paper.
+
+Whisper(decoded):
+They are beyond all other worse than I know existing, dependent for their effect on those subdued tongues, their favorite choice in time of day being ride-a-dollar twilight, and even their greatest sunsets produced chiefly out of great paper.

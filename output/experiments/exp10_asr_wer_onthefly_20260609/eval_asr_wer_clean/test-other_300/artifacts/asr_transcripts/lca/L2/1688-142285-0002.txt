@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0002
+# model=lca
+# L=2
+
+GT:
+YOU DON'T MEAN THAT YOU THOUGHT ME SO SILLY
+
+Whisper(original):
+You don't mean that you thought me so silly.
+
+Whisper(decoded):
+He don't mean that he thought we so silly.

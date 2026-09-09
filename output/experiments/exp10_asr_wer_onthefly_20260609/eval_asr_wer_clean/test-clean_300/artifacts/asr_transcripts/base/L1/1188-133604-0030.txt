@@ -1,0 +1,12 @@
+# sample_id=1188-133604-0030
+# model=base
+# L=1
+
+GT:
+HE KNOWS THEM BOTH
+
+Whisper(original):
+He knows them both.
+
+Whisper(decoded):
+He knows them both.

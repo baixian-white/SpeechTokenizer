@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0038
+# model=lca
+# L=1
+# channel=dropout-high
+
+GT:
+BETTER AND NOT BETTER IF YO KNOW WHAT THAT MEANS
+
+Whisper(original):
+Better and not better if you know what that means.
+
+Whisper(decoded):
+They're so, they're not better if you know what that means.

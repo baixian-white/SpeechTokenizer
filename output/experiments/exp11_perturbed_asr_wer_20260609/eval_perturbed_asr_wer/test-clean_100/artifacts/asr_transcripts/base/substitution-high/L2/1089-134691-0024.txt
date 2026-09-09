@@ -1,0 +1,13 @@
+# sample_id=1089-134691-0024
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+STEPHANOS DEDALOS
+
+Whisper(original):
+Stefanos dead loss
+
+Whisper(decoded):
+Sir Tefanos dead laws

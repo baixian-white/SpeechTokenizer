@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0013
+# model=lca
+# L=2
+
+GT:
+AND THIS IS THE PRETTIEST PLACE EVER I SEE
+
+Whisper(original):
+And this is the prettiest place ever I see.
+
+Whisper(decoded):
+And this is the prettiest pose ever I see.

@@ -1,0 +1,12 @@
+# sample_id=1320-122617-0004
+# model=base
+# L=2
+
+GT:
+THE INGENIOUS HAWKEYE WHO RECALLED THE HASTY MANNER IN WHICH THE OTHER HAD ABANDONED HIS POST AT THE BEDSIDE OF THE SICK WOMAN WAS NOT WITHOUT HIS SUSPICIONS CONCERNING THE SUBJECT OF SO MUCH SOLEMN DELIBERATION
+
+Whisper(original):
+The ingenious Hawkeye, who recalled the hasty manner in which the other had abandoned his post at the bedside of the sick woman, was not without his suspicions concerning the subject of so much solemn deliberation.
+
+Whisper(decoded):
+The ingenious Hawkeye, who recalled the hasty manner in which the other had abandoned his post at the bedside of the sick woman, was not without his suspicions concerning the subject of so much solemn deliberation.

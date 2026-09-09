@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0024
+# model=lca
+# L=2
+
+GT:
+FIVE A PART OF THIS ETHEREAL SOLUTION IS POURED INTO A WATCH GLASS AND ALLOWED TO EVAPORATE
+
+Whisper(original):
+5. A part of this is theory of solution is poured into a watch glass and allowed to evaporate.
+
+Whisper(decoded):
+5. A part of this ethereal solution is poured into a lush cloud and allowed to replicate.

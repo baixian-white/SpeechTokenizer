@@ -1,0 +1,59 @@
+{
+  "run_id": "exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42",
+  "packaged_at": "2026-05-31T19:16:00+08:00",
+  "official_name": "SCIT-Speech-LCA_best.pt",
+  "official_path": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_best.pt",
+  "sha256": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a",
+  "source_trainer_pkg": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SpeechTokenizerTrainer_00030000",
+  "source_step": 30000,
+  "source_epoch_approx": 8.88,
+  "selection_reason": "Robustness-optimal checkpoint: dev/comm_mel best for all 3 (L, substitution-high) cells which represent the strongest perturbation conditions; mean dev/comm_mel improvement 17.53% vs LCA step 2500 reference across 15 cells; consistent with v2's design goal of channel-aware adaptation.",
+  "alternative_snapshots": {
+    "step17500_full_mel_optimum": {
+      "path": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_v2_step17500_full_mel_optimum.pt",
+      "sha256": "5728a8b97a0eec34915c6f11fa994ad0ad435864b2d94cdfa48ac1024406363b",
+      "dev_full_mel": 0.981104,
+      "selection_reason": "Global minimum of dev/full_depth_mel_error across 13 dev evaluations (step 2500-32500). Better for full-depth no-perturbation use cases."
+    },
+    "step30000_robust_optimum": {
+      "path": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_v2_step30000_robust_optimum.pt",
+      "sha256": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a",
+      "selection_reason": "Same weights as official SCIT-Speech-LCA_best.pt; explicit name for ablation tables."
+    }
+  },
+  "best_step_distribution_per_cell": {
+    "step10000": 9,
+    "step30000": 3,
+    "step32500": 3,
+    "comment": "9 cells reached best at step 10000 (consistent with v1 pattern); the 3 substitution-high cells (one per L) all reached best at step 30000; the 3 cells at step 32500 are L=3 dropout-mid/dropout-high/substitution-mid."
+  },
+  "base_run": {
+    "run_id": "exp2_scit_speech_distill30_retrain_20260529_seed42",
+    "checkpoint": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+    "sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6"
+  },
+  "v1_run_for_ablation": {
+    "run_id": "exp3_low_load_channel_aware_adaptation_20260530_seed42",
+    "checkpoint": "output\\experiments\\exp3_low_load_channel_aware_adaptation_20260530_seed42\\checkpoints\\SCIT-Speech-LCA_best.pt",
+    "sha256": "9daa924ff5aeedf2fa4aa1ddb2d7ce7f53297548e7258d0ef8d5b1af255a8609",
+    "note": "v1 used weak channel-sim probabilities (p_drop<=0.03, p_sub<=0.005) and no consistency loss; v2 strengthens both."
+  },
+  "training_config": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\lca_finetune_config.json",
+  "training_completed_at": "2026-05-31T17:55:00+08:00",
+  "total_train_steps": 32500,
+  "epochs_completed": 10,
+  "key_diff_vs_v1": {
+    "channel_sim_p_drop": "v1: clean/0.01/0.03 -> v2: clean/0.05/0.10",
+    "channel_sim_p_sub": "v1: 0/0.001/0.005 -> v2: 0/0.01/0.03",
+    "lambda_comm": "v1: 1.0 -> v2: 1.5",
+    "lambda_consistency": "v1: 0.0 -> v2: 0.5 (mel L1 between clean-decode and perturbed-decode of same truncated codes)"
+  },
+  "interruption_event": {
+    "step_at_interruption": "approximately 19500 (exact unknown; trainer ckpt boundary 17500)",
+    "cause": "VS Code accidentally exited around 14:14, killing accelerate subprocess",
+    "resume_step": 17501,
+    "resume_method": "accelerate launch scripts/train_lca.py --config <cfg> --continue_train",
+    "note": "The continue_train path was previously verified by 2-phase dry run; resumption was clean"
+  },
+  "note": "Packaging only; not a training or evaluation result. Both v2 alternative snapshots retained for ablation."
+}

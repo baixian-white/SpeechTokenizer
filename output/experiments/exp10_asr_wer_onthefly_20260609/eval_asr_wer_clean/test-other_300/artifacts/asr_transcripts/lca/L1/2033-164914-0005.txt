@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0005
+# model=lca
+# L=1
+
+GT:
+TELL ME WHAT HAPPENED QUOTH ZAU AL MAKAN
+
+Whisper(original):
+Tell me what happened, what's out on my car?
+
+Whisper(decoded):
+Charlie, what happens would sell a record.

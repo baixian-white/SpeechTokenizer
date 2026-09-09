@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0039
+# model=base
+# L=1
+
+GT:
+NOT EXACTLY REPLIED MARGARET SMILING
+
+Whisper(original):
+Not exactly, replied Margaret, smiling.
+
+Whisper(decoded):
+I'm exactlyotyped by putting other stars in. What will life what will life make for themselves?

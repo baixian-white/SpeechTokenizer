@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0015
+# model=lca
+# L=2
+
+GT:
+WORDS WAS IT THEIR COLOURS
+
+Whisper(original):
+words. Was it their colors?
+
+Whisper(decoded):
+words. Was it their colors?

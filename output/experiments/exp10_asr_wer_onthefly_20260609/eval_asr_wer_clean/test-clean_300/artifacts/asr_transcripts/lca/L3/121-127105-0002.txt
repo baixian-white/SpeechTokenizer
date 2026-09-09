@@ -1,0 +1,12 @@
+# sample_id=121-127105-0002
+# model=lca
+# L=3
+
+GT:
+CRIED ONE OF THE WOMEN HE TOOK NO NOTICE OF HER HE LOOKED AT ME BUT AS IF INSTEAD OF ME HE SAW WHAT HE SPOKE OF
+
+Whisper(original):
+cried one of the women. He took no notice of her. He looked at me, but as if. Instead of me, he saw what he spoke of.
+
+Whisper(decoded):
+cried one of the women, he took no notice of her. He looked at me, but as if. Instead of me, he saw what he spoke of.

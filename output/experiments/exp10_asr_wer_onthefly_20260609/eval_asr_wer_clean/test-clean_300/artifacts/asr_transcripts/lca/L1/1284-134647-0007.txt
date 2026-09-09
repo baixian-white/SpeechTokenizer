@@ -1,0 +1,12 @@
+# sample_id=1284-134647-0007
+# model=lca
+# L=1
+
+GT:
+PROSCRIBED BY THE CIVIL AND ECCLESIASTICAL POWERS OF THE EMPIRE THE DONATISTS STILL MAINTAINED IN SOME PROVINCES PARTICULARLY IN NUMIDIA THEIR SUPERIOR NUMBERS AND FOUR HUNDRED BISHOPS ACKNOWLEDGED THE JURISDICTION OF THEIR PRIMATE
+
+Whisper(original):
+Prescribed by the civil and ecclesiastical powers of the Empire, the Donatists still maintained in some provinces, particularly in Numidia, their superior numbers, and 400 bishops acknowledged the jurisdiction of their primate.
+
+Whisper(decoded):
+Proscron, when a single and ecclesiastical house of the Empire, the Dallatists still maintain some provinces particularly in Armenia, their superior numbers, and 400 bishops acknowledge the jurisdiction of their primate.

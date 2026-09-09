@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0003
+# model=base
+# L=3
+
+GT:
+REJOINED THE EUNUCH WHO THEN WAS THE RECITER POINT HIM OUT TO ME
+
+Whisper(original):
+Rejoin the UNUC. Who then was the reciter? Point him out to me.
+
+Whisper(decoded):
+We joined the UNOC. Who then was the reciter, point him out to me.

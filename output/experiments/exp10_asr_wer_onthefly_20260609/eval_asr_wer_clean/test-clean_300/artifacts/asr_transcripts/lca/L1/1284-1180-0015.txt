@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0015
+# model=lca
+# L=1
+
+GT:
+WE ARE TRAVELING REPLIED OJO AND WE STOPPED AT YOUR HOUSE JUST TO REST AND REFRESH OURSELVES
+
+Whisper(original):
+We're traveling," replied Ojo, and we stop at your house just to rest and refresh ourselves.
+
+Whisper(decoded):
+They're travelling, who play dojo, and we stop each other as just a rest and refresh ourselves.

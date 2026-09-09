@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0009
+# model=lca
+# L=2
+
+GT:
+APOMORPHINE IS NOT ALLIED IN PHYSIOLOGICAL ACTION TO MORPHINE AND MAY BE GIVEN IN CASES OF NARCOTIC POISONING
+
+Whisper(original):
+Epimorphine is not elite in physiological action to morphine and may be given in cases of narcotic poisoning.
+
+Whisper(decoded):
+Epimorphine is not added in for the larger connection to morphine and may be deleted in cases of narcotic poisoning.

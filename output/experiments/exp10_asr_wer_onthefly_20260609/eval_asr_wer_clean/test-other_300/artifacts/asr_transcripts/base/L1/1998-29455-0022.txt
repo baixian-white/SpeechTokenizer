@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0022
+# model=base
+# L=1
+
+GT:
+REMEMBER THAT NEITHER OF THEM KNEW ANY BETTER
+
+Whisper(original):
+Remember that neither of them knew any better.
+
+Whisper(decoded):
+You know no, but think about the moon and the butter.

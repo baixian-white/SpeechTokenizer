@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0022
+# model=base
+# L=1
+
+GT:
+WELL THAT'LL SHOW YOU THE SORT OF MAN I AM
+
+Whisper(original):
+Well, they'll show you the sort of man I am.
+
+Whisper(decoded):
+Well, don't show you inside of me learning.

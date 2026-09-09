@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0003
+# model=lca
+# L=2
+# channel=substitution-high
+
+GT:
+HELLO BERTIE ANY GOOD IN YOUR MIND
+
+Whisper(original):
+Hello Bertie, any good in your mind?
+
+Whisper(decoded):
+Are you ready? Any good in your mind?

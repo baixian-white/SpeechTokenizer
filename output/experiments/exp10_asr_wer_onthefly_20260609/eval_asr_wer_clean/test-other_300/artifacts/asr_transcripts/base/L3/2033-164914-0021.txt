@@ -1,0 +1,12 @@
+# sample_id=2033-164914-0021
+# model=base
+# L=3
+
+GT:
+WE WILL DO THEE NO UPRIGHT O MY SON NOR WRONG THEE IN AUGHT BUT OUR OBJECT IS THAT THOU BEND THY GRACIOUS STEPS WITH ME TO MY MISTRESS TO RECEIVE HER ANSWER AND RETURN IN WEAL AND SAFETY AND THOU SHALT HAVE A HANDSOME PRESENT AS ONE WHO BRINGETH GOOD NEWS
+
+Whisper(original):
+We will do thee no upright, O my son, nor wrong thee in ought. But our object is that thou bend thy gracious steps with me to my mistress, to receive her answer and return in will and safety, and thou shalt have a handsome present as one who bringeth good news.
+
+Whisper(decoded):
+We will do the no-appride, my son, nor wrong thee in art. And our object is that thou bend thy gracious steps with me to my mistress, to receive her answer and returning real and safety, and thou shalt have a handsome present as one who bring us good news.

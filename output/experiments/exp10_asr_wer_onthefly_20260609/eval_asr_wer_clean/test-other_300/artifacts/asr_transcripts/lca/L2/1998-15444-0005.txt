@@ -1,0 +1,12 @@
+# sample_id=1998-15444-0005
+# model=lca
+# L=2
+
+GT:
+IF THE MEDICAL PRACTITIONER IS IN DOUBT ON ANY POINT HE SHOULD OBTAIN TECHNICAL ASSISTANCE FROM SOMEONE WHO HAS PAID ATTENTION TO THE SUBJECT
+
+Whisper(original):
+If the medical practitioners endowed on any point, he should obtain technical assistance from someone who has paid attention to the subject.
+
+Whisper(decoded):
+If the micro-protition has endowed on any point, we should obtain technical assistance from some run with great attention to the subject.

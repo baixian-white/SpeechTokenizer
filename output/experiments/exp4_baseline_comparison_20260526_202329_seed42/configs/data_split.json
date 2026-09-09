@@ -1,0 +1,32 @@
+{
+  "seed": 42,
+  "source_train_files": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+  "source_valid_files": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\valid_files.txt",
+  "normalized_train_files": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp4_baseline_comparison_20260526_202329_seed42\\artifacts\\train_files.txt",
+  "normalized_valid_files": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp4_baseline_comparison_20260526_202329_seed42\\artifacts\\valid_files.txt",
+  "normalization_note": "Only file paths were mapped from archived Linux absolute paths to the current repository root; sample ordering and split membership were not changed.",
+  "train_stats": {
+    "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\train_files.txt",
+    "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp4_baseline_comparison_20260526_202329_seed42\\artifacts\\train_files.txt",
+    "total_read": 200,
+    "written": 200,
+    "missing_audio": 0,
+    "missing_feature": 0,
+    "mapped_paths": 200,
+    "bad_rows": 0,
+    "truncated_to": 200,
+    "missing_examples": []
+  },
+  "valid_stats": {
+    "source_path": "E:\\CODE\\speechtokenizer\\data\\SpeechPretrain\\hubert_rep\\LibriSpeech\\valid_files.txt",
+    "output_path": "E:\\CODE\\speechtokenizer\\output\\experiments\\exp4_baseline_comparison_20260526_202329_seed42\\artifacts\\valid_files.txt",
+    "total_read": 200,
+    "written": 200,
+    "missing_audio": 0,
+    "missing_feature": 0,
+    "mapped_paths": 200,
+    "bad_rows": 0,
+    "truncated_to": 200,
+    "missing_examples": []
+  }
+}

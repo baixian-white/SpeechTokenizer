@@ -1,0 +1,12 @@
+# sample_id=121-127105-0016
+# model=base
+# L=1
+
+GT:
+PROBABLY NOT TILL THE SECOND POST
+
+Whisper(original):
+Probably not till the second post.
+
+Whisper(decoded):
+Freil Vang out till the second first.

@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0002
+# model=base
+# L=1
+
+GT:
+AFTER PROCEEDING A FEW MILES THE PROGRESS OF HAWKEYE WHO LED THE ADVANCE BECAME MORE DELIBERATE AND WATCHFUL
+
+Whisper(original):
+After proceeding a few miles, the progress of Hawkeye, who led the advance, became more deliberate and watchful.
+
+Whisper(decoded):
+After proceeding a few miles, the progress of Hawkeye who led the advance became more deliberate and watchful.

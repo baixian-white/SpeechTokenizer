@@ -1,0 +1,73 @@
+﻿{
+    "warning":  "minimum debug/tracer matrix, not paper-grade",
+    "run_id":  "exp5_ablation_and_diagnosis_20260526_202329_seed42",
+    "seed":  42,
+    "variants":  [
+                     {
+                         "parent_run_id":  "exp5",
+                         "config_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260526_202329_seed42\\configs\\variants\\hand_encoder_base.json",
+                         "checkpoint_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260526_202329_seed42\\checkpoints\\hand_encoder_base\\SpeechTokenizer_best_dev.pt",
+                         "notes":  "single-factor vs nas_encoder_base within debug route",
+                         "ablation_group":  "hand_vs_nas_encoder",
+                         "changed_factor":  "encoder architecture: hand-designed",
+                         "fixed_factors":  "debug data subset, max_train_steps=2, distillation on, fixed decoder",
+                         "status":  "ready",
+                         "variant_id":  "hand_encoder_base"
+                     },
+                     {
+                         "parent_run_id":  "exp2_scit_speech_training_20260526_202329_seed42",
+                         "config_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_training_20260526_202329_seed42\\configs\\scit_speech_base_config.json",
+                         "checkpoint_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_training_20260526_202329_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+                         "notes":  "single-factor vs hand_encoder_base within debug route",
+                         "ablation_group":  "hand_vs_nas_encoder",
+                         "changed_factor":  "encoder architecture: NAS proxy selected encoder",
+                         "fixed_factors":  "debug data subset, max_train_steps=2, distillation on, fixed decoder",
+                         "status":  "ready",
+                         "variant_id":  "nas_encoder_base"
+                     },
+                     {
+                         "parent_run_id":  "exp2_scit_speech_training_20260526_202329_seed42",
+                         "config_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_training_20260526_202329_seed42\\configs\\scit_speech_base_config.json",
+                         "checkpoint_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_training_20260526_202329_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+                         "notes":  "Base vs LCA is diagnostic and changes adaptation objective after Base",
+                         "ablation_group":  "base_vs_lca",
+                         "changed_factor":  "Base training only",
+                         "fixed_factors":  "same debug sample list for evaluation",
+                         "status":  "ready",
+                         "variant_id":  "base_debug"
+                     },
+                     {
+                         "parent_run_id":  "exp3_low_load_channel_aware_adaptation_20260526_202329_seed42",
+                         "config_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_20260526_202329_seed42\\configs\\lca_finetune_config.json",
+                         "checkpoint_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_20260526_202329_seed42\\checkpoints\\SCIT-Speech-LCA_best.pt",
+                         "notes":  "diagnostic route",
+                         "ablation_group":  "base_vs_lca/random_l_on",
+                         "changed_factor":  "LCA objective with random L and ChannelSim",
+                         "fixed_factors":  "same Base parent and debug sample list",
+                         "status":  "ready",
+                         "variant_id":  "lca_random_l_on"
+                     },
+                     {
+                         "parent_run_id":  "exp5",
+                         "config_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260526_202329_seed42\\configs\\variants\\no_semantic_distill.json",
+                         "checkpoint_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260526_202329_seed42\\checkpoints\\no_semantic_distill\\SpeechTokenizer_best_dev.pt",
+                         "notes":  "single-factor vs nas_encoder_base except independent short training noise",
+                         "ablation_group":  "semantic_distillation_on_off",
+                         "changed_factor":  "distill_loss_lambda=0",
+                         "fixed_factors":  "NAS encoder, debug data subset, max_train_steps=2, fixed decoder",
+                         "status":  "ready",
+                         "variant_id":  "no_semantic_distill"
+                     },
+                     {
+                         "parent_run_id":  "exp5",
+                         "config_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260526_202329_seed42\\configs\\variants\\random_l_off_lca.json",
+                         "checkpoint_path":  "E:\\CODE\\speechtokenizer\\output\\experiments\\exp5_ablation_and_diagnosis_20260526_202329_seed42\\checkpoints\\random_l_off\\SCIT-Speech-LCA_best.pt",
+                         "notes":  "single-factor vs lca_random_l_on within debug route",
+                         "ablation_group":  "random_l_sampling_on_off",
+                         "changed_factor":  "random L off; L=3 full-depth only in LCA debug trainer",
+                         "fixed_factors":  "same Base parent, same ChannelSim config, same max_train_steps=3",
+                         "status":  "ready",
+                         "variant_id":  "random_l_off"
+                     }
+                 ]
+}

@@ -1,0 +1,13 @@
+# sample_id=1188-133604-0002
+# model=lca
+# L=1
+# channel=substitution-high
+
+GT:
+BY BEING STUDIOUS OF COLOR THEY ARE STUDIOUS OF DIVISION AND WHILE THE CHIAROSCURIST DEVOTES HIMSELF TO THE REPRESENTATION OF DEGREES OF FORCE IN ONE THING UNSEPARATED LIGHT THE COLORISTS HAVE FOR THEIR FUNCTION THE ATTAINMENT OF BEAUTY BY ARRANGEMENT OF THE DIVISIONS OF LIGHT
+
+Whisper(original):
+By being studious of color they are studious of division, and while the curious purist devotes himself to the representation of degrees of force in one thing, unseparated light, the colorists have for their function the attainment of beauty by arrangement of the divisions of light.
+
+Whisper(decoded):
+are being studious of color, they are studious of division, and all the tear-or-stirrest diverts in soft the representation of degrees of force in one fan, unseparated white. The colorists have for their function. attainment of beauty by range better the divisions of life.

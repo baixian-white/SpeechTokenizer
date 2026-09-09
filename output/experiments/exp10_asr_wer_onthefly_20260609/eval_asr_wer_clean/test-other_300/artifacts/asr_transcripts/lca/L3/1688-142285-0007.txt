@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0007
+# model=lca
+# L=3
+
+GT:
+I REALLY WAS VERY MUCH AFRAID OF SHOWING HIM HOW MUCH SHOCKED I WAS AT SOME PARTS OF WHAT HE SAID
+
+Whisper(original):
+I really was very much afraid of showing him how much shock there was at some part of what he said.
+
+Whisper(decoded):
+I really was very much afraid of showing you how much shocked I was that some part of what he said.

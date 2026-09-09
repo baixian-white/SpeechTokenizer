@@ -1,0 +1,12 @@
+# sample_id=1284-1180-0022
+# model=base
+# L=1
+
+GT:
+I'M AFRAID I DON'T KNOW MUCH ABOUT THE LAND OF OZ
+
+Whisper(original):
+I'm afraid I don't know much about the land of Oz.
+
+Whisper(decoded):
+I left for you and I don't know what you got the way in the noise.

@@ -1,0 +1,12 @@
+# sample_id=1998-29455-0031
+# model=base
+# L=2
+
+GT:
+I OPE E'S CLEVER ENOUGH TO DO WOT E'S TOLD KEEP IS MUG SHUT THAT'S ALL
+
+Whisper(original):
+I hope he's clever enough to do what he's told. Keep his mugshot, that's all.
+
+Whisper(decoded):
+I hope you still have enough to do what is told. Q is mark shot, that's all.

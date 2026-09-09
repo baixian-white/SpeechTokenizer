@@ -1,0 +1,12 @@
+# sample_id=1998-29454-0002
+# model=lca
+# L=2
+
+GT:
+HIS BOOKS TOLD HIM THAT TREASURE IS BEST HIDDEN UNDER LOOSE BOARDS UNLESS OF COURSE YOUR HOUSE HAS A SECRET PANEL WHICH HIS HAD NOT
+
+Whisper(original):
+His books told him that treasure is best hidden on the loose boards, and as of course your house has a secret panel, which his had not.
+
+Whisper(decoded):
+This book's total in the treasure is best hidden on the loose boards, and thus of course your house has a secret panel, which is her nut.

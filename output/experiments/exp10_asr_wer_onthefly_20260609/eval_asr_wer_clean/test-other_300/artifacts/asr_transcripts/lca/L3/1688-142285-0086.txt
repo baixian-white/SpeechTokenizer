@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0086
+# model=lca
+# L=3
+
+GT:
+THE MOTHER OF WHOM HE SPOKE TO US SAID MARGARET
+
+Whisper(original):
+The mother of whom he spoke to us said, mother.
+
+Whisper(decoded):
+The mother of him is back to us, say mother.

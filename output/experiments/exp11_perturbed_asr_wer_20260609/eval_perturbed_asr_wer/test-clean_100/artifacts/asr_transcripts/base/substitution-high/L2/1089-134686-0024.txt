@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0024
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+IF THE WINE CHANGE INTO VINEGAR AND THE HOST CRUMBLE INTO CORRUPTION AFTER THEY HAVE BEEN CONSECRATED IS JESUS CHRIST STILL PRESENT UNDER THEIR SPECIES AS GOD AND AS MAN
+
+Whisper(original):
+If the wine change into vinegar and the host crumble into corruption after they have been consecrated, is Jesus Christ still present under their species as God and as man?
+
+Whisper(decoded):
+If the wine change into vinegar and the host crumbled into corruption after they have been consecrated, is Jesus Christ still present unto their species as God and as man?

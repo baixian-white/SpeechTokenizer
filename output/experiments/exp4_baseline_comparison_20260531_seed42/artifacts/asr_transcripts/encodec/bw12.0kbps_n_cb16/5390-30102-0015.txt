@@ -1,0 +1,9 @@
+# method=encodec setting=bw12.0kbps_n_cb16 sample_id=5390-30102-0015
+# GT (LibriSpeech):
+WHAT HAD RENDERED HER SO UNHAPPY AND DESPAIRING THIRDLY THE CAPTAIN'S ONLY FRIEND HAD BEEN A CRAZY MAN NAMED WILL THOMPSON WAS HE CRAZY BEFORE THE CAPTAIN'S DEATH OR HAD HE BECOME CRAZED AT THAT TIME
+
+# Whisper(original):
+What had rendered her so unhappy and despairing? Thirdly, the captain's only friend had been a crazy man named Will Thompson. Was he crazy before the captain's death, or had he become crazed at that time?
+
+# Whisper(decoded):
+What had rendered her so unhappy and despairing. Thirdly, the captain's only friend had been a crazy man named Will Thompson. Was he crazy before the captain's death, or had he become crazed at that time?

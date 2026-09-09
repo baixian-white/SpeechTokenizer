@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0002
+# model=base
+# L=2
+
+GT:
+AT THAT EPOCH OF PRISTINE SIMPLICITY HOWEVER MATTERS OF EVEN SLIGHTER PUBLIC INTEREST AND OF FAR LESS INTRINSIC WEIGHT THAN THE WELFARE OF HESTER AND HER CHILD WERE STRANGELY MIXED UP WITH THE DELIBERATIONS OF LEGISLATORS AND ACTS OF STATE
+
+Whisper(original):
+At that epoch of pristine simplicity, however, matters of even slider public interest and of far less intrinsic weight than the welfare of Hester and her child were strangely mixed up with the deliberations of legislators and acts of state.
+
+Whisper(decoded):
+At that epoch of pristine simplicity, however, matters of even slider-public interest under far less intrinsic weight than the welfare of Hester and her child were strangely mixed up with the deliberations of legislators and acts in state.

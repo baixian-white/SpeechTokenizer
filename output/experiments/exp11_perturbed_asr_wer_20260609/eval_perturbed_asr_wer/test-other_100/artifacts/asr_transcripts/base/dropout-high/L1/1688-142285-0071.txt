@@ -1,0 +1,13 @@
+# sample_id=1688-142285-0071
+# model=base
+# L=1
+# channel=dropout-high
+
+GT:
+SHE PUT HER HAND TO IT AND BECAME GHASTLY PALE
+
+Whisper(original):
+She put her hand to it and became ghastly pale.
+
+Whisper(decoded):
+She put me around until it and it came to last in June.

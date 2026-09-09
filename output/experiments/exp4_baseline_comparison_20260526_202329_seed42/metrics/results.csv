@@ -1,0 +1,22 @@
+method,model,L,codec_setting,sample_id,bitrate_bps,WER,CER,STOI,PESQ,ViSQOL,semantic_similarity,recon_l1,RTF,notes
+pcm16_wav,,,16kHz mono PCM_16 WAV,8838-298545-0037,256000,,,,,,,0.0,,PCM copy; ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_base,1,index-only,8838-298545-0037,500,,,,,,,0.16738280653953552,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_base,2,index-only,8838-298545-0037,1000,,,,,,,0.16738206148147583,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_base,3,index-only,8838-298545-0037,1500,,,,,,,0.16738250851631165,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_lca,1,index-only,8838-298545-0037,500,,,,,,,0.1656198650598526,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_lca,2,index-only,8838-298545-0037,1000,,,,,,,0.16562482714653015,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_lca,3,index-only,8838-298545-0037,1500,,,,,,,0.1656225025653839,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+pcm16_wav,,,16kHz mono PCM_16 WAV,5390-30102-0015,256000,,,,,,,0.0,,PCM copy; ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_base,1,index-only,5390-30102-0015,500,,,,,,,0.1601102203130722,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_base,2,index-only,5390-30102-0015,1000,,,,,,,0.16010361909866333,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_base,3,index-only,5390-30102-0015,1500,,,,,,,0.1601039320230484,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_lca,1,index-only,5390-30102-0015,500,,,,,,,0.15815380215644836,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_lca,2,index-only,5390-30102-0015,1000,,,,,,,0.1581483781337738,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_lca,3,index-only,5390-30102-0015,1500,,,,,,,0.15814737975597382,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+pcm16_wav,,,16kHz mono PCM_16 WAV,4018-103416-0033,256000,,,,,,,0.0,,PCM copy; ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_base,1,index-only,4018-103416-0033,500,,,,,,,0.16450095176696777,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_base,2,index-only,4018-103416-0033,1000,,,,,,,0.16449867188930511,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_base,3,index-only,4018-103416-0033,1500,,,,,,,0.1644991636276245,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_lca,1,index-only,4018-103416-0033,500,,,,,,,0.16269123554229736,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_lca,2,index-only,4018-103416-0033,1000,,,,,,,0.16269391775131226,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment
+SCIT-Speech,scit_lca,3,index-only,4018-103416-0033,1500,,,,,,,0.16269172728061676,,ASR/STOI/PESQ/ViSQOL tools not executed in this environment

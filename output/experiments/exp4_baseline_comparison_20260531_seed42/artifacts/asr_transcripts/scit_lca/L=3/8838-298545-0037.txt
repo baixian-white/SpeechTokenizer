@@ -1,0 +1,9 @@
+# method=scit_lca setting=L=3 sample_id=8838-298545-0037
+# GT (LibriSpeech):
+YOU REMEMBER THE MAN WHOM YOU KNOCKED OUT THIS MORNING HE IS BARTON THE FAMOUS TED BARTON I'M SURE SIR YOU MAY WELL BE PROUD TO HAVE OUTED HIM IN ONE ROUND SAID THE PUBLICAN WHY IT TOOK MORRIS THE TEN STONE SIX CHAMPION
+
+# Whisper(original):
+You remember the man whom you knocked out this morning? He is Barton, the famous Ted Barton. I'm sure, sir, you may well be proud to have outed him in one round," said the publican. Why, it took Morris, the ten stone six champion—
+
+# Whisper(decoded):
+You remember the man whom you knocked out this morning? Here's Boulton, the famous Tarth Parton. I'm sure as soon you may well be proud of him and one round," said the publican. Why, he took Morris, the 10th Stone Six champion? . . . . . . . . .

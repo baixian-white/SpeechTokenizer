@@ -1,0 +1,12 @@
+# sample_id=121-123859-0002
+# model=lca
+# L=1
+
+GT:
+BUT RECKONING TIME WHOSE MILLION'D ACCIDENTS CREEP IN TWIXT VOWS AND CHANGE DECREES OF KINGS TAN SACRED BEAUTY BLUNT THE SHARP'ST INTENTS DIVERT STRONG MINDS TO THE COURSE OF ALTERING THINGS ALAS WHY FEARING OF TIME'S TYRANNY MIGHT I NOT THEN SAY NOW I LOVE YOU BEST WHEN I WAS CERTAIN O'ER INCERTAINTY CROWNING THE PRESENT DOUBTING OF THE REST
+
+Whisper(original):
+But reckoning time, whose million accidents creep in twixt vows, and change decrees of kings? Tan's sacred beauty blunt the sharpest and tense, divert strong minds to the course of altering things, alas, why fearing of time's tyranny? Might I not then say, now I love you best? When I was certain or in certainty, crowning the present, doubting of the rest,
+
+Whisper(decoded):
+I liken in time, there's a million accidents. Pre-intrigged vowels. In chains decrees of kings. Chance secret dingy, blunched the star-stant tense, direct strong minds to the course of altering things, alas, why fear any of time's tyranny? Might I not then say, now I love you best? When I was certain or in certainty? founding the present, douching of the rest.

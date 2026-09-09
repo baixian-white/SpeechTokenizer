@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0005
+# model=base
+# L=2
+
+GT:
+WHOSE FEET ARE AS THE FEET OF HARTS AND UNDERNEATH THE EVERLASTING ARMS
+
+Whisper(original):
+whose feet are as the feet of hearts and underneath the everlasting arms.
+
+Whisper(decoded):
+whose feet are as the feet of hearts and underneath the everlasting arms.

@@ -1,0 +1,12 @@
+# sample_id=1320-122612-0009
+# model=base
+# L=1
+
+GT:
+IT WOULD HAVE BEEN MORE WONDERFUL HAD HE SPOKEN WITHOUT A BIDDING
+
+Whisper(original):
+It would have been more wonderful had he spoken without a bidding.
+
+Whisper(decoded):
+It would have been more wonderful had he spoken without appearing.

@@ -1,0 +1,12 @@
+# sample_id=1089-134691-0010
+# model=lca
+# L=3
+
+GT:
+BROTHER MAC ARDLE BROTHER KEOGH
+
+Whisper(original):
+Brother McCartill, Brother Kiaff
+
+Whisper(decoded):
+Brother McCartill. Brother Kiaf.

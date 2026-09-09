@@ -1,0 +1,12 @@
+# sample_id=2414-128291-0003
+# model=lca
+# L=1
+
+GT:
+WHAT DO I HERE SEEK
+
+Whisper(original):
+For do I hear a seek.
+
+Whisper(decoded):
+But, too, I see a safe.

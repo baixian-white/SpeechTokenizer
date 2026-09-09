@@ -1,0 +1,12 @@
+# sample_id=1320-122617-0005
+# model=base
+# L=1
+
+GT:
+THE BEAR SHOOK HIS SHAGGY SIDES AND THEN A WELL KNOWN VOICE REPLIED
+
+Whisper(original):
+The bear shook his shaggy sides and then a well-known voice replied, . . . . . . . . .
+
+Whisper(decoded):
+The bear shook his shiny sides and went a well-known voice replied.

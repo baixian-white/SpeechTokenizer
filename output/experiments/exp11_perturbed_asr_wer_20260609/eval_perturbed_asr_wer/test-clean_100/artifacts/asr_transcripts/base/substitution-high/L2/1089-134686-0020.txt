@@ -1,0 +1,13 @@
+# sample_id=1089-134686-0020
+# model=base
+# L=2
+# channel=substitution-high
+
+GT:
+IF A MAN HAD STOLEN A POUND IN HIS YOUTH AND HAD USED THAT POUND TO AMASS A HUGE FORTUNE HOW MUCH WAS HE OBLIGED TO GIVE BACK THE POUND HE HAD STOLEN ONLY OR THE POUND TOGETHER WITH THE COMPOUND INTEREST ACCRUING UPON IT OR ALL HIS HUGE FORTUNE
+
+Whisper(original):
+If a man had stolen a pound in his youth and had used that pound to amass a huge fortune, how much was he obliged to give back? The pound he had stolen only, or the pound together with the compound interest accruing upon it, or all his huge fortune?
+
+Whisper(decoded):
+If a man had stolen a pound in his youth and had used that pound to amass a huge fortune, how much was he obliged to give back? The pound he had stolen only were the pound together with the compound interest of currying a planet or all his huge fortune.

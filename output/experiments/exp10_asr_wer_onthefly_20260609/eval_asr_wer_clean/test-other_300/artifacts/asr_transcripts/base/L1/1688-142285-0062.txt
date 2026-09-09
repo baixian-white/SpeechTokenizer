@@ -1,0 +1,12 @@
+# sample_id=1688-142285-0062
+# model=base
+# L=1
+
+GT:
+THAT'S WHAT I BELIEVE YOUNG WOMAN
+
+Whisper(original):
+That's what I believe, young woman.
+
+Whisper(decoded):
+That's what I believe, young Roman.

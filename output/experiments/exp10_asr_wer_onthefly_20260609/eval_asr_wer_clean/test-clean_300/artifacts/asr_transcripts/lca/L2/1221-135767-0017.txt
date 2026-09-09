@@ -1,0 +1,12 @@
+# sample_id=1221-135767-0017
+# model=lca
+# L=2
+
+GT:
+ON THE TABLE IN TOKEN THAT THE SENTIMENT OF OLD ENGLISH HOSPITALITY HAD NOT BEEN LEFT BEHIND STOOD A LARGE PEWTER TANKARD AT THE BOTTOM OF WHICH HAD HESTER OR PEARL PEEPED INTO IT THEY MIGHT HAVE SEEN THE FROTHY REMNANT OF A RECENT DRAUGHT OF ALE
+
+Whisper(original):
+On the table, in token that the sentiment of old English hospitality had not been left behind, stood a large pewter-tankerd, at the bottom of which, had Hester or Pearl peeped into it, they might have seen the frothy remnant of a recent draft of ale.
+
+Whisper(decoded):
+On the table, and tokened that the sentiment of Old English Hospitality had not been left behind, stood a large pewter tankard, at the bottom of which, had Hester or Pearl peeped into it, they might have seen the frothy remnant of a recent draft of L.

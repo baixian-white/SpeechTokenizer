@@ -1,0 +1,12 @@
+# sample_id=2033-164915-0003
+# model=lca
+# L=1
+
+GT:
+AFTER A WHILE THEY CAME TO THEMSELVES AND NUZHAT AL ZAMAN REJOICED WITH EXCEEDING JOY OPPRESSION AND DEPRESSION LEFT HER AND GLADNESS TOOK THE MASTERY OF HER AND SHE REPEATED THESE VERSES
+
+Whisper(original):
+After a while, they came to themselves, and Uzzat Al-Zaman rejoiced with exceeding joy. Oppression and depression left her, and gladness took the mastery of her, and she repeated these verses.
+
+Whisper(decoded):
+After a while, they came to themselves, and outside of the heart, rejoiced with its sitting joy. The oppression and depression left her, and Godness took the mastery of her, and she ETitis Hip Voices
