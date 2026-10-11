@@ -1,0 +1,722 @@
+[
+  {
+    "expected": "p225",
+    "utterance": "p225_021",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.9979439377784729,
+    "candidate_score": 0.9999955892562866
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_022",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.98530513048172,
+    "candidate_score": 0.9999816417694092
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_024",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.6606782674789429,
+    "candidate_score": 0.9923672080039978
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_026",
+    "full": "p339",
+    "candidate": "p225",
+    "full_score": 0.49294865131378174,
+    "candidate_score": 0.9996494054794312
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_030",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.9962204098701477,
+    "candidate_score": 0.9999902248382568
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_037",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.9999511241912842,
+    "candidate_score": 0.9999998807907104
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_060",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.6738455295562744,
+    "candidate_score": 0.9999053478240967
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_071",
+    "full": "p282",
+    "candidate": "p225",
+    "full_score": 0.4072137176990509,
+    "candidate_score": 0.9120512008666992
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_121",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.941619873046875,
+    "candidate_score": 0.9999454021453857
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_147",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.9479670524597168,
+    "candidate_score": 0.9980649352073669
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_202",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.9972787499427795,
+    "candidate_score": 0.9999986886978149
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_312",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.980338454246521,
+    "candidate_score": 0.9999716281890869
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_346",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.9964591860771179,
+    "candidate_score": 0.9999656677246094
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_351",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.7063930630683899,
+    "candidate_score": 0.9996272325515747
+  },
+  {
+    "expected": "p225",
+    "utterance": "p225_355",
+    "full": "p225",
+    "candidate": "p225",
+    "full_score": 0.9993622899055481,
+    "candidate_score": 0.9999995231628418
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_003",
+    "full": "p243",
+    "candidate": "p226",
+    "full_score": 0.5501043200492859,
+    "candidate_score": 0.8701523542404175
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_023",
+    "full": "p243",
+    "candidate": "p226",
+    "full_score": 0.6713555455207825,
+    "candidate_score": 0.9969543218612671
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_030",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.5401511192321777,
+    "candidate_score": 0.9934645295143127
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_041",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.9996787309646606,
+    "candidate_score": 0.999974250793457
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_103",
+    "full": "p260",
+    "candidate": "p226",
+    "full_score": 0.8059949278831482,
+    "candidate_score": 0.8415905237197876
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_194",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.9876326322555542,
+    "candidate_score": 0.9986024498939514
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_206",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.9704400300979614,
+    "candidate_score": 0.999936580657959
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_221",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.9070646166801453,
+    "candidate_score": 0.9993534684181213
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_231",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.9991064667701721,
+    "candidate_score": 0.9999406337738037
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_249",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.5635533928871155,
+    "candidate_score": 0.9838310480117798
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_252",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.9856098294258118,
+    "candidate_score": 0.999903678894043
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_283",
+    "full": "p304",
+    "candidate": "p227",
+    "full_score": 0.34256020188331604,
+    "candidate_score": 0.7447512745857239
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_301",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.9886389970779419,
+    "candidate_score": 0.9999828338623047
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_311",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.9983054399490356,
+    "candidate_score": 0.9999990463256836
+  },
+  {
+    "expected": "p226",
+    "utterance": "p226_349",
+    "full": "p226",
+    "candidate": "p226",
+    "full_score": 0.9747680425643921,
+    "candidate_score": 0.9999537467956543
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_012",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.5377800464630127,
+    "candidate_score": 0.9880378246307373
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_015",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.9807053208351135,
+    "candidate_score": 0.9999024868011475
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_022",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.7022441029548645,
+    "candidate_score": 0.9997690320014954
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_048",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.9988847374916077,
+    "candidate_score": 0.9999991655349731
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_107",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.9998725652694702,
+    "candidate_score": 0.9999997615814209
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_108",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.9427406191825867,
+    "candidate_score": 0.9995342493057251
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_207",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.7552154064178467,
+    "candidate_score": 0.9979106783866882
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_213",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.9997500777244568,
+    "candidate_score": 0.9999949932098389
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_215",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.38719141483306885,
+    "candidate_score": 0.9889159202575684
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_245",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.9779792428016663,
+    "candidate_score": 0.999972939491272
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_253",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.840731680393219,
+    "candidate_score": 0.9942171573638916
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_281",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.9047250747680664,
+    "candidate_score": 0.9999253749847412
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_307",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.8810727596282959,
+    "candidate_score": 0.9981716871261597
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_390",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.9993909597396851,
+    "candidate_score": 0.9999978542327881
+  },
+  {
+    "expected": "p227",
+    "utterance": "p227_391",
+    "full": "p227",
+    "candidate": "p227",
+    "full_score": 0.9931560158729553,
+    "candidate_score": 0.9999573230743408
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_136",
+    "full": "p228",
+    "candidate": "p228",
+    "full_score": 0.45537179708480835,
+    "candidate_score": 0.9993771910667419
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_145",
+    "full": "p228",
+    "candidate": "p228",
+    "full_score": 0.32562708854675293,
+    "candidate_score": 0.8784773349761963
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_167",
+    "full": "p228",
+    "candidate": "p228",
+    "full_score": 0.9034134745597839,
+    "candidate_score": 0.9999189376831055
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_182",
+    "full": "p269",
+    "candidate": "p228",
+    "full_score": 0.589180052280426,
+    "candidate_score": 0.9916731715202332
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_185",
+    "full": "p257",
+    "candidate": "p228",
+    "full_score": 0.22134678065776825,
+    "candidate_score": 0.9493512511253357
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_191",
+    "full": "p228",
+    "candidate": "p228",
+    "full_score": 0.9853103160858154,
+    "candidate_score": 0.9999183416366577
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_218",
+    "full": "p276",
+    "candidate": "p228",
+    "full_score": 0.9643723368644714,
+    "candidate_score": 0.9183558821678162
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_240",
+    "full": "p228",
+    "candidate": "p228",
+    "full_score": 0.9586200714111328,
+    "candidate_score": 0.9986144304275513
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_241",
+    "full": "p228",
+    "candidate": "p228",
+    "full_score": 0.6620014309883118,
+    "candidate_score": 0.999818742275238
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_258",
+    "full": "p312",
+    "candidate": "p228",
+    "full_score": 0.3142346739768982,
+    "candidate_score": 0.9947269558906555
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_270",
+    "full": "p228",
+    "candidate": "p228",
+    "full_score": 0.6309363842010498,
+    "candidate_score": 0.9979349374771118
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_298",
+    "full": "p228",
+    "candidate": "p228",
+    "full_score": 0.9218918085098267,
+    "candidate_score": 0.9957465529441833
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_333",
+    "full": "p228",
+    "candidate": "p228",
+    "full_score": 0.8700737357139587,
+    "candidate_score": 0.9999005794525146
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_353",
+    "full": "p228",
+    "candidate": "p228",
+    "full_score": 0.9849291443824768,
+    "candidate_score": 0.9999426603317261
+  },
+  {
+    "expected": "p228",
+    "utterance": "p228_367",
+    "full": "p276",
+    "candidate": "p228",
+    "full_score": 0.836082935333252,
+    "candidate_score": 0.8807884454727173
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_043",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.9998962879180908,
+    "candidate_score": 0.9999994039535522
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_054",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.9969629645347595,
+    "candidate_score": 0.9999995231628418
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_065",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.998210072517395,
+    "candidate_score": 0.9999111890792847
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_178",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.9966155886650085,
+    "candidate_score": 0.9999971389770508
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_202",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.9566128849983215,
+    "candidate_score": 0.9999954700469971
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_210",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.9988216757774353,
+    "candidate_score": 0.9999996423721313
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_257",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.955814778804779,
+    "candidate_score": 0.9999649524688721
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_272",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.8709990382194519,
+    "candidate_score": 0.9999325275421143
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_275",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.7530415654182434,
+    "candidate_score": 0.9993569254875183
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_290",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.9928216338157654,
+    "candidate_score": 0.9999748468399048
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_310",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.99424147605896,
+    "candidate_score": 0.9999779462814331
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_351",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.9967485666275024,
+    "candidate_score": 0.9999895095825195
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_357",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.5018061995506287,
+    "candidate_score": 0.9999372959136963
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_365",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.9970901012420654,
+    "candidate_score": 0.9999909400939941
+  },
+  {
+    "expected": "p229",
+    "utterance": "p229_387",
+    "full": "p229",
+    "candidate": "p229",
+    "full_score": 0.999326229095459,
+    "candidate_score": 0.9999960660934448
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_036",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.9965006113052368,
+    "candidate_score": 0.999994158744812
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_046",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.9977776408195496,
+    "candidate_score": 0.9999809265136719
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_069",
+    "full": "p276",
+    "candidate": "p230",
+    "full_score": 0.6873642206192017,
+    "candidate_score": 0.9954684972763062
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_091",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.9912972450256348,
+    "candidate_score": 0.9998884201049805
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_103",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.9996780157089233,
+    "candidate_score": 0.9999991655349731
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_125",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.6118528246879578,
+    "candidate_score": 0.8092876672744751
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_185",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.9349043965339661,
+    "candidate_score": 0.9997534155845642
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_186",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.9950136542320251,
+    "candidate_score": 0.9999934434890747
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_190",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.9986306428909302,
+    "candidate_score": 0.9998846054077148
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_242",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.45598405599594116,
+    "candidate_score": 0.9998890161514282
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_285",
+    "full": "p340",
+    "candidate": "p230",
+    "full_score": 0.8430272340774536,
+    "candidate_score": 0.9786403775215149
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_324",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.5354081988334656,
+    "candidate_score": 0.9825830459594727
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_330",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.9985389709472656,
+    "candidate_score": 0.9999977350234985
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_385",
+    "full": "p340",
+    "candidate": "p230",
+    "full_score": 0.20018811523914337,
+    "candidate_score": 0.9735906720161438
+  },
+  {
+    "expected": "p230",
+    "utterance": "p230_393",
+    "full": "p230",
+    "candidate": "p230",
+    "full_score": 0.9156231880187988,
+    "candidate_score": 0.9996030926704407
+  }
+]

@@ -1,0 +1,310 @@
+%%
+%% Based on the user-supplied Elsevier template.
+%% The original is retained in template_original.tex.
+\documentclass[final,5p,times,twocolumn]{elsarticle}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Semantic speech and voiceprint components},pdfauthor={}}
+% Journal inherited from the template; final venue to be confirmed.
+\journal{Journal of Information Security and Applications}
+
+\begin{document}
+\begin{frontmatter}
+\title{Experimental six-user real-time quantum semantic speech communication with embedded identity authentication}
+\author{[Author information to be supplied]}
+\begin{abstract}
+This paper experimentally demonstrates a multi-user real-time quantum semantic speech communication network. To address the ubiquitous low-bit-rate limitation in quantum communication, a dedicated semantic extraction and reconstruction algorithm is developed to reduce quantum-bit consumption, achieving high-quality speech reconstruction at a bit rate of approximately 1.46 kbps. Simultaneously, by leveraging the voiceprint features naturally embedded in the transmitted semantic information, the system enables reliable real-time identity authentication without incurring any additional data-transmission or quantum-bit overhead.
+\end{abstract}
+\begin{keyword}
+semantic speech communication\sep residual vector quantization\sep speech reconstruction\sep speaker recognition\sep voiceprint authentication
+\end{keyword}
+\end{frontmatter}
+
+\noindent\textit{Working draft of the semantic extraction, speech reconstruction, and voiceprint sections. The overall study title is retained. Quantum-link methods and six-user integration results are outside this contribution draft.}
+
+\section{Introduction}
+Low-rate speech communication must preserve the words needed for interaction and the acoustic cues that distinguish speakers. These requirements become connected when a receiving terminal uses recovered speech to estimate who is speaking. A representation optimized for intelligibility may discard speaker-specific detail, whereas retaining more acoustic information consumes additional transmission capacity. We investigate how the same compact speech payload can support reconstruction and receiver-side identity inference.
+
+SpeechTokenizer combines semantic and acoustic information through an encoder--decoder architecture with layered RVQ~\cite{speechtokenizer}. HuBERT supplies self-supervised speech features that can guide content preservation~\cite{hubert}. We adopt these established components in SCIT-Speech, a shared-codebook index transmission subsystem. The transmitter sends discrete indices, and the receiver uses locally stored codebooks and a decoder to recover speech. The number of retained RVQ layers determines the nominal index rate.
+
+The identity module operates at the receiver. It combines embeddings of the received indices and reconstructed audio to classify speakers. Here, \emph{embedded} refers to reusing speaker information naturally retained in the speech payload. It does not denote an inserted watermark or an additional transmitted biometric identifier.
+
+The overall application is a six-user communication network. This contribution describes its semantic and voiceprint components and their component-level evidence. The principal contributions within this scope are a rate-controlled extraction and reconstruction pipeline, a receiver-side voiceprint path operating on reconstructed speech, and separate evaluations of speech quality, retained identity information, and online identification. These evaluations distinguish reconstruction quality from authentication reliability.
+
+\section{Results}
+Our system transmits speech as a stream of codebook indices that is small enough to be encrypted and carried over a rate-limited secure channel, and reconstructs speech at the receiver from the same indices (Fig.~\ref{fig:components}). This representation compresses 16-kHz speech from a 256-kbit/s raw waveform to an index-only payload of 1.5~kbit/s, a roughly 170-fold reduction, while still supporting intelligible reconstruction and retaining speaker identity. We evaluate the pipeline in stages: the payload rate, the transmitter-side encoder cost required to generate it, clean-channel reconstruction quality, robustness to transport perturbations, and retained speaker identity. Clean-channel reconstruction quality is reported as offline means over 300 LibriSpeech test-clean utterances at 1.5~kbit/s ($L=3$); robustness is evaluated on the full LibriSpeech test-clean set under simulated transport perturbations; and speaker identity is measured on 110 VCTK speakers.
+
+\subsection{A shared-codebook index-transmission framework compresses speech by more than two orders of magnitude}
+The core of our approach is to recast speech communication as the transmission of discrete indices. Rather than transmitting waveforms or continuous features, the channel carries only integer indices into locally stored codebooks, while the encoder, shared codebook set and decoder remain local to both sender and receiver. The sender transmits the codebook index selected for each frame; the receiver uses its local codebooks to retrieve the corresponding codewords, sums them and decodes the result into speech. This converts a channel ordinarily sized at waveform rate into a discrete index stream. Because the number of transmitted indices scales with the number of retained RVQ layers, the framework naturally provides a family of compression levels. Relative to 256~kbit/s raw speech (16~kHz, 16-bit PCM), retaining one or two layers lowers the payload to 0.5 or 1.0~kbit/s, corresponding to roughly 512-fold or 256-fold compression; retaining all three layers yields 1.5~kbit/s and roughly 170-fold compression. Greater compression, achieved by retaining fewer layers, reduces intelligibility. We therefore use the full-depth $L=3$ setting at roughly 170-fold compression rather than the most aggressively compressed condition. This is the least aggressive compression setting that still reconstructs intelligible speech (quantified below) and is the payload emphasized here. The index-only payload is small enough to encrypt and carry over a rate-limited secure channel; it is the information transmitted in this study (encoding, quantization and packetization details are provided in Methods).
+
+\subsection{Neural architecture search reduces transmitter-side encoder parameters and computation by nearly an order of magnitude}
+The transmitter-side encoder determines the computation required to map speech to indices and is therefore central to deployment on resource-constrained endpoints. To reduce this cost, we replaced a hand-designed SEANet encoder with an encoder discovered by neural architecture search (NAS), optimizing a multi-objective criterion that balances a reconstruction-quality proxy against resource use and selecting a quality--resource trade-off on its Pareto frontier. Relative to the original hand-designed SEANet encoder, the selected architecture reduces encoder parameters from 67.7~M to 8.87~M (approximately $-87\%$), multiply--accumulate operations (MACs) from 5.87~G to 0.62~G (approximately $-89\%$), and the real-time factor (RTF; FP32, RTX 5070 Ti) for a one-second 16-kHz utterance by approximately $55\%$. All reconstruction results reported here use this NAS-discovered lightweight encoder. Thus, intelligible reconstruction at roughly 170-fold compression is achieved while reducing transmitter-side encoding cost by nearly an order of magnitude.
+
+\subsection{An index payload reconstructs intelligible speech at roughly 170-fold compression}
+To determine whether the transmitted indices carry sufficient information to support intelligible speech, we reconstructed 300 held-out LibriSpeech test-clean utterances at 1.5~kbit/s. The base SCIT codec achieved a mean STOI of 0.892 and PESQ-WB of 2.097 (Table~\ref{tab:quality}), establishing that intelligible speech can be reconstructed from the index-only payload. Retaining fewer layers enables stronger compression but reduces intelligibility: STOI falls from 0.892 at 1.5~kbit/s to 0.872 at 1.0~kbit/s and 0.809 at 0.5~kbit/s. This trade-off motivates the approximately 170-fold setting used here.
+
+Crucially, at the same 1.5-kbit/s rate, SCIT outperformed two standard neural codecs across all three metrics: its STOI of 0.892 was substantially higher than 0.799 for DAC and 0.848 for EnCodec, and it likewise led in mel-L1 and PESQ-WB. The 95\% bootstrap confidence intervals for all three metrics did not overlap with those of DAC or EnCodec (Table~\ref{tab:quality}). Furthermore, intelligibility at 1.5~kbit/s approached that of Opus at approximately four times the bitrate: Opus obtained a STOI of 0.906 at 6~kbit/s, only 0.014 higher than SCIT. Thus, SCIT achieved comparable intelligibility at about one quarter of the bitrate. The channel-aware fine-tuned variant, SCIT-LCA, further improves this baseline, as described below.
+
+\begin{table*}[t]
+\centering
+\caption{Comparison of SCIT with external codecs on 300 LibriSpeech test-clean utterances. Entries are means [95\% bootstrap confidence intervals]. The first three rows are rate matched at a nominal 1.5~kbit/s; bold means are the best within this group. Opus (6~kbit/s) and lossless PCM are references at different bitrates. Lower mel-L1 and higher STOI/PESQ-WB are better.}
+\label{tab:quality}
+\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrr}
+\toprule
+Codec & kbit/s & mel-L1 & STOI & PESQ-WB\\
+\midrule
+SCIT (this work) & 1.5 & \textbf{0.864} [0.855, 0.874] & \textbf{0.892} [0.889, 0.895] & \textbf{2.097} [2.067, 2.128]\\
+DAC ($n_q=3$) & 1.5 & 1.232 [1.219, 1.245] & 0.799 [0.796, 0.803] & 1.284 [1.266, 1.303]\\
+EnCodec & 1.5 & 1.282 [1.266, 1.297] & 0.848 [0.845, 0.851] & 1.612 [1.585, 1.638]\\
+Opus & 6.0 & 2.302$^\dagger$ [2.275, 2.330] & 0.906 [0.903, 0.908] & 2.237 [2.187, 2.287]\\
+PCM (lossless reference) & 256 & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & 4.644 [4.644, 4.644]\\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize $^\dagger$The full-band mel-L1 metric is sensitive to low-rate Opus bandwidth reduction; it should not be used alone to rank perceptual quality across these operating points. Confidence limits are rounded to three decimal places.}
+\end{table*}
+
+\subsection{Channel-aware fine-tuning preserves and extends the reconstruction advantage under transport perturbations}
+We used channel-aware fine-tuning to obtain SCIT-LCA from the base SCIT codec (Methods). We compared the two codecs on all 2,620 LibriSpeech test-clean utterances at 1.5~kbit/s ($L=3$; Table~\ref{tab:robustness}). On a clean channel, SCIT-LCA gave consistent, modest improvements in mel-L1 and STOI ($\Delta=-0.036$ and $+0.007$, respectively), with essentially unchanged PESQ-WB ($\Delta=-0.014$). Thus, robustness adaptation did not sacrifice clean-channel reconstruction quality.
+
+We then evaluated RVQ-index erasure and substitution, packet loss and burst packet loss under the conditions listed in Table~\ref{tab:robustness}. Under all perturbation conditions, SCIT-LCA maintained its advantages in mel-L1 and STOI relative to SCIT. Compared with clean transmission, the mel-L1 advantage widened under index errors ($-0.045$ to $-0.048$) and was comparable under packet loss. PESQ-WB became clearly favourable under index errors ($+0.012$ to $+0.019$), while packet-loss differences remained close to the clean-channel value. Hence, channel-aware fine-tuning retains the clean-channel reconstruction advantage and enlarges it for discrete index errors, the perturbation most directly tied to the index-transmission setting.
+
+\begin{table}[t]
+\centering
+\caption{Differences between SCIT-LCA and SCIT under transport perturbations on the full LibriSpeech test-clean set ($N=2{,}620$, $L=3$). $\Delta=\mathrm{SCIT\text{-}LCA}-\mathrm{SCIT}$; lower mel-L1 and higher STOI/PESQ-WB favour SCIT-LCA.}
+\label{tab:robustness}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrr}
+\toprule
+Channel condition & $\Delta$mel-L1 & $\Delta$STOI & $\Delta$PESQ-WB\\
+\midrule
+Clean (no errors) & $-0.036$ & $+0.007$ & $-0.014$\\
+Index erasure (10\%) & $-0.048$ & $+0.012$ & $+0.019$\\
+Index substitution ($\sim$3\%) & $-0.045$ & $+0.008$ & $+0.012$\\
+5\% packet loss & $-0.038$ & $+0.008$ & $-0.003$\\
+10-frame burst packet loss & $-0.037$ & $+0.007$ & $-0.009$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The same low-rate payload retains speaker identity, which a frozen-codec classifier recovers with high accuracy}
+The receiver must determine who is speaking from reconstructed speech. To quantify how much speaker identity is retained by the same low-rate payload under a single locked protocol, we froze SCIT-LCA ($L=3$) and trained a speaker classifier while leaving its encoder, RVQ codebooks and decoder unchanged. A token branch reads the transmitted $L=3$ RVQ indices, whereas an audio branch uses a codec-aware ECAPA-TDNN to process reconstructed waveforms; their outputs are combined by a learned gate and classified with AAM-Softmax across 110 VCTK speakers. The protocol was predefined: 80/15/15 splits per speaker, matched three-second token/audio crops, three seeds (41, 42 and 43), validation-only configuration selection, and a single test evaluation after configuration was frozen. The delivery checkpoint was predeclared as seed 42 rather than selected for test performance.
+
+On the locked test set, the classifier achieved mean Top-1 accuracy of $94.93\%\pm0.70\%$, macro-F1 of $94.88\%\pm0.71\%$ and Top-5 accuracy of 99.35\% (Table~\ref{tab:speaker}), approximately one hundred times the chance level of $1/110\approx0.9\%$. Confidence was well calibrated (ECE, 1.75\%), and the conservative bootstrap lower bound across the three seeds was 92.12\%. Thus, speaker identity not only persists in the discrete payload itself, but can also be recovered at the receiver with high accuracy by a classifier that reads this payload from a frozen codec.
+
+\begin{table}[t]
+\centering
+\caption{Formal closed-set classification results for 110 VCTK speakers with frozen SCIT-LCA at $L=3$. All entries are percentages. Results are from three seeds; configuration selection used validation data only, followed by a single test evaluation after freezing. Seed 42 is the predeclared delivery checkpoint. The conservative bootstrap lower bound across seeds is 92.12\%.}
+\label{tab:speaker}
+\scriptsize\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lrrrrr}
+\toprule
+Seed & Top-1 & Macro-F1 & Top-5 & ECE & Worst 10\%\\
+\midrule
+41 & 95.03 & 94.94 & 99.39 & 1.30 & 76.97\\
+42 (delivery) & 94.18 & 94.14 & 99.27 & 2.04 & 73.94\\
+43 & 95.58 & 95.56 & 99.39 & 1.92 & 82.42\\
+\textbf{Mean} & \textbf{94.93 $\pm$ 0.70} & \textbf{94.88 $\pm$ 0.71} & \textbf{99.35} & \textbf{1.75} & \textbf{77.78}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+The semantic subsystem converts 16-kHz speech into shared-codebook RVQ indices and reconstructs speech at nominal rates of 0.5--1.5 kbit/s. Receiver-side identity inference combines the received indices and recovered audio without an additional transmitted identity vector.
+
+The measurements quantify reconstruction quality and retained identity information while keeping the earlier profile-matching baseline, the frozen-codec classifier, and six-user integration protocols separate. Improved intelligibility alone cannot establish reliable authentication. The classifier supplies closed-set speaker-classification evidence, but its fixed class set does not establish open-set authentication. Six-user experiments remain in progress; system-level authentication claims require separate integration measurements and calibrated genuine/impostor trials.
+
+
+\section{Methods}
+\label{sec:methods}
+We describe the deep-learning components supporting reconstruction and closed-set speaker classification. Architecture selection, codec training, channel adaptation and frozen-codec classifier training were separate stages. Supplementary Methods S1--S9 provide the complete implementation and reproducibility record. Quantum-link implementation is outside this section's scope.
+
+\subsection{Speech representation and index-only transmission}
+The codec follows SpeechTokenizer~\cite{speechtokenizer}, with a NAS-selected encoder, three-layer residual vector quantizer (RVQ) and waveform decoder (Fig.~\ref{fig:components}). Mono 16-kHz speech is mapped to 1024-dimensional frames at $f_q=50$~Hz. Three codebooks, each containing $K=1024$ entries, successively quantize the residual. The transmitter sends their integer indices; the receiver sums the corresponding local codewords and decodes speech. Model weights and codebooks are not transmitted.
+
+\begin{figure*}[t]
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{c c c c c c c}
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Input speech\\Encoder $E_\theta$}}
+&$\rightarrow$&
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Shared RVQ\\Select indices $I_{1:L}$}}
+&$\rightarrow$&
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Payload interface\\Received indices $\widetilde I$}}
+&$\rightarrow$&
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Codebook lookup\\Decoder $D_\phi$}}
+\end{tabular}
+\par\medskip
+\begin{tabular}{c c c c c}
+\parbox[c]{0.38\textwidth}{\centering Received indices $\widetilde I$ $\rightarrow$ Token encoder\\
+Reconstructed speech $\hat{x}$ $\rightarrow$ Frozen ECAPA-TDNN\\and trainable audio projection}
+&$\rightarrow$&
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Gated embedding\\fusion}}
+&$\rightarrow$&
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Closed-set\\speaker classifier}}
+\end{tabular}
+\caption{Deep-learning signal path. The receiver reconstructs speech from locally stored codebooks and the received RVQ indices. A token encoder and an audio encoder process the same speech interval; their embeddings are fused for 110-class speaker identification. Speaker-classifier training leaves the speech codec unchanged. No additional speaker embedding is transmitted.}
+\label{fig:components}
+\end{figure*}
+
+With $C_m[\widetilde I_m]$ denoting lookup of the received indices in codebook $m$, the reported $L=3$ setting gives
+\begin{equation}
+\begin{aligned}
+ \hat x&=D_\phi\left(\sum_{m=1}^{3}C_m[\widetilde I_m]\right),\\
+ R_{\rm index}&=3f_q\lceil\log_2K\rceil=1500\ {\rm bit/s}.
+\end{aligned}
+\end{equation}
+This nominal index rate excludes byte alignment and transport overhead. Ten-bit fixed-length packing gives 94 payload bytes per 0.5-s block at $L=3$, before headers; no entropy coding is used. Compression is measured against 256-kbit/s PCM. Semantic supervision of the first quantizer does not enforce separation of linguistic and speaker information. RVQ equations and serialization details are in Supplementary Methods S1.
+
+\subsection{Encoder architecture search and computational profiling}
+Encoder NAS fixed the latent interface and total downsampling factor of 320 while varying stride schedules, width, recurrent depth, activation and residual operators. Seed-42 random search generated 8,192 configuration candidates. Successive stages retained 512, 64 and eight candidates for 100, 500 and 1,500 proxy-training steps on nested subsets of eight, 16 and 32 LibriSpeech training utterances. Candidate encoders matched a frozen SpeechTokenizer teacher's pre-quantization features; downstream teacher modules remained frozen.
+
+Selection minimized a combined quality--resource score among nondominated candidates. The selected architecture used strides $(5,4,4,4)$, width 24, one bidirectional LSTM layer and Snake activation. Only the architecture was retained for subsequent codec training from scratch. Proxy training and scoring reused the same small training subsets, so proxy scores are not held-out reconstruction evidence.
+
+Encoder-only profiling used FP32 on an RTX 5070 Ti with one-second, 16-kHz inputs, five synchronized timed passes and warm-up. Parameters were counted directly and MACs estimated with THOP. The reported RTF reduction uses the initial profiling-stage comparison and excludes quantization, decoding, speaker inference and network latency. Search operators, proxy losses, ranking weights, the selected stage configuration and profiling settings are specified in Supplementary Methods S2.
+
+\subsection{Codec training}
+The NAS encoder, RVQ codebooks and SEANet decoder were trained jointly from scratch on 27,039 LibriSpeech train-clean-100 utterances, with a disjoint 1,500-utterance validation manifest~\cite{librispeech}. Training used random one-second crops aligned with teacher features; validation used deterministic first-30-second segments with padding. Test-clean utterances were excluded from training.
+
+The generator objective combined waveform and multi-scale mel reconstruction, adversarial learning, feature matching, RVQ commitment and semantic distillation:
+\begin{equation}
+\begin{split}
+ \mathcal L_{\rm base}={}&500\mathcal L_{\rm wav}
+ +\mathcal L_{\rm mel}^{\rm ms}
+ +\mathcal L_{\rm adv}+\mathcal L_{\rm fm}\\
+ &+10\mathcal L_{\rm commit}+30\mathcal L_{\rm sem}.
+\end{split}
+\end{equation}
+Frozen HuBERT-base-ls960 features~\cite{hubert} supervised the first RVQ output through a learned 1024-to-768-dimensional projection. RVQ used straight-through gradients and exponential-moving-average codebook updates. Supplementary Methods S3 defines each loss, discriminator family, spectral setting and codebook update.
+
+Training used seed 42, minibatches of eight, bfloat16 precision, and separate Adam optimizers for generator and discriminators at $10^{-4}$ with cosine schedules and no warm-up. The run was stopped after 122,500 minibatch steps; the step-107,500 checkpoint, selected by minimum validation mel loss, was retained as SCIT. It was not the final checkpoint of a completed 60-epoch schedule.
+
+\subsection{Channel-aware fine-tuning}
+SCIT-LCA was initialized from SCIT and fine-tuned on the same data. Each minibatch sampled $L$ uniformly from $\{1,2,3\}$ and one of five equally probable conditions: clean indices, 5\% or 10\% index dropout, or 1\% or 3\% random substitution. Dropout copied the preceding original index, protecting the first frame; substitution drew uniformly from legal codewords. Packet and burst loss were evaluation-only conditions.
+
+For clean and perturbed decodes $\hat{x}_{L}^{\,c}$ and $\hat{x}_{L}^{\,p}$, the objective was
+\begin{equation}
+\begin{split}
+ \mathcal L_{\rm LCA}
+ =\mathcal L_{\rm base}
+ +1.5\bigl[&
+ 500\mathcal L_{\rm wav}(x,\hat{x}_{L}^{\,p})
+ +\mathcal L_{\rm mel}^{\rm ms}(x,\hat{x}_{L}^{\,p})\\
+ &+0.5\mathcal L_{\rm cons}\bigr],
+\end{split}
+\end{equation}
+where $\mathcal L_{\rm cons}$ is the multi-scale mel distance between the two decodes, or zero for clean transmission. Index extraction and corruption had no gradients: the communication terms trained the decoder, while the full-depth branch retained encoder and quantizer training objectives. The clean consistency decode was not detached.
+
+Fine-tuning used seed 42, minibatches of eight, bfloat16 precision and initial learning rate $10^{-5}$ for ten epochs (32,500 minibatch steps). Validation communication-branch mel loss selected step 30,000, rather than the clean-loss optimum at step 17,500. Supplementary Methods S4 provides the full protocol.
+
+\subsection{Reconstruction and token-domain robustness evaluation}
+External-codec comparisons used the first 300 entries of the retained LibriSpeech test-clean manifest; robustness used all 2,620 utterances. These populations and their means are not interchangeable. Complete utterances were evaluated without gradients, resampled to mono 16~kHz and trimmed to common lengths without extra time-alignment optimization.
+
+Matched-rate references were pretrained 16-kHz DAC with three quantizers~\cite{dac} and 24-kHz EnCodec at 1.5~kbit/s~\cite{encodec}, with resampling for EnCodec. FFmpeg/libopus at a requested 6~kbit/s supplied a higher-rate reference. External codecs were not fine-tuned on the evaluation data. All comparisons identify nominal codec operating points.
+
+Per-utterance metrics were averaged equally: single-scale log-power mel-L1, non-extended STOI~\cite{stoi} and 16-kHz PESQ-WB~\cite{pesq}. The evaluation mel metric differs from the weighted training loss; full-band mel-L1 is sensitive to low-rate Opus bandwidth reduction. Codec confidence intervals used 10,000 utterance bootstrap resamples, seed 42 and percentile limits of 2.5\% and 97.5\%.
+
+At $L=3$, robustness tests used 10\% index dropout, 3\% substitution, 5\% loss of five-frame packets (100~ms), or one random ten-frame burst (200~ms) per utterance. Masked positions copied the preceding \emph{original} index, not recursively the last received index; the first frame was protected. These are token-domain stress tests, not a complete packet-loss concealment receiver. SCIT and SCIT-LCA shared sampled masks, with base seeds 42 for index errors and 123 for packet/burst loss. Differences were paired by utterance, and test perturbations did not select checkpoints. Supplementary Methods S5 specifies metric settings, resampling and mask construction.
+
+\subsection{Frozen-codec speaker classifier}
+SCIT-LCA remained frozen at $L=3$ while full-utterance indices and reconstructed waveforms were cached. Codec hashes before and after caching matched, and codec parameters were excluded from classifier optimization.
+
+The token branch combined per-layer embeddings, four dilated temporal residual blocks and masked attentive statistics pooling into a normalized 256-dimensional embedding $z_{\rm tok}$. The audio branch used pretrained ECAPA-TDNN~\cite{ecapa} with a trainable 192-to-256-dimensional projection producing normalized $z_{\rm aud}$. The ECAPA backbone remained frozen; codec-aware adaptation refers to the downstream projection and classifier, not ECAPA fine-tuning.
+
+An element-wise gate fused the embeddings:
+\begin{equation}
+\begin{aligned}
+ g&=\sigma\bigl(W_g[z_{\rm tok};z_{\rm aud}]+b_g\bigr),\\
+ v&=g\odot P_t(z_{\rm tok})+(1-g)\odot P_a(z_{\rm aud}),\\
+ z_{\rm fus}&=\operatorname{norm}_2\bigl(\operatorname{LN}(v)\bigr),
+\end{aligned}
+\end{equation}
+Here, $P_t$ and $P_a$ are affine projections, $\sigma$ is the sigmoid, $\odot$ is element-wise multiplication, and LN denotes layer normalization. Token, audio and fusion heads classified the same 110 speakers using additive angular-margin softmax~\cite{arcface}, with scale 30 and angular margin 0.20 radians:
+\begin{equation}
+ \mathcal L_{\rm spk}
+ =\mathcal L_{\rm fus}
+  +0.30\mathcal L_{\rm tok}
+  +0.30\mathcal L_{\rm aud}.
+\end{equation}
+No embedding-consistency loss was enabled. Inference used only the fusion head without a target-class margin. Architectural dimensions, pooling, preprocessing and the pretrained checkpoint identifier are provided in Supplementary Methods S6.
+
+\subsection{Speaker data, optimization and statistical analysis}
+We used microphone-1 recordings from the silence-trimmed VCTK 0.92 release, covering 110 speakers~\cite{vctk}. A seed-42 split allocated 80/15/15 utterance groups per speaker to training/validation/test (8,800/1,650/1,650 items). Identities were shared across splits, but utterance groups did not overlap. The split was not globally transcript-disjoint.
+
+Matched token/audio crops covered up to three seconds, sampled randomly during training and centrally during validation/test. Training applied gain, noise and token-layer masking; the paired waveform always remained the cached $L=3$ reconstruction. Validation and test used all three layers without augmentation.
+
+Runs with seeds 41, 42 and 43 used 30 epochs, batch size 16, eight-minibatch gradient accumulation, and AdamW at $3\times10^{-4}$ for the token/fusion modules and $10^{-4}$ for the audio projection/heads. Validation macro-F1 selected checkpoints. The recorded cosine scheduler had no warm-up and advanced at optimizer updates with a minibatch-count horizon. There was no early stopping or ECAPA unfreezing.
+
+Configuration selection and scalar-temperature calibration used validation data only. Each seed was evaluated once on the locked test set; seed 42 was the predeclared delivery checkpoint. We report Top-1/Top-5 accuracy, macro-F1, ECE with 15 equal-width bins, and mean accuracy of the 11 lowest-accuracy speakers. Across-seed variation is sample standard deviation.
+
+Within-seed 95\% intervals used a hierarchical percentile bootstrap: resample 110 speakers, then 15 utterance groups within each sampled speaker, with replacement. The conservative lower bound is the minimum of the three within-seed lower bounds, not an interval for the three-seed mean. Supplementary Methods S7 gives augmentation, optimization, calibration and statistical details.
+
+\noindent\textit{[Author confirmation required: the executed speaker-bootstrap replicate count and random seed are absent from the archived summary and must be recovered.]}
+
+These experiments establish fixed-class identification, not branch-specific contributions, transcript-controlled or short-window robustness, unknown-speaker rejection, or claimed-identity authentication.
+
+\subsection{Inference and deployment interface}
+Inference uses matching encoder, codebooks and decoder in evaluation mode without gradients; the teacher and discriminators are unnecessary. The chunked interface defaults to 0.5-s audio blocks. Bidirectional recurrence and noncausal convolutions require buffered block inference, so encoder RTF and offline reconstruction scores do not establish streaming quality or end-to-end latency.
+
+The receiver applies the seed-42 classifier to matching $L=3$ indices and decoded audio, using validation-calibrated fusion probabilities. Its default three-second window advances every second. Each stream has separate buffers, and identification precedes playback mixing; stream identifiers are not classifier inputs. No additional identity vector is transmitted. Confidence is not a validated unknown-speaker rejection rule. Multi-user throughput, end-to-end latency and six-user identity performance remain unmeasured. Supplementary Methods S8 specifies block construction, buffering and classifier-bundle interfaces.
+
+\subsection{Six-user integration}
+\noindent\textit{[Placeholder: Six-user experiments are in progress. The configuration, evaluation protocol and measured results will be inserted after completion.]}
+
+
+\begin{thebibliography}{00}
+\bibitem{speechtokenizer}
+X. Zhang, D. Zhang, S. Li, Y. Zhou, X. Qiu,
+SpeechTokenizer: Unified Speech Tokenizer for Speech Large Language Models,
+arXiv:2308.16692, 2023, revised 2024.
+\url{https://arxiv.org/abs/2308.16692}.
+\bibitem{hubert}
+W.-N. Hsu, B. Bolte, Y.-H. H. Tsai, K. Lakhotia, R. Salakhutdinov, A. Mohamed,
+HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units,
+arXiv:2106.07447, 2021.
+\url{https://arxiv.org/abs/2106.07447}.
+\bibitem{ecapa}
+B. Desplanques, J. Thienpondt, K. Demuynck,
+ECAPA-TDNN: Emphasized Channel Attention, Propagation and Aggregation in TDNN Based Speaker Verification,
+Proc. Interspeech 2020, pp. 3830--3834.
+\url{https://doi.org/10.21437/Interspeech.2020-2650}.
+\bibitem{librispeech}
+V. Panayotov, G. Chen, D. Povey, S. Khudanpur,
+LibriSpeech: An ASR corpus based on public domain audio books,
+Proc. ICASSP, 2015. Corpus and reference:
+\url{https://www.openslr.org/12}.
+\bibitem{vctk}
+J. Yamagishi, C. Veaux, K. MacDonald,
+CSTR VCTK Corpus: English Multi-speaker Corpus for CSTR Voice Cloning Toolkit (version 0.92),
+University of Edinburgh, 2019.
+\url{https://doi.org/10.7488/ds/2645}.
+\bibitem{dac}
+R. Kumar, P. Seetharaman, A. Luebs, I. Kumar, K. Kumar,
+High-Fidelity Audio Compression with Improved RVQGAN,
+Advances in Neural Information Processing Systems 36, 2023.
+\url{https://arxiv.org/abs/2306.06546}.
+\bibitem{encodec}
+A. D\'efossez, J. Copet, G. Synnaeve, Y. Adi,
+High Fidelity Neural Audio Compression,
+arXiv:2210.13438, 2022.
+\url{https://arxiv.org/abs/2210.13438}.
+\bibitem{stoi}
+C. H. Taal, R. C. Hendriks, R. Heusdens, J. Jensen,
+An Algorithm for Intelligibility Prediction of Time-Frequency Weighted Noisy Speech,
+IEEE Transactions on Audio, Speech, and Language Processing 19 (7), 2011, pp. 2125--2136.
+\url{https://doi.org/10.1109/TASL.2011.2114881}.
+\bibitem{pesq}
+ITU-T, Wideband extension to Recommendation P.862 for the assessment of wideband telephone networks and speech codecs,
+Recommendation P.862.2, 2007.
+\url{https://www.itu.int/rec/T-REC-P.862.2}.
+\bibitem{arcface}
+J. Deng, J. Guo, N. Xue, S. Zafeiriou,
+ArcFace: Additive Angular Margin Loss for Deep Face Recognition,
+Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019, pp. 4690--4699.
+\url{https://doi.org/10.1109/CVPR.2019.00482}.
+\end{thebibliography}
+\end{document}

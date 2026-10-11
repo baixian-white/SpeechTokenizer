@@ -1,0 +1,582 @@
+{
+  "status": "passed",
+  "checked_on": "2026-09-22",
+  "records": {
+    "rate_bps": 1500,
+    "packed_half_second_bytes": 94,
+    "codec_train_validation_counts": [
+      27039,
+      1500
+    ],
+    "speaker_split_counts": [
+      8800,
+      1650,
+      1650
+    ],
+    "speaker_count": 110,
+    "codec_state_unchanged_during_cache": true,
+    "cache_failures": 0,
+    "speaker_seeds": [
+      41,
+      42,
+      43
+    ],
+    "speaker_temperature_seed42": 1.01877269160619,
+    "speaker_bootstrap_execution_metadata": {
+      "replicate_count": null,
+      "rng_seed": null,
+      "handling": "Unresolved author check; no executed values invented in the supplement."
+    }
+  },
+  "text": {
+    "sections": 9,
+    "subsections": 48,
+    "tables": 11,
+    "figures": 2,
+    "algorithms": 1,
+    "numbered_equation_labels": 46,
+    "original_english_passages_preserved": true,
+    "english_chinese_structure_matches": true,
+    "approximate_english_prose_words": 6786,
+    "chinese_characters": 12707,
+    "geometry": {
+      "verified_from_retained_configuration_and_implementation": true,
+      "shape_derivation": [
+        {
+          "samples": 8000,
+          "stage_shapes": [
+            [
+              1,
+              24,
+              8000
+            ],
+            [
+              1,
+              48,
+              1600
+            ],
+            [
+              1,
+              96,
+              400
+            ],
+            [
+              1,
+              192,
+              100
+            ],
+            [
+              1,
+              384,
+              25
+            ],
+            [
+              1,
+              768,
+              25
+            ],
+            [
+              1,
+              1024,
+              25
+            ]
+          ]
+        },
+        {
+          "samples": 16000,
+          "stage_shapes": [
+            [
+              1,
+              24,
+              16000
+            ],
+            [
+              1,
+              48,
+              3200
+            ],
+            [
+              1,
+              96,
+              800
+            ],
+            [
+              1,
+              192,
+              200
+            ],
+            [
+              1,
+              384,
+              50
+            ],
+            [
+              1,
+              768,
+              50
+            ],
+            [
+              1,
+              1024,
+              50
+            ]
+          ]
+        }
+      ],
+      "model_benchmark_run": false
+    }
+  },
+  "diagrams": {
+    "count": 2,
+    "examples_match_protocol": true,
+    "label_bounds_passed": true
+  },
+  "pdf": {
+    "page_count": 14,
+    "pages": [
+      {
+        "page": 1,
+        "characters": 4293,
+        "within_bounds": true
+      },
+      {
+        "page": 2,
+        "characters": 5337,
+        "within_bounds": true
+      },
+      {
+        "page": 3,
+        "characters": 5404,
+        "within_bounds": true
+      },
+      {
+        "page": 4,
+        "characters": 3730,
+        "within_bounds": true
+      },
+      {
+        "page": 5,
+        "characters": 5259,
+        "within_bounds": true
+      },
+      {
+        "page": 6,
+        "characters": 4775,
+        "within_bounds": true
+      },
+      {
+        "page": 7,
+        "characters": 5332,
+        "within_bounds": true
+      },
+      {
+        "page": 8,
+        "characters": 5730,
+        "within_bounds": true
+      },
+      {
+        "page": 9,
+        "characters": 3550,
+        "within_bounds": true
+      },
+      {
+        "page": 10,
+        "characters": 4935,
+        "within_bounds": true
+      },
+      {
+        "page": 11,
+        "characters": 4621,
+        "within_bounds": true
+      },
+      {
+        "page": 12,
+        "characters": 5657,
+        "within_bounds": true
+      },
+      {
+        "page": 13,
+        "characters": 4047,
+        "within_bounds": true
+      },
+      {
+        "page": 14,
+        "characters": 4514,
+        "within_bounds": true
+      }
+    ],
+    "layout_or_reference_errors": [],
+    "sha256": "532e2015145bdfa3acec6d92ce26811ee21d205a8d75a2a2a22e9e97b594457c",
+    "underfull_messages": 15
+  },
+  "protected_original_count": 58,
+  "source_record_count": 40,
+  "new_experiments_run": false,
+  "original_results_reestimated": false,
+  "synthetic_shape_checks": {
+    "status": "passed",
+    "scope": "Synthetic CPU shape checks, not training, quality evaluation or performance profiling.",
+    "encoder_parameter_count": 8873360,
+    "encoder_shapes": [
+      {
+        "input_samples": 8000,
+        "modules": [
+          {
+            "module_index": 0,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              24,
+              8000
+            ]
+          },
+          {
+            "module_index": 1,
+            "module": "SearchableResBlock",
+            "shape": [
+              1,
+              24,
+              8000
+            ]
+          },
+          {
+            "module_index": 2,
+            "module": "Snake1d",
+            "shape": [
+              1,
+              24,
+              8000
+            ]
+          },
+          {
+            "module_index": 3,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              48,
+              1600
+            ]
+          },
+          {
+            "module_index": 4,
+            "module": "SearchableResBlock",
+            "shape": [
+              1,
+              48,
+              1600
+            ]
+          },
+          {
+            "module_index": 5,
+            "module": "Snake1d",
+            "shape": [
+              1,
+              48,
+              1600
+            ]
+          },
+          {
+            "module_index": 6,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              96,
+              400
+            ]
+          },
+          {
+            "module_index": 7,
+            "module": "SearchableResBlock",
+            "shape": [
+              1,
+              96,
+              400
+            ]
+          },
+          {
+            "module_index": 8,
+            "module": "Snake1d",
+            "shape": [
+              1,
+              96,
+              400
+            ]
+          },
+          {
+            "module_index": 9,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              192,
+              100
+            ]
+          },
+          {
+            "module_index": 10,
+            "module": "SearchableResBlock",
+            "shape": [
+              1,
+              192,
+              100
+            ]
+          },
+          {
+            "module_index": 11,
+            "module": "Snake1d",
+            "shape": [
+              1,
+              192,
+              100
+            ]
+          },
+          {
+            "module_index": 12,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              384,
+              25
+            ]
+          },
+          {
+            "module_index": 13,
+            "module": "SLSTM",
+            "shape": [
+              1,
+              768,
+              25
+            ]
+          },
+          {
+            "module_index": 14,
+            "module": "Snake1d",
+            "shape": [
+              1,
+              768,
+              25
+            ]
+          },
+          {
+            "module_index": 15,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              1024,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "input_samples": 16000,
+        "modules": [
+          {
+            "module_index": 0,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              24,
+              16000
+            ]
+          },
+          {
+            "module_index": 1,
+            "module": "SearchableResBlock",
+            "shape": [
+              1,
+              24,
+              16000
+            ]
+          },
+          {
+            "module_index": 2,
+            "module": "Snake1d",
+            "shape": [
+              1,
+              24,
+              16000
+            ]
+          },
+          {
+            "module_index": 3,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              48,
+              3200
+            ]
+          },
+          {
+            "module_index": 4,
+            "module": "SearchableResBlock",
+            "shape": [
+              1,
+              48,
+              3200
+            ]
+          },
+          {
+            "module_index": 5,
+            "module": "Snake1d",
+            "shape": [
+              1,
+              48,
+              3200
+            ]
+          },
+          {
+            "module_index": 6,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              96,
+              800
+            ]
+          },
+          {
+            "module_index": 7,
+            "module": "SearchableResBlock",
+            "shape": [
+              1,
+              96,
+              800
+            ]
+          },
+          {
+            "module_index": 8,
+            "module": "Snake1d",
+            "shape": [
+              1,
+              96,
+              800
+            ]
+          },
+          {
+            "module_index": 9,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              192,
+              200
+            ]
+          },
+          {
+            "module_index": 10,
+            "module": "SearchableResBlock",
+            "shape": [
+              1,
+              192,
+              200
+            ]
+          },
+          {
+            "module_index": 11,
+            "module": "Snake1d",
+            "shape": [
+              1,
+              192,
+              200
+            ]
+          },
+          {
+            "module_index": 12,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              384,
+              50
+            ]
+          },
+          {
+            "module_index": 13,
+            "module": "SLSTM",
+            "shape": [
+              1,
+              768,
+              50
+            ]
+          },
+          {
+            "module_index": 14,
+            "module": "Snake1d",
+            "shape": [
+              1,
+              768,
+              50
+            ]
+          },
+          {
+            "module_index": 15,
+            "module": "SConv1d",
+            "shape": [
+              1,
+              1024,
+              50
+            ]
+          }
+        ]
+      }
+    ],
+    "classifier_shapes": [
+      {
+        "code_frames": 25,
+        "input": [
+          2,
+          3,
+          25
+        ],
+        "token_output": [
+          2,
+          256
+        ],
+        "fusion_output": [
+          2,
+          256
+        ]
+      },
+      {
+        "code_frames": 50,
+        "input": [
+          2,
+          3,
+          50
+        ],
+        "token_output": [
+          2,
+          256
+        ],
+        "fusion_output": [
+          2,
+          256
+        ]
+      },
+      {
+        "code_frames": 151,
+        "input": [
+          2,
+          3,
+          151
+        ],
+        "token_output": [
+          2,
+          256
+        ],
+        "fusion_output": [
+          2,
+          256
+        ]
+      }
+    ],
+    "torch": "2.9.1+cu128"
+  },
+  "contact_sheets": [
+    "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\supplementary_methods_v3_review\\contact-01.png",
+    "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\supplementary_methods_v3_review\\contact-05.png",
+    "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\supplementary_methods_v3_review\\contact-09.png",
+    "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\supplementary_methods_v3_review\\contact-13.png"
+  ],
+  "delivery": {
+    "path": "H:\\H-CODE\\speechtokenizer\\output\\pdf\\supplementary_methods_v3.pdf",
+    "matches_build": true
+  }
+}

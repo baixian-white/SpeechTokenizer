@@ -1,0 +1,27 @@
+{
+  "mode": "bundle",
+  "started_at_utc": "2026-09-20T06:42:38.146042+00:00",
+  "exit_codes": {
+    "p225": 1,
+    "p226": 1,
+    "p227": 1
+  },
+  "summaries": {},
+  "log_errors": {
+    "p225": [
+      "Traceback (most recent call last):",
+      "ModuleNotFoundError: No module named 'speechtokenizer.speaker_identity'"
+    ],
+    "p226": [
+      "Traceback (most recent call last):",
+      "ModuleNotFoundError: No module named 'speechtokenizer.speaker_identity'"
+    ],
+    "p227": [
+      "Traceback (most recent call last):",
+      "ModuleNotFoundError: No module named 'speechtokenizer.speaker_identity'"
+    ]
+  },
+  "passed": false,
+  "finished_at_utc": "2026-09-20T06:42:43.140399+00:00",
+  "scope": "Three local replay clients only; no microphone, playback, six-user or open-set acceptance."
+}

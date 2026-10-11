@@ -1,0 +1,8 @@
+﻿job_id,condition,scenario,repeat,user_id,tx_payload_bytes,rx_payload_bytes,tx_application_bytes,rx_application_bytes,sent_source_audio_seconds,measurement_boundary,transport_link_bytes,status
+D_stability_r01_j000,D,stability,1,A,338400,1692000,1187711,6604555,1800.0,codes_v1_application_messages,,observed
+D_stability_r01_j000,D,stability,1,B,338400,1692000,1187711,6604555,1800.0,codes_v1_application_messages,,observed
+D_stability_r01_j000,D,stability,1,C,338400,1692000,1187711,6604555,1800.0,codes_v1_application_messages,,observed
+D_stability_r01_j000,D,stability,1,D,338400,1692000,1187711,6604555,1800.0,codes_v1_application_messages,,observed
+D_stability_r01_j000,D,stability,1,E,338400,1692000,1187711,6604555,1800.0,codes_v1_application_messages,,observed
+D_stability_r01_j000,D,stability,1,F,338400,1692000,1187711,6604555,1800.0,codes_v1_application_messages,,observed
+D_stability_r01_j000,D,stability,1,router,10152000,2030400,39627330,7126266,,codes_v1_application_messages,,observed

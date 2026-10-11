@@ -1,0 +1,10 @@
+﻿condition,scenario,metric,runs_planned,runs_observed,system_run_mean,system_run_sd,aggregation
+D,stability,top1,1,1,0.8801261829652997,,per_run_then_mean; system_replay_repeats_not_training_seeds
+D,stability,macro_f1,1,1,0.0395082280785072,,per_run_then_mean; system_replay_repeats_not_training_seeds
+D,stability,coverage,1,1,0.023507601038190582,,per_run_then_mean; system_replay_repeats_not_training_seeds
+D,stability,end_to_end_correct_rate,1,1,0.020689655172413793,,per_run_then_mean; system_replay_repeats_not_training_seeds
+D,stability,capture_to_decode_ms_p95,1,1,10833.86781,,per_run_then_mean; system_replay_repeats_not_training_seeds
+D,stability,inference_ms_p95,1,1,593.44496,,per_run_then_mean; system_replay_repeats_not_training_seeds
+D,stability,stoi_source_mean,1,1,0.14529312887405055,,per_run_then_mean; system_replay_repeats_not_training_seeds
+D,stability,pesq_wb_source_mean,1,1,1.2200688283159542,,per_run_then_mean; system_replay_repeats_not_training_seeds
+D,stability,mel_l1_source_mean,1,1,9.286836694790257,,per_run_then_mean; system_replay_repeats_not_training_seeds

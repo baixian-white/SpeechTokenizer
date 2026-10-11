@@ -1,0 +1,7 @@
+{
+  "checkpoint_seed": 42,
+  "codebook_size": 1024,
+  "input_mode": "codes_waveform",
+  "pad_index": 1024,
+  "speaker_count": 110
+}

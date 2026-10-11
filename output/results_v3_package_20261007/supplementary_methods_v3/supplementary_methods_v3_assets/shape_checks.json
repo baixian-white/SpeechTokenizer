@@ -1,0 +1,356 @@
+{
+  "status": "passed",
+  "scope": "Synthetic CPU shape checks, not training, quality evaluation or performance profiling.",
+  "encoder_parameter_count": 8873360,
+  "encoder_shapes": [
+    {
+      "input_samples": 8000,
+      "modules": [
+        {
+          "module_index": 0,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            24,
+            8000
+          ]
+        },
+        {
+          "module_index": 1,
+          "module": "SearchableResBlock",
+          "shape": [
+            1,
+            24,
+            8000
+          ]
+        },
+        {
+          "module_index": 2,
+          "module": "Snake1d",
+          "shape": [
+            1,
+            24,
+            8000
+          ]
+        },
+        {
+          "module_index": 3,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            48,
+            1600
+          ]
+        },
+        {
+          "module_index": 4,
+          "module": "SearchableResBlock",
+          "shape": [
+            1,
+            48,
+            1600
+          ]
+        },
+        {
+          "module_index": 5,
+          "module": "Snake1d",
+          "shape": [
+            1,
+            48,
+            1600
+          ]
+        },
+        {
+          "module_index": 6,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            96,
+            400
+          ]
+        },
+        {
+          "module_index": 7,
+          "module": "SearchableResBlock",
+          "shape": [
+            1,
+            96,
+            400
+          ]
+        },
+        {
+          "module_index": 8,
+          "module": "Snake1d",
+          "shape": [
+            1,
+            96,
+            400
+          ]
+        },
+        {
+          "module_index": 9,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            192,
+            100
+          ]
+        },
+        {
+          "module_index": 10,
+          "module": "SearchableResBlock",
+          "shape": [
+            1,
+            192,
+            100
+          ]
+        },
+        {
+          "module_index": 11,
+          "module": "Snake1d",
+          "shape": [
+            1,
+            192,
+            100
+          ]
+        },
+        {
+          "module_index": 12,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            384,
+            25
+          ]
+        },
+        {
+          "module_index": 13,
+          "module": "SLSTM",
+          "shape": [
+            1,
+            768,
+            25
+          ]
+        },
+        {
+          "module_index": 14,
+          "module": "Snake1d",
+          "shape": [
+            1,
+            768,
+            25
+          ]
+        },
+        {
+          "module_index": 15,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            1024,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "input_samples": 16000,
+      "modules": [
+        {
+          "module_index": 0,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            24,
+            16000
+          ]
+        },
+        {
+          "module_index": 1,
+          "module": "SearchableResBlock",
+          "shape": [
+            1,
+            24,
+            16000
+          ]
+        },
+        {
+          "module_index": 2,
+          "module": "Snake1d",
+          "shape": [
+            1,
+            24,
+            16000
+          ]
+        },
+        {
+          "module_index": 3,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            48,
+            3200
+          ]
+        },
+        {
+          "module_index": 4,
+          "module": "SearchableResBlock",
+          "shape": [
+            1,
+            48,
+            3200
+          ]
+        },
+        {
+          "module_index": 5,
+          "module": "Snake1d",
+          "shape": [
+            1,
+            48,
+            3200
+          ]
+        },
+        {
+          "module_index": 6,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            96,
+            800
+          ]
+        },
+        {
+          "module_index": 7,
+          "module": "SearchableResBlock",
+          "shape": [
+            1,
+            96,
+            800
+          ]
+        },
+        {
+          "module_index": 8,
+          "module": "Snake1d",
+          "shape": [
+            1,
+            96,
+            800
+          ]
+        },
+        {
+          "module_index": 9,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            192,
+            200
+          ]
+        },
+        {
+          "module_index": 10,
+          "module": "SearchableResBlock",
+          "shape": [
+            1,
+            192,
+            200
+          ]
+        },
+        {
+          "module_index": 11,
+          "module": "Snake1d",
+          "shape": [
+            1,
+            192,
+            200
+          ]
+        },
+        {
+          "module_index": 12,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            384,
+            50
+          ]
+        },
+        {
+          "module_index": 13,
+          "module": "SLSTM",
+          "shape": [
+            1,
+            768,
+            50
+          ]
+        },
+        {
+          "module_index": 14,
+          "module": "Snake1d",
+          "shape": [
+            1,
+            768,
+            50
+          ]
+        },
+        {
+          "module_index": 15,
+          "module": "SConv1d",
+          "shape": [
+            1,
+            1024,
+            50
+          ]
+        }
+      ]
+    }
+  ],
+  "classifier_shapes": [
+    {
+      "code_frames": 25,
+      "input": [
+        2,
+        3,
+        25
+      ],
+      "token_output": [
+        2,
+        256
+      ],
+      "fusion_output": [
+        2,
+        256
+      ]
+    },
+    {
+      "code_frames": 50,
+      "input": [
+        2,
+        3,
+        50
+      ],
+      "token_output": [
+        2,
+        256
+      ],
+      "fusion_output": [
+        2,
+        256
+      ]
+    },
+    {
+      "code_frames": 151,
+      "input": [
+        2,
+        3,
+        151
+      ],
+      "token_output": [
+        2,
+        256
+      ],
+      "fusion_output": [
+        2,
+        256
+      ]
+    }
+  ],
+  "torch": "2.9.1+cu128"
+}

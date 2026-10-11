@@ -1,0 +1,192 @@
+{
+  "status": "passed",
+  "scope": "Remove framework attribution phrasing; retain the named NAS teacher and source references.",
+  "modified_source_files": [
+    "results_v3_body.tex",
+    "results_v3_zh.md",
+    "manuscript.tex",
+    "methods_main_zh.md",
+    "supplementary_methods_v3_body.tex",
+    "supplementary_methods_v3_zh.md"
+  ],
+  "authorized_changes_to_prior_snapshot": [
+    "manuscript\\manuscript.aux",
+    "manuscript\\manuscript.log",
+    "manuscript\\manuscript.pdf",
+    "manuscript\\manuscript.tex",
+    "manuscript\\methods_main_zh.md",
+    "manuscript\\results_v3.aux",
+    "manuscript\\results_v3.log",
+    "manuscript\\results_v3.pdf",
+    "manuscript\\results_v3_body.tex",
+    "manuscript\\results_v3_zh.md"
+  ],
+  "other_protected_files_unchanged": 48,
+  "evidence_files_unchanged": 40,
+  "new_experiments_run": false,
+  "documents": [
+    {
+      "file": "H:\\H-CODE\\speechtokenizer\\manuscript\\results_v3.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "text_characters": 6006,
+          "within_bounds": true
+        },
+        {
+          "page": 2,
+          "text_characters": 3721,
+          "within_bounds": true
+        },
+        {
+          "page": 3,
+          "text_characters": 3727,
+          "within_bounds": true
+        },
+        {
+          "page": 4,
+          "text_characters": 5530,
+          "within_bounds": true
+        },
+        {
+          "page": 5,
+          "text_characters": 4270,
+          "within_bounds": true
+        }
+      ],
+      "page_count": 5,
+      "named_teacher_and_reference_mentions": 1,
+      "layout_or_reference_errors": [],
+      "sha256": "8277f711f98b2ee760db31abb5d18a9443372da1b3e924c70a9110bb4729fd83",
+      "contact_sheets": [
+        "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\codec_terminology_revision\\results_v3\\contact-1.png"
+      ]
+    },
+    {
+      "file": "H:\\H-CODE\\speechtokenizer\\output\\pdf\\supplementary_methods_v3.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "text_characters": 4231,
+          "within_bounds": true
+        },
+        {
+          "page": 2,
+          "text_characters": 5101,
+          "within_bounds": true
+        },
+        {
+          "page": 3,
+          "text_characters": 5646,
+          "within_bounds": true
+        },
+        {
+          "page": 4,
+          "text_characters": 3730,
+          "within_bounds": true
+        },
+        {
+          "page": 5,
+          "text_characters": 5259,
+          "within_bounds": true
+        },
+        {
+          "page": 6,
+          "text_characters": 4775,
+          "within_bounds": true
+        },
+        {
+          "page": 7,
+          "text_characters": 5332,
+          "within_bounds": true
+        },
+        {
+          "page": 8,
+          "text_characters": 5730,
+          "within_bounds": true
+        },
+        {
+          "page": 9,
+          "text_characters": 3550,
+          "within_bounds": true
+        },
+        {
+          "page": 10,
+          "text_characters": 4935,
+          "within_bounds": true
+        },
+        {
+          "page": 11,
+          "text_characters": 4621,
+          "within_bounds": true
+        },
+        {
+          "page": 12,
+          "text_characters": 5657,
+          "within_bounds": true
+        },
+        {
+          "page": 13,
+          "text_characters": 4047,
+          "within_bounds": true
+        },
+        {
+          "page": 14,
+          "text_characters": 4514,
+          "within_bounds": true
+        }
+      ],
+      "page_count": 14,
+      "named_teacher_and_reference_mentions": 4,
+      "layout_or_reference_errors": [],
+      "sha256": "f26af6b7764e51d7883ca48aa165622c700fcc751d01838431e627ff70d6f1b5",
+      "contact_sheets": [
+        "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\codec_terminology_revision\\supplementary_methods_v3\\contact-1.png",
+        "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\codec_terminology_revision\\supplementary_methods_v3\\contact-2.png",
+        "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\codec_terminology_revision\\supplementary_methods_v3\\contact-3.png"
+      ]
+    },
+    {
+      "file": "H:\\H-CODE\\speechtokenizer\\manuscript\\manuscript.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "text_characters": 4691,
+          "within_bounds": true
+        },
+        {
+          "page": 2,
+          "text_characters": 6307,
+          "within_bounds": true
+        },
+        {
+          "page": 3,
+          "text_characters": 5366,
+          "within_bounds": true
+        },
+        {
+          "page": 4,
+          "text_characters": 5378,
+          "within_bounds": true
+        },
+        {
+          "page": 5,
+          "text_characters": 5724,
+          "within_bounds": true
+        },
+        {
+          "page": 6,
+          "text_characters": 2022,
+          "within_bounds": true
+        }
+      ],
+      "page_count": 6,
+      "named_teacher_and_reference_mentions": 2,
+      "layout_or_reference_errors": [],
+      "sha256": "505ede35b7b8d0cde9ce0766ab90ad336dcffd6410aabda9e6cde0efe74af522",
+      "contact_sheets": [
+        "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\codec_terminology_revision\\manuscript\\contact-1.png"
+      ]
+    }
+  ]
+}

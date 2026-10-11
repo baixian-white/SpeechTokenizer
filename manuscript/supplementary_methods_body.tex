@@ -1,0 +1,200 @@
+We describe the deep-learning components supporting the reported reconstruction and closed-set speaker-classification experiments. The workflow separates encoder architecture selection, codec training, channel-aware fine-tuning, and speaker-classifier training with the codec frozen. Offline reconstruction, token-domain perturbation tests and receiver-side inference are specified separately; quantum-link implementation is outside this section's scope.
+
+\section{Speech representation and index-only transmission}
+The deep-learning subsystem comprises a speech encoder, residual vector quantizer (RVQ), waveform decoder and receiver-side speaker classifier (Fig.~\ref{fig:components}). Its codec follows the SpeechTokenizer framework~\cite{speechtokenizer}, with a NAS-selected encoder and three quantization layers. Audio is represented as a mono waveform $x$ sampled at $f_s=16$~kHz. The encoder produces
+\begin{equation}
+ Z=E_\theta(x),\qquad Z\in\mathbb{R}^{1024\times T_q},
+\end{equation}
+where $T_q$ is the number of latent frames. The total downsampling factor of 320 gives a nominal frame rate $f_q=50$~Hz. Model weights and codebooks are stored locally; the speech payload contains discrete indices rather than latent vectors or model parameters.
+
+\begin{figure*}[t]
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{c c c c c c c}
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Input speech\\Encoder $E_\theta$}}
+&$\rightarrow$&
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Shared RVQ\\Select indices $I_{1:L}$}}
+&$\rightarrow$&
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Payload interface\\Received indices $\widetilde I$}}
+&$\rightarrow$&
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Codebook lookup\\Decoder $D_\phi$}}
+\end{tabular}
+\par\medskip
+\begin{tabular}{c c c c c}
+\parbox[c]{0.38\textwidth}{\centering Received indices $\widetilde I$ $\rightarrow$ Token encoder\\
+Reconstructed speech $\hat{x}$ $\rightarrow$ Frozen ECAPA-TDNN\\and trainable audio projection}
+&$\rightarrow$&
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Gated embedding\\fusion}}
+&$\rightarrow$&
+\fbox{\parbox[c][1cm][c]{0.18\textwidth}{\centering Closed-set\\speaker classifier}}
+\end{tabular}
+\caption{Deep-learning signal path. The receiver reconstructs speech from locally stored codebooks and the received RVQ indices. A token encoder and an audio encoder process the same speech interval; their embeddings are fused for 110-class speaker identification. Speaker-classifier training leaves the speech codec unchanged. No additional speaker embedding is transmitted.}
+\label{fig:components}
+\end{figure*}
+
+Let $z_t$ be an encoder frame and $C_m=\{c_{m,k}\}_{k=0}^{K-1}$ the $m$th codebook. With $M=3$ layers and $K=1024$ entries per layer, RVQ quantizes successive residuals:
+\begin{align}
+ r_{0,t}&=z_t,\\
+ i_{m,t}&=\underset{k}{\arg\min}\|r_{m-1,t}-c_{m,k}\|_2^2,\\
+ q_{m,t}&=c_{m,i_{m,t}},\qquad r_{m,t}=r_{m-1,t}-q_{m,t}.
+\end{align}
+At depth $L\leq M$, the transmitter retains the first $L$ index sequences. We write $\widetilde i_{m,t}$ for the index available at the receiver after any simulated corruption or replacement, with $\widetilde i_{m,t}=i_{m,t}$ for clean transmission. The receiver reconstructs the latent representation by codebook lookup and summation, then decodes the waveform:
+\begin{align}
+ \hat z_{L,t}&=\sum_{m=1}^{L}c_{m,\widetilde i_{m,t}},\\
+ \hat x_L&=D_\phi(\hat Z_L).
+\end{align}
+The first quantizer receives semantic supervision, while the residual layers provide additional acoustic information. This supervision does not impose a strict separation between linguistic content and speaker identity.
+
+Each index requires $\lceil\log_2K\rceil=10$ bits under fixed-length packing, giving
+\begin{equation}
+ R_{\rm index}=Lf_q\lceil\log_2K\rceil=500L\ {\rm bit/s}.
+\end{equation}
+Thus, $L=1,2,3$ correspond to 0.5, 1.0 and 1.5~kbit/s. The compression ratio is computed relative to mono, 16-kHz, 16-bit PCM (256~kbit/s). For a chunk of duration $T_c$ containing an integer number of latent frames, byte alignment requires
+\begin{equation}
+ B_{\rm chunk}=\left\lceil
+ \frac{Lf_qT_c\lceil\log_2K\rceil}{8}
+ \right\rceil\quad\text{bytes}.
+\end{equation}
+For $T_c=0.5$~s, this gives 32, 63 and 94 bytes, respectively. The resulting packed rates of 512, 1008 and 1504~bit/s exclude headers and other transport overhead. All rate-matched codec comparisons in Results use the nominal index rate.
+
+The software interface serializes the layer-by-frame index array in contiguous order, represents each value as a ten-bit unsigned integer with its most significant bit first, and pads only the final byte with zeros. It does not apply entropy coding. Packet metadata records the array shape, number of indices, bit width, retained layer count and sequence identifier. The receiver uses the recorded index count to discard byte-padding bits before reshaping the recovered values. This distinguishes the packed speech payload from the complete network packet.
+
+\section{Encoder architecture search and computational profiling}
+We searched the encoder architecture while fixing the 16-kHz input, 1024-dimensional latent interface and downsampling factor of 320. The search varied the four-stage stride schedule, initial width (24, 32 or 48 filters), recurrent depth (one or two LSTM layers), activation (ELU or Snake), residual-block operator and squeeze-and-excitation option. Candidate stride schedules were $(8,5,4,2)$, $(5,4,4,4)$, $(10,4,4,2)$, $(4,5,4,4)$, $(4,4,5,4)$ and $(4,4,4,5)$. Residual operators included standard convolutions with kernels 3, 5 or 7; depthwise-separable convolutions with kernels 3, 5, 7 or 9; dilation-2 convolutions with kernels 3, 5 or 9; a kernel-3 pointwise bottleneck; and identity. At most one block could be an identity, with squeeze-and-excitation disabled for that block. The decoder architecture and codebooks were not searched.
+
+Random search with seed 42 generated 8,192 configuration candidates for encoder-only profiling. Successive stages retained 512, 64 and eight candidates and evaluated them after 100, 500 and 1,500 short-training steps, respectively. These stages used nested subsets of eight, 16 and 32 LibriSpeech training utterances, with one-second segments and batch size one. At each stage, a freshly initialized candidate encoder was trained against a frozen pretrained SpeechTokenizer teacher using
+\begin{equation}
+\begin{split}
+ \mathcal L_{\rm proxy}={}&
+ \operatorname{SmoothL1}(Z,Z^\star)
+ +\mathcal L_{\rm cosine}(Z,Z^\star)\\
+ &+0.5\operatorname{SmoothL1}
+       (\delta_t Z,\delta_t Z^\star),
+\end{split}
+\end{equation}
+where $Z^\star$ is the teacher's pre-quantization representation, $\mathcal L_{\rm cosine}$ is the mean of one minus framewise cosine similarity, and $\delta_t$ denotes adjacent-frame differences. The teacher was the pretrained HuBERT-average SpeechTokenizer checkpoint. AdamW used a learning rate of $10^{-4}$, zero weight decay and gradient clipping at 1. The teacher's downstream modules remained frozen during proxy evaluation.
+
+Candidate ranking combined teacher-alignment and reconstruction penalties with natural-log ratios of MACs, parameter count and RTF relative to the reference encoder. The initial resource-only stage used weights 0.45, 0.45 and 0.10 for these three ratios; subsequent stages used resource weights 0.12, 0.12 and 0.03. Quality terms comprised semantic distillation, waveform L1, mel-L1, latent SmoothL1, latent cosine distance, temporal-difference SmoothL1, code disagreement and quantized-feature L1, with respective weights 1.0, 0.6, 0.6, 1.2, 0.5, 0.5, 0.8 and 0.5. Except for cosine distance and code disagreement, a candidate loss $u$ relative to reference loss $u_0$ contributed
+\begin{equation}
+ P(u,u_0)=\max\!\left(0,\log\frac{\max(u,10^{-12})}
+ {\max(u_0,10^{-12})}-\log 1.1\right).
+\end{equation}
+Cosine distance contributed only its positive excess over the reference plus 0.05; code disagreement contributed only the positive decrease in code agreement. RVQ compatibility compared teacher and candidate latents using the same frozen teacher codebooks. The weighted quality penalties and resource terms were summed, and final selection minimized this score among nondominated candidates.
+
+The selected encoder used strides $(5,4,4,4)$, initial width 24, one bidirectional LSTM layer, Snake activation and, in stage order, identity, standard kernel-7, separable kernel-9 and dilation-2 kernel-5 residual operators, without squeeze-and-excitation. Proxy training and scoring reused each stage's small training subset; these scores were used for architecture selection, not as held-out reconstruction results. Only the architecture was carried forward; the complete codec was subsequently trained from scratch.
+
+We profiled only the encoder, excluding quantization, decoding and speaker inference, on an NVIDIA GeForce RTX 5070 Ti using FP32, PyTorch 2.9.1 with CUDA 12.8, and THOP 0.1.1. The input was a batch of one Gaussian waveform with shape $1\times1\times16000$. Following the profiling forward pass and one explicit warm-up, five inference passes were timed with CUDA synchronization. RTF was the mean processing time divided by the one-second input duration; parameters were counted directly and MACs estimated with THOP. The approximately 55\% RTF reduction in Results refers to the initial profiling-stage comparison with the pretrained teacher encoder. It is a compute-time measurement, not an end-to-end streaming latency measurement.
+
+\section{Codec training}
+After architecture selection, the NAS encoder, RVQ codebooks and SEANet decoder were trained jointly from scratch. The decoder retained the base architecture with 64 initial filters, upsampling ratios $(8,5,4,2)$, two unidirectional LSTM layers and ELU activation. The codec data comprised 27,039 training utterances and 1,500 validation utterances from LibriSpeech train-clean-100~\cite{librispeech}, using the retained, disjoint file manifests. Training used random one-second waveform crops and the corresponding teacher-feature intervals; shorter inputs were zero-padded. Validation used deterministic first-30-second segments, padding shorter utterances, with batch size one. Neither the 300-utterance comparison subset nor the full test-clean evaluation set was used for codec training.
+
+The generator objective combined waveform and multi-scale mel reconstruction, adversarial learning, discriminator feature matching, RVQ commitment and semantic distillation:
+\begin{equation}
+\begin{split}
+ \mathcal L_{\rm base}={}&500\mathcal L_{\rm wav}
+ +\mathcal L_{\rm mel}^{\rm ms}
+ +\mathcal L_{\rm adv}+\mathcal L_{\rm fm}\\
+ &+10\mathcal L_{\rm commit}+30\mathcal L_{\rm sem}.
+\end{split}
+\end{equation}
+Waveform reconstruction used the mean absolute error. The multi-scale mel term summed log-power mel-spectrogram L1 distances at FFT/window lengths 1024, 512, 256 and 128 samples, with respective hops 240, 120, 60 and 30 and weights 45, 1, 1 and 1. Each scale used 80 mel bands spanning 0--8~kHz. Multi-period, multi-scale waveform and multi-scale STFT discriminators supplied least-squares adversarial losses and intermediate-feature L1 matching.
+
+Adversarial losses were summed over discriminator outputs, with target values one for real speech and zero for detached reconstructions during discriminator updates, and target one for reconstructions during generator updates. Feature matching was twice the sum of mean absolute differences between corresponding real and reconstructed discriminator feature maps. RVQ used straight-through gradients and the mean squared commitment error averaged over the three layers. Codebooks were initialized by 50 iterations of $k$-means on the first training batch and updated by exponential moving averages with decay 0.99. Entries whose moving-average assignment count fell below two were replaced with vectors sampled from the current batch. Codebook updates were therefore distinct from the gradient-based encoder and decoder updates.
+
+Semantic targets were precomputed using the pretrained HuBERT-base-ls960 model~\cite{hubert}, averaging its returned hidden states. A learned projection $P$ mapped the first RVQ output from 1024 to 768 dimensions. After trimming both feature sequences to their common length $T'$, the semantic objective was
+\begin{equation}
+ \mathcal L_{\rm sem}
+ =-\frac{1}{T'}\sum_{t=1}^{T'}
+ \log\sigma\!\left(\cos(Pq_{1,t},h_t)\right),
+\end{equation}
+with an additional average over the minibatch, where $h_t$ is the aligned teacher feature. The teacher remained fixed throughout codec training.
+
+The recorded run used seed 42, minibatches of eight, bfloat16 mixed precision, and separate Adam optimizers for the generator and discriminators with learning rate $10^{-4}$, $\beta=(0.9,0.99)$ and zero weight decay. Cosine learning-rate schedules had no warm-up and were planned for 60 epochs. Training was manually stopped after 122,500 minibatch steps when validation mel loss had plateaued; the checkpoint at step 107,500, selected by the lowest validation mel loss, was retained as SCIT. Thus, the reported base model was not the final checkpoint of a completed 60-epoch run.
+% The config records gradient_accumulation_steps=4, but the retained loop
+% lacks an explicit accelerator.accumulate context. Do not infer batch 32.
+
+\section{Channel-aware fine-tuning}
+SCIT-LCA was initialized from the retained SCIT checkpoint and fine-tuned end to end using the same codec data and losses. For each minibatch, a communication branch selected $L$ uniformly from $\{1,2,3\}$ and independently selected one of five equally probable conditions: clean indices, index dropout at 5\% or 10\%, or random substitution at 1\% or 3\%. Dropout replaced a selected index with the preceding frame's index from the same layer, leaving the first frame unchanged. Substitution sampled a legal index uniformly from $\{0,\ldots,1023\}$; this draw could equal the original index. Packet and burst loss were evaluation conditions, not additional fine-tuning augmentations.
+
+Let $\hat{x}_{L}^{\,c}$ and $\hat{x}_{L}^{\,p}$ denote clean and perturbed decodes of the same truncated index sequence. Fine-tuning optimized
+\begin{equation}
+\begin{split}
+ \mathcal L_{\rm LCA}
+ =\mathcal L_{\rm base}
+ +1.5\bigl[&
+ 500\mathcal L_{\rm wav}(x,\hat{x}_{L}^{\,p})
+ +\mathcal L_{\rm mel}^{\rm ms}(x,\hat{x}_{L}^{\,p})\\
+ &+0.5\mathcal L_{\rm cons}\bigr],
+\end{split}
+\end{equation}
+where $\mathcal L_{\rm cons}=\mathcal L_{\rm mel}^{\rm ms}(\hat{x}_{L}^{\,c},\hat{x}_{L}^{\,p})$ for a perturbed condition and zero for a clean condition. Discrete index extraction and corruption were performed without gradients. The communication and consistency terms trained the decoder, while the full-depth branch retained the encoder and quantizer training objectives. The clean consistency decode was not detached.
+
+Fine-tuning used an initial learning rate of $10^{-5}$, no warm-up, seed 42, minibatches of eight and bfloat16 precision. The recorded run completed 32,500 minibatch steps over its ten-epoch schedule. The step-30,000 checkpoint was selected using validation communication-branch mel loss, including the strongest substitution condition at all three RVQ depths. This robustness-oriented checkpoint, rather than the step-17,500 checkpoint with the lowest clean validation mel loss, was used for the SCIT-LCA reconstruction and frozen-codec speaker experiments.
+
+\section{Reconstruction and token-domain robustness evaluation}
+The external-codec comparison used the first 300 entries of the retained LibriSpeech test-clean manifest, in its recorded order. The full-set robustness comparison used all 2,620 test-clean utterances. These are distinct evaluation populations and their means are not interchangeable. Models ran in evaluation mode without gradients on complete utterances. Reference and reconstructed waveforms were converted to mono 16~kHz and trimmed to their common sample length before metric calculation; the evaluation did not introduce an additional waveform time-alignment optimization.
+
+The matched-rate baselines were the pretrained 16-kHz DAC model with three active quantizers~\cite{dac} and the pretrained 24-kHz EnCodec model at its 1.5-kbit/s setting~\cite{encodec}. EnCodec inputs were resampled to 24~kHz and its reconstructions back to 16~kHz. The reference Opus condition used FFmpeg/libopus with a requested bitrate of 6~kbit/s and mono 16-kHz decoded output. No external codec was fine-tuned on this evaluation set. Reported rates identify nominal codec operating points; finite-utterance padding, byte alignment and container overhead were recorded separately.
+
+Mel-L1 was the unweighted, single-scale L1 distance between log-power mel spectrograms, using FFT and window lengths of 1024, hop 240, 80 bands, HTK mel spacing, Slaney filter normalization and a 0--8-kHz range. Spectral powers were floored at $10^{-9}$ before taking the natural logarithm, and centred STFT padding was disabled. This evaluation metric differs from the weighted multi-scale training loss. Short-time objective intelligibility (STOI) used the non-extended implementation~\cite{stoi}; PESQ used wideband mode at 16~kHz~\cite{pesq}. Metrics were computed per utterance and averaged with equal utterance weights. The 300-utterance confidence intervals used 10,000 nonparametric bootstrap resamples with seed 42 and the 2.5th and 97.5th percentiles. Low-rate Opus bandwidth reduction affects the full-band mel-L1 comparison, which should be interpreted alongside STOI and PESQ-WB.
+
+For the full-set comparison at $L=3$, index-dropout and substitution masks were sampled independently over code positions at probabilities 0.10 and 0.03, respectively. Packet loss grouped five consecutive latent frames (100~ms) and masked each packet with probability 0.05 across all retained layers. Burst loss masked one randomly placed contiguous span of ten frames (200~ms) per utterance, shortened if the utterance had fewer frames. For both index dropout and packet/burst masks, the implemented replacement copied a one-frame-shifted version of the original index sequence, with the first frame protected. Consequently, consecutive masked positions were not recursively filled from the last successfully received frame. These are token-domain stress tests, not a complete packet-loss concealment receiver.
+
+SCIT and SCIT-LCA used the same sampled masks for each matched utterance, RVQ depth and perturbation condition. The recorded base random seeds were 42 for index perturbations and 123 for packet/burst perturbations; per-pair seeds were also retained in the metric files. Differences were calculated as SCIT-LCA minus SCIT on matched utterances. No retraining or checkpoint selection used the test perturbations.
+
+\section{Frozen-codec speaker classifier}
+Speaker classification used the frozen SCIT-LCA codec at $L=3$. Full-utterance indices and reconstructed waveforms were cached under inference mode, with all codec parameters excluded from optimization. State-dict hashes before and after cache generation were identical. The classifier therefore learned from a fixed representation without changing the encoder, RVQ codebooks, decoder or transmitted bitrate.
+
+The token branch used a separate 128-dimensional embedding table for each RVQ layer, reserving index 1024 for padding. Learned layer embeddings were added to the code embeddings, which were averaged over the active layers and projected to 256 channels. Four residual temporal blocks used kernel-3 depthwise convolutions with dilations 1, 2, 4 and 8, pointwise convolution, group normalization and GELU activation. Masked attentive statistics pooling concatenated a weighted mean and standard deviation; a linear projection produced a 256-dimensional, $\ell_2$-normalized embedding $z_{\rm tok}$.
+
+The audio branch used the pretrained ECAPA-TDNN model~\cite{ecapa} from SpeechBrain (checkpoint \textit{spkrec-ecapa-voxceleb}). Audio preprocessing used 80-bin filter-bank features and utterance-level mean normalization. The 192-dimensional ECAPA output was projected to a 256-dimensional, $\ell_2$-normalized embedding $z_{\rm aud}$. In the reported three-seed experiment, the ECAPA backbone remained frozen in evaluation mode; only its projection and the classification module were trained on codec reconstructions. Thus, codec-aware adaptation in this experiment refers to the downstream learned mapping, not fine-tuning of the ECAPA backbone.
+
+An element-wise gate combined the two embeddings:
+\begin{equation}
+\begin{aligned}
+ g&=\sigma\bigl(W_g[z_{\rm tok};z_{\rm aud}]+b_g\bigr),\\
+ v&=g\odot P_t(z_{\rm tok})+(1-g)\odot P_a(z_{\rm aud}),\\
+ z_{\rm fus}&=\operatorname{norm}_2\bigl(\operatorname{LN}(v)\bigr),
+\end{aligned}
+\end{equation}
+where $P_t$ and $P_a$ are learned affine projections, $\sigma$ is the sigmoid function, and $\odot$ denotes element-wise multiplication. Token, audio and fusion heads each classified the same 110 speakers. Additive angular-margin softmax~\cite{arcface} used normalized class weights, scale $s=30$ and target-class angular margin $m=0.20$ radians. The classification objective was
+\begin{equation}
+ \mathcal L_{\rm spk}
+ =\mathcal L_{\rm fus}
+  +0.30\mathcal L_{\rm tok}
+  +0.30\mathcal L_{\rm aud}.
+\end{equation}
+No embedding-consistency term was enabled in the formal run. Inference used the fusion head without a target-class margin.
+
+\section{Speaker data, optimization and statistical analysis}
+The closed-set experiment used the 110 audio-bearing speakers in VCTK version 0.92~\cite{vctk}. We selected microphone-1 recordings from the silence-trimmed release and grouped recordings by speaker and utterance identifier after removing microphone suffixes. A canonical split with seed 42 assigned 80, 15 and 15 utterance groups per speaker to training, validation and test, respectively, giving 8,800 training, 1,650 validation and 1,650 test items. The same identities appeared in each split, but utterance groups did not overlap. This primary split was utterance-disjoint, not globally transcript-disjoint.
+
+Waveforms were resampled to mono 16~kHz before frozen-codec caching. Training used random crops of up to three seconds; validation and test used deterministic centre crops. Token boundaries were obtained by mapping the same normalized audio interval onto the actual cached token sequence, rather than assuming an exact frame count for every utterance. Shorter recordings retained their available duration. Batches used zero-padded waveforms and padding and presence masks for tokens. Training augmentation applied gain sampled uniformly from $[-3,3]$~dB and Gaussian noise at 10--30~dB SNR. The token branch retained the first one, two or three layers with probabilities 0.2, 0.2 and 0.6, respectively. This was token-layer masking only: the paired waveform remained the cached $L=3$ reconstruction. Validation and test used all three layers without these augmentations.
+
+Three training runs used seeds 41, 42 and 43 on the same canonical split. Each run used 30 epochs, minibatches of 16 and eight-minibatch gradient accumulation, with gradient clipping at 1. AdamW used weight decay $10^{-4}$, learning rate $3\times10^{-4}$ for the token encoder and fusion module, and $10^{-4}$ for the audio projection and classification heads. The implementation used cosine learning-rate scheduling without warm-up; the scheduler was advanced at optimizer updates with its horizon set to the total minibatch count. Checkpoints were selected by validation macro-F1, not test accuracy. The retained formal configuration did not use early stopping or ECAPA unfreezing. The recorded environment used Python 3.10.19, PyTorch and torchaudio 2.9.1 with CUDA 12.8, and SpeechBrain 1.1.0.
+
+After configuration selection using validation data, each seed was evaluated once on the locked test set. Seed 42 was the predeclared delivery checkpoint. A scalar temperature was fitted separately for each seed by minimizing validation negative log-likelihood over 400 logarithmically spaced values from 0.05 to 10; this temperature was fixed for test evaluation. We report Top-1 and Top-5 accuracy, macro-F1, expected calibration error (ECE; 15 equal-width confidence bins), and the mean accuracy of the 11 lowest-accuracy speakers. The reported mean and standard deviation summarize the three training seeds; the standard deviation uses the sample estimator.
+
+Within-seed uncertainty was assessed using a two-level percentile bootstrap. Each replicate sampled 110 speakers with replacement, then sampled 15 test utterance groups with replacement within each sampled speaker. Accuracy was the mean correctness across the resulting 1,650 resampled items. The 2.5th and 97.5th percentiles defined each 95\% interval. The conservative lower bound in Results is the minimum of the three within-seed lower bounds, not a confidence interval for the three-seed mean.
+
+\noindent\textit{[Author confirmation required: recover the bootstrap replicate count and random-number seed from the original speaker-analysis command; these settings are absent from the archived confidence-interval summary.]}
+
+The primary endpoint is fixed-class identification. This test does not establish the separate contributions of the fusion and individual branches, robustness under transcript-controlled or short-window conditions, unknown-speaker rejection, or claimed-identity authentication.
+
+\section{Inference and deployment interface}
+At inference, the codec is placed in evaluation mode and executes without gradient tracking. The sender converts mono 16-kHz audio to encoder features and then to the first $L$ RVQ index sequences. The receiver unpacks the indices, retrieves and sums the corresponding codewords, and runs the waveform decoder. The HuBERT teacher, adversarial discriminators and semantic-distillation projection are not required by this inference path. The encoder architecture, decoder weights and codebooks must correspond to the same deployed checkpoint.
+
+The offline reconstruction evaluations process complete utterances. The implemented chunked interface instead accepts blocks whose sample count is a multiple of 320; its default 0.5-s block contains 8,000 samples and nominally 25 latent frames. Final partial file-input blocks are zero-padded. Because the encoder includes bidirectional recurrence and noncausal convolutions, this implementation performs buffered block inference rather than sample-causal inference. Chunk buffering and boundary effects are distinct from the encoder-only RTF, and the offline scores do not by themselves establish streaming reconstruction quality.
+
+The identity inference bundle contains the seed-42 classifier, speaker-label map, preprocessing metadata and validation-fitted temperature. It accepts the received $L=3$ indices and their matching decoded waveform. Only the fusion classification head is used; calibrated class probabilities are
+\begin{equation}
+ p(y=j\mid \widetilde I,\hat{x})
+ =\frac{\exp(a_j/T_{\rm cal})}
+ {\sum_{k=1}^{110}\exp(a_k/T_{\rm cal})},
+\end{equation}
+where $a_j$ is the margin-free fusion logit and $T_{\rm cal}$ is the fixed calibration temperature. The predicted identity is the maximum-probability class. Confidence and the gap between the two highest probabilities can be displayed, but neither is an experimentally validated unknown-speaker rejection rule.
+
+The receiver interface maintains separate audio and token buffers for each incoming stream and performs identity inference before playback mixing. Its default classifier window is three seconds, updated after each additional second of decoded audio. Stream identifiers select buffers but are not classifier inputs. These settings describe the implemented inference interface; multi-user throughput, end-to-end latency and six-user identity performance remain to be measured.
+
+\section{Six-user integration}
+\noindent\textit{[Placeholder: Six-user experiments are in progress. The configuration, evaluation protocol and measured results will be inserted after completion.]}

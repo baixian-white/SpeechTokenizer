@@ -1,0 +1,355 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Times New Roman}
+\setCJKmainfont{Noto Serif SC}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,longtable,array}
+\newcounter{none}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={嵌入式身份认证的实验性六用户实时量子语义语音通信}}
+\setcounter{secnumdepth}{-\maxdimen}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.4em}
+\title{嵌入式身份认证的实验性六用户实时量子语义语音通信}
+\author{作者信息：待补充}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+\subsection{摘要}\label{ux6458ux8981}
+
+本文通过实验展示了一个多用户实时量子语义语音通信网络。针对量子通信中普遍存在的低比特率限制，本文设计了一种专用的语义提取与重建算法，以降低量子比特消耗，并在约
+1.46 kbps
+的比特率下实现高质量语音重建。同时，利用传输语义信息中自然嵌入的声纹特征，系统能够实现可靠的实时身份认证，且无需增加额外的数据传输或量子比特开销。
+
+\textbf{关键词：}
+语义语音通信；残差向量量化；语音重建；说话人识别；声纹认证
+
+\begin{quote}
+本稿是语义提取、语音重建和声纹部分的工作草稿。整体研究标题予以保留；量子链路方法不在本稿范围内。
+\end{quote}
+
+\subsection{1 引言}\label{ux5f15ux8a00}
+
+低速率语音通信既要保留交互所需的词语，也要保留区分不同说话人的声学线索。当接收终端利用恢复语音判断说话人身份时，这两个要求就联系在一起了。针对可懂度优化的表示可能丢失说话人特有的细节，而保留更多声学信息又会增加传输容量。本文研究如何让同一份紧凑语音载荷同时支持语音重建和接收端身份推断。
+
+SpeechTokenizer 通过带分层 RVQ
+的编码器---解码器架构同时表示语义和声学信息。HuBERT
+提供自监督语音特征，可用于指导内容保持。我们在 SCIT-Speech
+中采用这些成熟组件，构建共享码本索引传输子系统。发送端传输离散索引，接收端利用本地保存的码本和解码器恢复语音。保留的
+RVQ 层数决定名义索引速率。
+
+声纹分支位于语音重建之后。说话人编码器将解码音频映射为嵌入，并与注册语音形成的身份配置进行比较。本文所说的``嵌入式''是指复用语音载荷中自然保留的说话人信息，不表示插入水印，也不表示额外传输生物特征标识符。
+
+整体应用是一个六用户通信网络。本文只描述其中的语义和声纹组件及其组件级证据。本文范围内的主要贡献包括：可控制速率的语义提取与语音重建流程、运行在重建语音上的接收端声纹路径，以及对语音质量、保留的身份信息和在线识别能力的分开评估。这些评估将重建质量与认证可靠性区分开来。
+
+\subsection{2
+语义提取与语音重建}\label{ux8bedux4e49ux63d0ux53d6ux4e0eux8bedux97f3ux91cdux5efa}
+
+\subsubsection{2.1 信号路径}\label{ux4fe1ux53f7ux8defux5f84}
+
+图 1 展示了组件接口。对于用户 \(u\)，采样率为 \(f_s=16\) kHz 的波形
+\(x_u\) 被编码为
+
+\[
+Z_u=E_\theta(x_u),\qquad Z_u\in\mathbb{R}^{d\times T_q},
+\]
+
+其中 \(d=1024\)。总下采样倍数为 320，因此名义潜变量帧率为 \(f_q=50\)
+Hz。部署时，编码器架构、码本和解码器必须采用一致的模型配置。
+
+\textbf{图 1 语义和声纹组件。}
+说话人分支在播放混音之前使用重建音频。模型权重、码本和身份配置保存在本地；载荷接口不规定具体的传输实现。
+
+\subsubsection{2.2
+残差量化与重建}\label{ux6b8bux5deeux91cfux5316ux4e0eux91cdux5efa}
+
+令 \(z_t\) 表示一个编码器帧，\(C_m=\{c_{m,k}\}_{k=0}^{K-1}\) 表示第
+\(m\) 个码本。RVQ 对连续残差进行量化：
+
+\[
+r_{0,t}=z_t,
+\] \[
+i_{m,t}=\underset{k}{\arg\min}\|r_{m-1,t}-c_{m,k}\|_2^2,
+\] \[
+q_{m,t}=c_{m,i_{m,t}},\qquad r_{m,t}=r_{m-1,t}-q_{m,t}.
+\]
+
+当前实例使用 \(M=3\) 层，每层包含 \(K=1024\) 个条目。当深度为
+\(L\leq M\) 时，发送端保留前 \(L\) 个索引序列。接收到的索引
+\(\widetilde i\) 通过下式重建表示和波形：
+
+\[
+\hat z_{L,t}=\sum_{m=1}^{L}c_{m,\widetilde i_{m,t}},\qquad
+\hat x_L=D_\phi(\hat Z_L).
+\]
+
+码字向量在本地恢复。第一层量化器接收语义监督，残差层补充声学细节。这不是严格分工：较早的层也可能携带说话人线索，较后的层也可能影响可懂度。
+
+\subsubsection{2.3 训练目标}\label{ux8badux7ec3ux76eeux6807}
+
+Base 训练结合波形重建、多尺度 Mel 重建、对抗学习、特征匹配、RVQ
+承诺损失和语义蒸馏：
+
+\[
+\mathcal L_{\rm base}=\lambda_{\rm wav}\mathcal L_{\rm wav}
++\mathcal L_{\rm mel}+\mathcal L_{\rm adv}+\mathcal L_{\rm fm}
++\lambda_{\rm q}\mathcal L_{\rm commit}
++\lambda_{\rm sem}\mathcal L_{\rm sem}.
+\]
+
+第一层 RVQ 输出由 1024 维投影到 768
+维，并通过基于余弦相似度的蒸馏与对齐的 HuBERT
+教师特征比较。因此，编解码器潜变量维度与语义教师维度不同。实验使用的
+Base 配置为 \(\lambda_{\rm sem}=30\)。HuBERT
+只在训练阶段使用，在线运行时移除。
+
+低负载信道感知适配（LCA）阶段在微调时采样不同 RVQ 深度，并扰动索引。Mel
+域一致性项比较干净重建结果和扰动后的重建结果。这是编解码器接口处的训练增强，不是量子链路模型。
+
+\subsubsection{2.4 传输速率}\label{ux4f20ux8f93ux901fux7387}
+
+定长索引编码的名义速率为
+
+\[
+R_{\rm index}=L f_q\lceil\log_2K\rceil=500L\ {\rm bit/s}.
+\]
+
+对于持续时间为 \(T_c\) 且包含整数个潜变量帧的语音块，按字节对齐打包需要
+
+\[
+B_{\rm chunk}=\left\lceil
+\frac{L f_qT_c\lceil\log_2K\rceil}{8}
+\right\rceil\quad\text{bytes}.
+\]
+
+当 \(T_c=0.5\) s 时，三种设置分别需要 32、63 和 94
+字节，即在不计报头时分别为 512、1008 和 1504
+bit/s。名义速率、打包后的载荷速率和总网络流量应分别报告。
+
+\subsection{3
+冻结编解码器的说话人身份模块}\label{ux51bbux7ed3ux7f16ux89e3ux7801ux5668ux7684ux8bf4ux8bddux4ebaux8eabux4efdux6a21ux5757}
+
+
+冻结的 SpeechTokenizer
+后面增加一个独立训练的身份模块。上游编码器、RVQ
+码本、解码器、数据包格式和名义比特率均保持不变。主要条件是冻结的
+LCA、\(L=3\) 检查点；Base 作为次要参考。每个说话人 \(j\)
+都有一个类别标签，每个训练片段从归一化的三秒区间中截取，语音标记分支和重建音频分支使用同一片段。
+
+音频分支采用具有编解码器感知能力的 ECAPA-TDNN 编码器 \(S_\psi\)
+和可训练投影层。标记分支接收前 \(L\) 个 RVQ
+序列，为缺失层保留填充索引，加入层嵌入和时间嵌入，再经过时序模块和注意力池化。两个归一化嵌入通过一个学习得到的门控进行融合：
+
+\[
+g=\sigma\bigl({\rm MLP}([z_{\rm tok};z_{\rm aud}])\bigr),
+\] \[
+z_{\rm fus}={\rm LN}\bigl(gW_tz_{\rm tok}+(1-g)W_az_{\rm aud}\bigr).
+\]
+
+该模块包含标记分类头、音频分类头和融合分类头，并对 110 个说话人类别使用
+AAM-Softmax。上游编解码器不接收梯度；分类器训练前后都会检查模型状态字典哈希。
+
+作为与早期身份配置匹配基线的比较，利用注册语句形成的说话人配置可写为
+
+\[
+p_j=\operatorname{norm}\left[
+\frac{1}{N_j}\sum_{n=1}^{N_j}
+\operatorname{norm}(S_\psi(x^{\rm enroll}_{j,n}))
+\right].
+\]
+
+接收端将一段重建语音窗口编码为
+
+\[
+e_u=\operatorname{norm}(S_\psi(\hat x_u)).
+\]
+
+神经后端使用 ECAPA-TDNN。轻量级 MFCC
+配置匹配器仅作为工程基线保留。即使不额外传输声纹向量，系统仍需要注册数据和本地推理计算。
+
+\subsubsection{3.2
+识别与接受判定}\label{ux8bc6ux522bux4e0eux63a5ux53d7ux5224ux5b9a}
+
+对于早期配置匹配基线，余弦匹配为
+
+\[
+s_j=e_u^\top p_j,\qquad
+\hat j=\underset{j}{\arg\max}\ s_j.
+\]
+
+该基线输出最接近的说话人、对应得分、最大得分与次大得分之差，以及接受标志。接受标志用于判断最大得分是否超过阈值
+\(\tau\)；得分间隔只用于诊断，不构成额外的接受条件。
+
+该分类器根据标记、音频和融合分类头，在 110
+个已注册身份中进行预测。利用验证集拟合的温度参数对固定类别集合的置信度进行校准。该置信度是显示和决策辅助信息，不用于拒绝未知说话人。该闭集结果
+不证明开放集验证、抗欺骗能力或生物特征安全性；声称完成身份认证必须采用独立的真实/冒充测试协议，不能由闭集
+Top-1 准确率推断。
+
+\subsubsection{3.3 流式运行}\label{ux6d41ux5f0fux8fd0ux884c}
+
+每个接收流都有独立的重建音频缓冲区和标记缓冲区。说话人推断在播放混音之前进行。发送端标识符选择对应缓冲区并提供评估标签，分类器根据缓冲表示计算预测结果。该分类器
+使用三秒窗口。编解码器实时率不能代表首次身份判定延迟。
+
+早期离线探针基于 RVQ
+码直方图和量化特征的时间统计量，作为诊断基线保留。它与上述可训练标记/音频分类器相互独立，不能替代主要实验结果。
+
+\subsection{4 组件评估}\label{ux7ec4ux4ef6ux8bc4ux4f30}
+
+\subsubsection{4.1 语音重建}\label{ux8bedux97f3ux91cdux5efa}
+
+Base 使用 LibriSpeech train-clean-100 进行训练。LibriSpeech
+提供独立的训练和评估分区。表 1 使用现有的 300 条 test-clean 语句，在三个
+RVQ 深度下进行评估。指标是离线平均值；流式质量和传输影响需要单独评估。
+
+\textbf{表 1 300 条 LibriSpeech test-clean 语句上的重建结果。}
+速率为名义速率；mel-L1 越低越好，STOI 和 PESQ-WB 越高越好。
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrrrr@{}}
+\toprule\noalign{}
+模型 & kbit/s & mel-L1 & STOI & PESQ-WB \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Base & 0.5 & 1.146 & 0.809 & 1.343 \\
+Base & 1.0 & 0.921 & 0.872 & 1.824 \\
+Base & 1.5 & 0.864 & 0.892 & 2.097 \\
+LCA & 0.5 & 1.122 & 0.822 & 1.390 \\
+LCA & 1.0 & 0.898 & 0.879 & 1.823 \\
+LCA & 1.5 & 0.838 & 0.900 & 2.097 \\
+\end{longtable}
+}
+
+对于每个模型，增加 RVQ 层数都会改善三个指标。与 Base 相比，LCA
+在每个速率下都降低了 mel-L1 并提高了 STOI，而 PESQ-WB 在 1.0 和 1.5
+kbit/s 下几乎不变。因此，表 1 不能证明 LCA 在感知质量上具有一致优势。在
+1.5 kbit/s 下，LCA 的平均 STOI 为 0.900，PESQ-WB 为 2.097。
+
+\subsubsection{4.2 冻结编解码器上的闭集说话人分类}\label{speaker-closed-set-zh}
+
+我们在冻结的 LCA、\(L=3\) 表示上训练独立的说话人分类器；编码器、RVQ
+码本和解码器在分类器训练期间保持不变。每个说话人使用 80/15/15
+的语句组划分，标记分支和重建音频分支使用匹配的三秒片段。配置选择和温度校准只使用验证集，冻结配置后在锁定测试集上进行一次评估；结果汇总三个独立训练运行。
+
+在 110 名 VCTK 说话人的闭集测试中，平均 Top-1 为
+\(94.93\pm0.70\%\)，macro-F1 为 \(94.88\pm0.71\%\)，Top-5 为
+99.35\%，ECE 为 1.75\%。最低十分位说话人的平均准确率为 77.78\%，三个运行的分层 bootstrap 区间最低下端点为 92.12\%。这些结果量化的是固定身份集合内的说话人分类能力，不构成开放集认证或真实/冒充判定。
+
+\textbf{表 2 冻结 LCA、\(L=3\) 条件下 110 名说话人的闭集分类结果。}
+所有数值为百分比；配置选择只使用验证集，随后在锁定测试集上评估一次。
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrrrrr@{}}
+\toprule\noalign{}
+运行 & Top-1 & Macro-F1 & Top-5 & ECE & 最低十分位 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+运行 1 & 95.03 & 94.94 & 99.39 & 1.30 & 76.97 \\
+运行 2 & 94.18 & 94.14 & 99.27 & 2.04 & 73.94 \\
+运行 3 & 95.58 & 95.56 & 99.39 & 1.92 & 82.42 \\
+平均 & 94.93\(\pm0.70\) & 94.88\(\pm0.71\) & 99.35 & 1.75 & 77.78 \\
+\end{longtable}
+}
+
+\subsubsection{4.3 早期诊断基线}\label{speaker-diagnostic-baseline-zh}
+
+早期离线探针对每个说话人使用五条训练语句和五条测试语句，计算码直方图和量化特征统计量。其波形条件使用三条原始注册语句和五条测试语句，每个种子产生
+550 条测试样本。以下结果仅作为早期诊断基线，不是上述冻结编解码器分类器的正式结果。
+
+\textbf{表 3 早期诊断基线：110 名 VCTK 说话人在 \(L=3\) 下的 Top-1
+识别率。} 波形和探针协议不同；数值为三个种子的均值 ± 标准差。
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrr@{}}
+\toprule\noalign{}
+输入 & Base & LCA \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+RVQ 码直方图 & \(0.510\pm0.007\) & \(0.510\pm0.034\) \\
+量化特征统计量 & \(0.581\pm0.019\) & \(0.547\pm0.041\) \\
+使用 ECAPA 的重建音频 & \(0.575\pm0.042\) & \(0.345\pm0.021\) \\
+\end{longtable}
+}
+
+基于码的识别率高于 \(1/110\) 的随机水平，说明早期参考路径中保留了可恢复的说话人信息。在其波形协议下，原始音频 ECAPA 达到
+\(0.996\pm0.004\)，而重建音频表现较差。尽管 LCA
+在独立语音质量评估中提高了
+STOI，但在这一参考测试中保留说话人身份的能力低于
+Base。该比较说明语音质量和说话人身份应独立评估，但不能解释差异的具体原因，也不能作为正式分类器结果。
+
+\subsubsection{4.4
+历史在线工程证据}\label{ux5386ux53f2ux5728ux7ebfux5de5ux7a0bux8bc1ux636e}
+
+早期回放实验在三名已注册说话人之间传输预录语音。语音编码在
+CUDA 上运行，ECAPA 在 CPU 上运行，设置为 \(L=3\)、0.5 秒分块、2
+秒说话人窗口、1 秒更新周期和
+\(\tau=0.25\)。该测试禁用了麦克风输入和实体播放，是旧配置匹配路径的集成验证，不是正式分类器评估。
+
+\textbf{表 4 历史三客户端 ECAPA 回放。}
+统计每个接收端对输入流做出的身份判定。
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrrr@{}}
+\toprule\noalign{}
+客户端 & 判定次数 & 正确次数 & 准确率 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+用户 1 & 110 & 94 & 85.45\% \\
+用户 2 & 113 & 108 & 95.58\% \\
+用户 3 & 114 & 102 & 89.47\% \\
+\end{longtable}
+}
+
+客户端平均准确率为 90.17\%，汇总准确率为
+\(304/337=90.21\%\)。每次会话约持续 65
+秒，并报告应用层丢包数为零。这些历史结果证明了说话人推断与解码流的集成。由于窗口相互重叠，各次判定并非独立的生物特征试验。记录中的
+750 ms 单向数值是配置的延迟预算，不是实测的端到端说话延迟。
+
+\subsection{5 六用户实时通信系统}\label{six-user-integration-zh}
+
+六个客户端、一个路由器和一个共享 GPU 工作进程在单机接收端输入 VCTK 评估子集中六名已注册说话人的预录语音。冻结的 110 人闭集分类器保持不变。系统使用三层表示、0.5 秒通信块和 3 秒识别上下文，分别测试顺序输入、同步输入和 30 分钟同步持续输入。说话人推理运行在 CPU 上且关闭播放，因此延迟是从输入调度到解码完成，不是完整声学输出延迟。
+
+本文只报告进入评分的预测结果上的 Top-1 说话人识别准确率；六路并发服务能力不在本实验考察范围内。
+
+\textbf{表 5 0.5 秒通信块下的六用户说话人识别结果。} 识别准确率为 Top-1 说话人识别准确率。
+
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrrrr@{}}
+\toprule\noalign{}
+条件 & 识别准确率 (\%) & P95 (s) & STOI & PESQ-WB \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+顺序输入 & 85.56 & 1.786 & 0.8229 & 1.7443 \\
+同步输入 & 87.84 & 10.543 & 0.8357 & 1.7320 \\
+30 分钟持续输入 & 87.95 & 10.58 & 0.8241 & 1.6885 \\
+\end{longtable}
+}
+\endgroup
+
+顺序输入、同步输入和 30 分钟同步持续输入下的识别准确率分别为 85.56\%、87.84\% 和 87.95\%。30 分钟同步持续输入期间未发生进程崩溃或 TCP 断连。解码 P95、STOI 和 PESQ-WB 用于描述当前实现。该实验不用于评价六路并发服务能力，也不代表完整声学端到端时延。
+
+\subsection{6 讨论与结论}\label{ux8ba8ux8bbaux4e0eux7ed3ux8bba}
+
+语义子系统将 16 kHz 语音转换为共享码本的 RVQ 索引，并以 0.5---1.5 kbit/s
+的名义速率重建语音。接收端声纹推断从恢复音频中提取身份证据，并复用语音载荷。
+
+本文在区分早期诊断基线、冻结编解码器分类器和六用户输入协议的前提下，分别量化了语音重建质量和保留的身份信息。可懂度提高本身不能证明认证可靠；固定类别集合也不构成开放集认证。六用户输入实验中的说话人识别准确率为 85.56\%--87.95\%。要提出系统级认证结论，仍需经过校准的真实/冒充测试。
+
+\end{document}

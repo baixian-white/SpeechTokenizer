@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "zip_path": "H:\\H-CODE\\speechtokenizer\\output\\handoff\\six_user_demo_handoff_20260920.zip",
+  "zip_bytes": 13633412514,
+  "zip_sha256": "7532328624d21c95da9e8bc15d87f22ac42febe56ca3cf1f5f02eb115c421df1",
+  "verified_payload_files": 157572,
+  "zip_entries": 157573,
+  "payload_bytes": 13707962332,
+  "zip_crc_and_all_payload_sha256": "passed",
+  "key_included": false,
+  "encrypted": false,
+  "partial_exists": false,
+  "elapsed_seconds": 1028.7,
+  "verified_at_utc": "2026-09-20T07:29:07.882138+00:00"
+}

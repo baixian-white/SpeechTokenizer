@@ -1,0 +1,360 @@
+{
+  "schema": "six_user_system_metrics_v1",
+  "mode": "smoke",
+  "jobs": [
+    {
+      "condition": "D",
+      "scenario": "concurrent",
+      "users": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "active_senders": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "recognition": true,
+      "transport": "tcp_loopback",
+      "job_id": "D_concurrent_r01_j000",
+      "repeat": 1,
+      "streams": {
+        "A": [
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_001",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p225_001.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_001_mic1.flac"
+          }
+        ],
+        "B": [
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_028",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p226_028.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_028_mic1.flac"
+          }
+        ],
+        "C": [
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_014",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p227_014.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_014_mic1.flac"
+          }
+        ],
+        "D": [
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_004",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p228_004.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_004_mic1.flac"
+          }
+        ],
+        "E": [
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_013",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p229_013.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_013_mic1.flac"
+          }
+        ],
+        "F": [
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_080",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p230_080.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_080_mic1.flac"
+          }
+        ]
+      },
+      "continuous": false,
+      "playback": "off",
+      "playback_max_seconds": 0.8,
+      "queue_blocks": 64,
+      "block_deadline_seconds": 10,
+      "prediction_deadline_seconds": 15,
+      "drain_seconds": 45,
+      "startup_timeout_seconds": 240,
+      "resource_interval_seconds": 1.0,
+      "torch_threads": 1,
+      "model_config": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\3用户demo\\Log\\spt_base\\config.json",
+      "checkpoint": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\3用户demo\\Log\\spt_base\\SpeechTokenizer_best_dev.pt",
+      "bundle": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\exp23_formal\\export\\seed42_bundle",
+      "key_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\demo.key",
+      "source_sample_rate": 16000,
+      "chunk_samples": 8000,
+      "window_samples": 48000,
+      "hop_samples": 16000,
+      "compute_backend": "gpu_worker",
+      "ram_policy": "balanced",
+      "ram_required_gib": 3.0
+    }
+  ],
+  "model_hashes": {
+    "checkpoint": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a",
+    "model_config": "ca4af03a60e083a34aa11d8cb77ccf7485b6afb1e209c73491b6e0466aaedb3b",
+    "bundle_manifest": "7b388328dc69071d5214dc8a8c5339b50a40c9d7a79e60a2f791284b58a5a000"
+  },
+  "audio_manifest_sha256": "a79f6633c0470b78ecc15b8262f5b5503343c404c62997d817a403d329334746",
+  "source_rows": [
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_001",
+      "split": "validation",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_001_mic1.flac",
+      "original_sha256": "2439aaaaf7edc055d4051a1c43c3130582dcb4c3f4c797936fe118208d06b1bb",
+      "original_sample_rate": 48000,
+      "original_samples": 98473,
+      "original_duration_seconds": 2.0515208333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p225_001.wav",
+      "prepared_sha256": "3b3f55dc09eb059e5bf6e7d6b80abb6226ce428b4f9a78e7edc77018d8eaeee7",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_028",
+      "split": "validation",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_028_mic1.flac",
+      "original_sha256": "450489c8d63dc7a7386e801243d2862ede28e673627d6e07101d9b5a55be9513",
+      "original_sample_rate": 48000,
+      "original_samples": 211247,
+      "original_duration_seconds": 4.400979166666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p226_028.wav",
+      "prepared_sha256": "c242eda70a05caa077899644b6d29d67397ff9c20abd9a07b138ad0adc53b638",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_014",
+      "split": "validation",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_014_mic1.flac",
+      "original_sha256": "e0aac7797f14b4b303f88dc15b93848cad284dfd8841149278388f1ccfb47fea",
+      "original_sample_rate": 48000,
+      "original_samples": 293198,
+      "original_duration_seconds": 6.108291666666666,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p227_014.wav",
+      "prepared_sha256": "9002baa3f57c5eb6bdcbe2fa0e1fcb8585801be9ea211f6aa76d54c2f357d8a5",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_004",
+      "split": "validation",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_004_mic1.flac",
+      "original_sha256": "7f405eac719168f06f2b16fd18507e8a59548e838f8fd43ef355b4945b8c0439",
+      "original_sample_rate": 48000,
+      "original_samples": 309376,
+      "original_duration_seconds": 6.445333333333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p228_004.wav",
+      "prepared_sha256": "a7ded9fe2d2baf59bac48c14306a164485c06f7206a156ece145f3a07c04fe88",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_013",
+      "split": "validation",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_013_mic1.flac",
+      "original_sha256": "91f7bffc4dae2ae47b56aa34a010f8f504db4ae2c18056ab3573391625b292c8",
+      "original_sample_rate": 48000,
+      "original_samples": 220824,
+      "original_duration_seconds": 4.6005,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p229_013.wav",
+      "prepared_sha256": "3c80f4896f0c160e113ccf57ee9c0a2a317c7f4e8640541a92c8df0e182525d4",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_080",
+      "split": "validation",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_080_mic1.flac",
+      "original_sha256": "df371193767bc1b6247017a53a82e962918640a39f00da40757e968a59e83c2b",
+      "original_sample_rate": 48000,
+      "original_samples": 98546,
+      "original_duration_seconds": 2.0530416666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_gpu_experiment\\project\\tmp\\system_metrics_20261007_131415\\audio\\source\\p230_080.wav",
+      "prepared_sha256": "fb7854bb4bca846b1054dee5d1f842ff82235d97d6cb96f0c737e0df0e4f400e",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    }
+  ],
+  "policies": {
+    "short_audio": "end_zero_padding",
+    "silence": "included",
+    "cross_speaker_windows": "recorded; excluded_from_steady_accuracy; target_is_latest_sample_identity",
+    "initial_context": "3_seconds_included_in_first_response_time",
+    "first_correct": "first_single_on_time_correct_window_output; continuous_response_success_before_identity_dwell_end",
+    "missing_audio": "zero_fill_at_original_block_positions; no_time_compression",
+    "quality_alignment": "each_block_trim_or_end_pad_to_8000; no_cross_correlation_shift",
+    "sample_unit": "source_utterance; receiver_copies_and_replays_are_dependent",
+    "clock": "time.perf_counter_ns shared by processes on this host; nanoseconds",
+    "latency_reference": "source_block_first_sample_scheduled_WAV_replay",
+    "latency_boundary": "decoder_completion; optional playback_callback; acoustic_output_not_measured",
+    "network_measurement": "application_layer_only; no_transport_or_link_capture",
+    "classifier": "unchanged_110_class_seed42_temperature_calibrated",
+    "mel_config": {
+      "n_filters": 64,
+      "strides": [
+        8,
+        5,
+        4,
+        2
+      ],
+      "dimension": 1024,
+      "semantic_dimension": 768,
+      "bidirectional": true,
+      "dilation_base": 2,
+      "residual_kernel_size": 3,
+      "n_residual_layers": 1,
+      "lstm_layers": 2,
+      "activation": "ELU",
+      "codebook_size": 1024,
+      "n_q": 3,
+      "num_mels": 80,
+      "num_freq": 1025,
+      "n_fft": 1024,
+      "hop_size": 240,
+      "win_size": 1024,
+      "fmin": 0,
+      "fmax": 8000,
+      "fmax_for_loss": null,
+      "mel_loss_lambdas": [
+        45,
+        1,
+        1,
+        1
+      ],
+      "recon_loss_lambda": 500,
+      "commitment_loss_lambda": 10,
+      "distill_loss_lambda": 30.0,
+      "distill_type": "d_axis",
+      "semantic_model_path": "facebook/hubert-base-ls960",
+      "semantic_model_layer": "avg",
+      "train_files": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\artifacts\\train_files.txt",
+      "valid_files": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\artifacts\\valid_files.txt",
+      "results_folder": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints",
+      "sample_rate": 16000,
+      "batch_size": 8,
+      "epochs": 10,
+      "learning_rate": 1e-05,
+      "intial_learning_rate": 1e-05,
+      "num_warmup_steps": 0,
+      "betas": [
+        0.9,
+        0.99
+      ],
+      "adam_b2": 0.9,
+      "lr_decay": 0.98,
+      "seed": 42,
+      "segment_size": 16000,
+      "wd": 0,
+      "num_workers": 8,
+      "valid_num_workers": 0,
+      "log_steps": 100,
+      "stdout_steps": 10,
+      "save_model_steps": 2500,
+      "num_ckpt_keep": 8,
+      "showpiece_num": 8,
+      "gradient_accumulation_steps": 4,
+      "device": "cuda",
+      "mixed_precision": "bf16",
+      "nas_encoder_config": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\best_seanet_config.json",
+      "encoder_downsample_rate": 320,
+      "latent_rate": 50,
+      "lca_train_mode": "end_to_end",
+      "lca_base_checkpoint": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+      "lambda_full": 1.0,
+      "lambda_comm": 1.5,
+      "lambda_consistency": 0.5,
+      "random_l_sampling": {
+        "values": [
+          1,
+          2,
+          3
+        ],
+        "strategy": "uniform_random",
+        "seed": 42
+      },
+      "channel_sim": {
+        "sample_strategy": "uniform_random",
+        "conditions": [
+          {
+            "name": "clean",
+            "p_drop": 0.0,
+            "p_sub": 0.0
+          },
+          {
+            "name": "dropout-mid",
+            "p_drop": 0.05,
+            "p_sub": 0.0
+          },
+          {
+            "name": "dropout-high",
+            "p_drop": 0.1,
+            "p_sub": 0.0
+          },
+          {
+            "name": "substitution-mid",
+            "p_drop": 0.0,
+            "p_sub": 0.01
+          },
+          {
+            "name": "substitution-high",
+            "p_drop": 0.0,
+            "p_sub": 0.03
+          }
+        ],
+        "dropout_implementation": "previous-index replacement",
+        "substitution": "uniform legal codebook index"
+      },
+      "exp1_handoff": {
+        "config_path": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\best_seanet_config.json",
+        "source_path": "output\\experiments\\exp1_nas_distill_run1_seed42\\artifacts\\best_architecture\\best_seanet_config.json",
+        "candidate_id": "nas_seed42_000896",
+        "encoder_strides": [
+          5,
+          4,
+          4,
+          4
+        ],
+        "handoff_schema": "encoder_only_nas_v1"
+      },
+      "exp3_run_mode": "formal",
+      "exp3_experiment_tag": "lca_v2_strong_perturb_consistency",
+      "exp3_experiment_note": "LCA v2: Stronger ChannelSim probabilities (p_drop up to 0.10, p_sub up to 0.03; ~5x stronger than v1). Adds consistency loss (lambda=0.5) between clean-decoded and perturbed-decoded outputs of the same truncated codes to give an explicit perturbation-invariance objective. Initialized from same Exp2 distill30 base as v1 for clean v1-vs-v2 ablation. lambda_comm raised to 1.5 to weight low-load output more heavily."
+    },
+    "inference_device": "cpu",
+    "ram_policy": "balanced",
+    "ram_policy_warning": "balanced lowers the six-client preflight guard to 6 GiB; monitor swap, queue growth and client exits"
+  }
+}

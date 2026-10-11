@@ -1,0 +1,117 @@
+{
+  "mode": "profile",
+  "started_at_utc": "2026-09-20T06:41:26.028742+00:00",
+  "exit_codes": {
+    "p225": 3221226505,
+    "p226": 3221226505,
+    "p227": 3221226505
+  },
+  "summaries": {
+    "p225": [
+      {
+        "user_id": "p225",
+        "device": "cuda",
+        "rvq_layers": "3",
+        "chunk_seconds": "0.5",
+        "duration_s": "27.64",
+        "sent_packets": "37",
+        "recv_packets": "74",
+        "decoded_packets": "74",
+        "dropped_packets": "0",
+        "drop_rate": "0.0",
+        "body_kbps": "3.02",
+        "total_kbps": "10.52",
+        "encode_ms_mean": "53.3",
+        "encode_ms_p95": "19.0",
+        "decode_ms_mean": "23.0",
+        "decode_ms_p95": "37.4",
+        "encode_rtf_mean": "0.107",
+        "encode_rtf_p95": "0.038",
+        "decode_rtf_mean": "0.046",
+        "decode_rtf_p95": "0.075",
+        "jitter_s_mean": "0.5",
+        "jitter_s_p95": "0.75",
+        "one_way_latency_budget_ms": "750.0",
+        "speaker_id_enabled": "1",
+        "speaker_eval_count": "34",
+        "speaker_correct_count": "30",
+        "speaker_verified_count": "22",
+        "speaker_accuracy_mean": "0.8824"
+      }
+    ],
+    "p226": [
+      {
+        "user_id": "p226",
+        "device": "cuda",
+        "rvq_layers": "3",
+        "chunk_seconds": "0.5",
+        "duration_s": "27.77",
+        "sent_packets": "37",
+        "recv_packets": "74",
+        "decoded_packets": "74",
+        "dropped_packets": "0",
+        "drop_rate": "0.0",
+        "body_kbps": "3.01",
+        "total_kbps": "10.47",
+        "encode_ms_mean": "52.0",
+        "encode_ms_p95": "20.4",
+        "decode_ms_mean": "17.8",
+        "decode_ms_p95": "37.5",
+        "encode_rtf_mean": "0.104",
+        "encode_rtf_p95": "0.041",
+        "decode_rtf_mean": "0.036",
+        "decode_rtf_p95": "0.075",
+        "jitter_s_mean": "0.5",
+        "jitter_s_p95": "0.75",
+        "one_way_latency_budget_ms": "750.0",
+        "speaker_id_enabled": "1",
+        "speaker_eval_count": "34",
+        "speaker_correct_count": "33",
+        "speaker_verified_count": "31",
+        "speaker_accuracy_mean": "0.9706"
+      }
+    ],
+    "p227": [
+      {
+        "user_id": "p227",
+        "device": "cuda",
+        "rvq_layers": "3",
+        "chunk_seconds": "0.5",
+        "duration_s": "27.78",
+        "sent_packets": "38",
+        "recv_packets": "74",
+        "decoded_packets": "74",
+        "dropped_packets": "0",
+        "drop_rate": "0.0",
+        "body_kbps": "3.03",
+        "total_kbps": "10.55",
+        "encode_ms_mean": "50.7",
+        "encode_ms_p95": "19.1",
+        "decode_ms_mean": "22.3",
+        "decode_ms_p95": "36.6",
+        "encode_rtf_mean": "0.101",
+        "encode_rtf_p95": "0.038",
+        "decode_rtf_mean": "0.045",
+        "decode_rtf_p95": "0.073",
+        "jitter_s_mean": "0.5",
+        "jitter_s_p95": "0.75",
+        "one_way_latency_budget_ms": "750.0",
+        "speaker_id_enabled": "1",
+        "speaker_eval_count": "34",
+        "speaker_correct_count": "31",
+        "speaker_verified_count": "25",
+        "speaker_accuracy_mean": "0.9118"
+      }
+    ]
+  },
+  "log_errors": {
+    "p225": [],
+    "p226": [
+      "Traceback (most recent call last):"
+    ],
+    "p227": []
+  },
+  "passed": false,
+  "finished_at_utc": "2026-09-20T06:42:10.781300+00:00",
+  "scope": "Three local replay clients only; no microphone, playback, six-user or open-set acceptance."
+}

@@ -1,0 +1,3289 @@
+{
+  "schema": "six_user_system_metrics_v1",
+  "mode": "formal",
+  "jobs": [
+    {
+      "condition": "D",
+      "scenario": "switch",
+      "users": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "active_senders": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "recognition": true,
+      "transport": "tcp_loopback",
+      "job_id": "D_switch_r01_j000",
+      "repeat": 1,
+      "streams": {
+        "A": [
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          }
+        ],
+        "B": [
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          }
+        ],
+        "C": [
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          }
+        ],
+        "D": [
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          }
+        ],
+        "E": [
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          }
+        ],
+        "F": [
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          }
+        ]
+      },
+      "continuous": true,
+      "playback": "off",
+      "playback_max_seconds": 0.8,
+      "queue_blocks": 64,
+      "block_deadline_seconds": 10,
+      "prediction_deadline_seconds": 15,
+      "drain_seconds": 45,
+      "startup_timeout_seconds": 240,
+      "resource_interval_seconds": 1.0,
+      "torch_threads": 1,
+      "model_config": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\3用户demo\\Log\\spt_base\\config.json",
+      "checkpoint": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\3用户demo\\Log\\spt_base\\SpeechTokenizer_best_dev.pt",
+      "bundle": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\exp23_formal\\export\\seed42_bundle",
+      "key_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\demo.key",
+      "source_sample_rate": 16000,
+      "chunk_samples": 8000,
+      "window_samples": 48000,
+      "hop_samples": 16000,
+      "ram_policy": "strict",
+      "ram_required_gib": 8.0
+    },
+    {
+      "condition": "D",
+      "scenario": "switch",
+      "users": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "active_senders": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "recognition": true,
+      "transport": "tcp_loopback",
+      "job_id": "D_switch_r02_j001",
+      "repeat": 2,
+      "streams": {
+        "A": [
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          }
+        ],
+        "B": [
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          }
+        ],
+        "C": [
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          }
+        ],
+        "D": [
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          }
+        ],
+        "E": [
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          }
+        ],
+        "F": [
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          }
+        ]
+      },
+      "continuous": true,
+      "playback": "off",
+      "playback_max_seconds": 0.8,
+      "queue_blocks": 64,
+      "block_deadline_seconds": 10,
+      "prediction_deadline_seconds": 15,
+      "drain_seconds": 45,
+      "startup_timeout_seconds": 240,
+      "resource_interval_seconds": 1.0,
+      "torch_threads": 1,
+      "model_config": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\3用户demo\\Log\\spt_base\\config.json",
+      "checkpoint": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\3用户demo\\Log\\spt_base\\SpeechTokenizer_best_dev.pt",
+      "bundle": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\exp23_formal\\export\\seed42_bundle",
+      "key_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\demo.key",
+      "source_sample_rate": 16000,
+      "chunk_samples": 8000,
+      "window_samples": 48000,
+      "hop_samples": 16000,
+      "ram_policy": "strict",
+      "ram_required_gib": 8.0
+    },
+    {
+      "condition": "D",
+      "scenario": "switch",
+      "users": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "active_senders": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "recognition": true,
+      "transport": "tcp_loopback",
+      "job_id": "D_switch_r03_j002",
+      "repeat": 3,
+      "streams": {
+        "A": [
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          }
+        ],
+        "B": [
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          }
+        ],
+        "C": [
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          }
+        ],
+        "D": [
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          }
+        ],
+        "E": [
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          }
+        ],
+        "F": [
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p230",
+            "utterance_group": "p230_036",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p225",
+            "utterance_group": "p225_021",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p226",
+            "utterance_group": "p226_003",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p227",
+            "utterance_group": "p227_012",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p228",
+            "utterance_group": "p228_136",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          },
+          {
+            "speaker_id": "p229",
+            "utterance_group": "p229_043",
+            "wav_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+            "samples": 48000,
+            "source_audio_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac"
+          }
+        ]
+      },
+      "continuous": true,
+      "playback": "off",
+      "playback_max_seconds": 0.8,
+      "queue_blocks": 64,
+      "block_deadline_seconds": 10,
+      "prediction_deadline_seconds": 15,
+      "drain_seconds": 45,
+      "startup_timeout_seconds": 240,
+      "resource_interval_seconds": 1.0,
+      "torch_threads": 1,
+      "model_config": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\3用户demo\\Log\\spt_base\\config.json",
+      "checkpoint": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\3用户demo\\Log\\spt_base\\SpeechTokenizer_best_dev.pt",
+      "bundle": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\exp23_formal\\export\\seed42_bundle",
+      "key_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\demo.key",
+      "source_sample_rate": 16000,
+      "chunk_samples": 8000,
+      "window_samples": 48000,
+      "hop_samples": 16000,
+      "ram_policy": "strict",
+      "ram_required_gib": 8.0
+    }
+  ],
+  "model_hashes": {
+    "checkpoint": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a",
+    "model_config": "ca4af03a60e083a34aa11d8cb77ccf7485b6afb1e209c73491b6e0466aaedb3b",
+    "bundle_manifest": "7b388328dc69071d5214dc8a8c5339b50a40c9d7a79e60a2f791284b58a5a000"
+  },
+  "audio_manifest_sha256": "acfb9c0c1089f6cab1c0230cc912fd6a413aa2cc738b625e3d5b8f1fc8f52765",
+  "source_rows": [
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_021",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_021_mic1.flac",
+      "original_sha256": "92b75593a8ff681f880cb70f1e9bc71c9549891e95a09427fabd9e844ebb0f57",
+      "original_sample_rate": 48000,
+      "original_samples": 433569,
+      "original_duration_seconds": 9.0326875,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_021.wav",
+      "prepared_sha256": "1b82b2f93d3a53372401559b5bc3bf46e575ab1e06366254616c4d9be57906b7",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_022",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_022_mic1.flac",
+      "original_sha256": "a4a88b254b17544e05fb259ded18c294b133abda8ff515ae9c72e842b64ec9d0",
+      "original_sample_rate": 48000,
+      "original_samples": 336738,
+      "original_duration_seconds": 7.015375,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_022.wav",
+      "prepared_sha256": "a6a32e6d7c1f6c69fbfff9e5a42db9a3a1faa2a8164ebff359e679e9ff75c6c9",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_024",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_024_mic1.flac",
+      "original_sha256": "f90c5df56354f0ca529920d4517ed390e1187f0e278a80ee2964592c15d2b642",
+      "original_sample_rate": 48000,
+      "original_samples": 353403,
+      "original_duration_seconds": 7.3625625,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_024.wav",
+      "prepared_sha256": "be30e40fb2c2660627b285531fdddd1f2e7bdd35fbc10744fbd0c7ffdfe7b8a5",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_026",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_026_mic1.flac",
+      "original_sha256": "5bc1131498e55aa7451ef28ad529d77864b4ee32ae55b342705df3fd88536efe",
+      "original_sample_rate": 48000,
+      "original_samples": 93956,
+      "original_duration_seconds": 1.9574166666666666,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_026.wav",
+      "prepared_sha256": "099346355a3b4679b1c584740eba33ce913a99395076e862ef66516ccf87e037",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_030",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_030_mic1.flac",
+      "original_sha256": "cb35a3b259e0baebb5aed38081d68d67d72cbd25b0787f380212504609a76146",
+      "original_sample_rate": 48000,
+      "original_samples": 200449,
+      "original_duration_seconds": 4.176020833333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_030.wav",
+      "prepared_sha256": "f7a934c79d9a368755ee67f4b7a25ab0f4f1a4506ed3971ff2fa28d6415dc511",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_037",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_037_mic1.flac",
+      "original_sha256": "3a59d1678e21e0198b258883518dca838131a4aa8eb16deb85eb59f7eba5ba64",
+      "original_sample_rate": 48000,
+      "original_samples": 186434,
+      "original_duration_seconds": 3.8840416666666666,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_037.wav",
+      "prepared_sha256": "a45692544ae8d19053e22b65cf7f3883d07e2ae8cfd054481084dfff24d246d3",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_060",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_060_mic1.flac",
+      "original_sha256": "a89f64dbd1f5f8ce9d75b6c1cd57a10a8239b1594f05d556b2206e6f74847767",
+      "original_sample_rate": 48000,
+      "original_samples": 149171,
+      "original_duration_seconds": 3.1077291666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_060.wav",
+      "prepared_sha256": "f3772e18a6ea256eca3811684672f30352f6f784ed7d110440429cdc0db15655",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_071",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_071_mic1.flac",
+      "original_sha256": "7aa6a5bdc731f2ced09128a298685bc6ed5e6431a15150cad759225be6922a39",
+      "original_sample_rate": 48000,
+      "original_samples": 99979,
+      "original_duration_seconds": 2.082895833333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_071.wav",
+      "prepared_sha256": "948c8237e20fca43570c3268f8fd3165f935928257afd5d40afdfd196950876a",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_121",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_121_mic1.flac",
+      "original_sha256": "9ccd51b50a31a7acc083b93013c618901ba2882db3d24d3158b444eeae353445",
+      "original_sample_rate": 48000,
+      "original_samples": 112512,
+      "original_duration_seconds": 2.344,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_121.wav",
+      "prepared_sha256": "700ce18255ac0b374410512006f4d0ba2b0ce636b46cbd97263d697a06b1ca96",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_147",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_147_mic1.flac",
+      "original_sha256": "5bab119b06339f5820853ead14f6cb9d2820dc11af2cf48ab031b6f6ef1de098",
+      "original_sample_rate": 48000,
+      "original_samples": 95715,
+      "original_duration_seconds": 1.9940625,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_147.wav",
+      "prepared_sha256": "c46035269288ad413f1ef45ebfeecfede660420e71d07fc8466c1cade3e083c5",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_202",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_202_mic1.flac",
+      "original_sha256": "676421e5b2ae51fbeeaa23f47d4a992edc970c16ff9b6b3aee5119be594f064d",
+      "original_sample_rate": 48000,
+      "original_samples": 240512,
+      "original_duration_seconds": 5.010666666666666,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_202.wav",
+      "prepared_sha256": "0a33f892450ccd40c89f1461a790e69b0be0b07cdf15021b5b07d77ff38057cb",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_312",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_312_mic1.flac",
+      "original_sha256": "1c47b064690acb0aa2744e0613e1edba31e91454b481ec33ae64374051f53bd6",
+      "original_sample_rate": 48000,
+      "original_samples": 127302,
+      "original_duration_seconds": 2.652125,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_312.wav",
+      "prepared_sha256": "f5c78cf5e8f1190dfc54a92df35c1a681b6e1e8b6bbe0222a4c168db878c7583",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_346",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_346_mic1.flac",
+      "original_sha256": "4c5dd759c879e04c4a6d24d90a4bdece5ca07d28f160ce54f09140e4530bc24c",
+      "original_sample_rate": 48000,
+      "original_samples": 129515,
+      "original_duration_seconds": 2.6982291666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_346.wav",
+      "prepared_sha256": "d13f0a6c9034fccde9d172f1dd7a350952d2cf86d212920e1c5f84dec829acd7",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_351",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_351_mic1.flac",
+      "original_sha256": "18fc290f9b3a4548ecdd852a808e1579c5ab2580b57440fb19c0d45472665ac1",
+      "original_sample_rate": 48000,
+      "original_samples": 127759,
+      "original_duration_seconds": 2.6616458333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_351.wav",
+      "prepared_sha256": "68dca98488ecf371ec1605ca3bd7b6ddb8ab2dbf3b5ea8a01bcabc4546e0b420",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "A",
+      "speaker_id": "p225",
+      "utterance_group": "p225_355",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p225\\p225_355_mic1.flac",
+      "original_sha256": "710e7a4353b195d6477722e95fac10b58de7cf445f139424666aa5d754d5541d",
+      "original_sample_rate": 48000,
+      "original_samples": 270188,
+      "original_duration_seconds": 5.628916666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p225_355.wav",
+      "prepared_sha256": "af4ecd3944e201519d5fbf29f67eb8bec8b1ab68b8f5bcb052705dab15ebf067",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_003",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_003_mic1.flac",
+      "original_sha256": "856c6a2bb57a54183bf383a2cc162d969b18a8714d40e9792de8f4670a7d299f",
+      "original_sample_rate": 48000,
+      "original_samples": 384462,
+      "original_duration_seconds": 8.009625,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_003.wav",
+      "prepared_sha256": "d5c10352ee928c26cfcd5dd77189ed91e029943c10628f4ba6b4ce3572c4754e",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_023",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_023_mic1.flac",
+      "original_sha256": "e1fd78e41082e9966e2036283d8aa727397d50b111ebf2d008cfab6fb5f18792",
+      "original_sample_rate": 48000,
+      "original_samples": 583343,
+      "original_duration_seconds": 12.152979166666666,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_023.wav",
+      "prepared_sha256": "288bc1889a405f73bdf82a121e75c33161679cd4694e4df2c94d91bc570dfdc2",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_030",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_030_mic1.flac",
+      "original_sha256": "cbf1d1d14c2b3b407fc82f3ec49eb47da3112f2cede0e5e441d849899bb95f5c",
+      "original_sample_rate": 48000,
+      "original_samples": 166960,
+      "original_duration_seconds": 3.4783333333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_030.wav",
+      "prepared_sha256": "4a55bd4590b496ef92c6c68afb507fb279de458290e756b0640418a795264e9d",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_041",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_041_mic1.flac",
+      "original_sha256": "c3936ecf25218fb93c03033dea8acd380d7cce3d51ccfdcf70c0178b28099a9f",
+      "original_sample_rate": 48000,
+      "original_samples": 145759,
+      "original_duration_seconds": 3.0366458333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_041.wav",
+      "prepared_sha256": "ea8d283fc1ba5cd5fc57d787d59582f059f013c420233af94efcf2a8182473ae",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_103",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_103_mic1.flac",
+      "original_sha256": "c5f9a3e1c75247da1eb0ec26c999c16dbc6c12676a837a4d4769cbda4e830247",
+      "original_sample_rate": 48000,
+      "original_samples": 134656,
+      "original_duration_seconds": 2.8053333333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_103.wav",
+      "prepared_sha256": "c54a156c0bbe39d4f861c966923b5fc78090e5f6ea4804a8ec07378bad193500",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_194",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_194_mic1.flac",
+      "original_sha256": "0060a449c8b193fefd4c48fb4f662429c7f6e0ed07128cd68c41445368c3b718",
+      "original_sample_rate": 48000,
+      "original_samples": 136640,
+      "original_duration_seconds": 2.8466666666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_194.wav",
+      "prepared_sha256": "a97ed16dcf43efb326feacfe51cf01aa069084af68690f3e214eb024a50da212",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_206",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_206_mic1.flac",
+      "original_sha256": "dbfdc2709704941ec0091e92c464734642080998a75611872f8a3c2b7612b513",
+      "original_sample_rate": 48000,
+      "original_samples": 234452,
+      "original_duration_seconds": 4.884416666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_206.wav",
+      "prepared_sha256": "28c7118e73f885f8b08b36f979f3fd22641a679fcdd83512a08421b5de44f65a",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_221",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_221_mic1.flac",
+      "original_sha256": "7760dd0a2b0d4800e6ae304930abaa3c7a397913b0bfe85a80db2024ae4ee072",
+      "original_sample_rate": 48000,
+      "original_samples": 239136,
+      "original_duration_seconds": 4.982,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_221.wav",
+      "prepared_sha256": "0c11a6817ba0b93512f4997d18044c617afb1ce471507263b8bc88fea77365a7",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_231",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_231_mic1.flac",
+      "original_sha256": "4b227e0fc415b690e18785f81281acaa5c000b180fa9cb5959174836c0f8decd",
+      "original_sample_rate": 48000,
+      "original_samples": 186512,
+      "original_duration_seconds": 3.885666666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_231.wav",
+      "prepared_sha256": "997e84731d95fc4c216ca2a8977422aea61732048fc63b04ecf7ea04caacd1fc",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_249",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_249_mic1.flac",
+      "original_sha256": "29f6f50df9ac052431243db81524dbf5235a68e90503a18fe78b954b861fadd5",
+      "original_sample_rate": 48000,
+      "original_samples": 112490,
+      "original_duration_seconds": 2.343541666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_249.wav",
+      "prepared_sha256": "c5800bcd646fa7c168a212fee5fcf1016878f4bc5b0131db936d8f0fc260aec6",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_252",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_252_mic1.flac",
+      "original_sha256": "e89ea68c0ad39957d124b499b189fcbd7a03dfe2415f7a5789d240315c8bc26c",
+      "original_sample_rate": 48000,
+      "original_samples": 177946,
+      "original_duration_seconds": 3.7072083333333334,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_252.wav",
+      "prepared_sha256": "503598d56291e0c5aad62399a46e8bd12a7f02ce3b281296467fea363a65432a",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_283",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_283_mic1.flac",
+      "original_sha256": "f2edc42decb017d6882a8af9a98653ed00531219981c0614a01bd08f17dea5fd",
+      "original_sample_rate": 48000,
+      "original_samples": 127261,
+      "original_duration_seconds": 2.6512708333333332,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_283.wav",
+      "prepared_sha256": "873eda2026146f6f3f2f3242a29799889617b5bf2aa60ac0d62e0e09b6b0f540",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_301",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_301_mic1.flac",
+      "original_sha256": "691435721f901a6587fac4e792d323b35772bc3da33b4e0847b3ebbad6b04d65",
+      "original_sample_rate": 48000,
+      "original_samples": 179328,
+      "original_duration_seconds": 3.736,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_301.wav",
+      "prepared_sha256": "dce2c11629a09a7ca9069732d34f7834c39762062ea6bc4ae01bb0b64dab2abe",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_311",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_311_mic1.flac",
+      "original_sha256": "397592c3665e8b4820dedfe8f72ba6159a7ced9097cdc7cb55ee2070b84b8701",
+      "original_sample_rate": 48000,
+      "original_samples": 194280,
+      "original_duration_seconds": 4.0475,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_311.wav",
+      "prepared_sha256": "7dcbb129733ed17d1bc471d6f813ac6d7dad2ac772368329eb09d912e1dbf166",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "B",
+      "speaker_id": "p226",
+      "utterance_group": "p226_349",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p226\\p226_349_mic1.flac",
+      "original_sha256": "113d0dbb72378300a9faa9fd3ee0ddd9ae054801682d5c57ee57c2aab2de243d",
+      "original_sample_rate": 48000,
+      "original_samples": 137895,
+      "original_duration_seconds": 2.8728125,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p226_349.wav",
+      "prepared_sha256": "5a1fe03a9247a4324239ecac93a4137ed38040770d9fa0302172c18faa13d9c6",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_012",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_012_mic1.flac",
+      "original_sha256": "59dca83bbd8f515db3982e2261eccac1397df245b684595edce30f008d5a4e05",
+      "original_sample_rate": 48000,
+      "original_samples": 267927,
+      "original_duration_seconds": 5.5818125,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_012.wav",
+      "prepared_sha256": "b0e73bbe9ce4631b1f02e241dc7485b271262ff136c0112e8e65dc5778b5c60e",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_015",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_015_mic1.flac",
+      "original_sha256": "129e36456261e2c295f190ef079c4cfa93d2a1ce0b3840608c0f98b6283e4fa2",
+      "original_sample_rate": 48000,
+      "original_samples": 333015,
+      "original_duration_seconds": 6.9378125,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_015.wav",
+      "prepared_sha256": "dec879c832fbb9eaf414cde75a9b0a5366a7f9b60780a64c6f97aa8993c927ec",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_022",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_022_mic1.flac",
+      "original_sha256": "49eda2f2f78b211ca8f50ed5e98639f2c0b98715b93c65a221b12733b99a0103",
+      "original_sample_rate": 48000,
+      "original_samples": 341544,
+      "original_duration_seconds": 7.1155,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_022.wav",
+      "prepared_sha256": "cc292071026df34e6fa700eede3d0d57a8e2f81ff2f068a21f4568b7a8a30bc6",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_048",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_048_mic1.flac",
+      "original_sha256": "0c8d43c0e83ad4257f4ac951394cfa422e1d4bfbc2576c78fff0628bef49303c",
+      "original_sample_rate": 48000,
+      "original_samples": 158013,
+      "original_duration_seconds": 3.2919375,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_048.wav",
+      "prepared_sha256": "b7e72f02eb35b46ef8afdd8d4639d0182ebe13c55b7c1aaba0bd8be944b3b9c9",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_107",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_107_mic1.flac",
+      "original_sha256": "335bf73a17d54f3dba7725aa2fc0b388b2da472c9dfffab21426a35a42f547a9",
+      "original_sample_rate": 48000,
+      "original_samples": 162258,
+      "original_duration_seconds": 3.380375,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_107.wav",
+      "prepared_sha256": "ecc18184744bec9ad27519a3cc4b74f1d1c29c44e0449acaa7dc25643d5b322d",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_108",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_108_mic1.flac",
+      "original_sha256": "8076fa4015356170e7f8b7b99e2074fc0408406b5c755a1a0cc6b16bf42540c2",
+      "original_sample_rate": 48000,
+      "original_samples": 157639,
+      "original_duration_seconds": 3.2841458333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_108.wav",
+      "prepared_sha256": "55ebd770a41eb8bd71ae4cf928b6aa7a88a0297dd6dc6d6f43de2a7684ed1314",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_207",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_207_mic1.flac",
+      "original_sha256": "38a07b108d6615873041d814d4d4129e23870abae82acab5ee5c7ca6512aef99",
+      "original_sample_rate": 48000,
+      "original_samples": 127046,
+      "original_duration_seconds": 2.6467916666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_207.wav",
+      "prepared_sha256": "7fba08e1387bfe25eb3b3f4d9eb318c3f57fd267dea60d933ef76bb6a3420ba8",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_213",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_213_mic1.flac",
+      "original_sha256": "8284db22db22d402b68753d43c3ef7852688dccc7c173d42e07a27511ba0054b",
+      "original_sample_rate": 48000,
+      "original_samples": 119603,
+      "original_duration_seconds": 2.4917291666666666,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_213.wav",
+      "prepared_sha256": "68f5b4711905b0bfcf6ac82955d76fb8beb92f878bab5bf6fc3d8b35071a19a4",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_215",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_215_mic1.flac",
+      "original_sha256": "7dc4f48014bc8536e587f06606ae61aa64cfcb26c32843d7d769ab906c6c71d8",
+      "original_sample_rate": 48000,
+      "original_samples": 131301,
+      "original_duration_seconds": 2.7354375,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_215.wav",
+      "prepared_sha256": "595b49e5e5804a92d984d580cff391d3c25f3a247b40ab212817476212803697",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_245",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_245_mic1.flac",
+      "original_sha256": "08835117202a4ad91966390d8c4671bb55ad207d4cb2d05db0043460b5bfa33e",
+      "original_sample_rate": 48000,
+      "original_samples": 134717,
+      "original_duration_seconds": 2.806604166666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_245.wav",
+      "prepared_sha256": "85c82b7e475877623003d001c95f1f5048fab840c7486a0ad1ba79faaf6d652f",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_253",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_253_mic1.flac",
+      "original_sha256": "26e50d2523b4bfc6c7dd8b6ef7c575ef29c51ff897bceb8f1534272c83b9fb53",
+      "original_sample_rate": 48000,
+      "original_samples": 159334,
+      "original_duration_seconds": 3.3194583333333334,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_253.wav",
+      "prepared_sha256": "d75454193679533ce77d2684ba4abe5cf120cd443cb1b6839f85fcadb79f2c64",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_281",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_281_mic1.flac",
+      "original_sha256": "ee92d1ea6154c46d6c0f77a5fd62f07ef28a67c16927f632363d4c01fbb70183",
+      "original_sample_rate": 48000,
+      "original_samples": 173916,
+      "original_duration_seconds": 3.62325,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_281.wav",
+      "prepared_sha256": "bfde10714f4db2842fe2be9a7e5367e793cb0b25939b04fcb03efabe41dec850",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_307",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_307_mic1.flac",
+      "original_sha256": "6a8ee2a7731ea415ec919bf1ae391658cd495932c9e91ebd2cf062dedf6e30bb",
+      "original_sample_rate": 48000,
+      "original_samples": 104558,
+      "original_duration_seconds": 2.1782916666666665,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_307.wav",
+      "prepared_sha256": "dccbf107fae7df1a8bd66a9abddf193e0c25dbc3c4f5d34f522ea76592f05a46",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_390",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_390_mic1.flac",
+      "original_sha256": "82f8399662199ea7ece0830d48c32b8071283f99a78077831b0f0f6a531cbc89",
+      "original_sample_rate": 48000,
+      "original_samples": 143832,
+      "original_duration_seconds": 2.9965,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_390.wav",
+      "prepared_sha256": "0b16c1b4d4ed24a704df116d99bb929394fa3341cab7069705175c0264aa0843",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "C",
+      "speaker_id": "p227",
+      "utterance_group": "p227_391",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p227\\p227_391_mic1.flac",
+      "original_sha256": "796e1ba789b16d81844b3ae48793375f9533c7294ce3e70d4460ba4521824e25",
+      "original_sample_rate": 48000,
+      "original_samples": 132696,
+      "original_duration_seconds": 2.7645,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p227_391.wav",
+      "prepared_sha256": "6229796b545bc01a6016709997f1d06aea911a4eed643b73db0877c2f6bdeb41",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_136",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_136_mic1.flac",
+      "original_sha256": "6cd1ba18b55d0d9bd22e409c3e00d45296a5587be641f30f2aaa9db91635f255",
+      "original_sample_rate": 48000,
+      "original_samples": 200824,
+      "original_duration_seconds": 4.183833333333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_136.wav",
+      "prepared_sha256": "c30d1d23cac6a4684efed42997862ed3f2ed1cbae2aecee27431fa62a351bb61",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_145",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_145_mic1.flac",
+      "original_sha256": "609dd0c9a910ec4d17363179be3c66b3e9110d06d81c0e4078848cdaf5b37fc9",
+      "original_sample_rate": 48000,
+      "original_samples": 151396,
+      "original_duration_seconds": 3.1540833333333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_145.wav",
+      "prepared_sha256": "0591428d183b3f540926cc8acc0a0f64cba2d8e6f9b7bc3698a152441354a9f6",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_167",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_167_mic1.flac",
+      "original_sha256": "1acdd31fa1befdaa034129fc5cb6aa48d407dc812193dc5733dcf8cddc138357",
+      "original_sample_rate": 48000,
+      "original_samples": 203527,
+      "original_duration_seconds": 4.240145833333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_167.wav",
+      "prepared_sha256": "cec48b684a89d4b07123b84e5d4aa82aab1c792775a023fd2abef823a94825a8",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_182",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_182_mic1.flac",
+      "original_sha256": "4cb8b06acc868693b22c48f6efb7673675fb77cdd4d16c03439950541b0a3b1a",
+      "original_sample_rate": 48000,
+      "original_samples": 220233,
+      "original_duration_seconds": 4.5881875,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_182.wav",
+      "prepared_sha256": "fbb9b22930462a46b3c933467b23f28eb7fd8ce59b29b74b4ebf6cd21f3cf657",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_185",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_185_mic1.flac",
+      "original_sha256": "49fd66bf2ea33dfef04f8de83466f423d6bbe48b6e59b76c1d047b26474bb3f1",
+      "original_sample_rate": 48000,
+      "original_samples": 108732,
+      "original_duration_seconds": 2.26525,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_185.wav",
+      "prepared_sha256": "9bac09fc01c785481017e0c2969fd6f0e5115db3be34a6a7e5770356736aa9e4",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_191",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_191_mic1.flac",
+      "original_sha256": "6bd93cb5890351cd5fc5cbd97b5d5d86d301632ef4a93bc3555a9e3fa2f1e5ca",
+      "original_sample_rate": 48000,
+      "original_samples": 133229,
+      "original_duration_seconds": 2.7756041666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_191.wav",
+      "prepared_sha256": "518e39339292ab0864efcec3e202b0f0f381b1da6455d48171f9557186b3f56e",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_218",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_218_mic1.flac",
+      "original_sha256": "6bcacbac9a129c5f2b019f450c0cac7c857c938b450aff9322d5060d12a629e7",
+      "original_sample_rate": 48000,
+      "original_samples": 184835,
+      "original_duration_seconds": 3.8507291666666665,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_218.wav",
+      "prepared_sha256": "9194803fdf5e99d975fbea33f0341b47845192f4a00b9d14b0a5b3bdd910f96b",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_240",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_240_mic1.flac",
+      "original_sha256": "b125d4d0a072f5e791738e8f46f1991b530c012bfef4d25b590f6a1fed4b73ee",
+      "original_sample_rate": 48000,
+      "original_samples": 143421,
+      "original_duration_seconds": 2.9879375,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_240.wav",
+      "prepared_sha256": "f51c92309121b563f8d1fde0ea980f2446d6bd8488b3aa6065fb1088e67222aa",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_241",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_241_mic1.flac",
+      "original_sha256": "c31859997f53e0d8de3b41c90519157d21a67a00cc1941066bdf37375c04096b",
+      "original_sample_rate": 48000,
+      "original_samples": 120854,
+      "original_duration_seconds": 2.5177916666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_241.wav",
+      "prepared_sha256": "f8a7e1de10678e1a1359b53c67d654d4b8724f0a9417231c0c9ef65584870ce2",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_258",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_258_mic1.flac",
+      "original_sha256": "639b7b1b0749d69f851f29ac8e8ca8433f6afaea16bb440cc18fb4e4d81a74a6",
+      "original_sample_rate": 48000,
+      "original_samples": 111652,
+      "original_duration_seconds": 2.3260833333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_258.wav",
+      "prepared_sha256": "79b51c5f6388561e3763dd2bd1a613d7603a312ee6ee6c16be23c579589bf1c4",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_270",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_270_mic1.flac",
+      "original_sha256": "fba1322624f7262b2b20cc3c2cfd19fc0ab39155c153d84a5a14febd45d362be",
+      "original_sample_rate": 48000,
+      "original_samples": 259952,
+      "original_duration_seconds": 5.415666666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_270.wav",
+      "prepared_sha256": "8acb7c57acb0ecf837d529b2cbfe9fdb67fbd7e4886ec8b8053d0309f0db760b",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_298",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_298_mic1.flac",
+      "original_sha256": "9094ca2dc558086d3744acc55caaac5b85cf7e0868319e5e3670ceefc43c6e86",
+      "original_sample_rate": 48000,
+      "original_samples": 137244,
+      "original_duration_seconds": 2.85925,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_298.wav",
+      "prepared_sha256": "ef49d0d1f6ceb8cf3c6ac0c5251c51fb6b67d4bfe34e4113596db0fd2242d2e9",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_333",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_333_mic1.flac",
+      "original_sha256": "c83947ec399154c4c8b13153ddd8111de8bf08cfe35194f3c6080831f52ea0e7",
+      "original_sample_rate": 48000,
+      "original_samples": 141790,
+      "original_duration_seconds": 2.9539583333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_333.wav",
+      "prepared_sha256": "2152e48fc830a855dd09dac6dcd893bfa642fc8faf0a58c57c435d106464ac56",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_353",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_353_mic1.flac",
+      "original_sha256": "b76afe9e5d632ff4bb82dfc90e49400731f2b08fbe9674c35eefff2955e06c2d",
+      "original_sample_rate": 48000,
+      "original_samples": 232988,
+      "original_duration_seconds": 4.853916666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_353.wav",
+      "prepared_sha256": "a17f9788cfdd505f94a27cf68d19d2812263f3d9a9fa00dc724cee5594ea016a",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "D",
+      "speaker_id": "p228",
+      "utterance_group": "p228_367",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p228\\p228_367_mic1.flac",
+      "original_sha256": "ab2456bc899836a70a296166ded5a3c47985e3326461b7a7bf3622e908b89ac0",
+      "original_sample_rate": 48000,
+      "original_samples": 193860,
+      "original_duration_seconds": 4.03875,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p228_367.wav",
+      "prepared_sha256": "25acb591de5072c82cb3c1423c89acf34477b2741ed161bbe0435cb43988daf2",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_043",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_043_mic1.flac",
+      "original_sha256": "bb76fb65467ab2705134c83a2ffe8b342d51169dd46466ae5ff25d049892ec6a",
+      "original_sample_rate": 48000,
+      "original_samples": 177163,
+      "original_duration_seconds": 3.6908958333333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_043.wav",
+      "prepared_sha256": "0093c79977e015418599aec27ca6a31a00c23177f8631db6e77a1d90fb878b31",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_054",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_054_mic1.flac",
+      "original_sha256": "2cc6bb206cc5c12d9b3843218b8e746d24b32c2c6163041cc78c405a7138cd3c",
+      "original_sample_rate": 48000,
+      "original_samples": 206025,
+      "original_duration_seconds": 4.2921875,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_054.wav",
+      "prepared_sha256": "899c650db5509e1453191f7ac9f64e4f0f0090e4740229e323f2852e10d47e9d",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_065",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_065_mic1.flac",
+      "original_sha256": "277f7d618407b92753491352ce91940e46d18492a427221f51c6b67cedc6ae6d",
+      "original_sample_rate": 48000,
+      "original_samples": 144476,
+      "original_duration_seconds": 3.009916666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_065.wav",
+      "prepared_sha256": "a745d5d5949a81f03a29d4be1b2339f6bc01f5f9122d226eab30804f62a76344",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_178",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_178_mic1.flac",
+      "original_sha256": "403986418e179b105467be6eacf79c2dfb1772c4a7743f2ef1ee9cf55a59d50e",
+      "original_sample_rate": 48000,
+      "original_samples": 229582,
+      "original_duration_seconds": 4.782958333333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_178.wav",
+      "prepared_sha256": "85ad40039170f13926becdc01b4e7a013558b9fa0b2dc68157674054973b8bce",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_202",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_202_mic1.flac",
+      "original_sha256": "2ebef1061ef58871081d0bbc84ea4939fd3b85348a79a0d7adf7de7c0aff5479",
+      "original_sample_rate": 48000,
+      "original_samples": 112637,
+      "original_duration_seconds": 2.346604166666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_202.wav",
+      "prepared_sha256": "f783c1fd058c62bab8fba56614e9fa87ce2379a4952566a4dc3358a1621a7776",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_210",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_210_mic1.flac",
+      "original_sha256": "728985e7eb8895b27835317239439261dd4e198612e86ecb6cdde672b234badd",
+      "original_sample_rate": 48000,
+      "original_samples": 211910,
+      "original_duration_seconds": 4.414791666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_210.wav",
+      "prepared_sha256": "b39d88c9d2f0a35b12c3f86a4bf333fc7ec124f2a2b1eb5a315a77f3e2ed6304",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_257",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_257_mic1.flac",
+      "original_sha256": "667ee4c5faf2217d2d830db00d7dc108b3bd00195bacdbf7329bbb3ad2c6f40d",
+      "original_sample_rate": 48000,
+      "original_samples": 175192,
+      "original_duration_seconds": 3.6498333333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_257.wav",
+      "prepared_sha256": "c159d30737fa1a012f9c331ca88142ac2e1b7ea72e3990cfabb26d565319a570",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_272",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_272_mic1.flac",
+      "original_sha256": "91a5617e35f280bcedc4269178c67bf1917ed6e7e1d9f008f9a4ef40548de384",
+      "original_sample_rate": 48000,
+      "original_samples": 133890,
+      "original_duration_seconds": 2.789375,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_272.wav",
+      "prepared_sha256": "993f925f7a2c0b72f8de0836708d81d8e11aa9033f110d5075831df5e1c32931",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_275",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_275_mic1.flac",
+      "original_sha256": "9e0662f12cdda7fe3faec6c6959bee9f8611ac26f80c28850f8e0fed8d967998",
+      "original_sample_rate": 48000,
+      "original_samples": 133996,
+      "original_duration_seconds": 2.7915833333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_275.wav",
+      "prepared_sha256": "547ffd195661c83490c08fa25e7599e8cd53b0a5951cc390a7ba47f6ca7a7c66",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_290",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_290_mic1.flac",
+      "original_sha256": "cb4c378944c9dfb0df25d8a406348b28d6662248b0d113a46981d1d9a8eae91e",
+      "original_sample_rate": 48000,
+      "original_samples": 176797,
+      "original_duration_seconds": 3.6832708333333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_290.wav",
+      "prepared_sha256": "30ddab1d916cf784c6988c042eddb38734bbbe95c2bae06d21ba427f47732731",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_310",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_310_mic1.flac",
+      "original_sha256": "6d49fc9cc7004b3714f14aa8233116e6abab7400f35b9698352b9015fa9a6126",
+      "original_sample_rate": 48000,
+      "original_samples": 227005,
+      "original_duration_seconds": 4.7292708333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_310.wav",
+      "prepared_sha256": "4891c00febb33537ed100a47fe205cd3e0664190dbf845daae8fa5198400efbc",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_351",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_351_mic1.flac",
+      "original_sha256": "54b14e6c7b5b36c7d8a1e42b4b448d0e5e0332a7d8bfffd2b3593ecea2fa4f53",
+      "original_sample_rate": 48000,
+      "original_samples": 123937,
+      "original_duration_seconds": 2.5820208333333334,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_351.wav",
+      "prepared_sha256": "c88110c6eed4cf56f4d3834c259819c287bd66cbac47d60e86821710e73ac7bf",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_357",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_357_mic1.flac",
+      "original_sha256": "33e38c2818d1ab265527b949e6208911b0d88a72d40ea06abc2dfd14465eea6c",
+      "original_sample_rate": 48000,
+      "original_samples": 84522,
+      "original_duration_seconds": 1.760875,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_357.wav",
+      "prepared_sha256": "d4a1690300252cebd836cc8312e396cc577594f5c00d8fa9ab697887595a7f89",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_365",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_365_mic1.flac",
+      "original_sha256": "edc0f24df35803655f55d2de5d5840b64348c807360d56a502d9812237162dcd",
+      "original_sample_rate": 48000,
+      "original_samples": 102523,
+      "original_duration_seconds": 2.1358958333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_365.wav",
+      "prepared_sha256": "3d74a7e31b536b646a75f808ef15e13e4c8d14ee2e78a168d4647f63db8aff3f",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "E",
+      "speaker_id": "p229",
+      "utterance_group": "p229_387",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p229\\p229_387_mic1.flac",
+      "original_sha256": "6d37f204711cebaad2be9b0f9a82997077d04a3df2cec9bee5475911f5d76757",
+      "original_sample_rate": 48000,
+      "original_samples": 147366,
+      "original_duration_seconds": 3.070125,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p229_387.wav",
+      "prepared_sha256": "5c17011fb3f33159626080048cac898df31788207b91d1dfc3b1e2741d3c3783",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_036",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_036_mic1.flac",
+      "original_sha256": "8e6a95882f71250d773f21f68a88b213605c83617099dae1a81013ec5153d73a",
+      "original_sample_rate": 48000,
+      "original_samples": 154019,
+      "original_duration_seconds": 3.2087291666666666,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_036.wav",
+      "prepared_sha256": "29d4cdb9d9b6afaa9f627e58aee7a2cf8f71b5ab7e4b0bdbc3be8a42c29ad5f6",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_046",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_046_mic1.flac",
+      "original_sha256": "bfa792c15929f21727c14a0c923d25a83ffc39f216ecb1838095eb513dbc42bc",
+      "original_sample_rate": 48000,
+      "original_samples": 135323,
+      "original_duration_seconds": 2.8192291666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_046.wav",
+      "prepared_sha256": "ca5c112d0bea293c9a25e83967fe62b33d8e3e91d628a863007195c2843b6ee6",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_069",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_069_mic1.flac",
+      "original_sha256": "158808549375052f193d48586aa8af5aa8cf819f8447327a5ad56f6dec803aa9",
+      "original_sample_rate": 48000,
+      "original_samples": 182123,
+      "original_duration_seconds": 3.7942291666666668,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_069.wav",
+      "prepared_sha256": "e07b182549a60f63ef5d49dad5f09e4d23b34c854fe33070002ba23880cc77c9",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_091",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_091_mic1.flac",
+      "original_sha256": "1a7c504f6d05a5f856a1624cc9e1593091a58fd8704a48607742e962e6e54418",
+      "original_sample_rate": 48000,
+      "original_samples": 133309,
+      "original_duration_seconds": 2.777270833333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_091.wav",
+      "prepared_sha256": "c1fed79f6b546c82da2cb13b487d7ff27951618c2b5daab57c1f59ba561c87e5",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_103",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_103_mic1.flac",
+      "original_sha256": "a8a3d317ff021ccf5194c56bddcdc93e70d52a0b2f3cd7cc5cf6db8e1bb17030",
+      "original_sample_rate": 48000,
+      "original_samples": 231571,
+      "original_duration_seconds": 4.824395833333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_103.wav",
+      "prepared_sha256": "f31e4e5aff59907571bdebe40596b2292adf0cf208731745084d995d364124f8",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_125",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_125_mic1.flac",
+      "original_sha256": "5b130812913c5ce6b9526a88046378e4832917d226fecb008b54e059d871a8c3",
+      "original_sample_rate": 48000,
+      "original_samples": 245932,
+      "original_duration_seconds": 5.123583333333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_125.wav",
+      "prepared_sha256": "6af9f87f16670726ec8ef37f599035e76fec7116a8d7f0851affe16b2743b8de",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_185",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_185_mic1.flac",
+      "original_sha256": "a0f9254e4e102cc8b7dde23192485c98a26425d5f1a5ce5c9d26fee0655ba3a8",
+      "original_sample_rate": 48000,
+      "original_samples": 155071,
+      "original_duration_seconds": 3.2306458333333334,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_185.wav",
+      "prepared_sha256": "15fe8ca67ce871544e7f1cb556ff3a437b98f92dbe6c7b76dd42d2404e81229f",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_186",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_186_mic1.flac",
+      "original_sha256": "d5588a6b430efa1057f99932ab4ed0ca27ce2c337fed187420a348379ce13ebd",
+      "original_sample_rate": 48000,
+      "original_samples": 131181,
+      "original_duration_seconds": 2.7329375,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_186.wav",
+      "prepared_sha256": "4b931fd15ba1ea8078d9b23f5296ae1f8b0574ffca577eb52f736034fde25b92",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_190",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_190_mic1.flac",
+      "original_sha256": "89a5c90ed8809c759aed3e08c680836198383ffe5231775f5e2889c1463558ba",
+      "original_sample_rate": 48000,
+      "original_samples": 241600,
+      "original_duration_seconds": 5.033333333333333,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_190.wav",
+      "prepared_sha256": "e32fac28cf6b3a3c7fef9c6827d3d83a0252fdac4d0e1fc40a8098d5cfb66d28",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_242",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_242_mic1.flac",
+      "original_sha256": "7a50dc05b3758dd41b9f181930f2f6bb849f0e182fcd6eed53ed1db448d612ac",
+      "original_sample_rate": 48000,
+      "original_samples": 161472,
+      "original_duration_seconds": 3.364,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_242.wav",
+      "prepared_sha256": "b3d2dbbd4aa221e799d6d4f52c8bd40f04e1084934d94d12400a3b0fc8c1480e",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_285",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_285_mic1.flac",
+      "original_sha256": "d79883f02f608047ffc493ee2669038ffa6980e1e40b7b41c0498338c0975188",
+      "original_sample_rate": 48000,
+      "original_samples": 121959,
+      "original_duration_seconds": 2.5408125,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_285.wav",
+      "prepared_sha256": "0813d3675dd0265e9295c675cf46605b3c013afc8061df3ea519448257299b64",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_324",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_324_mic1.flac",
+      "original_sha256": "af84fef1e6ccf8c2ae4414176d52b087187e0670eb22d02ec59268f627e681e8",
+      "original_sample_rate": 48000,
+      "original_samples": 104832,
+      "original_duration_seconds": 2.184,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_324.wav",
+      "prepared_sha256": "3cf42f33f2cfcd2449a766a69bc7e0a809604ab3c5e7280b733d7a3bb0ba72a9",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_330",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_330_mic1.flac",
+      "original_sha256": "35a69c1565a80935358277fdbcc8701f58e786afea3e1251b643f3773e821fae",
+      "original_sample_rate": 48000,
+      "original_samples": 152116,
+      "original_duration_seconds": 3.1690833333333335,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_330.wav",
+      "prepared_sha256": "c63b056d24126e2c9893ade68b4441f10944a5109d6194522498dd0e026d7d6b",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_385",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_385_mic1.flac",
+      "original_sha256": "e7d75a9e47db858a6a7906d5c6d26157cb213346c3561d9a22e37b215a1f7b47",
+      "original_sample_rate": 48000,
+      "original_samples": 105743,
+      "original_duration_seconds": 2.2029791666666667,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_385.wav",
+      "prepared_sha256": "9ab6bfb02db6f55105de96592d8a2f456efb2825a371e9e4a6fa370140571c77",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    },
+    {
+      "source_user": "F",
+      "speaker_id": "p230",
+      "utterance_group": "p230_393",
+      "split": "test",
+      "original_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\data\\VCTK\\wav48_silence_trimmed\\p230\\p230_393_mic1.flac",
+      "original_sha256": "aeae2d96d6f97668ef16bfcf3c051c1a10bab218386b3783af633a8883aa7463",
+      "original_sample_rate": 48000,
+      "original_samples": 244254,
+      "original_duration_seconds": 5.088625,
+      "prepared_path": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project\\tmp\\system_metrics_20260929_165153\\audio\\source\\p230_393.wav",
+      "prepared_sha256": "b7db0749c87257ab2ebbdc6709069c913ffe757d00f1963b32056ce5a1b52751",
+      "sample_rate": 16000,
+      "samples": 48000,
+      "preparation": "mono_mean; scipy_resample_poly; center_crop_or_end_zero_pad_48000"
+    }
+  ],
+  "policies": {
+    "short_audio": "end_zero_padding",
+    "silence": "included",
+    "cross_speaker_windows": "recorded; excluded_from_steady_accuracy; target_is_latest_sample_identity",
+    "initial_context": "3_seconds_included_in_first_response_time",
+    "first_correct": "first_single_on_time_correct_window_output; continuous_response_success_before_identity_dwell_end",
+    "missing_audio": "zero_fill_at_original_block_positions; no_time_compression",
+    "quality_alignment": "each_block_trim_or_end_pad_to_8000; no_cross_correlation_shift",
+    "sample_unit": "source_utterance; receiver_copies_and_replays_are_dependent",
+    "clock": "time.perf_counter_ns shared by processes on this host; nanoseconds",
+    "latency_reference": "source_block_first_sample_scheduled_WAV_replay",
+    "latency_boundary": "decoder_completion; optional playback_callback; acoustic_output_not_measured",
+    "network_measurement": "application_layer_only; no_transport_or_link_capture",
+    "classifier": "unchanged_110_class_seed42_temperature_calibrated",
+    "mel_config": {
+      "n_filters": 64,
+      "strides": [
+        8,
+        5,
+        4,
+        2
+      ],
+      "dimension": 1024,
+      "semantic_dimension": 768,
+      "bidirectional": true,
+      "dilation_base": 2,
+      "residual_kernel_size": 3,
+      "n_residual_layers": 1,
+      "lstm_layers": 2,
+      "activation": "ELU",
+      "codebook_size": 1024,
+      "n_q": 3,
+      "num_mels": 80,
+      "num_freq": 1025,
+      "n_fft": 1024,
+      "hop_size": 240,
+      "win_size": 1024,
+      "fmin": 0,
+      "fmax": 8000,
+      "fmax_for_loss": null,
+      "mel_loss_lambdas": [
+        45,
+        1,
+        1,
+        1
+      ],
+      "recon_loss_lambda": 500,
+      "commitment_loss_lambda": 10,
+      "distill_loss_lambda": 30.0,
+      "distill_type": "d_axis",
+      "semantic_model_path": "facebook/hubert-base-ls960",
+      "semantic_model_layer": "avg",
+      "train_files": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\artifacts\\train_files.txt",
+      "valid_files": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\artifacts\\valid_files.txt",
+      "results_folder": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints",
+      "sample_rate": 16000,
+      "batch_size": 8,
+      "epochs": 10,
+      "learning_rate": 1e-05,
+      "intial_learning_rate": 1e-05,
+      "num_warmup_steps": 0,
+      "betas": [
+        0.9,
+        0.99
+      ],
+      "adam_b2": 0.9,
+      "lr_decay": 0.98,
+      "seed": 42,
+      "segment_size": 16000,
+      "wd": 0,
+      "num_workers": 8,
+      "valid_num_workers": 0,
+      "log_steps": 100,
+      "stdout_steps": 10,
+      "save_model_steps": 2500,
+      "num_ckpt_keep": 8,
+      "showpiece_num": 8,
+      "gradient_accumulation_steps": 4,
+      "device": "cuda",
+      "mixed_precision": "bf16",
+      "nas_encoder_config": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\best_seanet_config.json",
+      "encoder_downsample_rate": 320,
+      "latent_rate": 50,
+      "lca_train_mode": "end_to_end",
+      "lca_base_checkpoint": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+      "lambda_full": 1.0,
+      "lambda_comm": 1.5,
+      "lambda_consistency": 0.5,
+      "random_l_sampling": {
+        "values": [
+          1,
+          2,
+          3
+        ],
+        "strategy": "uniform_random",
+        "seed": 42
+      },
+      "channel_sim": {
+        "sample_strategy": "uniform_random",
+        "conditions": [
+          {
+            "name": "clean",
+            "p_drop": 0.0,
+            "p_sub": 0.0
+          },
+          {
+            "name": "dropout-mid",
+            "p_drop": 0.05,
+            "p_sub": 0.0
+          },
+          {
+            "name": "dropout-high",
+            "p_drop": 0.1,
+            "p_sub": 0.0
+          },
+          {
+            "name": "substitution-mid",
+            "p_drop": 0.0,
+            "p_sub": 0.01
+          },
+          {
+            "name": "substitution-high",
+            "p_drop": 0.0,
+            "p_sub": 0.03
+          }
+        ],
+        "dropout_implementation": "previous-index replacement",
+        "substitution": "uniform legal codebook index"
+      },
+      "exp1_handoff": {
+        "config_path": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\best_seanet_config.json",
+        "source_path": "output\\experiments\\exp1_nas_distill_run1_seed42\\artifacts\\best_architecture\\best_seanet_config.json",
+        "candidate_id": "nas_seed42_000896",
+        "encoder_strides": [
+          5,
+          4,
+          4,
+          4
+        ],
+        "handoff_schema": "encoder_only_nas_v1"
+      },
+      "exp3_run_mode": "formal",
+      "exp3_experiment_tag": "lca_v2_strong_perturb_consistency",
+      "exp3_experiment_note": "LCA v2: Stronger ChannelSim probabilities (p_drop up to 0.10, p_sub up to 0.03; ~5x stronger than v1). Adds consistency loss (lambda=0.5) between clean-decoded and perturbed-decoded outputs of the same truncated codes to give an explicit perturbation-invariance objective. Initialized from same Exp2 distill30 base as v1 for clean v1-vs-v2 ablation. lambda_comm raised to 1.5 to weight low-load output more heavily."
+    },
+    "inference_device": "cpu",
+    "ram_policy": "strict",
+    "ram_policy_warning": null
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "figure_type": "Method schematics, not additional experimental observations.",
+  "perturbation_example": {
+    "original": [
+      13,
+      44,
+      72,
+      31,
+      86,
+      9
+    ],
+    "erasure_mask": [
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "erased": [
+      13,
+      44,
+      44,
+      72,
+      86,
+      9
+    ],
+    "substitution_mask": [
+      false,
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "substituted": [
+      13,
+      801,
+      72,
+      31,
+      206,
+      9
+    ],
+    "packet_frames": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "burst_frames": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "frame_ms": 20
+  },
+  "receiver": {
+    "layers": 3,
+    "nominal_frames_per_second": 50,
+    "block_samples": 8000,
+    "block_frames": 25,
+    "informative_bits": 750,
+    "packed_bytes": 94,
+    "padding_bits": 2,
+    "classification_max_samples": 48000,
+    "code_crop_uses_actual_length": true
+  },
+  "layout_checks": [
+    {
+      "figure": "index_perturbations",
+      "text_bounds_checked": true,
+      "labels": [
+        {
+          "text": "a",
+          "width": 5.5600000000000005,
+          "limit": null
+        },
+        {
+          "text": "Index values and replacement rule",
+          "width": 147.06,
+          "limit": null
+        },
+        {
+          "text": "Illustrative indices, not test data",
+          "width": 97.65700000000001,
+          "limit": null
+        },
+        {
+          "text": "Original",
+          "width": 27.560000000000002,
+          "limit": null
+        },
+        {
+          "text": "13",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "44",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "72",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "31",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "86",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "9",
+          "width": 4.448,
+          "limit": null
+        },
+        {
+          "text": "Erasure replacement",
+          "width": 74.248,
+          "limit": null
+        },
+        {
+          "text": "13",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "44",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "44",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "72",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "86",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "9",
+          "width": 4.448,
+          "limit": null
+        },
+        {
+          "text": "Random substitution",
+          "width": 72.92,
+          "limit": null
+        },
+        {
+          "text": "13",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "801",
+          "width": 13.344,
+          "limit": null
+        },
+        {
+          "text": "72",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "31",
+          "width": 8.896,
+          "limit": null
+        },
+        {
+          "text": "206",
+          "width": 13.344,
+          "limit": null
+        },
+        {
+          "text": "9",
+          "width": 4.448,
+          "limit": null
+        },
+        {
+          "text": "Consecutive erasures read the preceding ORIGINAL values.",
+          "width": 214.312,
+          "limit": null
+        },
+        {
+          "text": "b",
+          "width": 6.109999999999999,
+          "limit": null
+        },
+        {
+          "text": "Five-frame packet mask (100 ms)",
+          "width": 133.2205,
+          "limit": null
+        },
+        {
+          "text": "L1",
+          "width": 8.34,
+          "limit": null
+        },
+        {
+          "text": "L2",
+          "width": 8.34,
+          "limit": null
+        },
+        {
+          "text": "L3",
+          "width": 8.34,
+          "limit": null
+        },
+        {
+          "text": "0",
+          "width": 3.7808,
+          "limit": null
+        },
+        {
+          "text": "5",
+          "width": 3.7808,
+          "limit": null
+        },
+        {
+          "text": "10",
+          "width": 7.5616,
+          "limit": null
+        },
+        {
+          "text": "15",
+          "width": 7.5616,
+          "limit": null
+        },
+        {
+          "text": "19",
+          "width": 7.5616,
+          "limit": null
+        },
+        {
+          "text": "frame index",
+          "width": 36.568,
+          "limit": null
+        },
+        {
+          "text": "c",
+          "width": 5.5600000000000005,
+          "limit": null
+        },
+        {
+          "text": "Ten-frame burst mask (200 ms)",
+          "width": 125.647,
+          "limit": null
+        },
+        {
+          "text": "L1",
+          "width": 8.34,
+          "limit": null
+        },
+        {
+          "text": "L2",
+          "width": 8.34,
+          "limit": null
+        },
+        {
+          "text": "L3",
+          "width": 8.34,
+          "limit": null
+        },
+        {
+          "text": "0",
+          "width": 3.7808,
+          "limit": null
+        },
+        {
+          "text": "5",
+          "width": 3.7808,
+          "limit": null
+        },
+        {
+          "text": "10",
+          "width": 7.5616,
+          "limit": null
+        },
+        {
+          "text": "15",
+          "width": 7.5616,
+          "limit": null
+        },
+        {
+          "text": "19",
+          "width": 7.5616,
+          "limit": null
+        },
+        {
+          "text": "frame index",
+          "width": 36.568,
+          "limit": null
+        },
+        {
+          "text": "Shaded cells: selected positions. Grouped masks share the same time span across all three layers.",
+          "width": 329.3025,
+          "limit": null
+        }
+      ]
+    },
+    {
+      "figure": "receiver_pairing",
+      "text_bounds_checked": true,
+      "labels": [
+        {
+          "text": "a",
+          "width": 5.5600000000000005,
+          "limit": null
+        },
+        {
+          "text": "One received block: index recovery and local decoding",
+          "width": 235.593,
+          "limit": null
+        },
+        {
+          "text": "Packed payload",
+          "width": 60.472,
+          "limit": 92
+        },
+        {
+          "text": "94 bytes / 0.5 s",
+          "width": 54.256,
+          "limit": 92
+        },
+        {
+          "text": "Unpack",
+          "width": 28.896,
+          "limit": 92
+        },
+        {
+          "text": "indices [3, 25]",
+          "width": 49.36,
+          "limit": 92
+        },
+        {
+          "text": "Lookup + decoder",
+          "width": 69.128,
+          "limit": 103
+        },
+        {
+          "text": "local model weights",
+          "width": 69.8,
+          "limit": 103
+        },
+        {
+          "text": "Decoded waveform",
+          "width": 73.352,
+          "limit": 96
+        },
+        {
+          "text": "8,000 samples",
+          "width": 52.024,
+          "limit": 96
+        },
+        {
+          "text": "Array shape and index count remove padding; both outputs retain the same stream and interval.",
+          "width": 331.2348,
+          "limit": null
+        },
+        {
+          "text": "b",
+          "width": 6.109999999999999,
+          "limit": null
+        },
+        {
+          "text": "Paired crop from stream-specific buffers",
+          "width": 173.54700000000003,
+          "limit": null
+        },
+        {
+          "text": "Token crop",
+          "width": 43.12,
+          "limit": 93
+        },
+        {
+          "text": "[1, 3, T_c]",
+          "width": 35.576,
+          "limit": 93
+        },
+        {
+          "text": "Token encoder",
+          "width": 56.904,
+          "limit": 108
+        },
+        {
+          "text": "masked time pooling",
+          "width": 73.36,
+          "limit": 108
+        },
+        {
+          "text": "Token embedding",
+          "width": 68.456,
+          "limit": 90
+        },
+        {
+          "text": "[1, 256]",
+          "width": 26.688,
+          "limit": 90
+        },
+        {
+          "text": "Audio crop",
+          "width": 42.224000000000004,
+          "limit": 93
+        },
+        {
+          "text": "[1, N_c]",
+          "width": 27.568,
+          "limit": 93
+        },
+        {
+          "text": "ECAPA + projection",
+          "width": 75.792,
+          "limit": 108
+        },
+        {
+          "text": "192 to 256",
+          "width": 37.808,
+          "limit": 108
+        },
+        {
+          "text": "Audio embedding",
+          "width": 67.56,
+          "limit": 90
+        },
+        {
+          "text": "[1, 256]",
+          "width": 26.688,
+          "limit": 90
+        },
+        {
+          "text": "Fusion + head",
+          "width": 54.016,
+          "limit": 77
+        },
+        {
+          "text": "110 logits",
+          "width": 34.24,
+          "limit": 77
+        },
+        {
+          "text": "Calibrated",
+          "width": 35.5446,
+          "limit": null
+        },
+        {
+          "text": "probabilities",
+          "width": 41.613,
+          "limit": null
+        },
+        {
+          "text": "N_c: actual cropped audio length (up to 48,000). T_c: matched code length from the cache or buffer.",
+          "width": 332.6775,
+          "limit": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "status": "passed",
+  "prose_word_count_convention": "Alphabetic English word groups; hyphenated words count as one; exclude headings, tables, figure captions, displayed and inline math, reference commands and numeric-only tokens. Approximate editorial count.",
+  "before_prose_words": 1022,
+  "after_prose_words": 2669,
+  "before_sections": [
+    {
+      "section": "Opening",
+      "words": 130
+    },
+    {
+      "section": "A shared-codebook index-transmission framework compresses speech by more than two orders of magnitude",
+      "words": 231
+    },
+    {
+      "section": "Neural architecture search reduces transmitter-side encoder parameters and computation by nearly an order of magnitude",
+      "words": 133
+    },
+    {
+      "section": "An index payload reconstructs intelligible speech at roughly 170-fold compression",
+      "words": 184
+    },
+    {
+      "section": "Channel-aware fine-tuning preserves and extends the reconstruction advantage under transport perturbations",
+      "words": 148
+    },
+    {
+      "section": "The same low-rate payload retains speaker identity, which a frozen-codec classifier recovers with high accuracy",
+      "words": 196
+    }
+  ],
+  "after_sections": [
+    {
+      "section": "Opening",
+      "words": 119
+    },
+    {
+      "section": "Shared codebooks reduce the speech payload to 1.5 kbit/s",
+      "words": 353
+    },
+    {
+      "section": "Architecture search lowers encoder cost while preserving the codec interface",
+      "words": 469
+    },
+    {
+      "section": "The 1.5-kbit/s codec outperforms rate-matched baselines on objective reconstruction scores",
+      "words": 481
+    },
+    {
+      "section": "Channel adaptation improves index-error tolerance with a metric-dependent trade-off",
+      "words": 556
+    },
+    {
+      "section": "A frozen 1.5-kbit/s payload supports accurate closed-set speaker identification",
+      "words": 691
+    }
+  ],
+  "figures": 2,
+  "tables": 3,
+  "displayed_equations": 2,
+  "subsections": 5,
+  "quality": {
+    "raw_means_match_summary": true,
+    "same_300_utterances_across_five_codecs": true,
+    "raw_source": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp12_baseline_comparison_test300_20260610_seed42\\runs\\test-clean_300\\metrics\\audio_quality_results.csv",
+    "raw_source_sha256": "1980a4eeaf6f632524c98387dbd8839f95935fd98bf5cc220e5faaaf071c08a0"
+  },
+  "speaker": {
+    "recomputed_from_locked_predictions": [
+      {
+        "seed": 41,
+        "top1": 0.9503030303030303,
+        "macro_f1": 0.9493602960452109,
+        "worst_decile_accuracy": 0.7696969696969698,
+        "test_items": 1650
+      },
+      {
+        "seed": 42,
+        "top1": 0.9418181818181818,
+        "macro_f1": 0.9413555764336935,
+        "worst_decile_accuracy": 0.7393939393939394,
+        "test_items": 1650
+      },
+      {
+        "seed": 43,
+        "top1": 0.9557575757575758,
+        "macro_f1": 0.9555517623293167,
+        "worst_decile_accuracy": 0.8242424242424242,
+        "test_items": 1650
+      }
+    ],
+    "mean_top1": 0.9492929292929293,
+    "sample_std_top1": 0.007024379252813666,
+    "codec_cache_hashes_unchanged": true,
+    "bootstrap_intervals_not_reestimated": true,
+    "top5_and_ece_retained_from_saved_metrics": true,
+    "sources_sha256": {
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed41\\metrics\\test_predictions.csv": "64d2331c0ae7bd84d380bbe688af82b8d685e137283acb852b6512da3b7351aa",
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed41\\metrics\\test_metrics.json": "fbe2493ca608eee5de5aa43b95a211a5dc7d40751f694a9d36bca367efa8ae48",
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed41\\training_config.json": "1dedc4f19cd7d3c4d9f993de8f39d7aa94207d1550b63b5ab2cfb530e4f19d59",
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed42\\metrics\\test_predictions.csv": "430bbbf493098b0fbbf59cdfe8f9f9f2eb98e645abdf1d1d2011ab3314a2367f",
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed42\\metrics\\test_metrics.json": "8fa901e179832ec9a168efb5982b0dc849551a34f46de57207b277136ef69958",
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed42\\training_config.json": "64e24a1350c6beca3f0b4eb8bb8790f52ecf2cba59b732738c76030fc2859943",
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed43\\metrics\\test_predictions.csv": "f972ce3f42e2ed3115d49b10ce371e88b542ab30d5f2949bb4ae519687f1bcc9",
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed43\\metrics\\test_metrics.json": "42cd1fa33f926108dd3e4ebc4962e6d1664654d4907a33fd712c6cbcbb136ac4",
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed43\\training_config.json": "ac355d11edc0b2053bf24edc587005d5fec5d4eec64ac37a84d488dd2e2ba080",
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\cache_lca_l3\\cache_manifest\\tokenizer_state_hashes.json": "aa98a458255b813dddee8927dee3f13b9470071a481cc43edaaca8ea8a6102bb",
+      "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\aggregate\\bootstrap_summary.json": "7f2bae0f40ebf1daab1b4e9e4fa5f0cb0b9884f10e73f45df9d2ccb8abb9c4f4"
+    }
+  },
+  "chinese_tables": {
+    "table_count": 3,
+    "all_numeric_cells_match_english_sources": true
+  },
+  "pdf": {
+    "page_count": 5,
+    "pages": [
+      {
+        "page": 1,
+        "text_characters": 6050,
+        "left_column_body_characters": 2347,
+        "right_column_body_characters": 2747,
+        "text_within_page_bounds": true
+      },
+      {
+        "page": 2,
+        "text_characters": 5868,
+        "left_column_body_characters": 2240,
+        "right_column_body_characters": 2251,
+        "text_within_page_bounds": true
+      },
+      {
+        "page": 3,
+        "text_characters": 3662,
+        "left_column_body_characters": 756,
+        "right_column_body_characters": 783,
+        "text_within_page_bounds": true
+      },
+      {
+        "page": 4,
+        "text_characters": 5872,
+        "left_column_body_characters": 2112,
+        "right_column_body_characters": 2073,
+        "text_within_page_bounds": true
+      },
+      {
+        "page": 5,
+        "text_characters": 4532,
+        "left_column_body_characters": 2254,
+        "right_column_body_characters": 870,
+        "text_within_page_bounds": true
+      }
+    ]
+  },
+  "protected_originals_unchanged": {
+    "manuscript\\manuscript.tex": "d8dd4b02dcb1d9e4e004e2f72f400c36aa81a4cdfe25aa7a1e194403a3c723ab",
+    "manuscript\\manuscript.pdf": "531bd14e0b1e0a35ff4aad1ce0bb3849f277ff4b72dabcb41e88d435ef99c040",
+    "manuscript\\results_zh.md": "6faceadd76a0709faab1dc6d82be5979a7ec92e9b8f35f0abf2a0bcd4f5a3bbe",
+    "manuscript\\methods_main_zh.md": "a46f548c348b712f690ca569497dfe390450a11afb831d91b836caae648ee54c",
+    "manuscript\\supplementary_methods_body.tex": "921b3fa40b9da28c74851ff9594821d6386dda753e33d245aeb96e47e2fffe8c"
+  },
+  "chinese_numeric_checks_passed": true,
+  "unresolved_references_or_overfull_boxes": [],
+  "underfull_box_messages": 3,
+  "pdf_sha256": "5dd34650ccf5b9b1f62711eba27d201c53b3458da8c45b087a7a86ed3fac8db4"
+}

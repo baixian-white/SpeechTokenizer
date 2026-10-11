@@ -1,0 +1,53 @@
+\relax 
+\citation{speechtokenizer}
+\citation{hubert}
+\citation{speechtokenizer}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Results}{1}{}\protected@file@percent }
+\newlabel{sec:results-v3}{{2}{1}{}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}A shared index representation supports reconstruction and receiver-side reuse}{1}{}\protected@file@percent }
+\newlabel{sec:rv3-payload}{{2.1}{1}{}{subsection.2.1}{}}
+\newlabel{eq:rv3-rate}{{1}{1}{}{equation.1}{}}
+\newlabel{eq:rv3-reconstruction}{{2}{1}{}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Interface-preserving search reduces encoder resource requirements}{1}{}\protected@file@percent }
+\newlabel{sec:rv3-nas}{{2.2}{1}{}{subsection.2.2}{}}
+\citation{librispeech}
+\citation{dac}
+\citation{encodec}
+\citation{stoi}
+\citation{pesq}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Shared representation and learning stages of SCIT-Speech. \textbf  {a}, The fixed $L=3$ interface maps speech to 50-Hz latent frames and transmits three 10-bit indices per frame. Local codebook lookup and summation provide the representation for waveform decoding. \textbf  {b}, Teacher-aligned architecture search precedes joint codec training to obtain SCIT. Channel-aware fine-tuning produces SCIT-LCA, which is subsequently frozen for the identification study. The communication objective combines perturbed-speech reconstruction and clean--perturbed consistency. \textbf  {c}, Receiver-side identification reads both the received indices and their reconstructed waveform. The token encoder, audio projection, fusion gate and classifier are trainable; the speech codec and ECAPA-TDNN backbone are frozen. Both branches produce 256-dimensional embeddings. No additional speaker embedding is transmitted.}}{2}{}\protected@file@percent }
+\newlabel{fig:rv3-components}{{1}{2}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}The 1.5-kbit/s codec improves objective reconstruction scores}{2}{}\protected@file@percent }
+\newlabel{sec:rv3-quality}{{2.3}{2}{}{subsection.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Resource-efficient encoder selection at a fixed latent interface. \textbf  {a}, Encoder parameter counts and MACs for 8,192 profiled configuration candidates. The triangle identifies the hand-designed reference and the star identifies the subsequently selected architecture. Both axes are logarithmic; each point represents a configuration profile. \textbf  {b}, Selected-encoder resource requirements normalized to the reference. RTF was measured for encoder FP32 inference on an RTX 5070 Ti using a one-second input and averaging five synchronized passes.}}{3}{}\protected@file@percent }
+\newlabel{fig:rv3-nas}{{2}{3}{}{figure.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Clean-channel reconstruction on 300 LibriSpeech test-clean utterances. Entries are means [95\% utterance-bootstrap intervals]. The first three codecs share the nominal 1.5-kbit/s operating point; bold means identify the best in that group. Opus and PCM are higher-rate references. Lower mel-L1 and higher STOI/PESQ-WB are better.}}{3}{}\protected@file@percent }
+\newlabel{tab:rv3-quality}{{1}{3}{}{table.1}{}}
+\citation{ecapa}
+\citation{arcface}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces SCIT and SCIT-LCA on all 2,620 LibriSpeech test-clean utterances at $L=3$. Means are computed from paired utterances with matched perturbation seeds. Bold entries indicate the favourable direction within each condition, not statistical significance. Erasure and packet/burst masks use the previous original index, with the first frame protected.}}{4}{}\protected@file@percent }
+\newlabel{tab:rv3-robustness}{{2}{4}{}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Channel adaptation improves reconstruction from perturbed indices}{4}{}\protected@file@percent }
+\newlabel{sec:rv3-robustness}{{2.4}{4}{}{subsection.2.4}{}}
+\newlabel{eq:rv3-lca}{{3}{4}{}{equation.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}A frozen index representation retains speaker information}{4}{}\protected@file@percent }
+\newlabel{sec:rv3-speaker}{{2.5}{4}{}{subsection.2.5}{}}
+\citation{vctk}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Closed-set speaker identification from a frozen SCIT-LCA payload ($L=3$, 110 speakers, 1,650 test utterance groups). All entries are percentages. Mean $\pm $ SD uses the sample standard deviation across three training seeds. Worst 10\% is the mean accuracy of the 11 lowest-accuracy speakers. The last column reports within-seed hierarchical-bootstrap intervals.}}{5}{}\protected@file@percent }
+\newlabel{tab:rv3-speaker}{{3}{5}{}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Six-user real-time communication results with 0.5-s communication blocks. Identification accuracy is Top-1 speaker-identification accuracy.}}{5}{}\protected@file@percent }
+\newlabel{tab:rv3-six-user}{{4}{5}{}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Six-user real-time communication system}{5}{}\protected@file@percent }
+\newlabel{sec:rv3-six-user}{{2.6}{5}{}{subsection.2.6}{}}
+\bibcite{speechtokenizer}{{1}{}{{}}{{}}}
+\bibcite{hubert}{{2}{}{{}}{{}}}
+\bibcite{ecapa}{{3}{}{{}}{{}}}
+\bibcite{librispeech}{{4}{}{{}}{{}}}
+\bibcite{vctk}{{5}{}{{}}{{}}}
+\bibcite{dac}{{6}{}{{}}{{}}}
+\bibcite{encodec}{{7}{}{{}}{{}}}
+\bibcite{stoi}{{8}{}{{}}{{}}}
+\bibcite{pesq}{{9}{}{{}}{{}}}
+\bibcite{arcface}{{10}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\gdef \@abspage@last{6}

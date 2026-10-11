@@ -1,0 +1,174 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{speechtokenizer}
+\@writefile{toc}{\contentsline {section}{\numberline {S1}Speech representation and index-only transmission}{1}{section.1}\protected@file@percent }
+\newlabel{sec:sv2-representation}{{S1}{1}{Speech representation and index-only transmission}{section.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S1.1}Signal path and notation}{1}{subsection.1.1}\protected@file@percent }
+\newlabel{eq:sv2-encoder}{{S1}{1}{Signal path and notation}{equation.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S1.2}Residual quantization and reconstruction}{1}{subsection.1.2}\protected@file@percent }
+\newlabel{eq:sv2-rvq}{{S2}{1}{Residual quantization and reconstruction}{equation.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S1}{\ignorespaces Representation and payload quantities at the evaluated operating point.}}{1}{table.1}\protected@file@percent }
+\newlabel{tab:sv2-interface}{{S1}{1}{Representation and payload quantities at the evaluated operating point}{table.1}{}}
+\newlabel{eq:sv2-decode}{{S3}{1}{Residual quantization and reconstruction}{equation.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S1.3}Nominal rate and byte-aligned payload}{1}{subsection.1.3}\protected@file@percent }
+\newlabel{eq:sv2-bits}{{S4}{1}{Nominal rate and byte-aligned payload}{equation.4}{}}
+\newlabel{eq:sv2-rate}{{S5}{1}{Nominal rate and byte-aligned payload}{equation.5}{}}
+\citation{speechtokenizer}
+\citation{speechtokenizer}
+\newlabel{eq:sv2-bytes}{{S6}{2}{Nominal rate and byte-aligned payload}{equation.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S1.4}Serialization and recovery}{2}{subsection.1.4}\protected@file@percent }
+\newlabel{eq:sv2-unpack}{{S7}{2}{Serialization and recovery}{equation.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {S2}Encoder architecture search and computational profiling}{2}{section.2}\protected@file@percent }
+\newlabel{sec:sv2-nas}{{S2}{2}{Encoder architecture search and computational profiling}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S2.1}Search variables and shared interface}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {S2}{\ignorespaces Successive stages of encoder selection. Steps are per candidate in the indicated stage.}}{2}{table.2}\protected@file@percent }
+\newlabel{tab:sv2-search}{{S2}{2}{Successive stages of encoder selection. Steps are per candidate in the indicated stage}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S2.2}Staged candidate evaluation}{2}{subsection.2.2}\protected@file@percent }
+\newlabel{eq:sv2-proxy}{{S8}{2}{Staged candidate evaluation}{equation.8}{}}
+\citation{librispeech}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S2.3}Ranking score and final selection}{3}{subsection.2.3}\protected@file@percent }
+\newlabel{eq:sv2-penalty}{{S9}{3}{Ranking score and final selection}{equation.9}{}}
+\newlabel{eq:sv2-resource}{{S10}{3}{Ranking score and final selection}{equation.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S2.4}Profiling and reduction calculations}{3}{subsection.2.4}\protected@file@percent }
+\newlabel{eq:sv2-rtf}{{S11}{3}{Profiling and reduction calculations}{equation.11}{}}
+\newlabel{eq:sv2-reduction}{{S12}{3}{Profiling and reduction calculations}{equation.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S2.5}Layerwise structure of the selected encoder}{3}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {S3}Codec training}{3}{section.3}\protected@file@percent }
+\newlabel{sec:sv2-training}{{S3}{3}{Codec training}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S3.1}Data preparation and model initialization}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {S1}{\ignorespaces Quality--resource views of the eight final-stage NAS candidates. \textbf  {a}, Encoder MACs against proxy mel-L1 measured with the frozen teacher downstream modules. \textbf  {b}, Encoder parameters against latent SmoothL1 teacher-alignment loss. The star marks the architecture selected by the combined multimetric quality--resource score. These 32-utterance, 1,500-step search-stage proxies are not final SCIT reconstruction measurements; the resource measurements here describe these final-stage candidates and are not substituted for the initial-profile values reported in Results.}}{4}{figure.1}\protected@file@percent }
+\newlabel{fig:sv4-nas-finalists}{{S1}{4}{Quality--resource views of the eight final-stage NAS candidates. \textbf {a}, Encoder MACs against proxy mel-L1 measured with the frozen teacher downstream modules. \textbf {b}, Encoder parameters against latent SmoothL1 teacher-alignment loss. The star marks the architecture selected by the combined multimetric quality--resource score. These 32-utterance, 1,500-step search-stage proxies are not final SCIT reconstruction measurements; the resource measurements here describe these final-stage candidates and are not substituted for the initial-profile values reported in Results}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S3.2}Waveform and multi-scale spectral objectives}{4}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:sv2-wav}{{S13}{4}{Waveform and multi-scale spectral objectives}{equation.13}{}}
+\newlabel{eq:sv2-msmel}{{S14}{4}{Waveform and multi-scale spectral objectives}{equation.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S3.3}Adversarial learning and feature matching}{4}{subsection.3.3}\protected@file@percent }
+\newlabel{eq:sv2-disc}{{S15}{4}{Adversarial learning and feature matching}{equation.15}{}}
+\newlabel{eq:sv2-adv}{{S16}{4}{Adversarial learning and feature matching}{equation.16}{}}
+\newlabel{eq:sv2-fm}{{S17}{4}{Adversarial learning and feature matching}{equation.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S3.4}RVQ gradients and codebook updates}{4}{subsection.3.4}\protected@file@percent }
+\citation{hubert}
+\@writefile{lot}{\contentsline {table}{\numberline {S3}{\ignorespaces Selected waveform encoder, in execution order. Shapes use batch size $B$ and input length $N$ divisible by 320. Each downsampling convolution follows a Snake activation.}}{5}{table.3}\protected@file@percent }
+\newlabel{tab:sv3-encoder}{{S3}{5}{Selected waveform encoder, in execution order. Shapes use batch size $B$ and input length $N$ divisible by 320. Each downsampling convolution follows a Snake activation}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S4}{\ignorespaces Spectral resolutions used in codec training. Evaluation mel-L1 uses the first row with unit weight.}}{5}{table.4}\protected@file@percent }
+\newlabel{tab:sv2-mels}{{S4}{5}{Spectral resolutions used in codec training. Evaluation mel-L1 uses the first row with unit weight}{table.4}{}}
+\newlabel{eq:sv2-ste}{{S18}{5}{RVQ gradients and codebook updates}{equation.18}{}}
+\newlabel{eq:sv2-commit}{{S19}{5}{RVQ gradients and codebook updates}{equation.19}{}}
+\newlabel{eq:sv2-ema}{{S20}{5}{RVQ gradients and codebook updates}{equation.20}{}}
+\newlabel{eq:sv2-ema-count}{{S21}{5}{RVQ gradients and codebook updates}{equation.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S3.5}HuBERT supervision and combined loss}{5}{subsection.3.5}\protected@file@percent }
+\newlabel{eq:sv2-sem}{{S22}{5}{HuBERT supervision and combined loss}{equation.22}{}}
+\newlabel{eq:sv2-base}{{S23}{5}{HuBERT supervision and combined loss}{equation.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S3.6}Optimization and checkpoint selection}{5}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S3.7}Training-stage summary and model handoff}{6}{subsection.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {S4}Channel-aware fine-tuning}{6}{section.4}\protected@file@percent }
+\newlabel{sec:sv2-lca}{{S4}{6}{Channel-aware fine-tuning}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S4.1}Initialization and sampled training conditions}{6}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S4.2}Index perturbation operators}{6}{subsection.4.2}\protected@file@percent }
+\newlabel{eq:sv2-erasure}{{S24}{6}{Index perturbation operators}{equation.24}{}}
+\newlabel{eq:sv2-substitution}{{S25}{6}{Index perturbation operators}{equation.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S4.3}Communication and consistency objectives}{6}{subsection.4.3}\protected@file@percent }
+\newlabel{eq:sv2-comm}{{S26}{6}{Communication and consistency objectives}{equation.26}{}}
+\newlabel{eq:sv2-consistency}{{S27}{6}{Communication and consistency objectives}{equation.27}{}}
+\newlabel{eq:sv2-lca}{{S28}{6}{Communication and consistency objectives}{equation.28}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S4.4}Gradient routing and update sequence}{6}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S4.5}Fine-tuning configuration and retained model}{6}{subsection.4.5}\protected@file@percent }
+\citation{dac}
+\citation{encodec}
+\@writefile{lot}{\contentsline {table}{\numberline {S5}{\ignorespaces Training stages and retained model states. Steps in the codec rows are recorded minibatch steps. The classifier uses the explicit eight-minibatch accumulation rule in Section~\ref {sec:sv2-speaker-protocol}.}}{7}{table.5}\protected@file@percent }
+\newlabel{tab:sv3-training-stages}{{S5}{7}{Training stages and retained model states. Steps in the codec rows are recorded minibatch steps. The classifier uses the explicit eight-minibatch accumulation rule in Section~\ref {sec:sv2-speaker-protocol}}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S6}{\ignorespaces Training distribution for the communication branch. Each row has probability 0.2 and is combined with uniform depth sampling.}}{7}{table.6}\protected@file@percent }
+\newlabel{tab:sv2-lca-conditions}{{S6}{7}{Training distribution for the communication branch. Each row has probability 0.2 and is combined with uniform depth sampling}{table.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S4.6}Minibatch computation and update procedure}{7}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {S5}Reconstruction and token-domain robustness evaluation}{7}{section.5}\protected@file@percent }
+\newlabel{sec:sv2-evaluation}{{S5}{7}{Reconstruction and token-domain robustness evaluation}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S5.1}Evaluation populations and waveform processing}{7}{subsection.5.1}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {S1}{\ignorespaces One SCIT-LCA minibatch}}{7}{algorithm.1}\protected@file@percent }
+\newlabel{alg:sv3-lca}{{S1}{7}{Minibatch computation and update procedure}{algorithm.1}{}}
+\citation{stoi}
+\citation{pesq}
+\@writefile{lot}{\contentsline {table}{\numberline {S7}{\ignorespaces Evaluation populations supporting the main results.}}{8}{table.7}\protected@file@percent }
+\newlabel{tab:sv2-populations}{{S7}{8}{Evaluation populations supporting the main results}{table.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S5.2}External codec settings}{8}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S5.3}Metric definitions and aggregation}{8}{subsection.5.3}\protected@file@percent }
+\newlabel{eq:sv2-evalmel}{{S29}{8}{Metric definitions and aggregation}{equation.29}{}}
+\newlabel{eq:sv2-mean}{{S30}{8}{Metric definitions and aggregation}{equation.30}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S5.4}Independent and temporally grouped masks}{8}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S5.5}Pairing and adaptation differences}{8}{subsection.5.5}\protected@file@percent }
+\newlabel{eq:sv2-paired}{{S31}{8}{Pairing and adaptation differences}{equation.31}{}}
+\citation{ecapa}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S5.6}Worked index examples and temporal support}{9}{subsection.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {S6}Frozen-codec speaker classifier}{9}{section.6}\protected@file@percent }
+\newlabel{sec:sv2-speaker}{{S6}{9}{Frozen-codec speaker classifier}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S6.1}Frozen inputs and cache construction}{9}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S6.2}Token embeddings and temporal processing}{9}{subsection.6.2}\protected@file@percent }
+\newlabel{eq:sv2-layer-mean}{{S32}{9}{Token embeddings and temporal processing}{equation.32}{}}
+\newlabel{eq:sv2-temporal}{{S33}{9}{Token embeddings and temporal processing}{equation.33}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S6.3}Attentive statistics pooling}{9}{subsection.6.3}\protected@file@percent }
+\newlabel{eq:sv2-pooling}{{S34}{9}{Attentive statistics pooling}{equation.34}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S6.4}Audio embedding and gated fusion}{9}{subsection.6.4}\protected@file@percent }
+\newlabel{eq:sv2-gate}{{S35}{9}{Audio embedding and gated fusion}{equation.35}{}}
+\citation{arcface}
+\citation{vctk}
+\@writefile{lof}{\contentsline {figure}{\numberline {S2}{\ignorespaces Index replacement and temporally grouped masks. \textbf  {a}, Consecutive erased positions use their preceding original indices, whereas substitution draws legal index values. Highlighted cells identify selected positions. \textbf  {b}, An illustrative selected five-frame group spans 100~ms. \textbf  {c}, An illustrative ten-frame burst spans 200~ms. The grouped masks in b and c cover the same temporal positions in all three RVQ layers. Frame zero is protected by the erasure-replacement operator. The diagrams specify the evaluation protocol; they do not depict measured packet traces.}}{10}{figure.2}\protected@file@percent }
+\newlabel{fig:sv3-perturbations}{{S2}{10}{Index replacement and temporally grouped masks. \textbf {a}, Consecutive erased positions use their preceding original indices, whereas substitution draws legal index values. Highlighted cells identify selected positions. \textbf {b}, An illustrative selected five-frame group spans 100~ms. \textbf {c}, An illustrative ten-frame burst spans 200~ms. The grouped masks in b and c cover the same temporal positions in all three RVQ layers. Frame zero is protected by the erasure-replacement operator. The diagrams specify the evaluation protocol; they do not depict measured packet traces}{figure.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S8}{\ignorespaces Classifier modules and parameter status during the formal speaker runs.}}{10}{table.8}\protected@file@percent }
+\newlabel{tab:sv2-speaker-modules}{{S8}{10}{Classifier modules and parameter status during the formal speaker runs}{table.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S6.5}Angular-margin classification}{10}{subsection.6.5}\protected@file@percent }
+\newlabel{eq:sv2-aam}{{S36}{10}{Angular-margin classification}{equation.36}{}}
+\newlabel{eq:sv2-spkloss}{{S37}{10}{Angular-margin classification}{equation.37}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S6.6}Branch dimensions and classifier outputs}{10}{subsection.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {S7}Speaker data, optimization and statistical analysis}{10}{section.7}\protected@file@percent }
+\newlabel{sec:sv2-speaker-protocol}{{S7}{10}{Speaker data, optimization and statistical analysis}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S7.1}Speaker inventory and canonical split}{10}{subsection.7.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {S3}{\ignorespaces Utterance-level SCIT-LCA minus SCIT differences on the same 2,620 LibriSpeech test-clean utterances per condition at $L=3$. The five conditions comprise clean transmission, 10\% independent erasure, 3\% independent substitution, 5\% five-frame packet masking and one 200-ms burst. Each model pair is matched by utterance and channel seed. Diamonds show means over all 2,620 differences; boxes show interquartile ranges with 5th--95th-percentile whiskers, while violin densities display only the central 98\% to limit the influence of extreme tails on the plotting range. The dashed line indicates zero; lower mel-L1 and higher STOI/PESQ-WB are favourable. No significance test is implied.}}{11}{figure.3}\protected@file@percent }
+\newlabel{fig:sv4-paired-robustness}{{S3}{11}{Utterance-level SCIT-LCA minus SCIT differences on the same 2,620 LibriSpeech test-clean utterances per condition at $L=3$. The five conditions comprise clean transmission, 10\% independent erasure, 3\% independent substitution, 5\% five-frame packet masking and one 200-ms burst. Each model pair is matched by utterance and channel seed. Diamonds show means over all 2,620 differences; boxes show interquartile ranges with 5th--95th-percentile whiskers, while violin densities display only the central 98\% to limit the influence of extreme tails on the plotting range. The dashed line indicates zero; lower mel-L1 and higher STOI/PESQ-WB are favourable. No significance test is implied}{figure.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S9}{\ignorespaces Classifier tensor dimensions. The audio and token branches share batch size $B$ and paired speech intervals.}}{11}{table.9}\protected@file@percent }
+\newlabel{tab:sv3-classifier-shapes}{{S9}{11}{Classifier tensor dimensions. The audio and token branches share batch size $B$ and paired speech intervals}{table.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S7.2}Matched cropping and batching}{11}{subsection.7.2}\protected@file@percent }
+\newlabel{eq:sv2-crop}{{S38}{11}{Matched cropping and batching}{equation.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S7.3}Training augmentation}{12}{subsection.7.3}\protected@file@percent }
+\newlabel{eq:sv2-noise}{{S39}{12}{Training augmentation}{equation.39}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S7.4}Optimizer, schedule and model selection}{12}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S7.5}Validation-only temperature calibration}{12}{subsection.7.5}\protected@file@percent }
+\newlabel{eq:sv2-probability}{{S40}{12}{Validation-only temperature calibration}{equation.40}{}}
+\newlabel{eq:sv2-temperature-grid}{{S41}{12}{Validation-only temperature calibration}{equation.41}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S10}{\ignorespaces Speaker training and evaluation settings.}}{12}{table.10}\protected@file@percent }
+\newlabel{tab:sv2-speaker-settings}{{S10}{12}{Speaker training and evaluation settings}{table.10}{}}
+\newlabel{eq:sv2-nll}{{S42}{12}{Validation-only temperature calibration}{equation.42}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S7.6}Classification and calibration metrics}{12}{subsection.7.6}\protected@file@percent }
+\newlabel{eq:sv2-f1}{{S43}{12}{Classification and calibration metrics}{equation.43}{}}
+\newlabel{eq:sv2-ece}{{S44}{12}{Classification and calibration metrics}{equation.44}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S7.7}Across-seed summaries and hierarchical intervals}{13}{subsection.7.7}\protected@file@percent }
+\newlabel{eq:sv2-seeds}{{S45}{13}{Across-seed summaries and hierarchical intervals}{equation.45}{}}
+\newlabel{eq:sv2-conservative}{{S46}{13}{Across-seed summaries and hierarchical intervals}{equation.46}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {S8}Inference and receiver-side interface}{13}{section.8}\protected@file@percent }
+\newlabel{sec:sv2-inference}{{S8}{13}{Inference and receiver-side interface}{section.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S8.1}Model loading and index decoding}{13}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S8.2}Buffered waveform processing}{13}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S8.3}Classifier bundle and stream organization}{13}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S8.4}Worked receiver example and paired time windows}{13}{subsection.8.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {S4}{\ignorespaces Per-speaker Top-1 accuracy for the formal 110-speaker test split and classifier training seeds 41--43. Speakers are independently ranked within each seed, with the lowest 11 ranks distinguished. Each speaker contributes 15 held-out utterance groups, so the plotted accuracies have discrete steps and should not be read as precise population-level speaker effects.}}{14}{figure.4}\protected@file@percent }
+\newlabel{fig:sv4-speaker-accuracy}{{S4}{14}{Per-speaker Top-1 accuracy for the formal 110-speaker test split and classifier training seeds 41--43. Speakers are independently ranked within each seed, with the lowest 11 ranks distinguished. Each speaker contributes 15 held-out utterance groups, so the plotted accuracies have discrete steps and should not be read as precise population-level speaker effects}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {S9}Experimental correspondence and calculation conventions}{14}{section.9}\protected@file@percent }
+\newlabel{sec:sv2-correspondence}{{S9}{14}{Experimental correspondence and calculation conventions}{section.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S9.1}Linking learning stages to measurements}{14}{subsection.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S9.2}Aggregation, units and rounding}{14}{subsection.9.2}\protected@file@percent }
+\bibcite{speechtokenizer}{{1}{}{{}}{{}}}
+\bibcite{hubert}{{2}{}{{}}{{}}}
+\bibcite{ecapa}{{3}{}{{}}{{}}}
+\bibcite{librispeech}{{4}{}{{}}{{}}}
+\bibcite{vctk}{{5}{}{{}}{{}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {S5}{\ignorespaces Receiver data layouts and paired classification inputs. \textbf  {a}, A nominal 0.5-s, three-layer block illustrates fixed-length packing, index recovery and local waveform reconstruction. \textbf  {b}, A classification crop reads matching indices and reconstructed audio from one stream. $N_c$ and $T_c$ are the actual cropped sample and code lengths. Both branches produce 256-dimensional embeddings before gated fusion and the 110-class head. The diagram describes the processing interface and tensor dimensions, not an additional timing or multi-user experiment.}}{15}{figure.5}\protected@file@percent }
+\newlabel{fig:sv3-receiver}{{S5}{15}{Receiver data layouts and paired classification inputs. \textbf {a}, A nominal 0.5-s, three-layer block illustrates fixed-length packing, index recovery and local waveform reconstruction. \textbf {b}, A classification crop reads matching indices and reconstructed audio from one stream. $N_c$ and $T_c$ are the actual cropped sample and code lengths. Both branches produce 256-dimensional embeddings before gated fusion and the 110-class head. The diagram describes the processing interface and tensor dimensions, not an additional timing or multi-user experiment}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S9.3}Experimental records and software environment}{15}{subsection.9.3}\protected@file@percent }
+\bibcite{dac}{{6}{}{{}}{{}}}
+\bibcite{encodec}{{7}{}{{}}{{}}}
+\bibcite{stoi}{{8}{}{{}}{{}}}
+\bibcite{pesq}{{9}{}{{}}{{}}}
+\bibcite{arcface}{{10}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\@writefile{lot}{\contentsline {table}{\numberline {S11}{\ignorespaces Correspondence between the main Results and the supplementary protocol. Every row refers to the retained experimental setting used by that result.}}{16}{table.11}\protected@file@percent }
+\newlabel{tab:sv2-crosswalk}{{S11}{16}{Correspondence between the main Results and the supplementary protocol. Every row refers to the retained experimental setting used by that result}{table.11}{}}
+\gdef \@abspage@last{16}

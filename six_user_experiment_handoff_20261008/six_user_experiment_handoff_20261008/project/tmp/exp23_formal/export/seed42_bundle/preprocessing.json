@@ -1,0 +1,6 @@
+{
+  "frame_hop_samples": 320,
+  "rvq_layers": 3,
+  "sample_rate": 16000,
+  "window_samples": 48000
+}

@@ -1,0 +1,71 @@
+{
+  "generated_at_utc": "2026-09-20T06:38:26.466910+00:00",
+  "status": "newly_generated_not_formal_training_or_test",
+  "implementation": {
+    "path": "D:\\tmp\\speechtokenizer-exp23\\speechtokenizer\\speaker_identity\\data.py",
+    "bytes": 18613,
+    "sha256": "f82d7658d2d8ea99e35b5cc5d3d9484a6f12270089a3b450d82d509aa896b0cd",
+    "category": "exp23_source",
+    "run_id": "",
+    "git_commit": "8ee038bdb7e3588b70e88e785f5a05edb78a679c",
+    "provenance": ""
+  },
+  "manifest": {
+    "path": "H:\\H-CODE\\speechtokenizer\\output\\handoff\\six_user_demo_20260920\\text_controlled_109_split.generated.json",
+    "bytes": 4478385,
+    "sha256": "2b3fe2183f6dbc06551a21c0ed8a217af0bce03a9ea7275cc7644ac2fc84a7ca",
+    "category": "generated_manifest",
+    "run_id": "handoff_20260920",
+    "git_commit": "8ee038bdb7e3588b70e88e785f5a05edb78a679c",
+    "provenance": "Newly generated from current dataset and data.py; not an existing formal experiment result."
+  },
+  "audio_root": "H:\\H-CODE\\speechtokenizer\\data\\VCTK\\wav48_silence_trimmed",
+  "transcript_root": "H:\\H-CODE\\speechtokenizer\\data\\VCTK\\txt",
+  "validation": {
+    "protocol": {
+      "name": "exp23_text_controlled_109_class",
+      "speaker_count": 109,
+      "canonical_speaker_count": 110,
+      "actual_speaker_count": 109,
+      "expected_speaker_count": 109,
+      "audio_validation": "container_signature"
+    },
+    "seed": 1,
+    "speakers": 109,
+    "has_s5": true,
+    "has_p315": false,
+    "excluded_speakers": [
+      "p315"
+    ],
+    "totals": {
+      "train": 8720,
+      "validation": 1090,
+      "test": 1090
+    },
+    "per_speaker": {
+      "train": {
+        "minimum": 80,
+        "maximum": 80
+      },
+      "validation": {
+        "minimum": 10,
+        "maximum": 10
+      },
+      "test": {
+        "minimum": 10,
+        "maximum": 10
+      }
+    },
+    "group_overlap": {
+      "train/validation": 0,
+      "train/test": 0,
+      "validation/test": 0
+    },
+    "text_overlap": {
+      "train/validation": 0,
+      "train/test": 0,
+      "validation/test": 0
+    },
+    "missing_audio_paths": []
+  }
+}

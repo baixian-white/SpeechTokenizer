@@ -1,0 +1,35 @@
+\relax 
+\citation{speechtokenizer}
+\citation{hubert}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Results}{1}{}\protected@file@percent }
+\newlabel{sec:results-v2}{{2}{1}{}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Shared codebooks reduce the speech payload to 1.5 kbit/s}{1}{}\protected@file@percent }
+\newlabel{sec:rv2-payload}{{2.1}{1}{}{subsection.2.1}{}}
+\newlabel{eq:rv2-rate}{{1}{1}{}{equation.1}{}}
+\newlabel{eq:rv2-reconstruction}{{2}{1}{}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Architecture search lowers encoder cost while preserving the codec interface}{1}{}\protected@file@percent }
+\newlabel{sec:rv2-nas}{{2.2}{1}{}{subsection.2.2}{}}
+\citation{dac}
+\citation{encodec}
+\citation{stoi}
+\citation{pesq}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces One index payload supports reconstruction and identification. The upper path shows the fixed $L=3$ codec interface. All reconstruction comparisons use the NAS-selected encoder. The lower path uses received indices and their matching reconstruction from frozen SCIT-LCA; classifier training does not update the speech codec or the ECAPA backbone. The token encoder, audio projection and fusion classifier are trained at the receiver. No separate identity embedding is transmitted. This diagram specifies the evaluated deep-learning components, not a completed multi-user transport experiment.}}{2}{}\protected@file@percent }
+\newlabel{fig:rv2-components}{{1}{2}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}The 1.5-kbit/s codec outperforms rate-matched baselines on objective reconstruction scores}{2}{}\protected@file@percent }
+\newlabel{sec:rv2-quality}{{2.3}{2}{}{subsection.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Encoder resource reduction at the preserved latent interface. \textbf  {a}, Initial-stage profiles of 8,192 configuration candidates, with the hand-designed reference marked by a triangle and the subsequently selected encoder by a star. Points can overlap; configuration count is not a claim that all networks are structurally distinct. Both axes are logarithmic. This panel shows resource profiles, not a quality Pareto frontier. \textbf  {b}, Selected-encoder costs normalized to the reference. RTF is encoder-only FP32 inference on an RTX 5070 Ti for a one-second input, averaged over five synchronized passes. The profiles exclude RVQ, decoding, speaker inference and transport.}}{3}{}\protected@file@percent }
+\newlabel{fig:rv2-nas}{{2}{3}{}{figure.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Clean-channel reconstruction on 300 LibriSpeech test-clean utterances. Entries are means [95\% utterance-bootstrap intervals]. The first three codecs share the nominal 1.5-kbit/s operating point; bold means identify the best in that group. Opus and PCM are higher-rate references. Lower mel-L1 and higher STOI/PESQ-WB are better.}}{3}{}\protected@file@percent }
+\newlabel{tab:rv2-quality}{{1}{3}{}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Channel adaptation improves index-error tolerance with a metric-dependent trade-off}{3}{}\protected@file@percent }
+\newlabel{sec:rv2-robustness}{{2.4}{3}{}{subsection.2.4}{}}
+\citation{ecapa}
+\citation{arcface}
+\citation{vctk}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces SCIT and SCIT-LCA on all 2,620 LibriSpeech test-clean utterances at $L=3$. Means are computed from paired utterances with matched perturbation seeds. Bold entries indicate the favourable direction within each condition, not statistical significance. Erasure and packet/burst masks use the previous original index, with the first frame protected.}}{4}{}\protected@file@percent }
+\newlabel{tab:rv2-robustness}{{2}{4}{}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}A frozen 1.5-kbit/s payload supports accurate closed-set speaker identification}{4}{}\protected@file@percent }
+\newlabel{sec:rv2-speaker}{{2.5}{4}{}{subsection.2.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Closed-set speaker identification from a frozen SCIT-LCA payload ($L=3$, 110 speakers, 1,650 test utterance groups). All entries are percentages. Mean $\pm $ SD uses the sample standard deviation across three training seeds. Worst 10\% is the mean accuracy of the 11 lowest-accuracy speakers. The last column reports within-seed hierarchical-bootstrap intervals, not uncertainty on the three-seed mean.}}{5}{}\protected@file@percent }
+\newlabel{tab:rv2-speaker}{{3}{5}{}{table.3}{}}
+\gdef \@abspage@last{5}

@@ -1,0 +1,15 @@
+{
+  "verified_at_utc": "2026-09-20T06:42:13.350563+00:00",
+  "bundle_loaded": true,
+  "speaker_count": 110,
+  "source_split": "validation",
+  "expected_speaker": "p225",
+  "predicted_speaker": "p225",
+  "score": 0.9998171925544739,
+  "waveform_samples": 48000,
+  "codes_shape": [
+    3,
+    151
+  ],
+  "scope": "One existing validation sample, not a rerun of the locked formal test."
+}

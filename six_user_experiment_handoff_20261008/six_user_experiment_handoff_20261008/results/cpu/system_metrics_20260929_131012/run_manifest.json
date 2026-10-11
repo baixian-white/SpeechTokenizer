@@ -1,0 +1,320 @@
+{
+  "schema": "six_user_system_metrics_v1",
+  "created_at": "2026-09-29T13:10:16.464909",
+  "mode": "formal",
+  "status": "complete",
+  "code": {
+    "head": null,
+    "branch": null,
+    "dirty_files": null,
+    "source_hashes": {
+      "channel_perturb.py": "7bbbc526b5942925578927aac960b1c6301b440c73b5b5816cf8a25bca87bece",
+      "common_protocol.py": "c9c0bd4a593c69fd88a7f32804c9664861a78fb7b3fbc65ac7c9fbfb4188c561",
+      "crypto_utils.py": "54c698e9d48a31775720a68f2f9bfea69415f1dc4026eb8683d5e8027137332d",
+      "group_client.py": "5d720b8ba7ab12e47672d15cd1675a96e9394102339d780d8d17fa7bb2405cba",
+      "metrics_client.py": "046aca3ea2cfbae3d1305af46fee426bb59e6c0b689ebb5cf4d8112e1fc53640",
+      "metrics_protocol.py": "0405a37445dc6200421a449a1720386b1af51f68f86df2c19686a760503b8054",
+      "quality_metrics.py": "fab0ffea778ff83faba694826795c3ca4555036d95ba091db9512c52eac45f9c",
+      "router_server.py": "f832f7cc3f6f126eb1225d9983cb66d4897c0d6994c8c4cc6d53edf2f6780328",
+      "run_metrics_experiment.py": "eba4de95ed3930d2af0170e245a3e250081941cc6bbc180a0ffbc358c0c24e56",
+      "run_stage1_six_user.py": "39ae308c1abe1a750d70b630a14c0ec5a4adcbe70c1b19f60e1b854084a811bd",
+      "speaker_identity.py": "54f917e79cd0b77e8b360c3c3689a17f3509c4da2a7d2fdd828179d790b66e2d",
+      "stage1_protocol.py": "c48229717e0730130ff9302428e1e41e25037035da7e96881ca9406666b32dd0",
+      "summarize_metrics_experiment.py": "67ce4dd6cb69c001a0c7ec9ecfd6372feb64d3f3378acc531bbd16b55cd0625f",
+      "speechtokenizer/speaker_identity/inference.py": "3aad19b9a6fe43314128c9a1a7248582c67668c24c7c5d8257860ef559255d16",
+      "speechtokenizer/trainer/loss.py": "e7ca143b3d9d92473d50951e5eaf618c80da2b83c643b23bf5610c22a0dbf384"
+    },
+    "source_type": "standalone_file_hashes",
+    "git_metadata_status": "runtime_folder_has_no_git_repository"
+  },
+  "python": "E:\\Miniconda\\envs\\st_audio_py310\\python.exe",
+  "dependencies": {
+    "python": "3.10.20",
+    "torch": "2.12.0",
+    "torchaudio": "2.11.0",
+    "numpy": "2.2.6",
+    "soundfile": "0.13.1",
+    "sounddevice": "0.5.5",
+    "scipy": "1.15.3",
+    "psutil": "7.2.2",
+    "pystoi": "0.4.1",
+    "pesq": null,
+    "matplotlib": "3.10.9"
+  },
+  "host": "Fanzer",
+  "os": "Windows-10-10.0.26100-SP0",
+  "deployment": "single_host_cpu_loopback",
+  "model_hashes": {
+    "checkpoint": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a",
+    "model_config": "ca4af03a60e083a34aa11d8cb77ccf7485b6afb1e209c73491b6e0466aaedb3b",
+    "bundle_manifest": "7b388328dc69071d5214dc8a8c5339b50a40c9d7a79e60a2f791284b58a5a000"
+  },
+  "plan_sha256": "5fd23b2f91812e6203988915351cd7254f95ed0b39b89e85852ba8444a06abb9",
+  "preflight": {
+    "python": "E:\\Miniconda\\envs\\st_audio_py310\\python.exe",
+    "asset_root": "B:\\工作\\科研项目\\Speech_tokenizer\\six_user_stage1_experiment\\project",
+    "free_ram_gb": 8.87,
+    "required_free_ram_gb": 8.0,
+    "resource_ready": true,
+    "lca_sha256": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a",
+    "classifier_sha256": "e497e2e2a22b7517ee215496c84dd7e026853313969d1b6d0b93ed02a9723ef2",
+    "mapping": {
+      "A": "p225",
+      "B": "p226",
+      "C": "p227",
+      "D": "p228",
+      "E": "p229",
+      "F": "p230"
+    },
+    "validation_utterances_per_user": 1,
+    "test_utterances_per_user": 15,
+    "quality_runtime": {
+      "python": "3.11.15",
+      "pesq": "0.0.4",
+      "soundfile": "0.14.0"
+    },
+    "quality_python": "E:\\Miniconda\\envs\\nanjing-speech\\python.exe",
+    "missing_measurement_dependencies": [],
+    "ram_policy": "strict",
+    "ram_policy_warning": null,
+    "deployment": "single_host_cpu_loopback",
+    "disk_free_gib": 28.2,
+    "estimated_output_gib": 1.69,
+    "disk_ready": true,
+    "measurement_ready": true,
+    "dependencies": {
+      "python": "3.10.20",
+      "torch": "2.12.0",
+      "torchaudio": "2.11.0",
+      "numpy": "2.2.6",
+      "soundfile": "0.13.1",
+      "sounddevice": "0.5.5",
+      "scipy": "1.15.3",
+      "psutil": "7.2.2",
+      "pystoi": "0.4.1",
+      "pesq": null,
+      "matplotlib": "3.10.9"
+    }
+  },
+  "policies": {
+    "short_audio": "end_zero_padding",
+    "silence": "included",
+    "cross_speaker_windows": "recorded; excluded_from_steady_accuracy; target_is_latest_sample_identity",
+    "initial_context": "3_seconds_included_in_first_response_time",
+    "first_correct": "first_single_on_time_correct_window_output; continuous_response_success_before_identity_dwell_end",
+    "missing_audio": "zero_fill_at_original_block_positions; no_time_compression",
+    "quality_alignment": "each_block_trim_or_end_pad_to_8000; no_cross_correlation_shift",
+    "sample_unit": "source_utterance; receiver_copies_and_replays_are_dependent",
+    "clock": "time.perf_counter_ns shared by processes on this host; nanoseconds",
+    "latency_reference": "source_block_first_sample_scheduled_WAV_replay",
+    "latency_boundary": "decoder_completion; optional playback_callback; acoustic_output_not_measured",
+    "network_measurement": "application_layer_only; no_transport_or_link_capture",
+    "classifier": "unchanged_110_class_seed42_temperature_calibrated",
+    "mel_config": {
+      "n_filters": 64,
+      "strides": [
+        8,
+        5,
+        4,
+        2
+      ],
+      "dimension": 1024,
+      "semantic_dimension": 768,
+      "bidirectional": true,
+      "dilation_base": 2,
+      "residual_kernel_size": 3,
+      "n_residual_layers": 1,
+      "lstm_layers": 2,
+      "activation": "ELU",
+      "codebook_size": 1024,
+      "n_q": 3,
+      "num_mels": 80,
+      "num_freq": 1025,
+      "n_fft": 1024,
+      "hop_size": 240,
+      "win_size": 1024,
+      "fmin": 0,
+      "fmax": 8000,
+      "fmax_for_loss": null,
+      "mel_loss_lambdas": [
+        45,
+        1,
+        1,
+        1
+      ],
+      "recon_loss_lambda": 500,
+      "commitment_loss_lambda": 10,
+      "distill_loss_lambda": 30.0,
+      "distill_type": "d_axis",
+      "semantic_model_path": "facebook/hubert-base-ls960",
+      "semantic_model_layer": "avg",
+      "train_files": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\artifacts\\train_files.txt",
+      "valid_files": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\artifacts\\valid_files.txt",
+      "results_folder": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints",
+      "sample_rate": 16000,
+      "batch_size": 8,
+      "epochs": 10,
+      "learning_rate": 1e-05,
+      "intial_learning_rate": 1e-05,
+      "num_warmup_steps": 0,
+      "betas": [
+        0.9,
+        0.99
+      ],
+      "adam_b2": 0.9,
+      "lr_decay": 0.98,
+      "seed": 42,
+      "segment_size": 16000,
+      "wd": 0,
+      "num_workers": 8,
+      "valid_num_workers": 0,
+      "log_steps": 100,
+      "stdout_steps": 10,
+      "save_model_steps": 2500,
+      "num_ckpt_keep": 8,
+      "showpiece_num": 8,
+      "gradient_accumulation_steps": 4,
+      "device": "cuda",
+      "mixed_precision": "bf16",
+      "nas_encoder_config": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\best_seanet_config.json",
+      "encoder_downsample_rate": 320,
+      "latent_rate": 50,
+      "lca_train_mode": "end_to_end",
+      "lca_base_checkpoint": "output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+      "lambda_full": 1.0,
+      "lambda_comm": 1.5,
+      "lambda_consistency": 0.5,
+      "random_l_sampling": {
+        "values": [
+          1,
+          2,
+          3
+        ],
+        "strategy": "uniform_random",
+        "seed": 42
+      },
+      "channel_sim": {
+        "sample_strategy": "uniform_random",
+        "conditions": [
+          {
+            "name": "clean",
+            "p_drop": 0.0,
+            "p_sub": 0.0
+          },
+          {
+            "name": "dropout-mid",
+            "p_drop": 0.05,
+            "p_sub": 0.0
+          },
+          {
+            "name": "dropout-high",
+            "p_drop": 0.1,
+            "p_sub": 0.0
+          },
+          {
+            "name": "substitution-mid",
+            "p_drop": 0.0,
+            "p_sub": 0.01
+          },
+          {
+            "name": "substitution-high",
+            "p_drop": 0.0,
+            "p_sub": 0.03
+          }
+        ],
+        "dropout_implementation": "previous-index replacement",
+        "substitution": "uniform legal codebook index"
+      },
+      "exp1_handoff": {
+        "config_path": "output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\configs\\best_seanet_config.json",
+        "source_path": "output\\experiments\\exp1_nas_distill_run1_seed42\\artifacts\\best_architecture\\best_seanet_config.json",
+        "candidate_id": "nas_seed42_000896",
+        "encoder_strides": [
+          5,
+          4,
+          4,
+          4
+        ],
+        "handoff_schema": "encoder_only_nas_v1"
+      },
+      "exp3_run_mode": "formal",
+      "exp3_experiment_tag": "lca_v2_strong_perturb_consistency",
+      "exp3_experiment_note": "LCA v2: Stronger ChannelSim probabilities (p_drop up to 0.10, p_sub up to 0.03; ~5x stronger than v1). Adds consistency loss (lambda=0.5) between clean-decoded and perturbed-decoded outputs of the same truncated codes to give an explicit perturbation-invariance objective. Initialized from same Exp2 distill30 base as v1 for clean v1-vs-v2 ablation. lambda_comm raised to 1.5 to weight low-load output more heavily."
+    },
+    "inference_device": "cpu",
+    "ram_policy": "strict",
+    "ram_policy_warning": null
+  },
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "scenarios": [
+    "sequential",
+    "concurrent"
+  ],
+  "repeats": 3,
+  "fixture": false,
+  "ram_policy": "strict",
+  "ram_required_gib": 8.0,
+  "quality_python": "E:\\Miniconda\\envs\\nanjing-speech\\python.exe",
+  "quality_runtime": {
+    "python": "3.11.15",
+    "pesq": "0.0.4",
+    "soundfile": "0.14.0"
+  },
+  "hardware": {
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "logical_cpu_count": 12,
+    "physical_cpu_count": 6,
+    "total_ram_bytes": 17024417792
+  },
+  "clock_info": {
+    "implementation": "QueryPerformanceCounter()",
+    "resolution_seconds": 1e-07,
+    "monotonic": true,
+    "adjustable": false
+  },
+  "wall_timezone": "中国标准时间",
+  "started_at": "2026-09-29T13:10:17.552648",
+  "execution_code": {
+    "head": null,
+    "branch": null,
+    "dirty_files": null,
+    "source_hashes": {
+      "channel_perturb.py": "7bbbc526b5942925578927aac960b1c6301b440c73b5b5816cf8a25bca87bece",
+      "common_protocol.py": "c9c0bd4a593c69fd88a7f32804c9664861a78fb7b3fbc65ac7c9fbfb4188c561",
+      "crypto_utils.py": "54c698e9d48a31775720a68f2f9bfea69415f1dc4026eb8683d5e8027137332d",
+      "group_client.py": "5d720b8ba7ab12e47672d15cd1675a96e9394102339d780d8d17fa7bb2405cba",
+      "metrics_client.py": "046aca3ea2cfbae3d1305af46fee426bb59e6c0b689ebb5cf4d8112e1fc53640",
+      "metrics_protocol.py": "0405a37445dc6200421a449a1720386b1af51f68f86df2c19686a760503b8054",
+      "quality_metrics.py": "fab0ffea778ff83faba694826795c3ca4555036d95ba091db9512c52eac45f9c",
+      "router_server.py": "f832f7cc3f6f126eb1225d9983cb66d4897c0d6994c8c4cc6d53edf2f6780328",
+      "run_metrics_experiment.py": "eba4de95ed3930d2af0170e245a3e250081941cc6bbc180a0ffbc358c0c24e56",
+      "run_stage1_six_user.py": "39ae308c1abe1a750d70b630a14c0ec5a4adcbe70c1b19f60e1b854084a811bd",
+      "speaker_identity.py": "54f917e79cd0b77e8b360c3c3689a17f3509c4da2a7d2fdd828179d790b66e2d",
+      "stage1_protocol.py": "c48229717e0730130ff9302428e1e41e25037035da7e96881ca9406666b32dd0",
+      "summarize_metrics_experiment.py": "67ce4dd6cb69c001a0c7ec9ecfd6372feb64d3f3378acc531bbd16b55cd0625f",
+      "speechtokenizer/speaker_identity/inference.py": "3aad19b9a6fe43314128c9a1a7248582c67668c24c7c5d8257860ef559255d16",
+      "speechtokenizer/trainer/loss.py": "e7ca143b3d9d92473d50951e5eaf618c80da2b83c643b23bf5610c22a0dbf384"
+    },
+    "source_type": "standalone_file_hashes",
+    "git_metadata_status": "runtime_folder_has_no_git_repository"
+  },
+  "execution_dependencies": {
+    "python": "3.10.20",
+    "torch": "2.12.0",
+    "torchaudio": "2.11.0",
+    "numpy": "2.2.6",
+    "soundfile": "0.13.1",
+    "sounddevice": "0.5.5",
+    "scipy": "1.15.3",
+    "psutil": "7.2.2",
+    "pystoi": "0.4.1",
+    "pesq": null,
+    "matplotlib": "3.10.9"
+  },
+  "finished_at": "2026-09-29T15:04:51.165006"
+}

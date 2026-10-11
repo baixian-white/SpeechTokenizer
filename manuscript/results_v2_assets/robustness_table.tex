@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{SCIT and SCIT-LCA on all 2,620 LibriSpeech test-clean utterances at $L=3$. Means are computed from paired utterances with matched perturbation seeds. Bold entries indicate the favourable direction within each condition, not statistical significance. Erasure and packet/burst masks use the previous original index, with the first frame protected.}
+\label{tab:rv2-robustness}
+\small\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+& \multicolumn{2}{c}{mel-L1 $\downarrow$} & \multicolumn{2}{c}{STOI $\uparrow$} & \multicolumn{2}{c}{PESQ-WB $\uparrow$}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Condition & SCIT & SCIT-LCA & SCIT & SCIT-LCA & SCIT & SCIT-LCA\\
+\midrule
+Clean & 0.9075 & \textbf{0.8711} & 0.8853 & \textbf{0.8922} & \textbf{1.9538} & 1.9397\\
+10\% index erasure & 0.9986 & \textbf{0.9511} & 0.8457 & \textbf{0.8580} & 1.5364 & \textbf{1.5549}\\
+3\% index substitution & 0.9716 & \textbf{0.9266} & 0.8640 & \textbf{0.8723} & 1.7027 & \textbf{1.7150}\\
+5\% packet loss (100 ms) & 0.9336 & \textbf{0.8959} & 0.8727 & \textbf{0.8805} & \textbf{1.8096} & 1.8067\\
+One 200-ms burst & 0.9271 & \textbf{0.8902} & 0.8752 & \textbf{0.8826} & \textbf{1.8674} & 1.8584\\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize The burst condition removes one randomly placed span of ten latent frames per utterance; it is not a fixed percentage of packet loss. These token-domain perturbations do not emulate a complete packet-loss concealment receiver.}
+\end{table*}

@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Closed-set speaker identification from a frozen SCIT-LCA payload ($L=3$, 110 speakers, 1,650 test utterance groups). All entries are percentages. Mean $\pm$ SD uses the sample standard deviation across three training seeds. Worst 10\% is the mean accuracy of the 11 lowest-accuracy speakers. The last column reports within-seed hierarchical-bootstrap intervals.}
+\label{tab:rv3-speaker}
+\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Seed & Top-1 & Macro-F1 & Top-5 & ECE & Worst 10\% & Top-1 95\% CI\\
+\midrule
+41 & 95.03 & 94.94 & 99.39 & 1.30 & 76.97 & [93.21, 96.73]\\
+42 & 94.18 & 94.14 & 99.27 & 2.04 & 73.94 & [92.12, 95.88]\\
+43 & 95.58 & 95.56 & 99.39 & 1.92 & 82.42 & [94.00, 97.03]\\
+\textbf{Mean} & \textbf{94.93 $\pm$ 0.70} & \textbf{94.88 $\pm$ 0.71} & \textbf{99.35} & \textbf{1.75} & \textbf{77.78} & --\\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize The intervals are within-run hierarchical-bootstrap estimates and do not represent uncertainty on the three-run mean.}
+\end{table*}

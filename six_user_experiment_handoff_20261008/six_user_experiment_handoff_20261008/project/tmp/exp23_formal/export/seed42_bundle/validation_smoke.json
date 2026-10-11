@@ -1,0 +1,15 @@
+{
+  "speaker_count": 110,
+  "sample_speaker_id": "p225",
+  "code_shape": [
+    3,
+    151
+  ],
+  "waveform_samples": 48000,
+  "eager_prediction": "p225",
+  "bundle_prediction": "p225",
+  "max_probability_abs_diff": 0.0,
+  "cpu_latency_ms_mean": 111.23544500442222,
+  "cpu_latency_ms_median": 111.93255000398494,
+  "cpu_latency_ms_p95": 125.44044496607967
+}

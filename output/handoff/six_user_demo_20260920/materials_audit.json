@@ -1,0 +1,681 @@
+{
+  "audited_at_utc": "2026-09-20T06:38:26.466910+00:00",
+  "source_checkout": {
+    "root": "H:\\H-CODE\\speechtokenizer",
+    "commit": "077df2a1e19f8898e6f7c278662c43e1f8347af0",
+    "branch": "chore/repo-reorg-research",
+    "status": "?? manuscript/\n?? output/handoff/\n?? s42256-026-01284-y.pdf\n?? \"\\350\\256\\272\\346\\226\\207\\345\\233\\276/2026\\345\\271\\26409\\346\\234\\21010\\346\\227\\245\\350\\256\\242\\345\\215\\225\\350\\256\\260\\345\\275\\225.1789032920813l201789032920813\"",
+    "note": "Current checkout revision is not necessarily the training revision."
+  },
+  "exp23_checkout": {
+    "root": "D:\\tmp\\speechtokenizer-exp23",
+    "commit": "8ee038bdb7e3588b70e88e785f5a05edb78a679c",
+    "branch": "feature/exp23-speaker-classifier",
+    "status": "?? output/handoff/",
+    "note": "Current checkout revision is not necessarily the training revision."
+  },
+  "codec": {
+    "lca_demo_and_formal_file_hash_identical": true,
+    "lca_demo_and_training_config_json_semantically_equal": true,
+    "lca": {
+      "path": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42\\checkpoints\\SCIT-Speech-LCA_v2_step30000_robust_optimum.pt",
+      "bytes": 204601531,
+      "sha256": "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a",
+      "category": "lca",
+      "run_id": "exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42",
+      "git_commit": "",
+      "provenance": "Training commit not recorded; run manifest available."
+    },
+    "base": {
+      "path": "H:\\H-CODE\\speechtokenizer\\output\\experiments\\exp2_scit_speech_distill30_retrain_20260529_seed42\\checkpoints\\SCIT-Speech-Base_best.pt",
+      "bytes": 204600787,
+      "sha256": "8c23c2b146575d1144b7f2f96e6ded88aa44cd89cf53fa75ab14ff6e279763e6",
+      "category": "base",
+      "run_id": "exp2_scit_speech_distill30_retrain_20260529_seed42",
+      "git_commit": "",
+      "provenance": "Training commit not recorded; run manifest available."
+    }
+  },
+  "dataset": {
+    "audio": {
+      "path": "H:\\H-CODE\\speechtokenizer\\data\\VCTK\\wav48_silence_trimmed",
+      "speaker_directories": [
+        "p225",
+        "p226",
+        "p227",
+        "p228",
+        "p229",
+        "p230",
+        "p231",
+        "p232",
+        "p233",
+        "p234",
+        "p236",
+        "p237",
+        "p238",
+        "p239",
+        "p240",
+        "p241",
+        "p243",
+        "p244",
+        "p245",
+        "p246",
+        "p247",
+        "p248",
+        "p249",
+        "p250",
+        "p251",
+        "p252",
+        "p253",
+        "p254",
+        "p255",
+        "p256",
+        "p257",
+        "p258",
+        "p259",
+        "p260",
+        "p261",
+        "p262",
+        "p263",
+        "p264",
+        "p265",
+        "p266",
+        "p267",
+        "p268",
+        "p269",
+        "p270",
+        "p271",
+        "p272",
+        "p273",
+        "p274",
+        "p275",
+        "p276",
+        "p277",
+        "p278",
+        "p279",
+        "p280",
+        "p281",
+        "p282",
+        "p283",
+        "p284",
+        "p285",
+        "p286",
+        "p287",
+        "p288",
+        "p292",
+        "p293",
+        "p294",
+        "p295",
+        "p297",
+        "p298",
+        "p299",
+        "p300",
+        "p301",
+        "p302",
+        "p303",
+        "p304",
+        "p305",
+        "p306",
+        "p307",
+        "p308",
+        "p310",
+        "p311",
+        "p312",
+        "p313",
+        "p314",
+        "p315",
+        "p316",
+        "p317",
+        "p318",
+        "p323",
+        "p326",
+        "p329",
+        "p330",
+        "p333",
+        "p334",
+        "p335",
+        "p336",
+        "p339",
+        "p340",
+        "p341",
+        "p343",
+        "p345",
+        "p347",
+        "p351",
+        "p360",
+        "p361",
+        "p362",
+        "p363",
+        "p364",
+        "p374",
+        "p376",
+        "s5"
+      ],
+      "directory_count": 110,
+      "file_count": 88329,
+      "bytes": 11731509071,
+      "extensions": {
+        ".txt": 1,
+        ".flac": 88328
+      }
+    },
+    "transcripts": {
+      "path": "H:\\H-CODE\\speechtokenizer\\data\\VCTK\\txt",
+      "speaker_directories": [
+        "p225",
+        "p226",
+        "p227",
+        "p228",
+        "p229",
+        "p230",
+        "p231",
+        "p232",
+        "p233",
+        "p234",
+        "p236",
+        "p237",
+        "p238",
+        "p239",
+        "p240",
+        "p241",
+        "p243",
+        "p244",
+        "p245",
+        "p246",
+        "p247",
+        "p248",
+        "p249",
+        "p250",
+        "p251",
+        "p252",
+        "p253",
+        "p254",
+        "p255",
+        "p256",
+        "p257",
+        "p258",
+        "p259",
+        "p260",
+        "p261",
+        "p262",
+        "p263",
+        "p264",
+        "p265",
+        "p266",
+        "p267",
+        "p268",
+        "p269",
+        "p270",
+        "p271",
+        "p272",
+        "p273",
+        "p274",
+        "p275",
+        "p276",
+        "p277",
+        "p278",
+        "p279",
+        "p280",
+        "p281",
+        "p282",
+        "p283",
+        "p284",
+        "p285",
+        "p286",
+        "p287",
+        "p288",
+        "p292",
+        "p293",
+        "p294",
+        "p295",
+        "p297",
+        "p298",
+        "p299",
+        "p300",
+        "p301",
+        "p302",
+        "p303",
+        "p304",
+        "p305",
+        "p306",
+        "p307",
+        "p308",
+        "p310",
+        "p311",
+        "p312",
+        "p313",
+        "p314",
+        "p316",
+        "p317",
+        "p318",
+        "p323",
+        "p326",
+        "p329",
+        "p330",
+        "p333",
+        "p334",
+        "p335",
+        "p336",
+        "p339",
+        "p340",
+        "p341",
+        "p343",
+        "p345",
+        "p347",
+        "p351",
+        "p360",
+        "p361",
+        "p362",
+        "p363",
+        "p364",
+        "p374",
+        "p376",
+        "s5"
+      ],
+      "directory_count": 109,
+      "file_count": 44583,
+      "bytes": 1782910,
+      "extensions": {
+        ".txt": 44583
+      }
+    },
+    "audio_speakers_without_transcript_dir": [
+      "p315"
+    ],
+    "scope": "Local counts and split input checks; no comparison with an official full-dataset checksum inventory."
+  },
+  "canonical_split": {
+    "path": "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\cache_lca_l3\\cache_manifest\\split_manifest.json",
+    "protocol": {
+      "name": "exp23_canonical_110_class",
+      "speaker_count": 110,
+      "actual_speaker_count": 110,
+      "expected_speaker_count": 110,
+      "required_speakers": [
+        "s5"
+      ],
+      "audio_validation": "container_signature"
+    },
+    "seed": 42,
+    "speakers": 110,
+    "has_s5": true,
+    "has_p315": true,
+    "excluded_speakers": [],
+    "totals": {
+      "train": 8800,
+      "validation": 1650,
+      "test": 1650
+    },
+    "per_speaker": {
+      "train": {
+        "minimum": 80,
+        "maximum": 80
+      },
+      "validation": {
+        "minimum": 15,
+        "maximum": 15
+      },
+      "test": {
+        "minimum": 15,
+        "maximum": 15
+      }
+    },
+    "group_overlap": {
+      "train/validation": 0,
+      "train/test": 0,
+      "validation/test": 0
+    },
+    "text_overlap": "not applicable",
+    "missing_audio_paths": []
+  },
+  "text_controlled_split": {
+    "path": "H:\\H-CODE\\speechtokenizer\\output\\handoff\\six_user_demo_20260920\\text_controlled_109_split.generated.json",
+    "newly_generated": true,
+    "protocol": {
+      "name": "exp23_text_controlled_109_class",
+      "speaker_count": 109,
+      "canonical_speaker_count": 110,
+      "actual_speaker_count": 109,
+      "expected_speaker_count": 109,
+      "audio_validation": "container_signature"
+    },
+    "seed": 1,
+    "speakers": 109,
+    "has_s5": true,
+    "has_p315": false,
+    "excluded_speakers": [
+      "p315"
+    ],
+    "totals": {
+      "train": 8720,
+      "validation": 1090,
+      "test": 1090
+    },
+    "per_speaker": {
+      "train": {
+        "minimum": 80,
+        "maximum": 80
+      },
+      "validation": {
+        "minimum": 10,
+        "maximum": 10
+      },
+      "test": {
+        "minimum": 10,
+        "maximum": 10
+      }
+    },
+    "group_overlap": {
+      "train/validation": 0,
+      "train/test": 0,
+      "validation/test": 0
+    },
+    "text_overlap": {
+      "train/validation": 0,
+      "train/test": 0,
+      "validation/test": 0
+    },
+    "missing_audio_paths": []
+  },
+  "cache": {
+    "files": 24200,
+    "bytes": 595639591,
+    "path": "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\cache",
+    "records": 12100,
+    "counts": {
+      "train": 8800,
+      "validation": 1650,
+      "test": 1650
+    },
+    "conditions": [
+      [
+        "lca",
+        3
+      ]
+    ],
+    "missing_paths": [],
+    "unreferenced_payload_files": [],
+    "recorded_failures": [],
+    "absolute_paths_require_rebasing_on_recipient_machine": true,
+    "checkpoint_hashes": [
+      "af60223b2f44733f5a43d5a022871dad061dfe2421473c96f5d350c3d4b49a5a"
+    ],
+    "config_hashes": [
+      "9b998e232eb4e685561eac9b66d64004e43948fd420349674c99fb1a79ced2ec"
+    ]
+  },
+  "seeds": [
+    {
+      "seed": 41,
+      "root": "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed41",
+      "checkpoint": {
+        "path": "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed41\\checkpoints\\best_macro_f1.pt",
+        "bytes": 88384199,
+        "sha256": "c999d79705996f1e0e264207db5a2c8ded194273b8838b693c99ff02cca6729c",
+        "category": "exp23_seed",
+        "run_id": "exp23_formal/seed41",
+        "git_commit": "3b87deb2c375a88051a79506587ef1a2d19d7694",
+        "provenance": "Historical environment records dirty=true; commit alone is not a complete source snapshot."
+      },
+      "validation": {
+        "balanced_accuracy": 0.9496969696969698,
+        "ece_15bin": 0.012935074405040596,
+        "macro_f1": 0.9497481391870957,
+        "nll": 0.18786433358267005,
+        "top1": 0.9496969696969697,
+        "top5": 0.9884848484848485,
+        "worst_decile_accuracy": 0.8181818181818183
+      },
+      "test": {
+        "balanced_accuracy": 0.9503030303030304,
+        "ece_15bin": 0.012954127911094815,
+        "macro_f1": 0.9493602960452108,
+        "nll": 0.16195479953929837,
+        "top1": 0.9503030303030303,
+        "top5": 0.9939393939393939,
+        "worst_decile_accuracy": 0.7696969696969699
+      },
+      "temperature": 0.9660716223677315,
+      "historical_environment": {
+        "python": {
+          "version": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]"
+        },
+        "platform": "Windows-10-10.0.26200-SP0",
+        "git": {
+          "revision": "3b87deb2c375a88051a79506587ef1a2d19d7694",
+          "dirty": true,
+          "error": null
+        },
+        "packages": {
+          "torch": {
+            "version": "2.9.1+cu128",
+            "error": null
+          },
+          "torchaudio": {
+            "version": "2.9.1+cu128",
+            "error": null
+          },
+          "speechbrain": {
+            "version": "1.1.0",
+            "error": null
+          },
+          "numpy": {
+            "version": "2.2.6",
+            "error": null
+          },
+          "sklearn": {
+            "version": "1.7.2",
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "root": "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed42",
+      "checkpoint": {
+        "path": "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed42\\checkpoints\\best_macro_f1.pt",
+        "bytes": 88384199,
+        "sha256": "1e1d7f95ad1713dc21690fd9be01bab613140e547e5a4b059477570c50cf8014",
+        "category": "exp23_seed",
+        "run_id": "exp23_formal/seed42",
+        "git_commit": "3b87deb2c375a88051a79506587ef1a2d19d7694",
+        "provenance": "Historical environment records dirty=true; commit alone is not a complete source snapshot."
+      },
+      "validation": {
+        "balanced_accuracy": 0.9466666666666668,
+        "ece_15bin": 0.013062493988570949,
+        "macro_f1": 0.9460793944774292,
+        "nll": 0.21444000997856874,
+        "top1": 0.9466666666666667,
+        "top5": 0.9860606060606061,
+        "worst_decile_accuracy": 0.7757575757575759
+      },
+      "test": {
+        "balanced_accuracy": 0.941818181818182,
+        "ece_15bin": 0.020438993552140208,
+        "macro_f1": 0.9413555764336936,
+        "nll": 0.1738488805280014,
+        "top1": 0.9418181818181818,
+        "top5": 0.9927272727272727,
+        "worst_decile_accuracy": 0.7393939393939394
+      },
+      "temperature": 1.01877269160619,
+      "historical_environment": {
+        "python": {
+          "version": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]"
+        },
+        "platform": "Windows-10-10.0.26200-SP0",
+        "git": {
+          "revision": "3b87deb2c375a88051a79506587ef1a2d19d7694",
+          "dirty": true,
+          "error": null
+        },
+        "packages": {
+          "torch": {
+            "version": "2.9.1+cu128",
+            "error": null
+          },
+          "torchaudio": {
+            "version": "2.9.1+cu128",
+            "error": null
+          },
+          "speechbrain": {
+            "version": "1.1.0",
+            "error": null
+          },
+          "numpy": {
+            "version": "2.2.6",
+            "error": null
+          },
+          "sklearn": {
+            "version": "1.7.2",
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "root": "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed43",
+      "checkpoint": {
+        "path": "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\seed43\\checkpoints\\best_macro_f1.pt",
+        "bytes": 88384199,
+        "sha256": "4f0c025b80e580b13cf1b729cd36d9e2221dc812949cb9f0493a1cc088c39df6",
+        "category": "exp23_seed",
+        "run_id": "exp23_formal/seed43",
+        "git_commit": "3b87deb2c375a88051a79506587ef1a2d19d7694",
+        "provenance": "Historical environment records dirty=true; commit alone is not a complete source snapshot."
+      },
+      "validation": {
+        "balanced_accuracy": 0.947878787878788,
+        "ece_15bin": 0.012153959239088337,
+        "macro_f1": 0.9473698675772654,
+        "nll": 0.206207962810275,
+        "top1": 0.9478787878787879,
+        "top5": 0.9878787878787879,
+        "worst_decile_accuracy": 0.787878787878788
+      },
+      "test": {
+        "balanced_accuracy": 0.9557575757575758,
+        "ece_15bin": 0.019194402169960004,
+        "macro_f1": 0.9555517623293167,
+        "nll": 0.16063651354943312,
+        "top1": 0.9557575757575758,
+        "top5": 0.9939393939393939,
+        "worst_decile_accuracy": 0.8242424242424243
+      },
+      "temperature": 1.0053338429599878,
+      "historical_environment": {
+        "python": {
+          "version": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]"
+        },
+        "platform": "Windows-10-10.0.26200-SP0",
+        "git": {
+          "revision": "3b87deb2c375a88051a79506587ef1a2d19d7694",
+          "dirty": true,
+          "error": null
+        },
+        "packages": {
+          "torch": {
+            "version": "2.9.1+cu128",
+            "error": null
+          },
+          "torchaudio": {
+            "version": "2.9.1+cu128",
+            "error": null
+          },
+          "speechbrain": {
+            "version": "1.1.0",
+            "error": null
+          },
+          "numpy": {
+            "version": "2.2.6",
+            "error": null
+          },
+          "sklearn": {
+            "version": "1.7.2",
+            "error": null
+          }
+        }
+      }
+    }
+  ],
+  "bundle": {
+    "path": "D:\\tmp\\speechtokenizer-exp23\\tmp\\exp23_formal\\export\\seed42_bundle",
+    "manifest_hash_check_passed": true,
+    "model_config": {
+      "checkpoint_seed": 42,
+      "codebook_size": 1024,
+      "input_mode": "codes_waveform",
+      "pad_index": 1024,
+      "speaker_count": 110
+    },
+    "preprocessing": {
+      "frame_hop_samples": 320,
+      "rvq_layers": 3,
+      "sample_rate": 16000,
+      "window_samples": 48000
+    },
+    "historical_smoke": {
+      "speaker_count": 110,
+      "sample_speaker_id": "p225",
+      "code_shape": [
+        3,
+        151
+      ],
+      "waveform_samples": 48000,
+      "eager_prediction": "p225",
+      "bundle_prediction": "p225",
+      "max_probability_abs_diff": 0.0,
+      "cpu_latency_ms_mean": 111.23544500442222,
+      "cpu_latency_ms_median": 111.93255000398494,
+      "cpu_latency_ms_p95": 125.44044496607967
+    }
+  },
+  "ecapa": {
+    "path": "H:\\H-CODE\\speechtokenizer\\output\\models\\speechbrain_spkrec_ecapa_voxceleb",
+    "historical_speechbrain_version": "1.1.0",
+    "local_hf_snapshot_revision": "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286",
+    "local_snapshot_hash_matches": {
+      "classifier.ckpt": {
+        "snapshot_path": "C:\\Users\\Windows11\\.cache\\huggingface\\hub\\models--speechbrain--spkrec-ecapa-voxceleb\\snapshots\\0f99f2d0ebe89ac095bcc5903c4dd8f72b367286\\classifier.ckpt",
+        "snapshot_match": true,
+        "exp23_copy_match": true
+      },
+      "embedding_model.ckpt": {
+        "snapshot_path": "C:\\Users\\Windows11\\.cache\\huggingface\\hub\\models--speechbrain--spkrec-ecapa-voxceleb\\snapshots\\0f99f2d0ebe89ac095bcc5903c4dd8f72b367286\\embedding_model.ckpt",
+        "snapshot_match": true,
+        "exp23_copy_match": true
+      },
+      "hyperparams.yaml": {
+        "snapshot_path": "C:\\Users\\Windows11\\.cache\\huggingface\\hub\\models--speechbrain--spkrec-ecapa-voxceleb\\snapshots\\0f99f2d0ebe89ac095bcc5903c4dd8f72b367286\\hyperparams.yaml",
+        "snapshot_match": true,
+        "exp23_copy_match": true
+      },
+      "label_encoder.ckpt": {
+        "snapshot_path": "C:\\Users\\Windows11\\.cache\\huggingface\\hub\\models--speechbrain--spkrec-ecapa-voxceleb\\snapshots\\0f99f2d0ebe89ac095bcc5903c4dd8f72b367286\\label_encoder.txt",
+        "snapshot_match": true,
+        "exp23_copy_match": true
+      },
+      "mean_var_norm_emb.ckpt": {
+        "snapshot_path": "C:\\Users\\Windows11\\.cache\\huggingface\\hub\\models--speechbrain--spkrec-ecapa-voxceleb\\snapshots\\0f99f2d0ebe89ac095bcc5903c4dd8f72b367286\\mean_var_norm_emb.ckpt",
+        "snapshot_match": true,
+        "exp23_copy_match": true
+      }
+    },
+    "scope": "Snapshot identified by content hashes, not a newly downloaded or independently recorded training-time revision."
+  },
+  "key": {
+    "path": "H:\\H-CODE\\speechtokenizer\\3用户demo\\speechtokenizer_now\\speechtokenizer\\两用户通信demo\\userA\\46.txt",
+    "contents_not_exported": true
+  },
+  "gaps": [
+    "No pre-existing formal text-controlled 109-class manifest found in audited workspaces; generated one separately.",
+    "No formal 109-class or two-second robustness results, or complete Base-condition cache, in exp23_formal.",
+    "Historical Exp23 environment says git dirty=true; full historical source provenance is incomplete.",
+    "Exp2/Exp3 checkpoint manifests do not record a training-time Git commit.",
+    "Old demo environment.yml differs from the verified local environment and omits SpeechBrain.",
+    "Six-user live-microphone acceptance has not been performed by this materials audit."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-20",
+  "scope": "Materials audit and bounded three-client replay, not six-user acceptance",
+  "unit_tests": {
+    "cwd": "D:\\tmp\\speechtokenizer-exp23",
+    "command": "C:\\Users\\Windows11\\.conda\\envs\\speechtokenizer\\python.exe -m unittest tests.test_exp23_export tests.test_demo_exp23_speaker_identity tests.test_demo_speaker_identity -v",
+    "count": 10,
+    "status": "passed",
+    "reported_seconds": 8.89
+  },
+  "bundle_load": {
+    "status": "passed",
+    "receipt": "bundle_load/bundle_load_smoke.json",
+    "scope": "Existing validation sample only; locked formal tests were not rerun"
+  },
+  "legacy_profile_replay": {
+    "status": "failed_at_process_shutdown",
+    "receipt": "profile_replay/replay_result.json",
+    "commands": "profile_replay/commands.json",
+    "startup_send_receive_decode_identification": "observed",
+    "client_exit_codes": [3221226505, 3221226505, 3221226505],
+    "warning": "Successful CSV metrics do not mean successful process teardown"
+  },
+  "exp23_direct_client_replay": {
+    "status": "failed",
+    "receipt": "bundle_replay/replay_result.json",
+    "commands": "bundle_replay/commands.json",
+    "error": "ModuleNotFoundError: No module named 'speechtokenizer.speaker_identity'",
+    "source_observation": "Embedded legacy speechtokenizer is placed before repository root and imported before bundle initialization"
+  },
+  "text_controlled_cache_cli": {
+    "status": "signature_mismatch_confirmed",
+    "script": "D:\\tmp\\speechtokenizer-exp23\\scripts\\build_exp23_speaker_cache.py",
+    "error": "TypeError: multiple values for argument 'train_count'",
+    "scope": "Confirmed by inspect.signature.bind using the CLI call arguments; no cache build or training launched",
+    "additional_issue": "excluded_speakers is not an accepted parameter of the current public data function",
+    "handoff_generator": "Uses transcript_root keyword directly and does not call the broken CLI branch"
+  },
+  "source_changes": "No demo, training, inference, or manuscript source changed",
+  "not_performed": [
+    "Six-user concurrent acceptance",
+    "Live microphone or physical playback",
+    "Cross-machine LAN validation",
+    "New speaker enrollment or retraining",
+    "Formal test rerun"
+  ]
+}

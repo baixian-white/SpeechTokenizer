@@ -1,0 +1,7 @@
+﻿condition,scenario,repeat,speaker_id,n_expected,n_predicted,n_correct,top1,coverage,end_to_end_correct_rate,class_precision,class_recall,class_f1
+D,concurrent,1,p225,5,5,0,0.0,1.0,0.0,,0.0,0.0
+D,concurrent,1,p226,5,5,5,1.0,1.0,1.0,1.0,1.0,1.0
+D,concurrent,1,p227,5,5,5,1.0,1.0,1.0,1.0,1.0,1.0
+D,concurrent,1,p228,5,5,0,0.0,1.0,0.0,,0.0,0.0
+D,concurrent,1,p229,5,5,5,1.0,1.0,1.0,1.0,1.0,1.0
+D,concurrent,1,p230,5,5,0,0.0,1.0,0.0,,0.0,0.0

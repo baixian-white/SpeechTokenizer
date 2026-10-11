@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "checked_on": "2026-09-22",
+  "records": {
+    "rate_bps": 1500,
+    "packed_half_second_bytes": 94,
+    "codec_train_validation_counts": [
+      27039,
+      1500
+    ],
+    "speaker_split_counts": [
+      8800,
+      1650,
+      1650
+    ],
+    "speaker_count": 110,
+    "codec_state_unchanged_during_cache": true,
+    "cache_failures": 0,
+    "speaker_seeds": [
+      41,
+      42,
+      43
+    ],
+    "speaker_temperature_seed42": 1.01877269160619,
+    "speaker_bootstrap_execution_metadata": {
+      "replicate_count": null,
+      "rng_seed": null,
+      "handling": "Unresolved author check; no executed values invented in the supplement."
+    }
+  },
+  "text": {
+    "sections": 9,
+    "subsections": 42,
+    "tables": 8,
+    "numbered_equation_labels": 46,
+    "approximate_english_prose_words_including_headings": 5948,
+    "word_count_note": "Alphabetic groups; excludes tables, displayed math, inline math and citation keys.",
+    "chinese_characters": 10212,
+    "citations_resolve_to_retained_bibliography": true,
+    "section_table_and_key_value_parity": true
+  },
+  "pdf": {
+    "page_count": 11,
+    "pages": [
+      {
+        "page": 1,
+        "text_characters": 4293,
+        "within_page_bounds": true
+      },
+      {
+        "page": 2,
+        "text_characters": 5337,
+        "within_page_bounds": true
+      },
+      {
+        "page": 3,
+        "text_characters": 5046,
+        "within_page_bounds": true
+      },
+      {
+        "page": 4,
+        "text_characters": 4575,
+        "within_page_bounds": true
+      },
+      {
+        "page": 5,
+        "text_characters": 5190,
+        "within_page_bounds": true
+      },
+      {
+        "page": 6,
+        "text_characters": 5355,
+        "within_page_bounds": true
+      },
+      {
+        "page": 7,
+        "text_characters": 5109,
+        "within_page_bounds": true
+      },
+      {
+        "page": 8,
+        "text_characters": 4774,
+        "within_page_bounds": true
+      },
+      {
+        "page": 9,
+        "text_characters": 4681,
+        "within_page_bounds": true
+      },
+      {
+        "page": 10,
+        "text_characters": 5424,
+        "within_page_bounds": true
+      },
+      {
+        "page": 11,
+        "text_characters": 4988,
+        "within_page_bounds": true
+      }
+    ],
+    "unresolved_references_or_overflows": [],
+    "underfull_messages": 13,
+    "sha256": "06460b80ffe847667decf343e2a6ac4b8bee8c2c97f8df1e8be0519f8ecb5966"
+  },
+  "protected_original_count": 50,
+  "source_record_count": 37,
+  "new_experiments_run": false,
+  "original_results_reestimated": false,
+  "delivery": {
+    "path": "H:\\H-CODE\\speechtokenizer\\output\\pdf\\supplementary_methods_v2.pdf",
+    "matches_reviewed_build": true,
+    "sha256": "06460b80ffe847667decf343e2a6ac4b8bee8c2c97f8df1e8be0519f8ecb5966"
+  },
+  "rendered_contact_sheets": [
+    "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\supplementary_methods_v2_review\\contact-01.png",
+    "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\supplementary_methods_v2_review\\contact-05.png",
+    "H:\\H-CODE\\speechtokenizer\\tmp\\pdfs\\supplementary_methods_v2_review\\contact-09.png"
+  ]
+}

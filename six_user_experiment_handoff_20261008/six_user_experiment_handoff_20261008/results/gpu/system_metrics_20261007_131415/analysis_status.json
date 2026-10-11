@@ -1,0 +1,15 @@
+{
+  "quality_failures": [],
+  "fixture": false,
+  "analysis_source_hashes": {
+    "summarize_metrics_experiment.py": "7bdf44edbd0f4bbc230acb70a79160887ca97a89ff722eabac2e416ef749a430",
+    "metrics_protocol.py": "0405a37445dc6200421a449a1720386b1af51f68f86df2c19686a760503b8054",
+    "quality_metrics.py": "fab0ffea778ff83faba694826795c3ca4555036d95ba091db9512c52eac45f9c"
+  },
+  "expected_block_rows": 180,
+  "expected_prediction_rows": 30,
+  "plots": true,
+  "plot_status": "complete",
+  "steady_prediction_rows": 30,
+  "steady_no_output": 0
+}

@@ -1,0 +1,10 @@
+{
+  "files": {
+    "calibration.json": "3a1b5220b3ace1ce6e5521205820da09de88b7f83d9e13fe8a189047f414c0ca",
+    "classifier.pt": "e497e2e2a22b7517ee215496c84dd7e026853313969d1b6d0b93ed02a9723ef2",
+    "model_config.json": "08ff3b7dd39a037e5bb97e64432f04b926da53707364c4bc51228090c336db98",
+    "preprocessing.json": "588f109738851ff8a04fa2448499b1fe25b4b09523e0d171c9d656fddb301186",
+    "speaker_labels.json": "4071500fd3784c4bbbfd1e1c7ae37ed29fbaee26654fc58c4a1cd3cf9f7a44f1"
+  },
+  "format": "exp23-speaker-classifier-v1"
+}

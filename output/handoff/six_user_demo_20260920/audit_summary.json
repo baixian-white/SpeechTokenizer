@@ -1,0 +1,17 @@
+{
+  "files_hashed": 24338,
+  "bytes_hashed": 1878034354,
+  "cache_files_hashed": 24200,
+  "canonical_counts": {
+    "train": 8800,
+    "validation": 1650,
+    "test": 1650
+  },
+  "text_controlled_counts": {
+    "train": 8720,
+    "validation": 1090,
+    "test": 1090
+  },
+  "bundle_hash_check": true,
+  "output_dir": "H:\\H-CODE\\speechtokenizer\\output\\handoff\\six_user_demo_20260920"
+}
