@@ -1,5 +1,6 @@
 import csv
 import hashlib
+import importlib.metadata
 import json
 import os
 import platform
@@ -19,6 +20,7 @@ STANDARD_SUBDIRS = (
     "samples",
     "reports",
     "artifacts",
+    "cache_manifest",
 )
 
 
@@ -155,6 +157,77 @@ def run_command(args, cwd=None, timeout=60):
             "stdout": "",
             "stderr": repr(exc),
         }
+
+
+def collect_environment_metadata(project_root=None):
+    project_root = Path(project_root or Path.cwd()).resolve()
+    git_revision_command = ["git", "rev-parse", "HEAD"]
+    git_status_command = ["git", "status", "--porcelain"]
+    git_metadata = {
+        "revision": None,
+        "dirty": None,
+        "error": None,
+    }
+
+    git_revision_result = run_command(
+        git_revision_command,
+        cwd=project_root,
+        timeout=20,
+    )
+    if git_revision_result["returncode"] == 0 and git_revision_result["stdout"]:
+        git_metadata["revision"] = git_revision_result["stdout"]
+        git_status_result = run_command(
+            git_status_command,
+            cwd=project_root,
+            timeout=20,
+        )
+        if git_status_result["returncode"] == 0:
+            git_metadata["dirty"] = bool(git_status_result["stdout"])
+        else:
+            returncode = git_status_result["returncode"]
+            if returncode is None:
+                returncode = "unavailable"
+            git_metadata["error"] = (
+                "git status --porcelain failed "
+                f"(returncode={returncode})"
+            )
+    else:
+        returncode = git_revision_result["returncode"]
+        if returncode is None:
+            returncode = "unavailable"
+        git_metadata["error"] = (
+            "git rev-parse HEAD failed "
+            f"(returncode={returncode})"
+        )
+
+    packages = {}
+    distributions = {
+        "torch": "torch",
+        "torchaudio": "torchaudio",
+        "speechbrain": "speechbrain",
+        "numpy": "numpy",
+        "sklearn": "scikit-learn",
+    }
+    for package_name, distribution_name in distributions.items():
+        try:
+            packages[package_name] = {
+                "version": importlib.metadata.version(distribution_name),
+                "error": None,
+            }
+        except Exception as exc:
+            packages[package_name] = {
+                "version": None,
+                "error": exc.__class__.__name__,
+            }
+
+    return {
+        "python": {
+            "version": sys.version.replace("\n", " "),
+        },
+        "platform": platform.platform(),
+        "git": git_metadata,
+        "packages": packages,
+    }
 
 
 def validate_fixed_conditions(config):

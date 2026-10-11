@@ -40,6 +40,7 @@ EmbeddingFn = Callable[[np.ndarray, int, int], np.ndarray]
 class _SenderState:
     def __init__(self) -> None:
         self.buffer = np.zeros(0, dtype=np.float32)
+        self.codes = None
         self.samples_since_eval = 0
 
 
@@ -76,6 +77,9 @@ class StreamingSpeakerIdentifier:
         ecapa_savedir: str | Path = "output/models/speechbrain_spkrec_ecapa_voxceleb",
         profiles: Optional[Mapping[str, SpeakerProfile]] = None,
         embedding_fn: Optional[EmbeddingFn] = None,
+        bundle_classifier=None,
+        bundle_dir: str | Path | None = None,
+        bundle_device: str = 'cpu',
     ) -> None:
         self.profile_dir = Path(profile_dir) if profile_dir else None
         self.sample_rate = int(sample_rate)
@@ -89,9 +93,15 @@ class StreamingSpeakerIdentifier:
         self.ecapa_savedir = Path(ecapa_savedir)
         self.extractor = None
         self.embedding_fn = embedding_fn
+        self.bundle_classifier = bundle_classifier
+        if self.bundle_classifier is None and bundle_dir:
+            from speechtokenizer.speaker_identity.inference import SpeakerClassifierBundle
+            self.bundle_classifier = SpeakerClassifierBundle(bundle_dir, device=bundle_device, threshold=threshold)
         self.states: dict[str, _SenderState] = {}
 
-        if profiles is not None:
+        if self.bundle_classifier is not None:
+            self.profiles = {}
+        elif profiles is not None:
             self.profiles = dict(profiles)
         else:
             self.extractor = SpeakerEmbeddingExtractor(
@@ -111,14 +121,14 @@ class StreamingSpeakerIdentifier:
 
     @property
     def enabled(self) -> bool:
-        return bool(self.profiles)
+        return self.bundle_classifier is not None or bool(self.profiles)
 
     @property
     def speaker_count(self) -> int:
-        return len(self.profiles)
+        return self.bundle_classifier.speaker_count if self.bundle_classifier is not None else len(self.profiles)
 
-    def update(self, sender_id: str, pcm: np.ndarray) -> Optional[SpeakerPrediction]:
-        if not self.profiles:
+    def update(self, sender_id: str, pcm: np.ndarray, codes: np.ndarray | None = None) -> Optional[SpeakerPrediction]:
+        if not self.enabled:
             return None
 
         audio = np.asarray(pcm, dtype=np.float32).reshape(-1)
@@ -129,6 +139,20 @@ class StreamingSpeakerIdentifier:
         state.buffer = np.concatenate([state.buffer, audio])
         if state.buffer.size > self.window_samples:
             state.buffer = state.buffer[-self.window_samples :]
+        if codes is not None:
+            code_array = np.asarray(codes, dtype=np.int64)
+            if code_array.ndim == 3 and code_array.shape[1] == 1:
+                code_array = code_array[:, 0, :]
+            if code_array.ndim != 2:
+                raise ValueError('codes must have shape [L,T] or [L,1,T]')
+            if state.codes is None or state.codes.shape[0] != code_array.shape[0]:
+                state.codes = code_array
+            else:
+                state.codes = np.concatenate([state.codes, code_array], axis=1)
+            frame_hop = int(getattr(self.bundle_classifier, 'frame_hop_samples', 320))
+            max_frames = max(1, int(np.ceil(self.window_samples / float(frame_hop))))
+            if state.codes.shape[1] > max_frames:
+                state.codes = state.codes[:, -max_frames:]
         state.samples_since_eval += int(audio.size)
 
         if state.buffer.size < self.window_samples:
@@ -137,6 +161,8 @@ class StreamingSpeakerIdentifier:
             return None
 
         state.samples_since_eval = 0
+        if self.bundle_classifier is not None:
+            return self.bundle_classifier.predict(state.buffer, codes=state.codes)
         if self.embedding_fn is not None:
             embedding = self.embedding_fn(state.buffer, self.sample_rate, self.n_mfcc)
         elif self.extractor is not None:

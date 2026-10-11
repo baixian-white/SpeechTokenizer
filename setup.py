@@ -72,7 +72,8 @@ setup(
         'speechtokenizer', 
         'speechtokenizer.quantization', 
         'speechtokenizer.modules', 
-        'speechtokenizer.trainer'
+        'speechtokenizer.trainer',
+        'speechtokenizer.speaker_identity'
     ],
 
     # 🌟 依赖管理

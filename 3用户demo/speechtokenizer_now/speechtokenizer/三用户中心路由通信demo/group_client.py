@@ -300,6 +300,29 @@ class GroupClient:
               f"codebook_size={self.codebook_size} index_bits={self.index_bits}")
 
     def init_speaker_identifier(self):
+        bundle_dir = str(getattr(self.args, "speaker_classifier_bundle", "") or "").strip()
+        profile_dir_value = str(getattr(self.args, "speaker_profile_dir", "") or "").strip()
+        if bundle_dir and profile_dir_value:
+            raise ValueError("classifier bundle and profile directory are mutually exclusive")
+        if bundle_dir:
+            sample_rate = self.model_sr
+            bundle_device = str(getattr(self.args, "speaker_classifier_device", "cpu"))
+            self.speaker_identifier = StreamingSpeakerIdentifier(
+                profile_dir="",
+                sample_rate=sample_rate,
+                window_sec=float(self.args.speaker_window_sec),
+                hop_sec=float(self.args.speaker_hop_sec),
+                threshold=float(self.args.speaker_classifier_threshold),
+                bundle_dir=bundle_dir,
+                bundle_device=bundle_device,
+            )
+            print(
+                f"[SPKID] enabled speakers={self.speaker_identifier.speaker_count} "
+                f"backend=exp23-bundle device={bundle_device} sr={sample_rate} "
+                f"window={self.args.speaker_window_sec:.2f}s hop={self.args.speaker_hop_sec:.2f}s "
+                f"threshold={self.args.speaker_classifier_threshold:.2f}"
+            )
+            return
         if not getattr(self.args, "speaker_id_enable", False):
             return
         profile_dir = str(getattr(self.args, "speaker_profile_dir", "") or "").strip()
@@ -692,12 +715,19 @@ class GroupClient:
                 with torch.no_grad(), amp_ctx, self.model_lock:
                     wav_t = self.model.decode(codes_t)
                 decode_ms = (time.perf_counter() - t0) * 1000.0
+                codes = codes_t.detach().cpu().numpy().astype(np.int64, copy=False)
                 wav = wav_t.detach().cpu().squeeze(0).squeeze(0).to(torch.float32)
+                speaker_pcm = wav.numpy().astype(np.float32, copy=False)
                 if self.rs_model2out is not None:
                     with torch.no_grad():
                         wav = self.rs_model2out(wav.unsqueeze(0)).squeeze(0)
                 pcm = wav.numpy().astype(np.float32, copy=False)
-                self.update_speaker_identity(stream, pcm)
+                if (
+                    self.speaker_identifier is None
+                    or getattr(self.speaker_identifier, "bundle_classifier", None) is None
+                ):
+                    speaker_pcm = pcm
+                self.update_speaker_identity(stream, speaker_pcm, codes)
                 pcm_rms = rms(pcm)
                 jitter_sec = self.add_pcm_to_jitter(stream, pcm)
                 with stream.lock:
@@ -709,11 +739,16 @@ class GroupClient:
             except Exception as exc:
                 print(f"[DECODE:{stream.sender_id}] failed: {exc}", file=sys.stderr)
 
-    def update_speaker_identity(self, stream: IncomingStream, pcm: np.ndarray) -> None:
+    def update_speaker_identity(
+        self,
+        stream: IncomingStream,
+        pcm: np.ndarray,
+        codes: np.ndarray,
+    ) -> None:
         if self.speaker_identifier is None:
             return
         try:
-            prediction = self.speaker_identifier.update(stream.sender_id, pcm)
+            prediction = self.speaker_identifier.update(stream.sender_id, pcm, codes=codes)
         except Exception as exc:
             print(f"[SPKID:{stream.sender_id}] failed: {exc}", file=sys.stderr)
             return
@@ -1133,7 +1168,12 @@ def main():
     parser.add_argument("--speaker_device", default="cpu", choices=["auto", "cuda", "cpu"], help="ECAPA 后端运行设备")
     parser.add_argument("--ecapa_source", default="speechbrain/spkrec-ecapa-voxceleb", help="SpeechBrain ECAPA 模型来源")
     parser.add_argument("--ecapa_savedir", default="output/models/speechbrain_spkrec_ecapa_voxceleb", help="SpeechBrain ECAPA 本地缓存目录")
+    parser.add_argument("--speaker_classifier_bundle", default="", help="Exp23 classifier bundle directory")
+    parser.add_argument("--speaker_classifier_device", default="cpu", choices=["cuda", "cpu"], help="Exp23 classifier device")
+    parser.add_argument("--speaker_classifier_threshold", type=float, default=0.65, help="Exp23 display-only verified threshold")
     args = parser.parse_args()
+    if args.speaker_classifier_bundle and args.speaker_profile_dir:
+        parser.error("--speaker_classifier_bundle and --speaker_profile_dir are mutually exclusive")
 
     try:
         torch.set_num_threads(max(1, min(4, os.cpu_count() or 4)))
