@@ -1,0 +1,6 @@
+dataset,expected,objective_records,asr_records,expected_reference_transcripts,asr_scored,asr_excluded
+fleurs_en_us,647,2,2,647,2,0
+librispeech_test_clean,300,2,2,300,2,0
+librispeech_test_other,300,2,2,300,2,0
+tedlium,1155,2,2,1155,2,0
+vctk,2200,2,2,2180,2,0

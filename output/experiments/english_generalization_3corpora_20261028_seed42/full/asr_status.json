@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "phase": "asr",
+  "smoke": false,
+  "pid": 1451930,
+  "completed": 4602,
+  "total": 4602,
+  "elapsed_seconds": 833.5685370599967,
+  "updated_unix": 1793161520.9720845
+}

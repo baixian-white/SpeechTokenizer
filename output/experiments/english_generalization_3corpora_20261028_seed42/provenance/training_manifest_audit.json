@@ -1,0 +1,26 @@
+{
+  "exp2_scit_speech_distill30_retrain_20260529_seed42/train": {
+    "count": 27039,
+    "sha256": "89eb572e9ac3086945fa8050d6be23998940213a1353ceac7ce4679f55eea3f7",
+    "id_overlap": [],
+    "external_path_mentions": 0
+  },
+  "exp2_scit_speech_distill30_retrain_20260529_seed42/valid": {
+    "count": 1500,
+    "sha256": "be0570b246cb86fa5f078e334eb905e8de66f3dbfc2c70958c50f836b12516be",
+    "id_overlap": [],
+    "external_path_mentions": 0
+  },
+  "exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42/train": {
+    "count": 27039,
+    "sha256": "89eb572e9ac3086945fa8050d6be23998940213a1353ceac7ce4679f55eea3f7",
+    "id_overlap": [],
+    "external_path_mentions": 0
+  },
+  "exp3_low_load_channel_aware_adaptation_v2_strong_perturb_20260531_seed42/valid": {
+    "count": 1500,
+    "sha256": "be0570b246cb86fa5f078e334eb905e8de66f3dbfc2c70958c50f836b12516be",
+    "id_overlap": [],
+    "external_path_mentions": 0
+  }
+}

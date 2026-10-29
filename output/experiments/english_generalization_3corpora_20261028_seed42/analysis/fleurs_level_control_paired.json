@@ -1,0 +1,132 @@
+[
+  {
+    "model": "base",
+    "metric": "mel_l1",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": -0.4147177240026789,
+    "ci_low": -0.44051114964154425,
+    "ci_high": -0.38985341402677454,
+    "n_clusters": 350
+  },
+  {
+    "model": "base",
+    "metric": "stoi",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": 0.12455669705717981,
+    "ci_low": 0.11803063096401911,
+    "ci_high": 0.13135337197066782,
+    "n_clusters": 350
+  },
+  {
+    "model": "base",
+    "metric": "pesq_wb",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": 0.456122236789839,
+    "ci_low": 0.42672519179750845,
+    "ci_high": 0.4854377667690232,
+    "n_clusters": 350
+  },
+  {
+    "model": "base",
+    "metric": "si_snr_db",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": 16.42265550334516,
+    "ci_low": 15.335236241795505,
+    "ci_high": 17.598379111320053,
+    "n_clusters": 350
+  },
+  {
+    "model": "lca",
+    "metric": "mel_l1",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": -0.47555025495369985,
+    "ci_low": -0.5021151118494097,
+    "ci_high": -0.4493529488709213,
+    "n_clusters": 350
+  },
+  {
+    "model": "lca",
+    "metric": "stoi",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": 0.17065340868192122,
+    "ci_low": 0.1618792864390737,
+    "ci_high": 0.1798104071301147,
+    "n_clusters": 350
+  },
+  {
+    "model": "lca",
+    "metric": "pesq_wb",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": 0.4979613860939533,
+    "ci_low": 0.46667947747206395,
+    "ci_high": 0.5294173223809047,
+    "n_clusters": 350
+  },
+  {
+    "model": "lca",
+    "metric": "si_snr_db",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": 18.616502139130642,
+    "ci_low": 17.50241676316246,
+    "ci_high": 19.83230320555949,
+    "n_clusters": 350
+  },
+  {
+    "model": "original",
+    "metric": "wer",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": -0.0004902304082918972,
+    "ci_low": -0.003571783204281302,
+    "ci_high": 0.0027539380133338055,
+    "n_clusters": 350
+  },
+  {
+    "model": "base",
+    "metric": "wer",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": -0.45059177813572376,
+    "ci_low": -0.48267526337437705,
+    "ci_high": -0.42006593243559787,
+    "n_clusters": 350
+  },
+  {
+    "model": "lca",
+    "metric": "wer",
+    "contrast": "fixed_level-raw",
+    "paired_n": 647,
+    "estimate": -0.43189298970516143,
+    "ci_low": -0.4640910043696183,
+    "ci_high": -0.4004538688741404,
+    "n_clusters": 350
+  },
+  {
+    "model": "base",
+    "metric": "codec_excess_wer",
+    "contrast": "difference_in_differences",
+    "paired_n": 647,
+    "estimate": -0.4501015477274319,
+    "ci_low": -0.48224456256934795,
+    "ci_high": -0.41927305959868716,
+    "n_clusters": 350
+  },
+  {
+    "model": "lca",
+    "metric": "codec_excess_wer",
+    "contrast": "difference_in_differences",
+    "paired_n": 647,
+    "estimate": -0.43140275929686955,
+    "ci_low": -0.4633110027465832,
+    "ci_high": -0.3997870681729296,
+    "n_clusters": 350
+  }
+]

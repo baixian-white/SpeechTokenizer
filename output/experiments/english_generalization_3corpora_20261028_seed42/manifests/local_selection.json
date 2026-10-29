@@ -1,0 +1,26 @@
+{
+  "seed": 42,
+  "manifest_sha256": "534fdea066d98741a3394d2412bdb9b7796ac0b362509d8a4dca567790536269",
+  "archive_sha256": "574045c6e191d6037f38737c8f137615b7068e7f42456b09b32d2b3b0b389057",
+  "archive_bytes": 403732480,
+  "datasets": {
+    "librispeech_test_clean": {
+      "count": 300,
+      "clusters": 40,
+      "missing_transcripts": 0,
+      "duration_hours": 0.7384444618055556
+    },
+    "librispeech_test_other": {
+      "count": 300,
+      "clusters": 33,
+      "missing_transcripts": 0,
+      "duration_hours": 0.5760472048611112
+    },
+    "vctk": {
+      "count": 2200,
+      "clusters": 110,
+      "missing_transcripts": 20,
+      "duration_hours": 2.0699530266203703
+    }
+  }
+}

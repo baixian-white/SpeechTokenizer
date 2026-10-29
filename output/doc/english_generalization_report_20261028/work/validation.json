@@ -1,0 +1,147 @@
+{
+  "primary": {
+    "unique_asr_samples": 4602,
+    "unique_objective_samples": 4602,
+    "asr_groups": 15,
+    "objective_metric_groups": 120,
+    "aggregate_recalculation": "passed"
+  },
+  "control": {
+    "unique_asr_samples": 647,
+    "unique_objective_samples": 647,
+    "asr_groups": 3,
+    "objective_metric_groups": 24,
+    "aggregate_recalculation": "passed"
+  },
+  "document": {
+    "tables": 7,
+    "inline_images": 1,
+    "page_count": 6,
+    "table_content_check": "passed",
+    "main_and_appendix_separation": "passed",
+    "source_paths": "passed",
+    "render_method": "WPS native PDF export then PyMuPDF page rasterization",
+    "packaged_renderer_diagnostic": "Bundled LibreOffice is unavailable on Windows; soffice.exe was not found on PATH",
+    "pages": [
+      {
+        "page": 1,
+        "characters": 1005,
+        "first_lines": [
+          "第1 页",
+          "SCIT Speech 英文跨语料泛化评测报告",
+          "2026 年10 月28 日| 三个外部英文语料与LibriSpeech 参照",
+          "现有模型在VCTK 和TED-LIUM 上表现出一定的英文跨语料迁移能力。在L3、1.5 kbit/s 条件下，LCA 的"
+        ],
+        "last_lines": [
+          "p315 的20 条缺少参考转写，仅参与客观评测，因此WER 的说话人聚类数为109。",
+          "TED-LIUM 使用固定版本的release3 test 镜像。1,469 条源记录中，314 条按",
+          "ignore_time_segment_in_scoring 标记排除，保留1,155 条。FLEURS 使用en_us test 的全部647 条录音。",
+          "数据依据：PROTOCOL.md；manifests/summary.json；full/reports/coverage.csv。"
+        ]
+      },
+      {
+        "page": 2,
+        "characters": 1150,
+        "first_lines": [
+          "第2 页",
+          "评测设置与主实验结果",
+          "模型与码率。Base 使用SCIT-Speech-Base_best.pt，LCA 使用SCIT-Speech-",
+          "LCA_v2_step30000_robust_optimum.pt。模型按原配置严格加载，使用FP32 推理。一次编码后分别解码"
+        ],
+        "last_lines": [
+          "原音基线共同解读。",
+          "VCTK 的LCA 结果接近LibriSpeech test-clean 参照的量级；TED-LIUM 中大部分内容仍可被固定识别器识别。",
+          "FLEURS 的绝对错误率较高，构成本轮跨语料泛化的明显边界。",
+          "结果依据：full/reports/asr_summary.csv；full/reports/asr_paired_deltas.csv；PROTOCOL.md。"
+        ]
+      },
+      {
+        "page": 3,
+        "characters": 802,
+        "first_lines": [
+          "第3 页",
+          "模型比较与LibriSpeech 参照",
+          "图1 L3 的语料级WER 与相对原音的WER 增量。误差棒为95% 聚类bootstrap 区间。LS clean 与LS other 为LibriSpeech 参照。该",
+          "图反映自动识别结果，不是人工听测评分。"
+        ],
+        "last_lines": [
+          "test-clean 上LCA 比Base 降低0.82 个百分点；test-other 上LCA 的点估计高0.55 个百分点，其配对95%",
+          "区间为[−1.46, +2.86]，不足以确定差异方向。不同语料的原音难度、内容和录音条件同时变化，因此不",
+          "将跨语料分数差直接解释为单一因素的作用。",
+          "结果依据：full/reports/asr_summary.csv；full/reports/asr_paired_deltas.csv；figures/CAPTIONS.md。"
+        ]
+      },
+      {
+        "page": 4,
+        "characters": 1194,
+        "first_lines": [
+          "第4 页",
+          "客观音质与码率检查",
+          "表5 L3 客观指标均值",
+          "语料"
+        ],
+        "last_lines": [
+          "运行ASR，不能据此推断其WER。",
+          "TED-LIUM 的ted_00769 在两模型、三个工作点下均无法计算PESQ，共6 个失败条目。各TED-LIUM PESQ 分组的有效样",
+          "本数为1,154，其他指标为1,155。失败项保留在记录中，未补零。所有具有参考文本的ASR 样本均已完成。",
+          "结果依据：full/reports/objective_summary.csv；full/reports/objective_paired_deltas.csv；full/reports/metric_failures.csv。"
+        ]
+      },
+      {
+        "page": 5,
+        "characters": 1207,
+        "first_lines": [
+          "第5 页",
+          "结论与证据范围",
+          "本轮完成了三个外部英文语料的冻结模型评测。结果支持模型在VCTK 和TED-LIUM 上具有一定的跨语",
+          "料迁移能力，其中LCA 在VCTK 的L3 词错误率上有明确改善，TED-LIUM 的词错误率与Base 基本持平。"
+        ],
+        "last_lines": [
+          "复现证据：provenance/training_manifest_audit.json、provenance/source_hashes.json、full/objective_identity.json、",
+          "full/asr_identity.json。",
+          "完成核验：checks/final_validation.json 记录主实验与补充对照的聚合结果重算通过。本报告中的表格直接从归档CSV 生成，并",
+          "按逐条识别记录与客观结果校验。"
+        ]
+      },
+      {
+        "page": 6,
+        "characters": 1127,
+        "first_lines": [
+          "第6 页",
+          "附录FLEURS 输入增益对照",
+          "此项为观察主实验结果后设计的补充对照，覆盖FLEURS 全部647 条录音。它采用独立预处理条件，结",
+          "果与正文主实验分别报告，不替代主实验估计，也不属于预先设计的独立确认实验。"
+        ],
+        "last_lines": [
+          "主实验样本清单SHA256",
+          "de007738841b5f87915d856964d6ceef39c58c2d2277c458e9a564b9e20651a1",
+          "运行记录：Python 3.10.20，PyTorch 2.10.0，torchaudio 2.10.0+cu128，faster-whisper 1.2.1。数据版本、ASR 模型版本、",
+          "文本归一化器版本、完整依赖与源代码哈希均见原始实验归档。"
+        ]
+      }
+    ],
+    "visual_review": {
+      "status": "passed",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "findings": "All final pages inspected; no clipped text, broken tables, missing glyphs, or title border."
+    },
+    "markdown_links": "relative paths for cross-platform checkout; text and Word document unchanged"
+  },
+  "deliverables": {
+    "英文跨语料泛化评测报告.docx": {
+      "bytes": 182819,
+      "sha256": "a131c237486999cc0cf520132cf1bae7fdf474aa2385043fd223f34c73d1324d"
+    },
+    "英文跨语料泛化评测报告.md": {
+      "bytes": 13910,
+      "sha256": "5f306220b6908babec8c0a09e8c2bda2705197b90883b82f83ca2ed9f52f1f25"
+    }
+  }
+}

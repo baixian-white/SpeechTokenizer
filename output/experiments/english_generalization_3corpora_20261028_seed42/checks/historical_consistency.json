@@ -1,0 +1,80 @@
+{
+  "librispeech_test_clean": {
+    "overlapping_utterances": 300,
+    "historical_path": "output\\experiments\\exp7_librispeech_test_full_clean_20260606\\eval_clean_full_lca_nosave\\test-clean\\metrics\\full_clean_results.csv",
+    "metrics": {
+      "mel_l1": {
+        "pairs": 1800,
+        "max_abs_diff": 0.026438474655151367,
+        "mean_abs_diff": 0.0007466655638482836
+      },
+      "stoi": {
+        "pairs": 1800,
+        "max_abs_diff": 0.005025278753753026,
+        "mean_abs_diff": 0.0001618651152144626
+      },
+      "pesq_wb": {
+        "pairs": 1800,
+        "max_abs_diff": 0.1136711835861206,
+        "mean_abs_diff": 0.0018416865666707357
+      },
+      "si_snr_db": {
+        "pairs": 1800,
+        "max_abs_diff": 0.6161681952466793,
+        "mean_abs_diff": 0.012047481115882953
+      }
+    }
+  },
+  "librispeech_test_other": {
+    "overlapping_utterances": 300,
+    "historical_path": "output\\experiments\\exp7_librispeech_test_full_clean_20260606\\eval_clean_full_lca_nosave\\test-other\\metrics\\full_clean_results.csv",
+    "metrics": {
+      "mel_l1": {
+        "pairs": 1800,
+        "max_abs_diff": 0.05324280261993408,
+        "mean_abs_diff": 0.0015624704625871446
+      },
+      "stoi": {
+        "pairs": 1800,
+        "max_abs_diff": 0.011674210068280955,
+        "mean_abs_diff": 0.00024068229129171548
+      },
+      "pesq_wb": {
+        "pairs": 1800,
+        "max_abs_diff": 0.23843300342559814,
+        "mean_abs_diff": 0.002348492874039544
+      },
+      "si_snr_db": {
+        "pairs": 1800,
+        "max_abs_diff": 19.889289043184178,
+        "mean_abs_diff": 0.03702040178692507
+      }
+    }
+  },
+  "vctk": {
+    "overlapping_utterances": 300,
+    "historical_path": "output\\experiments\\exp19_cross_corpus_zeroshot_20260613_seed42\\eval_vctk_300\\metrics\\full_clean_results.csv",
+    "metrics": {
+      "mel_l1": {
+        "pairs": 1800,
+        "max_abs_diff": 0.06321918964385986,
+        "mean_abs_diff": 0.005122981336381701
+      },
+      "stoi": {
+        "pairs": 1800,
+        "max_abs_diff": 0.026713223635302485,
+        "mean_abs_diff": 0.0009699435783799581
+      },
+      "pesq_wb": {
+        "pairs": 1800,
+        "max_abs_diff": 0.6410717964172363,
+        "mean_abs_diff": 0.006778791149457296
+      },
+      "si_snr_db": {
+        "pairs": 1800,
+        "max_abs_diff": 0.9149839044424102,
+        "mean_abs_diff": 0.024967009513570424
+      }
+    }
+  }
+}

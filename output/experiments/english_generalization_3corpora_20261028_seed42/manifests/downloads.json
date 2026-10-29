@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/en_us/audio/test.tar.gz",
+    "path": "/home/suer/english_generalization_20261028/downloads/fleurs_test.tar.gz",
+    "bytes": 289851356,
+    "sha256": "d9c2e37b41aacd41bc283554a0a82b5476b36887049774ecb2819dcaaa55a356"
+  },
+  {
+    "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/en_us/test.tsv",
+    "path": "/home/suer/english_generalization_20261028/downloads/fleurs_test.tsv",
+    "bytes": 367864,
+    "sha256": "74c046239374deeb60fa63f258f907388093a32bcaa3140965f70ef05c79f7ca"
+  },
+  {
+    "url": "https://huggingface.co/datasets/sanchit-gandhi/tedlium-data/resolve/8083dbe64f82e17b6be070a02b9239e9b847b6ce/data/test-00000-of-00001-05350587dc944f81.parquet",
+    "path": "/home/suer/english_generalization_20261028/downloads/tedlium_test.parquet",
+    "bytes": 351931487,
+    "sha256": "4fae5ef76a9ca97e719aed0a365db919684e32e6bf24d147250a80594621af5e"
+  },
+  {
+    "url": "https://huggingface.co/datasets/distil-whisper/tedlium/resolve/31aa998c1cbc36063c5bd5c0ca87b082d443da02/tedlium.py",
+    "path": "/home/suer/english_generalization_20261028/downloads/tedlium_source_loader.py",
+    "bytes": 6886,
+    "sha256": "f2e251694c5a7c6e89a440e56f651400d24be3fdb37d4a8e5c4e27181e8dab6d"
+  },
+  {
+    "url": "https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/config.json",
+    "path": "/home/suer/english_generalization_20261028/asr_model/config.json",
+    "bytes": 2657,
+    "sha256": "666a9605530ac1f61fa8177f3702b4dacec9966749e42610839fcc32661d5fae"
+  },
+  {
+    "url": "https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/model.bin",
+    "path": "/home/suer/english_generalization_20261028/asr_model/model.bin",
+    "bytes": 483545366,
+    "sha256": "62b2a45b05ee59acb4a5341b33ee35e041395d378d418a18acfe4c9e768ee37a"
+  },
+  {
+    "url": "https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/tokenizer.json",
+    "path": "/home/suer/english_generalization_20261028/asr_model/tokenizer.json",
+    "bytes": 2128466,
+    "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+  },
+  {
+    "url": "https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/vocabulary.txt",
+    "path": "/home/suer/english_generalization_20261028/asr_model/vocabulary.txt",
+    "bytes": 422309,
+    "sha256": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+  },
+  {
+    "url": "https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/README.md",
+    "path": "/home/suer/english_generalization_20261028/asr_model/README.md",
+    "bytes": 1330,
+    "sha256": "c87ff776137c2ecb30ee3b324b4cf5f38abf9423464613641ee45430bf580851"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/whisper/86098128c0b4f24f0e2aa2994de830614b474227/whisper/normalizers/basic.py",
+    "path": "/home/suer/english_generalization_20261028/vendor/normalizers/basic.py",
+    "bytes": 2064,
+    "sha256": "4742eaa040e0657fa1247a1361e0d856c62317a43326ea59a40c2e9edd8d2c38"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/whisper/86098128c0b4f24f0e2aa2994de830614b474227/whisper/normalizers/english.py",
+    "path": "/home/suer/english_generalization_20261028/vendor/normalizers/english.py",
+    "bytes": 21001,
+    "sha256": "d31a52685b5b42628ea4e3343c3a7925ce5b2f317e6c0ec4575677dd5c8b5d2c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/whisper/86098128c0b4f24f0e2aa2994de830614b474227/whisper/normalizers/english.json",
+    "path": "/home/suer/english_generalization_20261028/vendor/normalizers/english.json",
+    "bytes": 56128,
+    "sha256": "6607f948be9824d2e1b2fa2223cd94c06c45afa4e05ea0e3d5e1f2bdffde2465"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/whisper/86098128c0b4f24f0e2aa2994de830614b474227/LICENSE",
+    "path": "/home/suer/english_generalization_20261028/vendor/normalizers/LICENSE",
+    "bytes": 1063,
+    "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d"
+  }
+]

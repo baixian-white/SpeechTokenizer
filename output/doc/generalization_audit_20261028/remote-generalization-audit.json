@@ -1,0 +1,108 @@
+{
+  "host": "lab-suer",
+  "root": "/home/suer/workspace/NMI/speechtokenizer",
+  "records": [
+    {
+      "relative_path": "output/experiments/exp19_cross_corpus_zeroshot_20260613_seed42/eval_vctk_300/metrics/full_clean_results.csv",
+      "exists": true,
+      "sha256": "5a2a9f0374629d3168d18c81aec32ba102ae4d899f6f67b41ab13dd7e90ede3e",
+      "rows": 1800,
+      "samples": 300,
+      "groups": {
+        "('base', '1')": 300,
+        "('lca', '1')": 300,
+        "('base', '2')": 300,
+        "('lca', '2')": 300,
+        "('base', '3')": 300,
+        "('lca', '3')": 300
+      },
+      "nonfinite": {
+        "mel_l1": 0,
+        "si_snr_db": 0,
+        "stoi": 0,
+        "pesq_wb": 0
+      }
+    },
+    {
+      "relative_path": "output/experiments/exp19b_aishell_zeroshot_20260613_seed42/eval_aishell_300/metrics/full_clean_results.csv",
+      "exists": true,
+      "sha256": "c14f052fe461d4dc9f535ea948cd3e5b402b98dbd655382e0cc9b439c8fe50ca",
+      "rows": 1800,
+      "samples": 300,
+      "groups": {
+        "('base', '1')": 300,
+        "('lca', '1')": 300,
+        "('base', '2')": 300,
+        "('lca', '2')": 300,
+        "('base', '3')": 300,
+        "('lca', '3')": 300
+      },
+      "nonfinite": {
+        "mel_l1": 0,
+        "si_snr_db": 0,
+        "stoi": 0,
+        "pesq_wb": 0
+      }
+    },
+    {
+      "relative_path": "output/experiments/exp19b_aishell_zeroshot_20260613_seed42/metrics/asr_cer_zh_results.csv",
+      "exists": true,
+      "sha256": "48378857d47dcf1c29cb8a0c20f19a5e5b1a897eb6f47a09bcdf2ce095273dae",
+      "rows": 1800,
+      "samples": 300,
+      "groups": {
+        "('base', '1')": 300,
+        "('base', '2')": 300,
+        "('base', '3')": 300,
+        "('lca', '1')": 300,
+        "('lca', '2')": 300,
+        "('lca', '3')": 300
+      },
+      "nonfinite": {
+        "cer_vs_gt": 0
+      }
+    },
+    {
+      "relative_path": "output/experiments/exp7_librispeech_test_full_clean_20260606/eval_clean_full_lca_nosave/test-clean/metrics/full_clean_results.csv",
+      "exists": true,
+      "sha256": "1498ef38407a7787f070773fdd75219a3d59e98db9e78ce8ad9268bbe851e4eb",
+      "rows": 15720,
+      "samples": 2620,
+      "groups": {
+        "('base', '1')": 2620,
+        "('lca', '1')": 2620,
+        "('base', '2')": 2620,
+        "('lca', '2')": 2620,
+        "('base', '3')": 2620,
+        "('lca', '3')": 2620
+      },
+      "nonfinite": {
+        "mel_l1": 0,
+        "si_snr_db": 0,
+        "stoi": 0,
+        "pesq_wb": 0
+      }
+    },
+    {
+      "relative_path": "output/experiments/exp7_librispeech_test_full_clean_20260606/eval_clean_full_lca_nosave/test-other/metrics/full_clean_results.csv",
+      "exists": true,
+      "sha256": "26d434dd09404bb8e568e0992e51eb454c901ae763b9492aaf9e8e8125f4543c",
+      "rows": 17634,
+      "samples": 2939,
+      "groups": {
+        "('base', '1')": 2939,
+        "('lca', '1')": 2939,
+        "('base', '2')": 2939,
+        "('lca', '2')": 2939,
+        "('base', '3')": 2939,
+        "('lca', '3')": 2939
+      },
+      "nonfinite": {
+        "mel_l1": 0,
+        "si_snr_db": 0,
+        "stoi": 0,
+        "pesq_wb": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "fixed_before_control_inference",
+  "type": "post_hoc_input_level_sensitivity",
+  "rationale": "Original FLEURS median RMS around -60 dBFS vs LibriSpeech reference around -25 dBFS; original objective decline observed before defining this diagnostic.",
+  "target_rms_dbfs": -25,
+  "peak_ceiling": 0.99,
+  "selection": "all 647 FLEURS en_us test recordings; no performance-based exclusions",
+  "model": "same frozen Base/LCA checkpoints; no training",
+  "interpretation": "Supplement to raw-level primary experiment; cannot replace it or be called a preregistered independent replication.",
+  "parent_manifest_sha256": "de007738841b5f87915d856964d6ceef39c58c2d2277c458e9a564b9e20651a1",
+  "manifest_sha256": "e185e3e51eb702beef7ee14a0e32239ee02f9137e1b9954afca9a56c8e82e6d2",
+  "recordings": 647,
+  "peak_capped": 6,
+  "gain_db_quantiles": [
+    -6.75400821703838,
+    34.98317933028179,
+    44.733847962664505
+  ]
+}

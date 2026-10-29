@@ -1,0 +1,16 @@
+{
+  "primary": {
+    "samples": 4602,
+    "objective_rows": 27612,
+    "asr_hypotheses": 13746,
+    "metric_failures": 6,
+    "aggregate_recalculation": "passed"
+  },
+  "level_control": {
+    "samples": 647,
+    "objective_rows": 3882,
+    "asr_hypotheses": 1941,
+    "metric_failures": 0,
+    "aggregate_recalculation": "passed"
+  }
+}

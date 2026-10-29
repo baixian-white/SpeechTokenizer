@@ -1,0 +1,7 @@
+dataset,sample_id,model,L,metric,error
+tedlium,ted_00769,base,1,pesq_wb,NoUtterancesError: b'No utterances detected'
+tedlium,ted_00769,base,2,pesq_wb,NoUtterancesError: b'No utterances detected'
+tedlium,ted_00769,base,3,pesq_wb,NoUtterancesError: b'No utterances detected'
+tedlium,ted_00769,lca,1,pesq_wb,NoUtterancesError: b'No utterances detected'
+tedlium,ted_00769,lca,2,pesq_wb,NoUtterancesError: b'No utterances detected'
+tedlium,ted_00769,lca,3,pesq_wb,NoUtterancesError: b'No utterances detected'

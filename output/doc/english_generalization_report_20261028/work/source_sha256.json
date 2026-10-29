@@ -1,0 +1,17 @@
+{
+  "PROTOCOL.md": "1313e37c3ff9d52c0e9de92836afc07be5e75fc9652e983f6d63cb92599c472f",
+  "manifests/summary.json": "185e8f37736d67607d5228ed9efe9beda742395186fabc305ff16ea1cf7e0656",
+  "full/reports/asr_summary.csv": "aca6aadb2cceb117116e2da367b8b7c4370377bd50296ad119339c5650f2437a",
+  "full/reports/asr_paired_deltas.csv": "4263a25fd7969e4f104e816e1b2e5e510625c0bfe03b661b43e3a357c1b82081",
+  "full/reports/objective_summary.csv": "b28ec6387017144d770eec284849d2e28a17f7c2547cf571f8beeca8ab39b2a6",
+  "full/reports/objective_paired_deltas.csv": "f59b3f4f43107119f77bcf4e094cf2fb4a4f9bc2e9e4236d33e5e2b1e0eb5fb6",
+  "full/reports/metric_failures.csv": "3a0276701f465237b092a1c2c156bbef652d9d6865f84153117807826cbe8ece",
+  "provenance/training_manifest_audit.json": "5fb061a926b9c85c7f8aeb97119b53fd1fde8b80965c498f77e9dace4062099f",
+  "checks/final_validation.json": "79764c5e3dc76e61e71bf4154a5c88255e3f137a442ec642a0b7a55a392710f0",
+  "full/objective_identity.json": "7fac16dd8d5bb871718f147e73ff6d71bad268de97f1e7b66f22643437c610cb",
+  "level_control/CONTROL_PROTOCOL.json": "96da6115e980679c091bd5ff9cef82ee01c879f6e87f8b0e82c9fe3588c69137",
+  "level_control/full/reports/asr_summary.csv": "88374f159716c4dedc95b934fefd17a02edd5aa08d8d62049967cafc2f180c2f",
+  "level_control/full/reports/objective_summary.csv": "9ac7f49e228730884cc45378567d3253acd765392d6568404585a08b9ece8688",
+  "analysis/fleurs_level_control_paired.json": "08c050fa62bb3952b47806e5ec81e7451167b55cc53a77a32bf61be47b9cb7e2",
+  "figures/english_generalization_wer_L3.png": "cc768c23e58ef696f31b2f16cf1692e5271b8058ed5587cc8257911b717c1b66"
+}
